@@ -1,0 +1,73 @@
+APP_NAME = ZAppSINP
+PROJECT_NAME = ZAPPSI
+CONFIG_NAME = All_StdlinkSec_Sam3sEk_At91sam3s4c_Rf231_64Mhz_Iar
+
+#PROJECT_NAME = ATSAMR21E18A_ZAppSINP
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_8Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_8Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_4Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_4Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_16Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_16Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_24Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_24Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_48MHz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_48MHz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc
+
+#PROJECT_NAME = ATSAMR21G18A_ZAppSINP
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_8Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_4Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_16Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_24Mhz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_48MHz_Iar
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Iar
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Iar
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc
+#CONFIG_NAME = All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc
+#CONFIG_NAME = All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc
+#CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc
+
+all:
+	make -C makefiles/$(PROJECT_NAME) -f Makefile_$(CONFIG_NAME) all APP_NAME=$(APP_NAME)
+
+clean:
+	make -C makefiles/$(PROJECT_NAME) -f Makefile_$(CONFIG_NAME) clean APP_NAME=$(APP_NAME)

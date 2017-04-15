@@ -1,0 +1,420 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:11
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\combinedInterface.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\combinedInterface.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\combinedInterface.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\combinedInterface.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\combinedInterface.c
+      1          /************************************************************************//**
+      2            \file combinedInterface.c
+      3          
+      4            \brief
+      5              Combined Interface implementation
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              26/12/14 Prashanth.Udumula - modified
+     17              13/06/14 Viswanadham Kotla - modified
+     18              05/08/14 Unithra C         - modified
+     19              18/11/14 Yogesh            - modified
+     20          ******************************************************************************/
+     21          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     22          
+     23          /******************************************************************************
+     24                                  Includes section
+     25          ******************************************************************************/
+     26          #include <ciClusters.h>
+     27          #include <basicCluster.h>
+     28          #include <identifyCluster.h>
+     29          #include <ciOnOffCluster.h>
+     30          #include <ciLevelControlCluster.h>
+     31          #include <ciGroupsCluster.h>
+     32          #include <ciOccupancySensingCluster.h>
+     33          #include <ciTemperatureMeasurementCluster.h>
+     34          #include <ciHumidityMeasurementCluster.h>
+     35          #include <ciIlluminanceMeasurementCluster.h>
+     36          #include <ciThermostatCluster.h>
+     37          #include <ciThermostatUiConfCluster.h>
+     38          #include <ciTimeCluster.h>
+     39          #include <ciScenesCluster.h>
+     40          #include <ciFanControlCluster.h>
+     41          #include <ciIasZoneCluster.h>
+     42          #include <ciIasACECluster.h>
+     43          #include <ciPowerConfigurationCluster.h>
+     44          #include <zclDevice.h>
+     45          #include <uartManager.h>
+     46          #include <console.h>
+     47          #include <zclSecurityManager.h>
+     48          #include <resetReason.h>
+     49          #include <commandManager.h>
+     50          #include <ezModeManager.h>
+     51          #include <otauService.h>
+     52          #include <mac.h>
+     53          /******************************************************************************
+     54                              Local variables section
+     55          ******************************************************************************/
+     56          static ZCL_DeviceEndpoint_t ciEndpoint =
+     57          {
+     58            .simpleDescriptor =
+     59            {
+     60              .endpoint            = APP_SRC_ENDPOINT_ID,
+     61              .AppProfileId        = PROFILE_ID_HOME_AUTOMATION,
+     62              .AppDeviceId         = HA_COMBINED_INTERFACE_ID,
+     63              .AppInClustersCount  = ARRAY_SIZE(ciServerClusterIds),
+     64              .AppInClustersList   = ciServerClusterIds,
+     65              .AppOutClustersCount = ARRAY_SIZE(ciClientClusterIds),
+     66              .AppOutClustersList  = ciClientClusterIds,
+     67            },
+     68            .serverCluster = ciServerClusters,
+     69            .clientCluster = ciClientClusters,
+     70          };
+     71          
+     72          static ClusterId_t ciClientClusterToBindIds[] =
+     73          {
+     74            ONOFF_CLUSTER_ID,
+     75            LEVEL_CONTROL_CLUSTER_ID,
+     76            GROUPS_CLUSTER_ID,
+     77            SCENES_CLUSTER_ID,
+     78            OCCUPANCY_SENSING_CLUSTER_ID,
+     79            TEMPERATURE_MEASUREMENT_CLUSTER_ID,
+     80            HUMIDITY_MEASUREMENT_CLUSTER_ID,
+     81            ILLUMINANCE_MEASUREMENT_CLUSTER_ID,
+     82            THERMOSTAT_CLUSTER_ID,
+     83            THERMOSTAT_UI_CONF_CLUSTER_ID,
+     84            DIAGNOSTICS_CLUSTER_ID,
+     85            ALARMS_CLUSTER_ID,
+     86            POWER_CONFIGURATION_CLUSTER_ID,
+     87            FAN_CONTROL_CLUSTER_ID,
+     88            IAS_ZONE_CLUSTER_ID,
+     89          };
+     90          static ClusterId_t ciServerClusterToBindIds[] =
+     91          {
+     92            TIME_CLUSTER_ID,
+     93            IAS_ACE_CLUSTER_ID,  
+     94          };
+     95          static AppBindReq_t ciBindReq =
+     96          {
+     97            .nwkAddrOfInterest = RX_ON_WHEN_IDLE_ADDR,
+     98            .remoteServers     = ciClientClusterToBindIds,
+     99            .remoteServersCnt  = ARRAY_SIZE(ciClientClusterToBindIds),
+    100            .remoteClients     = ciServerClusterToBindIds,
+    101            .remoteClientsCnt  = ARRAY_SIZE(ciServerClusterToBindIds),
+    102            .profile           = PROFILE_ID_HOME_AUTOMATION,
+    103            .srcEndpoint       = APP_SRC_ENDPOINT_ID,
+    104            .callback          = NULL,
+    105          };
+    106          
+    107          static AppBindReq_t* deviceBindReqs[APP_ENDPOINTS_AMOUNT];
+    108          
+    109          static ZCL_LinkKeyDesc_t lightKeyDesc = {CCPU_TO_LE64(APS_UNIVERSAL_EXTENDED_ADDRESS), HA_LINK_KEY};
+    110          
+    111          /******************************************************************************
+    112                                  Implementations section
+    113          ******************************************************************************/
+    114          /**************************************************************************//**
+    115          \brief Device initialization routine
+    116          ******************************************************************************/
+    117          void appDeviceInit(void)
+    118          {
+    119            ZCL_RegisterEndpoint(&ciEndpoint);
+    120          
+    121          #if (APP_ENABLE_CONSOLE == 1) || (APP_DEVICE_EVENTS_LOGGING == 1)
+    122            uartInit();
+    123          #endif
+    124          #if APP_ENABLE_CONSOLE == 1
+    125            initConsole();
+    126          #endif
+    127            /* Bind request with clusters to bind for initiator device */
+    128            deviceBindReqs[0] = &ciBindReq;
+    129          
+    130            commandManagerInit();
+    131          
+    132            basicClusterInit();
+    133            identifyClusterInit();
+    134            onOffClusterInit();
+    135            levelControlClusterInit();
+    136            groupsClusterInit();
+    137            scenesClusterInit();
+    138            occupancySensingClusterInit();
+    139            temperatureMeasurementClusterInit();
+    140            humidityMeasurementClusterInit();
+    141            illuminanceMeasurementClusterInit();
+    142            thermostatClusterInit();
+    143            timeClusterInit();
+    144            fanControlClusterInit();
+    145            iaszoneClusterInit();
+    146            iasACEClusterInit();
+    147            powerConfigurationClusterInit();
+    148          }
+    149          
+    150          /**************************************************************************//**
+    151          \brief Performs security initialization actions
+    152          ******************************************************************************/
+    153          void appSecurityInit(void)
+    154          {
+    155            ZCL_Set_t zclSet;
+    156            ExtAddr_t trustCenterAddress;
+    157            ExtAddr_t macAddr;
+    158            APS_TcMode_t tcMode;
+    159            DeviceType_t deviceType;
+    160            // Setup security parameters
+    161            bool securityOn;
+    162          
+    163            CS_ReadParameter(CS_SECURITY_ON_ID, &securityOn);
+    164            if (securityOn)
+    165            {
+    166              uint8_t preconfiguredStatus;
+    167              CS_ReadParameter(CS_APS_TRUST_CENTER_ADDRESS_ID, &trustCenterAddress);
+    168              CS_ReadParameter(CS_UID_ID, &macAddr);
+    169              if (IS_EQ_EXT_ADDR(macAddr, trustCenterAddress))
+    170                tcMode = APS_CENTRALIZED_TRUST_CENTER;
+    171              else
+    172                tcMode = APS_NOT_TRUST_CENTER;
+    173          
+    174              CS_ReadParameter(CS_ZDO_SECURITY_STATUS_ID, &preconfiguredStatus);
+    175              CS_ReadParameter(CS_DEVICE_TYPE_ID, &deviceType);
+    176          
+    177              if ((PRECONFIGURED_NETWORK_KEY == preconfiguredStatus)
+    178                || (APS_CENTRALIZED_TRUST_CENTER == tcMode)
+    179              )
+    180              {
+    181                uint8_t nwkDefaultKey[SECURITY_KEY_SIZE];
+    182          
+    183                CS_ReadParameter(CS_NETWORK_KEY_ID, &nwkDefaultKey);
+    184                NWK_SetKey(nwkDefaultKey, NWK_STARTUP_ACTIVE_KEY_SEQUENCE_NUMBER);
+    185                NWK_ActivateKey(NWK_STARTUP_ACTIVE_KEY_SEQUENCE_NUMBER);
+    186              }
+    187            }
+    188          
+    189            ZCL_ResetSecurity();
+    190          
+    191            //Setting the Link Key Descriptor
+    192            zclSet.attr.id = ZCL_LINK_KEY_DESC_ID;
+    193            zclSet.attr.value.linkKeyDesc = &lightKeyDesc;
+    194            ZCL_Set(&zclSet);
+    195          }
+    196          
+    197          /**************************************************************************//**
+    198          \brief Device common task handler
+    199          ******************************************************************************/
+    200          void appDeviceTaskHandler(void)
+    201          {
+    202            switch (appDeviceState) // Actual device state when one joined network
+    203            {
+    204              case DEVICE_INITIAL_STATE:
+    205                {
+    206                  appDeviceState = DEVICE_ACTIVE_IDLE_STATE;
+    207                  startOtauServer(&ciServerClusters[CI_SERVER_CLUSTERS_COUNT - 1]);
+    208                }
+    209                break;
+    210              case DEVICE_ACTIVE_IDLE_STATE:
+    211              default:
+    212                break;
+    213            }
+    214          }
+    215          
+    216          /**************************************************************************//**
+    217          \brief Gets bind request
+    218          
+    219          \return pointer to a bind request used by HA device
+    220          ******************************************************************************/
+    221          AppBindReq_t **getDeviceBindRequest(void)
+    222          {
+    223            return deviceBindReqs;
+    224          }
+    225          
+    226          /**************************************************************************//**
+    227          \brief Stops application
+    228          ******************************************************************************/
+    229          void appStop(void)
+    230          {
+    231            identifyClusterStop();
+    232          }
+    233          
+    234          /**************************************************************************//**
+    235          \brief Asks device if it is an initiator
+    236          
+    237          \returns true if it is, false otherwise
+    238          ******************************************************************************/
+    239          bool appIsInitiator(void)
+    240          {
+    241            return true;
+    242          }
+    243          
+    244          /**************************************************************************//**
+    245          \brief EZ-Mode done callback
+    246          
+    247          \returns function which is called by EZ-Mode manager when it is done
+    248          ******************************************************************************/
+    249          void appEzModeDone(void)
+    250          {}
+    251          
+    252          /**************************************************************************//**
+    253          \brief ZDO Binding indication function
+    254          
+    255          \param[out] bindInd - ZDO bind indication parameters structure pointer
+    256          ******************************************************************************/
+    257          void ZDO_BindIndication(ZDO_BindInd_t *bindInd)
+    258          {
+    259            (void)bindInd;
+    260          }
+    261          
+    262          /**************************************************************************//**
+    263          \brief ZDO Unbinding indication function
+    264          
+    265          \param[out] unbindInd - ZDO unbind indication parameters structure pointer
+    266          ******************************************************************************/
+    267          void ZDO_UnbindIndication(ZDO_UnbindInd_t *unbindInd)
+    268          {
+    269            (void)unbindInd;
+    270          }
+    271          
+    272          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    273          // eof combinedInterface.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

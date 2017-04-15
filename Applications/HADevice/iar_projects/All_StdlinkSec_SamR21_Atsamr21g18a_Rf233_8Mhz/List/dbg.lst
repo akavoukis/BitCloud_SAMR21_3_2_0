@@ -1,0 +1,322 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:20
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\dbg.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\dbg.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\dbg.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\dbg.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\dbg.c
+      1          /************************************************************************//**
+      2            \file dbg.c
+      3          
+      4            \brief
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14            History:
+     15              29/05/07 D. Ovechkin - Created
+     16          **************************************************************************/
+     17          /*********************************************************************************
+     18            Destination where the log information is saved should be defined in Makefile
+     19            One of the following:
+     20              SYS_LOG_UART
+     21              SYS_LOG_SIMULATOR
+     22              SYS_LOG_EEPROM
+     23          **********************************************************************************/
+     24          
+     25          /*********************************************************************************
+     26                                    Includes section.
+     27          **********************************************************************************/
+     28          #include <dbg.h>
+     29          #ifdef _SYS_LOG_ON_
+     30            #if defined(_HAL_LOG_INTERFACE_UART0_) || defined(_HAL_LOG_INTERFACE_UART1_)
+     31              #include <usart.h>
+     32            #endif
+     33          #endif // _SYS_LOG_ON_
+     34          
+     35          /*  ________________________________ SYS_LOG __________________________________ */
+     36          #ifdef _SYS_LOG_ON_
+     37            /*********************************************************************************
+     38                                      Definitions section.
+     39            **********************************************************************************/
+     40            #define LOG_BUFFER_SIZE 256 //Size of the buffer for buffering logs. If it is less
+     41                                        //the algorithm should be revised
+     42            #if defined(_HAL_LOG_INTERFACE_UART0_) || defined(_HAL_LOG_INTERFACE_UART1_)
+     43              #define SYS_MESSAGE_SIZE      2
+     44              #define MESSAGE_MASK       0x7F
+     45              #define OVERFLOW_MASK      0x40
+     46          
+     47              #if defined(_HAL_LOG_INTERFACE_UART0_)
+     48                #define  LOG_USART_CHANNEL   USART_CHANNEL_0
+     49              #endif
+     50              #if defined(_HAL_LOG_INTERFACE_UART1_)
+     51                #define  LOG_USART_CHANNEL   USART_CHANNEL_1
+     52              #endif
+     53          
+     54              #define SYS_INIT_LOG       SYS_UsartInitLog();
+     55              #define SYS_WRITE_LOG(A,B) SYS_UsartWriteLog(A,B);
+     56            #else
+     57              #define SYS_INIT_LOG
+     58              #define SYS_WRITE_LOG(A,B)
+     59            #endif
+     60          
+     61            /*********************************************************************************
+     62                                      Static variables section.
+     63            **********************************************************************************/
+     64            #if defined(_HAL_LOG_INTERFACE_UART0_) || defined(_HAL_LOG_INTERFACE_UART1_)
+     65              HAL_UsartDescriptor_t sysUsartDescriptor;
+     66            #endif
+     67          
+     68            static uint8_t logBuffer[LOG_BUFFER_SIZE]; // buffer for buffering incoming logs
+     69            volatile uint8_t sysInfinityLoopMonitoring = 0;
+     70          
+     71            /*********************************************************************************
+     72                                      Implementation section.
+     73            **********************************************************************************/
+     74            #if defined(_HAL_LOG_INTERFACE_UART0_) || defined(_HAL_LOG_INTERFACE_UART1_)
+     75              /*****************************************************************************//**
+     76               \brief Initialization usart logging system.
+     77              **********************************************************************************/
+     78              INLINE void SYS_UsartInitLog(void)
+     79              {
+     80                sysUsartDescriptor.tty            = LOG_USART_CHANNEL;
+     81                sysUsartDescriptor.mode           = USART_MODE_ASYNC;
+     82                sysUsartDescriptor.flowControl    = USART_FLOW_CONTROL_NONE;
+     83                sysUsartDescriptor.baudrate       = USART_BAUDRATE_38400;
+     84                sysUsartDescriptor.dataLength     = USART_DATA8;
+     85                sysUsartDescriptor.parity         = USART_PARITY_NONE;
+     86                sysUsartDescriptor.stopbits       = USART_STOPBIT_1;
+     87                sysUsartDescriptor.rxBuffer       = NULL;
+     88                sysUsartDescriptor.rxBufferLength = 0;
+     89                sysUsartDescriptor.txBuffer       = logBuffer;
+     90                sysUsartDescriptor.txBufferLength = LOG_BUFFER_SIZE;
+     91                sysUsartDescriptor.rxCallback     = NULL;
+     92                sysUsartDescriptor.txCallback     = NULL;
+     93          
+     94                HAL_OpenUsart(&sysUsartDescriptor);
+     95              }
+     96          
+     97              /*****************************************************************************//**
+     98               \brief Write log information to usart.
+     99               \param[in]
+    100                 leyerID - identical definition of application layer;
+    101               \param[in]
+    102                 message - information byte (must be less then 0x80);
+    103              **********************************************************************************/
+    104              INLINE void SYS_UsartWriteLog(uint8_t leyerID, uint8_t message)
+    105              {
+    106                static result_t wasOverflow = BC_FAIL;
+    107                uint16_t commonData;
+    108          
+    109                commonData = ((uint16_t)(message & MESSAGE_MASK) << 8) | leyerID;
+    110          
+    111                if (BC_SUCCESS == wasOverflow)
+    112                  commonData |= OVERFLOW_MASK;
+    113          
+    114                if (SYS_MESSAGE_SIZE != HAL_WriteUsart(&sysUsartDescriptor, (uint8_t *)&commonData, SYS_MESSAGE_SIZE))
+    115                  wasOverflow = BC_SUCCESS;
+    116                else
+    117                  wasOverflow = BC_FAIL;
+    118              }
+    119            #else
+    120            #endif
+    121          
+    122            /*****************************************************************************//**
+    123             \brief Write log information to defined destination. The destination can be
+    124              UART, EEPROM, Ethernet... The destination is determined by the define
+    125              during compilation
+    126              \param[in]
+    127                leyerID - identical definition of application layer;
+    128              \param[in]
+    129                message - information byte (must be less then 0x80);
+    130            **********************************************************************************/
+    131            void SYS_WriteLog(uint8_t leyerID, uint8_t message)
+    132            {
+    133              SYS_WRITE_LOG(leyerID, message)
+    134            }
+    135          
+    136            /*****************************************************************************//**
+    137             \brief Initialization logging system.
+    138            **********************************************************************************/
+    139            void SYS_InitLog(void)
+    140            {
+    141              SYS_INIT_LOG
+    142            }
+    143          #endif // _SYS_LOG_ON_
+    144          
+    145          
+    146          
+    147          /*  ________________________________ SYS_ASSERT _______________________________ */
+    148          #ifdef _SYS_ASSERT_ON_
+    149            /*********************************************************************************
+    150                                      Implementation  section.
+    151            **********************************************************************************/
+    152            /*********************************************************************************
+    153              Function catches unexpected conditions in the logic.
+    154              Parameters:
+    155                condition - TRUE or FALSE. FALSE means problems in the logic.
+    156                dbgCode   - assert's unique code.
+    157                            dbgCode ranges: 0x1000 - 0x1fff - MAC
+    158                                            0x2000 - 0x2fff - HAL
+    159                                            0x3000 - 0x3fff - NWK
+    160                                            0x4000 - 0x4fff - APS
+    161                                            0x5000 - 0x5fff - ZDO
+    162                                            0x7000 - 0x7fff - SSP/TC
+    163                                            0x8000 - 0x8fff - System Environment
+    164                                            0x9000 - 0x9fff - BSP
+    165                                            0xf000 - 0xfffe - APL
+    166              Returns:
+    167                none.
+    168            *********************************************************************************/
+    169            void sysAssert(bool condition, uint16_t dbgCode)
+    170            {
+    171              SYS_ASSERT(condition, dbgCode)
+    172            }
+    173          #endif  // _SYS_ASSERT_ON_
+    174          
+    175          //eof dbg.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

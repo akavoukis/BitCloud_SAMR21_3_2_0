@@ -1,0 +1,741 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:29
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\fakeBSP.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\fakeBSP.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\fakeBSP.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\fakeBSP.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\fakeBSP.c
+      1          /***************************************************************************//**
+      2          \file  fakeBSP.c
+      3          
+      4          \brief Implementation of fake board-specific periphery.
+      5          
+      6          \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13          \internal
+     14            History:
+     15              07/04/14 karthik.p_u - Created
+     16          *******************************************************************************/
+     17          
+     18          /******************************************************************************
+     19                             Includes section
+     20          ******************************************************************************/
+     21          #include <sysTypes.h>
+     22          #include <bspTaskManager.h>
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void bspPostTask(uint8_t)
+   \                     bspPostTask: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+   \   00000002   0x....             LDR      R1,??DataTable5
+   \   00000004   0x780A             LDRB     R2,[R1, #+0]
+   \   00000006   0x4310             ORRS     R0,R0,R2
+   \   00000008   0x7008             STRB     R0,[R1, #+0]
+   \   0000000A   0x4668             MOV      R0,SP
+   \   0000000C   0x.... 0x....      BL       halStartAtomic
+   \   00000010   0x....             LDR      R0,??DataTable5_1
+   \   00000012   0x8801             LDRH     R1,[R0, #+0]
+   \   00000014   0x2280             MOVS     R2,#+128
+   \   00000016   0x0052             LSLS     R2,R2,#+1        ;; #+256
+   \   00000018   0x430A             ORRS     R2,R2,R1
+   \   0000001A   0x8002             STRH     R2,[R0, #+0]
+   \   0000001C   0x4668             MOV      R0,SP
+   \   0000001E   0x.... 0x....      BL       halEndAtomic
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+     23          #include <bspDbg.h>
+     24          #include <joystick.h>
+     25          
+     26          /******************************************************************************
+     27                             Local variables section
+     28          ******************************************************************************/
+
+   \                                 In section .bss, align 4
+     29          static void(* readTemperatureDataCallback)(bool error, int16_t data);
+   \                     readTemperatureDataCallback:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+     30          static void(* readLightDataCallback)(bool error, int16_t data);
+   \                     readLightDataCallback:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+     31          static void(* readBatteryDataCallback)(int16_t data);
+   \                     readBatteryDataCallback:
+   \   00000000                      DS8 4
+     32          
+     33          /******************************************************************************
+     34                             Implementations section
+     35          ******************************************************************************/
+     36          #if BSP_SUPPORT == BOARD_FAKE
+     37          /******************************************************************************
+     38           Returns number which was read from external eeprom.
+     39           Parameters:
+     40             id - UID buffer pointer.
+     41           Returns:
+     42             0 - if unique ID has been found without error;
+     43            -1 - if there are some erros during UID discovery.
+     44          ******************************************************************************/
+     45          int BSP_ReadUid(uint64_t *id)
+     46          {
+     47            (void)id;
+     48            return 0;
+     49          }
+     50          
+     51          /******************************************************************************
+     52                                       Leds
+     53          ******************************************************************************/
+     54          /**************************************************************************//**
+     55          \brief Opens leds module to use.
+     56          
+     57          \return
+     58              operation state
+     59          ******************************************************************************/
+     60          result_t BSP_OpenLeds(void)
+     61          {
+     62            return BC_SUCCESS;
+     63          }
+     64          
+     65          /**************************************************************************//**
+     66          \brief Closes leds module.
+     67          
+     68          \return
+     69              operation state
+     70          ******************************************************************************/
+     71          result_t BSP_CloseLeds(void)
+     72          {
+     73            return BC_SUCCESS;
+     74          }
+     75          
+     76          /**************************************************************************//**
+     77          \brief Turns on the LED.
+     78          
+     79          \param[in]
+     80              id - number of led
+     81          ******************************************************************************/
+     82          void BSP_OnLed(uint8_t id)
+     83          {
+     84            (void)id;
+     85          }
+     86          
+     87          /**************************************************************************//**
+     88          \brief Turns off the LED.
+     89          
+     90          \param[in]
+     91                id - number of led
+     92          ******************************************************************************/
+     93          void BSP_OffLed(uint8_t id)
+     94          {
+     95            (void)id;
+     96          }
+     97          
+     98          /**************************************************************************//**
+     99          \brief Changes the LED state to opposite.
+    100          
+    101          \param[in]
+    102                id - number of led
+    103          ******************************************************************************/
+    104          void BSP_ToggleLed(uint8_t id)
+    105          {
+    106            (void)id;
+    107          }
+    108          
+    109          /**************************************************************************//**
+    110          \brief Initialize LEDs.
+    111          ******************************************************************************/
+    112          void BSP_InitLeds(void)
+    113          {
+    114          }
+    115          
+    116          /**************************************************************************//**
+    117          \brief Set brightness level
+    118          \param[in] level - new brightness level
+    119          ******************************************************************************/
+    120          void BSP_SetLedBrightnessLevel(uint8_t level)
+    121          {
+    122            (void)level;
+    123          }
+    124          
+    125          /******************************************************************************
+    126                                       Buttons
+    127          ******************************************************************************/
+    128          /**************************************************************************//**
+    129          \brief Registers handlers for button events.
+    130          
+    131          \param[in]
+    132              pressed - the handler to process pressing the button
+    133          \param[in]
+    134              released - the handler to process releasing the button
+    135          \param[in]
+    136              bn - button number.
+    137          
+    138          \return
+    139            BC_SUCCESS - always.
+    140          ******************************************************************************/
+    141          result_t BSP_OpenButtons(void (*pressed)(uint8_t bn), void (*released)(uint8_t bn))
+    142          {
+    143            (void)pressed;
+    144            (void)released;
+    145          
+    146            return BC_SUCCESS;
+    147          }
+    148          
+    149          /**************************************************************************//**
+    150          \brief Cancel buttons handlers.
+    151          
+    152          \return
+    153            BC_SUCCESS - always.
+    154          ******************************************************************************/
+    155          result_t BSP_CloseButtons(void)
+    156          {
+    157            return BC_SUCCESS;
+    158          }
+    159          
+    160          /**************************************************************************//**
+    161          \brief Reads state of buttons.
+    162          
+    163          \return
+    164              Current buttons state in a binary way. \n
+    165              Bit 0 defines state of the button 1, \n
+    166              bit 1 defines state of the button 2.
+    167          ******************************************************************************/
+    168          uint8_t BSP_ReadButtonsState(void)
+    169          {
+    170            return 0;
+    171          }
+    172           
+    173          #endif // BSP_SUPPORT == BOARD_FAKE
+    174          
+    175          /******************************************************************************
+    176                                       Sensors
+    177          ******************************************************************************/
+    178          /***************************************************************************//**
+    179          \brief Opens temperature sensor.
+    180          
+    181          \return
+    182            BC_SUCCESS - always.
+    183          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    184          result_t BSP_OpenTemperatureSensor(void)
+    185          {
+    186            return BC_SUCCESS;
+   \                     BSP_OpenTemperatureSensor: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    187          }
+    188          
+    189          /***************************************************************************//**
+    190          \brief Closes the temperature sensor.
+    191          
+    192          \return
+    193            BC_SUCCESS - always.
+    194          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    195          result_t BSP_CloseTemperatureSensor(void)
+    196          {
+    197            return BC_SUCCESS;
+   \                     BSP_CloseTemperatureSensor: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    198          }
+    199          
+    200          /**************************************************************************//**
+    201          \brief Reads data from the temperature sensor.
+    202          \param[in]
+    203              result - the result of the requested operation.
+    204                       true - operation finished successfully, false - some error has
+    205                       occured.
+    206          \param[in]
+    207              data - sensor data.
+    208          
+    209          \return
+    210            BC_SUCCESS - always.
+    211          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    212          result_t BSP_ReadTemperatureData(void (*f)(bool result, int16_t data))
+    213          {
+   \                     BSP_ReadTemperatureData: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    214            readTemperatureDataCallback = f;
+   \   00000002   0x....             LDR      R1,??DataTable5_2
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    215          
+    216            bspPostTask(BSP_TEMPERATURE);
+   \   00000006   0x2002             MOVS     R0,#+2
+   \   00000008   0x....             B.N      ?Subroutine0
+    217          
+    218            return BC_SUCCESS;
+    219          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x.... 0x....      BL       bspPostTask
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0xBD02             POP      {R1,PC}          ;; return
+    220          
+    221          /**************************************************************************//**
+    222          \brief BSP task handler for temperature sensor.
+    223          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    224          void bspTemperatureSensorHandler(void)
+    225          {
+   \                     bspTemperatureSensorHandler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    226            sysAssert(readTemperatureDataCallback, BSPSENSORS_TEMPERATURENULLCALLBACK_0);
+    227            readTemperatureDataCallback(true, 0);
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x2001             MOVS     R0,#+1
+   \   00000006   0x....             LDR      R2,??DataTable5_2
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0x4790             BLX      R2
+    228          }
+   \   0000000C   0xBD01             POP      {R0,PC}          ;; return
+    229          
+    230          /***************************************************************************//**
+    231          \brief Opens the light sensor.
+    232          
+    233          \return
+    234            BC_SUCCESS - always.
+    235          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    236          result_t BSP_OpenLightSensor(void)
+    237          {
+    238            return BC_SUCCESS;
+   \                     BSP_OpenLightSensor: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    239          }
+    240          
+    241          /***************************************************************************//**
+    242          \brief Closes the light sensor.
+    243          
+    244          \return
+    245            BC_SUCCESS - always.
+    246          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    247          result_t BSP_CloseLightSensor(void)
+    248          {
+    249            return BC_SUCCESS;
+   \                     BSP_CloseLightSensor: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    250          }
+    251          
+    252          /**************************************************************************//**
+    253          \brief Reads data from the light sensor.
+    254          \param[in]
+    255              result - the result of the requested operation.
+    256                       true - operation finished successfully, false - some error has
+    257                       occured.
+    258          \param[in]
+    259              data - sensor data.
+    260          
+    261          \return
+    262            BC_SUCCESS - always.
+    263          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    264          result_t BSP_ReadLightData(void (*f)(bool result, int16_t data))
+    265          {
+   \                     BSP_ReadLightData: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    266            readLightDataCallback = f;
+   \   00000002   0x....             LDR      R1,??DataTable5_3
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    267          
+    268            bspPostTask(BSP_LIGHT);
+   \   00000006   0x2004             MOVS     R0,#+4
+   \   00000008                      REQUIRE ?Subroutine0
+   \   00000008                      ;; // Fall through to label ?Subroutine0
+    269          
+    270            return BC_SUCCESS;
+    271          }
+    272          
+    273          /**************************************************************************//**
+    274          \brief BSP task handler for light sensor.
+    275          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    276          void bspLightSensorHandler(void)
+    277          {
+   \                     bspLightSensorHandler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    278            sysAssert(readLightDataCallback, BSPSENSORS_LIGHTNULLCALLBACK_0);
+    279            readLightDataCallback(true, 0);
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x2001             MOVS     R0,#+1
+   \   00000006   0x....             LDR      R2,??DataTable5_3
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0x4790             BLX      R2
+    280          }
+   \   0000000C   0xBD01             POP      {R0,PC}          ;; return
+    281          
+    282          /***************************************************************************//**
+    283          \brief Opens the battery sensor.
+    284          
+    285          \return
+    286            BC_SUCCESS - always.
+    287          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    288          result_t BSP_OpenBatterySensor(void)
+    289          {
+    290            return BC_SUCCESS;
+   \                     BSP_OpenBatterySensor: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    291          }
+    292          
+    293          /***************************************************************************//**
+    294          \brief Closes the battery sensor.
+    295          
+    296          \return
+    297            BC_SUCCESS - always.
+    298          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    299          result_t BSP_CloseBatterySensor(void)
+    300          {
+    301            return BC_SUCCESS;
+   \                     BSP_CloseBatterySensor: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    302          }
+    303          
+    304          /**************************************************************************//**
+    305          \brief Reads data from battery sensor.
+    306          
+    307          \param[in]
+    308              data - sensor data.
+    309          
+    310          \return
+    311            BC_SUCCESS - always.
+    312          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    313          result_t BSP_ReadBatteryData(void (*f)(int16_t data))
+    314          {
+   \                     BSP_ReadBatteryData: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    315            readBatteryDataCallback = f;
+   \   00000002   0x....             LDR      R1,??DataTable5_4
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    316          
+    317            bspPostTask(BSP_BATTERY);
+   \   00000006   0x2008             MOVS     R0,#+8
+   \   00000008   0x....             B.N      ?Subroutine0
+    318          
+    319            return BC_SUCCESS;
+    320          }
+    321          
+    322          /**************************************************************************//**
+    323          \brief BSP task handler for battery sensor.
+    324          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    325          void bspEmptyBatteryHandler(void)
+    326          {
+   \                     bspEmptyBatteryHandler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    327            sysAssert(readBatteryDataCallback, BSPSENSORS_BATTERYNULLCALLBACK_0);
+    328            readBatteryDataCallback(0);
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x....             LDR      R1,??DataTable5_4
+   \   00000006   0x6809             LDR      R1,[R1, #+0]
+   \   00000008   0x4788             BLX      R1
+    329          }
+   \   0000000A   0xBD01             POP      {R0,PC}          ;; return
+    330          
+    331          /******************************************************************************
+    332                                       Sliders
+    333          ******************************************************************************/
+    334          /**************************************************************************//**
+    335          \brief Reads the sliders.
+    336          
+    337          \return
+    338             state of 3 on-board DIP-switches.User can uses SLIDER0, SLIDER1, SLIDER2
+    339             defines to test state. Value 1 indicates that slider is on.
+    340          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    341          uint8_t BSP_ReadSliders(void)
+    342          {
+    343            return 0;
+   \                     BSP_ReadSliders: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    344          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0x........         DC32     bspTaskFlags
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0x........         DC32     SYS_taskFlag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \   00000000   0x........         DC32     readTemperatureDataCallback
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \   00000000   0x........         DC32     readLightDataCallback
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \   00000000   0x........         DC32     readBatteryDataCallback
+    345          
+    346          #if BSP_SUPPORT == BOARD_FAKE
+    347          /******************************************************************************
+    348                                       Joystick
+    349          ******************************************************************************/
+    350          /******************************************************************************
+    351          \brief Registers handler for joystick events.
+    352          
+    353          \param[in]
+    354              state - joystick state.
+    355          
+    356          \return
+    357            BC_FAIL - joystick module is busy,
+    358            BC_SUCCESS in other cases.
+    359          ******************************************************************************/
+    360          result_t BSP_OpenJoystick(void (*generalHandler)(BSP_JoystickState_t state))
+    361          {
+    362            (void)generalHandler;
+    363          
+    364            return BC_SUCCESS;
+    365          }
+    366          
+    367          /******************************************************************************
+    368          \brief Cancel joystick handlers.
+    369          
+    370          \return
+    371            BC_FAIL - joystick module was not opened,
+    372            BC_SUCCESS in other cases.
+    373          ******************************************************************************/
+    374          result_t BSP_CloseJoystick(void)
+    375          {
+    376            return BC_SUCCESS;
+    377          }
+    378          
+    379          /******************************************************************************
+    380          \brief Reads state of joystick.
+    381          
+    382          \return
+    383              Current joystick state.
+    384          ******************************************************************************/
+    385          BSP_JoystickState_t BSP_ReadJoystickState(void)
+    386          {
+    387            return 0;
+    388          }
+    389          #endif
+    390          // eof fakeBSP.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BSP_CloseBatterySensor
+       0   BSP_CloseLightSensor
+       0   BSP_CloseTemperatureSensor
+       0   BSP_OpenBatterySensor
+       0   BSP_OpenLightSensor
+       0   BSP_OpenTemperatureSensor
+       8   BSP_ReadBatteryData
+         8   -> bspPostTask
+       8   BSP_ReadLightData
+         8   -> bspPostTask
+       0   BSP_ReadSliders
+       8   BSP_ReadTemperatureData
+         8   -> bspPostTask
+       8   bspEmptyBatteryHandler
+         8   -- Indirect call
+       8   bspLightSensorHandler
+         8   -- Indirect call
+       8   bspPostTask
+         8   -> halEndAtomic
+         8   -> halStartAtomic
+       8   bspTemperatureSensorHandler
+         8   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       8  ?Subroutine0
+       4  BSP_CloseBatterySensor
+       4  BSP_CloseLightSensor
+       4  BSP_CloseTemperatureSensor
+       4  BSP_OpenBatterySensor
+       4  BSP_OpenLightSensor
+       4  BSP_OpenTemperatureSensor
+      10  BSP_ReadBatteryData
+       8  BSP_ReadLightData
+       4  BSP_ReadSliders
+      10  BSP_ReadTemperatureData
+      12  bspEmptyBatteryHandler
+      14  bspLightSensorHandler
+      36  bspPostTask
+      14  bspTemperatureSensorHandler
+       4  readBatteryDataCallback
+       4  readLightDataCallback
+       4  readTemperatureDataCallback
+
+ 
+  12 bytes in section .bss
+ 160 bytes in section .text
+ 
+ 160 bytes of CODE memory
+  12 bytes of DATA memory
+
+Errors: none
+Warnings: none

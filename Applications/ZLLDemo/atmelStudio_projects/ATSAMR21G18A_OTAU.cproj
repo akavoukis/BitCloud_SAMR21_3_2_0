@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="utf-8"?><Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup>
+<SchemaVersion>2.0</SchemaVersion>
+<ProjectVersion>6.1</ProjectVersion>
+<ProjectGuid>{82fd174c-8ec8-477d-8680-3dbdd6488ad0}</ProjectGuid>
+<avrdevice>Atsamr21g18a</avrdevice>
+<avrdeviceseries>none</avrdeviceseries>
+<ToolchainFlavour>Native</ToolchainFlavour>
+<OutputType>Executable</OutputType>
+<OutputFileName>ZLLDemo</OutputFileName>
+<OutputFileExtension>.elf</OutputFileExtension>
+<Language>C</Language>
+<ToolchainName>com.Atmel.ARMGCC.C</ToolchainName>
+<UseGlobalToolchain>False</UseGlobalToolchain>
+<avrtoolinterface/>
+<avrtool/>
+</PropertyGroup>
+<Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\Compiler.targets"/>
+<PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_Router_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_OTAU\EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_OTAU\Makefile_EndDevice_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZLLDemo.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><ItemGroup>
+<Compile Include=".\..\Bridge\src\bridgeIdentifyCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeIdentifyCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeLightsDiscovery.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeLightsDiscovery.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeClusters.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeClusters.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeCommissioningCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeCommissioningCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeGroupsCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeGroupsCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeLevelControlCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeLevelControlCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeLinkInfoCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeLinkInfoCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridge.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridge.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeBasicCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeBasicCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeScenesCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeScenesCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeColorControlCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeColorControlCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeConsole.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeConsole.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeOnOffCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeOnOffCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\src\bridgeOtaCluster.c">
+<SubType>compile</SubType>
+<Link>Bridge\src\bridgeOtaCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeIdentifyCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeIdentifyCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeLinkInfoCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeLinkInfoCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeScenesCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeScenesCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeOnOffCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeOnOffCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeBindings.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeBindings.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeColorControlCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeColorControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeClusters.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeClusters.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeLevelControlCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeLevelControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeOtaCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeOtaCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeGroupsCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeGroupsCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeBasicCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeBasicCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeLightsDiscovery.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeLightsDiscovery.h</Link>
+</Compile>
+<Compile Include=".\..\Bridge\include\bridgeCommissioningCluster.h">
+<SubType>compile</SubType>
+<Link>Bridge\include\bridgeCommissioningCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightScenesCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightScenesCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightOnOffCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightOnOffCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\Light.c">
+<SubType>compile</SubType>
+<Link>Light\src\Light.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightCommissioningCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightCommissioningCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightColorSchemesConversion.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightColorSchemesConversion.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightTesting.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightTesting.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightIdentifyCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightIdentifyCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightPdt.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightPdt.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightClusters.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightClusters.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\lightOtaCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\lightOtaCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightBasicCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightBasicCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightGroupsCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightGroupsCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightConsole.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightConsole.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightColorControlCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightColorControlCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\src\LightLevelControlCluster.c">
+<SubType>compile</SubType>
+<Link>Light\src\LightLevelControlCluster.c</Link>
+</Compile>
+<Compile Include=".\..\Light\include\lightOtaCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\lightOtaCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightGroupsCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightGroupsCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightLevelControlCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightLevelControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightIdentifyCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightIdentifyCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightCommissioningCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightCommissioningCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightTesting.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightTesting.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightOnOffCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightOnOffCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightColorControlCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightColorControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightScenesCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightScenesCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightClusters.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightClusters.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightBasicCluster.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightBasicCluster.h</Link>
+</Compile>
+<Compile Include=".\..\Light\include\LightColorSchemesConversion.h">
+<SubType>compile</SubType>
+<Link>Light\include\LightColorSchemesConversion.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteTesting.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteTesting.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteOtaCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteOtaCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteCommissioningCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteCommissioningCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\buttonHandlers.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\buttonHandlers.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteColorControlCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteColorControlCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteFsm.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteFsm.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteClusters.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteClusters.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteOnOffCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteOnOffCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteGroupsCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteGroupsCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteLevelControlCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteLevelControlCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemotePdt.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemotePdt.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteScenesCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteScenesCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteLinkInfoCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteLinkInfoCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemote.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemote.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteBasicCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteBasicCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteConsole.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteConsole.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\src\colorSceneRemoteIdentifyCluster.c">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\src\colorSceneRemoteIdentifyCluster.c</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteScenesCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteScenesCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteGroupsCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteGroupsCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteOtaCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteOtaCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteTesting.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteTesting.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteIdentifyCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteIdentifyCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteLevelControlCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteLevelControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteBasicCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteBasicCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteColorControlCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteColorControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteCommissioningCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteCommissioningCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteLinkInfoCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteLinkInfoCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteClusters.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteClusters.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteOnOffCluster.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteOnOffCluster.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteConsole.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteConsole.h</Link>
+</Compile>
+<Compile Include=".\..\ColorSceneRemote\include\colorSceneRemoteFsm.h">
+<SubType>compile</SubType>
+<Link>ColorSceneRemote\include\colorSceneRemoteFsm.h</Link>
+</Compile>
+<Compile Include=".\..\common\src\commandManager.c">
+<SubType>compile</SubType>
+<Link>common\src\commandManager.c</Link>
+</Compile>
+<Compile Include=".\..\common\src\console.c">
+<SubType>compile</SubType>
+<Link>common\src\console.c</Link>
+</Compile>
+<Compile Include=".\..\common\src\uartManager.c">
+<SubType>compile</SubType>
+<Link>common\src\uartManager.c</Link>
+</Compile>
+<Compile Include=".\..\common\src\N_PacketDistributor.c">
+<SubType>compile</SubType>
+<Link>common\src\N_PacketDistributor.c</Link>
+</Compile>
+<Compile Include=".\..\common\src\errH.c">
+<SubType>compile</SubType>
+<Link>common\src\errH.c</Link>
+</Compile>
+<Compile Include=".\..\common\src\debug.c">
+<SubType>compile</SubType>
+<Link>common\src\debug.c</Link>
+</Compile>
+<Compile Include=".\..\common\src\networkJoining.c">
+<SubType>compile</SubType>
+<Link>common\src\networkJoining.c</Link>
+</Compile>
+<Compile Include=".\..\common\include\commandManager.h">
+<SubType>compile</SubType>
+<Link>common\include\commandManager.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\errH.h">
+<SubType>compile</SubType>
+<Link>common\include\errH.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\N_PacketDistributor.h">
+<SubType>compile</SubType>
+<Link>common\include\N_PacketDistributor.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\N_ZllEndpoint.h">
+<SubType>compile</SubType>
+<Link>common\include\N_ZllEndpoint.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\uartManager.h">
+<SubType>compile</SubType>
+<Link>common\include\uartManager.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\zllDemo.h">
+<SubType>compile</SubType>
+<Link>common\include\zllDemo.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\otauService.h">
+<SubType>compile</SubType>
+<Link>common\include\otauService.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\debug.h">
+<SubType>compile</SubType>
+<Link>common\include\debug.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\console.h">
+<SubType>compile</SubType>
+<Link>common\include\console.h</Link>
+</Compile>
+<Compile Include=".\..\common\include\networkJoining.h">
+<SubType>compile</SubType>
+<Link>common\include\networkJoining.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsMemAccess.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsMemAccess.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsTimer.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsTimer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsMem.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsMem.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsWriteData.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsWriteData.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsCrcService.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsCrcService.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsInit.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsInit.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsEvents.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsEvents.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsDataServer.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsDataServer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsDbg.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsFiles.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsFiles.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsWriteData.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsWriteData.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsTimer.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsTimer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemAccess.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMemAccess.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemAbstract.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMemAbstract.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsCrcService.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsCrcService.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMem.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMem.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemIds.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMemIds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\fakePds.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\src\fakePds.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\pdsDataServer.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\include\pdsDataServer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\pdsMemIds.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\include\pdsMemIds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsTypesConverter.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsTypesConverter.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsDataServer.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsDataServer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsSecurity.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsSecurity.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsInit.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsInit.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_Nv.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\src\S_XNv.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_XNv.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\src\D_XNv-SamR21.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\D_XNv-SamR21.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv-External.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_Nv-External.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_Nv\src\D_Nv.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\D_Nv.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv_Stub.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_Nv_Stub.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\S_Nv.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_Nv\include\D_Nv.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_Nv.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_XNv_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv_Init.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_XNv_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\include\S_XNv_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\S_XNv_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_XNv.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsSecurity.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsSecurity.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsBindings.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsBindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsMemIds.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsMemIds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTypesConverter.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsTypesConverter.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTypes.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsTypes.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysIdleHandler.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysIdleHandler.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysSleep.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysSleep.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysStat.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysStat.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysEventsHandler.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysEventsHandler.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysQueue.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysQueue.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysUtils.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysUtils.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysAssert.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysAssert.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysDuplicateTable.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysDuplicateTable.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysInit.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysInit.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysTimer.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysTimer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysMutex.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysMutex.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\dbg.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\dbg.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysMutex.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysMutex.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\dbg.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\dbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysQueue.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysQueue.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysDuplicateTable.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysDuplicateTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysIdleHandler.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysIdleHandler.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysSleep.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysSleep.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEvents.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysEvents.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysUtils.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysUtils.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEventsHandler.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysEventsHandler.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTimer.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysTimer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysStat.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysStat.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysIncrementMacro.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysIncrementMacro.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysDbg.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysAssert.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysAssert.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysRepeatMacro.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysRepeatMacro.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTypes.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysTypes.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysInit.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysInit.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEndian.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysEndian.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\src\N_Connection_ReconnectHandler.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\src\N_Connection_ReconnectHandler.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionAssociation.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionAssociation.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionCommon.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionCommon.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionEnddevice.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionEnddevice.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionRouter.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\src\N_ConnectionRouter.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionRouter_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionRouter_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionEnddevice_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionEnddevice_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection_ReconnectHandler.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection_ReconnectHandler.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionRouter_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionRouter_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection_Private.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection_Private.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionEnddevice_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_ConnectionEnddevice_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection_Internal.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Connection\include\N_Connection_Internal.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\src\N_EndDeviceRobustness.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\src\N_EndDeviceRobustness.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\include\N_EndDeviceRobustness_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\include\N_EndDeviceRobustness_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\include\N_EndDeviceRobustness.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\include\N_EndDeviceRobustness.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\include\N_EndDeviceRobustness_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\include\N_EndDeviceRobustness_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\include\S_NvInternal.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\S_Nv\include\S_NvInternal.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv_Stack_Ids.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv_Stack_Ids.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Cmi\src\N_Cmi.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Cmi\src\N_Cmi.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Cmi\include\N_Cmi_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Cmi\include\N_Cmi_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Cmi\include\N_Cmi.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Cmi\include\N_Cmi.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Cmi\include\N_Cmi_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Cmi\include\N_Cmi_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_InterPan\src\N_InterPan.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_InterPan\src\N_InterPan.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_InterPan\src\N_InterPanBuffers.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_InterPan\src\N_InterPanBuffers.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPan_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPan_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPan.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPan.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPan_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPan_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPanBuffers.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_InterPan\include\N_InterPanBuffers.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Binding\src\N_Binding.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Binding\src\N_Binding.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Binding\include\N_Binding_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Binding\include\N_Binding_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Binding\include\N_Binding.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Binding\include\N_Binding.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Binding\include\N_Binding_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Binding\include\N_Binding_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Hac\src\N_Hac.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Hac\src\N_Hac.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Hac\include\N_Hac.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Hac\include\N_Hac.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Hac\include\N_Hac_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Hac\include\N_Hac_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_DeviceInfo\src\N_DeviceInfo.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_DeviceInfo\src\N_DeviceInfo.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo_Version.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_DeviceInfo\include\N_DeviceInfo_Version.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Radio\src\N_Radio.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Radio\src\N_Radio.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Radio\include\N_Radio_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Radio\include\N_Radio_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Radio\include\N_Radio_Internal.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Radio\include\N_Radio_Internal.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Radio\include\N_Radio.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Radio\include\N_Radio.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Beacon\include\N_Beacon.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Beacon\include\N_Beacon.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Zdp\src\N_Zdp.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Zdp\src\N_Zdp.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Zdp\include\N_Zdp.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Zdp\include\N_Zdp.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Zdp\include\N_Zdp_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Zdp\include\N_Zdp_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Zcl_Framework\include\N_Zcl_Framework.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Zcl_Framework\include\N_Zcl_Framework.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Zcl_Framework\include\IN_AfIncomingData.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Zcl_Framework\include\IN_AfIncomingData.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Zcl_Framework\include\N_Zcl_Framework_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Zcl_Framework\include\N_Zcl_Framework_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Security\src\N_Security_Calc.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Security\src\N_Security_Calc.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Security\src\N_Security.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Security\src\N_Security.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Security\include\N_Security.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Security\include\N_Security.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Security\include\N_Security_Calc.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Security\include\N_Security_Calc.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_Security\include\N_Security_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_Security\include\N_Security_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_ReconnectHandler\src\N_ReconnectHandler.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_ReconnectHandler\src\N_ReconnectHandler.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_ReconnectHandler\include\N_ReconnectHandler.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_ReconnectHandler\include\N_ReconnectHandler.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_ReconnectHandler\include\N_ReconnectHandler_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_ReconnectHandler\include\N_ReconnectHandler_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_ReconnectHandler\include\N_ReconnectHandler_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_ReconnectHandler\include\N_ReconnectHandler_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_AddressManager\src\N_AddressManager.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_AddressManager\src\N_AddressManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_AddressManager\include\N_AddressManager_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_AddressManager\include\N_AddressManager_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_AddressManager\include\N_AddressManager.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_AddressManager\include\N_AddressManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_AddressManager\include\N_AddressManager_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_AddressManager\include\N_AddressManager_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkTarget\src\N_LinkTarget.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkTarget\src\N_LinkTarget.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkTarget\include\N_LinkTarget_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkTarget\include\N_LinkTarget_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkTarget\include\N_LinkTarget.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkTarget\include\N_LinkTarget.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkTarget\include\N_LinkTarget_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkTarget\include\N_LinkTarget_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkInitiator\src\N_LinkInitiator.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkInitiator\src\N_LinkInitiator.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkInitiator\include\N_LinkInitiator.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkInitiator\include\N_LinkInitiator.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkInitiator\include\N_LinkInitiator_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkInitiator\include\N_LinkInitiator_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\N_LinkInitiator\include\N_LinkInitiator_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\ZLL\N_LinkInitiator\include\N_LinkInitiator_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Fsm\src\N_Fsm.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Fsm\src\N_Fsm.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Fsm\include\N_Fsm.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Fsm\include\N_Fsm.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Log\src\N_Log.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Log\src\N_Log.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Log\include\N_Log.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Log\include\N_Log.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Util\src\N_Util.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Util\src\N_Util.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Util\include\N_Util_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Util\include\N_Util_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Util\include\N_Util.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Util\include\N_Util.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Memory\src\N_Memory-Atmel.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Memory\src\N_Memory-Atmel.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Memory\include\N_Memory.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Memory\include\N_Memory.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Beacon\include\N_Beacon.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Beacon\include\N_Beacon.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Types\include\N_Types.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Types\include\N_Types.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Task\src\N_Task-Internal-Atmel.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Task\src\N_Task-Internal-Atmel.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Task\src\N_Task.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Task\src\N_Task.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task-Internal.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Task\include\N_Task-Internal.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Init\include\N_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Init\include\N_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Address\src\N_Address.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Address\src\N_Address.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Address\include\N_Address.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Address\include\N_Address.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Timer\src\N_Timer-Internal-Atmel.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Timer\src\N_Timer-Internal-Atmel.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Timer\src\N_Timer.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Timer\src\N_Timer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer_Init.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer-Internal.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_Timer\include\N_Timer-Internal.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_ErrH\src\N_ErrH.c">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_ErrH\src\N_ErrH.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\Infrastructure\N_ErrH\include\N_ErrH.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\Infrastructure\N_ErrH\include\N_ErrH.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\devconfig.h">
+<SubType>compile</SubType>
+<Link>Components\ZLLPlatform\devconfig.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdCommand.c">
+<SubType>compile</SubType>
+<Link>Components\OFD\src\ofdCommand.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdM25Driver.c">
+<SubType>compile</SubType>
+<Link>Components\OFD\src\ofdM25Driver.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdAt45dbDriver.c">
+<SubType>compile</SubType>
+<Link>Components\OFD\src\ofdAt45dbDriver.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdSpiSerializer.c">
+<SubType>compile</SubType>
+<Link>Components\OFD\src\ofdSpiSerializer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdFakeDriver.c">
+<SubType>compile</SubType>
+<Link>Components\OFD\src\ofdFakeDriver.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdCrcService.c">
+<SubType>compile</SubType>
+<Link>Components\OFD\src\ofdCrcService.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\OFD\src\ofdAt25Driver.c">
+<SubType>compile</SubType>
+<Link>Components\OFD\src\ofdAt25Driver.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientDiscovery.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauClientDiscovery.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientPdt.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauClientPdt.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclSecurityManager.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclSecurityManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclParser.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclParser.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientDownload.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauClientDownload.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientQuery.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauClientQuery.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclMemoryManager.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclMemoryManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclCommandAnalyzer.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclCommandAnalyzer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientUpgrade.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauClientUpgrade.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClient.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauClient.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauManager.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclAttributes.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclAttributes.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zcl.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zcl.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclKeyEstablishmentCluster.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclKeyEstablishmentCluster.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauServer.c">
+<SubType>compile</SubType>
+<Link>Components\ZCL\src\zclOtauServer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclThermostatUiConfCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclThermostatUiConfCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclThermostatCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclThermostatCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclCommandAnalyzer.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclCommandAnalyzer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclPriceCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclPriceCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOccupancySensingCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclOccupancySensingCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllCommissioningCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllCommissioningCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclTimeCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclTimeCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIlluminanceMeasurementCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclIlluminanceMeasurementCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclHumidityMeasurementCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclHumidityMeasurementCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclFanControlCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclFanControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclAttributes.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclAttributes.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIdentifyCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclIdentifyCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclMessagingCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclMessagingCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclKeyEstablishmentCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclKeyEstablishmentCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclSecurityManager.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclSecurityManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllBasicCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllBasicCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclSmartEnergyTunnelCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclSmartEnergyTunnelCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclScenesCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclScenesCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllIdentifyCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllIdentifyCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllLevelControlCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllLevelControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllOnOffCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllOnOffCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclBasicCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclBasicCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIasACECluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclIasACECluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOtauManager.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclOtauManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllScenesCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllScenesCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclBACnetProtocolTunnelCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclBACnetProtocolTunnelCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOnOffSwitchConfigurationCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclOnOffSwitchConfigurationCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\eccAux.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\eccAux.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\clusters.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\clusters.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOnOffCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclOnOffCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\genericEcc.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\genericEcc.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIasZoneCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclIasZoneCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclLevelControlCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclLevelControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclAlarmsCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclAlarmsCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOTAUCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclOTAUCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOtauClient.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclOtauClient.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclDiagnosticsCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclDiagnosticsCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclTemperatureMeasurementCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclTemperatureMeasurementCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zcl.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zcl.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclInt.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclInt.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclGroupsCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclGroupsCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclSimpleMeteringCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclSimpleMeteringCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclDemandResponseCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclDemandResponseCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclPowerConfigurationCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclPowerConfigurationCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclGenerictunnelCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclGenerictunnelCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllColorControlCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllColorControlCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclZllGroupsCluster.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclZllGroupsCluster.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclParser.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclParser.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclMemoryManager.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclMemoryManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclMem.h">
+<SubType>compile</SubType>
+<Link>Components\ZCL\include\zclMem.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspUsart.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspUsart.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\joyStick.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\joyStick.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspTempSensor.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspTempSensor.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\buttons.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\buttons.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\fakeBSP.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\fakeBSP.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\lcd.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\lcd.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\xyl2rgb.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\xyl2rgb.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\MaxL.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\MaxL.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspUid.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspUid.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspI2c.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspI2c.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspVoltageSensor.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspVoltageSensor.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\hs2xy.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\hs2xy.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\leds.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\leds.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspSpi.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspSpi.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspDbg.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspLeds.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspLeds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\ledsExt.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\ledsExt.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspVoltageSensor.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspVoltageSensor.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspI2c.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspI2c.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspTempSensor.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspTempSensor.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csPersistentMem.c">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\src\csPersistentMem.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csMem.c">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\src\csMem.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\configServer.c">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\src\configServer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csConstTable.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csConstTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csBuffers.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csBuffers.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csVarTable.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csVarTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csMemTable.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csMemTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csSIB.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csSIB.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csDbg.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\csDefaults.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\csDefaults.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\configServer.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\configServer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\ISD\src\isdImageStorage.c">
+<SubType>compile</SubType>
+<Link>Components\ISD\src\isdImageStorage.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\HAL\drivers\ISD\src\isdConsoleTunneling.c">
+<SubType>compile</SubType>
+<Link>Components\ISD\src\isdConsoleTunneling.c</Link>
+</Compile>
+<Compile Include=".\..\configuration.h">
+<SubType>compile</SubType>
+<Link>configuration\configuration.h</Link>
+</Compile></ItemGroup><ItemGroup><Folder Include="Components\ZLLPlatform\Infrastructure\N_ErrH\src"/><Folder Include="Components\ConfigServer\include"/><Folder Include="Components\ZLLPlatform"/><Folder Include="Components\ZLLPlatform\ZLL\N_InterPan\include"/><Folder Include="Components\ISD\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_AddressManager\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Cmi\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_InterPan\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Util\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_Security\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Connection\include"/><Folder Include="Bridge\src"/><Folder Include="Light\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Address\src"/><Folder Include="Components\BSP\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_Hac\include"/><Folder Include="ColorSceneRemote\src"/><Folder Include="Components\ConfigServer\src"/><Folder Include="Components\SystemEnvironment\src"/><Folder Include="Components\PersistDataServer\std\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Task\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_LinkInitiator\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_ErrH\include"/><Folder Include="Components\ZLLPlatform\ZLL\S_Nv\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Radio\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_Beacon\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_LinkTarget\include"/><Folder Include="Components\PersistDataServer\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_LinkInitiator\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_Zdp\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Init\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Zdp\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Memory\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Timer\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_DeviceInfo\src"/><Folder Include="Bridge\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Address\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Memory\src"/><Folder Include="Light\src"/><Folder Include="Components\BSP\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Binding\include"/><Folder Include="Components\SystemEnvironment\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Connection\src"/><Folder Include="Components\ConfigServer\include\private"/><Folder Include="Components\ZLLPlatform\ZLL\N_Zcl_Framework\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Security\src"/><Folder Include="Components\PersistDataServer\std\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_ReconnectHandler\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Binding\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_LinkTarget\src"/><Folder Include="Components\PersistDataServer\wl\nv_components\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Fsm\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Log\include"/><Folder Include="Components\PersistDataServer\wl\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_Hac\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Beacon\include"/><Folder Include="configuration"/><Folder Include="ColorSceneRemote\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_DeviceInfo\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Util\include"/><Folder Include="common\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_Cmi\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_AddressManager\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Types\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_ReconnectHandler\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Task\include"/><Folder Include="Components\ZLLPlatform\ZLL\N_EndDeviceRobustness\src"/><Folder Include="Components\OFD\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Fsm\include"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Log\src"/><Folder Include="Components\ZCL\src"/><Folder Include="Components\ZLLPlatform\Infrastructure\N_Timer\include"/><Folder Include="Components\ZCL\include"/><Folder Include="Components\PersistDataServer\wl\nv_components\include"/><Folder Include="Components\PersistDataServer\include"/><Folder Include="common\src"/><Folder Include="Components\ZLLPlatform\ZLL\N_Radio\include"/><Folder Include="Components\PersistDataServer\wl\include"/></ItemGroup></Project>

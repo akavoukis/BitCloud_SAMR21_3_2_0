@@ -1,0 +1,498 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:10
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciThermostatCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciThermostatCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciThermostatCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciThermostatCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciThermostatCluster.c
+      1          /**************************************************************************//**
+      2            \file ciThermostatCluster.c
+      3          
+      4            \brief
+      5              Combined Interface Thermostat cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              09/09/2014 Unithra.C - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciThermostatCluster.h>
+     24          #include <uartManager.h>
+     25          #include <commandManager.h>
+     26          #include <haClusters.h>
+     27          
+     28          /******************************************************************************
+     29          //                      defines section
+     30          *****************************************************************************/
+     31          
+     32          typedef struct PACK
+     33          {
+     34            ZCL_AttributeId_t id;
+     35            uint8_t type;
+     36            uint8_t properties;
+     37            int16_t value;
+     38          } setPoint_t;
+     39          
+     40          /******************************************************************************
+     41                              Local variables section
+     42          ******************************************************************************/
+     43          static AttibuteReadCallback_t   readAttributeCallback;
+     44          static AttributeWriteCallback_t writeAttributeCallback;
+     45          
+     46          /******************************************************************************
+     47                              Prototypes section
+     48          ******************************************************************************/
+     49          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy);
+     50          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy);
+     51          
+     52          /*****************************************************************************/
+     53          /******************************************************************************
+     54                              Prototypes section
+     55          ******************************************************************************/
+     56          static void ciThermostatReportInd(ZCL_Addressing_t *addressing, uint8_t reportLength, uint8_t *reportPayload);
+     57          static void ciThermostatAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event);
+     58          static void ZCL_ConfigureReportingResp(ZCL_Notify_t *ntfy);
+     59          
+     60          /******************************************************************************
+     61                              Implementation section
+     62          ******************************************************************************/
+     63          /**************************************************************************//**
+     64          \brief Initializes Thermostat cluster
+     65          ******************************************************************************/
+     66          void thermostatClusterInit(void)
+     67          {
+     68            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, THERMOSTAT_CLUSTER_ID, ZCL_CLUSTER_SIDE_CLIENT);
+     69          
+     70            if (cluster)
+     71            {
+     72              cluster->ZCL_ReportInd = ciThermostatReportInd;
+     73              cluster->ZCL_AttributeEventInd = ciThermostatAttrEventInd;
+     74            }
+     75          }
+     76          
+     77          /**************************************************************************//**
+     78          \brief Sends Read Attribute command unicastly
+     79          
+     80          \param[in] mode - address mode;
+     81          \param[in] addr - short address of destination node;
+     82          \param[in] ep   - destination endpoint;
+     83          \param[in] attr - attribute id;
+     84          \param[in] cb   - callback function
+     85          ******************************************************************************/
+     86          void thermostatReadAttribute(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep,
+     87            uint16_t attr, AttibuteReadCallback_t cb)
+     88          {
+     89            ZCL_Request_t *req;
+     90            ZCL_NextElement_t element;
+     91            ZCL_ReadAttributeReq_t readAttrReqElement;
+     92          
+     93            if (!(req = getFreeCommand()))
+     94              return;
+     95          
+     96            readAttributeCallback = cb;
+     97          
+     98            readAttrReqElement.id = attr;
+     99          
+    100            element.payloadLength = 0;
+    101            element.payload = req->requestPayload;
+    102            element.id = ZCL_READ_ATTRIBUTES_COMMAND_ID;
+    103            element.content = &readAttrReqElement;
+    104            ZCL_PutNextElement(&element);
+    105          
+    106            fillCommandRequest(req, ZCL_READ_ATTRIBUTES_COMMAND_ID, element.payloadLength);
+    107            fillDstAddressing(&req->dstAddressing, mode, addr, ep, THERMOSTAT_CLUSTER_ID);
+    108            req->ZCL_Notify = ZCL_ReadAttributeResp;
+    109          
+    110            commandManagerSendAttribute(req);
+    111          }
+    112          
+    113          /**************************************************************************//**
+    114          \brief Sends Write Attribute command unicastly
+    115          
+    116          \param[in] mode - address mode;
+    117          \param[in] addr - short address of destination node;
+    118          \param[in] attr - attribute id;
+    119          \param[in] ep   - destination endpoint;
+    120          \param[in] type - attribute type;
+    121          \param[in] cb   - callback function;
+    122          \param[in] data - the pointer to memory with value to be written;
+    123          \param[in] size - size of data parameter in octets
+    124          ******************************************************************************/
+    125          void thermostatWriteAttribute(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    126            uint16_t attr, uint8_t type, AttributeWriteCallback_t cb, void *data, uint8_t size)
+    127          {
+    128            ZCL_Request_t *req;
+    129            ZCL_WriteAttributeReq_t writeAttrReq;
+    130          
+    131            if (!(req = getFreeCommand()))
+    132              return;
+    133          
+    134            writeAttributeCallback = cb;
+    135          
+    136            writeAttrReq.id = attr;
+    137            writeAttrReq.type = type;
+    138            memcpy(req->requestPayload, (uint8_t *)&writeAttrReq, sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    139            memcpy(req->requestPayload + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t), (uint8_t *)data, size);
+    140          
+    141            fillCommandRequest(req, ZCL_WRITE_ATTRIBUTES_COMMAND_ID, size + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    142            fillDstAddressing(&req->dstAddressing, mode, addr, ep, THERMOSTAT_CLUSTER_ID);
+    143            req->ZCL_Notify = ZCL_WriteAttributeResp;
+    144          
+    145            commandManagerSendAttribute(req);
+    146          }
+    147          
+    148          /**************************************************************************//**
+    149          \brief Sends the Configure Reporting for Thermostat cluster
+    150          
+    151          \param[in] mode     - address mode;
+    152          \param[in] addr     - short address of destination node;
+    153          \param[in] ep       - destination endpoint;
+    154          \param[in] attrId   - attr id;
+    155          \param[in] attrType - attr id;
+    156          \param[in] min      - the minimum reporting interval;
+    157          \param[in] max      - the maximum reporting interval
+    158          ******************************************************************************/
+    159          void thermostatConfigureReporting(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    160            ZCL_AttributeId_t attrId, uint8_t attrType, ZCL_ReportTime_t min, ZCL_ReportTime_t max)
+    161          {
+    162            ZCL_Request_t *req;
+    163            ZCL_NextElement_t element;
+    164            ZCL_ConfigureReportingReq_t configureReportingReq;
+    165          
+    166            if (!(req = getFreeCommand()))
+    167              return;
+    168          
+    169            configureReportingReq.direction            = ZCL_FRAME_CONTROL_DIRECTION_CLIENT_TO_SERVER;
+    170            configureReportingReq.attributeId          = attrId;
+    171            configureReportingReq.attributeType        = attrType;
+    172            configureReportingReq.minReportingInterval = min;
+    173            configureReportingReq.maxReportingInterval = max;
+    174          
+    175            element.payloadLength = 0;
+    176            element.payload = req->requestPayload;
+    177            element.id = ZCL_CONFIGURE_REPORTING_COMMAND_ID;
+    178            element.content = &configureReportingReq;
+    179            ZCL_PutNextElement(&element);
+    180          
+    181            fillCommandRequest(req, ZCL_CONFIGURE_REPORTING_COMMAND_ID, element.payloadLength);
+    182            fillDstAddressing(&req->dstAddressing, mode, addr, ep, THERMOSTAT_CLUSTER_ID);
+    183            req->ZCL_Notify = ZCL_ConfigureReportingResp;
+    184          
+    185            commandManagerSendAttribute(req);
+    186          }
+    187          
+    188          /**************************************************************************//**
+    189          \brief Report attribute indication handler
+    190          
+    191          \param[in] addressing - pointer to addressing information;
+    192          \param[in] reportLength - data payload length;
+    193          \param[in] reportPayload - data pointer
+    194          ******************************************************************************/
+    195          static void ciThermostatReportInd(ZCL_Addressing_t *addressing, uint8_t reportLength, uint8_t *reportPayload)
+    196          {
+    197            ZCL_Report_t *rep = (ZCL_Report_t *)reportPayload;
+    198            int16_t reportValue;
+    199            if(rep->id == ZCL_THERMOSTAT_CLUSTER_LOCAL_TEMPERATURE_SERVER_ATTRIBUTE_ID)
+    200            {
+    201              int16_t reportValue;
+    202              memcpy(&reportValue, &rep->value[0], sizeof(int16_t));  
+    203              
+    204              LOG_STRING(reportAttrIndStr, "<-Local Temperature Report: %d.%dC\r\n");
+    205              appSnprintf(reportAttrIndStr, (int)(reportValue/THERMOSTAT_LOCAL_TEMPERATURE_SCALE),(int)(reportValue%THERMOSTAT_LOCAL_TEMPERATURE_SCALE));
+    206            }
+    207            else if(rep->id == ZCL_THERMOSTAT_CLUSTER_OCCUPIED_COOLING_SETPOINT_SERVER_ATTRIBUTE_ID)
+    208            {
+    209              setPoint_t *payload = (setPoint_t*)rep;
+    210              
+    211              LOG_STRING(reportAttrIndStr, "<-Setpoints changed on Thermostat:\r\n");
+    212              appSnprintf(reportAttrIndStr);
+    213              memcpy(&reportValue, &rep->value[1], sizeof(int16_t));
+    214              LOG_STRING(modeStr, "#cool setpoint:%d.%d\r\n");
+    215              appSnprintf(modeStr, (int)(reportValue/THERMOSTAT_LOCAL_TEMPERATURE_SCALE),(int)(reportValue%THERMOSTAT_LOCAL_TEMPERATURE_SCALE));
+    216              payload++;
+    217              LOG_STRING(amtStr, "#heat setpoint: %d.%d\r\n");
+    218              memcpy(&reportValue, &payload->value, sizeof(int16_t));
+    219              appSnprintf(amtStr, (int)(reportValue/THERMOSTAT_LOCAL_TEMPERATURE_SCALE),(int)(reportValue%THERMOSTAT_LOCAL_TEMPERATURE_SCALE));
+    220            }
+    221          
+    222            (void)addressing, (void)reportLength;
+    223          }
+    224          
+    225          /**************************************************************************//**
+    226          \brief Attribute Event indication handler(to indicate when attr values have
+    227                  read or written)
+    228          
+    229          \param[in] addressing - pointer to addressing information;
+    230          \param[in] reportLength - data payload length;
+    231          \param[in] reportPayload - data pointer
+    232          ******************************************************************************/
+    233          static void ciThermostatAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event)
+    234          {
+    235          #if (APP_ENABLE_CONSOLE == 1)
+    236            LOG_STRING(AttrEventIndStr, "<-Attr ID 0x%x event 0x%x\r\n");
+    237            appSnprintf(AttrEventIndStr, attributeId, event);
+    238          #else
+    239            (void)attributeId;
+    240            (void)event;
+    241          #endif
+    242            (void)addressing;
+    243          }
+    244          
+    245          /**************************************************************************//**
+    246          \brief Indication of read attribute response
+    247          
+    248          \param[in] resp - pointer to response
+    249          ******************************************************************************/
+    250          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy)
+    251          {
+    252            ZCL_NextElement_t element;
+    253            ZCL_ReadAttributeResp_t *readAttributeResp;
+    254            int16_t attributeValue;
+    255          
+    256            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    257            {
+    258              element.id            = ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    259              element.payloadLength = ntfy->responseLength;
+    260              element.payload       = ntfy->responsePayload;
+    261              element.content       = NULL;
+    262          
+    263              ZCL_GetNextElement(&element);
+    264              readAttributeResp = (ZCL_ReadAttributeResp_t *) element.content;
+    265          
+    266              if (readAttributeCallback)
+    267                readAttributeCallback((void *)&readAttributeResp->value[0]);
+    268              
+    269              memcpy(&attributeValue, &readAttributeResp->value[0], sizeof(uint16_t));
+    270              LOG_STRING(readAttrSuccessStr, "<-Read Thermostat attribute (0x%x) response: success  t = %d\r\n");
+    271              appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id, attributeValue);
+    272            }
+    273            else
+    274            {
+    275              LOG_STRING(readAttrFailStr, " +Read Thermostat attribute failed: status = 0x%2x\r\n");
+    276              appSnprintf(readAttrFailStr, (unsigned)ntfy->status);
+    277            }
+    278          }
+    279          
+    280          /**************************************************************************//**
+    281          \brief Indication of write attribute response
+    282          
+    283          \param[in] resp - pointer to response
+    284          ******************************************************************************/
+    285          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy)
+    286          {
+    287            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    288            {
+    289              if (writeAttributeCallback)
+    290                writeAttributeCallback();
+    291          
+    292              LOG_STRING(writeAttrSuccessStr, " <-Write Thermostat attribute response: success\r\n");
+    293              appSnprintf(writeAttrSuccessStr);
+    294            }
+    295            else
+    296            {
+    297              LOG_STRING(writeAttrFailStrTwo, " +Write Thermostat attribute failed: status = 0x%x\r\n");
+    298              appSnprintf(writeAttrFailStrTwo, (unsigned)ntfy->status);
+    299            }
+    300          }
+    301          
+    302          /**************************************************************************//**
+    303          \brief Indication of configure reporting response
+    304          
+    305          \param[in] resp - pointer to response
+    306          ******************************************************************************/
+    307          static void ZCL_ConfigureReportingResp(ZCL_Notify_t *ntfy)
+    308          {
+    309            (void)ntfy;
+    310          }
+    311          
+    312          /**************************************************************************//**
+    313          \brief Setpoint Raise/Lower command payload fillup
+    314          
+    315          \param[out] payload - pointer to command structure;
+    316          \param[in] group - group id;
+    317          \param[in] scene - scene id
+    318          ******************************************************************************/
+    319          static void ciFillsendSetPointRaiseLowerPayload(ZCL_SetpointRaiseLower_t *payload, int8_t setPointMode, int8_t amount)
+    320          {
+    321            payload->mode = setPointMode;
+    322            payload->amount = amount;
+    323          }
+    324          
+    325          /**************************************************************************//**
+    326            \brief Sends Setpoint Raise/Lower command
+    327            \param[in] mode - address mode;
+    328            \param[in] addr - short address of destination node;
+    329            \param[in] ep   - destination endpoint;
+    330            \param mode - set points to be adjusted
+    331            \param amount - amount of increase/decrease to setpoint value
+    332                  (in steps of 0.1°C.)
+    333            \return none
+    334          ******************************************************************************/
+    335          void ciSendSetpointRaiseLowerCommand(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    336            int8_t setPointMode, int8_t amount)
+    337          {
+    338            ZCL_Request_t *req;
+    339          
+    340            if (!(req = getFreeCommand()))
+    341              return;
+    342          
+    343            fillCommandRequest(req, ZCL_THERMOSTAT_CLUSTER_SETPOINT_RAISE_LOWER_COMMAND_ID, sizeof(ZCL_SetpointRaiseLower_t));
+    344            ciFillsendSetPointRaiseLowerPayload((ZCL_SetpointRaiseLower_t *)req->requestPayload, setPointMode, amount);
+    345            fillDstAddressing(&req->dstAddressing, mode, addr, ep, THERMOSTAT_CLUSTER_ID);
+    346            commandManagerSendCommand(req);
+    347          }
+    348          
+    349          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    350          
+    351          // eof ciThermostatCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

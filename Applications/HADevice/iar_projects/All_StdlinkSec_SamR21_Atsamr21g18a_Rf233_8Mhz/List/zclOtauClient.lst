@@ -1,0 +1,1377 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:19
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClient.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClient.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclOtauClient.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclOtauClient.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClient.c
+      1          /************************************************************************//**
+      2            \file zclOtauClient.c
+      3          
+      4            \brief
+      5              The file implements the OTAU client initialization and common part
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              19.01.10 A. Khromykh - Created.
+     17              14.10.14 Karthik.P_u - Modified.
+     18            Last change:
+     19              $Id: zclOtauClient.c 27608 2015-01-23 16:39:58Z srinivasan.ganapathy $
+     20          ******************************************************************************/
+     21          #if (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+     22          
+     23          /******************************************************************************
+     24                             Includes section
+     25          ******************************************************************************/
+     26          #include <zclOtauManager.h>
+     27          #include <zclOtauClient.h>
+     28          
+     29          /******************************************************************************
+     30                             External variables section
+     31          ******************************************************************************/
+     32          #if APP_SUPPORT_OTAU_RECOVERY == 1
+     33          extern ExtAddr_t otauServerExtAddr;
+     34          extern uint32_t otauImageSize, otauImageVersion;
+     35          extern uint32_t otauNextOffset;
+     36          extern uint8_t otauRunningChecksum;
+     37          extern uint8_t otauInternalAddrStatus;
+     38          extern uint32_t otauInternalLength;
+     39          extern uint32_t otauFlashWriteOffset;
+     40          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+     41          
+     42          extern ZCL_Status_t otauUpgradeEndStatus;
+     43          extern ZclOtauDiscoveryResult_t *actvServer;
+     44          extern ZclOtauImageNotifyParams_t imgNtfyServer;
+     45          
+     46          /******************************************************************************
+     47                                    Prototypes section
+     48          ******************************************************************************/
+     49          
+     50          /******************************************************************************
+     51                                  Static variables section
+     52          ******************************************************************************/
+     53          static uint32_t writeSkipSecStartEnd[OTAU_FLASH_WRITE_SKIP_WORDS_LENGTH];
+     54          static HAL_AppTimer_t zclEepromBusyTimer =
+     55          {
+     56            .interval = 10,
+     57            .mode     = TIMER_ONE_SHOT_MODE
+     58          };
+     59          
+     60          /*******************************************************************************
+     61                                  Global variables section
+     62          *******************************************************************************/
+     63          // OTAU Cluster Attributes
+     64          ZCL_OtauClusterClientAttributes_t otauClientAttributes =
+     65          {
+     66            DEFINE_OTAU_CLIENT_ATTRIBUTES
+     67          };
+     68          
+     69          // OTAU Cluster Commands
+     70          ZCL_OtauClusterCommands_t otauClientCommands =
+     71          {
+     72            OTAU_COMMANDS(imageNotifyInd, NULL, queryNextImageRespInd, NULL, NULL, \
+     73                         imageBlockRespInd, NULL, upgradeEndRespInd)
+     74          };
+     75          
+     76          DECLARE_QUEUE(zclOtauServerDiscoveryQueue);
+     77          ExtAddr_t otauUnauthorizedServers[OTAU_MAX_UNAUTHORIZED_SERVERS];
+     78          uint8_t retryCount, otauMaxRetryCount;
+     79          
+     80          #if (USE_IMAGE_SECURITY == 1)
+     81          void (*configureKeyDoneCallback)(void);
+     82          const ZCL_OtauImageKey_t otauImageKey = {1, IMAGE_KEY, IMAGE_IV};
+     83          #endif /* #if (USE_IMAGE_SECURITY == 1) */
+     84          
+     85          /******************************************************************************
+     86                             External variables section
+     87          ******************************************************************************/
+     88          ZclOtauClientStateMachine_t stateMachine = OTAU_STOPPED_STATE;
+     89          ExtAddr_t serverExtAddr = COMMON_SERVER_EXT_ADDRESS;
+     90          uint8_t eepromInNewImage;
+     91          OtauImageAuxVar_t recoveryLoading;
+     92          
+     93          /*******************************************************************************
+     94                                  Static variables section
+     95          *******************************************************************************/
+     96          static uint8_t ofdWriteRetry;
+     97          
+     98          /******************************************************************************
+     99                             Implementation section
+    100          ******************************************************************************/
+    101          
+    102          /***************************************************************************//**
+    103          \brief Checks whether the given IEEE or extended address is valid
+    104          
+    105          \param[in] *addr - pointer to the IEEE or extended address
+    106          
+    107          \return 'true' if address is valid otherwise 'false'
+    108          ******************************************************************************/
+    109          bool isExtAddrValid(ExtAddr_t addr)
+    110          {
+    111            ExtAddr_t zeroExtAddr = ZERO_SERVER_EXT_ADDRESS;
+    112            ExtAddr_t commonExtAddr = COMMON_SERVER_EXT_ADDRESS;
+    113          
+    114            if ((IS_EQ_EXT_ADDR(addr, zeroExtAddr)) || (IS_EQ_EXT_ADDR(addr, commonExtAddr)))
+    115            {
+    116              return false;
+    117            }
+    118          
+    119            return true;
+    120          }
+    121          
+    122          /***************************************************************************//**
+    123          \brief Start otau client service
+    124          ******************************************************************************/
+    125          void zclStartOtauClient(void)
+    126          {
+    127            ZclOtauMem_t *otauMem = zclGetOtauMem();
+    128            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    129            ExtAddr_t zeroAddr = ZERO_SERVER_EXT_ADDRESS;
+    130          
+    131            if (!OTAU_CHECK_STATE(stateMachine, OTAU_STOPPED_STATE))
+    132            {
+    133              zclRaiseCustomMessage(OTAU_DOUBLE_START);
+    134              return;
+    135            }
+    136            
+    137            CS_ReadParameter(CS_ZCL_OTAU_MAX_RETRY_COUNT_ID, &otauMaxRetryCount);
+    138            retryCount = ofdWriteRetry = otauMaxRetryCount;
+    139          
+    140            for (uint8_t i = 0; i < OTAU_MAX_UNAUTHORIZED_SERVERS; i++)
+    141            {
+    142              COPY_EXT_ADDR(otauUnauthorizedServers[i], zeroAddr);
+    143            }
+    144          
+    145            isOtauBusy = false;
+    146            otauMem->isOtauStopTriggered = false;
+    147            clientMem->firstStart = OTAU_FIRST_CLIENT_START;
+    148          
+    149            otauClientAttributes.minimumBlockRequestDelay.value = 0ul;
+    150            otauClientAttributes.imageUpgradeStatus.value = OTAU_NORMAL;
+    151          
+    152            OTAU_SET_STATE(stateMachine, OTAU_INIT_OFD_STATE);
+    153            OFD_Open(otauOpenOfdCallback);
+    154          }
+    155          
+    156          /***************************************************************************//**
+    157          \brief Stop otau client service
+    158          ******************************************************************************/
+    159          void zclStopOtauClient(void)
+    160          {
+    161            ZclOtauMem_t *otauMem = zclGetOtauMem();
+    162            OTAU_SET_STATE(stateMachine, OTAU_STOPPED_STATE);
+    163          
+    164            if (otauMem->isOtauStopTriggered)
+    165            {
+    166              return;
+    167            }
+    168          
+    169            otauClientAttributes.minimumBlockRequestDelay.value = 0;
+    170            otauMem->isOtauStopTriggered = true;
+    171            isOtauBusy = false;
+    172            otauStopGenericTimer();
+    173            OFD_Close();
+    174          }
+    175          
+    176          /**************************************************************************//**
+    177          \brief Counts crc current memory area. CRC-8. Polynom 0x31    x^8 + x^5 + x^4 + 1.
+    178          
+    179          \param[in]
+    180            crc - first crc state
+    181          \param[in]
+    182            pcBlock - pointer to the memory for crc counting
+    183          \param[in]
+    184            length - memory size
+    185          
+    186          \return
+    187            current area crc
+    188          ******************************************************************************/
+    189          uint8_t otauCalcCrc(uint8_t crc, uint8_t *pcBlock, uint8_t length)
+    190          {
+    191            uint8_t i;
+    192          
+    193            while (length--)
+    194            {
+    195              crc ^= *pcBlock++;
+    196          
+    197              for (i = 0; i < 8; i++)
+    198                crc = crc & 0x80 ? (crc << 1) ^ 0x31 : crc << 1;
+    199            }
+    200          
+    201            return crc;
+    202          }
+    203          
+    204          /***************************************************************************//**
+    205          \brief Callback from flash driver about openning
+    206          
+    207          \param[in] status - status of action
+    208          ******************************************************************************/
+    209          void otauOpenOfdCallback(OFD_Status_t status)
+    210          {
+    211            if (!OTAU_CHECK_STATE(stateMachine, OTAU_INIT_OFD_STATE))
+    212            {
+    213              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_OFD_OPEN_CALLBACK);
+    214              return;
+    215            }
+    216          
+    217            if (OFD_STATUS_SUCCESS != status)
+    218            {
+    219              OTAU_SET_STATE(stateMachine, OTAU_STOPPED_STATE);
+    220              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    221              {
+    222                otauWriteImgNtfyBusyStatus(false);
+    223              }
+    224          
+    225              zclStopOtauClient();
+    226              return;
+    227            }
+    228          
+    229            CS_ReadParameter(CS_ZCL_OTAU_DEFAULT_UPGRADE_SERVER_IEEE_ADDRESS_ID, &serverExtAddr);
+    230          
+    231          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    232            if (PDS_IsAbleToRestore(OTAU_PDT_MEMORY_MEM_ID))
+    233            {
+    234              PDS_Restore(OTAU_PDT_MEMORY_MEM_ID);
+    235          
+    236              if (isExtAddrValid(otauServerExtAddr))
+    237              {
+    238                COPY_EXT_ADDR(serverExtAddr, otauServerExtAddr);
+    239              }
+    240            }
+    241            else
+    242            {
+    243              otauClearPdsParams();
+    244            }
+    245          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+    246          
+    247            zclClearOtauClientMemory();
+    248          
+    249            // process pending img notify(if from another server or for different file)
+    250            if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    251            {
+    252              OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    253              otauIeeeAddrReq(&imgNtfyServer.addr);
+    254            }
+    255            else
+    256            {
+    257              OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    258              otauStartDiscovery();
+    259            }
+    260          }
+    261          
+    262          /***************************************************************************//**
+    263          \brief Start write image part
+    264          ******************************************************************************/
+    265          void otauStartWrite(void)
+    266          {
+    267            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    268          
+    269            if ((!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE)) && \
+    270                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE)) && \
+    271                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_MISSED_BLOCKS_STATE)) && \
+    272                (!OTAU_CHECK_STATE(stateMachine, OTAU_WAIT_TO_UPGRADE_STATE)))
+    273            {
+    274              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_OFD_WRITE);
+    275              return;
+    276            }
+    277          
+    278            OFD_Write(OFD_POSITION_1, &clientMem->memParam, otauWriteCallback);
+    279          }
+    280          
+    281          /***************************************************************************//**
+    282          \brief Start flush last image part
+    283          ******************************************************************************/
+    284          void otauStartFlush(void)
+    285          {
+    286            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    287          
+    288            OFD_FlushAndCheckCrc(OFD_POSITION_1, clientMem->otauParam.imageBlockData, otauFlushCallback);
+    289          }
+    290          
+    291          /***************************************************************************//**
+    292          \brief Callback from flash driver about end of image switching
+    293          
+    294          \param[in] status - status of action;
+    295          ******************************************************************************/
+    296          void otauSwitchCallback(OFD_Status_t status)
+    297          {
+    298            switch (status)
+    299            {
+    300              case OFD_STATUS_SUCCESS:
+    301                zclRaiseCustomMessage(OTAU_DOWNLOAD_FINISHED);
+    302                // change ugrade status
+    303                otauClientAttributes.imageUpgradeStatus.value = OTAU_DOWNLOAD_COMPLETE;
+    304                // send upgrade end request with SUCCESS
+    305          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    306                PDS_Store(OTAU_PDT_MEMORY_MEM_ID);
+    307          #endif
+    308                retryCount = otauMaxRetryCount;
+    309                otauUpgradeEndStatus = ZCL_SUCCESS_STATUS;
+    310                otauStartGenericTimer(UPGRADE_END_REQ_QUICK_TIMEOUT, otauUpgradeEndReq);
+    311                break;
+    312              case OFD_STATUS_SERIAL_BUSY:
+    313              case OFD_SERIAL_INTERFACE_BUSY:
+    314                otauStartGenericTimer(REPOST_OFD_ACTION, otauStartSwitch);
+    315                break;
+    316              default:
+    317                // reset upgrade status
+    318                SYS_E_ASSERT_ERROR(false, ZCL_OTAU_DOWNLOAD_ABORTED);
+    319                otauClientAttributes.imageUpgradeStatus.value = OTAU_NORMAL;
+    320                retryCount = otauMaxRetryCount;
+    321                otauUpgradeEndStatus = ZCL_ABORT_STATUS;
+    322                otauStartGenericTimer(UPGRADE_END_REQ_QUICK_TIMEOUT, otauUpgradeEndReq);
+    323                zclRaiseCustomMessage(OTAU_OFD_DRIVER_ERROR);
+    324                break;
+    325            }
+    326          }
+    327          
+    328          /***************************************************************************//**
+    329          \brief Start switch between images
+    330          ******************************************************************************/
+    331          void otauStartSwitch(void)
+    332          {
+    333            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    334          
+    335            otauWriteSkipSectionToEeprom();
+    336          
+    337            OFD_SwitchToNewImage(OFD_POSITION_2, OFD_POSITION_1, clientMem->otauParam.imageBlockData, otauSwitchCallback);
+    338          }
+    339          
+    340          /***************************************************************************//**
+    341          \brief Callback from flash driver about end of data flushing
+    342          
+    343          \param[in] status - status of action;
+    344          \param[in] imageInfo - pointer to image info
+    345          ******************************************************************************/
+    346          void otauFlushCallback(OFD_Status_t status, OFD_ImageInfo_t *imageInfo)
+    347          {
+    348            (void)imageInfo;
+    349          
+    350            switch (status)
+    351            {
+    352              case OFD_STATUS_SUCCESS:
+    353                otauStartGenericTimer(REPOST_OFD_ACTION, otauStartSwitch);
+    354                break;
+    355              case OFD_STATUS_SERIAL_BUSY:
+    356              case OFD_SERIAL_INTERFACE_BUSY:
+    357                // try to flush again
+    358                otauStartGenericTimer(REPOST_OFD_ACTION, otauStartFlush);
+    359                break;
+    360              default:
+    361                // reset upgrade status
+    362                SYS_E_ASSERT_ERROR(false, ZCL_OTAU_DOWNLOAD_ABORTED);
+    363                otauClientAttributes.imageUpgradeStatus.value = OTAU_NORMAL;
+    364                retryCount = otauMaxRetryCount;
+    365                // send upgrade end request with INVALID IMAGE status. When default respose will be received
+    366                // server descovery process will start
+    367                otauUpgradeEndStatus = ZCL_ABORT_STATUS;
+    368                otauStartGenericTimer(UPGRADE_END_REQ_QUICK_TIMEOUT, otauUpgradeEndReq);
+    369                break;
+    370            }
+    371          }
+    372          
+    373          /***************************************************************************//**
+    374          \brief Writes the received image to external flash
+    375          ******************************************************************************/
+    376          void otauProcessSuccessfullWritingToFlash(void)
+    377          {
+    378            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    379            OtauImageAuxVar_t *tmpAuxParam = &clientMem->imageAuxParam;
+    380            OFD_MemoryAccessParam_t *tmpMemParam = &clientMem->memParam;
+    381          
+    382          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    383            bool pageRequestUsed;
+    384            CS_ReadParameter(CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE_ID, &pageRequestUsed);
+    385          #endif
+    386          
+    387            if (OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE) || \
+    388                OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE) || \
+    389                OTAU_CHECK_STATE(stateMachine, OTAU_GET_MISSED_BLOCKS_STATE))
+    390            {
+    391          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    392              otauRunningChecksum = otauCalcCrc(otauRunningChecksum, tmpMemParam->data, tmpMemParam->length);
+    393          #endif
+    394          
+    395              tmpMemParam->offset += tmpMemParam->length;
+    396          
+    397          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    398              otauFlashWriteOffset = tmpMemParam->offset;
+    399          #endif
+    400          
+    401              if (0 == tmpAuxParam->imageInternalLength)
+    402              {
+    403                if (IMAGE_CRC_SIZE == tmpAuxParam->imageRemainder)
+    404                { // dowload complete
+    405                  OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_UPGRADE_STATE);
+    406                  otauStartGenericTimer(REPOST_OFD_ACTION, otauStartFlush);
+    407                  return;
+    408                }
+    409                else
+    410                { // download continue with next subimage
+    411                  tmpAuxParam->internalAddressStatus = 0;
+    412                  tmpAuxParam->currentDataSize = AUXILIARY_STRUCTURE_IS_FULL;
+    413          
+    414          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    415                  if (pageRequestUsed)
+    416                    clientMem->blockRequest = OTAU_BLOCK_REQUEST_USAGE;
+    417          #endif
+    418          
+    419                }
+    420              }
+    421              else
+    422              {
+    423                otauCountActuallyDataSize();
+    424              }
+    425          
+    426          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    427              PDS_Store(OTAU_PDT_MEMORY_MEM_ID);
+    428          #endif
+    429          
+    430              otauStartDownload();
+    431              return;
+    432            }
+    433          }
+    434          
+    435          /***************************************************************************//**
+    436          \brief Callback from flash driver about end of data writing
+    437          
+    438          \param[in] status - status of action;
+    439          ******************************************************************************/
+    440          void otauWriteCallback(OFD_Status_t status)
+    441          {
+    442            if ((!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE)) && \
+    443                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE)) && \
+    444                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_MISSED_BLOCKS_STATE)) && \
+    445                (!OTAU_CHECK_STATE(stateMachine, OTAU_WAIT_TO_UPGRADE_STATE)))
+    446            {
+    447              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_OFD_WRITE_CALLBACK);
+    448              return;
+    449            }
+    450          
+    451            switch(status)
+    452            {
+    453              case OFD_STATUS_SERIAL_BUSY:
+    454              case OFD_SERIAL_INTERFACE_BUSY:
+    455                otauStartGenericTimer(REPOST_OFD_ACTION, otauStartWrite);
+    456                break;
+    457          
+    458              case OFD_STATUS_SUCCESS:
+    459                ofdWriteRetry = otauMaxRetryCount;
+    460                // calculate Running CRC and write it to PDS here
+    461                otauProcessSuccessfullWritingToFlash();
+    462                break;
+    463          
+    464              default:
+    465                if (ofdWriteRetry--)
+    466                {
+    467                  otauStartGenericTimer(REPOST_OFD_ACTION, otauStartWrite);
+    468                }
+    469                else
+    470                {
+    471                  SYS_E_ASSERT_ERROR(false, ZCL_OTAU_DOWNLOAD_ABORTED);
+    472                  ofdWriteRetry = otauMaxRetryCount;
+    473                  retryCount = otauMaxRetryCount;
+    474                  zclRaiseCustomMessage(OTAU_OFD_DRIVER_ERROR);
+    475                  otauClientAttributes.imageUpgradeStatus.value       = OTAU_NORMAL;
+    476                  otauClientAttributes.minimumBlockRequestDelay.value = 0;
+    477                  otauUpgradeEndStatus = ZCL_ABORT_STATUS;
+    478                  otauStartGenericTimer(UPGRADE_END_REQ_QUICK_TIMEOUT, otauUpgradeEndReq);
+    479                  OTAU_SET_STATE(stateMachine, OTAU_STOPPED_STATE);
+    480                }
+    481                break;
+    482            }
+    483          }
+    484          /***************************************************************************//**
+    485          \brief Start erase image area
+    486          ******************************************************************************/
+    487          void otauStartErase(void)
+    488          {
+    489            if ((!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE)) && \
+    490                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE)) && \
+    491                (!OTAU_CHECK_STATE(stateMachine, OTAU_WAIT_TO_UPGRADE_STATE)))
+    492            {
+    493              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_OFD_ERASE);
+    494              return;
+    495            }
+    496          
+    497            OFD_EraseImage(OFD_POSITION_1, otauEraseCallback);
+    498          }
+    499          
+    500          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    501          /***************************************************************************//**
+    502          \brief Clears all PDS parameters related to OTAU
+    503          ******************************************************************************/
+    504          void otauClearPdsParams(void)
+    505          {
+    506            ExtAddr_t zeroAddr = ZERO_SERVER_EXT_ADDRESS;
+    507          
+    508            otauRunningChecksum     = 0xFF;
+    509            otauNextOffset          = 0;
+    510            otauImageVersion        = 0;
+    511            otauImageSize           = 0;
+    512            otauInternalAddrStatus  = 0;
+    513            otauInternalLength      = 0;
+    514            otauFlashWriteOffset    = 0;
+    515            COPY_EXT_ADDR(otauServerExtAddr, zeroAddr);
+    516          
+    517            PDS_Store(OTAU_PDT_MEMORY_MEM_ID);
+    518          }
+    519          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+    520          
+    521          /***************************************************************************//**
+    522          \brief Callback from flash driver about end of flash erasing
+    523          
+    524          \param[in] status - status of action;
+    525          ******************************************************************************/
+    526          void otauEraseCallback(OFD_Status_t status)
+    527          {
+    528            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    529          
+    530            if ((!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE)) && \
+    531                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE)) && \
+    532                (!OTAU_CHECK_STATE(stateMachine, OTAU_WAIT_TO_UPGRADE_STATE)))
+    533            {
+    534              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_OFD_ERASE_CALLBACK);
+    535              return;
+    536            }
+    537          
+    538            switch(status)
+    539            {
+    540              case OFD_STATUS_SUCCESS:
+    541                if (OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE) || \
+    542                    OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE))
+    543                {
+    544                  clientMem->imageAuxParam.currentFileOffset     = sizeof(ZCL_OtauSubElementHeader_t) + sizeof(ZCL_OtauUpgradeImageHeader_t);
+    545                  clientMem->imageAuxParam.currentDataSize       = AUXILIARY_STRUCTURE_IS_FULL;
+    546                  clientMem->imageAuxParam.imageInternalLength   = 0ul;
+    547                  clientMem->imageAuxParam.internalAddressStatus = 0;
+    548                  clientMem->imageAuxParam.imageRemainder        = clientMem->otauParam.imageSize - clientMem->imageAuxParam.currentFileOffset;
+    549                  clientMem->firstStart                          = OTAU_CONTINUE_CLIENT_WORK;
+    550          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1        
+    551                  clientMem->missedBytesGetting                  = OTAU_NOT_GET_MISSED_BYTES;
+    552          #endif
+    553          
+    554          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    555                  otauRunningChecksum     = 0xFF;
+    556                  otauNextOffset          = 0;
+    557                  otauInternalAddrStatus  = 0;
+    558                  otauInternalLength      = 0;
+    559                  otauFlashWriteOffset    = 0;
+    560                  otauImageSize = clientMem->otauParam.imageSize;
+    561                  otauImageVersion = clientMem->newFirmwareVersion.memAlloc;
+    562                  COPY_EXT_ADDR(otauServerExtAddr, serverExtAddr);
+    563          
+    564                  PDS_Store(OTAU_PDT_MEMORY_MEM_ID);
+    565          #endif
+    566          
+    567                  otauStartDownload();
+    568                }
+    569                break;
+    570          
+    571              case OFD_STATUS_SERIAL_BUSY:
+    572              case OFD_SERIAL_INTERFACE_BUSY:
+    573                otauStartGenericTimer(REPOST_OFD_ACTION, otauStartErase);
+    574                break;
+    575          
+    576              default:
+    577                SYS_E_ASSERT_ERROR(false, ZCL_OTAU_DOWNLOAD_ABORTED);
+    578                zclRaiseCustomMessage(OTAU_OFD_DRIVER_ERROR);
+    579                otauClientAttributes.imageUpgradeStatus.value = OTAU_NORMAL;
+    580                OTAU_SET_STATE(stateMachine, OTAU_STOPPED_STATE);
+    581                zclStopOtauClient();
+    582                break;
+    583            }
+    584          }
+    585          
+    586          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    587          /***************************************************************************//**
+    588          \brief Get the CRC of the image stored in external memory at given position
+    589          
+    590          \param[in] position - image position in external memory
+    591          ******************************************************************************/
+    592          void otauGetCrc(void)
+    593          {
+    594            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    595          
+    596            if ((!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE)) && \
+    597                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE)))
+    598            {
+    599              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_OFD_GET_CRC);
+    600              return;
+    601            }
+    602          
+    603            OFD_CalCrc(OFD_POSITION_1, clientMem->otauParam.imageBlockData, otauNextOffset,
+    604                       otauRunningChecksum, otauGetCrcCallback);
+    605          }
+    606          
+    607          /***************************************************************************//**
+    608          \brief Callback from flash driver for the end of CRC computation
+    609          
+    610          \param[in] status - status of action
+    611          \param[in] checksum - pointer to the computed checksum
+    612          ******************************************************************************/
+    613          void otauGetCrcCallback(OFD_Status_t status, OFD_ImageInfo_t *imageInfo)
+    614          {
+    615            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    616            OtauImageAuxVar_t *tmpAuxParam = &clientMem->imageAuxParam;
+    617            ZclOtauClientImageBuffer_t *tmpParam = &clientMem->otauParam;
+    618          
+    619            if ((!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE)) && \
+    620                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE)))
+    621            {
+    622              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_OFD_CRC_CALLBACK);
+    623              return;
+    624            }
+    625          
+    626            switch(status)
+    627            {
+    628              case OFD_STATUS_SUCCESS:
+    629                if (otauRunningChecksum == imageInfo->crc)
+    630                {
+    631                  tmpAuxParam->currentFileOffset		 = otauNextOffset;
+    632                  tmpAuxParam->imageInternalLength	 = otauInternalLength;
+    633                  tmpAuxParam->internalAddressStatus	 = otauInternalAddrStatus;
+    634                  tmpAuxParam->imageRemainder 		 = otauImageSize - otauInternalLength;
+    635          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    636                  CS_ReadParameter(CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_PAGE_SIZE_ID, &tmpAuxParam->lastPageSize);
+    637                  tmpAuxParam->imagePageOffset		 = otauNextOffset;
+    638          #endif
+    639                  COPY_EXT_ADDR(clientMem->otauServer, serverExtAddr);
+    640                  tmpParam->imageSize = otauImageSize;
+    641                  clientMem->newFirmwareVersion.memAlloc = otauImageVersion;
+    642          
+    643                  otauStartDownload();
+    644                }
+    645                else
+    646                {
+    647                  otauStartErase();
+    648                }
+    649                break;
+    650          
+    651              case OFD_SERIAL_INTERFACE_BUSY:
+    652              case OFD_STATUS_SERIAL_BUSY:
+    653                otauStartGenericTimer(REPOST_OFD_ACTION, otauGetCrc);
+    654                break;
+    655          
+    656              default:
+    657                otauStartErase();
+    658                break;
+    659            }
+    660          }
+    661          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+    662          
+    663          #if (USE_IMAGE_SECURITY == 1)
+    664          /**************************************************************************//**
+    665          \brief Starts eeprom delayed transaction
+    666          ******************************************************************************/
+    667          void otauStartEepromDelayedTransaction(void)
+    668          {
+    669            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    670          
+    671            if (!HAL_IsEepromBusy())
+    672            {
+    673              otauReadImgTypeFromEeprom();
+    674            }
+    675            else
+    676            {
+    677              otauStartEepromPollTimer(otauStartEepromDelayedTransaction);
+    678            }
+    679          }
+    680          
+    681          /***************************************************************************//**
+    682          \brief Sends the new image req with the updated imgtype value
+    683          ******************************************************************************/
+    684          void otauSendReqWithNewImgType(void)
+    685          {
+    686            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    687            ZCL_OtauQueryNextImageReq_t *tmpOtauReq = &clientMem->zclReqMem.uQueryNextImageReq;
+    688            ZCL_Request_t *tmpZclReq = &clientMem->reqMem.zclCommandReq;
+    689            uint16_t csManufacturerId;
+    690            CS_ReadParameter(CS_MANUFACTURER_CODE_ID, &csManufacturerId);
+    691            
+    692            //Enabling fast polling for Query Next Image
+    693            if (!isOtauBusy)
+    694            {
+    695              zclRaiseCustomMessage(OTAU_QUERY_NEXT_IMAGE_INITIATED);
+    696              isOtauBusy = true;
+    697            }
+    698          
+    699            zclOtauFillOutgoingZclRequest(QUERY_NEXT_IMAGE_REQUEST_ID, sizeof(ZCL_OtauQueryNextImageReq_t), (uint8_t *)tmpOtauReq);
+    700          
+    701            tmpOtauReq->controlField.hardwareVersionPresent = 0;
+    702            tmpOtauReq->controlField.reserved               = 0;
+    703            tmpOtauReq->manufacturerId                      = csManufacturerId;
+    704            tmpOtauReq->imageType                           = clientMem->eepromImgType;
+    705            tmpOtauReq->currentFirmwareVersion              = zclOtauMem.initParam.firmwareVersion;
+    706          
+    707            ZCL_CommandReq(tmpZclReq);
+    708          }
+    709          
+    710          /***************************************************************************//**
+    711          \brief Read done callback from EEPROM
+    712          ******************************************************************************/
+    713          void readEepromCallback(void)
+    714          {
+    715            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    716          
+    717            switch(clientMem->eepromImgTypeVal & OTAU_MANU_SPEC_ENCRYPTED_IMAGE_ENCRYPTED_MAC_IMAGE_TYPE)
+    718            {
+    719            case OTAU_MANU_SPEC_ENCRYPTED_NO_MIC_IMAGE_TYPE:
+    720            case OTAU_MANU_SPEC_ENCRYPTED_IMAGE_PLAIN_CRC_IMAGE_TYPE:
+    721            case OTAU_MANU_SPEC_ENCRYPTED_IMAGE_PLAIN_MAC_IMAGE_TYPE:
+    722            case OTAU_MANU_SPEC_ENCRYPTED_IMAGE_ENCRYPTED_CRC_IMAGE_TYPE:
+    723            case OTAU_MANU_SPEC_ENCRYPTED_IMAGE_ENCRYPTED_MAC_IMAGE_TYPE:
+    724              clientMem->eepromImgType = (ZCL_OtauImageType_t)clientMem->eepromImgTypeVal;
+    725              break;
+    726            default:
+    727              clientMem->eepromImgType = OTAU_SPECIFIC_IMAGE_TYPE;
+    728              break;
+    729            }
+    730          
+    731            if (false == clientMem->isImgTypeValid)
+    732            {
+    733              clientMem->isImgTypeValid = true;
+    734            }
+    735          
+    736            otauSendReqWithNewImgType();
+    737          }
+    738          
+    739          /***************************************************************************//**
+    740          \brief Reads imagetype from EEPROM offset EEPROM_IMGTYPE_OFFSET
+    741          ******************************************************************************/
+    742          void otauReadImgTypeFromEeprom(void)
+    743          {
+    744            HAL_EepromParams_t params;
+    745            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    746          
+    747            if (!clientMem->isImgTypeValid)
+    748            {
+    749              int status;
+    750          
+    751              params.address = EEPROM_IMGTYPE_OFFSET;
+    752              params.data = (uint8_t *)&clientMem->eepromImgTypeVal;
+    753              params.length = sizeof(uint16_t);
+    754          
+    755              status = HAL_ReadEeprom(&params, readEepromCallback);
+    756              if (OTAU_READ_EEPROM_BUSY == status)
+    757              {
+    758                // busy. poll after 10ms
+    759                otauStartEepromPollTimer(otauStartEepromDelayedTransaction);
+    760              }
+    761          
+    762              // success or busy are handled in callback
+    763              return;
+    764            }
+    765          
+    766            // no-eeprom-read case
+    767            otauSendReqWithNewImgType();
+    768            return;
+    769          }
+    770          
+    771          /***************************************************************************//**
+    772          \brief configure OTAU image key
+    773          
+    774          \param[in] configureKeyDone - callback after key is written.
+    775                                        can be set to NULL if callback is not required
+    776          
+    777          \return None
+    778          ******************************************************************************/
+    779          void ZCL_ConfigureOtauImageKey(void (*configureKeyDone)())
+    780          {
+    781            configureKeyDoneCallback = configureKeyDone;
+    782            writeKeyToEeprom();
+    783          }
+    784          
+    785          /***************************************************************************//**
+    786          \brief writing the key to EEPROM
+    787          ******************************************************************************/
+    788          void writeKeyToEeprom(void)
+    789          {
+    790            HAL_EepromParams_t params;
+    791            int status;
+    792          
+    793            params.address = OTAU_IMAGE_KEY_START_ADDRESS_OFFSET;
+    794            params.data = (uint8_t *)&otauImageKey;
+    795            params.length = sizeof(otauImageKey);
+    796          
+    797            // for succes, wait for cbm
+    798            status = HAL_WriteEeprom(&params, writeEepromCallback);
+    799            if (OTAU_WRITE_EEPROM_BUSY == status)
+    800            {
+    801              // busy. poll after 10ms
+    802              otauStartEepromPollTimer(writeKeyToEeprom);
+    803            }
+    804          }
+    805          
+    806          /***************************************************************************//**
+    807          \brief write done callback from EEPROM
+    808          ******************************************************************************/
+    809          void writeEepromCallback(void)
+    810          {
+    811            if (configureKeyDoneCallback)
+    812            {
+    813              configureKeyDoneCallback();
+    814            }
+    815          }
+    816          #endif /* USE_IMAGE_SECURITY */
+    817          
+    818          /***************************************************************************//**
+    819          \brief write done callback from EEPROM
+    820          ******************************************************************************/
+    821          void writeSkipSectionToEepromCallback(void)
+    822          {
+    823            otauWriteEepromAction();
+    824          }
+    825          
+    826          /***************************************************************************//**
+    827          \brief write done callback from EEPROM
+    828          ******************************************************************************/
+    829          void writeEepromActionFlagCallback(void)
+    830          {
+    831          
+    832          }
+    833          
+    834          /***************************************************************************//**
+    835          \brief write eeprom action flag to eeprom
+    836          ******************************************************************************/
+    837          void otauWriteEepromAction(void)
+    838          {
+    839            HAL_EepromParams_t params;
+    840            int status;
+    841          
+    842            params.address = OTAU_EEPROM_ACTION_FLAG_OFFSET;
+    843            params.data    = &eepromInNewImage;
+    844            params.length  = OTAU_EEEPROM_ACTION_FLAG_LENGTH;
+    845          
+    846            // for succes, wait for cb
+    847            status = HAL_WriteEeprom(&params, writeEepromActionFlagCallback);
+    848            if (OTAU_WRITE_EEPROM_BUSY == status)
+    849            {
+    850              // busy. poll after 10ms
+    851              otauStartEepromPollTimer(otauWriteEepromAction);
+    852            }
+    853          }
+    854          
+    855          /**************************************************************************//**
+    856          \brief Starts timer to start delayed EEPROM read
+    857          ******************************************************************************/
+    858          void otauStartEepromPollTimer(void (*delayedTransaction)())
+    859          {
+    860            zclEepromBusyTimer.callback = delayedTransaction;
+    861          
+    862            HAL_StartAppTimer(&zclEepromBusyTimer);
+    863          }
+    864          
+    865          /***************************************************************************//**
+    866          \brief writing the key to EEPROM
+    867          ******************************************************************************/
+    868          void otauWriteSkipSectionToEeprom(void)
+    869          {
+    870            HAL_EepromParams_t params;
+    871            int status;
+    872          
+    873            writeSkipSecStartEnd[0] = OTAU_WRITESKIP_MEMORY_START;
+    874            writeSkipSecStartEnd[1] = OTAU_WRITESKIP_MEMORY_END;
+    875          
+    876            params.address = OTAU_FLASH_WRITE_SKIP_START_EEPROM_OFFSET;
+    877            params.data    = (uint8_t *)&writeSkipSecStartEnd;
+    878            params.length  = OTAU_FLASH_WRITE_SKIP_BYTES_LENGTH;
+    879          
+    880            // for succes, wait for cb
+    881            status = HAL_WriteEeprom(&params, writeSkipSectionToEepromCallback);
+    882            if (OTAU_WRITE_EEPROM_BUSY == status)
+    883            {
+    884              // busy. poll after 10ms
+    885              otauStartEepromPollTimer(otauWriteSkipSectionToEeprom);
+    886            }
+    887          }
+    888          
+    889          /***************************************************************************//**
+    890          \brief All requests confirm.
+    891          
+    892          \param[in] resp - pointer to response parametres.
+    893          ******************************************************************************/
+    894          void otauSomeRequestConfirm(ZCL_Notify_t *resp)
+    895          {
+    896            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    897            ZCL_Request_t *tmpZclReq = &zclGetOtauClientMem()->reqMem.zclCommandReq;
+    898          
+    899          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    900            bool pageRequestUsed;
+    901            HAL_AppTimer_t *tmpPageReqTimer = &clientMem->pageRequestTimer;
+    902          #else
+    903            (void)clientMem;
+    904          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    905          
+    906            switch (resp->status)
+    907            {
+    908              case ZCL_SUCCESS_STATUS: // received on aps ack / low-layer confirmation
+    909          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    910                if (IMAGE_PAGE_REQUEST_ID == tmpZclReq->id)
+    911                {
+    912                  CS_ReadParameter(CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE_ID, &pageRequestUsed);
+    913                  if (pageRequestUsed && (IMAGE_PAGE_REQUEST_ID == tmpZclReq->id))
+    914                  {
+    915                    otauStopGenericTimer();
+    916          
+    917                    HAL_StopAppTimer(tmpPageReqTimer);
+    918                    tmpPageReqTimer->interval  = WAITING_BLOCK_RESPONSE_TIMEOUT;
+    919                    tmpPageReqTimer->mode      = TIMER_ONE_SHOT_MODE;
+    920                    tmpPageReqTimer->callback  = otauImagePageReqIntervalElapsed;
+    921                    HAL_StartAppTimer(tmpPageReqTimer);
+    922                  }
+    923                }
+    924          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    925                break;
+    926          
+    927              default: // received on zcl wait timer expiry
+    928                if (retryCount--)
+    929                {
+    930                  switch (tmpZclReq->id)
+    931                  {
+    932          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    933                    case IMAGE_PAGE_REQUEST_ID:
+    934                      if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    935                      {
+    936                        if (ZCL_SUCCESS_STATUS != otauCheckServerAddrAndTakeAction(false, true))
+    937                        {
+    938                          otauStopGenericTimer();
+    939                          otauImagePageReq();
+    940                        }
+    941                      }
+    942                      else
+    943                      {
+    944                        otauStopGenericTimer();
+    945                        otauImagePageReq();
+    946                      }
+    947                      break;
+    948          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    949          
+    950                    case IMAGE_BLOCK_REQUEST_ID:
+    951                      if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    952                      {
+    953                        if (ZCL_SUCCESS_STATUS != otauCheckServerAddrAndTakeAction(false, true))
+    954                        {
+    955                          otauImageBlockReq();
+    956                        }
+    957                      }
+    958                      else
+    959                      {
+    960                        otauImageBlockReq();
+    961                      }
+    962                      break;
+    963          
+    964                    case QUERY_NEXT_IMAGE_REQUEST_ID:
+    965                      if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    966                      {
+    967                        otauCheckServerAddrAndTakeAction(false, false);
+    968                      }
+    969                      else
+    970                      {
+    971                        otauQueryNextImageReq();
+    972                      }
+    973                      break;
+    974          
+    975                    case UPGRADE_END_REQUEST_ID:
+    976                      if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    977                      {
+    978                        if (ZCL_SUCCESS_STATUS != otauCheckServerAddrAndTakeAction(false, true))
+    979                        {
+    980                          if (ZCL_SUCCESS_STATUS == otauUpgradeEndStatus)
+    981                          {
+    982                            otauUpgradeEndStatus = ZCL_SUCCESS_STATUS;
+    983                            otauStartGenericTimer(UPGRADE_END_REQ_QUICK_TIMEOUT, otauUpgradeEndReq);
+    984                          }
+    985                        }
+    986                      }
+    987                      else
+    988                      {
+    989                        if (ZCL_SUCCESS_STATUS == otauUpgradeEndStatus)
+    990                        {
+    991                          otauUpgradeEndStatus = ZCL_SUCCESS_STATUS;
+    992                          otauStartGenericTimer(UPGRADE_END_REQ_QUICK_TIMEOUT, otauUpgradeEndReq);
+    993                        }
+    994                      }
+    995                      break;
+    996                  }
+    997                }
+    998                else
+    999                {
+   1000                  retryCount = otauMaxRetryCount;
+   1001                  if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+   1002                  {
+   1003                    switch (tmpZclReq->id)
+   1004                    {
+   1005                      case QUERY_NEXT_IMAGE_REQUEST_ID:
+   1006                        otauCheckServerAddrAndTakeAction(false, false);
+   1007                        break;
+   1008                      case IMAGE_PAGE_REQUEST_ID:
+   1009                      case IMAGE_BLOCK_REQUEST_ID:
+   1010                      case UPGRADE_END_REQUEST_ID:
+   1011                        if (ZCL_SUCCESS_STATUS != otauCheckServerAddrAndTakeAction(false, true))
+   1012                        {
+   1013                          if (UPGRADE_END_REQUEST_ID == tmpZclReq->id)
+   1014                          {
+   1015                            // handle non-success at otauUpgradeEndStatus assignment place
+   1016                            if (ZCL_SUCCESS_STATUS == otauUpgradeEndStatus)
+   1017                            {
+   1018                              //do switch : OTAU r23, sec 6.13
+   1019          #if APP_SUPPORT_OTAU_RECOVERY == 1
+   1020                              otauClearPdsParams();
+   1021          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+   1022                              otauStartGenericTimer(AMOUNT_MSEC_IN_SEC, otauFinalizeProcess);
+   1023                            }
+   1024                          }
+   1025                          else
+   1026                          {
+   1027                            OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+   1028                            otauStartDiscoveryTimer();
+   1029                          }
+   1030                        }
+   1031                      default:
+   1032                        break;
+   1033                    }
+   1034                  }
+   1035                  else
+   1036                  {
+   1037                    if (UPGRADE_END_REQUEST_ID == tmpZclReq->id)
+   1038                    {
+   1039                      // handle non-success at otauUpgradeEndStatus assignment place
+   1040                      if (ZCL_SUCCESS_STATUS == otauUpgradeEndStatus)
+   1041                      {
+   1042                        //do switch : OTAU r23, sec 6.13
+   1043          #if APP_SUPPORT_OTAU_RECOVERY == 1
+   1044                        otauClearPdsParams();
+   1045          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+   1046                        otauStartGenericTimer(AMOUNT_MSEC_IN_SEC, otauFinalizeProcess);
+   1047                      }
+   1048                    }
+   1049                    else
+   1050                    {
+   1051                      OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+   1052                      otauStartDiscoveryTimer();
+   1053                    }
+   1054                  }
+   1055                }
+   1056                break;
+   1057            }
+   1058          }
+   1059          
+   1060          /***************************************************************************//**
+   1061          \brief otau default response handler.
+   1062          
+   1063          \param[in] resp - pointer to response parametres.
+   1064          ******************************************************************************/
+   1065          void otauSomeDefaultResponse(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload)
+   1066          {
+   1067            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+   1068            ZCL_DefaultResp_t *defaultResp = (ZCL_DefaultResp_t*)payload;
+   1069            ZCL_Request_t *tmpZclReq = &clientMem->reqMem.zclCommandReq;
+   1070          
+   1071            switch(tmpZclReq->id)
+   1072            {
+   1073              case UPGRADE_END_REQUEST_ID:
+   1074              {
+   1075                switch (defaultResp->statusCode)
+   1076                {
+   1077                  case ZCL_SUCCESS_STATUS:
+   1078                  default:
+   1079                  {
+   1080                    retryCount = otauMaxRetryCount;
+   1081          
+   1082                    if (ZCL_SUCCESS_STATUS != otauUpgradeEndStatus)
+   1083                    {
+   1084                      if (ZCL_ABORT_STATUS == otauUpgradeEndStatus)
+   1085                      {
+   1086                        zclRaiseCustomMessage(OTAU_DOWNLOAD_ABORTED);
+   1087                        otauClientAttributes.minimumBlockRequestDelay.value = 0;
+   1088                      }
+   1089                      else
+   1090                      {
+   1091                        otauClientAttributes.imageUpgradeStatus.value = OTAU_NORMAL;
+   1092                        OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+   1093                        otauStartDiscoveryTimer();
+   1094                      }
+   1095                      isOtauBusy = false;
+   1096                      otauUpgradeEndStatus = ZCL_SUCCESS_STATUS;
+   1097                    }
+   1098                  }
+   1099                  break;
+   1100          
+   1101                  case ZCL_ABORT_STATUS:
+   1102                  case ZCL_INVALID_IMAGE_STATUS:
+   1103                  case ZCL_MALFORMED_COMMAND_STATUS:
+   1104                  {
+   1105                    if (ZCL_SUCCESS_STATUS == otauUpgradeEndStatus)
+   1106                    {
+   1107                      if (retryCount--)
+   1108                      {
+   1109                        otauStartGenericTimer(UPGRADE_END_REQ_QUICK_TIMEOUT, otauUpgradeEndReq);
+   1110                      }
+   1111                      else
+   1112                      {
+   1113                        retryCount = otauMaxRetryCount;
+   1114            #if APP_SUPPORT_OTAU_RECOVERY == 1
+   1115                        otauClearPdsParams();
+   1116            #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+   1117                        clientMem->imageAuxParam.currentFileOffset     = sizeof(ZCL_OtauSubElementHeader_t) + sizeof(ZCL_OtauUpgradeImageHeader_t);
+   1118                        clientMem->imageAuxParam.currentDataSize       = AUXILIARY_STRUCTURE_IS_FULL;
+   1119                        clientMem->imageAuxParam.imageInternalLength   = 0;
+   1120                        clientMem->imageAuxParam.internalAddressStatus = 0;
+   1121                        clientMem->imageAuxParam.imageRemainder        = 0;
+   1122                        clientMem->firstStart                          = OTAU_FIRST_CLIENT_START;
+   1123                        clientMem->otauParam.imageSize                 = 0;
+   1124                        clientMem->newFirmwareVersion.memAlloc         = 0;
+   1125          
+   1126                        isOtauBusy = false;
+   1127                        OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+   1128                        otauStartDiscoveryTimer();
+   1129                      }
+   1130                    }
+   1131                    else
+   1132                    {
+   1133                      if (ZCL_ABORT_STATUS == otauUpgradeEndStatus)
+   1134                      {
+   1135                        zclRaiseCustomMessage(OTAU_DOWNLOAD_ABORTED);
+   1136                        otauClientAttributes.minimumBlockRequestDelay.value = 0;
+   1137                      }
+   1138                      else
+   1139                      {
+   1140                        otauClientAttributes.minimumBlockRequestDelay.value = 0;
+   1141                        otauClientAttributes.imageUpgradeStatus.value = OTAU_NORMAL;
+   1142                        OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+   1143                        otauStartDiscoveryTimer();
+   1144                      }
+   1145                      isOtauBusy = false;
+   1146                      otauUpgradeEndStatus = ZCL_SUCCESS_STATUS;
+   1147                    }
+   1148                  }
+   1149                  break;
+   1150                }
+   1151              }
+   1152              break;
+   1153          
+   1154          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+   1155              case IMAGE_PAGE_REQUEST_ID:
+   1156                if (ZCL_SUCCESS_STATUS != defaultResp->statusCode)
+   1157                {
+   1158                  HAL_StopAppTimer(&clientMem->pageRequestTimer);
+   1159                }
+   1160                //fall through
+   1161          #endif
+   1162              default:
+   1163                // Goto discovery for "default-response-with-non-success"
+   1164                if (ZCL_SUCCESS_STATUS != defaultResp->statusCode)
+   1165                {
+   1166                  otauClientAttributes.minimumBlockRequestDelay.value = 0;
+   1167                  otauClientAttributes.imageUpgradeStatus.value = OTAU_NORMAL;
+   1168                  OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+   1169                  otauStartDiscoveryTimer();
+   1170                }
+   1171                retryCount = otauMaxRetryCount;
+   1172                break;
+   1173            }
+   1174          
+   1175            (void)addressing;
+   1176            (void)payloadLength;
+   1177          }
+   1178          
+   1179          /***************************************************************************//**
+   1180          \brief Fills ZCL_Request_t structure fields for outgoing request.
+   1181          
+   1182          \param[in] id - zcl command id;
+   1183          \param[in] length - the length of zcl command payload;
+   1184          \param[in] payload - pointer to zcl command payload
+   1185          ******************************************************************************/
+   1186          void zclOtauFillOutgoingZclRequest(uint8_t id, uint8_t length, uint8_t *payload)
+   1187          {
+   1188            ZCL_Request_t *tmpZclReq = &(zclGetOtauClientMem()->reqMem.zclCommandReq);
+   1189            uint32_t rspWaitTime = NWK_GetUnicastDeliveryTime();
+   1190          
+   1191            SYS_E_ASSERT_ERROR((otauMaxRetryCount >= retryCount), ZCL_OTAU_INVALID_OTAURETRYCOUNT);
+   1192          
+   1193            /* increase the wait time with retries and ceil with predefined timeout */    
+   1194            rspWaitTime += (OTAU_DEFAULT_RESPONSE_WAIT_TIMEOUT * ((otauMaxRetryCount+1) - retryCount));
+   1195            rspWaitTime = (OTAU_MAX_RESPONSE_WAIT_TIMEOUT < rspWaitTime)?OTAU_MAX_RESPONSE_WAIT_TIMEOUT:rspWaitTime;
+   1196          
+   1197            tmpZclReq->dstAddressing.addrMode             = APS_SHORT_ADDRESS;
+   1198          
+   1199            tmpZclReq->dstAddressing.addr.shortAddress    = actvServer->serverShortAddress;
+   1200            tmpZclReq->dstAddressing.endpointId           = actvServer->serverEndpoint;
+   1201          
+   1202            tmpZclReq->dstAddressing.profileId            = zclOtauMem.initParam.profileId;
+   1203            tmpZclReq->dstAddressing.clusterId            = OTAU_CLUSTER_ID;
+   1204            tmpZclReq->dstAddressing.clusterSide          = ZCL_SERVER_CLUSTER_TYPE;
+   1205            tmpZclReq->dstAddressing.manufacturerSpecCode = 0;
+   1206            tmpZclReq->dstAddressing.sequenceNumber       = ZCL_GetNextSeqNumber();
+   1207            tmpZclReq->endpointId                         = zclOtauMem.initParam.otauEndpoint;
+   1208            tmpZclReq->id                                 = id;
+   1209            tmpZclReq->defaultResponse                    = ZCL_FRAME_CONTROL_ENABLE_DEFAULT_RESPONSE;
+   1210            tmpZclReq->requestLength                      = length;
+   1211            tmpZclReq->requestPayload                     = payload;
+   1212            tmpZclReq->responseWaitTimeout                = rspWaitTime;
+   1213            tmpZclReq->ZCL_Notify                         = otauSomeRequestConfirm;
+   1214          }
+   1215          
+   1216          /***************************************************************************//**
+   1217          \brief Gets Otau's cluster
+   1218          
+   1219          \return Otau's client cluster
+   1220          ******************************************************************************/
+   1221          ZCL_Cluster_t ZCL_GetOtauClientCluster(void)
+   1222          {
+   1223            ZCL_Cluster_t cluster = DEFINE_OTAU_CLUSTER(ZCL_CLIENT_CLUSTER_TYPE, &otauClientAttributes, &otauClientCommands);
+   1224            cluster.ZCL_DefaultRespInd = otauSomeDefaultResponse;
+   1225          
+   1226            return cluster;
+   1227          }
+   1228          #endif // (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+   1229          
+   1230          // eof zclOtauClient.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

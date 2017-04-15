@@ -1,0 +1,538 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:38
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\msIdentifyCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\msIdentifyCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\msIdentifyCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\msIdentifyCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\msIdentifyCluster.c
+      1          /**************************************************************************//**
+      2            \file msIdentifyCluster.c
+      3          
+      4            \brief
+      5              Multi-Sensor Identify cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              12.12.12 N. Fomin - Created.
+     17              28.05.14 Viswanadham Kotla - Modified.
+     18          ******************************************************************************/
+     19          #ifdef APP_DEVICE_TYPE_MULTI_SENSOR
+     20          
+     21          /******************************************************************************
+     22                              Includes section
+     23          ******************************************************************************/
+     24          #include <msIdentifyCluster.h>
+     25          #include <identifyCluster.h>
+     26          #include <haClusters.h>
+     27          #include <uartManager.h>
+     28          #include <commandManager.h>
+     29          #include <pdsDataServer.h>
+     30          #include <zclDevice.h>
+     31          #include <ezModeManager.h>
+     32          
+     33          /******************************************************************************
+     34                              Definition(s) section
+     35          ******************************************************************************/
+     36          #define IDENTIFY_TIMER_PERIOD 1000u
+     37          
+     38          /******************************************************************************
+     39                              Prototypes section
+     40          ******************************************************************************/
+     41          static ZCL_Status_t identifyInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Identify_t *payload);
+     42          static ZCL_Status_t identifyQueryInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload);
+     43          static ZCL_Status_t identifyQueryResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_IdentifyQueryResponse_t *payload);
+     44          static ZCL_Status_t ezModeInvokeInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_EzModeInvoke_t *payload);
+     45          static ZCL_Status_t updateCommissioningStateInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_UpdateCommissioningState_t *payload);
+     46          static ZCL_Status_t sendIdentifyQueryResponse(ZCL_Addressing_t *addressing);
+     47          static void msFillIdentifyQueryResponsePayload(ZCL_IdentifyQueryResponse_t *payload, uint16_t time);
+     48          static void msFillUpdateCommissioningStatePayload(ZCL_UpdateCommissioningState_t *payload, uint8_t action, uint8_t mask);
+     49          static void identifyTimerFired(void);
+     50          static void ZCL_IdentifyAttributeEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event);
+     51          
+     52          /******************************************************************************
+     53                              Global variables section
+     54          ******************************************************************************/
+     55          ZCL_IdentifyClusterAttributes_t msIdentifyClusterServerAttributes =
+     56          {
+     57            ZCL_DEFINE_IDENTIFY_CLUSTER_SERVER_ATTRIBUTES()
+     58          };
+     59          ZCL_IdentifyClusterCommands_t   msIdentifyCommands =
+     60          {
+     61            IDENTIFY_CLUSTER_COMMANDS(identifyInd, identifyQueryInd, identifyQueryResponseInd, ezModeInvokeInd, updateCommissioningStateInd)
+     62          };
+     63          
+     64          /******************************************************************************
+     65                              Static variables section
+     66          ******************************************************************************/
+     67          static HAL_AppTimer_t identifyTimer;
+     68          static DECLARE_QUEUE(subscribers);
+     69          
+     70          /******************************************************************************
+     71                              Implementation section
+     72          ******************************************************************************/
+     73          /**************************************************************************//**
+     74          \brief Initializes Identify cluster
+     75          ******************************************************************************/
+     76          void identifyClusterInit(void)
+     77          {
+     78            msIdentifyClusterServerAttributes.identifyTime.value = 0;
+     79          
+     80            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, IDENTIFY_CLUSTER_ID, ZCL_CLUSTER_SIDE_SERVER);
+     81          
+     82            if (cluster)
+     83              cluster->ZCL_AttributeEventInd = ZCL_IdentifyAttributeEventInd;
+     84          
+     85            identifyTimer.interval = IDENTIFY_TIMER_PERIOD;
+     86            identifyTimer.mode     = TIMER_REPEAT_MODE;
+     87            identifyTimer.callback = identifyTimerFired;
+     88          }
+     89          
+     90          /**************************************************************************//**
+     91          \brief Stops Identify cluster
+     92          ******************************************************************************/
+     93          void identifyClusterStop(void)
+     94          {
+     95            HAL_StopAppTimer(&identifyTimer);
+     96          }
+     97          
+     98          /**************************************************************************//**
+     99          \brief Makes device to start identify itself
+    100          
+    101          \param[in] time - identifying time in seconds
+    102          ******************************************************************************/
+    103          void idetifyStartIdentifying(uint16_t time)
+    104          {
+    105            (void)time;
+    106          }
+    107          
+    108          /**************************************************************************//**
+    109          \brief Send Identify Query command
+    110          
+    111          \param[in] nwkState        - new netwrok state;
+    112          \param[in] operationalState - new operational state
+    113          ******************************************************************************/
+    114          void identifyUpdateCommissioningState(bool nwkState, bool operationalState)
+    115          {
+    116            msIdentifyClusterServerAttributes.commissioningState.value.networkState     = nwkState;
+    117            msIdentifyClusterServerAttributes.commissioningState.value.operationalState = operationalState;
+    118          }
+    119          
+    120          /**************************************************************************//**
+    121          \brief Adds record to a list of subscribers
+    122          
+    123          \param[in] subscriber - pointer to subscriber;
+    124          ******************************************************************************/
+    125          void identifySubscribe(IdentifySubscriber_t *subscriber)
+    126          {
+    127            if (!isQueueElem(&subscribers, subscriber))
+    128              if(!putQueueElem(&subscribers, subscriber))
+    129              {
+    130                /* failed to queue */
+    131              }
+    132          }
+    133          
+    134          /**************************************************************************//**
+    135          \brief Sends Identify Query request
+    136          
+    137          \param[in] mode - address mode;
+    138          \param[in] addr - short address of destination node;
+    139          \param[in] ep   - destination endpoint
+    140          ******************************************************************************/
+    141          void identifySendIdentifyQuery(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep)
+    142          {
+    143            ZCL_Request_t *req;
+    144          
+    145            if (!(req = getFreeCommand()))
+    146              return;
+    147          
+    148            fillCommandRequest(req, ZCL_IDENTIFY_CLUSTER_IDENTIFY_QUERY_COMMAND_ID, 0);
+    149            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IDENTIFY_CLUSTER_ID);
+    150            commandManagerSendCommand(req);
+    151          }
+    152          
+    153          /**************************************************************************//**
+    154          \brief Sends Update Commissioning State command
+    155          
+    156          \param[in] mode - address mode;
+    157          \param[in] addr   - short address of destination node;
+    158          \param[in] ep     - destination endpoint;
+    159          \param[in] action - action to be done upon reception;
+    160          \param[in] mask   - commissiong state mask
+    161          ******************************************************************************/
+    162          void identifySendUpdateCommissioningState(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    163            ZCL_UpdateCommissioningStateAction_t action, uint8_t mask)
+    164          {
+    165            ZCL_Request_t *req;
+    166          
+    167            if (!(req = getFreeCommand()))
+    168              return;
+    169          
+    170            fillCommandRequest(req, ZCL_IDENTIFY_CLUSTER_UPDATE_COMMISSIONING_STATE_COMMAND_ID, sizeof(ZCL_UpdateCommissioningState_t));
+    171            msFillUpdateCommissioningStatePayload((ZCL_UpdateCommissioningState_t *)req->requestPayload, action, mask);
+    172            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IDENTIFY_CLUSTER_ID);
+    173            commandManagerSendCommand(req);
+    174          }
+    175          
+    176          /**************************************************************************//**
+    177          \brief Callback on receiving Identify command
+    178          
+    179          \param[in] addressing - pointer to addressing information;
+    180          \param[in] payloadLength - data payload length;
+    181          \param[in] payload - data pointer
+    182          
+    183          \return status of indication routine
+    184          ******************************************************************************/
+    185          static ZCL_Status_t identifyInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Identify_t *payload)
+    186          {
+    187            LOG_STRING(identifyStr, "->Identify\r\n");
+    188            appSnprintf(identifyStr);
+    189          
+    190            msIdentifyClusterServerAttributes.identifyTime.value = payload->identifyTime;
+    191          
+    192            HAL_StopAppTimer(&identifyTimer);
+    193          
+    194            if (payload->identifyTime)
+    195              HAL_StartAppTimer(&identifyTimer);
+    196          
+    197            RAISE_CALLBACKS_TO_IDENTIFY_SUBSCIBERS(subscribers, identify);
+    198          
+    199            (void)addressing, (void)payloadLength;
+    200            return ZCL_SUCCESS_STATUS;
+    201          }
+    202          
+    203          /**************************************************************************//**
+    204          \brief Callback on receiving Identify Query command
+    205          
+    206          \param[in] addressing - pointer to addressing information;
+    207          \param[in] payloadLength - data payload length;
+    208          \param[in] payload - data pointer
+    209          
+    210          \return status of indication routine
+    211          ******************************************************************************/
+    212          static ZCL_Status_t identifyQueryInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload)
+    213          {
+    214            LOG_STRING(identifyQueryStr, "->Identify Query\r\n");
+    215            appSnprintf(identifyQueryStr);
+    216          
+    217            if (msIdentifyClusterServerAttributes.identifyTime.value)
+    218              return sendIdentifyQueryResponse(addressing);
+    219          
+    220            RAISE_CALLBACKS_TO_IDENTIFY_SUBSCIBERS(subscribers, identifyQuery);
+    221          
+    222            (void)payload, (void)payloadLength;
+    223            return ZCL_SUCCESS_STATUS;
+    224          }
+    225          
+    226          /**************************************************************************//**
+    227          \brief Callback on receiving Identify Query Response command
+    228          
+    229          \param[in] addressing - pointer to addressing information;
+    230          \param[in] payloadLength - data payload length;
+    231          \param[in] payload - data pointer
+    232          
+    233          \return status of indication routine
+    234          ******************************************************************************/
+    235          static ZCL_Status_t identifyQueryResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_IdentifyQueryResponse_t *payload)
+    236          {
+    237            LOG_STRING(identifyStr, "->Identify Query Response, addr = %d\r\n");
+    238            appSnprintf(identifyStr, addressing->addr.shortAddress);
+    239          
+    240            RAISE_CALLBACKS_TO_IDENTIFY_SUBSCIBERS(subscribers, identifyQueryResponse);
+    241          
+    242            (void)payloadLength;
+    243            return ZCL_SUCCESS_STATUS;
+    244          }
+    245          
+    246          /**************************************************************************//**
+    247          \brief Callback on receiving EZ-Mode invoke command
+    248          
+    249          \param[in] addressing - pointer to addressing information;
+    250          \param[in] payloadLength - data payload length;
+    251          \param[in] payload - data pointer
+    252          
+    253          \return status of indication routine
+    254          ******************************************************************************/
+    255          static ZCL_Status_t ezModeInvokeInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_EzModeInvoke_t *payload)
+    256          {
+    257            LOG_STRING(identifyStr, "->EZ-Mode Invoke\r\n");
+    258            appSnprintf(identifyStr);
+    259          
+    260            if (payload->factoryFresh)
+    261              PDS_DeleteAll(false);
+    262            if (payload->networkSteering)
+    263            {
+    264              appRestart(payload->findingAndBinding);
+    265              return ZCL_SUCCESS_STATUS;
+    266            }
+    267            if (payload->findingAndBinding)
+    268              invokeEzMode(NULL);
+    269          
+    270            RAISE_CALLBACKS_TO_IDENTIFY_SUBSCIBERS(subscribers, ezModeInvoke);
+    271          
+    272            (void)addressing, (void)payloadLength;
+    273            return ZCL_SUCCESS_STATUS;
+    274          }
+    275          
+    276          /**************************************************************************//**
+    277          \brief Callback on receiving Upodate Commissioning State command
+    278          
+    279          \param[in] addressing - pointer to addressing information;
+    280          \param[in] payloadLength - data payload length;
+    281          \param[in] payload - data pointer
+    282          
+    283          \return status of indication routine
+    284          ******************************************************************************/
+    285          static ZCL_Status_t updateCommissioningStateInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_UpdateCommissioningState_t *payload)
+    286          {
+    287            LOG_STRING(identifyStr, "->Update Commissioning State\r\n");
+    288            appSnprintf(identifyStr);
+    289          
+    290            if (ZCL_UPDATE_COMMISSIONING_STATE_ACTION_SET == payload->action)
+    291            {
+    292              msIdentifyClusterServerAttributes.commissioningState.value.networkState     |= payload->commissioningStateMask.networkState;
+    293              msIdentifyClusterServerAttributes.commissioningState.value.operationalState |= payload->commissioningStateMask.operationalState;
+    294            }
+    295            if (ZCL_UPDATE_COMMISSIONING_STATE_ACTION_CLEAR == payload->action)
+    296            {
+    297              msIdentifyClusterServerAttributes.commissioningState.value.networkState     &= ~payload->commissioningStateMask.networkState;
+    298              msIdentifyClusterServerAttributes.commissioningState.value.operationalState &= ~payload->commissioningStateMask.operationalState;
+    299            }
+    300          
+    301            RAISE_CALLBACKS_TO_IDENTIFY_SUBSCIBERS(subscribers, updateCommissioningState);
+    302          
+    303            (void)addressing, (void)payloadLength;
+    304            return ZCL_SUCCESS_STATUS;
+    305          }
+    306          
+    307          /**************************************************************************//**
+    308          \brief Sends Identidy Query Response command
+    309          
+    310          \param[in] addressing - addressing information about sender device
+    311          
+    312          \returns status of sending
+    313          ******************************************************************************/
+    314          static ZCL_Status_t sendIdentifyQueryResponse(ZCL_Addressing_t *addressing)
+    315          {
+    316            ZCL_Request_t *req;
+    317          
+    318            if (!(req = getFreeCommand()))
+    319              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    320          
+    321            fillCommandRequest(req, ZCL_IDENTIFY_CLUSTER_IDENTIFY_QUERY_RESPONSE_COMMAND_ID,
+    322                               sizeof(ZCL_IdentifyQueryResponse_t));
+    323            msFillIdentifyQueryResponsePayload((ZCL_IdentifyQueryResponse_t *)req->requestPayload, msIdentifyClusterServerAttributes.identifyTime.value);
+    324            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    325            commandManagerSendCommand(req);
+    326          
+    327            return ZCL_SUCCESS_STATUS;
+    328          }
+    329          
+    330          /**************************************************************************//**
+    331          \brief Fills Identify Query Response command structure
+    332          
+    333          \param[out] payload - pointer to command structure;
+    334          \param[in]  time    - identify time
+    335          ******************************************************************************/
+    336          static void msFillIdentifyQueryResponsePayload(ZCL_IdentifyQueryResponse_t *payload, uint16_t time)
+    337          {
+    338            payload->timeout = time;
+    339          }
+    340          
+    341          /**************************************************************************//**
+    342          \brief Fills Update Commissiong State command structure
+    343          
+    344          \param[out] payload - pointer to command structure;
+    345          \param[in]  time    - identify time
+    346          ******************************************************************************/
+    347          static void msFillUpdateCommissioningStatePayload(ZCL_UpdateCommissioningState_t *payload, uint8_t action, uint8_t mask)
+    348          {
+    349            payload->action                      = (ZCL_UpdateCommissioningStateAction_t)action;
+    350            payload->commissioningStateMask.data = mask;
+    351          }
+    352          
+    353          /**************************************************************************//**
+    354          \brief Identify timer has fired
+    355          ******************************************************************************/
+    356          static void identifyTimerFired(void)
+    357          {
+    358            --msIdentifyClusterServerAttributes.identifyTime.value;
+    359            // TO DO: toggle LED
+    360            if (!msIdentifyClusterServerAttributes.identifyTime.value)
+    361            {
+    362              HAL_StopAppTimer(&identifyTimer);
+    363              // TO DO: turn LED off
+    364            }
+    365          }
+    366          
+    367          /**************************************************************************//**
+    368          \brief Attribute event (writing/reading) callback.
+    369          
+    370          \param[in] addressing - incoming request addressing information.
+    371          \param[in] attributeId - attribute identifier.
+    372          \param[in] event - attribute event (read/write).
+    373          ******************************************************************************/
+    374          static void ZCL_IdentifyAttributeEventInd(ZCL_Addressing_t *addressing,
+    375            ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event)
+    376          {
+    377            if ((ZCL_WRITE_ATTRIBUTE_EVENT == event) &&
+    378                (ZCL_IDENTIFY_CLUSTER_IDENTIFY_TIME_ATTRIBUTE_ID == attributeId))
+    379            {
+    380              HAL_StopAppTimer(&identifyTimer);
+    381              if (msIdentifyClusterServerAttributes.identifyTime.value)
+    382                HAL_StartAppTimer(&identifyTimer);
+    383          
+    384              (void)addressing;
+    385            }
+    386          }
+    387          
+    388          #endif // APP_DEVICE_TYPE_MULTI_SENSOR
+    389          
+    390          // eof msIdentifyCluster.c
+    391          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

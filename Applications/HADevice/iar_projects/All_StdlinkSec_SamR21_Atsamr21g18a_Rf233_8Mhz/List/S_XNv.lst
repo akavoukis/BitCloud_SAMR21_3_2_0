@@ -1,0 +1,1847 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:44
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\src\S_XNv.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\src\S_XNv.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\S_XNv.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\S_XNv.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\src\S_XNv.c
+      1          /*********************************************************************************************//**
+      2          \file  
+      3          
+      4          \brief External Nv Driver implementation
+      5          
+      6          \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13          \internal
+     14          
+     15          $Id: S_XNv.c 24615 2013-02-27 05:14:24Z mahendranp $
+     16          
+     17          ***************************************************************************************************/
+     18          
+     19          #if PDS_ENABLE_WEAR_LEVELING == 1
+     20          #ifdef _ENABLE_PERSISTENT_SERVER_
+     21          #ifdef PDS_USE_EXTERNAL_FLASH
+     22          /***************************************************************************************************
+     23          * LOCAL INCLUDE FILES
+     24          ***************************************************************************************************/
+     25          
+     26          #include "S_XNv_Bindings.h"
+     27          #include "S_XNv_Init.h"
+     28          #include "S_XNv.h"
+     29          
+     30          /***************************************************************************************************
+     31          * EXTERNAL INCLUDE FILES
+     32          ***************************************************************************************************/
+     33          
+     34          #include "D_XNv.h"
+     35          #include "N_ErrH.h"
+     36          #include "N_Log.h"
+     37          #include "N_Util.h"
+     38          #include "N_Task.h"
+     39          #include "N_Timer.h"
+     40          #include "N_Types.h"
+     41          #include "wlPdsMemIds.h"
+     42          #include <sysTimer.h>
+     43          
+     44          //#include "S_Nv_Platform_Ids.h" // layering violation!
+     45          
+     46          /***************************************************************************************************
+     47          * LOCAL MACROS AND CONSTANTS
+     48          ***************************************************************************************************/
+     49          
+     50          #if defined __IAR_SYSTEMS_ICC__
+     51          //#define S_XNV_LOGGING
+     52          #endif
+     53          
+     54          #define COMPID "S_XNv"
+     55          
+     56          /** The maxumum number of items. */
+     57          #define MAX_ITEM_COUNT 128u
+     58          /** The maxumum length of an item. */
+     59          #define MAX_ITEM_LENGTH 1024u
+     60          
+     61          /** Timer event used to erase a sector. */
+     62          #define EVENT_ERASE_SECTOR   0u
+     63          #define EVENT_COMPACT_SECTOR 1u
+     64          #define EVENT_COMPACT_ITEM   2u
+     65          
+     66          /** Delay before erasing a sector. */
+     67          #define ERASE_SECTOR_DELAY_MS 7000u
+     68          
+     69          /** Delay before performing a preemptive compact operation. */
+     70          #define COMPACT_SECTOR_DELAY_MS 10000u
+     71          
+     72          /** Delay before performing a compact item operation. */
+     73          #define COMPACT_ITEM_DELAY_MS 3000u
+     74          
+     75          /** Perform a compact item operation if the number of partial writes is larger than this. */
+     76          #define COMPACT_ITEM_THRESHOLD 100u
+     77          
+     78          /** Perform a compact sector operation if the sector head is larger then this (2 KiB remaining). */
+     79          #define IMMEDIATE_COMPACT_SECTOR_THRESHOLD 0xF800u
+     80          
+     81          /** Perform a compact sector operation with a delay if the sector head is larger than this (8 KiB remaining). */
+     82          #define PREEMPTIVE_COMPACT_SECTOR_THRESHOLD 0xE000u
+     83          
+     84          /** The size of the sector header. */
+     85          #define SECTOR_HEADER_SIZE ((uint16_t) sizeof(SectorHeader_t))
+     86          /** The size of the block header. */
+     87          #define BLOCK_HEADER_SIZE ((uint16_t) sizeof(BlockHeader_t))
+     88          
+     89          /** The size of one item in the meta block. */
+     90          #define META_ITEM_SIZE ((uint16_t) sizeof(Item_t))
+     91          
+     92          /** The sequence number to use for the initial sector. */
+     93          #define INITIAL_SECTOR_SEQUENCE_NUMBER 0xFFFFFFFEuL
+     94          
+     95          /** The buffer size used while reading the meta block (number of items, not bytes). */
+     96          #define ITEM_BUFFER_LENGTH 4u
+     97          
+     98          /** The item id used for storing the meta pointer block. */
+     99          #define META_POINTER_BLOCK_ID 0xFFFEu
+    100          
+    101          /** The threshold in bytes after which the meta pointer block is updated. */
+    102          #if !defined(S_XNV_META_POINTER_BLOCK_THRESHOLD)
+    103              #define S_XNV_META_POINTER_BLOCK_THRESHOLD 1024u
+    104          #endif
+    105          
+    106          /* The index of the first sector to use for S_XNv and the number of sectors to use.
+    107             Note that S_OTA uses sectors 0..3 */
+    108          #if !defined(S_XNV_FIRST_SECTOR)
+    109          #define S_XNV_FIRST_SECTOR 4u
+    110          #endif
+    111          
+    112          #if !defined(S_XNV_SECTOR_COUNT)
+    113          #define S_XNV_SECTOR_COUNT 4u
+    114          #endif
+    115          
+    116          /***************************************************************************************************
+    117          * LOCAL TYPES
+    118          ***************************************************************************************************/
+    119          
+    120          // make sure that the flash structures are packed
+    121          #if defined(__ICC8051__)
+    122          // the IAR compiler for 8051 does not supports "#pragma pack", but does not need it either...
+    123          #else
+    124          // ...assume that all other compilers do support it
+    125          #pragma pack(1)
+    126          #endif
+    127          
+    128          /** 16 byte sector header used in flash located at the start of the active sector. */
+    129          typedef struct SectorHeader_t
+    130          {
+    131              /** Is this sector active. Written with 0x0000 at the end of the compact operation. */
+    132              uint16_t isActive;
+    133              /** Signature to detect valid sectors. Must have the value "S_XNv2". */
+    134              uint8_t signature[6];
+    135              /** Counter, decreased each time a new sector becomes the active sector. */
+    136              uint32_t sequenceNumber;
+    137              /** Parity bits for the sequenceNumber field = sequenceNumber ^ 0xFFFFFFFFuL. */
+    138              uint32_t sequenceParity;
+    139          } SectorHeader_t;
+    140          
+    141          typedef struct BlockHeader_t
+    142          {
+    143              /** Is this block active. Written with 0x0000 at the end of the write operation. */
+    144              uint16_t isActive;
+    145              /** Item identifier for this block. 0x0000 for a meta block. */
+    146              uint16_t id;
+    147              /** Offset of this block within the item. */
+    148              uint16_t blockOffset;
+    149              /** Length of this block. */
+    150              uint16_t blockLength;
+    151              /** Length of the complete item. */
+    152              uint16_t itemLength;
+    153              /** Pointer to the previous block for this item. */
+    154              uint16_t previousBlock;
+    155              /** Number of partial writes to the item since the last complete write of the item. */
+    156              uint16_t writeCount;
+    157              /** CRC of the header, not including the isActive and headerCrc fields. */
+    158              uint16_t headerCrc;
+    159          } BlockHeader_t;
+    160          
+    161          /** Structure used to store where to find an item. */
+    162          typedef struct Item_t
+    163          {
+    164              /** Item identifier. */
+    165              uint16_t id;
+    166              /** Pointer to the last written block for this item. */
+    167              uint16_t lastBlock;
+    168          } Item_t;
+    169          
+    170          // back to the default packing
+    171          #if defined(__ICC8051__)
+    172          // the IAR compiler for 8051 does not supports "#pragma pack", but does not need it either...
+    173          #else
+    174          // ...assume that all other compilers do support it (only tested with visual studio)
+    175          #pragma pack()
+    176          #endif
+    177          
+    178          /***************************************************************************************************
+    179          * LOCAL VARIABLES
+    180          ***************************************************************************************************/
+    181          
+    182          static const uint16_t s_persistentItems[] = { PERSISTENT_NV_ITEMS_PLATFORM, PERSISTENT_NV_ITEMS_APPLICATION };
+    183          
+    184          /** The active sector. */
+    185          static uint8_t s_sector;
+    186          /** Location of the first unprogrammed byte in the active sector. */
+    187          static uint16_t s_sectorHead;
+    188          
+    189          /** Location of the last written meta block in the active sector. 0x0000 if there is none. */
+    190          static uint16_t s_metaPointer = 0x0000u;
+    191          
+    192          static uint8_t s_itemCount = 0u;
+    193          
+    194          /** To reduce the number of meta block writes, one item (s_cachedItemId) is cached in RAM. Its location is s_cachedItemPointer. */
+    195          static uint16_t s_cachedItemId = 0u;
+    196          static uint16_t s_cachedItemPointer;
+    197          
+    198          /** The sector to erase in the EVENT_ERASE_SECTOR handler. */
+    199          static uint8_t s_sectorToErase = 0xFFu;
+    200          
+    201          /** The item to perform a compact operation on and the length of this item. */
+    202          static uint16_t s_compactItemId = 0x0000u;
+    203          static uint16_t s_compactItemLength = 0x0000u;
+    204          
+    205          /** Callback function called before changing flash contents. */
+    206          static S_XNv_PowerSupplyCheckingFunction_t s_powerSupplyCheckingFunction = NULL;
+    207          
+    208          static HAL_AppTimer_t eraseSectorTimer;
+    209          static SYS_Timer_t compactSectorTimer;
+    210          static SYS_Timer_t compactItemTimer;
+    211          
+    212          /** Index to the first available index in the meta pointer block */
+    213          static uint8_t s_metaPointerBlockIndex = 0u;
+    214          
+    215          /** Check to see if we need to do a compact sector at the Init */
+    216          static bool s_foundValidMetaPointerBlock = FALSE;
+    217          
+    218          /** Check if the early init function is called already. */
+    219          static bool s_earlyInitDone = FALSE;
+    220          
+    221          /***************************************************************************************************
+    222          * LOCAL FUNCTION DECLARATIONS
+    223          ***************************************************************************************************/
+    224          static void eraseSectorTimerFired(void);
+    225          static void compactSectorTimerFired(void);
+    226          static void compactItemTimerFired(void);
+    227          static bool PowerSupplyTooLow(void);
+    228          static bool CompactSector(void);
+    229          static S_XNv_ReturnValue_t CompactItem(void);
+    230          
+    231          /***************************************************************************************************
+    232          * LOCAL FUNCTIONS
+    233          ***************************************************************************************************/
+    234          
+    235          /** Erase sector timer callback.
+    236          */
+    237          static void eraseSectorTimerFired(void)
+    238          {
+    239              if (!PowerSupplyTooLow())
+    240                  D_XNv_EraseSector(s_sectorToErase);
+    241          }
+    242          
+    243          /** Compact sector timer callback.
+    244          */
+    245          static void compactSectorTimerFired(void)
+    246          {
+    247              if (!PowerSupplyTooLow())
+    248                  if (!CompactSector())
+    249                      N_ERRH_FATAL();
+    250          }
+    251          
+    252          /** Compact item timer callback.
+    253          */
+    254          static void compactItemTimerFired(void)
+    255          {
+    256              (void)CompactItem();
+    257          }
+    258          
+    259          /** Check the power supply.
+    260              \returns TRUE if the power supply is too low, FALSE when the the power
+    261                       supply is OK or when there is no callback installed.
+    262          */
+    263          static bool PowerSupplyTooLow()
+    264          {
+    265              bool result = FALSE;
+    266              if ( s_powerSupplyCheckingFunction != NULL )
+    267              {
+    268                  if ( !s_powerSupplyCheckingFunction() )
+    269                  {
+    270                      result = TRUE;
+    271                  }
+    272              }
+    273              return result;
+    274          }
+    275          
+    276          static bool IsPersistent(uint16_t id)
+    277          {
+    278              for ( uint8_t i = 0u; i < N_UTIL_ARRAY_SIZE(s_persistentItems); i++ )
+    279              {
+    280                  if ( id == s_persistentItems[i] )
+    281                  {
+    282                      return TRUE;
+    283                  }
+    284              }
+    285              return FALSE;
+    286          }
+    287          
+    288          /** Check if the RAM buffer contains all 0xFF values (flash erased)
+    289              \param pData The buffer to check
+    290              \param length The length of the buffer
+    291              \returns TRUE if the buffer contains all 0xFF, FALSE otherwise
+    292          */
+    293          static bool IsEmpty(uint8_t* pData, uint16_t length)
+    294          {
+    295              for ( uint16_t i = 0u; i < length; i++ )
+    296              {
+    297                  if ( pData[i] != 0xFFu )
+    298                  {
+    299                      return FALSE;
+    300                  }
+    301              }
+    302          
+    303              return TRUE;
+    304          }
+    305          
+    306          static void UpdateSectorHead(uint16_t increment)
+    307          {
+    308              // make sure that the sector head is aligned to 16 bytes
+    309              s_sectorHead = (s_sectorHead + increment + 0x000Fu) & 0xFFF0u;
+    310          }
+    311          
+    312          /** Return a pointer to the last written block for the item.
+    313              \param id The id to find
+    314              \returns A pointer to the last written block, or 0x0000u if the item was not found
+    315          */
+    316          static uint16_t FindItem(uint16_t id)
+    317          {
+    318              // first see if the item is cached
+    319              if ( s_cachedItemId == id )
+    320              {
+    321                  return s_cachedItemPointer;
+    322              }
+    323          
+    324              // item not cached, read the meta block
+    325              Item_t itemBuffer[ITEM_BUFFER_LENGTH];
+    326          
+    327              for ( uint8_t blockIndex = 0u; blockIndex < s_itemCount; blockIndex += ITEM_BUFFER_LENGTH )
+    328              {
+    329                  uint8_t count = s_itemCount - blockIndex;
+    330                  if ( count > ITEM_BUFFER_LENGTH )
+    331                  {
+    332                      count = ITEM_BUFFER_LENGTH;
+    333                  }
+    334          
+    335                  D_XNv_Read(s_sector, s_metaPointer + BLOCK_HEADER_SIZE + (blockIndex * META_ITEM_SIZE), (uint8_t*) itemBuffer, (uint16_t) (count * sizeof(Item_t)));
+    336                  // search for the id in the buffer
+    337                  for ( uint8_t i = 0u; i < count; i++ )
+    338                  {
+    339                      if ( itemBuffer[i].id == id )
+    340                      {
+    341                          return itemBuffer[i].lastBlock;
+    342                      }
+    343                  }
+    344              }
+    345          
+    346              // item not found
+    347              return 0x0000u;
+    348          }
+    349          
+    350          static uint16_t ComputeCrc(uint8_t* pData, uint16_t length)
+    351          {
+    352              uint16_t crc = 0xFFFFu;
+    353          
+    354              for ( /* empty */ ; length != 0u; length-- )
+    355              {
+    356                  uint8_t x;
+    357                  x = (uint8_t) ((crc >> 8) ^ *pData);
+    358                  x = x ^ (x >> 4);
+    359                  crc = (crc << 8) ^ ((uint16_t) x << 12) ^ ((uint16_t) x << 5) ^ (uint16_t) x;
+    360          
+    361                  pData++;
+    362              }
+    363          
+    364              return crc;
+    365          }
+    366          
+    367          static uint16_t ComputeHeaderCrc(BlockHeader_t* pBlockHeader)
+    368          {
+    369              return ComputeCrc(((uint8_t*) pBlockHeader) + 2u, 12u); // skip isActive and headerCrc
+    370          }
+    371          
+    372          static bool WriteAndCheck(uint16_t offset, uint8_t* pData, uint16_t length)
+    373          {
+    374              D_XNv_Write(s_sector, offset, pData, length);
+    375              return D_XNv_IsEqual(s_sector, offset, pData, length);
+    376          }
+    377          
+    378          static void UpdateMetaPointerBlock(uint16_t metaBlockPointer)
+    379          {
+    380              if (metaBlockPointer > (uint16_t)(s_metaPointerBlockIndex * S_XNV_META_POINTER_BLOCK_THRESHOLD))
+    381              {
+    382                  BlockHeader_t metaPointerBlockHeader;
+    383                  D_XNv_Read(s_sector, SECTOR_HEADER_SIZE, (uint8_t*)&metaPointerBlockHeader, BLOCK_HEADER_SIZE);
+    384                  if((metaPointerBlockHeader.id == META_POINTER_BLOCK_ID) && (metaPointerBlockHeader.isActive == 0u))
+    385                  {
+    386                      // We have a meta pointer block so write it.
+    387                      uint16_t offset = SECTOR_HEADER_SIZE + BLOCK_HEADER_SIZE + (s_metaPointerBlockIndex * ((uint16_t)sizeof(metaBlockPointer)));
+    388                      D_XNv_Write(s_sector, offset, (uint8_t*)&metaBlockPointer, sizeof(metaBlockPointer));
+    389                      s_metaPointerBlockIndex++;
+    390                  }
+    391              }
+    392          }
+    393          
+    394          static bool WriteBlockHeader(BlockHeader_t* pBlockHeader)
+    395          {
+    396              pBlockHeader->isActive = 0xFFFFu;
+    397              pBlockHeader->headerCrc = ComputeHeaderCrc(pBlockHeader);
+    398          
+    399              if ( !WriteAndCheck(s_sectorHead, (uint8_t*) pBlockHeader, BLOCK_HEADER_SIZE) )
+    400              {
+    401                  // failed to write header to flash.
+    402                  // check if any bits were programmed
+    403                  if ( !D_XNv_IsEmpty(s_sector, s_sectorHead, BLOCK_HEADER_SIZE) )
+    404                  {
+    405                      // the next write should skip this failed header as some bits have been programmed
+    406                      UpdateSectorHead(BLOCK_HEADER_SIZE);
+    407                      return FALSE;
+    408                  }
+    409                  else
+    410                  {
+    411                      // no bits were programmed (everything still is 0xFF).
+    412                      // the init function sees this as the start of the empty space
+    413                      // in the sector, so the next write should should attempt to
+    414                      // write to the same address
+    415                      return FALSE;
+    416                  }
+    417              }
+    418              else
+    419              {
+    420                  UpdateSectorHead(BLOCK_HEADER_SIZE);
+    421                  return TRUE;
+    422              }
+    423          }
+    424          
+    425          static bool ActivateBlock(uint16_t blockPointer)
+    426          {
+    427              uint16_t isActive = 0x0000u;
+    428              if ( !WriteAndCheck(blockPointer, (uint8_t*) &isActive, sizeof(uint16_t)) )
+    429              {
+    430                  // failed to activate the block
+    431                  return FALSE;
+    432              }
+    433              else
+    434              {
+    435                  return TRUE;
+    436              }
+    437          }
+    438          
+    439          static bool WriteDataBlock(BlockHeader_t* pBlockHeader, uint8_t* pData)
+    440          {
+    441              uint16_t blockPointer = s_sectorHead;
+    442          
+    443              if ( !WriteBlockHeader(pBlockHeader) )
+    444              {
+    445                  return FALSE;
+    446              }
+    447          
+    448              if ( pData != NULL )
+    449              {
+    450                  if ( !WriteAndCheck(s_sectorHead, pData, pBlockHeader->blockLength) )
+    451                  {
+    452                      // failed to write data to flash.
+    453                      // skip the invalid data for the next write (even if everything still is 0xFF)
+    454                      UpdateSectorHead(pBlockHeader->blockLength);
+    455                      return FALSE;
+    456                  }
+    457              }
+    458              UpdateSectorHead(pBlockHeader->blockLength);
+    459          
+    460              if ( !ActivateBlock(blockPointer) )
+    461              {
+    462                  // failed to activate the block
+    463                  return FALSE;
+    464              }
+    465          
+    466              return TRUE;
+    467          }
+    468          
+    469          static bool WriteMetaBlock(BlockHeader_t* pBlockHeader, uint16_t newItemId, uint16_t newItemPointer)
+    470          {
+    471              Item_t itemBuffer[ITEM_BUFFER_LENGTH];
+    472          
+    473              // construct the new meta block header
+    474              pBlockHeader->id = 0u;
+    475              pBlockHeader->blockOffset = 0x0000u;
+    476              pBlockHeader->blockLength = s_itemCount * META_ITEM_SIZE;
+    477              if ( newItemId != 0u )
+    478              {
+    479                  // add space for new item
+    480                  pBlockHeader->blockLength += META_ITEM_SIZE;
+    481              }
+    482              pBlockHeader->itemLength = pBlockHeader->blockLength;
+    483              pBlockHeader->previousBlock = 0x0000u;
+    484              pBlockHeader->writeCount = 0u;
+    485          
+    486              uint16_t blockPointer = s_sectorHead;
+    487          
+    488              if ( !WriteBlockHeader(pBlockHeader) )
+    489              {
+    490                  return FALSE;
+    491              }
+    492          
+    493              for ( uint8_t blockIndex = 0u; blockIndex < s_itemCount; blockIndex += ITEM_BUFFER_LENGTH )
+    494              {
+    495                  uint8_t count = s_itemCount - blockIndex;
+    496                  if ( count > ITEM_BUFFER_LENGTH )
+    497                  {
+    498                      count = ITEM_BUFFER_LENGTH;
+    499                  }
+    500          
+    501                  // read
+    502                  D_XNv_Read(s_sector, s_metaPointer + BLOCK_HEADER_SIZE + (blockIndex * META_ITEM_SIZE), (uint8_t*) itemBuffer, (uint16_t) (count * sizeof(Item_t)));
+    503                  // check if the cached item is in the buffer. if it is, then update the value in the buffer
+    504                  for ( uint8_t bufferIndex = 0u; bufferIndex < count; bufferIndex++ )
+    505                  {
+    506                      if ( itemBuffer[bufferIndex].id == s_cachedItemId )
+    507                      {
+    508                          itemBuffer[bufferIndex].lastBlock = s_cachedItemPointer;
+    509                      }
+    510                  }
+    511                  // write
+    512                  if ( !WriteAndCheck(s_sectorHead + (blockIndex * META_ITEM_SIZE), (uint8_t*) itemBuffer, (uint16_t) (count * sizeof(Item_t))) )
+    513                  {
+    514                      // failed to write data to flash.
+    515                      // skip the invalid data for the next write (even if everything still is 0xFF)
+    516                      UpdateSectorHead(pBlockHeader->blockLength);
+    517                      return FALSE;
+    518                  }
+    519              }
+    520              if ( newItemId != 0u )
+    521              {
+    522                  // add the new item
+    523                  itemBuffer[0].id = newItemId;
+    524                  itemBuffer[0].lastBlock = newItemPointer;
+    525                  if ( !WriteAndCheck(s_sectorHead + (s_itemCount * META_ITEM_SIZE), (uint8_t*) itemBuffer, sizeof(Item_t)) )
+    526                  {
+    527                      // failed to write data to flash.
+    528                      // skip the invalid data for the next write (even if everything still is 0xFF)
+    529                      UpdateSectorHead(pBlockHeader->blockLength);
+    530                      return FALSE;
+    531                  }
+    532              }
+    533              UpdateSectorHead(pBlockHeader->blockLength);
+    534          
+    535              if ( !ActivateBlock(blockPointer) )
+    536              {
+    537                  // failed to activate the block
+    538                  return FALSE;
+    539              }
+    540          
+    541              s_metaPointer = blockPointer;
+    542          
+    543              // There is always one pointer in the meta pointer block
+    544              UpdateMetaPointerBlock(blockPointer);
+    545          
+    546              return TRUE;
+    547          }
+    548          
+    549          /** Gather data from an item for a read or compact operation.
+    550              \param sourceSector
+    551              \param lastBlockPointer Pointer to the last block written for the item
+    552              \param offset The start of the range of bytes to copy from the item
+    553              \param length The size of the range of bytes to copy from the item
+    554              \param pData Pointer to destination buffer in RAM for a read operation. NULL for a compact operation.
+    555          
+    556              This function is used by both the read and the compact operation.
+    557               - For a read operation, the pBuffer parameter points to a buffer in RAM.
+    558               - For a compact operation, pBuffer parameter is NULL and the data will
+    559                 be copied to the flash memory \ref s_sectorHead in sector \ref s_sector.
+    560          
+    561          */
+    562          static bool GatherData(uint8_t sourceSector, uint16_t lastBlockPointer, uint16_t offset, uint16_t length, void* pData)
+    563          {
+    564              // pointer to end of destination in RAM
+    565              uint8_t* pDestination = NULL;
+    566              // pointer to end of destination in flash
+    567              uint16_t destinationPointer = 0u;
+    568          
+    569              // prepare the correct pointer
+    570              if ( pData != NULL )
+    571              {
+    572                  pDestination = (uint8_t*) pData + length;
+    573              }
+    574              else
+    575              {
+    576                  destinationPointer = s_sectorHead + length;
+    577              }
+    578          
+    579              BlockHeader_t blockHeader;
+    580              uint16_t blockStart;
+    581              uint16_t blockEnd;
+    582              uint16_t count;
+    583          
+    584              // start with the last written block
+    585              uint16_t currentBlockPointer = lastBlockPointer;
+    586          
+    587              // [readStart, readEnd> is the range of data that can be read during the current
+    588              // pass over the blocks (the range includes readStart, but not readEnd).
+    589              // it is initialized with the requested range
+    590              uint16_t readStart = offset;
+    591              uint16_t readEnd = offset + length;
+    592          
+    593              // continue until we have all the data that was requested
+    594              while ( readStart != readEnd )
+    595              {
+    596                  // find the block that contains the **last byte** that we want to read.
+    597                  for ( ;; )
+    598                  {
+    599                      if ( currentBlockPointer == 0x0000u )
+    600                      {
+    601                          // reached first block without finding the data.
+    602                          // either the flash is corrupt, or this is a read beyond the item length
+    603                          return FALSE;
+    604                      }
+    605          
+    606                      // get the header of the current block
+    607                      D_XNv_Read(sourceSector, currentBlockPointer, (uint8_t*) &blockHeader, BLOCK_HEADER_SIZE);
+    608          
+    609                      // [blockStart, blockEnd> is the range of bytes in this block
+    610                      blockStart = blockHeader.blockOffset;
+    611                      blockEnd = blockHeader.blockOffset + blockHeader.blockLength;
+    612          
+    613                      if ( (readEnd <= blockStart) || (readStart >= blockEnd) )
+    614                      {
+    615                          // this block does not contain any bytes that we want to read.
+    616                          // continue with previous written block...
+    617                      }
+    618                      else if ( readEnd > blockEnd )
+    619                      {
+    620                          // this block contains some bytes that we want to read, but not the last byte.
+    621                          // adjust the read range to prevent reading an older version of these bytes
+    622                          readStart = blockEnd;
+    623                          // continue with previous written block...
+    624                      }
+    625                      else
+    626                      {
+    627                          // this block contains the last byte that we want to read.
+    628                          // read all data that we can from this block...
+    629                          break;
+    630                      }
+    631          
+    632                      // ...continue with previous written block
+    633                      currentBlockPointer = blockHeader.previousBlock;
+    634                  }
+    635          
+    636                  // ...read all data that we can from this block
+    637          
+    638                  // pointer to the last byte that we want to read
+    639                  uint16_t sourcePointer = (currentBlockPointer + BLOCK_HEADER_SIZE) + (readEnd - blockStart);
+    640          
+    641                  // check how many of the bytes that we want are in this block
+    642                  if ( readStart < blockStart )
+    643                  {
+    644                      // the block does not contain all data we want to read this pass
+    645                      count = readEnd - blockStart;
+    646          
+    647                      // continue with the current pass after reading this block
+    648                      currentBlockPointer = blockHeader.previousBlock;
+    649                  }
+    650                  else
+    651                  {
+    652                      // the block contains all data we want to read this pass
+    653                      count = readEnd - readStart;
+    654          
+    655                      // start with a new pass after reading this block (unless we have all requested data)
+    656                      currentBlockPointer = lastBlockPointer;
+    657                      readStart = offset;
+    658                  }
+    659                  readEnd -= count;
+    660          
+    661                  // read the data that we want from the source sector
+    662                  if ( pDestination != NULL )
+    663                  {
+    664                      // this is for a read operation, so copy to buffer in RAM
+    665                      sourcePointer -= count;
+    666                      pDestination -= count;
+    667                      D_XNv_Read(s_sector, sourcePointer, pDestination, count);
+    668                  }
+    669                  else
+    670                  {
+    671                      // this is for a compact operation, so copy to the destination sector in flash
+    672                      while ( count > 0u )
+    673                      {
+    674                          uint8_t buffer[16];
+    675                          uint16_t c;
+    676                          if ( count > sizeof(buffer) )
+    677                          {
+    678                              c = sizeof(buffer);
+    679                              count -= (uint16_t) sizeof(buffer);
+    680                          }
+    681                          else
+    682                          {
+    683                              c = count;
+    684                              count = 0u;
+    685                          }
+    686          
+    687                          destinationPointer -= c;
+    688                          sourcePointer -= c;
+    689                          D_XNv_Read(sourceSector, sourcePointer, buffer, c);
+    690                          if ( !WriteAndCheck(destinationPointer, buffer, c) )
+    691                          {
+    692                              return FALSE;
+    693                          }
+    694                      }
+    695                  }
+    696              }
+    697          
+    698              return TRUE;
+    699          }
+    700          
+    701          static bool InitSector(uint32_t sequenceNumber)
+    702          {
+    703              // make sure the sector is completely erased
+    704              if ( !D_XNv_IsEmpty(s_sector, 0u, 0u) )
+    705              {
+    706                  D_XNv_EraseSector(s_sector);
+    707                  // check if the erase succeeded
+    708                  if ( !D_XNv_IsEmpty(s_sector, 0u, 0u) )
+    709                  {
+    710                      return FALSE;
+    711                  }
+    712              }
+    713          
+    714              // write sector header
+    715              SectorHeader_t sectorHeader;
+    716              sectorHeader.isActive = 0xFFFFu;
+    717              sectorHeader.signature[0] = (uint8_t) 'S';
+    718              sectorHeader.signature[1] = (uint8_t) '_';
+    719              sectorHeader.signature[2] = (uint8_t) 'X';
+    720              sectorHeader.signature[3] = (uint8_t) 'N';
+    721              sectorHeader.signature[4] = (uint8_t) 'v';
+    722              sectorHeader.signature[5] = (uint8_t) '2';
+    723              sectorHeader.sequenceNumber = sequenceNumber;
+    724              sectorHeader.sequenceParity = sequenceNumber ^ 0xFFFFFFFFuL;
+    725              if ( !WriteAndCheck(0u, (uint8_t*) &sectorHeader, SECTOR_HEADER_SIZE) )
+    726              {
+    727                  return FALSE;
+    728              }
+    729          
+    730              s_sectorHead = SECTOR_HEADER_SIZE;
+    731          
+    732              BlockHeader_t metaPointerBlockHeader;
+    733              metaPointerBlockHeader.id = META_POINTER_BLOCK_ID;
+    734              metaPointerBlockHeader.blockOffset = 0u;
+    735              metaPointerBlockHeader.blockLength = (uint16_t)((D_XNV_SECTOR_SIZE / S_XNV_META_POINTER_BLOCK_THRESHOLD) * sizeof(uint16_t));
+    736              metaPointerBlockHeader.itemLength = (uint16_t)((D_XNV_SECTOR_SIZE / S_XNV_META_POINTER_BLOCK_THRESHOLD) * sizeof(uint16_t));
+    737              metaPointerBlockHeader.previousBlock = 0x0000u;
+    738              metaPointerBlockHeader.writeCount = 0u;
+    739          
+    740              // We do not care for the return value here. If it fails the init, will try again next reset.
+    741              (void)WriteDataBlock(&metaPointerBlockHeader, NULL);
+    742          
+    743              return TRUE;
+    744          }
+    745          
+    746          static bool ActivateSector(void)
+    747          {
+    748              // activate sector header
+    749              uint16_t isActive = 0x0000u;
+    750              if ( !WriteAndCheck(0u, (uint8_t*) &isActive, sizeof(uint16_t)) )
+    751              {
+    752                  return FALSE;
+    753              }
+    754              else
+    755              {
+    756                  return TRUE;
+    757              }
+    758          }
+    759          
+    760          /** Check the meta pointer block for a valid pointer to a meta block.
+    761              If a pointer is found and it leads to a valid meta block. Copy the header to
+    762              blockHeader.
+    763              \param blockHeader Pointer to the meta pointer block header.
+    764          
+    765              \returns The address of the valid meta block or 0 if no valid meta block is found.
+    766          */
+    767          static uint16_t GetValidMetaPointerFromMetaPointerBlock(BlockHeader_t * blockHeader)
+    768          {
+    769              uint8_t buffer[16] = {0u};
+    770              BlockHeader_t metaHeader;
+    771              uint16_t lastBlock = 0u;
+    772              if(blockHeader->itemLength > 16u)
+    773              {
+    774                  lastBlock = ((blockHeader->itemLength - 16u) & 0xFFF0u);
+    775              }
+    776          
+    777              // Read back all pointers in reverse. Done when an overflow occurs.
+    778              uint16_t offset = lastBlock;
+    779              while(offset <= lastBlock)
+    780              {
+    781                  if(!D_XNv_IsEmpty(s_sector, s_sectorHead + BLOCK_HEADER_SIZE + offset, 16u))
+    782                  {
+    783                      D_XNv_Read(s_sector, s_sectorHead + BLOCK_HEADER_SIZE + offset, buffer, 16u);
+    784                      uint8_t index = 15u;
+    785                      // Done when an overflow occurs
+    786                      while(index <= 15u)
+    787                      {
+    788                          uint16_t metaPointer = N_Util_BuildUint16(buffer[index - 1u], buffer[index]);
+    789                          if((metaPointer != 0xFFFFu) && ((metaPointer % 16u) == 0u))
+    790                          {
+    791                              D_XNv_Read(s_sector, metaPointer, (uint8_t*)&metaHeader, BLOCK_HEADER_SIZE);
+    792                              uint16_t headerCrc = ComputeHeaderCrc(&metaHeader);
+    793                              if((metaHeader.id == 0u) && (metaHeader.isActive == 0x0000u) && (metaHeader.headerCrc == headerCrc))
+    794                              {
+    795                                  // Copy the valid header to blockHeader
+    796                                  (void)memcpy((void*)blockHeader, (void*)&metaHeader, sizeof(BlockHeader_t));
+    797                                  // calculate the meta pointer block index
+    798                                  // (currentBlock * itemsInABlock) + (currentItemInBlock) + 1 = ((offset / 16u) * 8) + ((index - 1)/2) + 1
+    799                                  uint16_t itemsLeft = (offset / 16u) * 8u;
+    800                                  uint16_t currentItemInBlock = (((uint16_t)index) - 1u) / 2u;
+    801                                  s_metaPointerBlockIndex = (uint8_t)(itemsLeft + currentItemInBlock + 1u);
+    802                                  return metaPointer;
+    803                              }
+    804                          }
+    805                          index -= 2u;
+    806                      }
+    807                  }
+    808                  offset -= 16u;
+    809              }
+    810              return 0u;
+    811          }
+    812          
+    813          static void LoadSector(void)
+    814          {
+    815              // start after the sector header
+    816              s_sectorHead = SECTOR_HEADER_SIZE;
+    817          
+    818              // keep track of the (last) item block that is after a meta block
+    819              uint16_t lastItemId = 0u;
+    820              uint16_t lastItemPointer = 0x0000u;
+    821          
+    822              // done when an overflow occurs: sectors are 64KiB
+    823              while ( s_sectorHead >= SECTOR_HEADER_SIZE )
+    824              {
+    825                  BlockHeader_t blockHeader;
+    826                  D_XNv_Read(s_sector, s_sectorHead, (uint8_t*) &blockHeader, BLOCK_HEADER_SIZE);
+    827          
+    828                  if ( IsEmpty((uint8_t*) &blockHeader, BLOCK_HEADER_SIZE) )
+    829                  {
+    830                      // no header. done
+    831                      break;
+    832                  }
+    833                  else if ( blockHeader.headerCrc != ComputeHeaderCrc(&blockHeader) )
+    834                  {
+    835                      // invalid header. skip header
+    836                      UpdateSectorHead(BLOCK_HEADER_SIZE);
+    837                  }
+    838                  else if ( blockHeader.isActive != 0x0000u )
+    839                  {
+    840                      // inactive header. skip header and data
+    841                      UpdateSectorHead(BLOCK_HEADER_SIZE + blockHeader.blockLength);
+    842                  }
+    843                  else
+    844                  {
+    845                      // Valid meta pointer block found. Check validity and update sector head.
+    846                      if ( blockHeader.id == META_POINTER_BLOCK_ID )
+    847                      {
+    848                          uint16_t metaPointerBlockSize = blockHeader.blockLength;
+    849                          uint16_t metaPointer = GetValidMetaPointerFromMetaPointerBlock(&blockHeader);
+    850                          if(metaPointer != 0u)
+    851                          {
+    852                              // Check the if the size of the meta pointer block is valid. If not we can still use it, but we should do a compact page
+    853                              // to resize it.
+    854                              uint16_t realMetaPointerBlockSize = (uint16_t)((D_XNV_SECTOR_SIZE / S_XNV_META_POINTER_BLOCK_THRESHOLD) * sizeof(uint16_t));
+    855                              if(metaPointerBlockSize == realMetaPointerBlockSize)
+    856                              {
+    857                                  // We have found a valid meta block via the meta pointer block.
+    858                                  s_foundValidMetaPointerBlock = TRUE;
+    859                              }
+    860          
+    861                              // blockHeader now contains the header of the meta block.
+    862                              // Only need to update the sector header, the code below will handle the meta block.
+    863                              s_sectorHead = metaPointer;
+    864                          }
+    865                      }
+    866          
+    867                      if ( blockHeader.id == 0u )
+    868                      {
+    869                          s_metaPointer = s_sectorHead;
+    870                          s_itemCount = (uint8_t) (blockHeader.itemLength / META_ITEM_SIZE);
+    871                      }
+    872                      else
+    873                      {
+    874                          // Don't need to cache the meta pointer block
+    875                          if(blockHeader.id != META_POINTER_BLOCK_ID)
+    876                          {
+    877                              lastItemId = blockHeader.id;
+    878                              lastItemPointer = s_sectorHead;
+    879                          }
+    880                      }
+    881                      UpdateSectorHead(BLOCK_HEADER_SIZE + blockHeader.blockLength);
+    882                  }
+    883              }
+    884          
+    885              // initialize the cache, but only if the item is in the last written
+    886              // meta block (it may have been deleted).
+    887              // FindItem can be used here because the cache has not been initialized yet
+    888              if ( lastItemId != 0u )
+    889              {
+    890                  if ( FindItem(lastItemId) != 0x0000u )
+    891                  {
+    892                      s_cachedItemId = lastItemId;
+    893                      s_cachedItemPointer = lastItemPointer;
+    894                  }
+    895              }
+    896          }
+    897          
+    898          static bool CompactSector(void)
+    899          {
+    900          #if defined(ENABLE_NV_COMPACT_LOGGING)
+    901              N_LOG_ALWAYS(("CompactSector(s=%hu)", s_sector));
+    902          #endif
+    903          
+    904              // stop timer for preemptive compact sector as this will not be needed any more
+    905              // don't care if the task does does not yet exist (S_XNv_Init()) not yet called
+    906              SYS_StopTimer(&compactSectorTimer);
+    907          
+    908              // stop the compact item as a compact sector will compact all items
+    909              s_compactItemId = 0u;
+    910              s_compactItemLength = 0u;
+    911          
+    912              uint8_t sourceSector = s_sector;
+    913          
+    914              // get the sector header for the source sector
+    915              SectorHeader_t sectorHeader;
+    916              D_XNv_Read(sourceSector, 0u, (uint8_t*) &sectorHeader, SECTOR_HEADER_SIZE);
+    917          
+    918              uint32_t nextSequenceNumber = sectorHeader.sequenceNumber - 1uL;
+    919          
+    920              // find and prepare a destination sector
+    921              do
+    922              {
+    923                  s_sector++;
+    924                  if ( s_sector >= (S_XNV_FIRST_SECTOR + S_XNV_SECTOR_COUNT) )
+    925                  {
+    926                      s_sector = S_XNV_FIRST_SECTOR;
+    927                  }
+    928          
+    929                  if ( s_sector == sourceSector )
+    930                  {
+    931                      // all sector failed to initialize
+    932                      N_ERRH_FATAL();
+    933                  }
+    934              }
+    935              while ( !InitSector(nextSequenceNumber) );
+    936          
+    937              // start with a meta block. write the header now and the data when an item is compacted
+    938              uint16_t newMetaPointer = s_sectorHead;
+    939          
+    940              BlockHeader_t blockHeader;
+    941              blockHeader.id = 0u;
+    942              blockHeader.blockOffset = 0x0000u;
+    943              blockHeader.blockLength = s_itemCount * META_ITEM_SIZE;
+    944              blockHeader.itemLength = blockHeader.blockLength;
+    945              blockHeader.previousBlock = 0x0000u;
+    946              blockHeader.writeCount = 0u;
+    947              if ( !WriteBlockHeader(&blockHeader) )
+    948              {
+    949                  return FALSE;
+    950              }
+    951              UpdateSectorHead(blockHeader.blockLength);
+    952          
+    953              // copy all items to the new page
+    954              Item_t item;
+    955              item.id = 0u;
+    956              item.lastBlock = 0x0000u;
+    957              for ( uint8_t blockIndex = 0u; blockIndex < s_itemCount; blockIndex++ )
+    958              {
+    959                  // read next item from meta block
+    960                  D_XNv_Read(sourceSector, s_metaPointer + BLOCK_HEADER_SIZE + (blockIndex * META_ITEM_SIZE), (uint8_t*) &item, META_ITEM_SIZE);
+    961                  if ( item.id == s_cachedItemId )
+    962                  {
+    963                      // use the cached pointer instead of the pointer from the meta block for a cached item
+    964                      item.lastBlock = s_cachedItemPointer;
+    965                  }
+    966          
+    967                  // read last written block for the item from the source sector
+    968                  D_XNv_Read(sourceSector, item.lastBlock, (uint8_t*) &blockHeader, BLOCK_HEADER_SIZE);
+    969          
+    970                  uint16_t blockPointer = s_sectorHead;
+    971          
+    972                  // write the block header to the destination sector. all data will be merged into one block
+    973                  blockHeader.blockOffset = 0u;
+    974                  blockHeader.blockLength = blockHeader.itemLength;
+    975                  blockHeader.previousBlock = 0x0000u;
+    976                  blockHeader.writeCount = 0u;
+    977                  if ( !WriteBlockHeader(&blockHeader) )
+    978                  {
+    979                      return FALSE;
+    980                  }
+    981          
+    982                  // gather all data from the source sector and copy it to the destination sector
+    983                  if ( !GatherData(sourceSector, item.lastBlock, 0u, blockHeader.itemLength, NULL) )
+    984                  {
+    985                      return FALSE;
+    986                  }
+    987                  UpdateSectorHead(blockHeader.blockLength);
+    988          
+    989                  // activate the block
+    990                  if ( !ActivateBlock(blockPointer) )
+    991                  {
+    992                      return FALSE;
+    993                  }
+    994          
+    995                  // write item administration to meta block
+    996                  item.lastBlock = blockPointer;
+    997                  if ( !WriteAndCheck(newMetaPointer + BLOCK_HEADER_SIZE + (blockIndex * META_ITEM_SIZE), (uint8_t*) &item, META_ITEM_SIZE) )
+    998                  {
+    999                      return FALSE;
+   1000                  }
+   1001              }
+   1002              s_cachedItemId = item.id;
+   1003              s_cachedItemPointer = item.lastBlock;
+   1004          
+   1005              // activate the meta block
+   1006              if ( !ActivateBlock(newMetaPointer) )
+   1007              {
+   1008                  return FALSE;
+   1009              }
+   1010              s_metaPointer = newMetaPointer;
+   1011          
+   1012              // Update the meta pointer block
+   1013              s_metaPointerBlockIndex = 0u;
+   1014              UpdateMetaPointerBlock(newMetaPointer);
+   1015          
+   1016              // activate the sector
+   1017              if ( !ActivateSector() )
+   1018              {
+   1019                  return FALSE;
+   1020              }
+   1021          
+   1022              // schedule an erase of the source sector.
+   1023              s_sectorToErase = sourceSector;
+   1024          
+   1025              // no problem if a task not yet active: the sector will be erased the next time it will be used.
+   1026              // Restart the timer if it is already running.
+   1027              HAL_StopAppTimer(&eraseSectorTimer);
+   1028              HAL_StartAppTimer(&eraseSectorTimer);
+   1029          
+   1030              return TRUE;
+   1031          }
+   1032          
+   1033          static void CompactSectorIfNeeded(void)
+   1034          {
+   1035              if ( s_sectorHead > IMMEDIATE_COMPACT_SECTOR_THRESHOLD )
+   1036              {
+   1037                  if ( !CompactSector() )
+   1038                  {
+   1039                      N_ERRH_FATAL();
+   1040                  }
+   1041              }
+   1042              if ( s_sectorHead > PREEMPTIVE_COMPACT_SECTOR_THRESHOLD )
+   1043              {
+   1044                  if (SYS_TIMER_STOPPED == compactSectorTimer.state)
+   1045                      SYS_InitTimer(&compactSectorTimer, TIMER_ONE_SHOT_MODE, COMPACT_SECTOR_DELAY_MS, compactSectorTimerFired);
+   1046          
+   1047              }
+   1048          }
+   1049          
+   1050          static S_XNv_ReturnValue_t CompactItem(void)
+   1051          {
+   1052          #if defined(ENABLE_NV_COMPACT_LOGGING)
+   1053              N_LOG_ALWAYS(("CompactItem(id=%Xh)", s_compactItemId));
+   1054          #endif
+   1055          
+   1056              if ( PowerSupplyTooLow() )
+   1057              {
+   1058                  return S_XNv_ReturnValue_PowerSupplyTooLow;
+   1059              }
+   1060          
+   1061              CompactSectorIfNeeded();
+   1062          
+   1063              if ( (s_compactItemLength == 0u) && ( s_compactItemId == 0u ) )
+   1064              {
+   1065                  // compact sector was performed since the compact item was
+   1066                  // scheduled, so there is no need for another compact item unless
+   1067                  // a resize of an item is needed.
+   1068                  return S_XNv_ReturnValue_Ok;
+   1069              }
+   1070          
+   1071              uint16_t blockPointer = FindItem(s_compactItemId);
+   1072              if ( blockPointer == 0x0000u )
+   1073              {
+   1074                  // trying to compact a non-existing item (item may have been deleted)
+   1075                  return S_XNv_ReturnValue_Ok;
+   1076              }
+   1077          
+   1078              BlockHeader_t blockHeader;
+   1079              if ( s_compactItemId != s_cachedItemId )
+   1080              {
+   1081                  // write meta block
+   1082                  if ( !WriteMetaBlock(&blockHeader, 0u, 0x0000u) )
+   1083                  {
+   1084                      N_LOG_NONFATAL();
+   1085                      return S_XNv_ReturnValue_Failure;
+   1086                  }
+   1087              }
+   1088          
+   1089              // read last written item block header
+   1090              D_XNv_Read(s_sector, blockPointer, (uint8_t*) &blockHeader, BLOCK_HEADER_SIZE);
+   1091          
+   1092              uint16_t lastBlock = s_sectorHead;
+   1093          
+   1094              // write the block header to the destination sector. all data will be merged into one block
+   1095              uint16_t bytesToGather = blockHeader.itemLength;
+   1096              if ( s_compactItemLength != 0u )
+   1097              {
+   1098                  N_LOG_ALWAYS(("Resizing NV item (id=%hu) from %hu to %hu", s_compactItemId, blockHeader.itemLength, s_compactItemLength));
+   1099          
+   1100                  // Change the length of the item
+   1101                  blockHeader.itemLength = s_compactItemLength;
+   1102          
+   1103                  if ( bytesToGather > blockHeader.itemLength )
+   1104                  {
+   1105                      // Item will be truncated as the new length is smaller than the original length.
+   1106                      bytesToGather = blockHeader.itemLength;
+   1107                  }
+   1108              }
+   1109          
+   1110              blockHeader.blockOffset = 0u;
+   1111              blockHeader.blockLength = blockHeader.itemLength;
+   1112              blockHeader.previousBlock = 0x0000u;
+   1113              blockHeader.writeCount = 0u;
+   1114              if ( !WriteBlockHeader(&blockHeader) )
+   1115              {
+   1116                  N_LOG_NONFATAL();
+   1117                  return S_XNv_ReturnValue_Failure;
+   1118              }
+   1119          
+   1120              // gather all data of the item and copy it to a new block
+   1121              if ( !GatherData(s_sector, blockPointer, 0u, bytesToGather, NULL) )
+   1122              {
+   1123                  N_LOG_NONFATAL();
+   1124                  return S_XNv_ReturnValue_Failure;
+   1125              }
+   1126              UpdateSectorHead(blockHeader.blockLength);
+   1127          
+   1128              // activate the block
+   1129              if ( !ActivateBlock(lastBlock) )
+   1130              {
+   1131                  N_LOG_NONFATAL();
+   1132                  return S_XNv_ReturnValue_Failure;
+   1133              }
+   1134          
+   1135              s_cachedItemId = s_compactItemId;
+   1136              s_cachedItemPointer = lastBlock;
+   1137          
+   1138              s_compactItemId = 0u;
+   1139              s_compactItemLength = 0u;
+   1140          
+   1141              return S_XNv_ReturnValue_Ok;
+   1142          }
+   1143          
+   1144          /***************************************************************************************************
+   1145          * EXPORTED FUNCTIONS
+   1146          ***************************************************************************************************/
+   1147          
+   1148          void S_XNv_EarlyInit(void)
+   1149          {
+   1150              s_foundValidMetaPointerBlock = FALSE;
+   1151              s_metaPointerBlockIndex = 0u;
+   1152          
+   1153              s_metaPointer = 0x0000u;
+   1154          
+   1155              s_itemCount = 0u;
+   1156              s_cachedItemId = 0u;
+   1157              s_cachedItemPointer = 0x0000u;
+   1158          
+   1159              SectorHeader_t sectorHeader;
+   1160          
+   1161              uint8_t lastSector = 0xFFu;
+   1162              uint32_t lastSectorSequence = 0xFFFFFFFFuL;
+   1163          
+   1164              for ( uint8_t sector = S_XNV_FIRST_SECTOR; sector < (S_XNV_FIRST_SECTOR + S_XNV_SECTOR_COUNT); sector++ )
+   1165              {
+   1166                  D_XNv_Read(sector, 0u, (uint8_t*) &sectorHeader, SECTOR_HEADER_SIZE);
+   1167                  if ( (sectorHeader.isActive == 0x0000u) &&
+   1168                       (sectorHeader.signature[0] == (uint8_t) 'S') &&
+   1169                       (sectorHeader.signature[1] == (uint8_t) '_') &&
+   1170                       (sectorHeader.signature[2] == (uint8_t) 'X') &&
+   1171                       (sectorHeader.signature[3] == (uint8_t) 'N') &&
+   1172                       (sectorHeader.signature[4] == (uint8_t) 'v') &&
+   1173                       (sectorHeader.signature[5] == (uint8_t) '2') &&
+   1174                       ((sectorHeader.sequenceNumber ^ sectorHeader.sequenceParity) == 0xFFFFFFFFuL) )
+   1175                  {
+   1176                      // active sector
+   1177                      if ( sectorHeader.sequenceNumber < lastSectorSequence )
+   1178                      {
+   1179                          lastSector = sector;
+   1180                          lastSectorSequence = sectorHeader.sequenceNumber;
+   1181                      }
+   1182                  }
+   1183              }
+   1184          
+   1185              if ( lastSector == 0xFFu )
+   1186              {
+   1187                  // no active sector. initialize one
+   1188                  s_sector = S_XNV_FIRST_SECTOR;
+   1189          
+   1190                  for ( ;; )
+   1191                  {
+   1192                      if ( InitSector(INITIAL_SECTOR_SEQUENCE_NUMBER) )
+   1193                      {
+   1194                          if ( ActivateSector() )
+   1195                          {
+   1196                              break;
+   1197                          }
+   1198                      }
+   1199          
+   1200                      s_sector++;
+   1201                      if ( s_sector >= (S_XNV_FIRST_SECTOR + S_XNV_SECTOR_COUNT) )
+   1202                      {
+   1203                          // all sectors failed to initialize
+   1204                          N_ERRH_FATAL();
+   1205                      }
+   1206                  }
+   1207          
+   1208                  s_itemCount = 0u;
+   1209              }
+   1210              else
+   1211              {
+   1212                  // load active sector
+   1213                  s_sector = lastSector;
+   1214          
+   1215                  LoadSector();
+   1216              }
+   1217          
+   1218              s_earlyInitDone = TRUE;
+   1219          }
+   1220          
+   1221          void S_XNv_Init(void)
+   1222          {
+   1223              if (!s_earlyInitDone)
+   1224              {
+   1225                  S_XNv_EarlyInit();
+   1226              }
+   1227          
+   1228              eraseSectorTimer.mode     = TIMER_ONE_SHOT_MODE;
+   1229              eraseSectorTimer.callback = eraseSectorTimerFired;
+   1230              eraseSectorTimer.interval = ERASE_SECTOR_DELAY_MS;
+   1231              
+   1232              if(!s_foundValidMetaPointerBlock)
+   1233              {
+   1234                  // Have not found a valid meta pointer block. Schedule a compact page to create one.
+   1235                  SYS_InitTimer(&compactSectorTimer, TIMER_ONE_SHOT_MODE, COMPACT_SECTOR_DELAY_MS, compactSectorTimerFired);
+   1236              }
+   1237          }
+   1238          
+   1239          /** Interface function, see \ref S_XNv_ItemInit. */
+   1240          #if defined(S_XNV_LOGGING)
+   1241          static S_XNv_ReturnValue_t S_XNv_ItemInit_Original(S_XNv_ItemId_t id, uint16_t itemLength, void* pDefaultData)
+   1242          #else
+   1243          S_XNv_ReturnValue_t S_XNv_ItemInit_Impl(S_XNv_ItemId_t id, uint16_t itemLength, void* pDefaultData)
+   1244          #endif
+   1245          {
+   1246              N_ERRH_ASSERT_FATAL((id != 0u) && (id < 0xF000u) && (itemLength <= MAX_ITEM_LENGTH));
+   1247          
+   1248              if ( FindItem(id) != 0x0000u )
+   1249              {
+   1250          #if (!defined(DISABLE_NV_RESIZE))
+   1251                  // Item is already initialized. Check if the item length has been changed.
+   1252                  uint16_t oldItemLength = S_XNv_ItemLength(id);
+   1253                  if ( oldItemLength != itemLength )
+   1254                  {
+   1255                      // Resize this item to the new length
+   1256                      s_compactItemId = id;
+   1257                      s_compactItemLength = itemLength;
+   1258          
+   1259                      S_XNv_ReturnValue_t resizeResult = CompactItem();
+   1260                      if ( resizeResult != S_XNv_ReturnValue_Ok )
+   1261                      {
+   1262                          return resizeResult;
+   1263                      }
+   1264                  }
+   1265          #endif
+   1266                  if (pDefaultData != NULL)
+   1267                  {
+   1268                      return S_XNv_Read(id, 0u, itemLength, pDefaultData);
+   1269                  }
+   1270                  else
+   1271                  {
+   1272                      return S_XNv_ReturnValue_Ok;
+   1273                  }
+   1274              }
+   1275          
+   1276              if ( PowerSupplyTooLow() )
+   1277              {
+   1278                  return S_XNv_ReturnValue_PowerSupplyTooLow;
+   1279              }
+   1280          
+   1281              CompactSectorIfNeeded();
+   1282          
+   1283              BlockHeader_t blockHeader;
+   1284          
+   1285              // need to add a new item. check if possible
+   1286              N_ERRH_ASSERT_FATAL(s_itemCount < MAX_ITEM_COUNT);
+   1287          
+   1288              uint16_t newItemId = id;
+   1289              uint16_t newItemPointer = s_sectorHead;
+   1290          
+   1291              blockHeader.id = newItemId;
+   1292              blockHeader.blockOffset = 0x0000u;
+   1293              blockHeader.blockLength = itemLength;
+   1294              blockHeader.itemLength = itemLength;
+   1295              blockHeader.previousBlock = 0x0000u;
+   1296              blockHeader.writeCount = 0u;
+   1297              if ( !WriteDataBlock(&blockHeader, (uint8_t*) pDefaultData) )
+   1298              {
+   1299                  return S_XNv_ReturnValue_Failure;
+   1300              }
+   1301          
+   1302              if ( !WriteMetaBlock(&blockHeader, newItemId, newItemPointer) )
+   1303              {
+   1304                  return S_XNv_ReturnValue_Failure;
+   1305              }
+   1306          
+   1307              // first write the new meta block, as the item count should not be increased if this fails
+   1308              s_itemCount++;
+   1309          
+   1310              // first write the new meta block, as this needs the old cached data
+   1311              s_cachedItemId = newItemId;
+   1312              s_cachedItemPointer = newItemPointer;
+   1313          
+   1314              return S_XNv_ReturnValue_DidNotExist;
+   1315          }
+   1316          
+   1317          /** Interface function, see \ref S_XNv_Write. */
+   1318          #if defined(S_XNV_LOGGING)
+   1319          static S_XNv_ReturnValue_t S_XNv_Write_Original(S_XNv_ItemId_t id, uint16_t offset, uint16_t dataLength, void* pData)
+   1320          #else
+   1321          S_XNv_ReturnValue_t S_XNv_Write_Impl(S_XNv_ItemId_t id, uint16_t offset, uint16_t dataLength, void* pData)
+   1322          #endif
+   1323          {
+   1324              N_ERRH_ASSERT_FATAL((id != 0u) && (id < 0xF000u) && (pData != NULL));
+   1325          
+   1326              if ( PowerSupplyTooLow() )
+   1327              {
+   1328                  return S_XNv_ReturnValue_PowerSupplyTooLow;
+   1329              }
+   1330          
+   1331              CompactSectorIfNeeded();
+   1332          
+   1333              uint16_t blockPointer = FindItem(id);
+   1334              if ( blockPointer == 0x0000u )
+   1335              {
+   1336                  // item does not exist
+   1337                  return S_XNv_ReturnValue_DoesNotExist;
+   1338              }
+   1339          
+   1340              BlockHeader_t blockHeader;
+   1341              // If the sector header is over S_XNV_META_POINTER_BLOCK_THRESHOLD because only cached items have been written,
+   1342              // write a new meta block
+   1343              if ( (s_cachedItemId != id) || ((s_sectorHead - s_metaPointer) > S_XNV_META_POINTER_BLOCK_THRESHOLD) )
+   1344              {
+   1345                  // write meta block
+   1346                  if ( !WriteMetaBlock(&blockHeader, 0u, 0x0000u) )
+   1347                  {
+   1348                      return S_XNv_ReturnValue_Failure;
+   1349                  }
+   1350              }
+   1351          
+   1352              // read last written item block header
+   1353              D_XNv_Read(s_sector, blockPointer, (uint8_t*) &blockHeader, BLOCK_HEADER_SIZE);
+   1354          
+   1355              // check that we do not write beyond the length of the item
+   1356              if ( ((uint32_t) offset + (uint32_t) dataLength) > (uint32_t) blockHeader.itemLength )
+   1357              {
+   1358                  return S_XNv_ReturnValue_BeyondEnd;
+   1359              }
+   1360          
+   1361              uint16_t lastBlock = s_sectorHead;
+   1362          
+   1363              // write item block
+   1364              blockHeader.blockOffset = offset;
+   1365              blockHeader.blockLength = dataLength;
+   1366              blockHeader.previousBlock = blockPointer;
+   1367              if ( blockHeader.blockLength == blockHeader.itemLength )
+   1368              {
+   1369                  // complete write. reset counter
+   1370                  blockHeader.writeCount = 0u;
+   1371              }
+   1372              else
+   1373              {
+   1374                  // partial write. increment counter
+   1375                  blockHeader.writeCount++;
+   1376              }
+   1377              if ( !WriteDataBlock(&blockHeader, (uint8_t*) pData) )
+   1378              {
+   1379                  return S_XNv_ReturnValue_Failure;
+   1380              }
+   1381          
+   1382              if ( blockHeader.writeCount > COMPACT_ITEM_THRESHOLD )
+   1383              {
+   1384                  // schedule a compact item operation for this item.
+   1385                  // this reads the complete item and writes a new block containing
+   1386                  // the complete item. this limits the worst case read and compact
+   1387                  // sector time.
+   1388                  s_compactItemId = blockHeader.id;
+   1389                  s_compactItemLength = 0u;           // no need to resize this item here
+   1390          
+   1391                  // if a timer cannot be started (S_XNv_Init() not done) - the operation
+   1392                  // is not required for a correct operation of the component
+   1393                  if (SYS_TIMER_STOPPED == compactItemTimer.state)
+   1394                      SYS_InitTimer(&compactItemTimer, TIMER_ONE_SHOT_MODE, COMPACT_ITEM_DELAY_MS, compactItemTimerFired);
+   1395              }
+   1396          
+   1397              s_cachedItemId = blockHeader.id;
+   1398              s_cachedItemPointer = lastBlock;
+   1399          
+   1400              return S_XNv_ReturnValue_Ok;
+   1401          }
+   1402          
+   1403          /** Interface function, see \ref S_XNv_Read. */
+   1404          #if defined(S_XNV_LOGGING)
+   1405          static S_XNv_ReturnValue_t S_XNv_Read_Original(S_XNv_ItemId_t id, uint16_t offset, uint16_t dataLength, void* pData)
+   1406          #else
+   1407          S_XNv_ReturnValue_t S_XNv_Read_Impl(S_XNv_ItemId_t id, uint16_t offset, uint16_t dataLength, void* pData)
+   1408          #endif
+   1409          {
+   1410              N_ERRH_ASSERT_FATAL((id != 0u) && (id < 0xF000u) && (pData != NULL));
+   1411          
+   1412              // get the pointer to the last written block for the item
+   1413              uint16_t lastBlockPointer = FindItem(id);
+   1414              if ( lastBlockPointer == 0x0000u )
+   1415              {
+   1416                  // item does not exist
+   1417                  return S_XNv_ReturnValue_DoesNotExist;
+   1418              }
+   1419          
+   1420              // prevent overflow when calculating the range of bytes to read
+   1421              if ( ((uint32_t) offset + (uint32_t) dataLength) >= 0x10000uL )
+   1422              {
+   1423                  return S_XNv_ReturnValue_BeyondEnd;
+   1424              }
+   1425          
+   1426              // gather the data into the destination buffer
+   1427              if ( !GatherData(s_sector, lastBlockPointer, offset, dataLength, pData) )
+   1428              {
+   1429                  return S_XNv_ReturnValue_BeyondEnd;
+   1430              }
+   1431          
+   1432              return S_XNv_ReturnValue_Ok;
+   1433          }
+   1434          
+   1435          /** Interface function, see \ref S_XNv_ItemLength. */
+   1436          uint16_t S_XNv_ItemLength_Impl(S_XNv_ItemId_t id)
+   1437          {
+   1438              N_ERRH_ASSERT_FATAL((id != 0u) && (id < 0xF000u));
+   1439          
+   1440              uint16_t blockPointer = FindItem(id);
+   1441              if ( blockPointer == 0x0000u )
+   1442              {
+   1443                  // item does not exist
+   1444                  return 0u;
+   1445              }
+   1446          
+   1447              // read last written item block header
+   1448              BlockHeader_t blockHeader;
+   1449              D_XNv_Read(s_sector, blockPointer, (uint8_t*) &blockHeader, BLOCK_HEADER_SIZE);
+   1450              return blockHeader.itemLength;
+   1451          }
+   1452          
+   1453          /** Interface function, see \ref S_XNv_Delete. */
+   1454          S_XNv_ReturnValue_t S_XNv_Delete_Impl(S_XNv_ItemId_t id)
+   1455          {
+   1456              N_ERRH_ASSERT_FATAL((id != 0u) && (id < 0xF000u));
+   1457          
+   1458              if ( FindItem(id) == 0x0000u )
+   1459              {
+   1460                  return S_XNv_ReturnValue_DoesNotExist;
+   1461              }
+   1462          
+   1463              if ( PowerSupplyTooLow() )
+   1464              {
+   1465                  return S_XNv_ReturnValue_PowerSupplyTooLow;
+   1466              }
+   1467          
+   1468              CompactSectorIfNeeded();
+   1469          
+   1470              BlockHeader_t blockHeader;
+   1471              Item_t item;
+   1472          
+   1473              uint8_t newItemCount = s_itemCount - 1u;
+   1474          
+   1475              // construct the new meta block header
+   1476              blockHeader.id = 0u;
+   1477              blockHeader.blockOffset = 0x0000u;
+   1478              blockHeader.blockLength = newItemCount * META_ITEM_SIZE;
+   1479              blockHeader.itemLength = blockHeader.blockLength;
+   1480              blockHeader.previousBlock = 0x0000u;
+   1481              blockHeader.writeCount = 0u;
+   1482          
+   1483              uint16_t blockPointer = s_sectorHead;
+   1484          
+   1485              if ( !WriteBlockHeader(&blockHeader) )
+   1486              {
+   1487                  return S_XNv_ReturnValue_Failure;
+   1488              }
+   1489          
+   1490              uint8_t destinationIndex = 0u;
+   1491              for ( uint8_t sourceIndex = 0u; sourceIndex < s_itemCount; sourceIndex++ )
+   1492              {
+   1493                  D_XNv_Read(s_sector, s_metaPointer + BLOCK_HEADER_SIZE + (sourceIndex * META_ITEM_SIZE), (uint8_t*) &item, (uint16_t) sizeof(Item_t));
+   1494                  if ( item.id != id )
+   1495                  {
+   1496                      if ( item.id == s_cachedItemId )
+   1497                      {
+   1498                          item.lastBlock = s_cachedItemPointer;
+   1499                      }
+   1500                      if ( !WriteAndCheck(s_sectorHead + (destinationIndex * META_ITEM_SIZE), (uint8_t*) &item, (uint16_t) sizeof(Item_t)) )
+   1501                      {
+   1502                          // failed to write data to flash.
+   1503                          // skip the invalid data for the next write (even if everything still is 0xFF)
+   1504                          UpdateSectorHead(blockHeader.blockLength);
+   1505                          return S_XNv_ReturnValue_Failure;
+   1506                      }
+   1507                      destinationIndex++;
+   1508                  }
+   1509              }
+   1510              UpdateSectorHead(blockHeader.blockLength);
+   1511          
+   1512              if ( !ActivateBlock(blockPointer) )
+   1513              {
+   1514                  // failed to activate the block
+   1515                  return S_XNv_ReturnValue_Failure;
+   1516              }
+   1517          
+   1518              s_metaPointer = blockPointer;
+   1519          
+   1520              // clear cache if the cached item is the deleted item
+   1521              if ( s_cachedItemId == id )
+   1522              {
+   1523                  s_cachedItemId = 0u;
+   1524                  s_cachedItemPointer = 0x0000u;
+   1525              }
+   1526          
+   1527              s_itemCount = newItemCount;
+   1528          
+   1529              return S_XNv_ReturnValue_Ok;
+   1530          }
+   1531          
+   1532          /** Interface function, see \ref S_XNv_EraseAll. */
+   1533          S_XNv_ReturnValue_t S_XNv_EraseAll_Impl(bool includingPersistentItems)
+   1534          {
+   1535              if ( PowerSupplyTooLow() )
+   1536              {
+   1537                  return S_XNv_ReturnValue_PowerSupplyTooLow;
+   1538              }
+   1539          
+   1540              if ( includingPersistentItems )
+   1541              {
+   1542                  for ( uint8_t sector = S_XNV_FIRST_SECTOR; sector < (S_XNV_FIRST_SECTOR + S_XNV_SECTOR_COUNT); sector++ )
+   1543                  {
+   1544                      D_XNv_EraseSector(sector);
+   1545                  }
+   1546              }
+   1547              else
+   1548              {
+   1549                  CompactSectorIfNeeded();
+   1550          
+   1551                  BlockHeader_t blockHeader;
+   1552                  Item_t item;
+   1553          
+   1554                  // read the old meta block to see how many items are persistent
+   1555                  uint8_t newItemCount = 0u;
+   1556                  for ( uint8_t blockIndex = 0u; blockIndex < s_itemCount; blockIndex++ )
+   1557                  {
+   1558                      D_XNv_Read(s_sector, s_metaPointer + BLOCK_HEADER_SIZE + (blockIndex * META_ITEM_SIZE), (uint8_t*) &item, (uint16_t) sizeof(Item_t));
+   1559                      // count persistent items, but skip the cached item
+   1560                      if ( IsPersistent(item.id) )
+   1561                      {
+   1562                          newItemCount++;
+   1563                      }
+   1564                  }
+   1565          
+   1566                  // construct the new meta block header
+   1567                  blockHeader.id = 0u;
+   1568                  blockHeader.blockOffset = 0x0000u;
+   1569                  blockHeader.blockLength = newItemCount * META_ITEM_SIZE;
+   1570                  blockHeader.itemLength = blockHeader.blockLength;
+   1571                  blockHeader.previousBlock = 0x0000u;
+   1572                  blockHeader.writeCount = 0u;
+   1573          
+   1574                  uint16_t blockPointer = s_sectorHead;
+   1575          
+   1576                  if ( !WriteBlockHeader(&blockHeader) )
+   1577                  {
+   1578                      return S_XNv_ReturnValue_Failure;
+   1579                  }
+   1580          
+   1581                  uint8_t destinationIndex = 0u;
+   1582                  for ( uint8_t sourceIndex = 0u; sourceIndex < s_itemCount; sourceIndex++ )
+   1583                  {
+   1584                      D_XNv_Read(s_sector, s_metaPointer + BLOCK_HEADER_SIZE + (sourceIndex * META_ITEM_SIZE), (uint8_t*) &item, (uint16_t) sizeof(Item_t));
+   1585                      if ( IsPersistent(item.id) )
+   1586                      {
+   1587                          if ( item.id == s_cachedItemId )
+   1588                          {
+   1589                              item.lastBlock = s_cachedItemPointer;
+   1590                          }
+   1591                          if ( !WriteAndCheck(s_sectorHead + (destinationIndex * META_ITEM_SIZE), (uint8_t*) &item, (uint16_t) sizeof(Item_t)) )
+   1592                          {
+   1593                              // failed to write data to flash.
+   1594                              // skip the invalid data for the next write (even if everything still is 0xFF)
+   1595                              UpdateSectorHead(blockHeader.blockLength);
+   1596                              return S_XNv_ReturnValue_Failure;
+   1597                          }
+   1598                          destinationIndex++;
+   1599                      }
+   1600                  }
+   1601                  UpdateSectorHead(blockHeader.blockLength);
+   1602          
+   1603                  if ( !ActivateBlock(blockPointer) )
+   1604                  {
+   1605                      // failed to activate the block
+   1606                      return S_XNv_ReturnValue_Failure;
+   1607                  }
+   1608          
+   1609                  s_metaPointer = blockPointer;
+   1610          
+   1611                  // clear cache as the cached item may be non-persistent
+   1612                  s_cachedItemId = 0u;
+   1613                  s_cachedItemPointer = 0x0000u;
+   1614          
+   1615                  s_itemCount = newItemCount;
+   1616              }
+   1617          
+   1618              return S_XNv_ReturnValue_Ok;
+   1619          }
+   1620          
+   1621          /** Interface function, see \ref S_XNv_SetPowerSupplyCheckingFunction. */
+   1622          void S_XNv_SetPowerSupplyCheckingFunction_Impl(S_XNv_PowerSupplyCheckingFunction_t pf)
+   1623          {
+   1624              s_powerSupplyCheckingFunction = pf;
+   1625          }
+   1626          
+   1627          /** Interface function, see \ref S_XNv_IsItemAvailable. */
+   1628          bool S_XNv_IsItemAvailable_Impl(S_XNv_ItemId_t id)
+   1629          {
+   1630            return ( FindItem(id) != 0x0000u );
+   1631          }
+   1632          
+   1633          #if defined(S_XNV_LOGGING)
+   1634          
+   1635          S_XNv_ReturnValue_t S_XNv_ItemInit_Impl(S_XNv_ItemId_t id, uint16_t itemLength, void* pDefaultData)
+   1636          {
+   1637              //hal_flash_readCount = 0u;
+   1638              //hal_flash_readSize = 0u;
+   1639              //hal_flash_writeCount = 0u;
+   1640              //hal_flash_writeSize = 0u;
+   1641              uint32_t stopwatch = N_Util_TimerStart();
+   1642          
+   1643              S_XNv_ReturnValue_t ret = S_XNv_ItemInit_Original(id, itemLength, pDefaultData);
+   1644          
+   1645              N_LOG_ALWAYS(("item_init(id=%Xh, l=%u, t=%lu, r=%u:%u, w=%u:%lu, h=%u): %hu",
+   1646                  id, itemLength,
+   1647                  N_Util_TimerElapsed(stopwatch),
+   1648          //        hal_flash_readCount, hal_flash_readSize, hal_flash_writeCount, 4uL * hal_flash_writeSize,
+   1649                  0u, 0u, 0u, 0uL,
+   1650                  s_sectorHead,
+   1651                  ret));
+   1652          
+   1653              return ret;
+   1654          }
+   1655          
+   1656          S_XNv_ReturnValue_t S_XNv_Write_Impl(S_XNv_ItemId_t id, uint16_t offset, uint16_t dataLength, void* pData)
+   1657          {
+   1658              //hal_flash_readCount = 0u;
+   1659              //hal_flash_readSize = 0u;
+   1660              //hal_flash_writeCount = 0u;
+   1661              //hal_flash_writeSize = 0u;
+   1662              uint32_t stopwatch = N_Util_TimerStart();
+   1663          
+   1664              S_XNv_ReturnValue_t ret = S_XNv_Write_Original(id, offset, dataLength, pData);
+   1665          
+   1666              N_LOG_ALWAYS(("write(id=%Xh, o=%u, l=%u, t=%lu, r=%u:%u, w=%u:%lu, h=%u): %hu",
+   1667                  id, offset, dataLength,
+   1668                  N_Util_TimerElapsed(stopwatch),
+   1669          //        hal_flash_readCount, hal_flash_readSize, hal_flash_writeCount, 4uL * hal_flash_writeSize,
+   1670                  0u, 0u, 0u, 0uL,
+   1671                  s_sectorHead,
+   1672                  ret));
+   1673          
+   1674              return ret;
+   1675          }
+   1676          
+   1677          S_XNv_ReturnValue_t S_XNv_Read_Impl(S_XNv_ItemId_t id, uint16_t offset, uint16_t dataLength, void* pData)
+   1678          {
+   1679              //hal_flash_readCount = 0u;
+   1680              //hal_flash_readSize = 0u;
+   1681              //hal_flash_writeCount = 0u;
+   1682              //hal_flash_writeSize = 0u;
+   1683              uint32_t stopwatch = N_Util_TimerStart();
+   1684          
+   1685              S_XNv_ReturnValue_t ret = S_XNv_Read_Original(id, offset, dataLength, pData);
+   1686          
+   1687              N_LOG_ALWAYS(("read(id=%Xh, o=%u, l=%u, t=%lu, r=%u:%u): %hu",
+   1688                  id, offset, dataLength,
+   1689                  N_Util_TimerElapsed(stopwatch),
+   1690          //        hal_flash_readCount, hal_flash_readSize,
+   1691                  0u, 0u,
+   1692                  ret));
+   1693          
+   1694              return ret;
+   1695          }
+   1696          
+   1697          #endif
+   1698          #endif //#ifdef PDS_USE_EXTERNAL_FLASH
+   1699          #endif // _ENABLE_PERSISTENT_SERVER_
+   1700          #endif // #if PDS_ENABLE_WEAR_LEVELING == 1
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

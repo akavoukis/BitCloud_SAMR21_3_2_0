@@ -1,0 +1,32 @@
+#----------------------------------------------
+#User application makerules - should be included into user application Makefile
+#----------------------------------------------
+
+include $(COMPONENTS_PATH)/../lib/Makerules_x86_Gcc
+
+#-Compiler flags-------------------------------
+CFLAGS += $(BOARDCFLAGS)
+#-Libraries names------------------------------
+#STACK_LIB = Zse_All_SESec_Sam7xEkRf2xx_At91sam7x256_Rf231_Iar
+#HAL_LIB = HAL_Sam7xEkRf2xx_At91sam7x256_Iar
+CS_LIB    = ConfigServer
+PDS_LIB   = PersistDataServer
+#VCP_LIB   = VCP
+
+#-Stack components paths-----------------------
+HAL_HWD_COMMON_PATH = $(COMPONENTS_PATH)/./HAL/pc
+#HAL_MAC_API_PATH = $(COMPONENTS_PATH)/./HAL/arm7tdmi/at91sam7x256/atmlEvalKit
+HAL_PATH     = $(COMPONENTS_PATH)/./HAL
+MAC_PHY_PATH = $(COMPONENTS_PATH)/./MAC_PHY
+NWK_PATH     = $(COMPONENTS_PATH)/./NWK
+APS_PATH     = $(COMPONENTS_PATH)/./APS
+ZDO_PATH     = $(COMPONENTS_PATH)/./ZDO
+ZCL_PATH     = $(COMPONENTS_PATH)/./ZCL
+SSP_PATH     = $(COMPONENTS_PATH)/./Security/ServiceProvider
+TC_PATH      = $(COMPONENTS_PATH)/./Security/TrustCentre
+CS_PATH      = $(COMPONENTS_PATH)/./ConfigServer
+PDS_PATH     = $(COMPONENTS_PATH)/./PersistDataServer
+BSP_PATH     = $(COMPONENTS_PATH)/./BSP
+DRIVERS_PATH = $(COMPONENTS_PATH)/./HAL/drivers
+
+

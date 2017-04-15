@@ -1,0 +1,593 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:53
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysTaskManager.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysTaskManager.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\sysTaskManager.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\sysTaskManager.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysTaskManager.c
+      1          /**************************************************************************//**
+      2            \file sysTaskManager.c
+      3          
+      4            \brief
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14            History:
+     15              15/05/07 E. Ivanov - Created
+     16          ******************************************************************************/
+     17          /******************************************************************************
+     18                                       Includes section
+     19          ******************************************************************************/
+     20          #include <sysTaskManager.h>
+     21          #include <sysDbg.h>
+     22          #include <sysSleep.h>
+     23          #include <sysEvents.h>
+     24          #include <sysIdleHandler.h>
+     25          #include <sysAssert.h>
+     26          
+     27          #if defined(_USE_KF_MAC_)
+     28          #include <mac_api.h>
+     29          #else  // defined(_USE_KF_MAC_)
+     30          #include <halInit.h>
+     31          #endif // defined(_USE_KF_MAC_)
+     32          
+     33          #ifdef SIMULATOR
+     34            #include <halMedium.h>
+     35          #endif
+     36          #ifdef ZAPPSI_HOST
+     37          #include <zsiMem.h>
+     38          #include <sysInit.h>
+     39          #endif
+     40          /******************************************************************************
+     41                                       Prototypes section
+     42          ******************************************************************************/
+     43          static void processManagerTask(void);
+     44          
+     45          /******************************************************************************
+     46                                       External variables section
+     47          ******************************************************************************/
+
+   \                                 In section .data, align 4
+     48          volatile uint16_t SYS_taskFlag = 0;
+   \                     SYS_taskFlag:
+   \   00000000   0x0000             DC16 0
+     49          uint16_t SYS_taskMask = 0xFFFF;
+   \                     SYS_taskMask:
+   \   00000002   0xFFFF             DC16 65535
+   \   00000004   0x........         DC32 MAC_PHY_HWD_TaskHandler, HAL_TaskHandler, MAC_HWI_TaskHandler
+   \              0x........   
+   \              0x........   
+   \   00000010   0x........         DC32 NWK_TaskHandler, ZDO_TaskHandler, APS_TaskHandler, SSP_TaskHandler
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   00000020   0x........         DC32 TC_TaskHandler, BSP_TaskHandler, 0H, ZCL_TaskHandler, 0H
+   \              0x........   
+   \              0x00000000   
+   \              0x........   
+   \              0x00000000   
+   \   00000034   0x........         DC32 APL_TaskHandler, PDS_TaskHandler
+   \              0x........   
+     50          
+     51          /******************************************************************************
+     52                                       Static variables section
+     53          ******************************************************************************/
+     54          static void (*taskHandlers[])() = {
+     55          #if defined(_SYS_MAC_PHY_HWD_TASK_) && !defined(ZAPPSI_HOST)
+     56            MAC_PHY_HWD_TaskHandler,
+     57          #else
+     58            NULL,
+     59          #endif
+     60          
+     61          #ifdef _SYS_HAL_TASK_
+     62            HAL_TaskHandler,
+     63          #else
+     64            NULL,
+     65          #endif
+     66          
+     67          #if defined(_SYS_MAC_HWI_TASK_) && !defined(ZAPPSI_HOST)
+     68            MAC_HWI_TaskHandler,
+     69          #else
+     70            NULL,
+     71          #endif
+     72          
+     73          #if defined(_SYS_NWK_TASK_) && !defined(ZAPPSI_HOST)
+     74            NWK_TaskHandler,
+     75          #else
+     76            NULL,
+     77          #endif
+     78          
+     79          #if defined(_SYS_ZDO_TASK_) && !defined(ZAPPSI_HOST)
+     80            ZDO_TaskHandler,
+     81          #else
+     82            NULL,
+     83          #endif
+     84          
+     85          #if defined(_SYS_APS_TASK_) && !defined(ZAPPSI_HOST)
+     86            APS_TaskHandler,
+     87          #else
+     88            NULL,
+     89          #endif
+     90          
+     91          #if defined(_SYS_SSP_TASK_) && !defined(ZAPPSI_HOST)
+     92            SSP_TaskHandler,
+     93          #else
+     94            NULL,
+     95          #endif
+     96          
+     97          #if defined(_SYS_TC_TASK_) && !defined(ZAPPSI_HOST)
+     98            TC_TaskHandler,
+     99          #else
+    100            NULL,
+    101          #endif
+    102          
+    103          #ifdef _SYS_BSP_TASK_
+    104            BSP_TaskHandler,
+    105          #else
+    106            NULL,
+    107          #endif
+    108          
+    109          #if defined(ZAPPSI_NP) || defined(ZAPPSI_HOST)
+    110            ZSI_TaskHandler,
+    111          #else
+    112            NULL,
+    113          #endif
+    114          
+    115          #if ZCL_SUPPORT == 1
+    116            ZCL_TaskHandler,
+    117          #else
+    118            NULL,
+    119          #endif
+    120          
+    121          #ifdef _SYS_ZLL_TASK_
+    122            ZLL_TaskHandler,
+    123          #else
+    124            NULL,
+    125          #endif
+    126          
+    127          #ifdef _SYS_APL_TASK_
+    128            APL_TaskHandler,
+    129          #else
+    130            NULL,
+    131          #endif
+    132          
+    133          #ifdef _SYS_PDS_TASK_
+    134            PDS_TaskHandler,
+    135          #else
+    136            NULL,
+    137          #endif
+    138          };
+    139          
+    140          /******************************************************************************
+    141                                       Implementation section
+    142          ******************************************************************************/
+    143          /***************************************************************************//**
+    144          \brief System initialization routine
+    145          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    146          SYS_InitStatus_t SYS_SysInit(void)
+    147          {
+   \                     SYS_SysInit: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    148          #if defined(_USE_KF_MAC_)
+    149            /* Initialize the MAC layer and its underlying layers, like PAL, TAL, BMM. */
+    150            if (wpan_init() != MAC_SUCCESS)
+    151            {
+    152                /*
+    153                 * Stay here; we need a valid IEEE address.
+    154                 * Check kit documentation how to create an IEEE address
+    155                 * and to store it into the EEPROM.
+    156                 */
+    157                pal_alert();
+    158            }
+    159          #else // defined(_USE_KF_MAC_)
+    160          
+    161            HAL_Init();    // It must be first
+   \   00000002   0x.... 0x....      BL       HAL_Init
+    162            SYS_InitLog(); // It initializes the system logger
+    163          #if defined(_SYS_MAC_PHY_HWD_TASK_) && !defined(ZAPPSI_HOST)
+    164            if (!RF_Init())     // It must be after HAL_Init()
+   \   00000006   0x.... 0x....      BL       RF_Init
+   \   0000000A   0x2800             CMP      R0,#+0
+   \   0000000C   0xD101             BNE      ??SYS_SysInit_0
+    165            {
+    166              return RF_NOT_RESPOND;
+   \   0000000E   0x2002             MOVS     R0,#+2
+   \   00000010   0xBD02             POP      {R1,PC}
+    167            }
+    168          #endif // _SYS_MAC_PHY_HWD_TASK_
+    169          
+    170          #endif // defined(_USE_KF_MAC_)
+    171          
+    172          #if defined(_SYS_ZDO_TASK_) && !defined(ZAPPSI_HOST)
+    173            SYS_PostTask(ZDO_TASK_ID); // ZDO task must be started first to initialize the stack
+   \                     ??SYS_SysInit_0: (+1)
+   \   00000012   0x4668             MOV      R0,SP
+   \   00000014   0x.... 0x....      BL       halStartAtomic
+   \   00000018   0x....             LDR      R0,??DataTable2
+   \   0000001A   0x8801             LDRH     R1,[R0, #+0]
+   \   0000001C   0x2210             MOVS     R2,#+16
+   \   0000001E   0x430A             ORRS     R2,R2,R1
+   \   00000020   0x8002             STRH     R2,[R0, #+0]
+   \   00000022   0x4668             MOV      R0,SP
+   \   00000024   0x.... 0x....      BL       halEndAtomic
+    174          #elif defined(ZAPPSI_HOST)
+    175            SYS_InitZsiMem();
+    176            SYS_PostTask(ZSI_TASK_ID);
+    177          #else
+    178            SYS_PostTask(APL_TASK_ID); // If there isn't ZDO e.g. HAL SE target is used
+    179          #endif /* _SYS_ZDO_TAKS_ */
+    180          
+    181          #ifdef SIMULATOR
+    182            HAL_MediumStart();
+    183          #endif
+    184            return INIT_SUCCES;
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0xBD02             POP      {R1,PC}          ;; return
+    185          }
+    186          
+    187          /***************************************************************************//**
+    188          \brief General BitCloud task manager entry point
+    189          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    190          bool SYS_RunTask(void)
+    191          {
+   \                     SYS_RunTask: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    192            processManagerTask();
+   \   00000002   0x.... 0x....      BL       processManagerTask
+    193            SYS_PostEvent(SYS_EVENT_TASK_PROCESSED, 0);
+   \   00000006   0x2100             MOVS     R1,#+0
+   \   00000008   0x202B             MOVS     R0,#+43
+   \   0000000A   0x.... 0x....      BL       SYS_PostEvent
+    194            // enter the mcu's idle mode
+    195            if (0 == SYS_taskFlag)
+   \   0000000E   0x....             LDR      R4,??DataTable2
+   \   00000010   0x8820             LDRH     R0,[R4, #+0]
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD101             BNE      ??SYS_RunTask_0
+    196              SYS_IdleHandler();
+   \   00000016   0x.... 0x....      BL       SYS_IdleHandler
+    197          
+    198            return (SYS_taskFlag != 0);
+   \                     ??SYS_RunTask_0: (+1)
+   \   0000001A   0x8820             LDRH     R0,[R4, #+0]
+   \   0000001C   0x2800             CMP      R0,#+0
+   \   0000001E   0xD000             BEQ      ??SYS_RunTask_1
+   \   00000020   0x2001             MOVS     R0,#+1
+   \                     ??SYS_RunTask_1: (+1)
+   \   00000022   0xB2C0             UXTB     R0,R0
+   \   00000024   0xBD10             POP      {R4,PC}          ;; return
+    199          }
+    200          
+    201          /***************************************************************************//**
+    202          \brief Force task manager procedure
+    203          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    204          void SYS_ForceRunTask(void)
+    205          {
+   \                     SYS_ForceRunTask: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    206            processManagerTask();
+   \   00000002   0x.... 0x....      BL       processManagerTask
+    207          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+    208          
+    209          /***************************************************************************//**
+    210          \brief Force PDS handler procedure
+    211          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    212          void SYS_ForcePdsHandler(void)
+    213          {
+   \                     SYS_ForcePdsHandler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    214          #if defined(_SYS_MAC_PHY_HWD_TASK_) && !defined(ZAPPSI_HOST)
+    215            MAC_PHY_HWD_ForceTaskHandler();
+   \   00000002   0x.... 0x....      BL       MAC_PHY_HWD_ForceTaskHandler
+    216          #endif
+    217          
+    218          #if defined(_SYS_MAC_HWI_TASK_) && !defined(ZAPPSI_HOST)
+    219            MAC_HWI_ForceTaskHandler();
+   \   00000006   0x.... 0x....      BL       MAC_HWI_ForceTaskHandler
+    220          #endif
+    221          
+    222          #if defined(_SYS_SSP_TASK_) && !defined(ZAPPSI_HOST)
+    223            SSP_TaskHandler();
+   \   0000000A   0x.... 0x....      BL       SSP_TaskHandler
+    224          #endif
+    225          
+    226          #ifdef _SYS_PDS_TASK_
+    227            PDS_TaskHandler();
+   \   0000000E   0x.... 0x....      BL       PDS_TaskHandler
+    228          #endif
+    229          
+    230            SYS_PostEvent(SYS_EVENT_TASK_PROCESSED, 0);
+   \   00000012   0x2100             MOVS     R1,#+0
+   \   00000014   0x202B             MOVS     R0,#+43
+   \   00000016   0x.... 0x....      BL       SYS_PostEvent
+    231          }
+   \   0000001A   0xBD01             POP      {R0,PC}          ;; return
+    232          
+    233          /***************************************************************************//**
+    234          \brief Task processing handler
+    235          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    236          static void processManagerTask(void)
+    237          {
+   \                     processManagerTask: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+    238            uint8_t taskId;
+    239          
+    240            for (taskId = 0; taskId < (sizeof(taskHandlers) / sizeof(taskHandlers[0])); taskId++)
+   \   00000004   0x2400             MOVS     R4,#+0
+   \   00000006   0x....             LDR      R5,??DataTable2
+    241            {
+    242          #if defined(_USE_KF_MAC_)
+    243              wpan_task();
+    244          #endif // defined(_USE_KF_MAC_)
+    245              SYS_INFINITY_LOOP_MONITORING
+    246              if ((1 << taskId) & (SYS_taskFlag & SYS_taskMask))
+   \                     ??processManagerTask_0: (+1)
+   \   00000008   0x2601             MOVS     R6,#+1
+   \   0000000A   0x40A6             LSLS     R6,R6,R4
+   \   0000000C   0x8868             LDRH     R0,[R5, #+2]
+   \   0000000E   0x8829             LDRH     R1,[R5, #+0]
+   \   00000010   0x4001             ANDS     R1,R1,R0
+   \   00000012   0x4031             ANDS     R1,R1,R6
+   \   00000014   0xD015             BEQ      ??processManagerTask_1
+    247              {
+    248                ATOMIC_SECTION_ENTER
+   \   00000016   0x4668             MOV      R0,SP
+   \   00000018   0x.... 0x....      BL       halStartAtomic
+    249                  SYS_taskFlag &= ~(1 << taskId);
+   \   0000001C   0x8828             LDRH     R0,[R5, #+0]
+   \   0000001E   0x43B0             BICS     R0,R0,R6
+   \   00000020   0x8028             STRH     R0,[R5, #+0]
+    250                ATOMIC_SECTION_LEAVE
+   \   00000022   0x4668             MOV      R0,SP
+   \   00000024   0x.... 0x....      BL       halEndAtomic
+    251          
+    252                SYS_E_ASSERT_FATAL(taskHandlers[taskId], SYS_TASKHANDLER_NULLCALLBACK0);
+   \   00000028   0x00A0             LSLS     R0,R4,#+2
+   \   0000002A   0x182C             ADDS     R4,R5,R0
+   \   0000002C   0x6860             LDR      R0,[R4, #+4]
+   \   0000002E   0x2800             CMP      R0,#+0
+   \   00000030   0xD104             BNE      ??processManagerTask_2
+   \   00000032   0x....             LDR      R0,??DataTable2_1  ;; 0x8006
+   \   00000034   0x....             LDR      R1,??DataTable2_2
+   \   00000036   0x8008             STRH     R0,[R1, #+0]
+   \   00000038   0x.... 0x....      BL       SYS_DefAssertCallbackFatal
+    253                taskHandlers[taskId]();
+   \                     ??processManagerTask_2: (+1)
+   \   0000003C   0x6860             LDR      R0,[R4, #+4]
+   \   0000003E   0x4780             BLX      R0
+    254          
+    255                break;
+   \   00000040   0xBD73             POP      {R0,R1,R4-R6,PC}
+    256              }
+    257            }
+   \                     ??processManagerTask_1: (+1)
+   \   00000042   0x1C64             ADDS     R4,R4,#+1
+   \   00000044   0xB2E4             UXTB     R4,R4
+   \   00000046   0x2C0E             CMP      R4,#+14
+   \   00000048   0xD3DE             BCC      ??processManagerTask_0
+    258          }
+   \   0000004A   0xBD73             POP      {R0,R1,R4-R6,PC}  ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     SYS_taskFlag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x00008006         DC32     0x8006
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x........         DC32     gAssertDbgCode
+    259          
+    260          #if defined(_USE_KF_MAC_)
+    261          /***************************************************************************//**
+    262          \brief Stub for BSP task handler.
+    263          *******************************************************************************/
+    264          void BSP_TaskHandler(void){}
+    265          #endif // defined(_USE_KF_MAC_)
+    266          
+    267          /* eof sysTaskManager.c */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   SYS_ForcePdsHandler
+         8   -> MAC_HWI_ForceTaskHandler
+         8   -> MAC_PHY_HWD_ForceTaskHandler
+         8   -> PDS_TaskHandler
+         8   -> SSP_TaskHandler
+         8   -> SYS_PostEvent
+       8   SYS_ForceRunTask
+         8   -> processManagerTask
+       8   SYS_RunTask
+         8   -> SYS_IdleHandler
+         8   -> SYS_PostEvent
+         8   -> processManagerTask
+       8   SYS_SysInit
+         8   -> HAL_Init
+         8   -> RF_Init
+         8   -> halEndAtomic
+         8   -> halStartAtomic
+      24   processManagerTask
+        24   -- Indirect call
+        24   -> SYS_DefAssertCallbackFatal
+        24   -> halEndAtomic
+        24   -> halStartAtomic
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+      28  SYS_ForcePdsHandler
+       8  SYS_ForceRunTask
+      38  SYS_RunTask
+      44  SYS_SysInit
+      60  SYS_taskFlag
+          SYS_taskMask
+          taskHandlers
+      76  processManagerTask
+
+ 
+  60 bytes in section .data
+ 206 bytes in section .text
+ 
+ 206 bytes of CODE memory
+  60 bytes of DATA memory
+
+Errors: none
+Warnings: none

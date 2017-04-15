@@ -1,0 +1,810 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:22
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauServer.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauServer.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclOtauServer.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclOtauServer.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauServer.c
+      1          /************************************************************************//**
+      2            \file zclOtauServer.c
+      3          
+      4            \brief
+      5              The file implements the OTAU cluster (server part)
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              16.05.11 A. Khromykh - Created.
+     17            Last change:
+     18              $Id: zclOtauServer.c 27587 2015-01-13 08:09:28Z srinivasan.ganapathy $
+     19          ******************************************************************************/
+     20          #if (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+     21          
+     22          /******************************************************************************
+     23                             Includes section
+     24          ******************************************************************************/
+     25          #include <zclOTAUCluster.h>
+     26          #include <zcl.h>
+     27          #include <clusters.h>
+     28          #include <zdo.h>
+     29          #include <zclOtauManager.h>
+     30          #include <zclDbg.h>
+     31          #include <zclTaskManager.h>
+     32          #include <isdImageStorage.h>
+     33          #include <sysAssert.h>
+     34          
+     35          /******************************************************************************
+     36                             Types section
+     37          ******************************************************************************/
+     38          
+     39          /******************************************************************************
+     40                                    Prototypes section
+     41          ******************************************************************************/
+     42          static void zclIsdCommunicationStateChangedCb(ISD_Status_t status);
+     43          static void zclOtauCommonConfirm(ZCL_Notify_t *resp);
+     44          static void zclUnsolicitedReqConfirm(ZCL_Notify_t *resp);
+     45          static void zclUpgradeEndCb(ZCL_OtauUpgradeEndResp_t *resp);
+     46          static void zclImageBlockCb(ZCL_OtauImageBlockResp_t *resp);
+     47          static void zclQueryNextImageCb(ZCL_OtauQueryNextImageResp_t *resp);
+     48          static ZCL_Status_t zclUpgradeEndReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauUpgradeEndReq_t *payload);
+     49          static ZCL_Status_t zclImageBlockReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauImageBlockReq_t *payload);
+     50          static ZCL_Status_t zclQueryNextImageReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauQueryNextImageReq_t *payload);
+     51          static void zclOtauServerHandler(void);
+     52          static void zclUnsolicitedReqConfirm(ZCL_Notify_t *resp);
+     53          static void zclOtauDefaultResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload);
+     54          static void zclOtauProcessCommonNotify(ZCL_Status_t status);
+     55          static void zclOtauFillOutgoingZclRequest(uint8_t id, uint8_t length, uint8_t *payload);
+     56          static void zclOtauFreeHeadProcessNext(void);
+     57          
+     58          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+     59            static void zclImagePageCb(ZCL_OtauImageBlockResp_t *resp);
+     60            static ZCL_Status_t zclImagePageReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauImagePageReq_t *payload);
+     61          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+     62          
+     63          /*******************************************************************************
+     64                                  static variables section
+     65          *******************************************************************************/
+     66          static bool checkStatus = 1;
+     67          
+     68          /*******************************************************************************
+     69                                  Global variables section
+     70          *******************************************************************************/
+     71          // commands
+     72          ZCL_OtauClusterCommands_t otauServerCommands =
+     73          {
+     74          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+     75            OTAU_COMMANDS(NULL, zclQueryNextImageReqInd, NULL, zclImageBlockReqInd, zclImagePageReqInd, \
+     76                          NULL, zclUpgradeEndReqInd, NULL)
+     77          #else
+     78            OTAU_COMMANDS(NULL, zclQueryNextImageReqInd, NULL, zclImageBlockReqInd, NULL, \
+     79                          NULL, zclUpgradeEndReqInd, NULL)
+     80          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+     81          };
+     82          
+     83          DECLARE_QUEUE(zclOtauServerTransacQueue);
+     84          
+     85          /******************************************************************************
+     86                             Implementation section
+     87          ******************************************************************************/
+     88          /***************************************************************************//**
+     89          \brief Callback from image storage driver about communication state changing
+     90          
+     91          \param[in] status - status of action;
+     92          ******************************************************************************/
+     93          static void zclIsdCommunicationStateChangedCb(ISD_Status_t status)
+     94          {
+     95            resetQueue(&zclOtauServerTransacQueue);
+     96            zclClearOtauServerMemory();
+     97            isOtauBusy = false;
+     98          
+     99            switch (status)
+    100            {
+    101              case ISD_COMMUNICATION_ESTABLISHED:
+    102                zclRaiseCustomMessage(OTAU_ISD_IMAGE_CACHE_IS_FOUND);
+    103                break;
+    104              case ISD_HARDWARE_FAULT:
+    105                zclRaiseCustomMessage(OTAU_ISD_HARDWARE_FAULT);
+    106                break;
+    107              case ISD_NO_COMMUNICATION:
+    108                zclRaiseCustomMessage(OTAU_ISD_NO_COMMUNICATION);
+    109                break;
+    110              default:
+    111                SYS_E_ASSERT_FATAL(false, ZCL_UNKNOWN_ISD_MESSAGE);
+    112                break;
+    113            }
+    114          }
+    115          
+    116          /***************************************************************************//**
+    117          \brief Start otau server service
+    118          ******************************************************************************/
+    119          void zclStartOtauServer(void)
+    120          {
+    121            zclClearOtauServerMemory();
+    122            ISD_Open(zclIsdCommunicationStateChangedCb);
+    123          }
+    124          
+    125          /***************************************************************************//**
+    126          \brief Stop otau server service
+    127          ******************************************************************************/
+    128          void zclStopOtauServer(void)
+    129          {
+    130            ISD_Close();
+    131          }
+    132          
+    133          /***************************************************************************//**
+    134          \brief Gets Otau's cluster
+    135          
+    136          \return Otau's server cluster
+    137          ******************************************************************************/
+    138          ZCL_Cluster_t ZCL_GetOtauServerCluster(void)
+    139          {
+    140            ZCL_Cluster_t cluster = DEFINE_OTAU_CLUSTER(ZCL_SERVER_CLUSTER_TYPE, NULL, &otauServerCommands);
+    141            cluster.ZCL_DefaultRespInd = zclOtauDefaultResponseInd;
+    142          
+    143            return cluster;
+    144          }
+    145          
+    146          /***************************************************************************//**
+    147          \brief otau server handler
+    148          ******************************************************************************/
+    149          static void zclOtauServerHandler(void)
+    150          {
+    151            ZclOtauServerTransac_t *tmpTransac = getQueueElem(&zclOtauServerTransacQueue);
+    152          
+    153            if (!tmpTransac)
+    154              return;
+    155          
+    156            switch (tmpTransac->id)
+    157            {
+    158              case QUERY_NEXT_IMAGE_REQUEST_ID:
+    159                ISD_QueryNextImageReq(&tmpTransac->addressing, &tmpTransac->queryNextImageReq, zclQueryNextImageCb);
+    160                break;
+    161          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    162              case IMAGE_PAGE_REQUEST_ID:
+    163                  ISD_ImageBlockReq(&tmpTransac->addressing, (ZCL_OtauImageBlockReq_t *)&tmpTransac->imagePageReq, zclImagePageCb);
+    164                break;
+    165          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    166              case IMAGE_BLOCK_REQUEST_ID:
+    167                ISD_ImageBlockReq(&tmpTransac->addressing, &tmpTransac->imageBlockReq, zclImageBlockCb);
+    168                break;
+    169              case UPGRADE_END_REQUEST_ID:
+    170                ISD_UpgradeEndReq(&tmpTransac->addressing, &tmpTransac->upgradeEndReq, zclUpgradeEndCb);
+    171                break;
+    172              default:
+    173                break;
+    174            }
+    175          }
+    176          
+    177          /***************************************************************************//**
+    178          \brief Frees the top queue element and processes next if present
+    179          ******************************************************************************/
+    180          static void zclOtauFreeHeadProcessNext(void)
+    181          {
+    182            deleteHeadQueueElem(&zclOtauServerTransacQueue);
+    183          
+    184            if (getQueueElem(&zclOtauServerTransacQueue))
+    185              zclOtauServerHandler();
+    186            else
+    187              isOtauBusy = false;
+    188          }
+    189          
+    190          /***************************************************************************//**
+    191          \brief Default response handler for server zcl requests
+    192          
+    193          \param[in] addressing - sender addressing information
+    194          \param[in] payloadLength - payload lenght
+    195          \param[in] payload - payload pointer
+    196          ******************************************************************************/
+    197          static void zclOtauDefaultResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload)
+    198          {
+    199            ZCL_DefaultResp_t *defaultResp = (ZCL_DefaultResp_t*)payload;
+    200            ZclOtauServerTransac_t *tmpTransac = getQueueElem(&zclOtauServerTransacQueue);
+    201          
+    202            if (!tmpTransac)
+    203              return;
+    204          
+    205            if ((IMAGE_PAGE_REQUEST_ID == tmpTransac->id) && (IMAGE_BLOCK_RESPONSE_ID == defaultResp->commandId))
+    206              zclOtauProcessCommonNotify(defaultResp->statusCode);
+    207          
+    208            (void)addressing;
+    209            (void)payloadLength;
+    210          }
+    211          
+    212          /***************************************************************************//**
+    213          \brief Confirm handler for server zcl requests
+    214          
+    215          \param[in] resp - pointer to response
+    216          ******************************************************************************/
+    217          static void zclOtauCommonConfirm(ZCL_Notify_t *resp)
+    218          {
+    219            zclOtauProcessCommonNotify(resp->status);
+    220          }
+    221          
+    222          /***************************************************************************//**
+    223          \brief Confirm or default response handler for server zcl requests
+    224          
+    225          \param[in] status - confirm or Default response status
+    226          ******************************************************************************/
+    227          static void zclOtauProcessCommonNotify(ZCL_Status_t status)
+    228          {
+    229            ZclOtauServerTransac_t *tmpTransac = getQueueElem(&zclOtauServerTransacQueue);
+    230          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    231            if (IMAGE_PAGE_REQUEST_ID == tmpTransac->id)
+    232            {
+    233              if (ZCL_SUCCESS_STATUS == status)
+    234                if (0 != tmpTransac->pageReminderSize)
+    235                {
+    236                  if (tmpTransac->pageReminderSize < tmpTransac->imagePageReq.maxDataSize)
+    237                    tmpTransac->imagePageReq.maxDataSize = tmpTransac->pageReminderSize;
+    238                  otauStartGenericTimer(tmpTransac->imagePageReq.responseSpacing, zclOtauServerHandler);
+    239                  return;
+    240                }
+    241            }
+    242          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    243          
+    244            tmpTransac->busy = false;
+    245            zclOtauFreeHeadProcessNext();
+    246            (void)status;
+    247          }
+    248          
+    249          /***************************************************************************//**
+    250          \brief Confirm or default response handler for image notify 
+    251          
+    252          \param[in] resp - pointer to response
+    253          ******************************************************************************/
+    254          static void zclImageNotifyConfirm(ZCL_Notify_t *resp)
+    255          {
+    256            (void)resp;
+    257            checkStatus = 1;
+    258          }
+    259          
+    260          /***************************************************************************//**
+    261          \brief This is called by the server to send image notify command to client
+    262          
+    263          \ingroup zcl_otau
+    264          
+    265          \param[in] addressing - pointer to structure with addressing information;
+    266          \param[in] resp - pointer to image notify command payload
+    267          
+    268          \return true - data is sending, false - server is busy.
+    269          ******************************************************************************/
+    270          bool ZCL_ImageNotifyReq(ZCL_Addressing_t *addressing, ZCL_OtauImageNotify_t *payload)
+    271          {
+    272            ZCL_OtauServerMem_t* serverMem = zclGetOtauServerMem();
+    273            ZCL_Request_t *req = &serverMem->unsolicitedReq;
+    274            ZCL_OtauImageNotify_t *pl = &serverMem->imageNotify;
+    275            uint16_t csManufacturerId;
+    276            
+    277            memcpy(pl, payload, sizeof(ZCL_OtauImageNotify_t));
+    278            CS_ReadParameter(CS_MANUFACTURER_CODE_ID, &csManufacturerId);
+    279            
+    280            if(checkStatus)
+    281            {
+    282              checkStatus = 0;
+    283              memcpy(&req->dstAddressing, addressing, sizeof(ZCL_Addressing_t));
+    284              
+    285              req->endpointId                         = zclOtauMem.initParam.otauEndpoint;
+    286              req->id                                 = IMAGE_NOTIFY_ID;
+    287              req->defaultResponse                    = ZCL_FRAME_CONTROL_DISABLE_DEFAULT_RESPONSE;
+    288              req->requestLength                      = sizeof(ZCL_OtauImageNotify_t);
+    289              req->requestPayload                     = (uint8_t *)pl;
+    290              req->ZCL_Notify                         = zclImageNotifyConfirm;
+    291          
+    292              ZCL_CommandReq(req);
+    293              return true;
+    294            }
+    295            
+    296            return false;
+    297          }
+    298          
+    299          /***************************************************************************//**
+    300          \brief Callback from image storage driver from Upgrade End Request
+    301          
+    302          \param[in] resp - pointer to payload
+    303          ******************************************************************************/
+    304          static void zclUpgradeEndCb(ZCL_OtauUpgradeEndResp_t *resp)
+    305          {
+    306            ZclOtauServerTransac_t *tmpTransac = getQueueElem(&zclOtauServerTransacQueue);
+    307          
+    308            SYS_E_ASSERT_FATAL(tmpTransac, ZCL_OTAU_GET_QUEUE_ELEM_NULL_ON_UPGRADE_CB);
+    309          
+    310            memcpy(&tmpTransac->upgradeEndResp, resp, sizeof(ZCL_OtauUpgradeEndResp_t));
+    311          
+    312            zclOtauFillOutgoingZclRequest(UPGRADE_END_RESPONSE_ID, sizeof(ZCL_OtauUpgradeEndResp_t), (uint8_t *)&tmpTransac->upgradeEndResp);
+    313          
+    314            ZCL_CommandReq(&tmpTransac->zclCommandReq);
+    315          }
+    316          
+    317          /***************************************************************************//**
+    318          \brief Callback from image storage driver from Image Block Request
+    319          
+    320          \param[in] resp - pointer to payload
+    321          ******************************************************************************/
+    322          static void zclImageBlockCb(ZCL_OtauImageBlockResp_t *resp)
+    323          {
+    324            ZclOtauServerTransac_t *tmpTransac = getQueueElem(&zclOtauServerTransacQueue);
+    325            uint8_t len;
+    326          
+    327            SYS_E_ASSERT_FATAL(tmpTransac, ZCL_OTAU_GET_QUEUE_ELEM_NULL_ON_BLOCK_CB);
+    328          
+    329            switch (resp->status)
+    330            {
+    331              case ZCL_SUCCESS_STATUS:
+    332                len = sizeof(ZCL_OtauImageBlockResp_t) - OFD_BLOCK_SIZE + resp->dataSize;
+    333                break;
+    334              case ZCL_WAIT_FOR_DATA_STATUS:
+    335                len = sizeof(ZCL_Status_t) + sizeof(uint32_t) + sizeof(uint32_t) + sizeof(uint16_t);
+    336                break;
+    337              default:
+    338                len = sizeof(ZCL_Status_t);
+    339                break;
+    340            }
+    341          
+    342            memcpy(&tmpTransac->imageBlockResp, resp, len);
+    343            if (ZCL_WAIT_FOR_DATA_STATUS == resp->status)
+    344              tmpTransac->imageBlockResp.blockRequestDelay = 0;
+    345          
+    346            zclOtauFillOutgoingZclRequest(IMAGE_BLOCK_RESPONSE_ID, len, (uint8_t *)&tmpTransac->imageBlockResp);
+    347          
+    348            otauServerCommands.imageBlockResp.options.ackRequest = 1;
+    349          
+    350            ZCL_CommandReq(&tmpTransac->zclCommandReq);
+    351          }
+    352          
+    353          /***************************************************************************//**
+    354          \brief Callback from image storage driver from Query Next Image Request
+    355          
+    356          \param[in] resp - pointer to payload
+    357          ******************************************************************************/
+    358          static void zclQueryNextImageCb(ZCL_OtauQueryNextImageResp_t *resp)
+    359          {
+    360            ZclOtauServerTransac_t *tmpTransac = getQueueElem(&zclOtauServerTransacQueue);
+    361            uint8_t len;
+    362          
+    363            SYS_E_ASSERT_FATAL(tmpTransac, ZCL_OTAU_GET_QUEUE_ELEM_NULL_ON_QUERY_CB);
+    364          
+    365            if (ZCL_SUCCESS_STATUS == resp->status)
+    366              len = sizeof(ZCL_OtauQueryNextImageResp_t);
+    367            else
+    368              len = sizeof(ZCL_Status_t);
+    369          
+    370            memcpy(&tmpTransac->queryNextImageResp, resp, len);
+    371          
+    372            zclOtauFillOutgoingZclRequest(QUERY_NEXT_IMAGE_RESPONSE_ID, len, (uint8_t *)&tmpTransac->queryNextImageResp);
+    373          
+    374            ZCL_CommandReq(&tmpTransac->zclCommandReq);
+    375          }
+    376          
+    377          /***************************************************************************//**
+    378          \brief Upgrade end request indication
+    379          
+    380          \param[in] addressing - pointer to addressing information;
+    381          \param[in] payloadLength - data payload length;
+    382          \param[in] payload - data pointer.
+    383          
+    384          \return status of indication routine
+    385          ******************************************************************************/
+    386          static ZCL_Status_t zclUpgradeEndReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauUpgradeEndReq_t *payload)
+    387          {
+    388            ZclOtauServerTransac_t *tmpTransac = zclFindEmptyCell();
+    389            (void)payloadLength;
+    390          
+    391            if (tmpTransac)
+    392            {
+    393              tmpTransac->busy = true;
+    394              tmpTransac->id = UPGRADE_END_REQUEST_ID;
+    395              tmpTransac->addressing = *addressing;
+    396              tmpTransac->upgradeEndReq = *payload;
+    397              putQueueElem(&zclOtauServerTransacQueue, tmpTransac);
+    398              if (!isOtauBusy)
+    399              {
+    400                isOtauBusy = true;
+    401                zclOtauServerHandler();
+    402              }
+    403            }
+    404            /* OTAU r23 spec section : 6.10.9.4 : 
+    405             For other status value received such as INVALID_IMAGE, REQUIRE_MORE_IMAGE, or 
+    406             ABORT, the upgrade server shall not send Upgrade End Response command but it 
+    407             shall send default response command with status of success and it shall wait 
+    408             for the client to reinitiate the upgrade process */
+    409            if ((ZCL_INVALID_IMAGE_STATUS == payload->status) ||
+    410                (ZCL_REQUIRE_MORE_IMAGE_STATUS == payload->status) ||
+    411                (ZCL_ABORT_STATUS == payload->status))
+    412            {
+    413              return ZCL_SUCCESS_WITH_DEFAULT_RESPONSE_STATUS;
+    414            }
+    415            else
+    416            {
+    417              return ZCL_SUCCESS_STATUS;
+    418            }
+    419          }
+    420          
+    421          /***************************************************************************//**
+    422          \brief Next image block request indication
+    423          
+    424          \param[in] addressing - pointer to addressing information;
+    425          \param[in] payloadLength - data payload length;
+    426          \param[in] payload - data pointer.
+    427          
+    428          \return status of indication routine
+    429          ******************************************************************************/
+    430          static ZCL_Status_t zclImageBlockReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauImageBlockReq_t *payload)
+    431          {
+    432            ZclOtauServerTransac_t *tmpTransac = zclFindEmptyCell();
+    433            (void)payloadLength;
+    434          
+    435            if (tmpTransac)
+    436            {
+    437              tmpTransac->busy = true;
+    438              tmpTransac->id = IMAGE_BLOCK_REQUEST_ID;
+    439              tmpTransac->addressing = *addressing;
+    440              tmpTransac->imageBlockReq = *payload;
+    441              putQueueElem(&zclOtauServerTransacQueue, tmpTransac);
+    442              if (!isOtauBusy)
+    443              {
+    444                isOtauBusy = true;
+    445                zclOtauServerHandler();
+    446              }
+    447            }
+    448          
+    449            return ZCL_SUCCESS_STATUS;
+    450          }
+    451          
+    452          /***************************************************************************//**
+    453          \brief Query next image request indication
+    454          
+    455          \param[in] addressing - pointer to addressing information;
+    456          \param[in] payloadLength - data payload length;
+    457          \param[in] payload - data pointer.
+    458          
+    459          \return status of indication routine
+    460          ******************************************************************************/
+    461          static ZCL_Status_t zclQueryNextImageReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauQueryNextImageReq_t *payload)
+    462          {
+    463            ZclOtauServerTransac_t *tmpTransac = zclFindEmptyCell();
+    464            (void)payloadLength;
+    465          
+    466            if (tmpTransac)
+    467            {
+    468              tmpTransac->busy = true;
+    469              tmpTransac->id = QUERY_NEXT_IMAGE_REQUEST_ID;
+    470              tmpTransac->addressing = *addressing;
+    471              tmpTransac->queryNextImageReq = *payload;
+    472              putQueueElem(&zclOtauServerTransacQueue, tmpTransac);
+    473              if (!isOtauBusy)
+    474              {
+    475                isOtauBusy = true;
+    476                zclOtauServerHandler();
+    477              }
+    478            }
+    479          
+    480            return ZCL_SUCCESS_STATUS;
+    481          }
+    482          
+    483          /***************************************************************************//**
+    484          \brief Confirm or default response handler for server zcl requests
+    485          
+    486          \param[in] resp - pointer to response
+    487          ******************************************************************************/
+    488          static void zclUnsolicitedReqConfirm(ZCL_Notify_t *resp)
+    489          {
+    490            ZCL_OtauServerMem_t* serverMem = zclGetOtauServerMem();
+    491            ZCL_Request_t *req = &serverMem->unsolicitedReq;
+    492          
+    493            req->id = 0;
+    494            (void)resp;
+    495          }
+    496          
+    497          /***************************************************************************//**
+    498          \brief The server may send an unsolicited Upgrade End Response command to the client.
+    499          This may be used for example if the server wants to synchronize the upgrade
+    500          on multiple clients simultaneously.
+    501          
+    502          \param[in] addressing - pointer to structure with addressing information;
+    503          \param[in] resp - pointer to upgrade end response payload
+    504          
+    505          \return true - data is sending, false - server is busy.
+    506          ******************************************************************************/
+    507          bool ZCL_UnsolicitedUpgradeEndResp(ZCL_Addressing_t *addressing, ZCL_OtauUpgradeEndResp_t *resp)
+    508          {
+    509            ZCL_OtauServerMem_t* serverMem = zclGetOtauServerMem();
+    510            ZCL_Request_t *req = &serverMem->unsolicitedReq;
+    511            ZCL_OtauUpgradeEndResp_t *payload = &serverMem->unsolicitedUpgradeEndResp;
+    512          
+    513            if (req->id)
+    514              return false;
+    515          
+    516            memcpy(&req->dstAddressing, addressing, sizeof(ZCL_Addressing_t));
+    517            req->dstAddressing.sequenceNumber = ZCL_GetNextSeqNumber();
+    518            memcpy(payload, resp, sizeof(ZCL_OtauUpgradeEndResp_t));
+    519          
+    520            req->endpointId                         = zclOtauMem.initParam.otauEndpoint;
+    521            req->id                                 = UPGRADE_END_RESPONSE_ID;
+    522            req->defaultResponse                    = ZCL_FRAME_CONTROL_DISABLE_DEFAULT_RESPONSE;
+    523            req->requestLength                      = sizeof(ZCL_OtauUpgradeEndResp_t);
+    524            req->requestPayload                     = (uint8_t *)payload;
+    525            req->ZCL_Notify                         = zclUnsolicitedReqConfirm;
+    526          
+    527            ZCL_CommandReq(req);
+    528          
+    529            return true;
+    530          }
+    531          
+    532          /***************************************************************************//**
+    533          \brief Fills ZCL_Request_t structure fields for outgoing request.
+    534          
+    535          \param[in] id - zcl command id;
+    536          \param[in] length - the length of zcl command payload;
+    537          \param[in] payload - pointer to zcl command payload
+    538          ******************************************************************************/
+    539          static void zclOtauFillOutgoingZclRequest(uint8_t id, uint8_t length, uint8_t *payload)
+    540          {
+    541            ZclOtauServerTransac_t *transac = getQueueElem(&zclOtauServerTransacQueue);
+    542          
+    543            transac->zclCommandReq.dstAddressing.addrMode             = APS_SHORT_ADDRESS;
+    544            transac->zclCommandReq.dstAddressing.addr.shortAddress    = transac->addressing.addr.shortAddress;
+    545            transac->zclCommandReq.dstAddressing.profileId            = transac->addressing.profileId;
+    546            transac->zclCommandReq.dstAddressing.endpointId           = transac->addressing.endpointId;
+    547            transac->zclCommandReq.dstAddressing.clusterId            = OTAU_CLUSTER_ID;
+    548            transac->zclCommandReq.dstAddressing.clusterSide          = ZCL_CLIENT_CLUSTER_TYPE;
+    549            transac->zclCommandReq.dstAddressing.manufacturerSpecCode = 0;
+    550            transac->zclCommandReq.dstAddressing.sequenceNumber       = transac->addressing.sequenceNumber;
+    551            transac->zclCommandReq.endpointId                         = zclOtauMem.initParam.otauEndpoint;
+    552            transac->zclCommandReq.id                                 = id;
+    553            transac->zclCommandReq.defaultResponse                    = ZCL_FRAME_CONTROL_DISABLE_DEFAULT_RESPONSE;
+    554            transac->zclCommandReq.requestLength                      = length;
+    555            transac->zclCommandReq.requestPayload                     = payload;
+    556            transac->zclCommandReq.ZCL_Notify                         = zclOtauCommonConfirm;
+    557          }
+    558          
+    559          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    560          /***************************************************************************//**
+    561          \brief Next image page request indication
+    562          
+    563          \param[in] addressing - pointer to addressing information;
+    564          \param[in] payloadLength - data payload length;
+    565          \param[in] payload - data pointer.
+    566          
+    567          \return status of indication routine
+    568          ******************************************************************************/
+    569          static ZCL_Status_t zclImagePageReqInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauImagePageReq_t *payload)
+    570          {
+    571            ZclOtauServerTransac_t *tmpTransac = zclFindEmptyCell();
+    572            (void)payloadLength;
+    573            bool pageRequestUsed;
+    574          
+    575            CS_ReadParameter(CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE_ID, &pageRequestUsed);
+    576            if (!pageRequestUsed)
+    577              return ZCL_UNSUP_CLUSTER_COMMAND_STATUS;
+    578          
+    579            if (tmpTransac)
+    580            {
+    581              tmpTransac->busy = true;
+    582              tmpTransac->id = IMAGE_PAGE_REQUEST_ID;
+    583              tmpTransac->addressing = *addressing;
+    584              memcpy(&(tmpTransac->imagePageReq), payload, sizeof(ZCL_OtauImagePageReq_t));
+    585              tmpTransac->pageReminderSize = payload->pageSize;
+    586              putQueueElem(&zclOtauServerTransacQueue, tmpTransac);
+    587              // First block response should be sent immediately after page request.
+    588              if (!isOtauBusy)
+    589              {
+    590                isOtauBusy = true;
+    591                zclOtauServerHandler();
+    592              }
+    593            }
+    594          
+    595            return ZCL_SUCCESS_STATUS;
+    596          }
+    597          
+    598          /***************************************************************************//**
+    599          \brief Callback from image storage driver from Image Block Request for
+    600                   Image Page Request
+    601          
+    602          \param[in] resp - pointer to payload
+    603          ******************************************************************************/
+    604          static void zclImagePageCb(ZCL_OtauImageBlockResp_t *resp)
+    605          {
+    606            ZclOtauServerTransac_t *tmpTransac = getQueueElem(&zclOtauServerTransacQueue);
+    607            uint8_t len;
+    608            bool sendZclFrame = true;
+    609          
+    610            SYS_E_ASSERT_FATAL(tmpTransac, ZCL_OTAU_GET_QUEUE_ELEM_NULL_ON_PAGE_CB);
+    611          
+    612            switch (resp->status)
+    613            {
+    614              case ZCL_SUCCESS_STATUS:
+    615                len = sizeof(ZCL_OtauImageBlockResp_t) - OFD_BLOCK_SIZE + resp->dataSize;
+    616                if (tmpTransac->pageReminderSize < resp->dataSize)
+    617                {
+    618                  sendZclFrame = false;
+    619                }
+    620                break;
+    621              case ZCL_WAIT_FOR_DATA_STATUS:
+    622                len = sizeof(ZCL_Status_t) + sizeof(uint32_t) + sizeof(uint32_t) + sizeof(uint16_t);
+    623                break;
+    624              default:
+    625                len = sizeof(ZCL_Status_t);
+    626                break;
+    627            }
+    628          
+    629            // First Block Response should have the same sequence number as Page Request
+    630            // all other responses should have their own unique sequence numbers.
+    631            tmpTransac->zclCommandReq.dstAddressing.sequenceNumber = (tmpTransac->imagePageReq.pageSize == tmpTransac->pageReminderSize) ?
+    632                                                                      tmpTransac->addressing.sequenceNumber :
+    633                                                                      ZCL_GetNextSeqNumber();
+    634            if (true == sendZclFrame)
+    635            {
+    636              tmpTransac->pageReminderSize -= resp->dataSize;
+    637              tmpTransac->imagePageReq.fileOffset += resp->dataSize;
+    638          
+    639              memcpy(&tmpTransac->imageBlockResp, resp, len);
+    640              if (ZCL_WAIT_FOR_DATA_STATUS == resp->status)
+    641                tmpTransac->imageBlockResp.blockRequestDelay = 0;
+    642          
+    643              zclOtauFillOutgoingZclRequest(IMAGE_BLOCK_RESPONSE_ID, len, (uint8_t *)&tmpTransac->imageBlockResp);
+    644          
+    645              otauServerCommands.imageBlockResp.options.ackRequest = 0;
+    646              ZCL_CommandReq(&tmpTransac->zclCommandReq);
+    647            }
+    648            else
+    649            {
+    650              // free the transaction for failure case
+    651              tmpTransac->pageReminderSize = 0;
+    652              tmpTransac->busy             = false;
+    653          
+    654              otauStopGenericTimer();
+    655              zclOtauFreeHeadProcessNext();
+    656            }
+    657          }
+    658          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    659          
+    660          #endif // (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+    661          
+    662          // eof zclOtauServer.c
+    663          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

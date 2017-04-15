@@ -1,0 +1,596 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:34
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\joystick.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\joystick.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\joystick.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\joystick.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\joystick.c
+      1          /**************************************************************************//**
+      2          \file  joystick.c
+      3          
+      4          \brief Implementation of joystick interface.
+      5          
+      6          \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13          \internal
+     14            History:
+     15              06/06/14 P. Mahendran - Created
+     16          *******************************************************************************/
+     17          #if APP_DISABLE_BSP != 1
+     18          
+     19          /******************************************************************************
+     20                             Includes section
+     21          ******************************************************************************/
+     22          #include <joystick.h>
+     23          #include <bspTaskManager.h>
+     24          #include <appTimer.h>
+     25          #include <stddef.h>
+     26          #include <bspDbg.h>
+     27          #include <adc.h>
+     28          
+     29          /******************************************************************************
+     30                             Define(s) section
+     31          ******************************************************************************/
+     32          #define MAJ_SCANN_TIME  330
+     33          
+     34          #define IS_JOYSTICK_UP_ACTION(x) (x > 35 && x < 45)
+     35          #define IS_JOYSTICK_LEFT_ACTION(x) (x > 60 && x < 70)
+     36          #define IS_JOYSTICK_DOWN_ACTION(x) (x > 115 && x < 125)
+     37          #define IS_JOYSTICK_RIGHT_ACTION(x) (x > 165 && x < 180)
+     38          #define IS_JOYSTICK_PUSH_ACTION(x) (x > 210 && x < 235)
+     39          /******************************************************************************
+     40                             Types section
+     41          ******************************************************************************/
+     42          typedef enum
+     43          {
+     44            BSP_JOYSTICK_IDLE = 0,
+     45            BSP_JOYSTICK_BUSY
+     46          } BSP_JoystickModulState_t;
+     47          
+     48          // callback joystick functions
+     49          typedef void (*BSP_JoystickEventFunc_t)(BSP_JoystickState_t state);
+     50          
+     51          /******************************************************************************
+     52                             Prototypes section
+     53          ******************************************************************************/
+     54          static void joystickHandler(void);
+     55          extern void bspJoystickHandler(void);
+     56          /******************************************************************************
+     57                             Global variables section
+     58          ******************************************************************************/
+
+   \                                 In section .bss, align 4
+     59          static BSP_JoystickModulState_t state = BSP_JOYSTICK_IDLE;
+     60          static volatile BSP_JoystickState_t joystickReal;
+     61          static BSP_JoystickEventFunc_t bspJoystickHandle = NULL;
+     62          static HAL_AppTimer_t glitchTimer;
+   \                     glitchTimer:
+   \   00000000                      DS8 20
+   \   00000014                      DS8 1
+   \   00000015                      DS8 1
+   \   00000016                      DS8 2
+   \   00000018                      DS8 4
+
+   \                                 In section .bss, align 4
+     63          static HAL_AdcDescriptor_t joyStick_adcParam;
+   \                     joyStick_adcParam:
+   \   00000000                      DS8 24
+     64          static uint16_t joyStickData;
+     65          /******************************************************************************
+     66                             Implementations section
+     67          ******************************************************************************/
+     68          
+     69          /******************************************************************
+     70          port IO (joystick) interrupt handler
+     71          ******************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     72          static void joystickHandler(void)
+     73          {
+   \                     joystickHandler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     74            if (IS_JOYSTICK_UP_ACTION(joyStickData))
+   \   00000002   0x....             LDR      R0,??DataTable6
+   \   00000004   0x8AC1             LDRH     R1,[R0, #+22]
+   \   00000006   0x000A             MOVS     R2,R1
+   \   00000008   0x3A24             SUBS     R2,R2,#+36
+   \   0000000A   0x2A09             CMP      R2,#+9
+   \   0000000C   0xD201             BCS      ??joystickHandler_0
+     75            {
+     76                joystickReal = JOYSTICK_UP;
+   \   0000000E   0x2103             MOVS     R1,#+3
+   \   00000010   0xE017             B        ??joystickHandler_1
+     77            }
+     78            else if (IS_JOYSTICK_DOWN_ACTION(joyStickData))
+   \                     ??joystickHandler_0: (+1)
+   \   00000012   0x000A             MOVS     R2,R1
+   \   00000014   0x3A74             SUBS     R2,R2,#+116
+   \   00000016   0x2A09             CMP      R2,#+9
+   \   00000018   0xD201             BCS      ??joystickHandler_2
+     79            {
+     80                joystickReal = JOYSTICK_DOWN;
+   \   0000001A   0x2104             MOVS     R1,#+4
+   \   0000001C   0xE011             B        ??joystickHandler_1
+     81            }
+     82            else if (IS_JOYSTICK_LEFT_ACTION(joyStickData))
+   \                     ??joystickHandler_2: (+1)
+   \   0000001E   0x000A             MOVS     R2,R1
+   \   00000020   0x3A3D             SUBS     R2,R2,#+61
+   \   00000022   0x2A09             CMP      R2,#+9
+   \   00000024   0xD201             BCS      ??joystickHandler_3
+     83            {
+     84                joystickReal = JOYSTICK_LEFT;
+   \   00000026   0x2101             MOVS     R1,#+1
+   \   00000028   0xE00B             B        ??joystickHandler_1
+     85            }
+     86            else if (IS_JOYSTICK_RIGHT_ACTION(joyStickData))
+   \                     ??joystickHandler_3: (+1)
+   \   0000002A   0x000A             MOVS     R2,R1
+   \   0000002C   0x3AA6             SUBS     R2,R2,#+166
+   \   0000002E   0x2A0E             CMP      R2,#+14
+   \   00000030   0xD201             BCS      ??joystickHandler_4
+     87            {
+     88                joystickReal = JOYSTICK_RIGHT;
+   \   00000032   0x2102             MOVS     R1,#+2
+   \   00000034   0xE005             B        ??joystickHandler_1
+     89            }
+     90            else if (IS_JOYSTICK_PUSH_ACTION(joyStickData))
+   \                     ??joystickHandler_4: (+1)
+   \   00000036   0x39D3             SUBS     R1,R1,#+211
+   \   00000038   0x2918             CMP      R1,#+24
+   \   0000003A   0xD201             BCS      ??joystickHandler_5
+     91            {
+     92                joystickReal = JOYSTICK_PUSH;
+   \   0000003C   0x2105             MOVS     R1,#+5
+   \   0000003E   0xE000             B        ??joystickHandler_1
+     93            }
+     94            else
+     95            {
+     96              joystickReal = JOYSTICK_NONE;
+   \                     ??joystickHandler_5: (+1)
+   \   00000040   0x2100             MOVS     R1,#+0
+   \                     ??joystickHandler_1: (+1)
+   \   00000042   0x7541             STRB     R1,[R0, #+21]
+     97            }
+     98            bspJoystickHandler();
+   \   00000044   0x.... 0x....      BL       bspJoystickHandler
+     99          }
+   \   00000048   0xBD01             POP      {R0,PC}          ;; return
+    100          
+    101          /******************************************************************************
+    102           Initializes joystick module.
+    103          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    104          void bspInitJoystick(void)
+    105          {
+   \                     bspInitJoystick: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    106            /* Configure ADC Pin as Input */
+    107            PORTA_DIRCLR = 1 << 6;
+   \   00000002   0x2040             MOVS     R0,#+64
+   \   00000004   0x....             LDR      R1,??DataTable6_1  ;; 0x41004404
+   \   00000006   0x6008             STR      R0,[R1, #+0]
+    108            PORTA_PINCFG3 |= PORTA_PINCFG3_PMUXEN;
+   \   00000008   0x2101             MOVS     R1,#+1
+   \   0000000A   0x....             LDR      R0,??DataTable6_2  ;; 0x41004433
+   \   0000000C   0x7C02             LDRB     R2,[R0, #+16]
+   \   0000000E   0x2301             MOVS     R3,#+1
+   \   00000010   0x4313             ORRS     R3,R3,R2
+   \   00000012   0x7403             STRB     R3,[R0, #+16]
+    109            PORTA_PMUX3 |= PORTA_PMUX3_PMUXE(1);
+   \   00000014   0x7802             LDRB     R2,[R0, #+0]
+   \   00000016   0x2301             MOVS     R3,#+1
+   \   00000018   0x4313             ORRS     R3,R3,R2
+   \   0000001A   0x7003             STRB     R3,[R0, #+0]
+    110          
+    111            joyStick_adcParam.bufferPointer = &joyStickData;
+   \   0000001C   0x....             LDR      R0,??DataTable6_3
+   \   0000001E   0x....             LDR      R2,??DataTable6_4
+   \   00000020   0x6082             STR      R2,[R0, #+8]
+    112            joyStick_adcParam.callback = joystickHandler;
+   \   00000022   0x....             LDR      R2,??DataTable6_5
+   \   00000024   0x6102             STR      R2,[R0, #+16]
+    113            joyStick_adcParam.resolution = RESOLUTION_8_BIT;
+   \   00000026   0x2203             MOVS     R2,#+3
+   \   00000028   0x7082             STRB     R2,[R0, #+2]
+    114            joyStick_adcParam.sampleRate = ADC_350KSPS;
+   \   0000002A   0x2200             MOVS     R2,#+0
+   \   0000002C   0x70C2             STRB     R2,[R0, #+3]
+    115            joyStick_adcParam.selectionsAmount = 1;
+   \   0000002E   0x8181             STRH     R1,[R0, #+12]
+    116            joyStick_adcParam.voltageReference = INTVCC0;
+   \   00000030   0x7101             STRB     R1,[R0, #+4]
+    117          
+    118            HAL_OpenAdc(&joyStick_adcParam);
+   \   00000032   0x.... 0x....      BL       HAL_OpenAdc
+    119          }
+   \   00000036   0xBD01             POP      {R0,PC}          ;; return
+    120          
+    121          /******************************************************************************
+    122          Registers handlers for joystick events.
+    123          Paremeters:
+    124            generalHandler - the joystick handler
+    125            state- joystick state
+    126          Returns:
+    127            BC_FAIL - joystick module is busy,
+    128            BC_SUCCESS in other cases.
+    129          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    130          result_t BSP_OpenJoystick(void (*generalHandler)(BSP_JoystickState_t state))
+    131          {
+   \                     BSP_OpenJoystick: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    132            if(state != BSP_JOYSTICK_IDLE)
+   \   00000002   0x....             LDR      R1,??DataTable6
+   \   00000004   0x7D0A             LDRB     R2,[R1, #+20]
+   \   00000006   0x2A00             CMP      R2,#+0
+   \   00000008   0xD001             BEQ      ??BSP_OpenJoystick_0
+    133              return BC_FAIL;
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0xBD02             POP      {R1,PC}
+    134            state = BSP_JOYSTICK_BUSY;
+   \                     ??BSP_OpenJoystick_0: (+1)
+   \   0000000E   0x2201             MOVS     R2,#+1
+   \   00000010   0x750A             STRB     R2,[R1, #+20]
+    135            bspJoystickHandle = generalHandler;
+   \   00000012   0x6188             STR      R0,[R1, #+24]
+    136            bspInitJoystick();
+   \   00000014   0x.... 0x....      BL       bspInitJoystick
+    137            bspPostTask(BSP_JOYSTICK);
+   \   00000018   0x....             LDR      R0,??DataTable6_6
+   \   0000001A   0x7801             LDRB     R1,[R0, #+0]
+   \   0000001C   0x2210             MOVS     R2,#+16
+   \   0000001E   0x430A             ORRS     R2,R2,R1
+   \   00000020   0x7002             STRB     R2,[R0, #+0]
+   \   00000022   0x4668             MOV      R0,SP
+   \   00000024   0x.... 0x....      BL       halStartAtomic
+   \   00000028   0x....             LDR      R0,??DataTable6_7
+   \   0000002A   0x8801             LDRH     R1,[R0, #+0]
+   \   0000002C   0x2280             MOVS     R2,#+128
+   \   0000002E   0x0052             LSLS     R2,R2,#+1        ;; #+256
+   \   00000030   0x430A             ORRS     R2,R2,R1
+   \   00000032   0x8002             STRH     R2,[R0, #+0]
+   \   00000034   0x4668             MOV      R0,SP
+   \   00000036   0x.... 0x....      BL       halEndAtomic
+    138            return BC_SUCCESS;
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \   0000003C   0xBD02             POP      {R1,PC}          ;; return
+    139          };
+    140          
+    141          /******************************************************************************
+    142          Remove joystick handlers.
+    143          Parameters:
+    144            none.
+    145          Returns:
+    146            BC_FAIL - joystick module was not opened,
+    147            BC_SUCCESS in other cases.
+    148          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    149          result_t BSP_CloseJoystick(void)
+    150          {
+    151            if(state != BSP_JOYSTICK_BUSY)
+   \                     BSP_CloseJoystick: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable6
+   \   00000002   0x7D01             LDRB     R1,[R0, #+20]
+   \   00000004   0x2901             CMP      R1,#+1
+   \   00000006   0xD001             BEQ      ??BSP_CloseJoystick_0
+    152              return BC_FAIL;
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0x4770             BX       LR
+    153            bspJoystickHandle = NULL;
+   \                     ??BSP_CloseJoystick_0: (+1)
+   \   0000000C   0x2100             MOVS     R1,#+0
+   \   0000000E   0x6181             STR      R1,[R0, #+24]
+    154            state = BSP_JOYSTICK_IDLE;
+   \   00000010   0x7501             STRB     R1,[R0, #+20]
+    155            return BC_SUCCESS;
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x4770             BX       LR               ;; return
+    156          };
+    157          
+    158          /******************************************************************************
+    159          Reads state of joystick.
+    160          Parameters:
+    161            none.
+    162          Returns:
+    163              Current joystick state.
+    164          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    165          BSP_JoystickState_t BSP_ReadJoystickState(void)
+    166          {
+    167            /* read joystick state */
+    168            return joystickReal;
+   \                     BSP_ReadJoystickState: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable6
+   \   00000002   0x7D40             LDRB     R0,[R0, #+21]
+   \   00000004   0x4770             BX       LR               ;; return
+    169          }
+    170          
+    171          /******************************************************************
+    172          enable joystick interrupt
+    173          ******************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    174          void bspEnableJoystickAdcRead(void)
+    175          {
+   \                     bspEnableJoystickAdcRead: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    176            HAL_ReadAdc(&joyStick_adcParam, HAL_ADC_CHANNEL6);
+   \   00000002   0x2106             MOVS     R1,#+6
+   \   00000004   0x....             LDR      R0,??DataTable6_3
+   \   00000006   0x.... 0x....      BL       HAL_ReadAdc
+    177          }
+   \   0000000A   0xBD01             POP      {R0,PC}          ;; return
+    178          
+    179          /******************************************************************************
+    180          BSP's event about joystick has changed state.
+    181          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    182          void bspJoystickHandler(void)
+    183          {
+   \                     bspJoystickHandler: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    184            glitchTimer.interval = MAJ_SCANN_TIME;
+   \   00000002   0x....             LDR      R4,??DataTable6
+   \   00000004   0x20A5             MOVS     R0,#+165
+   \   00000006   0x0040             LSLS     R0,R0,#+1        ;; #+330
+   \   00000008   0x60A0             STR      R0,[R4, #+8]
+    185            glitchTimer.mode = TIMER_ONE_SHOT_MODE;
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0x7320             STRB     R0,[R4, #+12]
+    186            glitchTimer.callback = bspEnableJoystickAdcRead;
+   \   0000000E   0x....             LDR      R0,??DataTable6_8
+   \   00000010   0x6120             STR      R0,[R4, #+16]
+    187            HAL_StartAppTimer(&glitchTimer);
+   \   00000012   0x0020             MOVS     R0,R4
+   \   00000014   0x.... 0x....      BL       HAL_StartAppTimer
+    188          
+    189            if (bspJoystickHandle)
+   \   00000018   0x69A1             LDR      R1,[R4, #+24]
+   \   0000001A   0x0008             MOVS     R0,R1
+   \   0000001C   0xD001             BEQ      ??bspJoystickHandler_0
+    190              bspJoystickHandle(joystickReal);
+   \   0000001E   0x7D60             LDRB     R0,[R4, #+21]
+   \   00000020   0x4788             BLX      R1
+    191          }
+   \                     ??bspJoystickHandler_0: (+1)
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \   00000000   0x........         DC32     glitchTimer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \   00000000   0x41004404         DC32     0x41004404
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \   00000000   0x41004433         DC32     0x41004433
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \   00000000   0x........         DC32     joyStick_adcParam
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \   00000000   0x........         DC32     glitchTimer+0x16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \   00000000   0x........         DC32     joystickHandler
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \   00000000   0x........         DC32     bspTaskFlags
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \   00000000   0x........         DC32     SYS_taskFlag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \   00000000   0x........         DC32     bspEnableJoystickAdcRead
+    192          
+    193          #endif // APP_DISABLE_BSP != 1
+    194          
+    195          // eof joystick.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BSP_CloseJoystick
+       8   BSP_OpenJoystick
+         8   -> bspInitJoystick
+         8   -> halEndAtomic
+         8   -> halStartAtomic
+       0   BSP_ReadJoystickState
+       8   bspEnableJoystickAdcRead
+         8   -> HAL_ReadAdc
+       8   bspInitJoystick
+         8   -> HAL_OpenAdc
+       8   bspJoystickHandler
+         8   -- Indirect call
+         8   -> HAL_StartAppTimer
+       8   joystickHandler
+         8   -> bspJoystickHandler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+      22  BSP_CloseJoystick
+      62  BSP_OpenJoystick
+       6  BSP_ReadJoystickState
+      12  bspEnableJoystickAdcRead
+      56  bspInitJoystick
+      36  bspJoystickHandler
+      28  glitchTimer
+          state
+          joystickReal
+          joyStickData
+          bspJoystickHandle
+      24  joyStick_adcParam
+      74  joystickHandler
+
+ 
+  52 bytes in section .bss
+ 304 bytes in section .text
+ 
+ 304 bytes of CODE memory
+  52 bytes of DATA memory
+
+Errors: none
+Warnings: none

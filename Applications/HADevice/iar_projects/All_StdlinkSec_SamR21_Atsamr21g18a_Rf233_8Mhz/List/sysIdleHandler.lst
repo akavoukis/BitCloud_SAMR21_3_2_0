@@ -1,0 +1,373 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:49
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysIdleHandler.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysIdleHandler.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\sysIdleHandler.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\sysIdleHandler.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysIdleHandler.c
+      1          /**************************************************************************//**
+      2            \file  sysIdleHandler.c
+      3          
+      4            \brief Implementation of system idle handler.
+      5          
+      6            \author
+      7                Atmel Corporation: http://www.atmel.com \n
+      8                Support email: avr@atmel.com
+      9          
+     10              Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11              Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14              History:
+     15               14/01/13 D. Kolmakov - Created
+     16           ******************************************************************************/
+     17          
+     18          /******************************************************************************
+     19                             Includes section
+     20          ******************************************************************************/
+     21          #include <zdo.h>
+     22          #include <sysSleep.h>
+     23          
+     24          /******************************************************************************
+     25                             Prototypes section
+     26          ******************************************************************************/
+     27          #if defined(_ENDDEVICE_) && defined(_SLEEP_WHEN_IDLE_)
+     28          static void sysIdleHandlerSleepConf(ZDO_SleepConf_t *conf);
+     29          #endif /* _ENDDEVICE_ && _SLEEP_WHEN_IDLE_ */
+     30          
+     31          /******************************************************************************
+     32                             Global variables section
+     33          ******************************************************************************/
+     34          #if defined(_ENDDEVICE_) && defined(_SLEEP_WHEN_IDLE_)
+
+   \                                 In section .bss, align 4
+     35          static ZDO_SleepReq_t sleepReq;
+     36          static bool sleepWhenIdleEnabled = false;
+   \                     sleepWhenIdleEnabled:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 3
+   \   00000004                      DS8 20
+     37          #endif /* _ENDDEVICE_ && _SLEEP_WHEN_IDLE_ */
+     38          
+     39          /******************************************************************************
+     40                             Implementations section
+     41          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void SYS_IdleHandler(void)
+     43          {
+   \                     SYS_IdleHandler: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+     44          #if defined(_ENDDEVICE_) && defined(_SLEEP_WHEN_IDLE_)
+     45            if (sleepWhenIdleEnabled)
+   \   00000004   0x....             LDR      R4,??DataTable3
+   \   00000006   0x7820             LDRB     R0,[R4, #+0]
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD016             BEQ      ??SYS_IdleHandler_0
+     46            {
+     47              bool rxOnWhenIdle;
+     48              DeviceType_t deviceType;
+     49          
+     50              CS_ReadParameter(CS_DEVICE_TYPE_ID, &deviceType);
+   \   0000000C   0x4669             MOV      R1,SP
+   \   0000000E   0x2021             MOVS     R0,#+33
+   \   00000010   0x.... 0x....      BL       CS_ReadParameter
+     51              CS_ReadParameter(CS_RX_ON_WHEN_IDLE_ID, &rxOnWhenIdle);
+   \   00000014   0xA900             ADD      R1,SP,#+0
+   \   00000016   0x1C49             ADDS     R1,R1,#+1
+   \   00000018   0x201D             MOVS     R0,#+29
+   \   0000001A   0x.... 0x....      BL       CS_ReadParameter
+     52          
+     53              if (DEVICE_TYPE_END_DEVICE == deviceType &&
+     54                  false == rxOnWhenIdle)
+   \   0000001E   0x4668             MOV      R0,SP
+   \   00000020   0x7800             LDRB     R0,[R0, #+0]
+   \   00000022   0x2802             CMP      R0,#+2
+   \   00000024   0xD109             BNE      ??SYS_IdleHandler_0
+   \   00000026   0x4668             MOV      R0,SP
+   \   00000028   0x7840             LDRB     R0,[R0, #+1]
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD105             BNE      ??SYS_IdleHandler_0
+     55              {
+     56                sleepReq.ZDO_SleepConf = sysIdleHandlerSleepConf;
+   \   0000002E   0x....             LDR      R0,??DataTable3_1
+   \   00000030   0x6160             STR      R0,[R4, #+20]
+     57                ZDO_SleepReq(&sleepReq);
+   \   00000032   0x1D20             ADDS     R0,R4,#+4
+   \   00000034   0x.... 0x....      BL       ZDO_SleepReq
+     58                return;
+   \   00000038   0xBD13             POP      {R0,R1,R4,PC}
+     59              }
+     60            }
+     61          #endif /* _ENDDEVICE_ && _SLEEP_WHEN_IDLE_ */
+     62          
+     63            SYS_IDLE;
+   \                     ??SYS_IdleHandler_0: (+1)
+   \   0000003A   0x.... 0x....      BL       HAL_IdleMode
+     64          }
+   \   0000003E   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+     65          
+     66          #if defined(_SLEEP_WHEN_IDLE_)
+     67          /**************************************************************************//**
+     68            \brief Enables sleep when a device is idle.
+     69            It is disabled by default. If this is enabled, an end device automatically
+     70            tries to go to sleep mode when there are no pending tasks and wakes up on
+     71            expiration of CS_SLEEP_PERIOD or any application timer.
+     72            The sleep period is equal to the minimum value between the rest of
+     73            CS_SLEEP_PERIOD (CS_SLEEP_PERIOD minus time from the last poll)
+     74            and the shortest time to fire of all application timers.
+     75            If an end device wakes up on expiration of CS_SLEEP_PERIOD it polls
+     76            its parent, otherwise it doesn't.
+     77            Also, an end device can be wakep up by external interrupts. Application
+     78            must be subscribed to event HAL_EVENT_WAKING_UP and call ZDO_WakeUpReq()
+     79            in callback function.
+     80            When the stack tries to go to sleep mode, it raises two events -
+     81            BC_EVENT_BUSY_REQUEST and BC_EVENT_POLL_REQUEST allowing application to
+     82            control sleep.
+     83          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     84          void SYS_EnableSleepWhenIdle(void)
+     85          {
+     86          #if defined(_ENDDEVICE_)
+     87            sleepWhenIdleEnabled = true;
+   \                     SYS_EnableSleepWhenIdle: (+1)
+   \   00000000   0x2001             MOVS     R0,#+1
+   \   00000002   0x....             LDR      R1,??DataTable3
+   \   00000004   0x7008             STRB     R0,[R1, #+0]
+     88          #endif /* _ENDDEVICE_ */
+     89          }
+   \   00000006   0x4770             BX       LR               ;; return
+     90          
+     91          /**************************************************************************//**
+     92            \brief Disables sleep when device is idle.
+     93          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     94          void SYS_DisableSleepWhenIdle(void)
+     95          {
+     96          #if defined(_ENDDEVICE_)
+     97            sleepWhenIdleEnabled = false;
+   \                     SYS_DisableSleepWhenIdle: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             LDR      R1,??DataTable3
+   \   00000004   0x7008             STRB     R0,[R1, #+0]
+     98          #endif /* _ENDDEVICE_ */
+     99          }
+   \   00000006   0x4770             BX       LR               ;; return
+    100          
+    101          /**************************************************************************//**
+    102            \brief Returns true if sleep when idle is enabled. False otherwise.
+    103          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    104          bool SYS_IsSleepWhenIdleEnabled(void)
+    105          {
+    106          #if defined(_ENDDEVICE_) && defined(_SLEEP_WHEN_IDLE_)
+    107            return sleepWhenIdleEnabled;
+   \                     SYS_IsSleepWhenIdleEnabled: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable3
+   \   00000002   0x7800             LDRB     R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+    108          #else
+    109            return false;
+    110          #endif /* _ENDDEVICE_ && _SLEEP_WHEN_IDLE_ */
+    111          }
+    112          
+    113          #if defined(_ENDDEVICE_)
+    114          /**************************************************************************//**
+    115            \brief Sleep request confirm.
+    116          
+    117            \param[in]  conf - parameters of the confirm.
+    118          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    119          static void sysIdleHandlerSleepConf(ZDO_SleepConf_t *conf)
+    120          {
+    121            (void)conf;
+    122          }
+   \                     sysIdleHandlerSleepConf: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     sleepWhenIdleEnabled
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     sysIdleHandlerSleepConf
+    123          
+    124          #endif /* _ENDDEVICE_ */
+    125          #endif /* _SLEEP_WHEN_IDLE_ */
+    126          
+    127          // eof sysIdleHandler.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SYS_DisableSleepWhenIdle
+       0   SYS_EnableSleepWhenIdle
+      16   SYS_IdleHandler
+        16   -> CS_ReadParameter
+        16   -> HAL_IdleMode
+        16   -> ZDO_SleepReq
+       0   SYS_IsSleepWhenIdleEnabled
+       0   sysIdleHandlerSleepConf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       8  SYS_DisableSleepWhenIdle
+       8  SYS_EnableSleepWhenIdle
+      64  SYS_IdleHandler
+       6  SYS_IsSleepWhenIdleEnabled
+      24  sleepWhenIdleEnabled
+          sleepReq
+       2  sysIdleHandlerSleepConf
+
+ 
+ 24 bytes in section .bss
+ 96 bytes in section .text
+ 
+ 96 bytes of CODE memory
+ 24 bytes of DATA memory
+
+Errors: none
+Warnings: none

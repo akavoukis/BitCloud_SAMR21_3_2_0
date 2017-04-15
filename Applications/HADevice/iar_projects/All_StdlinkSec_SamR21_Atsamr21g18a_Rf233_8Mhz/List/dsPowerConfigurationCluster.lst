@@ -1,0 +1,1352 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:27
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmerSwitch\src\dsPowerConfigurationCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmerSwitch\src\dsPowerConfigurationCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\dsPowerConfigurationCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\dsPowerConfigurationCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmerSwitch\src\dsPowerConfigurationCluster.c
+      1          /**************************************************************************//**
+      2            \file dsPowerConfigurationCluster.c
+      3          
+      4            \brief
+      5              Dimmer Switch Power Configuration cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              17.11.14 Prashanth - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_DIMMER_SWITCH
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          
+     24          #include <zclDevice.h>
+     25          #include <haClusters.h>
+     26          #include <commandManager.h>
+     27          #include <uartManager.h>
+     28          #include <zclDevice.h>
+     29          #include <bspVoltageSensor.h>
+     30          #include <ezModeManager.h>
+     31          #include <dsAlarmsCluster.h>
+     32          #include <dsPowerConfigurationCluster.h>
+     33          #include <zclAttributes.h>
+     34          
+     35          /******************************************************************************
+     36                              Definition(s) section
+     37          ******************************************************************************/
+     38          #if (APP_ENABLE_CERTIFICATION_EXTENSION == 0)
+     39          // The Time is Configurable according to customer needs
+     40          #define BATTERY_ONE_VOLTAGE_MEAS_TIME                10000
+     41          #define BATTERY_TWO_VOLTAGE_MEAS_TIME                20000
+     42          #define BATTERY_THREE_VOLTAGE_MEAS_TIME              30000
+     43          #define BATTERY_ONE_PERCENTAGE_REMAINING_MEAS_TIME   10000
+     44          #define BATTERY_TWO_PERCENTAGE_REMAINING_MEAS_TIME   20000
+     45          #define BATTERY_THREE_PERCENTAGE_REMAINING_MEAS_TIME 30000
+     46          #endif
+     47          
+     48          /******************************************************************************
+     49                              Prototypes section
+     50          ******************************************************************************/
+     51          static void powerConfigurationInformationAttrInit(void);
+     52          static void powerConfigurationSettingsAttrInit(void);
+     53          #if (APP_ENABLE_CERTIFICATION_EXTENSION == 0)
+     54          static void readBatteryOneVoltage(void);
+     55          static void readBatteryTwoVoltage(void);
+     56          static void readBatteryThreeVoltage(void);
+     57          static void readBatteryOnePercentageRemaining(void);
+     58          static void readBatteryTwoPercentageRemaining(void);
+     59          static void readBatteryThreePercentageRemaining(void);
+     60          static uint16_t smallestOfTwo(uint16_t one, uint16_t two);
+     61          #endif
+     62          static void dsPwrConfigEventListener(SYS_EventId_t eventId, SYS_EventData_t data);
+     63          static void dsPwrResetAllAlarms(void);
+     64          static void dsPwrResetAlarm(uint8_t alarmCode);
+     65          
+     66          /******************************************************************************
+     67                              Global variables section
+     68          ******************************************************************************/
+     69          ZCL_PowerConfigurationClusterServerAttributes_t dsPowerConfigurationClusterServerAttributes =
+     70          {
+     71            ZCL_DEFINE_POWER_CONFIGURATION_CLUSTER_SERVER_ATTRIBUTES(POWER_CONFIGURATION_MIN_REPORT_PERIOD, POWER_CONFIGURATION_MAX_REPORT_PERIOD)
+     72          };
+     73          
+     74          /******************************************************************************
+     75                              Static variables section
+     76          ******************************************************************************/
+     77          #if (APP_ENABLE_CERTIFICATION_EXTENSION == 0)
+     78          static HAL_AppTimer_t batteryOneVoltageMeasTimer;
+     79          static HAL_AppTimer_t batteryTwoVoltageMeasTimer;
+     80          static HAL_AppTimer_t batteryThreeVoltageMeasTimer;
+     81          static HAL_AppTimer_t batteryOnePercentageRemainingMeasTimer;
+     82          static HAL_AppTimer_t batteryTwoPercentageRemainingMeasTimer;
+     83          static HAL_AppTimer_t batteryThreePercentageRemainingMeasTimer;
+     84          #endif
+     85          static void dsPowerConfigurationAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event);
+     86          static SYS_EventReceiver_t dsPwrConfigEventReceiver = { .func = dsPwrConfigEventListener};
+     87          
+     88          /******************************************************************************
+     89                              Implementation section
+     90          ******************************************************************************/
+     91          /**************************************************************************//**
+     92          \brief Initializes Identify cluster
+     93          ******************************************************************************/
+     94          void powerConfigurationClusterInit(void)
+     95          {
+     96            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, POWER_CONFIGURATION_CLUSTER_ID, ZCL_CLUSTER_SIDE_SERVER);
+     97          
+     98            if (cluster)
+     99            {
+    100              cluster->ZCL_AttributeEventInd = dsPowerConfigurationAttrEventInd;
+    101            }
+    102            powerConfigurationClusterInitAttributes();
+    103          
+    104          #if (APP_ENABLE_CERTIFICATION_EXTENSION == 0)
+    105            /*Start periodic voltage measurement for Battery One*/
+    106            batteryOneVoltageMeasTimer.interval = BATTERY_ONE_VOLTAGE_MEAS_TIME;
+    107            batteryOneVoltageMeasTimer.mode = TIMER_REPEAT_MODE;
+    108            batteryOneVoltageMeasTimer.callback = readBatteryOneVoltage;
+    109            HAL_StopAppTimer(&batteryOneVoltageMeasTimer);
+    110            HAL_StartAppTimer(&batteryOneVoltageMeasTimer);
+    111            
+    112            /*Start periodic voltage measurement for Battery One*/
+    113            batteryTwoVoltageMeasTimer.interval = BATTERY_TWO_VOLTAGE_MEAS_TIME;
+    114            batteryTwoVoltageMeasTimer.mode = TIMER_REPEAT_MODE;
+    115            batteryTwoVoltageMeasTimer.callback = readBatteryTwoVoltage;
+    116            HAL_StopAppTimer(&batteryTwoVoltageMeasTimer);
+    117            HAL_StartAppTimer(&batteryTwoVoltageMeasTimer);
+    118            
+    119            /*Start periodic voltage measurement for Battery One*/
+    120            batteryThreeVoltageMeasTimer.interval = BATTERY_THREE_VOLTAGE_MEAS_TIME;
+    121            batteryThreeVoltageMeasTimer.mode = TIMER_REPEAT_MODE;
+    122            batteryThreeVoltageMeasTimer.callback = readBatteryThreeVoltage;
+    123            HAL_StopAppTimer(&batteryThreeVoltageMeasTimer);
+    124            HAL_StartAppTimer(&batteryThreeVoltageMeasTimer);
+    125            
+    126              /*Start periodic voltage measurement for Battery One*/
+    127            batteryOnePercentageRemainingMeasTimer.interval = BATTERY_ONE_PERCENTAGE_REMAINING_MEAS_TIME;
+    128            batteryOnePercentageRemainingMeasTimer.mode = TIMER_REPEAT_MODE;
+    129            batteryOnePercentageRemainingMeasTimer.callback = readBatteryOnePercentageRemaining;
+    130            HAL_StopAppTimer(&batteryOnePercentageRemainingMeasTimer);
+    131            HAL_StartAppTimer(&batteryOnePercentageRemainingMeasTimer);
+    132            
+    133            /*Start periodic voltage measurement for Battery One*/
+    134            batteryTwoPercentageRemainingMeasTimer.interval = BATTERY_TWO_PERCENTAGE_REMAINING_MEAS_TIME;
+    135            batteryTwoPercentageRemainingMeasTimer.mode = TIMER_REPEAT_MODE;
+    136            batteryTwoPercentageRemainingMeasTimer.callback = readBatteryTwoPercentageRemaining;
+    137            HAL_StopAppTimer(&batteryTwoPercentageRemainingMeasTimer);
+    138            HAL_StartAppTimer(&batteryTwoPercentageRemainingMeasTimer);
+    139            
+    140            /*Start periodic voltage measurement for Battery One*/
+    141            batteryThreePercentageRemainingMeasTimer.interval = BATTERY_THREE_PERCENTAGE_REMAINING_MEAS_TIME;
+    142            batteryThreePercentageRemainingMeasTimer.mode = TIMER_REPEAT_MODE;
+    143            batteryThreePercentageRemainingMeasTimer.callback = readBatteryThreePercentageRemaining;
+    144            HAL_StopAppTimer(&batteryThreePercentageRemainingMeasTimer);
+    145            HAL_StartAppTimer(&batteryThreePercentageRemainingMeasTimer);
+    146          #endif
+    147            
+    148            SYS_SubscribeToEvent(BC_ZCL_EVENT_ACTION_REQUEST, &dsPwrConfigEventReceiver);
+    149          }
+    150          
+    151          /**************************************************************************//**
+    152          \brief Attribute Event indication handler(to indicate when attr values have
+    153                  read or written)
+    154          
+    155          \param[in] addressing - pointer to addressing information;
+    156          \param[in] reportLength - data payload length;
+    157          \param[in] reportPayload - data pointer
+    158          ******************************************************************************/
+    159          static void dsPowerConfigurationAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event)
+    160          {
+    161            (void)addressing;
+    162            (void)attributeId;
+    163            (void)event;
+    164          }
+    165          
+    166          /**************************************************************************//**
+    167            \brief  ZCL action request event handler, 
+    168                    handles the ZCL_ACTION_WRITE_ATTR_REQUEST for attribute specific validation
+    169          
+    170            \param[in] ev - must be BC_ZCL_EVENT_ACTION_REQUEST.
+    171            \param[in] data - this field must contain pointer to the BcZCLActionReq_t structure,
+    172          
+    173            \return None.
+    174           ******************************************************************************/
+    175          static void dsPwrConfigEventListener(SYS_EventId_t eventId, SYS_EventData_t data)
+    176          {
+    177            BcZCLActionReq_t *const actionReq = (BcZCLActionReq_t*)data;
+    178            actionReq->denied = 0U;
+    179            int16_t requestedValue = 0;
+    180            if (BC_ZCL_EVENT_ACTION_REQUEST == eventId)
+    181            {    
+    182              if (ZCL_ACTION_WRITE_ATTR_REQUEST == actionReq->action)
+    183              {
+    184                ZCLActionWriteAttrReq_t *const zclWriteAttrReq = (ZCLActionWriteAttrReq_t*)actionReq->context;
+    185                if( (POWER_CONFIGURATION_CLUSTER_ID == zclWriteAttrReq->clusterId) && 
+    186                        (ZCL_CLUSTER_SIDE_SERVER == zclWriteAttrReq->clusterSide))
+    187                {
+    188                  memcpy((uint8_t *)&requestedValue,zclWriteAttrReq->attrValue, sizeof(int16_t));
+    189                  switch(zclWriteAttrReq->attrId)
+    190                  {
+    191                    case ZCL_POWER_CONFIGURATION_CLUSTER_SERVER_BATTERY_SOURCE_1_SIZE_ID:
+    192                      if((requestedValue <= ZCL_BATTERY_RES2) && (requestedValue >= ZCL_BATTERY_RES1))
+    193                        actionReq->denied = 1U;
+    194                      break;
+    195                    case ZCL_POWER_CONFIGURATION_CLUSTER_SERVER_BATTERY_SOURCE_2_SIZE_ID:
+    196                      if((requestedValue <= ZCL_BATTERY_RES2) && (requestedValue >= ZCL_BATTERY_RES1))
+    197                        actionReq->denied = 1U;
+    198                      break;
+    199                    case ZCL_POWER_CONFIGURATION_CLUSTER_SERVER_BATTERY_SOURCE_3_SIZE_ID:
+    200                      if((requestedValue <= ZCL_BATTERY_RES2) && (requestedValue >= ZCL_BATTERY_RES1))
+    201                        actionReq->denied = 1U;
+    202                      break;
+    203                    case ZCL_POWER_CONFIGURATION_CLUSTER_SERVER_BATTERY_SOURCE_1_ALARM_STATE_ID:
+    204                      if((requestedValue & ZCL_DS_BATTERY_ALARM_STATE_RESERVED_MASK_1) && (requestedValue & ZCL_DS_BATTERY_ALARM_STATE_RESERVED_MASK_2))
+    205                        actionReq->denied = 1U;
+    206                      break;
+    207                    case ZCL_POWER_CONFIGURATION_CLUSTER_SERVER_BATTERY_SOURCE_2_ALARM_STATE_ID:
+    208                      if((requestedValue & ZCL_DS_BATTERY_ALARM_STATE_RESERVED_MASK_1) && (requestedValue & ZCL_DS_BATTERY_ALARM_STATE_RESERVED_MASK_2))
+    209                        actionReq->denied = 1U;
+    210                      break;
+    211                    case ZCL_POWER_CONFIGURATION_CLUSTER_SERVER_BATTERY_SOURCE_3_ALARM_STATE_ID:
+    212                      if((requestedValue & ZCL_DS_BATTERY_ALARM_STATE_RESERVED_MASK_1) && (requestedValue & ZCL_DS_BATTERY_ALARM_STATE_RESERVED_MASK_2))
+    213                        actionReq->denied = 1U;
+    214                      break;
+    215                    default:
+    216                      break;
+    217                  }
+    218                }
+    219              }
+    220              else if (ZCL_ACTION_RESET_ALARM_REQUEST == actionReq->action)
+    221              {
+    222                ZCL_ResetAlarmNotification_t  *resetAlarmNotification = (ZCL_ResetAlarmNotification_t *)(actionReq->context);
+    223          
+    224                if ((ZCL_ALARMS_CLUSTER_SERVER_RESET_ALARM_COMMAND_ID == resetAlarmNotification->commandId) && \
+    225                    (POWER_CONFIGURATION_CLUSTER_ID == resetAlarmNotification->clusterIdentifier))
+    226                {
+    227                  //reset the alarmCode
+    228                  LOG_STRING(resetAlarmEventStr, "->powerConfigurationResetAlarm:%d \r\n");
+    229                  appSnprintf(resetAlarmEventStr, resetAlarmNotification->alarmCode);
+    230                  dsPwrResetAlarm(resetAlarmNotification->alarmCode);
+    231                }
+    232                else if (ZCL_ALARMS_CLUSTER_SERVER_RESET_ALL_ALARMS_COMMAND_ID == resetAlarmNotification->commandId)
+    233                {
+    234                  LOG_STRING(resetAllAlarmEventStr, "->PowerConfigurationResetAllAlarm\r\n");
+    235                  appSnprintf(resetAllAlarmEventStr);
+    236                  dsPwrResetAllAlarms();
+    237                }
+    238              }
+    239            }
+    240          }
+    241          
+    242          #if (APP_ENABLE_CERTIFICATION_EXTENSION == 0)
+    243          /**************************************************************************//**
+    244          \brief Battery One Percentage Remaining measurement timer expiry
+    245                 The Percentage remaining returns the remaining battery charge in 
+    246                 percentage value.
+    247          
+    248          \param NA
+    249          ******************************************************************************/
+    250          static void readBatteryOnePercentageRemaining(void)
+    251          {
+    252            uint8_t percentageRemaining;
+    253            uint8_t minThreshold = dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageMinThreshold.value;
+    254            uint8_t thresholdOne = dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageThreshold_1.value;
+    255            uint8_t thresholdTwo = dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageThreshold_2.value;
+    256            uint8_t thresholdThree = dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageThreshold_3.value;
+    257            // Clearing Alarm States for setting new states from Readings 
+    258            dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value = 0;
+    259          #if APP_BSP_READ_BATTERY_VALUE
+    260            BSP_ReadBatPercentageRemaining(&percentageRemaining);
+    261            // multiply by 2
+    262            percentageRemaining = (percentageRemaining << 1);
+    263            dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageRemaining.value = percentageRemaining;
+    264          #else
+    265            percentageRemaining = dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageRemaining.value;
+    266          #endif
+    267          
+    268            if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryTooLow == 1)
+    269            {
+    270              if(smallestOfTwo(percentageRemaining,minThreshold) == percentageRemaining)
+    271              {
+    272                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_MIN_THRESHOLD_MASK;
+    273                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    274                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_MIN_THRESHOLD_MASK;
+    275                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    276                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_MIN_THRESHOLD_MASK;
+    277                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    278              }
+    279            }
+    280            else if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryAlarm1 == 1)
+    281            {
+    282              if((smallestOfTwo(percentageRemaining,thresholdOne) == percentageRemaining) && (percentageRemaining > minThreshold))
+    283              {
+    284                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_THRESHOLD_1_MASK;
+    285                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    286                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_THRESHOLD_1_MASK;
+    287                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    288                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_THRESHOLD_1_MASK;
+    289                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    290              }
+    291            }
+    292            else if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryAlarm2 == 1)
+    293            {
+    294              if((smallestOfTwo(percentageRemaining,thresholdTwo) == percentageRemaining) && (percentageRemaining > thresholdOne))
+    295              {
+    296                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_THRESHOLD_2_MASK;
+    297                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    298                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_THRESHOLD_2_MASK;
+    299                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    300                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_THRESHOLD_2_MASK;
+    301                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    302              }
+    303            }
+    304            else if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryAlarm3 == 1)
+    305            {
+    306              if((smallestOfTwo(percentageRemaining,thresholdThree) == percentageRemaining) && (percentageRemaining > thresholdTwo))
+    307              {
+    308                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_THRESHOLD_3_MASK;
+    309                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    310                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_THRESHOLD_3_MASK;
+    311                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    312                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_THRESHOLD_3_MASK;
+    313                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    314              }
+    315            }
+    316          }
+    317          
+    318          /**************************************************************************//**
+    319          \brief Battery Two Percentage Remaining measurement timer expiry
+    320                 The Percentage remaining returns the remaining battery charge in 
+    321                 percentage value.
+    322          
+    323          \param NA
+    324          ******************************************************************************/
+    325          static void readBatteryTwoPercentageRemaining(void)
+    326          {
+    327            uint8_t percentageRemaining;
+    328            uint8_t minThreshold = dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageMinThreshold.value;
+    329            uint8_t thresholdOne = dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageThreshold_1.value;
+    330            uint8_t thresholdTwo = dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageThreshold_2.value;
+    331            uint8_t thresholdThree = dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageThreshold_3.value;
+    332            // Clearing Alarm States for setting new states from Readings 
+    333            dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value = 0;
+    334          #if APP_BSP_READ_BATTERY_VALUE
+    335            BSP_ReadBatPercentageRemaining(&percentageRemaining);
+    336            // multiply by 2
+    337            percentageRemaining = (percentageRemaining << 1);
+    338            dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageRemaining.value = percentageRemaining;
+    339          #else
+    340            percentageRemaining = dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageRemaining.value;
+    341          #endif
+    342          
+    343            if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryTooLow == 1)
+    344            {
+    345              if(smallestOfTwo(percentageRemaining,minThreshold) == percentageRemaining)
+    346              {
+    347                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_MIN_THRESHOLD_MASK;
+    348                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    349                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_MIN_THRESHOLD_MASK;
+    350                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    351                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_MIN_THRESHOLD_MASK;
+    352                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    353              }
+    354            }
+    355            else if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryAlarm1 == 1)
+    356            {
+    357             if((smallestOfTwo(percentageRemaining,thresholdOne) == percentageRemaining) && (percentageRemaining > minThreshold))
+    358              {
+    359                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_THRESHOLD_1_MASK;
+    360                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    361                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_THRESHOLD_1_MASK;
+    362                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    363                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_THRESHOLD_1_MASK;
+    364                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    365              }
+    366            }
+    367            else if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryAlarm2 == 1)
+    368            {
+    369              if((smallestOfTwo(percentageRemaining,thresholdTwo) == percentageRemaining) && (percentageRemaining > thresholdOne))
+    370              {
+    371                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_THRESHOLD_2_MASK;
+    372                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    373                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_THRESHOLD_2_MASK;
+    374                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    375                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_THRESHOLD_2_MASK;
+    376                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    377              }
+    378            }
+    379            else if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryAlarm3 == 1)
+    380            {
+    381              if((smallestOfTwo(percentageRemaining,thresholdThree) == percentageRemaining) && (percentageRemaining > thresholdTwo))
+    382              {
+    383                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_THRESHOLD_3_MASK;
+    384                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    385                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_THRESHOLD_3_MASK;
+    386                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    387                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_THRESHOLD_3_MASK;
+    388                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    389              }
+    390            }
+    391          }
+    392          
+    393          /**************************************************************************//**
+    394          \brief Battery Three Percentage Remaining measurement timer expiry
+    395                 The Percentage remaining returns the remaining battery charge in 
+    396                 percentage value.
+    397          
+    398          \param NA
+    399          ******************************************************************************/
+    400          static void readBatteryThreePercentageRemaining(void)
+    401          {
+    402            uint8_t percentageRemaining;
+    403            uint8_t minThreshold = dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageMinThreshold.value;
+    404            uint8_t thresholdOne = dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageThreshold_1.value;
+    405            uint8_t thresholdTwo = dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageThreshold_2.value;
+    406            uint8_t thresholdThree = dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageThreshold_3.value;
+    407            // Clearing Alarm States for setting new states from Readings 
+    408            dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value = 0;
+    409          #if APP_BSP_READ_BATTERY_VALUE
+    410            BSP_ReadBatPercentageRemaining(&percentageRemaining);
+    411            // multiply by 2
+    412            percentageRemaining = (percentageRemaining << 1);
+    413            dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageRemaining.value = percentageRemaining;
+    414          #else
+    415            percentageRemaining = dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageRemaining.value;
+    416          #endif
+    417            
+    418            if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryTooLow == 1)
+    419            {
+    420              if(smallestOfTwo(percentageRemaining,minThreshold) == percentageRemaining)
+    421              {
+    422                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_MIN_THRESHOLD_MASK;
+    423                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    424                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_MIN_THRESHOLD_MASK;
+    425                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    426                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_MIN_THRESHOLD_MASK;
+    427                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    428              }
+    429            }
+    430            else if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryAlarm1 == 1)
+    431            {
+    432              if((smallestOfTwo(percentageRemaining,thresholdOne) == percentageRemaining) && (percentageRemaining > minThreshold))
+    433              {
+    434                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_THRESHOLD_1_MASK;
+    435                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    436                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_THRESHOLD_1_MASK;
+    437                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    438                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_THRESHOLD_1_MASK;
+    439                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    440              }
+    441            }
+    442            else if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryAlarm2 == 1)
+    443            {
+    444              if((smallestOfTwo(percentageRemaining,thresholdTwo) == percentageRemaining) && (percentageRemaining > thresholdOne))
+    445              {
+    446                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_THRESHOLD_2_MASK;
+    447                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    448                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_THRESHOLD_2_MASK;
+    449                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    450                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_THRESHOLD_2_MASK;
+    451                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    452              }
+    453            }
+    454            else if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryAlarm3 == 1)
+    455            {
+    456              if((smallestOfTwo(percentageRemaining,thresholdThree) == percentageRemaining) && (percentageRemaining > thresholdTwo))
+    457              {
+    458                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_THRESHOLD_3_MASK;
+    459                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    460                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_THRESHOLD_3_MASK;
+    461                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    462                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_THRESHOLD_3_MASK;
+    463                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    464              }
+    465            }
+    466          }
+    467          
+    468          /**************************************************************************//**
+    469          \brief Battery One voltage measurement on timer expiry
+    470                 The Voltage sensor returns a Voltage value already scaled in milliVolts
+    471                 range which will be divided by ZCL_DS_BATTERY_VOLTAGE_CONVERSION_UNIT
+    472                 to convert to hundreds of voltage in range.
+    473          
+    474          \param NA
+    475          ******************************************************************************/
+    476          static void readBatteryOneVoltage(void)
+    477          {
+    478            // In millivolts
+    479            uint16_t measuredVoltage;
+    480            uint8_t minThreshold = dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageMinThreshold.value;
+    481            uint8_t thresholdOne = dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageThreshold_1.value;
+    482            uint8_t thresholdTwo = dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageThreshold_2.value;
+    483            uint8_t thresholdThree = dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageThreshold_3.value;
+    484            // Clearing Alarm States for setting new states from Readings 
+    485            dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value = 0;
+    486          #if APP_BSP_READ_BATTERY_VALUE
+    487            BSP_ReadVoltageSensor(&measuredVoltage);
+    488            dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltage.value = (measuredVoltage/ZCL_DS_BATTERY_VOLTAGE_CONVERSION_UNIT);
+    489          #else
+    490            measuredVoltage = dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltage.value;
+    491          #endif
+    492          
+    493            if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryTooLow == 1)
+    494            {
+    495              if(smallestOfTwo(measuredVoltage,minThreshold) == measuredVoltage)
+    496              {
+    497                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_MIN_THRESHOLD_MASK;
+    498                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    499                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_MIN_THRESHOLD_MASK;
+    500                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    501                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_MIN_THRESHOLD_MASK;
+    502                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    503              }
+    504            }
+    505            else if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryAlarm1 == 1)
+    506            {
+    507              if((smallestOfTwo(measuredVoltage,thresholdOne) == measuredVoltage) && (measuredVoltage > minThreshold))
+    508              {
+    509                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_THRESHOLD_1_MASK;
+    510                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    511                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_THRESHOLD_1_MASK;
+    512                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    513                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_THRESHOLD_1_MASK;
+    514                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    515              }
+    516            }
+    517            else if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryAlarm2 == 1)
+    518            {
+    519              if((smallestOfTwo(measuredVoltage,thresholdTwo) == measuredVoltage) && (measuredVoltage > thresholdOne))
+    520              {
+    521                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_THRESHOLD_2_MASK;
+    522                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    523                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_THRESHOLD_2_MASK;
+    524                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    525                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_THRESHOLD_2_MASK;
+    526                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    527              }
+    528            }
+    529            else if(dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value.batteryAlarm3 == 1)
+    530            {
+    531              if((smallestOfTwo(measuredVoltage,thresholdThree) == measuredVoltage) && (measuredVoltage > thresholdTwo))
+    532              {
+    533                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_ONE_THRESHOLD_3_MASK;
+    534                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    535                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_TWO_THRESHOLD_3_MASK;
+    536                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    537                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value |= BATTERY_THREE_THRESHOLD_3_MASK;
+    538                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    539              }
+    540            }
+    541          }
+    542          
+    543          /**************************************************************************//**
+    544          \brief Battery Two voltage measurement on timer expiry
+    545                 The Voltage sensor returns a Voltage value already scaled in milliVolts
+    546                 range which will be divided by ZCL_DS_BATTERY_VOLTAGE_CONVERSION_UNIT
+    547                 to convert to hundreds of voltage in range.
+    548          
+    549          \param NA
+    550          ******************************************************************************/
+    551          static void readBatteryTwoVoltage(void)
+    552          {
+    553            // In millivolts
+    554            uint16_t measuredVoltage;
+    555            uint8_t minThreshold = dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageMinThreshold.value;
+    556            uint8_t thresholdOne = dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageThreshold_1.value;
+    557            uint8_t thresholdTwo = dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageThreshold_2.value;
+    558            uint8_t thresholdThree = dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageThreshold_3.value;
+    559            // Clearing Alarm States for setting new states from Readings 
+    560            dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value = 0;
+    561          #if APP_BSP_READ_BATTERY_VALUE
+    562            BSP_ReadVoltageSensor(&measuredVoltage);
+    563            dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltage.value = (measuredVoltage/ZCL_DS_BATTERY_VOLTAGE_CONVERSION_UNIT);
+    564          #else
+    565            measuredVoltage = dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltage.value;
+    566          #endif
+    567                  
+    568            if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryTooLow == 1)
+    569            {
+    570              if(smallestOfTwo(measuredVoltage,minThreshold) == measuredVoltage)
+    571              {
+    572                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_MIN_THRESHOLD_MASK;
+    573                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    574                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_MIN_THRESHOLD_MASK;
+    575                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    576                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_MIN_THRESHOLD_MASK;
+    577                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    578              }
+    579            }
+    580            else if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryAlarm1 == 1)
+    581            {
+    582              if((smallestOfTwo(measuredVoltage,thresholdOne) == measuredVoltage) && (measuredVoltage > minThreshold))
+    583              {
+    584                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_THRESHOLD_1_MASK;
+    585                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    586                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_THRESHOLD_1_MASK;
+    587                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    588                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_THRESHOLD_1_MASK;
+    589                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    590              }
+    591            }
+    592            else if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryAlarm2 == 1)
+    593            {
+    594              if((smallestOfTwo(measuredVoltage,thresholdTwo) == measuredVoltage) && (measuredVoltage > thresholdOne))
+    595              {
+    596                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_THRESHOLD_2_MASK;
+    597                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    598                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_THRESHOLD_2_MASK;
+    599                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    600                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_THRESHOLD_2_MASK;
+    601                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    602              }
+    603            }
+    604            else if(dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value.batteryAlarm3 == 1)
+    605            {
+    606              if((smallestOfTwo(measuredVoltage,thresholdThree) == measuredVoltage) && (measuredVoltage > thresholdTwo))
+    607              {
+    608                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_ONE_THRESHOLD_3_MASK;
+    609                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    610                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_TWO_THRESHOLD_3_MASK;
+    611                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    612                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value |= BATTERY_THREE_THRESHOLD_3_MASK;
+    613                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    614              }
+    615            }
+    616          }
+    617          
+    618          /**************************************************************************//**
+    619          \brief Battery Three voltage measurement on timer expiry
+    620                 The Voltage sensor returns a Voltage value already scaled in milliVolts
+    621                 range which will be divided by ZCL_DS_BATTERY_VOLTAGE_CONVERSION_UNIT
+    622                 to convert to hundreds of voltage in range.
+    623          
+    624          \param NA
+    625          ******************************************************************************/
+    626          static void readBatteryThreeVoltage(void)
+    627          {
+    628            // In millivolts
+    629            uint16_t measuredVoltage;
+    630            uint8_t minThreshold = dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageMinThreshold.value;
+    631            uint8_t thresholdOne = dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageThreshold_1.value;
+    632            uint8_t thresholdTwo = dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageThreshold_2.value;
+    633            uint8_t thresholdThree = dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageThreshold_3.value;
+    634            // Clearing Alarm States for setting new states from Readings 
+    635            dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value = 0;
+    636          #if APP_BSP_READ_BATTERY_VALUE
+    637            BSP_ReadVoltageSensor(&measuredVoltage);
+    638            dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltage.value = (measuredVoltage/ZCL_DS_BATTERY_VOLTAGE_CONVERSION_UNIT);
+    639          #else
+    640            measuredVoltage = dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltage.value;
+    641          #endif
+    642                  
+    643            if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryTooLow == 1)
+    644            {
+    645              if(smallestOfTwo(measuredVoltage,minThreshold) == measuredVoltage)
+    646              {
+    647                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_MIN_THRESHOLD_MASK;
+    648                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    649                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_MIN_THRESHOLD_MASK;
+    650                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    651                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_MIN_THRESHOLD_MASK;
+    652                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    653              }
+    654            }
+    655            else if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryAlarm1 == 1)
+    656            {
+    657              if((smallestOfTwo(measuredVoltage,thresholdOne) == measuredVoltage) && (measuredVoltage > minThreshold))
+    658              {
+    659                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_THRESHOLD_1_MASK;
+    660                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    661                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_THRESHOLD_1_MASK;
+    662                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    663                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_THRESHOLD_1_MASK;
+    664                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    665              }
+    666            }
+    667            else if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryAlarm2 == 1)
+    668            {
+    669              if((smallestOfTwo(measuredVoltage,thresholdTwo) == measuredVoltage) && (measuredVoltage > thresholdOne))
+    670              {
+    671                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_THRESHOLD_2_MASK;
+    672                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    673                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_THRESHOLD_2_MASK;
+    674                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    675                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_THRESHOLD_2_MASK;
+    676                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    677              }
+    678            }
+    679            else if(dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value.batteryAlarm3 == 1)
+    680            {
+    681              if((smallestOfTwo(measuredVoltage,thresholdThree) == measuredVoltage) && (measuredVoltage > thresholdTwo))
+    682              {
+    683                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_ONE_THRESHOLD_3_MASK;
+    684                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    685                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_TWO_THRESHOLD_3_MASK;
+    686                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    687                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value |= BATTERY_THREE_THRESHOLD_3_MASK;
+    688                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    689              }
+    690            } 
+    691          }
+    692          #endif
+    693          
+    694          /**************************************************************************//**
+    695          \brief Initializes power configuration cluster attributes to their defaults
+    696          \param NA
+    697          ******************************************************************************/
+    698          void powerConfigurationClusterInitAttributes()
+    699          {
+    700            powerConfigurationInformationAttrInit();
+    701            powerConfigurationSettingsAttrInit();
+    702          }
+    703          
+    704          /**************************************************************************//**
+    705          \brief Initializes the power configuration information attributes to their defaults
+    706          \param NA
+    707          ******************************************************************************/
+    708          static void powerConfigurationInformationAttrInit()
+    709          {
+    710            dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltage.value = ZCL_DS_DEFAULT_BATTERY_VOLTAGE;
+    711            dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltage.value = ZCL_DS_DEFAULT_BATTERY_VOLTAGE;
+    712            dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltage.value = ZCL_DS_DEFAULT_BATTERY_VOLTAGE;
+    713          
+    714            dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageRemaining.value = ZCL_DS_DEFAULT_BATTERY_PERCENTAGE;
+    715            dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageRemaining.value = ZCL_DS_DEFAULT_BATTERY_PERCENTAGE;
+    716            dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageRemaining.value = ZCL_DS_DEFAULT_BATTERY_PERCENTAGE;
+    717          }
+    718          
+    719          /**************************************************************************//**
+    720          \brief Initializes the power configuration settings attributes to their defaults
+    721          \param NA
+    722          ******************************************************************************/
+    723          static void powerConfigurationSettingsAttrInit()
+    724          {
+    725            dsPowerConfigurationClusterServerAttributes.batterySourceOneSize.value = ZCL_DS_DEFAULT_BATTERY_SIZE;
+    726            dsPowerConfigurationClusterServerAttributes.batterySourceTwoSize.value = ZCL_DS_DEFAULT_BATTERY_SIZE;
+    727            dsPowerConfigurationClusterServerAttributes.batterySourceThreeSize.value = ZCL_DS_DEFAULT_BATTERY_SIZE;
+    728          
+    729            dsPowerConfigurationClusterServerAttributes.batterySourceOneQuantity.value = ZCL_DS_DEFAULT_BATTERY_QUANDITY;
+    730            dsPowerConfigurationClusterServerAttributes.batterySourceTwoQuantity.value = ZCL_DS_DEFAULT_BATTERY_QUANDITY;
+    731            dsPowerConfigurationClusterServerAttributes.batterySourceThreeQuantity.value = ZCL_DS_DEFAULT_BATTERY_QUANDITY;
+    732          
+    733            memset(&dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmMask.value,ZCL_DS_DEFAULT_BATTERY_ALARM_MASK,sizeof(uint8_t));
+    734            memset(&dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmMask.value,ZCL_DS_DEFAULT_BATTERY_ALARM_MASK,sizeof(uint8_t));
+    735            memset(&dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmMask.value,ZCL_DS_DEFAULT_BATTERY_ALARM_MASK,sizeof(uint8_t));
+    736          
+    737            dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value = 0;
+    738            dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value = 0;
+    739            dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value = 0;
+    740          
+    741            dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageMinThreshold.value = ZCL_DS_DEFAULT_BATTERY_MIN_THREASHOLD;
+    742            dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageMinThreshold.value = ZCL_DS_DEFAULT_BATTERY_MIN_THREASHOLD;
+    743            dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageMinThreshold.value = ZCL_DS_DEFAULT_BATTERY_MIN_THREASHOLD;
+    744          
+    745            dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageThreshold_1.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_1;
+    746            dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageThreshold_1.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_1;
+    747            dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageThreshold_1.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_1;
+    748          
+    749            dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageThreshold_2.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_2;
+    750            dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageThreshold_2.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_2;
+    751            dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageThreshold_2.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_2;
+    752          
+    753            dsPowerConfigurationClusterServerAttributes.batterySourceOneVoltageThreshold_3.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_3;
+    754            dsPowerConfigurationClusterServerAttributes.batterySourceTwoVoltageThreshold_3.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_3;
+    755            dsPowerConfigurationClusterServerAttributes.batterySourceThreeVoltageThreshold_3.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_3;
+    756          
+    757            dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageMinThreshold.value = ZCL_DS_DEFAULT_BATTERY_MIN_THREASHOLD;
+    758            dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageMinThreshold.value = ZCL_DS_DEFAULT_BATTERY_MIN_THREASHOLD;
+    759            dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageMinThreshold.value = ZCL_DS_DEFAULT_BATTERY_MIN_THREASHOLD;
+    760          
+    761            dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageThreshold_1.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_1;
+    762            dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageThreshold_1.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_1;
+    763            dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageThreshold_1.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_1;
+    764          
+    765            dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageThreshold_2.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_2;
+    766            dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageThreshold_2.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_2;
+    767            dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageThreshold_2.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_2;
+    768          
+    769            dsPowerConfigurationClusterServerAttributes.batterySourceOnePercentageThreshold_3.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_3;
+    770            dsPowerConfigurationClusterServerAttributes.batterySourceTwoPercentageThreshold_3.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_3;
+    771            dsPowerConfigurationClusterServerAttributes.batterySourceThreePercentageThreshold_3.value = ZCL_DS_DEFAULT_BATTERY_THREASHOLD_3;
+    772          }
+    773          
+    774          /****************************************************************//**
+    775           \brief Resets a particular AlarmMask
+    776           \param alarmCode - The AlarmMask to be Reset
+    777           \return none
+    778          ********************************************************************/
+    779          static void dsPwrResetAlarm(uint8_t alarmCode)
+    780          {
+    781            if (alarmCode == BATTERY_ONE_MIN_THRESHOLD_MASK)
+    782            {
+    783              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_MIN_THRESHOLD_MASK)
+    784              {
+    785                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_MIN_THRESHOLD_MASK;
+    786                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    787              }
+    788              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_MIN_THRESHOLD_MASK)
+    789              {
+    790                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_MIN_THRESHOLD_MASK;
+    791                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    792              }
+    793              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_MIN_THRESHOLD_MASK)
+    794              {
+    795                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_MIN_THRESHOLD_MASK;
+    796                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    797              }
+    798            }
+    799            else if (alarmCode == ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM)
+    800            {
+    801              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_THRESHOLD_1_MASK)
+    802              {
+    803                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_THRESHOLD_1_MASK;
+    804                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    805              }
+    806              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_THRESHOLD_1_MASK)
+    807              {
+    808                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_THRESHOLD_1_MASK;
+    809                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    810              }
+    811              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_THRESHOLD_1_MASK)
+    812              {
+    813                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_THRESHOLD_1_MASK;
+    814                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    815              }
+    816            }
+    817            else if (alarmCode == ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM)
+    818            {
+    819              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_THRESHOLD_2_MASK)
+    820              {
+    821                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_THRESHOLD_2_MASK;
+    822                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    823              }
+    824              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_THRESHOLD_2_MASK)
+    825              {
+    826                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_THRESHOLD_2_MASK;
+    827                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    828              }
+    829              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_THRESHOLD_2_MASK)
+    830              {
+    831                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_THRESHOLD_2_MASK;
+    832                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    833              }
+    834            }
+    835            else if (alarmCode == ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM)
+    836            {
+    837              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_THRESHOLD_3_MASK)
+    838              {
+    839                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_THRESHOLD_3_MASK;
+    840                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    841              }
+    842              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_THRESHOLD_3_MASK)
+    843              {
+    844                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_THRESHOLD_3_MASK;
+    845                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    846              }
+    847              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_THRESHOLD_3_MASK)
+    848              {
+    849                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_THRESHOLD_3_MASK;
+    850                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    851              }
+    852            }
+    853            else if (alarmCode == ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM)
+    854            {
+    855              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_MIN_THRESHOLD_MASK)
+    856              {
+    857                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_MIN_THRESHOLD_MASK;
+    858                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    859              }
+    860              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_MIN_THRESHOLD_MASK)
+    861              {
+    862                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_MIN_THRESHOLD_MASK;
+    863                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    864              }
+    865              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_MIN_THRESHOLD_MASK)
+    866              {
+    867                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_MIN_THRESHOLD_MASK;
+    868                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    869              }
+    870            }
+    871            else if (alarmCode == ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM)
+    872            {
+    873              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_THRESHOLD_1_MASK)
+    874              {
+    875                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_THRESHOLD_1_MASK;
+    876                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    877              }
+    878              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_THRESHOLD_1_MASK)
+    879              {
+    880                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_THRESHOLD_1_MASK;
+    881                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    882              }
+    883              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_THRESHOLD_1_MASK)
+    884              {
+    885                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_THRESHOLD_1_MASK;
+    886                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    887              }
+    888            }
+    889            else if (alarmCode == ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM)
+    890            {
+    891              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_THRESHOLD_2_MASK)
+    892              {
+    893                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_THRESHOLD_2_MASK;
+    894                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    895              }
+    896              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_THRESHOLD_2_MASK)
+    897              {
+    898                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_THRESHOLD_2_MASK;
+    899                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    900              }
+    901              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_THRESHOLD_2_MASK)
+    902              {
+    903                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_THRESHOLD_2_MASK;
+    904                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    905              }
+    906            }
+    907            else if (alarmCode == ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM)
+    908            {
+    909              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_THRESHOLD_3_MASK)
+    910              {
+    911                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_THRESHOLD_3_MASK;
+    912                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    913              }
+    914              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_THRESHOLD_3_MASK)
+    915              {
+    916                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_THRESHOLD_3_MASK;
+    917                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    918              }
+    919              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_THRESHOLD_3_MASK)
+    920              {
+    921                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_THRESHOLD_3_MASK;
+    922                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    923              }
+    924            }
+    925            else if (alarmCode == ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM)
+    926            {
+    927              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_MIN_THRESHOLD_MASK)
+    928              {
+    929                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_MIN_THRESHOLD_MASK;
+    930                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    931              }
+    932              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_MIN_THRESHOLD_MASK)
+    933              {
+    934                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_MIN_THRESHOLD_MASK;
+    935                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    936              }
+    937              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_MIN_THRESHOLD_MASK)
+    938              {
+    939                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_MIN_THRESHOLD_MASK;
+    940                alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    941              }
+    942            }
+    943            else if (alarmCode == ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM)
+    944            {
+    945              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_THRESHOLD_1_MASK)
+    946              {
+    947                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_THRESHOLD_1_MASK;
+    948                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    949              }
+    950              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_THRESHOLD_1_MASK)
+    951              {
+    952                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_THRESHOLD_1_MASK;
+    953                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    954              }
+    955              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_THRESHOLD_1_MASK)
+    956              {
+    957                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_THRESHOLD_1_MASK;
+    958                alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    959              }
+    960            }
+    961            else if (alarmCode == ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM)
+    962            {
+    963              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_THRESHOLD_2_MASK)
+    964              {
+    965                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_THRESHOLD_2_MASK;
+    966                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    967              }
+    968              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_THRESHOLD_2_MASK)
+    969              {
+    970                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_THRESHOLD_2_MASK;
+    971                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    972              }
+    973              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_THRESHOLD_2_MASK)
+    974              {
+    975                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_THRESHOLD_2_MASK;
+    976                alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    977              }
+    978            }
+    979            else if (alarmCode == ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM)
+    980            {
+    981              if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_THRESHOLD_3_MASK)
+    982              {
+    983                dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_THRESHOLD_3_MASK;
+    984                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    985              }
+    986              if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_THRESHOLD_3_MASK)
+    987              {
+    988                dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_THRESHOLD_3_MASK;
+    989                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    990              }
+    991              if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_THRESHOLD_3_MASK)
+    992              {
+    993                dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_THRESHOLD_3_MASK;
+    994                alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+    995              }
+    996            }
+    997          }
+    998          
+    999          /****************************************************************//**
+   1000           \brief Resets all active AlarmMasks
+   1001           \param none
+   1002           \return none
+   1003          ********************************************************************/
+   1004          static void dsPwrResetAllAlarms(void)
+   1005          {
+   1006            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_MIN_THRESHOLD_MASK)
+   1007            {
+   1008              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_MIN_THRESHOLD_MASK;
+   1009              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1010            }
+   1011            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_MIN_THRESHOLD_MASK)
+   1012            {
+   1013              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_MIN_THRESHOLD_MASK;
+   1014              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1015            }
+   1016            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_MIN_THRESHOLD_MASK)
+   1017            {
+   1018              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_MIN_THRESHOLD_MASK;
+   1019              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1020            }
+   1021            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_THRESHOLD_1_MASK)
+   1022            {
+   1023              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_THRESHOLD_1_MASK;
+   1024              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1025            }
+   1026            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_THRESHOLD_1_MASK)
+   1027            {
+   1028              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_THRESHOLD_1_MASK;
+   1029              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1030            }
+   1031            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_THRESHOLD_1_MASK)
+   1032            {
+   1033              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_THRESHOLD_1_MASK;
+   1034              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1035            }
+   1036            
+   1037            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_THRESHOLD_2_MASK)
+   1038            {
+   1039              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_THRESHOLD_2_MASK;
+   1040              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1041            }
+   1042            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_THRESHOLD_2_MASK)
+   1043            {
+   1044              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_THRESHOLD_2_MASK;
+   1045              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1046            }
+   1047            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_THRESHOLD_2_MASK)
+   1048            {
+   1049              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_THRESHOLD_2_MASK;
+   1050              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1051            }
+   1052            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_ONE_THRESHOLD_3_MASK)
+   1053            {
+   1054              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_ONE_THRESHOLD_3_MASK;
+   1055              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1056            }
+   1057            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_ONE_THRESHOLD_3_MASK)
+   1058            {
+   1059              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_ONE_THRESHOLD_3_MASK;
+   1060              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1061            }
+   1062            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_ONE_THRESHOLD_3_MASK)
+   1063            {
+   1064              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_ONE_THRESHOLD_3_MASK;
+   1065              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_1_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1066            }
+   1067          
+   1068            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_MIN_THRESHOLD_MASK)
+   1069            {
+   1070              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_MIN_THRESHOLD_MASK;
+   1071              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1072            }
+   1073            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_MIN_THRESHOLD_MASK)
+   1074            {
+   1075              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_MIN_THRESHOLD_MASK;
+   1076              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1077            }
+   1078            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_MIN_THRESHOLD_MASK)
+   1079            {
+   1080              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_MIN_THRESHOLD_MASK;
+   1081              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1082            }
+   1083            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_THRESHOLD_1_MASK)
+   1084            {
+   1085              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_THRESHOLD_1_MASK;
+   1086              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1087            }
+   1088            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_THRESHOLD_1_MASK)
+   1089            {
+   1090              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_THRESHOLD_1_MASK;
+   1091              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1092            }
+   1093            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_THRESHOLD_1_MASK)
+   1094            {
+   1095              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_THRESHOLD_1_MASK;
+   1096              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1097            }
+   1098            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_THRESHOLD_2_MASK)
+   1099            {
+   1100              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_THRESHOLD_2_MASK;
+   1101              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1102            }
+   1103            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_THRESHOLD_2_MASK)
+   1104            {
+   1105              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_THRESHOLD_2_MASK;
+   1106              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1107            }
+   1108            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_THRESHOLD_2_MASK)
+   1109            {
+   1110              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_THRESHOLD_2_MASK;
+   1111              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1112            }
+   1113            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_TWO_THRESHOLD_3_MASK)
+   1114            {
+   1115              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_TWO_THRESHOLD_3_MASK;
+   1116              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1117            }
+   1118            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_TWO_THRESHOLD_3_MASK)
+   1119            {
+   1120              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_TWO_THRESHOLD_3_MASK;
+   1121              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1122            }
+   1123            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_TWO_THRESHOLD_3_MASK)
+   1124            {
+   1125              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_TWO_THRESHOLD_3_MASK;
+   1126              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_2_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1127            }
+   1128            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_MIN_THRESHOLD_MASK)
+   1129            {
+   1130              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_MIN_THRESHOLD_MASK;
+   1131              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1132            }
+   1133            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_MIN_THRESHOLD_MASK)
+   1134            {
+   1135              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_MIN_THRESHOLD_MASK;
+   1136              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1137            }
+   1138            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_MIN_THRESHOLD_MASK)
+   1139            {
+   1140              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_MIN_THRESHOLD_MASK;
+   1141              alarmNotification(ZCL_BATTERY_MIN_THRESHOLD_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1142            }
+   1143            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_THRESHOLD_1_MASK)
+   1144            {
+   1145              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_THRESHOLD_1_MASK;
+   1146              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1147            }
+   1148            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_THRESHOLD_1_MASK)
+   1149            {
+   1150              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_THRESHOLD_1_MASK;
+   1151              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1152            }
+   1153            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_THRESHOLD_1_MASK)
+   1154            {
+   1155              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_THRESHOLD_1_MASK;
+   1156              alarmNotification(ZCL_BATTERY_THRESHOLD_1_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1157            }
+   1158            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_THRESHOLD_2_MASK)
+   1159            {
+   1160              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_THRESHOLD_2_MASK;
+   1161              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1162            }
+   1163            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_THRESHOLD_2_MASK)
+   1164            {
+   1165              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_THRESHOLD_2_MASK;
+   1166              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1167            }
+   1168            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_THRESHOLD_2_MASK)
+   1169            {
+   1170              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_THRESHOLD_2_MASK;
+   1171              alarmNotification(ZCL_BATTERY_THRESHOLD_2_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1172            }
+   1173            if (dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value & BATTERY_THREE_THRESHOLD_3_MASK)
+   1174            {
+   1175              dsPowerConfigurationClusterServerAttributes.batterySourceOneAlarmState.value &= ~BATTERY_THREE_THRESHOLD_3_MASK;
+   1176              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1177            }
+   1178            if (dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value & BATTERY_THREE_THRESHOLD_3_MASK)
+   1179            {
+   1180              dsPowerConfigurationClusterServerAttributes.batterySourceTwoAlarmState.value &= ~BATTERY_THREE_THRESHOLD_3_MASK;
+   1181              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1182            }
+   1183            if (dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value & BATTERY_THREE_THRESHOLD_3_MASK)
+   1184            {
+   1185              dsPowerConfigurationClusterServerAttributes.batterySourceThreeAlarmState.value &= ~BATTERY_THREE_THRESHOLD_3_MASK;
+   1186              alarmNotification(ZCL_BATTERY_THRESHOLD_3_SOURCE_3_ALARM, POWER_CONFIGURATION_CLUSTER_ID);
+   1187            }
+   1188          }
+   1189          
+   1190          #if (APP_ENABLE_CERTIFICATION_EXTENSION == 0)
+   1191          /****************************************************************//**
+   1192           \brief Finding the samllest of Two numbers
+   1193           \param one - The first Number
+   1194           \param two  - The second number
+   1195           \return uint16_t
+   1196          ********************************************************************/
+   1197          static uint16_t smallestOfTwo(uint16_t one, uint16_t two)
+   1198          {
+   1199            return (one < two ? one : two);
+   1200          }
+   1201          #endif
+   1202          
+   1203          #endif // APP_DEVICE_TYPE_DIMMER_SWITCH
+   1204          
+   1205          // eof dsPowerConfigurationCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

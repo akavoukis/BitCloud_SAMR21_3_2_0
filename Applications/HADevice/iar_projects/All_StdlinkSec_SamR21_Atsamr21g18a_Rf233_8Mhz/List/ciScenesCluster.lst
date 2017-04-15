@@ -1,0 +1,627 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:10
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciScenesCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciScenesCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciScenesCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciScenesCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciScenesCluster.c
+      1          /**************************************************************************//**
+      2            \file ciScenesCluster.c
+      3          
+      4            \brief
+      5              Combined Interface Scenes cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              04.09.13 N. Fomin - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciScenesCluster.h>
+     24          #include <haClusters.h>
+     25          #include <zclOnOffCluster.h>
+     26          #include <zclLevelControlCluster.h>
+     27          #include <zclThermostatCluster.h>
+     28          #include <commandManager.h>
+     29          #include <uartManager.h>
+     30          
+     31          /******************************************************************************
+     32                              Prototypes section
+     33          ******************************************************************************/
+     34          static ZCL_Status_t addSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddSceneResponse_t *payload);
+     35          static ZCL_Status_t viewSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewSceneResponse_t *payload);
+     36          static ZCL_Status_t removeSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveSceneResponse_t *payload);
+     37          static ZCL_Status_t removeAllScenesResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveAllScenesResponse_t *payload);
+     38          static ZCL_Status_t storeSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StoreSceneResponse_t *payload);
+     39          static ZCL_Status_t getSceneMembershipResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetSceneMembershipResponse_t *payload);
+     40          
+     41          static void ciFillAddSceneToDimmableLightPayload(ZCL_AddScene_t *payload, uint16_t group, uint8_t scene, uint16_t time, bool onOff, uint8_t level);
+     42          static void ciFillAddSceneToThermostatPayload(ZCL_AddScene_t *payload, uint16_t group, uint8_t scene, uint16_t time, 
+     43                                                        int16_t occupiedCoolingSetPoint, int16_t occupiedHeatingSetPoint, uint8_t systemMode);
+     44          static void ciFillViewRemoveStoreRecallScenePayload(ZCL_ViewScene_t *payload, uint16_t group, uint8_t scene);
+     45          static void ciFillRemoveAllScenesGetSceneMembershipPayload(ZCL_RemoveAllScenes_t *payload, uint16_t group);
+     46          
+     47          /******************************************************************************
+     48                              Global variables section
+     49          ******************************************************************************/
+     50          ZCL_ScenesClusterCommands_t ciScenesCommands =
+     51          {
+     52            ZCL_DEFINE_SCENES_CLUSTER_COMMANDS(NULL, NULL, NULL, NULL, NULL, NULL, NULL,
+     53                                               addSceneResponseInd, viewSceneResponseInd, removeSceneResponseInd,
+     54                                               removeAllScenesResponseInd, storeSceneResponseInd, getSceneMembershipResponseInd)
+     55          };
+     56          
+     57          /******************************************************************************
+     58                              Implementation section
+     59          ******************************************************************************/
+     60          /**************************************************************************//**
+     61          \brief Initializes Scenes cluster
+     62          ******************************************************************************/
+     63          void scenesClusterInit(void)
+     64          {}
+     65          
+     66          /**************************************************************************//**
+     67          \brief Sends Add Scene command to bound Dimmable Light device
+     68          
+     69          \param[in] mode  - address mode;
+     70          \param[in] addr  - short address of destination node or number of group;
+     71          \param[in] ep    - endpoint number of destination device;
+     72          \param[in] group - group id;
+     73          \param[in] scene - scene id;
+     74          \param[in] time  - transition time;
+     75          \param[in] onOff - onOff extenstion filed value;
+     76          \param[in] level - currentLevel extension field value
+     77          ******************************************************************************/
+     78          void scenesSendAddSceneToDimmableLight(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+     79            uint16_t group, uint8_t scene, uint16_t time, bool onOff, uint8_t level)
+     80          {
+     81            ZCL_Request_t *req;
+     82          
+     83            if (!(req = getFreeCommand()))
+     84              return;
+     85          
+     86            fillCommandRequest(req, ZCL_SCENES_CLUSTER_ADD_SCENE_COMMAND_ID,
+     87              sizeof(ZCL_AddScene_t) + sizeof(ZCL_OnOffClusterExtensionFieldSet_t) +
+     88              sizeof(ZCL_LevelControlSceneExtensionFields_t));
+     89            ciFillAddSceneToDimmableLightPayload((ZCL_AddScene_t *)req->requestPayload, group, scene, time, onOff, level);
+     90            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+     91            commandManagerSendCommand(req);
+     92          }
+     93          
+     94          /**************************************************************************//**
+     95          \brief Sends Add Scene command to bound Thermostat device
+     96          
+     97          \param[in] mode  - address mode;
+     98          \param[in] addr  - short address of destination node or number of group;
+     99          \param[in] ep    - endpoint number of destination device;
+    100          \param[in] group - group id;
+    101          \param[in] scene - scene id;
+    102          \param[in] time  - transition time;
+    103          \param[in] occupiedCoolingSetPoint - occupiedCoolingSetPoint extenstion field value;
+    104          \param[in] occupiedHeatingSetPoint - occupiedHeatingSetPoint extension field value
+    105          \param[in] systemMode              - systemMode extension field value
+    106          ******************************************************************************/
+    107          void scenesSendAddSceneToThermotstat(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    108            uint16_t group, uint8_t scene, uint16_t time, int16_t occupiedCoolingSetPoint, int16_t occupiedHeatingSetPoint, uint8_t systemMode)
+    109          {
+    110            ZCL_Request_t *req;
+    111          
+    112            if (!(req = getFreeCommand()))
+    113              return;
+    114          
+    115            fillCommandRequest(req, ZCL_SCENES_CLUSTER_ADD_SCENE_COMMAND_ID,
+    116              sizeof(ZCL_AddScene_t) + sizeof(ZCL_ThermostatClusterExtensionFieldSet_t));
+    117          
+    118            ciFillAddSceneToThermostatPayload((ZCL_AddScene_t *)req->requestPayload, group, scene, time, 
+    119                                              occupiedCoolingSetPoint, occupiedHeatingSetPoint, systemMode);
+    120            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+    121            commandManagerSendCommand(req);
+    122          }
+    123          
+    124          /**************************************************************************//**
+    125          \brief Sends View Scene command to bound devices
+    126          
+    127          \param[in] mode  - address mode;
+    128          \param[in] addr  - short address of destination node or number of group;
+    129          \param[in] ep    - endpoint number of destination device;
+    130          \param[in] group - group id;
+    131          \param[in] scene - scene id
+    132          ******************************************************************************/
+    133          void scenesSendViewScene(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    134            uint16_t group, uint8_t scene)
+    135          {
+    136            ZCL_Request_t *req;
+    137          
+    138            if (!(req = getFreeCommand()))
+    139              return;
+    140          
+    141            fillCommandRequest(req, ZCL_SCENES_CLUSTER_VIEW_SCENE_COMMAND_ID, sizeof(ZCL_ViewScene_t));
+    142            ciFillViewRemoveStoreRecallScenePayload((ZCL_ViewScene_t *)req->requestPayload, group, scene);
+    143            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+    144            commandManagerSendCommand(req);
+    145          }
+    146          
+    147          /**************************************************************************//**
+    148          \brief Sends Remove Scene command to bound devices
+    149          
+    150          \param[in] mode  - address mode;
+    151          \param[in] addr  - short address of destination node or number of group;
+    152          \param[in] ep    - endpoint number of destination device;
+    153          \param[in] group - group id;
+    154          \param[in] scene - scene id
+    155          ******************************************************************************/
+    156          void scenesSendRemoveScene(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    157            uint16_t group, uint8_t scene)
+    158          {
+    159            ZCL_Request_t *req;
+    160          
+    161            if (!(req = getFreeCommand()))
+    162              return;
+    163          
+    164            fillCommandRequest(req, ZCL_SCENES_CLUSTER_REMOVE_SCENE_COMMAND_ID, sizeof(ZCL_RemoveScene_t));
+    165            ciFillViewRemoveStoreRecallScenePayload((ZCL_ViewScene_t *)req->requestPayload, group, scene);
+    166            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+    167            commandManagerSendCommand(req);
+    168          }
+    169          
+    170          /**************************************************************************//**
+    171          \brief Sends Remove All Scenes command to bound devices
+    172          
+    173          \param[in] mode  - address mode;
+    174          \param[in] addr  - short address of destination node or number of group;
+    175          \param[in] ep    - endpoint number of destination device;
+    176          \param[in] group - group id
+    177          ******************************************************************************/
+    178          void scenesSendRemoveAllScenes(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    179            uint16_t group)
+    180          {
+    181            ZCL_Request_t *req;
+    182          
+    183            if (!(req = getFreeCommand()))
+    184              return;
+    185          
+    186            fillCommandRequest(req, ZCL_SCENES_CLUSTER_REMOVE_ALL_SCENES_COMMAND_ID, sizeof(ZCL_RemoveAllScenes_t));
+    187            ciFillRemoveAllScenesGetSceneMembershipPayload((ZCL_RemoveAllScenes_t *)req->requestPayload, group);
+    188            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+    189            commandManagerSendCommand(req);
+    190          }
+    191          
+    192          /**************************************************************************//**
+    193          \brief Sends Store Scene command to bound devices
+    194          
+    195          \param[in] mode  - address mode;
+    196          \param[in] addr  - short address of destination node or number of group;
+    197          \param[in] ep    - endpoint number of destination device;
+    198          \param[in] group - group id;
+    199          \param[in] scene - scene id
+    200          ******************************************************************************/
+    201          void scenesSendStoreScene(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    202            uint16_t group, uint8_t scene)
+    203          {
+    204            ZCL_Request_t *req;
+    205          
+    206            if (!(req = getFreeCommand()))
+    207              return;
+    208          
+    209            fillCommandRequest(req, ZCL_SCENES_CLUSTER_STORE_SCENE_COMMAND_ID, sizeof(ZCL_StoreScene_t));
+    210            ciFillViewRemoveStoreRecallScenePayload((ZCL_ViewScene_t *)req->requestPayload, group, scene);
+    211            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+    212            commandManagerSendCommand(req);
+    213          }
+    214          
+    215          /**************************************************************************//**
+    216          \brief Sends Recall Scene command to bound devices
+    217          
+    218          \param[in] mode  - address mode;
+    219          \param[in] addr  - short address of destination node or number of group;
+    220          \param[in] ep    - endpoint number of destination device;
+    221          \param[in] group - group id;
+    222          \param[in] scene - scene id
+    223          ******************************************************************************/
+    224          void scenesSendRecallScene(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    225            uint16_t group, uint8_t scene)
+    226          {
+    227            ZCL_Request_t *req;
+    228          
+    229            if (!(req = getFreeCommand()))
+    230              return;
+    231          
+    232            fillCommandRequest(req, ZCL_SCENES_CLUSTER_RECALL_SCENE_COMMAND_ID, sizeof(ZCL_RecallScene_t));
+    233            ciFillViewRemoveStoreRecallScenePayload((ZCL_ViewScene_t *)req->requestPayload, group, scene);
+    234            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+    235            commandManagerSendCommand(req);
+    236          }
+    237          
+    238          /**************************************************************************//**
+    239          \brief Sends Get Scene Membership command to bound devices
+    240          
+    241          \param[in] mode  - address mode;
+    242          \param[in] addr  - short address of destination node or number of group;
+    243          \param[in] ep    - endpoint number of destination device;
+    244          \param[in] group - group id
+    245          ******************************************************************************/
+    246          void scenesSendGetSceneMembership(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    247            uint16_t group)
+    248          {
+    249            ZCL_Request_t *req;
+    250          
+    251            if (!(req = getFreeCommand()))
+    252              return;
+    253          
+    254            fillCommandRequest(req, ZCL_SCENES_CLUSTER_GET_SCENE_MEMBERSHIP_COMMAND_ID, sizeof(ZCL_GetSceneMembership_t));
+    255            ciFillRemoveAllScenesGetSceneMembershipPayload((ZCL_RemoveAllScenes_t *)req->requestPayload, group);
+    256            fillDstAddressing(&req->dstAddressing, mode, addr, ep, SCENES_CLUSTER_ID);
+    257            commandManagerSendCommand(req);
+    258          }
+    259          
+    260          /**************************************************************************//**
+    261          \brief Callback on receiving Add Scene Response command
+    262          
+    263          \param[in] addressing - pointer to addressing information;
+    264          \param[in] payloadLength - data payload length;
+    265          \param[in] payload - data pointer
+    266          
+    267          \return status of indication routine
+    268          ******************************************************************************/
+    269          static ZCL_Status_t addSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddSceneResponse_t *payload)
+    270          {
+    271            LOG_STRING(addSceneRespStr, "Add scene response: status = 0x%02x\r\n");
+    272            LOG_STRING(groupStr, "groupId = 0x%04x\r\n");
+    273            LOG_STRING(sceneStr, "sceneId = 0x%02x\r\n");
+    274          
+    275            appSnprintf(addSceneRespStr, payload->status);
+    276            appSnprintf(groupStr, payload->groupId);
+    277            appSnprintf(sceneStr, payload->sceneId);
+    278          
+    279            (void)addressing, (void)payloadLength, (void)payload;
+    280            return ZCL_SUCCESS_STATUS;
+    281          }
+    282          
+    283          /**************************************************************************//**
+    284          \brief Callback on receiving View Scene Response command
+    285          
+    286          \param[in] addressing - pointer to addressing information;
+    287          \param[in] payloadLength - data payload length;
+    288          \param[in] payload - data pointer
+    289          
+    290          \return status of indication routine
+    291          ******************************************************************************/
+    292          static ZCL_Status_t viewSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewSceneResponse_t *payload)
+    293          {
+    294            LOG_STRING(viewSceneRespStr, "View scene response: status = 0x%02x\r\n");
+    295            LOG_STRING(groupStr, "groupId = 0x%04x\r\n");
+    296            LOG_STRING(sceneStr, "sceneId = 0x%02x\r\n");
+    297            LOG_STRING(transitionTimeStr, "transitionTime = 0x%04x\r\n");
+    298          
+    299            appSnprintf(viewSceneRespStr, payload->status);
+    300            appSnprintf(groupStr, payload->groupId);
+    301            appSnprintf(sceneStr, payload->sceneId);
+    302            appSnprintf(transitionTimeStr, payload->transitionTime);
+    303          
+    304            (void)addressing, (void)payloadLength, (void)payload;
+    305            return ZCL_SUCCESS_STATUS;
+    306          }
+    307          
+    308          /**************************************************************************//**
+    309          \brief Callback on receiving Remove Scene Response command
+    310          
+    311          \param[in] addressing - pointer to addressing information;
+    312          \param[in] payloadLength - data payload length;
+    313          \param[in] payload - data pointer
+    314          
+    315          \return status of indication routine
+    316          ******************************************************************************/
+    317          static ZCL_Status_t removeSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveSceneResponse_t *payload)
+    318          {
+    319            LOG_STRING(removeSceneRespStr, "Remove scene response: status = 0x%02x\r\n");
+    320            LOG_STRING(groupStr, "groupId = 0x%04x\r\n");
+    321            LOG_STRING(sceneStr, "sceneId = 0x%02x\r\n");
+    322          
+    323            appSnprintf(removeSceneRespStr, payload->status);
+    324            appSnprintf(groupStr, payload->groupId);
+    325            appSnprintf(sceneStr, payload->sceneId);
+    326          
+    327            (void)addressing, (void)payloadLength, (void)payload;
+    328            return ZCL_SUCCESS_STATUS;
+    329          }
+    330          
+    331          /**************************************************************************//**
+    332          \brief Callback on receiving Remove All Scenes Response command
+    333          
+    334          \param[in] addressing - pointer to addressing information;
+    335          \param[in] payloadLength - data payload length;
+    336          \param[in] payload - data pointer
+    337          
+    338          \return status of indication routine
+    339          ******************************************************************************/
+    340          static ZCL_Status_t removeAllScenesResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveAllScenesResponse_t *payload)
+    341          {
+    342            LOG_STRING(removeAllScenesRespStr, "Remove all scenes response: status = 0x%02x\r\n");
+    343            LOG_STRING(groupStr, "groupId = 0x%04x\r\n");
+    344          
+    345            appSnprintf(removeAllScenesRespStr, payload->status);
+    346            appSnprintf(groupStr, payload->groupId);
+    347          
+    348            (void)addressing, (void)payloadLength, (void)payload;
+    349            return ZCL_SUCCESS_STATUS;
+    350          }
+    351          
+    352          /**************************************************************************//**
+    353          \brief Callback on receiving Store Scene Response command
+    354          
+    355          \param[in] addressing - pointer to addressing information;
+    356          \param[in] payloadLength - data payload length;
+    357          \param[in] payload - data pointer
+    358          
+    359          \return status of indication routine
+    360          ******************************************************************************/
+    361          static ZCL_Status_t storeSceneResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StoreSceneResponse_t *payload)
+    362          {
+    363            LOG_STRING(storeRespStr, "Store scene response: status = 0x%02x\r\n");
+    364          
+    365            appSnprintf(storeRespStr, payload->status);
+    366          
+    367            (void)addressing, (void)payloadLength, (void)payload;
+    368            return ZCL_SUCCESS_STATUS;
+    369          }
+    370          
+    371          /**************************************************************************//**
+    372          \brief Callback on receiving Get Scene Membership Response command
+    373          
+    374          \param[in] addressing - pointer to addressing information;
+    375          \param[in] payloadLength - data payload length;
+    376          \param[in] payload - data pointer
+    377          
+    378          \return status of indication routine
+    379          ******************************************************************************/
+    380          static ZCL_Status_t getSceneMembershipResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetSceneMembershipResponse_t *payload)
+    381          {
+    382            LOG_STRING(getSceneMembershipRespStr, "Get scene membership response: status = 0x%02x\r\n");
+    383            LOG_STRING(groupStr, "groupId = 0x%04x\r\n");
+    384            LOG_STRING(sceneCountStr, "sceneCount = 0x%02x\r\n");
+    385            LOG_STRING(sceneStr, "sceneId = 0x%02x\r\n");
+    386          
+    387            appSnprintf(getSceneMembershipRespStr, payload->status);
+    388            appSnprintf(groupStr, payload->groupId);
+    389            appSnprintf(sceneCountStr, payload->sceneCount);
+    390            for (uint8_t i = 0; i < payload->sceneCount; i++)
+    391              appSnprintf(sceneStr, payload->sceneList[i]);
+    392          
+    393            (void)addressing, (void)payloadLength, (void)payload;
+    394            return ZCL_SUCCESS_STATUS;
+    395          }
+    396          
+    397          /**************************************************************************//**
+    398          \brief Fills Add Scene command to DL structure
+    399          
+    400          \param[out] payload - pointer to command structure;
+    401          \param[in] group - group id;
+    402          \param[in] scene - scene id;
+    403          \param[in] time  - transition time;
+    404          \param[in] onOff - onOff extenstion filed value;
+    405          \param[in] level - currentLevel extension field value
+    406          ******************************************************************************/
+    407          static void ciFillAddSceneToDimmableLightPayload(ZCL_AddScene_t *payload, uint16_t group, uint8_t scene, uint16_t time, bool onOff, uint8_t level)
+    408          {
+    409            ZCL_OnOffClusterExtensionFieldSet_t    *onOffExt = (ZCL_OnOffClusterExtensionFieldSet_t *)&payload->name[1];
+    410            uint8_t                                *tmp = (uint8_t *)(&payload->name[1]) + sizeof(ZCL_OnOffClusterExtensionFieldSet_t);
+    411            ZCL_LevelControlSceneExtensionFields_t *levelControlExt = (ZCL_LevelControlSceneExtensionFields_t *)tmp;
+    412          
+    413            payload->groupId        = group;
+    414            payload->sceneId        = scene;
+    415            payload->transitionTime = time;
+    416            payload->name[0]        = 0;
+    417          
+    418            onOffExt->clusterId  = ONOFF_CLUSTER_ID;
+    419            onOffExt->length     = sizeof(onOffExt->onOffValue);
+    420            onOffExt->onOffValue = onOff;
+    421          
+    422            levelControlExt->clusterId    = LEVEL_CONTROL_CLUSTER_ID;
+    423            levelControlExt->length       = sizeof(levelControlExt->currentLevel);
+    424            levelControlExt->currentLevel = level;
+    425          }
+    426          
+    427          /**************************************************************************//**
+    428          \brief Fills Add Scene command TH structure
+    429          
+    430          \param[out] payload - pointer to command structure;
+    431          \param[in] group - group id;
+    432          \param[in] scene - scene id;
+    433          \param[in] time  - transition time;
+    434          \param[in] occupiedCoolingSetPoint - onOff occupiedCoolingSetPoint filed value;
+    435          \param[in] occupiedHeatingSetPoint - occupiedHeatingSetPoint extension field value
+    436          \param[in] systemMode              - systemMode extension field value
+    437          ******************************************************************************/
+    438          static void ciFillAddSceneToThermostatPayload(ZCL_AddScene_t *payload, uint16_t group, uint8_t scene, uint16_t time, 
+    439                                                        int16_t occupiedCoolingSetPoint, int16_t occupiedHeatingSetPoint, uint8_t systemMode)
+    440          {
+    441            ZCL_ThermostatClusterExtensionFieldSet_t    *thermostatExt = (ZCL_ThermostatClusterExtensionFieldSet_t *)&payload->name[1];
+    442          
+    443            payload->groupId        = group;
+    444            payload->sceneId        = scene;
+    445            payload->transitionTime = time;
+    446            payload->name[0]        = 0;
+    447          
+    448            thermostatExt->clusterId  = THERMOSTAT_CLUSTER_ID;
+    449            thermostatExt->length     = sizeof(ZCL_ThermostatClusterExtensionFieldSet_t) - sizeof(uint8_t) - sizeof(ClusterId_t) ;
+    450            thermostatExt->occupiedCoolingSetpoint = occupiedCoolingSetPoint;
+    451            thermostatExt->occupiedHeatingSetpoint = occupiedHeatingSetPoint;
+    452            thermostatExt->systemMode = systemMode;
+    453          }
+    454          
+    455          /**************************************************************************//**
+    456          \brief Fills View, Remove, Store or Recall Scene command structure
+    457          
+    458          \param[out] payload - pointer to command structure;
+    459          \param[in] group - group id;
+    460          \param[in] scene - scene id
+    461          ******************************************************************************/
+    462          static void ciFillViewRemoveStoreRecallScenePayload(ZCL_ViewScene_t *payload, uint16_t group, uint8_t scene)
+    463          {
+    464            payload->groupId = group;
+    465            payload->sceneId = scene;
+    466          }
+    467          
+    468          /**************************************************************************//**
+    469          \brief Fills View, Remove, Store or Recall Scene command structure
+    470          
+    471          \param[out] payload - pointer to command structure;
+    472          \param[in] group - group id
+    473          ******************************************************************************/
+    474          static void ciFillRemoveAllScenesGetSceneMembershipPayload(ZCL_RemoveAllScenes_t *payload, uint16_t group)
+    475          {
+    476            payload->groupId = group;
+    477          }
+    478          
+    479          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    480          //eof ciScenesCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

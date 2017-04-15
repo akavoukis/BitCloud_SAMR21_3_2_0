@@ -1,0 +1,293 @@
+COMPONENTS_PATH = ../../../../BitCloud/Components
+APP_NAME = HADevice
+CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Iar
+LIST_PATH = $(CONFIG_NAME)/List
+EXE_PATH = $(CONFIG_NAME)/Exe
+OBJ_PATH = $(CONFIG_NAME)/Obj
+
+include ../../../../BitCloud/lib/Makerules_Atsamr21e18a_Iar
+
+DEFINES = \
+  -DBOARD_SAMR21 \
+  -DAT86RF233 \
+  -DATSAMR21E18A \
+  -DHAL_8MHz \
+  -DSTACK_TYPE_ALL \
+  -DSTDLINK_SECURITY_MODE 
+
+INCLUDES = \
+  -I../.. \
+  -I../../dimmableLight/include \
+  -I../../dimmerSwitch/include \
+  -I../../multiSensor/include \
+  -I../../thermostat/include \
+  -I../../ias_ace/include \
+  -I../../combinedInterface/include \
+  -I../../common/include \
+  -I../../common/clusters/include \
+  -I../../../../BitCloud/Components/BSP/SAMR21/include \
+  -I../../../../BitCloud/Components/SystemEnvironment/include \
+  -I../../../../BitCloud/lib \
+  -I../../../../BitCloud/Components/HAL/include \
+  -I../../../../BitCloud/Components/BSP \
+  -I../../../../BitCloud/Components/BSP/include \
+  -I../../../../BitCloud/Components/NWK/include \
+  -I../../../../BitCloud/Components/NWK/include/private \
+  -I../../../../BitCloud/Components/ZDO/include \
+  -I../../../../BitCloud/Components/ZDO/include/private \
+  -I../../../../BitCloud/Components/APS/include \
+  -I../../../../BitCloud/Components/APS/include/private \
+  -I../../../../BitCloud/Components/SystemEnvironment/include \
+  -I../../../../BitCloud/Components/ConfigServer/include \
+  -I../../../../BitCloud/Components/ConfigServer/include/private \
+  -I../../../../BitCloud/Components/PersistDataServer/include \
+  -I../../../../BitCloud/Components/PersistDataServer/std/include \
+  -I../../../../BitCloud/Components/PersistDataServer/wl/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include \
+  -I../../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src \
+  -I../../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src \
+  -I../../../../BitCloud/Components/Security/TrustCentre/include \
+  -I../../../../BitCloud/Components/Security/ServiceProvider/include \
+  -I../../../../BitCloud/Components/HAL/drivers/include \
+  -I../../../../BitCloud/Components/HAL/drivers/VCP/include \
+  -I../../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include \
+  -I../../../../BitCloud/Components/ZCL/include/private \
+  -I../../../../BitCloud/Components/ZCL/include \
+  -I../../../../BitCloud/Components/MAC_PHY/include \
+  -I../../../../BitCloud/Components/MAC_PHY/MAC_ENV/include \
+  -I../../../../BitCloud/Components/MAC_PHY/MAC_HWI/include \
+  -I../../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include \
+  -I../../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include \
+  -I../../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include 
+
+LIBS = \
+  ../../../../BitCloud/lib/libBc_All_StdlinkSec_Atsamr21e18a_Rf233_Iar.a \
+  ../../../../BitCloud/lib/libHAL_SamR21_Atsamr21e18a_8Mhz_Iar.a 
+
+SRCS = \
+  ../../dimmableLight/src/dlIdentifyCluster.c \
+  ../../dimmableLight/src/dlScenes.c \
+  ../../dimmableLight/src/dlScenesCluster.c \
+  ../../dimmableLight/src/dlPdt.c \
+  ../../dimmableLight/src/dlLevelControlCluster.c \
+  ../../dimmableLight/src/dlClusters.c \
+  ../../dimmableLight/src/dlBasicCluster.c \
+  ../../dimmableLight/src/dimmableLight.c \
+  ../../dimmableLight/src/dlGroupsCluster.c \
+  ../../dimmableLight/src/dlConsole.c \
+  ../../dimmableLight/src/dlOnOffCluster.c \
+  ../../thermostat/src/thGroupsCluster.c \
+  ../../thermostat/src/thFanControlCluster.c \
+  ../../thermostat/src/thTimeCluster.c \
+  ../../thermostat/src/thHumidityMeasurementCluster.c \
+  ../../thermostat/src/thThermostatCluster.c \
+  ../../thermostat/src/thOccupancySensingCluster.c \
+  ../../thermostat/src/thIdentifyCluster.c \
+  ../../thermostat/src/thPdt.c \
+  ../../thermostat/src/thDiagnosticsCluster.c \
+  ../../thermostat/src/thTemperatureMeasurementCluster.c \
+  ../../thermostat/src/thBasicCluster.c \
+  ../../thermostat/src/thClusters.c \
+  ../../thermostat/src/thConsole.c \
+  ../../thermostat/src/thermostat.c \
+  ../../thermostat/src/thScenesCluster.c \
+  ../../thermostat/src/thScenes.c \
+  ../../thermostat/src/thThermostatUiConfCluster.c \
+  ../../thermostat/src/thAlarmsCluster.c \
+  ../../dimmerSwitch/src/dsLevelControlCluster.c \
+  ../../dimmerSwitch/src/dsIdentifyCluster.c \
+  ../../dimmerSwitch/src/dsOnOffCluster.c \
+  ../../dimmerSwitch/src/dimmerSwitch.c \
+  ../../dimmerSwitch/src/dsConsole.c \
+  ../../dimmerSwitch/src/dsPowerConfigurationCluster.c \
+  ../../dimmerSwitch/src/dsBasicCluster.c \
+  ../../dimmerSwitch/src/dsClusters.c \
+  ../../dimmerSwitch/src/dsAlarmsCluster.c \
+  ../../multiSensor/src/msPdt.c \
+  ../../multiSensor/src/msTemperatureMeasurementCluster.c \
+  ../../multiSensor/src/msDiagnosticsCluster.c \
+  ../../multiSensor/src/msBasicCluster.c \
+  ../../multiSensor/src/msHumidityMeasurementCluster.c \
+  ../../multiSensor/src/msClusters.c \
+  ../../multiSensor/src/msConsole.c \
+  ../../multiSensor/src/msGroupsCluster.c \
+  ../../multiSensor/src/msIdentifyCluster.c \
+  ../../multiSensor/src/msIlluminanceMeasurementCluster.c \
+  ../../multiSensor/src/msOccupancySensingCluster.c \
+  ../../multiSensor/src/multiSensor.c \
+  ../../combinedInterface/src/ciThermostatCluster.c \
+  ../../combinedInterface/src/ciIlluminanceMeasurementCluster.c \
+  ../../combinedInterface/src/ciGroupsCluster.c \
+  ../../combinedInterface/src/ciBasicCluster.c \
+  ../../combinedInterface/src/ciOccupancySensingCluster.c \
+  ../../combinedInterface/src/ciIdentifyCluster.c \
+  ../../combinedInterface/src/ciClusters.c \
+  ../../combinedInterface/src/ciTemperatureMeasurementCluster.c \
+  ../../combinedInterface/src/ciLevelControlCluster.c \
+  ../../combinedInterface/src/ciThermostatUiConfCluster.c \
+  ../../combinedInterface/src/ciIasACECluster.c \
+  ../../combinedInterface/src/ciHumidityMeasurementCluster.c \
+  ../../combinedInterface/src/ciTimeCluster.c \
+  ../../combinedInterface/src/combinedInterface.c \
+  ../../combinedInterface/src/ciDiagnosticsCluster.c \
+  ../../combinedInterface/src/ciAlarmsCluster.c \
+  ../../combinedInterface/src/ciPowerConfigurationCluster.c \
+  ../../combinedInterface/src/ciFanControlCluster.c \
+  ../../combinedInterface/src/ciIasZoneCluster.c \
+  ../../combinedInterface/src/ciConsole.c \
+  ../../combinedInterface/src/ciOnOffCluster.c \
+  ../../combinedInterface/src/ciScenesCluster.c \
+  ../../common/src/commandManager.c \
+  ../../common/src/console.c \
+  ../../common/src/keyboardPoll.c \
+  ../../common/src/uartManager.c \
+  ../../common/src/otauService.c \
+  ../../common/src/ezModeManager.c \
+  ../../common/src/zclDevice.c \
+  ../../common/clusters/src/haClusters.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsMemAccess.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsTimer.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsMem.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsWriteData.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsCrcService.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsInit.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsEvents.c \
+  ../../../../BitCloud/Components/PersistDataServer/std/src/stdPdsDataServer.c \
+  ../../../../BitCloud/Components/PersistDataServer/src/fakePds.c \
+  ../../../../BitCloud/Components/PersistDataServer/wl/src/wlPdsTypesConverter.c \
+  ../../../../BitCloud/Components/PersistDataServer/wl/src/wlPdsTaskManager.c \
+  ../../../../BitCloud/Components/PersistDataServer/wl/src/wlPdsSecurity.c \
+  ../../../../BitCloud/Components/PersistDataServer/wl/src/wlPdsInit.c \
+  ../../../../BitCloud/Components/PersistDataServer/wl/src/wlPdsDataServer.c \
+  ../../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/src/S_Nv.c \
+  ../../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src/S_XNv.c \
+  ../../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src/D_XNv-SamR21.c \
+  ../../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/src/S_Nv-External.c \
+  ../../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/src/D_Nv.c \
+  ../../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/src/S_Nv_Stub.c \
+  ../../../../BitCloud/Components/ZCL/src/zclKeyEstablishmentCluster.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauClientPdt.c \
+  ../../../../BitCloud/Components/ZCL/src/zclSecurityManager.c \
+  ../../../../BitCloud/Components/ZCL/src/zclParser.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauClientDownload.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauManager.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauClientQuery.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauClientDiscovery.c \
+  ../../../../BitCloud/Components/ZCL/src/zclCommandAnalyzer.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauClientUpgrade.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauClient.c \
+  ../../../../BitCloud/Components/ZCL/src/zclTaskManager.c \
+  ../../../../BitCloud/Components/ZCL/src/zclAttributes.c \
+  ../../../../BitCloud/Components/ZCL/src/zcl.c \
+  ../../../../BitCloud/Components/ZCL/src/zclMemoryManager.c \
+  ../../../../BitCloud/Components/ZCL/src/zclOtauServer.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysIdleHandler.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysSleep.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysStat.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysEventsHandler.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysQueue.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysUtils.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysAssert.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysDuplicateTable.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysInit.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysTaskManager.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/dbg.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysMutex.c \
+  ../../../../BitCloud/Components/SystemEnvironment/src/sysTimer.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/bspUsart.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/MaxL.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/bspTempSensor.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/buttons.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/fakeBSP.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/lcd.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/xyl2rgb.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/joyStick.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/bspUid.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/bspI2c.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/bspVoltageSensor.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/bspTaskManager.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/hs2xy.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/leds.c \
+  ../../../../BitCloud/Components/BSP/SAMR21/src/bspSpi.c \
+  ../../../../BitCloud/Components/ConfigServer/src/csPersistentMem.c \
+  ../../../../BitCloud/Components/ConfigServer/src/csMem.c \
+  ../../../../BitCloud/Components/ConfigServer/src/configServer.c \
+  ../../ias_ace/src/iasACEIdentifyCluster.c \
+  ../../ias_ace/src/iasACE.c \
+  ../../ias_ace/src/iasACEPdt.c \
+  ../../ias_ace/src/iasACECluster.c \
+  ../../ias_ace/src/iasACEConsole.c \
+  ../../ias_ace/src/iasACEZoneCluster.c \
+  ../../ias_ace/src/iasACEDiagnosticsCluster.c \
+  ../../ias_ace/src/iasACEBasicCluster.c 
+
+PREINCLUDE = MakerulesBc_All_StdlinkSec_Atsamr21e18a_Rf233_Iar.h
+
+CSRCS = $(filter %.c, $(SRCS))
+OBJS = $(addprefix $(OBJ_PATH)/, $(notdir %/$(subst .c,.o,$(CSRCS))))
+
+ASM_FILE_EXT = s
+
+ifneq (, $(findstring .$(ASM_FILE_EXT), $(SRCS)))
+  ASRCS = $(filter %.$(ASM_FILE_EXT), $(SRCS))
+  OBJS += $(addprefix $(OBJ_PATH)/, $(notdir %$(subst .$(ASM_FILE_EXT),.o,$(ASRCS))))
+endif
+
+CFLAGS += $(DEFINES)
+CFLAGS += $(INCLUDES)
+CFLAGS += --preinclude $(PREINCLUDE)
+
+ASFLAGS = $(INCLUDES)
+
+LINKER_FLAGS = --map $(LIST_PATH)/$(APP_NAME).map
+LINKER_FLAGS += --config ../../linkerScr/atSAMR21E18A_FLASH.icf
+
+
+.PHONY: all directories clean size root_files images
+
+images: $(EXE_PATH)/$(APP_NAME).elf $(EXE_PATH)/$(APP_NAME).bin $(EXE_PATH)/$(APP_NAME).srec
+all: directories images root_files
+
+$(OBJ_PATH)/%.o: $(SRCS)
+	$(CC) $(CFLAGS) $(filter %/$(subst .o,.c,$(notdir $@)), $(SRCS)) -o $@
+
+$(OBJS): directories
+
+
+$(EXE_PATH)/$(APP_NAME).elf: $(OBJS)
+	$(LD) $(LINKER_FLAGS) $(OBJS) $(LIBS) -o $@ $(LINKER_FLAGS_TAIL)
+
+$(EXE_PATH)/$(APP_NAME).bin: $(EXE_PATH)/$(APP_NAME).elf
+	$(IELFTOOL) --silent --bin $(EXE_PATH)/$(APP_NAME).elf $(EXE_PATH)/$(APP_NAME).bin
+$(EXE_PATH)/$(APP_NAME).srec: $(EXE_PATH)/$(APP_NAME).elf
+	$(OBJCOPY) -O srec --srec-len 128 $^ $@
+
+root_files: images
+	cp -f $(EXE_PATH)/*.* ./../../
+
+clean:
+	rm -rf $(CONFIG_NAME) ../../$(APP_NAME).elf ../../$(APP_NAME).bin ../../$(APP_NAME).srec
+
+directories:
+	@"mkdir" -p $(LIST_PATH)
+	@"mkdir" -p $(EXE_PATH)
+	@"mkdir" -p $(OBJ_PATH)
+
+
+ifeq ($(MAKECMDGOALS), fresh)
+directories: clean
+endif
+fresh: all
+
+# eof Makefile

@@ -1,0 +1,373 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:26
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmerSwitch\src\dsLevelControlCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmerSwitch\src\dsLevelControlCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\dsLevelControlCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\dsLevelControlCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmerSwitch\src\dsLevelControlCluster.c
+      1          /**************************************************************************//**
+      2            \file dsLevelControlCluster.c
+      3          
+      4            \brief
+      5              Dimmer Switch Level Control cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              13.12.12 N. Fomin - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_DIMMER_SWITCH
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <dlLevelControlCluster.h>
+     24          #include <uartManager.h>
+     25          #include <commandManager.h>
+     26          #include <haClusters.h>
+     27          
+     28          /******************************************************************************
+     29                              Global variables section
+     30          ******************************************************************************/
+     31          ZCL_LevelControlClusterCommands_t dsLevelControlCommands =
+     32          {
+     33            ZCL_DEFINE_LEVEL_CONTROL_CLUSTER_COMMANDS(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+     34          };
+     35          
+     36          /******************************************************************************
+     37                              Prototypes section
+     38          ******************************************************************************/
+     39          static void dsFillMoveToLevelPayload(ZCL_MoveToLevel_t *payload, uint8_t level, uint16_t time);
+     40          static void dsFillMovePayload(ZCL_Move_t *payload, uint8_t mode, uint8_t rate);
+     41          static void dsFillStepPayload(ZCL_Step_t *payload, uint8_t mode, uint8_t size, uint16_t time);
+     42          
+     43          static void dsLevelReportInd(ZCL_Addressing_t *addressing, uint8_t reportLength, uint8_t *reportPayload);
+     44          
+     45          /******************************************************************************
+     46                              Implementation section
+     47          ******************************************************************************/
+     48          /**************************************************************************//**
+     49          \brief Initializes Level Control cluster
+     50          ******************************************************************************/
+     51          void levelControlClusterInit(void)
+     52          {
+     53            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, LEVEL_CONTROL_CLUSTER_ID, ZCL_CLUSTER_SIDE_CLIENT);
+     54          
+     55            if (cluster)
+     56              cluster->ZCL_ReportInd = dsLevelReportInd;
+     57          }
+     58          
+     59          /**************************************************************************//**
+     60          \brief Sends Move To Level or Move To Level with On/Off command
+     61            to bound devices
+     62          
+     63          \param[in] mode  - address mode;
+     64          \param[in] addr  - short address of destination node or number of group;
+     65          \param[in] ep    - endpoint number of destination device;
+     66          \param[in] level - color level;
+     67          \param[in] time  - transition time in 1/10 of second;
+     68          \param[in] onOff - if true then Move To Level with On/Off command is sent,
+     69            otherwise Move To Level command is sent
+     70          ******************************************************************************/
+     71          void levelControlSendMoveToLevel(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+     72            uint8_t level, uint16_t time, bool onOff)
+     73          {
+     74            ZCL_Request_t *req;
+     75            uint8_t command = onOff ? ZCL_LEVEL_CONTROL_CLUSTER_MOVE_TO_LEVEL_W_ONOFF_COMMAND_ID :
+     76              ZCL_LEVEL_CONTROL_CLUSTER_MOVE_TO_LEVEL_COMMAND_ID;
+     77          
+     78            if (!(req = getFreeCommand()))
+     79              return;
+     80          
+     81            fillCommandRequest(req, command, sizeof(ZCL_MoveToLevel_t));
+     82            dsFillMoveToLevelPayload((ZCL_MoveToLevel_t *)req->requestPayload, level, time);
+     83            fillDstAddressing(&req->dstAddressing, mode, addr, ep, LEVEL_CONTROL_CLUSTER_ID);
+     84            commandManagerSendCommand(req);
+     85          }
+     86          
+     87          /**************************************************************************//**
+     88          \brief Sends Move or Move with On/Off command to bound devices
+     89          
+     90          \param[in] mode     - address mode;
+     91          \param[in] addr     - short address of destination node or number of group;
+     92          \param[in] ep       - endpoint number of destination device;
+     93          \param[in] moveMode - mode mode;
+     94          \param[in] rate     - move rate;
+     95          \param[in] onOff    - if true then Move with On/Off command is sent,
+     96            otherwise Move command is sent
+     97          ******************************************************************************/
+     98          void levelControlSendMove(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+     99            uint8_t moveMode, uint8_t rate, bool onOff)
+    100          {
+    101            ZCL_Request_t *req;
+    102            uint8_t command = onOff ? ZCL_LEVEL_CONTROL_CLUSTER_MOVE_W_ONOFF_COMMAND_ID :
+    103              ZCL_LEVEL_CONTROL_CLUSTER_MOVE_COMMAND_ID;
+    104          
+    105            if (!(req = getFreeCommand()))
+    106              return;
+    107          
+    108            fillCommandRequest(req, command, sizeof(ZCL_Move_t));
+    109            dsFillMovePayload((ZCL_Move_t *)req->requestPayload, moveMode, rate);
+    110            fillDstAddressing(&req->dstAddressing, mode, addr, ep, LEVEL_CONTROL_CLUSTER_ID);
+    111            commandManagerSendCommand(req);
+    112          }
+    113          
+    114          /**************************************************************************//**
+    115          \brief Sends Step or Step with On/Off command to bound devices
+    116          
+    117          \param[in] mode     - address mode;
+    118          \param[in] addr     - short address of destination node or number of group;
+    119          \param[in] ep       - endpoint number of destination device;
+    120          \param[in] stepMode - step mode;
+    121          \param[in] size     - step size;
+    122          \param[in] time     - transition time;
+    123          \param[in] onOff    - if true then Step with On/Off command is sent,
+    124            otherwise Step command is sent
+    125          ******************************************************************************/
+    126          void levelControlSendStep(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    127            uint8_t stepMode, uint8_t size, uint16_t time, bool onOff)
+    128          {
+    129            ZCL_Request_t *req;
+    130            uint8_t command = onOff ? ZCL_LEVEL_CONTROL_CLUSTER_STEP_W_ONOFF_COMMAND_ID :
+    131              ZCL_LEVEL_CONTROL_CLUSTER_STEP_COMMAND_ID;
+    132          
+    133            if (!(req = getFreeCommand()))
+    134              return;
+    135          
+    136            fillCommandRequest(req, command, sizeof(ZCL_Step_t));
+    137            dsFillStepPayload((ZCL_Step_t *)req->requestPayload, stepMode, size, time);
+    138            fillDstAddressing(&req->dstAddressing, mode, addr, ep, LEVEL_CONTROL_CLUSTER_ID);
+    139            commandManagerSendCommand(req);
+    140          }
+    141          
+    142          /**************************************************************************//**
+    143          \brief Sends Stop or Stop with On/Off command to bound devices
+    144          
+    145          \param[in] mode  - address mode;
+    146          \param[in] addr  - short address of destination node or number of group;
+    147          \param[in] ep    - endpoint number of destination device;
+    148          \param[in] onOff - if true then Stop with On/Off command is sent,
+    149            otherwise Stop command is sent
+    150          ******************************************************************************/
+    151          void levelControlSendStop(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    152            bool onOff)
+    153          {
+    154            ZCL_Request_t *req;
+    155            uint8_t command = onOff ? ZCL_LEVEL_CONTROL_CLUSTER_STOP_W_ONOFF_COMMAND_ID :
+    156              ZCL_LEVEL_CONTROL_CLUSTER_STOP_COMMAND_ID;
+    157          
+    158            if (!(req = getFreeCommand()))
+    159              return;
+    160          
+    161            fillCommandRequest(req, command, 0);
+    162            fillDstAddressing(&req->dstAddressing, mode, addr, ep, LEVEL_CONTROL_CLUSTER_ID);
+    163            commandManagerSendCommand(req);
+    164          }
+    165          
+    166          /**************************************************************************//**
+    167          \brief Fills Move To Level command structure
+    168          
+    169          \param[out] payload - pointer to command structure;
+    170          \param[in]  level   - color level;
+    171          \param[in]  time    - transition time
+    172          ******************************************************************************/
+    173          static void dsFillMoveToLevelPayload(ZCL_MoveToLevel_t *payload, uint8_t level, uint16_t time)
+    174          {
+    175            payload->level          = level;
+    176            payload->transitionTime = time;
+    177          }
+    178          
+    179          /**************************************************************************//**
+    180          \brief Fills Move command structure
+    181          
+    182          \param[out] payload - pointer to command structure;
+    183          \param[in]  mode    - move mode;
+    184          \param[in]  rate    - move rate
+    185          ******************************************************************************/
+    186          static void dsFillMovePayload(ZCL_Move_t *payload, uint8_t mode, uint8_t rate)
+    187          {
+    188            payload->moveMode = mode;
+    189            payload->rate     = rate;
+    190          }
+    191          
+    192          /**************************************************************************//**
+    193          \brief Fills Step command structure
+    194          
+    195          \param[out] payload - pointer to command structure;
+    196          \param[in]  mode    - move mode;
+    197          \param[in]  size    - step size;
+    198          \param[in]  time    - transition time
+    199          ******************************************************************************/
+    200          static void dsFillStepPayload(ZCL_Step_t *payload, uint8_t mode, uint8_t size, uint16_t time)
+    201          {
+    202            payload->stepMode       = mode;
+    203            payload->stepSize       = size;
+    204            payload->transitionTime = time;
+    205          }
+    206          
+    207          /**************************************************************************//**
+    208          \brief Report attribute indication handler
+    209          
+    210          \param[in] addressing - pointer to addressing information;
+    211          \param[in] reportLength - data payload length;
+    212          \param[in] reportPayload - data pointer
+    213          ******************************************************************************/
+    214          static void dsLevelReportInd(ZCL_Addressing_t *addressing, uint8_t reportLength, uint8_t *reportPayload)
+    215          {
+    216            ZCL_Report_t *rep = (ZCL_Report_t *)reportPayload;
+    217          
+    218            LOG_STRING(reportAttrIndStr, "<-Level Control Attr Report: t = %d\r\n");
+    219            appSnprintf(reportAttrIndStr, (int)rep->value[0]);
+    220          
+    221            (void)addressing, (void)reportLength, (void)rep;
+    222          }
+    223          
+    224          #endif // APP_DEVICE_TYPE_DIMMER_SWITCH
+    225          // eof dsLevelControlCluster.c
+    226          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

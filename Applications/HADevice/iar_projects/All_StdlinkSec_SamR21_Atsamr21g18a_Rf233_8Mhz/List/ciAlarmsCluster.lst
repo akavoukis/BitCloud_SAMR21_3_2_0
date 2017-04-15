@@ -1,0 +1,458 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:03
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciAlarmsCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciAlarmsCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciAlarmsCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciAlarmsCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciAlarmsCluster.c
+      1          /**************************************************************************//**
+      2            \file ciAlarmsCluster.c
+      3          
+      4            \brief
+      5              Combined Interface Alarms cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              20.10.14 Agasthian - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciAlarmsCluster.h>
+     24          #include <haClusters.h>
+     25          #include <commandManager.h>
+     26          #include <uartManager.h>
+     27          #include <pdsDataServer.h>
+     28          #include <zclDevice.h>
+     29          #include <sysQueue.h>
+     30          
+     31          /******************************************************************************
+     32                              Local variables section
+     33          ******************************************************************************/
+     34          static AttibuteReadCallback_t   readAttributeCallback;
+     35          static AttributeWriteCallback_t writeAttributeCallback;
+     36          
+     37          /******************************************************************************
+     38                              Prototypes section
+     39          ******************************************************************************/
+     40          static ZCL_Status_t alarmInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Alarm_t *payload);
+     41          static ZCL_Status_t getAlarmResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_getAlarmResponse_t *payload);
+     42          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy);
+     43          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy);
+     44          
+     45          /******************************************************************************
+     46                              Global variables section
+     47          ******************************************************************************/
+     48          ZCL_AlarmsClusterClientCommands_t   ciAlarmsCommands =
+     49          {
+     50            ZCL_DEFINE_ALARMS_CLUSTER_CLIENT_COMMANDS(alarmInd, getAlarmResponseInd)
+     51          };
+     52          
+     53          /******************************************************************************
+     54                              Implementation section
+     55          ******************************************************************************/
+     56          /**************************************************************************//**
+     57          \brief Callback on receiving alarm command
+     58          
+     59          \param[in] addressing - pointer to addressing information;
+     60          \param[in] payloadLength - data payload length;
+     61          \param[in] payload - data pointer
+     62          
+     63          \return status of indication routine
+     64          ******************************************************************************/
+     65          static ZCL_Status_t alarmInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Alarm_t *payload)
+     66          {
+     67          #if (APP_ENABLE_CONSOLE == 1)
+     68            LOG_STRING(alarmIndStr, "<-Alarms clusterId = 0x%x alarmCode = %d\r\n");
+     69            appSnprintf(alarmIndStr, payload->clusterIdentifier, payload->alarmCode);
+     70          #else
+     71            (void)payload;
+     72          #endif
+     73            (void)addressing, (void)payloadLength;
+     74            return ZCL_SUCCESS_STATUS;
+     75          }
+     76          
+     77          /**************************************************************************//**
+     78          \brief Callback on receiving getAlarmResponse command
+     79          
+     80          \param[in] addressing - pointer to addressing information;
+     81          \param[in] payloadLength - data payload length;
+     82          \param[in] payload - data pointer
+     83          
+     84          \return status of indication routine
+     85          ******************************************************************************/
+     86          static ZCL_Status_t getAlarmResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_getAlarmResponse_t *payload)
+     87          {
+     88            if ( BC_SUCCESS == payload->status)
+     89            {
+     90              LOG_STRING(getAlarmResponseStr1, "<-GetAlarmResponse status = 0x%x clusterId = 0x%x alarmCode = %d\r\n");
+     91              appSnprintf(getAlarmResponseStr1, payload->status, payload->clusterIdentifier, payload->alarmCode);
+     92            }
+     93            else
+     94            {
+     95              LOG_STRING(getAlarmResponseStr2, "<-GetAlarmResponse failed status = 0x%x\r\n");
+     96              appSnprintf(getAlarmResponseStr2, payload->status);    
+     97            }
+     98          
+     99            (void)addressing, (void)payload, (void)payloadLength;
+    100            return ZCL_SUCCESS_STATUS;
+    101          }
+    102          
+    103          /**************************************************************************//**
+    104          \brief Sends Reset alarm command unicastly
+    105          
+    106          \param[in] mode - address mode;
+    107          \param[in] addr - short address of destination node;
+    108          \param[in] ep   - destination endpoint;
+    109          \param[in] alarmCode - alarm code to be reset;
+    110          \param[in] clsuetrId   - cluster identifier;
+    111          ******************************************************************************/
+    112          void alarmsSendResetAlarm(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep, ClusterId_t clusterId, uint8_t alarmCode)
+    113          {
+    114            ZCL_Request_t *req;
+    115            ZCL_ResetAlarm_t *resetAlarm;
+    116          
+    117            if (!(req = getFreeCommand()))
+    118              return;
+    119          
+    120            fillCommandRequest(req, ZCL_ALARMS_CLUSTER_SERVER_RESET_ALARM_COMMAND_ID, sizeof(ZCL_ResetAlarm_t));
+    121            resetAlarm = (ZCL_ResetAlarm_t *)req->requestPayload;
+    122            resetAlarm->alarmCode = alarmCode;
+    123            resetAlarm->clusterIdentifier = clusterId;
+    124            fillDstAddressing(&req->dstAddressing, mode, addr, ep, ALARMS_CLUSTER_ID);
+    125            commandManagerSendCommand(req);
+    126          }
+    127          
+    128          /**************************************************************************//**
+    129          \brief Sends Reset all alarms command unicastly
+    130          
+    131          \param[in] mode - address mode;
+    132          \param[in] addr - short address of destination node;
+    133          \param[in] ep   - destination endpoint;
+    134          ******************************************************************************/
+    135          void alarmsSendResetAllAlarms(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep)
+    136          {
+    137            ZCL_Request_t *req;
+    138          
+    139            if (!(req = getFreeCommand()))
+    140              return;
+    141          
+    142            fillCommandRequest(req, ZCL_ALARMS_CLUSTER_SERVER_RESET_ALL_ALARMS_COMMAND_ID, 0);
+    143            fillDstAddressing(&req->dstAddressing, mode, addr, ep, ALARMS_CLUSTER_ID);
+    144            commandManagerSendCommand(req);
+    145          }
+    146          
+    147          /**************************************************************************//**
+    148          \brief Sends Get Alarm command unicastly
+    149          
+    150          \param[in] mode - address mode;
+    151          \param[in] addr - short address of destination node;
+    152          \param[in] ep   - destination endpoint;
+    153          ******************************************************************************/
+    154          void alarmsSendGetAlarm(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep)
+    155          {
+    156            ZCL_Request_t *req;
+    157          
+    158            if (!(req = getFreeCommand()))
+    159              return;
+    160          
+    161            fillCommandRequest(req, ZCL_ALARMS_CLUSTER_SERVER_GET_ALARM_COMMAND_ID, 0);
+    162            fillDstAddressing(&req->dstAddressing, mode, addr, ep, ALARMS_CLUSTER_ID);
+    163            commandManagerSendCommand(req);
+    164          }
+    165          
+    166          /**************************************************************************//**
+    167          \brief Sends ResetAlarmLog unicastly
+    168          
+    169          \param[in] mode - address mode;
+    170          \param[in] addr - short address of destination node;
+    171          \param[in] ep   - destination endpoint;
+    172          ******************************************************************************/
+    173          void alarmsSendResetAlarmLog(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep)
+    174          {
+    175            ZCL_Request_t *req;
+    176          
+    177            if (!(req = getFreeCommand()))
+    178              return;
+    179          
+    180            fillCommandRequest(req, ZCL_ALARMS_CLUSTER_SERVER_RESET_ALARM_LOG_COMMAND_ID, 0);
+    181            fillDstAddressing(&req->dstAddressing, mode, addr, ep, ALARMS_CLUSTER_ID);
+    182            commandManagerSendCommand(req);
+    183          }
+    184          
+    185          /**************************************************************************//**
+    186          \brief Sends Read Attribute command unicastly
+    187          
+    188          \param[in] mode - address mode;
+    189          \param[in] addr - short address of destination node;
+    190          \param[in] ep   - destination endpoint;
+    191          \param[in] attr - attribute id;
+    192          \param[in] cb   - callback function
+    193          ******************************************************************************/
+    194          void alarmsReadAttribute(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep,
+    195            uint16_t attr, AttibuteReadCallback_t cb)
+    196          {
+    197            ZCL_Request_t *req;
+    198            ZCL_NextElement_t element;
+    199            ZCL_ReadAttributeReq_t readAttrReqElement;
+    200          
+    201            if (!(req = getFreeCommand()))
+    202              return;
+    203          
+    204            readAttributeCallback = cb;
+    205          
+    206            readAttrReqElement.id = attr;
+    207          
+    208            element.payloadLength = 0;
+    209            element.payload = req->requestPayload;
+    210            element.id = ZCL_READ_ATTRIBUTES_COMMAND_ID;
+    211            element.content = &readAttrReqElement;
+    212            ZCL_PutNextElement(&element);
+    213          
+    214            fillCommandRequest(req, ZCL_READ_ATTRIBUTES_COMMAND_ID, element.payloadLength);
+    215            fillDstAddressing(&req->dstAddressing, mode, addr, ep, ALARMS_CLUSTER_ID);
+    216            req->ZCL_Notify = ZCL_ReadAttributeResp;
+    217          
+    218            commandManagerSendAttribute(req);
+    219          }
+    220          
+    221          /**************************************************************************//**
+    222          \brief Indication of read attribute response
+    223          
+    224          \param[in] resp - pointer to response
+    225          ******************************************************************************/
+    226          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy)
+    227          {
+    228            ZCL_NextElement_t element;
+    229            ZCL_ReadAttributeResp_t *readAttributeResp;
+    230          
+    231            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    232            {
+    233              element.id            = ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    234              element.payloadLength = ntfy->responseLength;
+    235              element.payload       = ntfy->responsePayload;
+    236              element.content       = NULL;
+    237          
+    238              ZCL_GetNextElement(&element);
+    239              readAttributeResp = (ZCL_ReadAttributeResp_t *) element.content;
+    240          
+    241              if (readAttributeCallback)
+    242                readAttributeCallback((void *)&readAttributeResp->value[0]);
+    243          
+    244              LOG_STRING(readAttrSuccessStr, "<-Read Alarm attribute (0x%x) response: success value = %d\r\n");
+    245              appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id, ((uint16_t)readAttributeResp->value[0] | (readAttributeResp->value[1] << 8)));
+    246            }
+    247            else
+    248            {
+    249              LOG_STRING(readAttrFailStr, "+Read Alarm attribute failed: status = 0x%x\r\n");
+    250              appSnprintf(readAttrFailStr, (unsigned)ntfy->status);
+    251            }
+    252          }
+    253          /**************************************************************************//**
+    254          \brief Sends Write Attribute command unicastly
+    255          
+    256          \param[in] mode - address mode;
+    257          \param[in] addr - short address of destination node;
+    258          \param[in] attr - attribute id;
+    259          \param[in] ep   - destination endpoint;
+    260          \param[in] type - attribute type;
+    261          \param[in] cb   - callback function;
+    262          \param[in] data - the pointer to memory with value to be written;
+    263          \param[in] size - size of data parameter in octets
+    264          ******************************************************************************/
+    265          void alarmsWriteAttribute(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    266            uint16_t attr, uint8_t type, AttributeWriteCallback_t cb, void *data, uint8_t size)
+    267          {
+    268            ZCL_Request_t *req;
+    269            ZCL_WriteAttributeReq_t writeAttrReq;
+    270          
+    271            if (!(req = getFreeCommand()))
+    272              return;
+    273          
+    274            writeAttributeCallback = cb;
+    275          
+    276            writeAttrReq.id = attr;
+    277            writeAttrReq.type = type;
+    278            memcpy(req->requestPayload, (uint8_t *)&writeAttrReq, sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    279            memcpy(req->requestPayload + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t), (uint8_t *)data, size);
+    280          
+    281            fillCommandRequest(req, ZCL_WRITE_ATTRIBUTES_COMMAND_ID, size + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    282            fillDstAddressing(&req->dstAddressing, mode, addr, ep, ALARMS_CLUSTER_ID);
+    283            req->ZCL_Notify = ZCL_WriteAttributeResp;
+    284          
+    285            commandManagerSendAttribute(req);
+    286          }
+    287          /**************************************************************************//**
+    288          \brief Indication of write attribute response
+    289          
+    290          \param[in] resp - pointer to response
+    291          ******************************************************************************/
+    292          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy)
+    293          {
+    294            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    295            {
+    296              if (writeAttributeCallback)
+    297                writeAttributeCallback();
+    298          
+    299              LOG_STRING(writeAttrSuccessStr, " <-Write Alarms attribute response: success\r\n");
+    300              appSnprintf(writeAttrSuccessStr);
+    301            }
+    302            else
+    303            {
+    304              LOG_STRING(writeAttrFailStrTwo, " +Write Alarms attribute failed: status = 0x%x\r\n");
+    305              appSnprintf(writeAttrFailStrTwo, (unsigned)ntfy->status);
+    306            }
+    307          }
+    308          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    309          
+    310          // eof ciAlarmCluster.c
+    311          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

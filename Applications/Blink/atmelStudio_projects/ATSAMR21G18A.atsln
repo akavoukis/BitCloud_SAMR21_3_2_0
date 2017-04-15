@@ -1,0 +1,59 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ATSAMR21G18A", "ATSAMR21G18A.cproj", "{ADB4BA95-425D-4DE3-B6F9-1258837207EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM = All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM = All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM = All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM = All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM = All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM = All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM = All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM = All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM = All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM = All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		Description = Application Blink
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.ActiveCfg = All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.Build.0 = All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.ActiveCfg = All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.Build.0 = All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.ActiveCfg = All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.Build.0 = All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.ActiveCfg = All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.Build.0 = All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.ActiveCfg = All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.Build.0 = All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.ActiveCfg = All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.Build.0 = All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.ActiveCfg = All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.Build.0 = All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.ActiveCfg = All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.Build.0 = All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.ActiveCfg = All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.Build.0 = All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.ActiveCfg = All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		{ADB4BA95-425D-4DE3-B6F9-1258837207EB}.All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.Build.0 = All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

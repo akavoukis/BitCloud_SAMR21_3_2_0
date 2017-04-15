@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>WSNDemo Application</title>
+<style type="text/css">
+	body {
+		color: black;
+		background: white;
+		margin: 20px;
+	}
+	
+	body, td {
+		font-size: 90%;
+	}
+
+	body, h1, h2, h3, h4, h5, h6, p, center, td, th, ul, dl, div {
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	h1 {
+		display: block;
+		text-align: center;
+		font-size: 160%;
+		margin: 0.67em 0px;
+		font-weight: bold;
+	}
+
+	p {
+		display: block;
+		margin: 1em 0px;
+	}
+</style>
+</head>
+<body>
+<h1>WSNDemo Application</h1>
+
+<p>The WSNDemo application demonstrates wireless sensor network (WSN) organization and 
+sensor data collection from network devices on the central coordinator node. <i>WSN Monitor</i> GUI 
+application can be used on the PC to display the network topology and sensor data 
+in an easy-to-interpret graphical form.</p>
+
+<p>Network start procedure is initiated automatically after device power up. The coordinator organizes the wireless network according to settings
+in a configuration file while router and end device nodes try to join the network with specified parameters. One LED is periodically blinking with 
+500ms interval while device is joining the network. Once the device enters the network the LED stops blinking and
+becomes constantly ON while the node is in the network and awake.</p>
+
+<p>After joining the network each node starts sending data packets containing node information and sensor
+measurements periodically to the coordinator. Wireless transmission is indicated by flashing a special LED. The coordinator receives data frames
+(indicated by the third LED) and forwards them to PC via USART interface. It also periodically sends own sensor data directly to the serial port.</p>
+
+<p>To observe WSN activities WSN Monitor GUI application should be started on the PC the coordinator is connected to. 
+This is a PC-based GUI diagnostic application for WSNDemo that displays the network topology and
+other network information. WSN Monitor application is located at <tt>Evaluation tools</tt> folder.
+
+<p>WSN Monitor displays the network topology in 
+real time and updates it automatically as nodes join or leave. The 
+nodes are represented by icons with the node data tips. The links between the nodes 
+are tipped with the link quality data. Sensor data for each node is recorded 
+and may be visualized in graphical and table formats.</p>
+
+<p>For detailed information please refer either to <i>BitCloud API Reference</i> or <i>BitCloud Quick Start Guide</i>, which contains detailed
+installation and device programming instructions for each supported platform.</p>
+</body>
+</html>

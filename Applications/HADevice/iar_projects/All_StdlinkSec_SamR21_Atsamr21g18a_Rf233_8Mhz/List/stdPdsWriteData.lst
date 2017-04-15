@@ -1,0 +1,442 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:47
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsWriteData.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsWriteData.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\stdPdsWriteData.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\stdPdsWriteData.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsWriteData.c
+      1          /**************************************************************************//**
+      2            \file pdsWriteData.c
+      3          
+      4            \brief Periodic data save implementation
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14            History:
+     15              22/01/08 A. Khromykh - Created
+     16              01/11/10 A. Razinkov - Modified
+     17            $Id: stdPdsWriteData.c 27584 2015-01-09 14:45:42Z unithra.c $
+     18          *****************************************************************************/
+     19          #if PDS_ENABLE_WEAR_LEVELING != 1
+     20          /******************************************************************************
+     21                             Includes section
+     22          ******************************************************************************/
+     23          #include <stdPdsCrcService.h>
+     24          #include <stdPdsMemAccess.h>
+     25          #include <leds.h>
+     26          #include <stdPdsDbg.h>
+     27          #include <stdPdsWriteData.h>
+     28          #include <sysTaskManager.h>
+     29          #include <stdPdsMem.h>
+     30          #include <sysEvents.h>
+     31          
+     32          #ifdef _ENABLE_PERSISTENT_SERVER_
+     33          /******************************************************************************
+     34                             Prototypes section
+     35          ******************************************************************************/
+     36          static PDS_DataServerState_t pdsCommit(void);
+     37          static bool pdsCommitStarted(PDS_MemId_t memoryId, MEMORY_DESCRIPTOR *fileDataDescr);
+     38          
+     39          /******************************************************************************
+     40                             Implementation section
+     41          ******************************************************************************/
+     42          /******************************************************************************
+     43          \brief Updates persistent items values in RAM from non-volatile memory.
+     44          \
+     45          \param[in] memoryToRestore - bitmask of non-volatile memory contents.
+     46          \
+     47          \return Operation result.
+     48          ******************************************************************************/
+     49          PDS_DataServerState_t pdsUpdate(const uint8_t *const memoryToRestore)
+     50          {
+     51            PDS_DataServerState_t status;
+     52            MEMORY_DESCRIPTOR fileDataDescr;
+     53            PdsDataAccessContext_t accessContext = {{0u}, 0u};
+     54          
+     55            pdsPrepareAccessContext(&accessContext, memoryToRestore);
+     56            // Clear restored memory mask
+     57            //PDS_MEM_MASK_CLEAR_ALL(pdsMemory()->restoredMemory);
+     58          
+     59            while (pdsPrepareMemoryAccess(&accessContext, &fileDataDescr))
+     60            {
+     61              if (PDS_SUCCESS == pdsCheckFile(accessContext.memoryId, &fileDataDescr))
+     62              {
+     63                status = pdsRead(&fileDataDescr, pdsDummyCallback);
+     64                if (status != PDS_SUCCESS)
+     65                  return status;
+     66                // Update restored memory mask
+     67                PDS_MEM_MASK_SET_BIT(pdsMemory()->restoredMemory, accessContext.memoryId);
+     68              }
+     69            }
+     70          
+     71            return PDS_SUCCESS;
+     72          }
+     73          
+     74          /******************************************************************************
+     75          \brief Adds file or directory to the commitment list for further storing in
+     76                 non-volatile memory.
+     77          
+     78          \param[in] memoryMask - mask of files or directories.
+     79          ******************************************************************************/
+     80          void pdsAddDataForCommitment(const uint8_t *const memoryMask)
+     81          {
+     82            for (uint8_t i = 0; i < PDS_MEM_MASK_LENGTH; i++)
+     83              pdsMemory()->currentCommitmentList[i] |= memoryMask[i];
+     84          
+     85            pdsMemory()->status |= PDS_COMMITMENT_OUT_OFF_DATE_FLAG;
+     86          }
+     87          
+     88          /******************************************************************************
+     89          \brief Starts commitment to a non-volatile storage.
+     90          ******************************************************************************/
+     91          void pdsStartCommitment(void)
+     92          {
+     93          #ifdef PDS_HIGHLIGHT_WRITING_PROCESS
+     94            BSP_OnLed(LED_YELLOW);
+     95          #endif
+     96            pdsMemory()->status |= PDS_WRITING_INPROGRESS_FLAG;
+     97          
+     98            if (PDS_SUCCESS == pdsCommit())
+     99            {
+    100              pdsMemory()->status &= ~(PDS_WRITING_INPROGRESS_FLAG);
+    101          
+    102          #ifdef PDS_HIGHLIGHT_WRITING_PROCESS
+    103              BSP_OffLed(LED_YELLOW);
+    104          #endif
+    105              SYS_PostEvent(BC_EVENT_STORING_FINISHED, 0);
+    106            }
+    107          }
+    108          
+    109          /******************************************************************************
+    110          \brief Commit persistent memory changes (if any) from RAM to non-volatile memory.
+    111          \      Process comes iterative way - when some item stored, this function will
+    112          \      be called as a callback.
+    113          \
+    114          \return Operation result.
+    115          ******************************************************************************/
+    116          static PDS_DataServerState_t pdsCommit(void)
+    117          {
+    118            MEMORY_DESCRIPTOR fileDataDescr;
+    119            static PdsDataAccessContext_t accessContext;
+    120          
+    121            /* If current commit is already out-of-date, restart operation */
+    122            if (PDS_COMMITMENT_OUT_OFF_DATE_FLAG & pdsMemory()->status)
+    123            {
+    124              pdsPrepareAccessContext(&accessContext, pdsMemory()->currentCommitmentList);
+    125              pdsMemory()->status &= ~PDS_COMMITMENT_OUT_OFF_DATE_FLAG;
+    126            }
+    127          
+    128            while (pdsPrepareMemoryAccess(&accessContext, &fileDataDescr))
+    129            {
+    130              PDS_MEM_MASK_CLEAR_BIT(pdsMemory()->currentCommitmentList, accessContext.memoryId);
+    131          
+    132              if (pdsCommitStarted(accessContext.memoryId, &fileDataDescr))
+    133                return PDS_COMMIT_IN_PROGRESS;
+    134            }
+    135          
+    136            return PDS_SUCCESS;
+    137          }
+    138          
+    139          /******************************************************************************
+    140          \brief Commit item value changes (if any) from Configuration Server to persist
+    141          \      memory.
+    142          \
+    143          \param[in] descriptor - memory descriptor to store parameter value.
+    144          
+    145          \return true - if changes found and commit started; false - otherwise.
+    146          ******************************************************************************/
+    147          static bool pdsCommitStarted(PDS_MemId_t memoryId, MEMORY_DESCRIPTOR *fileDataDescr)
+    148          {
+    149            uint8_t data;
+    150            bool commitNeeded = false;
+    151            PDS_FileCrc_t ramDataCrc;
+    152            PDS_FileHeader_t header;
+    153            MEMORY_DESCRIPTOR accessDescriptor;
+    154          
+    155            accessDescriptor.data = (uint8_t *)&header;
+    156            accessDescriptor.length = sizeof(PDS_FileHeader_t);
+    157            accessDescriptor.address = fileDataDescr->address - sizeof(PDS_FileHeader_t);
+    158            pdsRead(&accessDescriptor, pdsDummyCallback);
+    159          
+    160            ramDataCrc = pdsCalculateRAMDataCrc(PDS_CRC_INITIAL_VALUE, fileDataDescr->data, fileDataDescr->length);
+    161          
+    162            if (ramDataCrc == header.crc &&
+    163                memoryId == header.memoryId &&
+    164                fileDataDescr->length == header.size)
+    165            {
+    166              accessDescriptor.data = &data;
+    167              accessDescriptor.length = 1;
+    168              /* Check for any changes in byte-by-byte order */
+    169              for (uint16_t i = 0; i < fileDataDescr->length; i++)
+    170              {
+    171                accessDescriptor.address = fileDataDescr->address + i;
+    172                pdsRead(&accessDescriptor, pdsDummyCallback);
+    173                if (*accessDescriptor.data != *((fileDataDescr->data) + i))
+    174                {
+    175                  commitNeeded = true;
+    176                  break;
+    177                }
+    178              }
+    179            }
+    180            else
+    181            {
+    182              commitNeeded = true;
+    183            }
+    184          
+    185            /* Start rewrite out of date data in persist memory*/
+    186            if (commitNeeded)
+    187            {
+    188              header.crc = ramDataCrc;
+    189              header.memoryId = memoryId;
+    190              header.size = fileDataDescr->length;
+    191              accessDescriptor.data = (uint8_t *)&header;
+    192              accessDescriptor.length = sizeof(PDS_FileHeader_t);
+    193              accessDescriptor.address = fileDataDescr->address - sizeof(PDS_FileHeader_t);
+    194              pdsWrite(fileDataDescr, pdsStartCommitment);
+    195              pdsWrite(&accessDescriptor, pdsDummyCallback);
+    196            }
+    197          
+    198            return commitNeeded;
+    199          }
+    200          
+    201          /******************************************************************************
+    202          \brief Resets specified area in non-volatile memory. All stored data will be lost.
+    203          
+    204          \return Operation result.
+    205          ******************************************************************************/
+    206          PDS_DataServerState_t pdsCorruptFiles(const uint8_t *const memoryMask)
+    207          {
+    208            uint8_t byteToWrite = 0;
+    209            PDS_FileCrc_t dataCrc = PDS_CRC_INITIAL_VALUE;
+    210            PDS_DataServerState_t status;
+    211            MEMORY_DESCRIPTOR fileDataDescr;
+    212            PdsDataAccessContext_t accessContext = {{0u}, 0u};
+    213          
+    214            pdsPrepareAccessContext(&accessContext, memoryMask);
+    215          
+    216            while (pdsPrepareMemoryAccess(&accessContext, &fileDataDescr))
+    217            {
+    218              fileDataDescr.data = &byteToWrite;
+    219              fileDataDescr.length = 1;
+    220              status = pdsRead(&fileDataDescr, pdsDummyCallback);
+    221              if (status != PDS_SUCCESS)
+    222                return status;
+    223          
+    224              byteToWrite++;
+    225          
+    226              status = pdsWrite(&fileDataDescr, pdsDummyCallback);
+    227              if (status != PDS_SUCCESS)
+    228                return status;
+    229          
+    230              fileDataDescr.data = &dataCrc;
+    231              fileDataDescr.length = sizeof(PDS_FileCrc_t);
+    232              fileDataDescr.address = fileDataDescr.address - sizeof(PDS_FileHeader_t) + offsetof(PDS_FileHeader_t, crc);
+    233              status = pdsWrite(&fileDataDescr, pdsDummyCallback);
+    234              if (status != PDS_SUCCESS)
+    235                return status;
+    236            }
+    237          
+    238            return PDS_SUCCESS;
+    239          }
+    240          
+    241          /******************************************************************************
+    242          \brief Writes data to non-volatile memory.
+    243          \
+    244          \param[in] descriptor - memory descriptor to store parameter value
+    245          \param[out]callback - callback to write-finished event handler.
+    246          ******************************************************************************/
+    247          PDS_DataServerState_t pdsWrite(MEMORY_DESCRIPTOR *descriptor, void (*callback)(void))
+    248          {
+    249            pdsWaitMemoryFree();
+    250            if (STORAGE_ERROR == WRITE_MEMORY(descriptor, callback))
+    251              return PDS_STORAGE_ERROR;
+    252          
+    253            if (callback == pdsDummyCallback)
+    254              pdsWaitMemoryFree();
+    255          
+    256            return PDS_SUCCESS;
+    257          }
+    258          
+    259          /******************************************************************************
+    260          \brief Reads data from non-volatile memory.
+    261          \
+    262          \param[in] descriptor - memory descriptor to read parameter value.
+    263          \param[out]callback - callback to read-finished event handler.
+    264          ******************************************************************************/
+    265          PDS_DataServerState_t pdsRead(MEMORY_DESCRIPTOR *descriptor, void (*callback)(void))
+    266          {
+    267            pdsWaitMemoryFree();
+    268            if (STORAGE_ERROR == READ_MEMORY(descriptor, callback))
+    269              return PDS_STORAGE_ERROR;
+    270          
+    271            if (callback == pdsDummyCallback)
+    272              pdsWaitMemoryFree();
+    273          
+    274            return PDS_SUCCESS;
+    275          }
+    276          /******************************************************************************
+    277          \brief Wait until memory be ready for transaction.
+    278          ******************************************************************************/
+    279          void pdsWaitMemoryFree(void)
+    280          {
+    281            while (IS_MEMORY_BUSY())
+    282            {
+    283              SYS_ForceRunTask();
+    284            }
+    285          }
+    286          
+    287          /*******************************************************************************
+    288          \brief Dummy callback.
+    289          *******************************************************************************/
+    290          void pdsDummyCallback(void)
+    291          {}
+    292          
+    293          #endif /* _ENABLE_PERSISTENT_SERVER_ */
+    294          #endif /* PDS_ENABLE_WEAR_LEVELING != 1 */
+    295          // eof pdsWriteData.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

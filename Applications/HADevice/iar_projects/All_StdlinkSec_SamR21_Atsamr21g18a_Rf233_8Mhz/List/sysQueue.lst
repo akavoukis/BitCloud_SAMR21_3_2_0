@@ -1,0 +1,381 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:52
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysQueue.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysQueue.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\sysQueue.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\sysQueue.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysQueue.c
+      1          /**********************************************************************//**
+      2            \file sysQueue.c
+      3          
+      4            \brief
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14            History:
+     15              21/05/07 D. Ovechkin - Created
+     16          **************************************************************************/
+     17          #include <sysTypes.h>
+     18          #include <sysQueue.h>
+     19          #include <sysDbg.h>
+     20          #include <sysAssert.h>
+     21          
+     22          /***************************************************************************
+     23            Put a element to a queue. Element is added to the tail
+     24            Parameters:
+     25              queue   - pointer to a queue descriptor
+     26              element - pointer to new element
+     27            Returns:
+     28              True - succesfully queued, False - not queued
+     29          ****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     30          bool putQueueElem(QueueDescriptor_t *queue, void *element)
+     31          {
+   \                     putQueueElem: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0005             MOVS     R5,R0
+   \   00000004   0x000C             MOVS     R4,R1
+     32          
+     33            if (isQueueElem(queue, element))
+   \   00000006   0x.... 0x....      BL       isQueueElem
+   \   0000000A   0x2800             CMP      R0,#+0
+   \   0000000C   0xD007             BEQ      ??putQueueElem_0
+     34            {
+     35              SYS_E_ASSERT_ERROR(false, SYS_ASSERT_ID_DOUBLE_QUEUE_PUT);
+   \   0000000E   0x2080             MOVS     R0,#+128
+   \   00000010   0x0200             LSLS     R0,R0,#+8        ;; #+32768
+   \   00000012   0x....             LDR      R1,??DataTable0
+   \   00000014   0x8008             STRH     R0,[R1, #+0]
+   \   00000016   0x.... 0x....      BL       SYS_DefAssertCallbackError
+     36              return false;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0xBD32             POP      {R1,R4,R5,PC}
+     37            }
+     38          
+     39            ((QueueElement_t*)element)->next = NULL;
+   \                     ??putQueueElem_0: (+1)
+   \   0000001E   0x6020             STR      R0,[R4, #+0]
+     40            if(!queue->head)
+   \   00000020   0x6828             LDR      R0,[R5, #+0]
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD102             BNE      ??putQueueElem_1
+     41              queue->head = element;
+   \   00000026   0x602C             STR      R4,[R5, #+0]
+   \   00000028   0xE004             B        ??putQueueElem_2
+     42            else
+     43            {
+     44              QueueElement_t *last = queue->head;
+     45              while(last->next)
+     46                last = last->next;
+   \                     ??putQueueElem_3: (+1)
+   \   0000002A   0x0008             MOVS     R0,R1
+   \                     ??putQueueElem_1: (+1)
+   \   0000002C   0x6801             LDR      R1,[R0, #+0]
+   \   0000002E   0x2900             CMP      R1,#+0
+   \   00000030   0xD1FB             BNE      ??putQueueElem_3
+     47              last->next = element;
+   \   00000032   0x6004             STR      R4,[R0, #+0]
+     48            }
+     49          
+     50            return true;
+   \                     ??putQueueElem_2: (+1)
+   \   00000034   0x2001             MOVS     R0,#+1
+   \   00000036   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     51          }
+     52          
+     53          /***************************************************************************
+     54            Delete a head element from a queue. Element is deleted from the head
+     55            Parameters:
+     56              queue - pointer to a queue descriptor
+     57            Returns:
+     58              TRUE  - element is removed successfully
+     59              FALSE - queue is empty
+     60          ****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void* deleteHeadQueueElem(QueueDescriptor_t *queue)
+     62          {
+   \                     deleteHeadQueueElem: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+     63            if(queue->head)
+   \   00000002   0x6808             LDR      R0,[R1, #+0]
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD001             BEQ      ??deleteHeadQueueElem_0
+     64            {
+     65              void *retval = queue->head;
+     66              queue->head = queue->head->next;
+   \   00000008   0x6802             LDR      R2,[R0, #+0]
+   \   0000000A   0x600A             STR      R2,[R1, #+0]
+     67              return retval;
+     68            }
+     69            else
+     70            {
+     71              return NULL;
+   \                     ??deleteHeadQueueElem_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+     72            }
+     73          }
+     74          
+     75          /***************************************************************************
+     76            Delete the certain element of a queue.
+     77            Parameters:
+     78              element - element to be deleted
+     79              queue   - pointer to a queue descriptor
+     80            Returns:
+     81              true if element was removed otherwise false
+     82          ****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     83          bool deleteQueueElem(QueueDescriptor_t *queue, void *element)
+     84          {
+     85            if (element)
+   \                     deleteQueueElem: (+1)
+   \   00000000   0x2900             CMP      R1,#+0
+   \   00000002   0xD00F             BEQ      ??deleteQueueElem_0
+     86            {
+     87              if(queue->head == element)
+   \   00000004   0x6802             LDR      R2,[R0, #+0]
+   \   00000006   0x428A             CMP      R2,R1
+   \   00000008   0xD103             BNE      ??deleteQueueElem_1
+     88              {
+     89                queue->head = queue->head->next;
+   \   0000000A   0x6811             LDR      R1,[R2, #+0]
+   \   0000000C   0x6001             STR      R1,[R0, #+0]
+     90                return true;
+   \   0000000E   0xE007             B.N      ??deleteQueueElem_2
+     91              }
+     92              else
+     93              {
+     94                QueueElement_t *prev = queue->head;
+     95                while (prev && prev->next != element)
+     96                  prev = prev->next;
+   \                     ??deleteQueueElem_3: (+1)
+   \   00000010   0x0002             MOVS     R2,R0
+   \                     ??deleteQueueElem_1: (+1)
+   \   00000012   0x2A00             CMP      R2,#+0
+   \   00000014   0xD006             BEQ      ??deleteQueueElem_0
+   \   00000016   0x6810             LDR      R0,[R2, #+0]
+   \   00000018   0x4288             CMP      R0,R1
+   \   0000001A   0xD1F9             BNE      ??deleteQueueElem_3
+     97                if (prev)
+     98                {
+     99                  prev->next = prev->next->next;
+   \   0000001C   0x6800             LDR      R0,[R0, #+0]
+   \   0000001E   0x6010             STR      R0,[R2, #+0]
+    100                  return true;
+   \                     ??deleteQueueElem_2: (+1)
+   \   00000020   0x2001             MOVS     R0,#+1
+   \   00000022   0x4770             BX       LR
+    101                }
+    102              }
+    103            }
+    104            return false;
+   \                     ??deleteQueueElem_0: (+1)
+   \   00000024   0x2000             MOVS     R0,#+0
+   \   00000026   0x4770             BX       LR               ;; return
+    105          }
+    106          
+    107          /***************************************************************************
+    108            Check if element is a member of specified queue.
+    109            Parameters:
+    110              queue - pointer to a queue descriptor
+    111              element - pointer to an element
+    112            Returns:
+    113              True - if element is a queue member, false - otherwise.
+    114          ****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    115          bool isQueueElem(const QueueDescriptor_t *const queue, const void *const element)
+    116          {
+    117            QueueElement_t *it;
+    118          
+    119            for (it = queue->head; it; it = it->next)
+   \                     isQueueElem: (+1)
+   \                     ??isQueueElem_0: (+1)
+   \   00000000   0x6800             LDR      R0,[R0, #+0]
+   \   00000002   0x2800             CMP      R0,#+0
+   \   00000004   0xD002             BEQ      ??isQueueElem_1
+    120              if (it == element)
+   \   00000006   0x4288             CMP      R0,R1
+   \   00000008   0xD1FA             BNE      ??isQueueElem_0
+    121                return true;
+   \   0000000A   0x2001             MOVS     R0,#+1
+    122          
+    123            return false;
+   \                     ??isQueueElem_1: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+    124          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     gAssertDbgCode
+    125          
+    126          //eof sysQueue.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   deleteHeadQueueElem
+       0   deleteQueueElem
+       0   isQueueElem
+      16   putQueueElem
+        16   -> SYS_DefAssertCallbackError
+        16   -> isQueueElem
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+      14  deleteHeadQueueElem
+      40  deleteQueueElem
+      14  isQueueElem
+      56  putQueueElem
+
+ 
+ 128 bytes in section .text
+ 
+ 128 bytes of CODE memory
+
+Errors: none
+Warnings: none

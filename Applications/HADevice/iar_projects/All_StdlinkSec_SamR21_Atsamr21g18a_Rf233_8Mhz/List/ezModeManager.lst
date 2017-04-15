@@ -1,0 +1,1702 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:28
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\common\src\ezModeManager.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\common\src\ezModeManager.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ezModeManager.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ezModeManager.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\common\src\ezModeManager.c
+      1          /************************************************************************//**
+      2            \file ezModeManager.c
+      3          
+      4            \brief
+      5              EZ-Mode implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              10.09.13 N. Fomin - Created.
+     17          ******************************************************************************/
+     18          
+     19          /*******************************************************************************
+     20                              Includes section
+     21          *******************************************************************************/
+     22          #include <ezModeManager.h>
+     23          #include <identifyCluster.h>
+     24          #include <zdo.h>
+     25          #include <appConsts.h>
+     26          #include <zclDevice.h>
+     27          #include <zclParser.h>
+     28          #include <identifyCluster.h>
+     29          
+     30          /******************************************************************************
+     31                              Defines section
+     32          ******************************************************************************/
+     33          #define EZ_MODE_INTERVAL                180000UL /* three minutes */
+     34          #define EZ_MODE_IDENTIFY_QUERY_INTERVAL 30000UL
+     35          #define EZ_MODE_IDENTIFY_TIME           180U
+     36          
+     37          #define MAX_MATCH_DESC_RESP_AMOUNT 1 // Maximum amount of stored match descriptors
+     38          
+     39          /******************************************************************************
+     40                              Types section
+     41          ******************************************************************************/
+     42          typedef struct
+     43          {
+     44            ZDO_ZdpReq_t        zdpReq;
+     45            ExtAddr_t           extAddr;
+     46            AppBindReq_t        *appBindReq[APP_ENDPOINTS_AMOUNT];
+     47            uint8_t             matchesReceived;
+     48            uint8_t             clusterNumber;
+     49            uint8_t             endpointNumber;
+     50            ZDO_MatchDescResp_t matchDescResp[MAX_MATCH_DESC_RESP_AMOUNT];
+     51            bool                client;
+     52            ClusterId_t         clusterId;
+     53            bool                isInProgress;
+     54            bool                isBindingStarted;
+     55            void                (*cb)(void);
+     56          } EzModeManagerMem_t;
+     57          
+     58          
+     59          /******************************************************************************
+     60                              Prototypes section
+     61          ******************************************************************************/
+     62          static void ezModeOpenNetwork(void);
+     63          static void zdoPermitJoiningResponse(ZDO_ZdpResp_t *conf);
+     64          
+     65          static void invokeEzModeFindingAndBindingOnTarget(void);
+     66          static void invokeEzModeFindingAndBindingOnInitiator(void);
+     67          
+     68          static void ezModeTimerFired(void);
+     69          static void ezModeIdentifyQueryTimerFired(void);
+     70          static void identifyQueryResponseCb(ZCL_Addressing_t *addressing, ZCL_IdentifyQueryResponse_t *payload);
+     71          
+     72          static void bindNextCluster(void);
+     73          static void matchBindDevices(void);
+     74          static void zdpMatchDescResp(ZDO_ZdpResp_t *resp);
+     75          static void matchHandlingFinished(void);
+     76          static void doIeeeAddrReq(void);
+     77          static void zdpIeeeAddrResp(ZDO_ZdpResp_t *resp);
+     78          static void doApsAndZdoBinding(ExtAddr_t *remoteDevExtAddr);
+     79          static bool doApsBinding(ExtAddr_t *ownExtAddr, ExtAddr_t *remoteDevExtAddr, Endpoint_t dstEndpoint);
+     80          static void zdpBindResp(ZDO_ZdpResp_t *resp);
+     81          static void commissionNextEndpoint(void);
+     82          
+     83          /******************************************************************************
+     84                              Local variables section
+     85          ******************************************************************************/
+
+   \                                 In section .data, align 8
+     86          static HAL_AppTimer_t ezModeTimer =
+     87          {
+     88            .interval = EZ_MODE_INTERVAL,
+     89            .mode     = TIMER_ONE_SHOT_MODE,
+     90            .callback = ezModeTimerFired,
+     91          };
+     92          static HAL_AppTimer_t ezModeIdentifyQueryTimer =
+     93          {
+     94            .interval = EZ_MODE_IDENTIFY_QUERY_INTERVAL,
+     95            .mode     = TIMER_REPEAT_MODE,
+     96            .callback = ezModeIdentifyQueryTimerFired,
+     97          };
+     98          
+     99          static IdentifySubscriber_t subcriber =
+    100          {
+    101            .identifyQueryResponse = identifyQueryResponseCb
+    102          };
+    103          
+    104          static EzModeManagerMem_t ezModeMem;
+   \                     ezModeMem:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000010   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000020   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000030   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000040   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000050   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000060   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000070   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000080   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000090   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000A0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000B0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000C0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000D0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000E0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000F0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000100   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000110   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000120   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000130   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000140   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000150   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000160   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000170   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000180   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000190   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001A0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001B0   0x00000000         DC32 0H
+   \   000001B4   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   000001B8   0x0002BF20         DC32 180000
+   \   000001BC   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00    
+   \   000001C0   0x........         DC32 ezModeTimerFired
+   \   000001C4   0x00000000         DC32 0H
+   \   000001C8   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   000001CC   0x00007530         DC32 30000
+   \   000001D0   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   000001D4   0x........         DC32 ezModeIdentifyQueryTimerFired
+
+   \                                 In section .data, align 4
+    105          static bool isDeviceInitiator;
+   \                     isDeviceInitiator:
+   \   00000000   0x00               DC8 0
+   \   00000001   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+   \   00000004   0x00000000         DC32 0H, 0H, 0H, identifyQueryResponseCb
+   \              0x00000000   
+   \              0x00000000   
+   \              0x........   
+   \   00000014   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    106          
+    107          /*******************************************************************************
+    108                              Implementation section
+    109          *******************************************************************************/
+    110          /**************************************************************************//**
+    111          \brief Initializes EZ-Mode manager
+    112          
+    113          \param[in] isInitiator - should be set to true is device acts as an initiator
+    114            of EZ-Mode, to false otherwise
+    115          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    116          void initEzModeManager(bool isInitiator)
+    117          {
+   \                     initEzModeManager: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    118            isDeviceInitiator = isInitiator;
+   \   00000002   0x....             LDR      R1,??DataTable12
+   \   00000004   0x7008             STRB     R0,[R1, #+0]
+    119            identifySubscribe(&subcriber);
+   \   00000006   0x1D08             ADDS     R0,R1,#+4
+   \   00000008   0x.... 0x....      BL       identifySubscribe
+    120          }
+   \   0000000C   0xBD01             POP      {R0,PC}          ;; return
+    121          
+    122          /**************************************************************************//**
+    123          \brief Starts EZ-Mode
+    124          
+    125          \param[in] cb - callback which is called when EZ+Mode is finished
+    126          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    127          void invokeEzMode(void (*cb)(void))
+    128          {
+   \                     invokeEzMode: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    129            if (ZDO_IN_NETWORK_STATUS != ZDO_GetNwkStatus())
+   \   00000004   0x.... 0x....      BL       ZDO_GetNwkStatus
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD122             BNE      ??invokeEzMode_0
+    130              return;
+    131          
+    132            if (ezModeMem.isInProgress)
+   \   0000000C   0x....             LDR      R5,??DataTable12_1
+   \   0000000E   0x20D3             MOVS     R0,#+211
+   \   00000010   0x0040             LSLS     R0,R0,#+1        ;; #+422
+   \   00000012   0x182E             ADDS     R6,R5,R0
+   \   00000014   0x7830             LDRB     R0,[R6, #+0]
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD11B             BNE      ??invokeEzMode_0
+    133              return;
+    134          
+    135            memset(&ezModeMem, 0, sizeof(EzModeManagerMem_t));
+   \   0000001A   0x21D8             MOVS     R1,#+216
+   \   0000001C   0x0049             LSLS     R1,R1,#+1        ;; #+432
+   \   0000001E   0x0028             MOVS     R0,R5
+   \   00000020   0x.... 0x....      BL       __aeabi_memclr4
+    136            ezModeMem.isInProgress = true;
+   \   00000024   0x2001             MOVS     R0,#+1
+   \   00000026   0x7030             STRB     R0,[R6, #+0]
+    137            ezModeMem.cb = cb;
+   \   00000028   0x20D4             MOVS     R0,#+212
+   \   0000002A   0x0040             LSLS     R0,R0,#+1        ;; #+424
+   \   0000002C   0x502C             STR      R4,[R5, R0]
+    138            ezModeOpenNetwork();
+   \   0000002E   0x....             LDR      R0,??DataTable13
+   \   00000030   0x2190             MOVS     R1,#+144
+   \   00000032   0x0049             LSLS     R1,R1,#+1        ;; #+288
+   \   00000034   0x5068             STR      R0,[R5, R1]
+   \   00000036   0x0028             MOVS     R0,R5
+   \   00000038   0x3080             ADDS     R0,R0,#+128
+   \   0000003A   0x2136             MOVS     R1,#+54
+   \   0000003C   0x8001             STRH     R1,[R0, #+0]
+   \   0000003E   0x2102             MOVS     R1,#+2
+   \   00000040   0x7081             STRB     R1,[R0, #+2]
+   \   00000042   0x....             LDR      R1,??DataTable13_1  ;; 0xfffd
+   \   00000044   0x8101             STRH     R1,[R0, #+8]
+   \   00000046   0x20B4             MOVS     R0,#+180
+   \   00000048   0x21D3             MOVS     R1,#+211
+   \   0000004A   0x5468             STRB     R0,[R5, R1]
+   \   0000004C   0x0028             MOVS     R0,R5
+   \   0000004E   0x.... 0x....      BL       ZDO_ZdpReq
+    139          }
+   \                     ??invokeEzMode_0: (+1)
+   \   00000052   0xBD70             POP      {R4-R6,PC}       ;; return
+    140          /**************************************************************************//**
+    141          \brief resets ezmodeInProgress state
+    142          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    143          void resetEzModeInProgress(void)
+    144          {
+    145            ezModeMem.isInProgress = false;
+   \                     resetEzModeInProgress: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable14
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x8001             STRH     R1,[R0, #+0]
+    146            ezModeMem.isBindingStarted = false;
+    147          }
+   \   00000006   0x4770             BX       LR               ;; return
+    148          
+    149          /**************************************************************************//**
+    150          \brief Checks whether EZ-Mode commissioning is in progress
+    151          
+    152          \returns true if it is, false otherwise
+    153          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    154          bool isEzModeInProgress(void)
+    155          {
+    156            return ezModeMem.isInProgress;
+   \                     isEzModeInProgress: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable14
+   \   00000002   0x7800             LDRB     R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+    157          }
+    158          
+    159          /**************************************************************************//**
+    160          \brief Sends broadcast permit join with permit time of 3 minutes
+    161          ******************************************************************************/
+    162          static void ezModeOpenNetwork(void)
+    163          {
+    164            ZDO_ZdpReq_t *zdpReq = &ezModeMem.zdpReq;
+    165            ZDO_MgmtPermitJoiningReq_t *permit = &zdpReq->req.reqPayload.mgmtPermitJoiningReq;
+    166          
+    167            zdpReq->ZDO_ZdpResp             = zdoPermitJoiningResponse;
+    168            zdpReq->reqCluster              = MGMT_PERMIT_JOINING_CLID;
+    169            zdpReq->dstAddrMode             = APS_SHORT_ADDRESS;
+    170            zdpReq->dstAddress.shortAddress = RX_ON_WHEN_IDLE_ADDR;
+    171          
+    172            permit->permitDuration = EZ_MODE_IDENTIFY_TIME;
+    173            ZDO_ZdpReq(zdpReq);
+    174          }
+    175          
+    176          /**************************************************************************//**
+    177          \brief Response to permit join request
+    178          
+    179          \param[in] resp - pointer to response
+    180          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    181          static void zdoPermitJoiningResponse(ZDO_ZdpResp_t *conf)
+    182          {
+   \                     zdoPermitJoiningResponse: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    183            (void)conf;
+    184            if (isDeviceInitiator)
+   \   00000002   0x....             LDR      R4,??DataTable12_1
+   \   00000004   0x....             LDR      R0,??DataTable12
+   \   00000006   0x7800             LDRB     R0,[R0, #+0]
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD022             BEQ      ??zdoPermitJoiningResponse_0
+    185            {
+    186              uint8_t deviceType;
+    187              CS_ReadParameter(CS_DEVICE_TYPE_ID, &deviceType);
+   \   0000000C   0x4669             MOV      R1,SP
+   \   0000000E   0x2021             MOVS     R0,#+33
+   \   00000010   0x.... 0x....      BL       CS_ReadParameter
+    188              invokeEzModeFindingAndBindingOnInitiator();
+   \   00000014   0x20D8             MOVS     R0,#+216
+   \   00000016   0x0040             LSLS     R0,R0,#+1        ;; #+432
+   \   00000018   0x1825             ADDS     R5,R4,R0
+   \   0000001A   0x0028             MOVS     R0,R5
+   \   0000001C   0x.... 0x....      BL       HAL_StopAppTimer
+   \   00000020   0x20E2             MOVS     R0,#+226
+   \   00000022   0x0040             LSLS     R0,R0,#+1        ;; #+452
+   \   00000024   0x1824             ADDS     R4,R4,R0
+   \   00000026   0x0020             MOVS     R0,R4
+   \   00000028   0x.... 0x....      BL       HAL_StopAppTimer
+   \   0000002C   0x0028             MOVS     R0,R5
+   \   0000002E   0x.... 0x....      BL       HAL_StartAppTimer
+   \   00000032   0x0020             MOVS     R0,R4
+   \   00000034   0x.... 0x....      BL       HAL_StartAppTimer
+   \   00000038   0x22FF             MOVS     R2,#+255
+   \   0000003A   0x....             LDR      R1,??DataTable14_1  ;; 0xffff
+   \   0000003C   0x2002             MOVS     R0,#+2
+   \   0000003E   0x.... 0x....      BL       identifySendIdentifyQuery
+    189              /* Start identifying also as target */
+    190              if (DEVICE_TYPE_COORDINATOR == deviceType)
+   \   00000042   0x4668             MOV      R0,SP
+   \   00000044   0x7800             LDRB     R0,[R0, #+0]
+   \   00000046   0x2800             CMP      R0,#+0
+   \   00000048   0xD10F             BNE      ??zdoPermitJoiningResponse_1
+    191                idetifyStartIdentifying(EZ_MODE_IDENTIFY_TIME);
+   \   0000004A   0x20B4             MOVS     R0,#+180
+   \   0000004C   0x.... 0x....      BL       idetifyStartIdentifying
+   \   00000050   0xBD31             POP      {R0,R4,R5,PC}
+    192            }
+    193            else
+    194              invokeEzModeFindingAndBindingOnTarget();
+   \                     ??zdoPermitJoiningResponse_0: (+1)
+   \   00000052   0x20B4             MOVS     R0,#+180
+   \   00000054   0x.... 0x....      BL       idetifyStartIdentifying
+   \   00000058   0x2000             MOVS     R0,#+0
+   \   0000005A   0x21D3             MOVS     R1,#+211
+   \   0000005C   0x0049             LSLS     R1,R1,#+1        ;; #+422
+   \   0000005E   0x5460             STRB     R0,[R4, R1]
+   \   00000060   0x1C88             ADDS     R0,R1,#+2
+   \   00000062   0x5820             LDR      R0,[R4, R0]
+   \   00000064   0x0001             MOVS     R1,R0
+   \   00000066   0xD000             BEQ      ??zdoPermitJoiningResponse_1
+   \   00000068   0x4780             BLX      R0
+    195          }
+   \                     ??zdoPermitJoiningResponse_1: (+1)
+   \   0000006A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    196          
+    197          /**************************************************************************//**
+    198          \brief Starts EZ-Mode on Target device
+    199          ******************************************************************************/
+    200          static void invokeEzModeFindingAndBindingOnTarget(void)
+    201          {
+    202            idetifyStartIdentifying(EZ_MODE_IDENTIFY_TIME);
+    203            ezModeMem.isInProgress = false;
+    204            if (ezModeMem.cb)
+    205              ezModeMem.cb();
+    206          }
+    207          
+    208          /**************************************************************************//**
+    209          \brief Starts EZ-Mode on Initiator device
+    210          ******************************************************************************/
+    211          static void invokeEzModeFindingAndBindingOnInitiator(void)
+    212          {
+    213            HAL_StopAppTimer(&ezModeTimer);
+    214            HAL_StopAppTimer(&ezModeIdentifyQueryTimer);
+    215            HAL_StartAppTimer(&ezModeTimer);
+    216            HAL_StartAppTimer(&ezModeIdentifyQueryTimer);
+    217            identifySendIdentifyQuery(APS_SHORT_ADDRESS, ALL_DEVICES_IN_PAN_ADDR, APS_BROADCAST_ENDPOINT);
+    218          }
+    219          
+    220          /**************************************************************************//**
+    221          \brief EZ-Mode timer has fired
+    222          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    223          static void ezModeTimerFired(void)
+    224          {
+   \                     ezModeTimerFired: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    225            HAL_StopAppTimer(&ezModeIdentifyQueryTimer);
+   \   00000002   0x....             LDR      R4,??DataTable12_1
+   \   00000004   0x20E2             MOVS     R0,#+226
+   \   00000006   0x0040             LSLS     R0,R0,#+1        ;; #+452
+   \   00000008   0x1820             ADDS     R0,R4,R0
+   \   0000000A   0x.... 0x....      BL       HAL_StopAppTimer
+    226            ezModeMem.isInProgress = false;
+   \   0000000E   0x20D3             MOVS     R0,#+211
+   \   00000010   0x0040             LSLS     R0,R0,#+1        ;; #+422
+   \   00000012   0x1820             ADDS     R0,R4,R0
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x8001             STRH     R1,[R0, #+0]
+    227            ezModeMem.isBindingStarted = false;
+    228          }
+   \   00000018   0xBD10             POP      {R4,PC}          ;; return
+    229          
+    230          /**************************************************************************//**
+    231          \brief EZ-Mode Identify Query timer has fired
+    232          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    233          static void ezModeIdentifyQueryTimerFired(void)
+    234          {
+   \                     ezModeIdentifyQueryTimerFired: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    235            identifySendIdentifyQuery(APS_SHORT_ADDRESS, ALL_DEVICES_IN_PAN_ADDR, APS_BROADCAST_ENDPOINT);
+   \   00000002   0x22FF             MOVS     R2,#+255
+   \   00000004   0x....             LDR      R1,??DataTable14_1  ;; 0xffff
+   \   00000006   0x2002             MOVS     R0,#+2
+   \   00000008   0x.... 0x....      BL       identifySendIdentifyQuery
+    236          }
+   \   0000000C   0xBD01             POP      {R0,PC}          ;; return
+    237          
+    238          /**************************************************************************//**
+    239          \brief Identify Query response received callback
+    240          
+    241          \param[in] addressing - pointer to addressing information;
+    242          \param[in] payload - data pointer
+    243          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    244          static void identifyQueryResponseCb(ZCL_Addressing_t *addressing, ZCL_IdentifyQueryResponse_t *payload)
+    245          {
+   \                     identifyQueryResponseCb: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    246            if (isEzModeInProgress() && !ezModeMem.isBindingStarted)
+   \   00000004   0x....             LDR      R5,??DataTable12_1
+   \   00000006   0x20C8             MOVS     R0,#+200
+   \   00000008   0x0040             LSLS     R0,R0,#+1        ;; #+400
+   \   0000000A   0x182E             ADDS     R6,R5,R0
+   \   0000000C   0x7DB0             LDRB     R0,[R6, #+22]
+   \   0000000E   0x7DF1             LDRB     R1,[R6, #+23]
+   \   00000010   0x2201             MOVS     R2,#+1
+   \   00000012   0x404A             EORS     R2,R2,R1
+   \   00000014   0x4210             TST      R0,R2
+   \   00000016   0xD013             BEQ      ??identifyQueryResponseCb_0
+    247            {
+    248              HAL_StopAppTimer(&ezModeIdentifyQueryTimer);
+   \   00000018   0x20E2             MOVS     R0,#+226
+   \   0000001A   0x0040             LSLS     R0,R0,#+1        ;; #+452
+   \   0000001C   0x1828             ADDS     R0,R5,R0
+   \   0000001E   0x.... 0x....      BL       HAL_StopAppTimer
+    249              HAL_StopAppTimer(&ezModeTimer);
+   \   00000022   0x20D8             MOVS     R0,#+216
+   \   00000024   0x0040             LSLS     R0,R0,#+1        ;; #+432
+   \   00000026   0x1828             ADDS     R0,R5,R0
+   \   00000028   0x.... 0x....      BL       HAL_StopAppTimer
+    250          
+    251              ezModeMem.isBindingStarted = true;
+   \   0000002C   0x2001             MOVS     R0,#+1
+   \   0000002E   0x75F0             STRB     R0,[R6, #+23]
+    252              memcpy(&ezModeMem.appBindReq, getDeviceBindRequest(), sizeof(ezModeMem.appBindReq));
+   \   00000030   0x.... 0x....      BL       getDeviceBindRequest
+   \   00000034   0x6801             LDR      R1,[R0, #0]
+   \   00000036   0x6031             STR      R1,[R6, #0]
+    253              for (uint8_t epCount = 0; epCount < APP_ENDPOINTS_AMOUNT; epCount++)
+    254                ezModeMem.appBindReq[epCount]->nwkAddrOfInterest = addressing->addr.shortAddress;
+   \   00000038   0x8920             LDRH     R0,[R4, #+8]
+   \   0000003A   0x8008             STRH     R0,[R1, #+0]
+    255          
+    256              commissionNextEndpoint();
+   \   0000003C   0x.... 0x....      BL       commissionNextEndpoint
+    257            }
+    258            (void)payload;
+    259          }
+   \                     ??identifyQueryResponseCb_0: (+1)
+   \   00000040   0xBD70             POP      {R4-R6,PC}       ;; return
+    260          
+    261          /**************************************************************************//**
+    262          \brief ezmode commissioing on Endpoint
+    263          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    264          void commissionNextEndpoint(void)
+    265          {
+   \                     commissionNextEndpoint: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+    266            if (APP_ENDPOINTS_AMOUNT == ezModeMem.endpointNumber)
+   \   00000004   0x....             LDR      R5,??DataTable12_1
+   \   00000006   0x20FF             MOVS     R0,#+255
+   \   00000008   0x3096             ADDS     R0,R0,#+150      ;; #+405
+   \   0000000A   0x182E             ADDS     R6,R5,R0
+   \   0000000C   0x2400             MOVS     R4,#+0
+   \   0000000E   0x7870             LDRB     R0,[R6, #+1]
+   \   00000010   0x2801             CMP      R0,#+1
+   \   00000012   0xD119             BNE      ??commissionNextEndpoint_0
+    267            {
+    268              identifyUpdateCommissioningState(true, true);
+   \   00000014   0x2101             MOVS     R1,#+1
+   \   00000016   0x.... 0x....      BL       identifyUpdateCommissioningState
+    269              identifySendUpdateCommissioningState(APS_SHORT_ADDRESS, ezModeMem.appBindReq[ezModeMem.endpointNumber-1]->nwkAddrOfInterest,
+    270                APS_BROADCAST_ENDPOINT, ZCL_UPDATE_COMMISSIONING_STATE_ACTION_SET, 0x03);
+   \   0000001A   0x2003             MOVS     R0,#+3
+   \   0000001C   0x9000             STR      R0,[SP, #+0]
+   \   0000001E   0x2301             MOVS     R3,#+1
+   \   00000020   0x22FF             MOVS     R2,#+255
+   \   00000022   0x7870             LDRB     R0,[R6, #+1]
+   \   00000024   0x0080             LSLS     R0,R0,#+2
+   \   00000026   0x1828             ADDS     R0,R5,R0
+   \   00000028   0x21C6             MOVS     R1,#+198
+   \   0000002A   0x0049             LSLS     R1,R1,#+1        ;; #+396
+   \   0000002C   0x5840             LDR      R0,[R0, R1]
+   \   0000002E   0x8801             LDRH     R1,[R0, #+0]
+   \   00000030   0x2002             MOVS     R0,#+2
+   \   00000032   0x.... 0x....      BL       identifySendUpdateCommissioningState
+    271          
+    272              ezModeMem.isBindingStarted = false;
+   \   00000036   0x74B4             STRB     R4,[R6, #+18]
+    273              ezModeMem.isInProgress = false;
+   \   00000038   0x7474             STRB     R4,[R6, #+17]
+   \   0000003A   0x20D4             MOVS     R0,#+212
+   \   0000003C   0x0040             LSLS     R0,R0,#+1        ;; #+424
+   \   0000003E   0x5828             LDR      R0,[R5, R0]
+   \   00000040   0x0001             MOVS     R1,R0
+   \   00000042   0xD005             BEQ      ??commissionNextEndpoint_1
+    274          
+    275              if (ezModeMem.cb)
+    276                ezModeMem.cb();
+   \   00000044   0x4780             BLX      R0
+   \   00000046   0xBD73             POP      {R0,R1,R4-R6,PC}
+    277            }
+    278            else
+    279            {
+    280              /* reset the ez Mode parameters */
+    281              ezModeMem.client = 0;
+   \                     ??commissionNextEndpoint_0: (+1)
+   \   00000048   0x73B4             STRB     R4,[R6, #+14]
+    282              ezModeMem.clusterNumber = 0;
+   \   0000004A   0x7034             STRB     R4,[R6, #+0]
+    283          
+    284              bindNextCluster();
+   \   0000004C   0x.... 0x....      BL       bindNextCluster
+    285            }
+    286          }
+   \                     ??commissionNextEndpoint_1: (+1)
+   \   00000050   0xBD73             POP      {R0,R1,R4-R6,PC}  ;; return
+    287          
+    288          /**************************************************************************//**
+    289          \brief Try to find next remote server/client
+    290          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    291          static void bindNextCluster(void)
+    292          {
+   \                     bindNextCluster: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    293            AppBindReq_t *appBindReq = ezModeMem.appBindReq[ezModeMem.endpointNumber];
+   \   00000002   0x....             LDR      R1,??DataTable12_1
+   \   00000004   0x20FF             MOVS     R0,#+255
+   \   00000006   0x3096             ADDS     R0,R0,#+150      ;; #+405
+   \   00000008   0x180C             ADDS     R4,R1,R0
+   \   0000000A   0x7860             LDRB     R0,[R4, #+1]
+   \   0000000C   0x0082             LSLS     R2,R0,#+2
+   \   0000000E   0x1889             ADDS     R1,R1,R2
+   \   00000010   0x22C8             MOVS     R2,#+200
+   \   00000012   0x0052             LSLS     R2,R2,#+1        ;; #+400
+   \   00000014   0x5889             LDR      R1,[R1, R2]
+    294          
+    295            /* Bind to servers firstly */
+    296            if (!ezModeMem.client)
+   \   00000016   0x7BA2             LDRB     R2,[R4, #+14]
+   \   00000018   0x2A00             CMP      R2,#+0
+   \   0000001A   0xD107             BNE      ??bindNextCluster_0
+    297            {
+    298              if (ezModeMem.clusterNumber == appBindReq->remoteServersCnt)
+   \   0000001C   0x7822             LDRB     R2,[R4, #+0]
+   \   0000001E   0x7D0B             LDRB     R3,[R1, #+20]
+   \   00000020   0x429A             CMP      R2,R3
+   \   00000022   0xD10C             BNE      ??bindNextCluster_1
+    299              {
+    300                ezModeMem.client        = true;
+   \   00000024   0x2201             MOVS     R2,#+1
+   \   00000026   0x73A2             STRB     R2,[R4, #+14]
+    301                ezModeMem.clusterNumber = 0;
+   \   00000028   0x2200             MOVS     R2,#+0
+   \   0000002A   0x7022             STRB     R2,[R4, #+0]
+    302              }
+    303              else
+    304              {
+    305                matchBindDevices();
+    306                ezModeMem.clusterNumber++;
+    307                return;
+    308              }
+    309            }
+    310          
+    311            if (ezModeMem.clusterNumber == appBindReq->remoteClientsCnt)
+   \                     ??bindNextCluster_0: (+1)
+   \   0000002C   0x7822             LDRB     R2,[R4, #+0]
+   \   0000002E   0x7CC9             LDRB     R1,[R1, #+19]
+   \   00000030   0x428A             CMP      R2,R1
+   \   00000032   0xD104             BNE      ??bindNextCluster_1
+    312            {
+    313              
+    314              ezModeMem.endpointNumber++;
+   \   00000034   0x1C40             ADDS     R0,R0,#+1
+   \   00000036   0x7060             STRB     R0,[R4, #+1]
+    315              /* Do the commissoioning for pending endpoints, if any */
+    316              commissionNextEndpoint();
+   \   00000038   0x.... 0x....      BL       commissionNextEndpoint
+    317              return;
+   \   0000003C   0xBD10             POP      {R4,PC}
+    318            }
+    319            matchBindDevices();
+   \                     ??bindNextCluster_1: (+1)
+   \   0000003E   0x.... 0x....      BL       matchBindDevices
+    320            ezModeMem.clusterNumber++;
+   \   00000042   0x7820             LDRB     R0,[R4, #+0]
+   \   00000044   0x1C40             ADDS     R0,R0,#+1
+   \   00000046   0x7020             STRB     R0,[R4, #+0]
+    321          }
+   \   00000048   0xBD10             POP      {R4,PC}          ;; return
+    322          
+    323          /**************************************************************************//**
+    324          \brief Starts service discovery and binding process
+    325          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    326          static void matchBindDevices(void)
+    327          {
+   \                     matchBindDevices: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    328            ZDO_ZdpReq_t *zdpReq = &ezModeMem.zdpReq;;
+    329            ZDO_MatchDescReq_t *matchDescReq = &zdpReq->req.reqPayload.matchDescReq;
+    330            AppBindReq_t *appBindReq = ezModeMem.appBindReq[ezModeMem.endpointNumber];
+   \   00000002   0x....             LDR      R1,??DataTable12_1
+   \   00000004   0x20CA             MOVS     R0,#+202
+   \   00000006   0x0040             LSLS     R0,R0,#+1        ;; #+404
+   \   00000008   0x180A             ADDS     R2,R1,R0
+   \   0000000A   0x7890             LDRB     R0,[R2, #+2]
+   \   0000000C   0x0080             LSLS     R0,R0,#+2
+   \   0000000E   0x1808             ADDS     R0,R1,R0
+   \   00000010   0x23C8             MOVS     R3,#+200
+   \   00000012   0x005B             LSLS     R3,R3,#+1        ;; #+400
+   \   00000014   0x58C3             LDR      R3,[R0, R3]
+    331          
+    332            ezModeMem.matchesReceived = 0;
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0x7010             STRB     R0,[R2, #+0]
+    333          
+    334            zdpReq->ZDO_ZdpResp             = zdpMatchDescResp;
+   \   0000001A   0x....             LDR      R4,??DataTable16
+   \   0000001C   0x2590             MOVS     R5,#+144
+   \   0000001E   0x006D             LSLS     R5,R5,#+1        ;; #+288
+   \   00000020   0x514C             STR      R4,[R1, R5]
+    335            zdpReq->reqCluster              = MATCH_DESCRIPTOR_CLID;
+   \   00000022   0x000C             MOVS     R4,R1
+   \   00000024   0x3480             ADDS     R4,R4,#+128
+   \   00000026   0x2506             MOVS     R5,#+6
+   \   00000028   0x8025             STRH     R5,[R4, #+0]
+    336            zdpReq->dstAddrMode             = APS_SHORT_ADDRESS;
+   \   0000002A   0x2502             MOVS     R5,#+2
+   \   0000002C   0x70A5             STRB     R5,[R4, #+2]
+    337            zdpReq->dstAddress.shortAddress = appBindReq->nwkAddrOfInterest;
+   \   0000002E   0x881D             LDRH     R5,[R3, #+0]
+   \   00000030   0x8125             STRH     R5,[R4, #+8]
+    338          
+    339            matchDescReq->nwkAddrOfInterest = appBindReq->nwkAddrOfInterest;
+   \   00000032   0x000C             MOVS     R4,R1
+   \   00000034   0x34D3             ADDS     R4,R4,#+211
+   \   00000036   0x881D             LDRH     R5,[R3, #+0]
+   \   00000038   0x7025             STRB     R5,[R4, #+0]
+   \   0000003A   0x0A2D             LSRS     R5,R5,#+8
+   \   0000003C   0x7065             STRB     R5,[R4, #+1]
+    340            matchDescReq->profileId         = appBindReq->profile;
+   \   0000003E   0x000C             MOVS     R4,R1
+   \   00000040   0x34D5             ADDS     R4,R4,#+213
+   \   00000042   0x8A1D             LDRH     R5,[R3, #+16]
+   \   00000044   0x7025             STRB     R5,[R4, #+0]
+   \   00000046   0x0A2D             LSRS     R5,R5,#+8
+   \   00000048   0x7065             STRB     R5,[R4, #+1]
+    341            if (!ezModeMem.client)
+   \   0000004A   0x000C             MOVS     R4,R1
+   \   0000004C   0x34D7             ADDS     R4,R4,#+215
+   \   0000004E   0x2501             MOVS     R5,#+1
+   \   00000050   0x7BD6             LDRB     R6,[R2, #+15]
+   \   00000052   0x2E00             CMP      R6,#+0
+   \   00000054   0xD105             BNE      ??matchBindDevices_0
+    342            {
+    343              matchDescReq->numInClusters    = 1;
+   \   00000056   0x7025             STRB     R5,[R4, #+0]
+    344              matchDescReq->numOutClusters   = 0;
+   \   00000058   0x74E0             STRB     R0,[R4, #+19]
+    345              matchDescReq->inClusterList[0] = appBindReq->remoteServers[ezModeMem.clusterNumber];
+   \   0000005A   0x0008             MOVS     R0,R1
+   \   0000005C   0x30D8             ADDS     R0,R0,#+216
+   \   0000005E   0x685B             LDR      R3,[R3, #+4]
+   \   00000060   0xE004             B        ??matchBindDevices_1
+    346              ezModeMem.clusterId            = matchDescReq->inClusterList[0];
+    347            }
+    348            else
+    349            {
+    350              matchDescReq->numInClusters     = 0;
+   \                     ??matchBindDevices_0: (+1)
+   \   00000062   0x7020             STRB     R0,[R4, #+0]
+    351              matchDescReq->numOutClusters    = 1;
+   \   00000064   0x74E5             STRB     R5,[R4, #+19]
+    352              matchDescReq->outClusterList[0] = appBindReq->remoteClients[ezModeMem.clusterNumber];
+   \   00000066   0x0008             MOVS     R0,R1
+   \   00000068   0x30EB             ADDS     R0,R0,#+235
+   \   0000006A   0x689B             LDR      R3,[R3, #+8]
+   \                     ??matchBindDevices_1: (+1)
+   \   0000006C   0x7854             LDRB     R4,[R2, #+1]
+   \   0000006E   0x0064             LSLS     R4,R4,#+1
+   \   00000070   0x5B1B             LDRH     R3,[R3, R4]
+   \   00000072   0x7003             STRB     R3,[R0, #+0]
+   \   00000074   0x0A1B             LSRS     R3,R3,#+8
+   \   00000076   0x7043             STRB     R3,[R0, #+1]
+    353              ezModeMem.clusterId             = matchDescReq->outClusterList[0];
+   \   00000078   0x7803             LDRB     R3,[R0, #+0]
+   \   0000007A   0x7844             LDRB     R4,[R0, #+1]
+   \   0000007C   0x0624             LSLS     R4,R4,#+24
+   \   0000007E   0x0C24             LSRS     R4,R4,#+16
+   \   00000080   0x4323             ORRS     R3,R3,R4
+   \   00000082   0x8213             STRH     R3,[R2, #+16]
+    354            }
+    355          
+    356            ZDO_ZdpReq(&ezModeMem.zdpReq);
+   \   00000084   0x0008             MOVS     R0,R1
+   \   00000086   0x.... 0x....      BL       ZDO_ZdpReq
+    357          
+    358          }
+   \   0000008A   0xBD70             POP      {R4-R6,PC}       ;; return
+    359          
+    360          /**************************************************************************//**
+    361          \brief Response to match descriptor request
+    362          
+    363          \param[in] resp - pointer to response
+    364          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    365          static void zdpMatchDescResp(ZDO_ZdpResp_t *resp)
+    366          {
+   \                     zdpMatchDescResp: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    367            ZDO_MatchDescResp_t *matchResp = &resp->respPayload.matchDescResp;
+   \   00000002   0x0001             MOVS     R1,R0
+   \   00000004   0x311A             ADDS     R1,R1,#+26
+    368            ZDO_Status_t status = resp->respPayload.status;
+   \   00000006   0x7E40             LDRB     R0,[R0, #+25]
+    369          
+    370            if (ZDO_CMD_COMPLETED_STATUS == status)
+   \   00000008   0x280D             CMP      R0,#+13
+   \   0000000A   0xD102             BNE      ??zdpMatchDescResp_0
+    371              matchHandlingFinished();
+   \   0000000C   0x.... 0x....      BL       matchHandlingFinished
+   \   00000010   0xBD01             POP      {R0,PC}
+    372            else if (ZDO_SUCCESS_STATUS != status)
+   \                     ??zdpMatchDescResp_0: (+1)
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD002             BEQ      ??zdpMatchDescResp_1
+    373              bindNextCluster();
+   \   00000016   0x.... 0x....      BL       bindNextCluster
+   \   0000001A   0xBD01             POP      {R0,PC}
+    374            else if (MAX_MATCH_DESC_RESP_AMOUNT > ezModeMem.matchesReceived)
+   \                     ??zdpMatchDescResp_1: (+1)
+   \   0000001C   0x....             LDR      R0,??DataTable16_1
+   \   0000001E   0x22CA             MOVS     R2,#+202
+   \   00000020   0x0052             LSLS     R2,R2,#+1        ;; #+404
+   \   00000022   0x1882             ADDS     R2,R0,R2
+   \   00000024   0x7813             LDRB     R3,[R2, #+0]
+   \   00000026   0x2B00             CMP      R3,#+0
+   \   00000028   0xD107             BNE      ??zdpMatchDescResp_2
+    375              memcpy(&ezModeMem.matchDescResp[ezModeMem.matchesReceived++], matchResp, sizeof(ZDO_MatchDescResp_t));
+   \   0000002A   0x2301             MOVS     R3,#+1
+   \   0000002C   0x7013             STRB     R3,[R2, #+0]
+   \   0000002E   0x220C             MOVS     R2,#+12
+   \   00000030   0x23FF             MOVS     R3,#+255
+   \   00000032   0x3398             ADDS     R3,R3,#+152      ;; #+407
+   \   00000034   0x18C0             ADDS     R0,R0,R3
+   \   00000036   0x.... 0x....      BL       __aeabi_memcpy
+    376          }
+   \                     ??zdpMatchDescResp_2: (+1)
+   \   0000003A   0xBD01             POP      {R0,PC}          ;; return
+    377          
+    378          /**************************************************************************//**
+    379          \brief Processing after each match handling
+    380          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    381          static void matchHandlingFinished(void)
+    382          {
+   \                     matchHandlingFinished: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+    383            if (ezModeMem.matchesReceived)
+   \   00000002   0x....             LDR      R1,??DataTable12_1
+   \   00000004   0x20CA             MOVS     R0,#+202
+   \   00000006   0x0040             LSLS     R0,R0,#+1        ;; #+404
+   \   00000008   0x5C08             LDRB     R0,[R1, R0]
+   \   0000000A   0x2800             CMP      R0,#+0
+   \   0000000C   0xD02B             BEQ      ??matchHandlingFinished_0
+    384              doIeeeAddrReq();
+   \   0000000E   0x220C             MOVS     R2,#+12
+   \   00000010   0x4350             MULS     R0,R2,R0
+   \   00000012   0x1808             ADDS     R0,R1,R0
+   \   00000014   0x22FF             MOVS     R2,#+255
+   \   00000016   0x328C             ADDS     R2,R2,#+140      ;; #+395
+   \   00000018   0x1880             ADDS     R0,R0,R2
+   \   0000001A   0x7802             LDRB     R2,[R0, #+0]
+   \   0000001C   0x7843             LDRB     R3,[R0, #+1]
+   \   0000001E   0x061B             LSLS     R3,R3,#+24
+   \   00000020   0x0C1B             LSRS     R3,R3,#+16
+   \   00000022   0x431A             ORRS     R2,R2,R3
+   \   00000024   0x0008             MOVS     R0,R1
+   \   00000026   0x30D3             ADDS     R0,R0,#+211
+   \   00000028   0x7002             STRB     R2,[R0, #+0]
+   \   0000002A   0x0A12             LSRS     R2,R2,#+8
+   \   0000002C   0x7042             STRB     R2,[R0, #+1]
+   \   0000002E   0x000A             MOVS     R2,R1
+   \   00000030   0x32D5             ADDS     R2,R2,#+213
+   \   00000032   0x2300             MOVS     R3,#+0
+   \   00000034   0x7013             STRB     R3,[R2, #+0]
+   \   00000036   0x7053             STRB     R3,[R2, #+1]
+   \   00000038   0x2290             MOVS     R2,#+144
+   \   0000003A   0x0052             LSLS     R2,R2,#+1        ;; #+288
+   \   0000003C   0x188B             ADDS     R3,R1,R2
+   \   0000003E   0x....             LDR      R4,??DataTable16_2
+   \   00000040   0x601C             STR      R4,[R3, #+0]
+   \   00000042   0x000A             MOVS     R2,R1
+   \   00000044   0x3280             ADDS     R2,R2,#+128
+   \   00000046   0x2501             MOVS     R5,#+1
+   \   00000048   0x8015             STRH     R5,[R2, #+0]
+   \   0000004A   0x2602             MOVS     R6,#+2
+   \   0000004C   0x7096             STRB     R6,[R2, #+2]
+   \   0000004E   0x7806             LDRB     R6,[R0, #+0]
+   \   00000050   0x7847             LDRB     R7,[R0, #+1]
+   \   00000052   0x063F             LSLS     R7,R7,#+24
+   \   00000054   0x0C3F             LSRS     R7,R7,#+16
+   \   00000056   0x433E             ORRS     R6,R6,R7
+   \   00000058   0x8116             STRH     R6,[R2, #+8]
+   \   0000005A   0x601C             STR      R4,[R3, #+0]
+   \   0000005C   0x8015             STRH     R5,[R2, #+0]
+   \   0000005E   0x0008             MOVS     R0,R1
+   \   00000060   0x.... 0x....      BL       ZDO_ZdpReq
+   \   00000064   0xBDF1             POP      {R0,R4-R7,PC}
+    385            else
+    386              bindNextCluster();
+   \                     ??matchHandlingFinished_0: (+1)
+   \   00000066   0x.... 0x....      BL       bindNextCluster
+    387          }
+   \   0000006A   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    388          
+    389          /**************************************************************************//**
+    390          \brief Performs IEEE adddress request
+    391          *******************************************************************************/
+    392          static void doIeeeAddrReq(void)
+    393          {
+    394            ZDO_ZdpReq_t *zdpReq = &ezModeMem.zdpReq;
+    395            ZDO_IeeeAddrReq_t *ieeeAddrReq = &zdpReq->req.reqPayload.ieeeAddrReq;
+    396          
+    397            ieeeAddrReq->nwkAddrOfInterest = ezModeMem.matchDescResp[ezModeMem.matchesReceived - 1].nwkAddrOfInterest;
+    398            ieeeAddrReq->reqType           = 0;
+    399            ieeeAddrReq->startIndex        = 0;
+    400          
+    401            zdpReq->ZDO_ZdpResp             = zdpIeeeAddrResp;
+    402            zdpReq->reqCluster              = IEEE_ADDR_CLID;
+    403            zdpReq->dstAddrMode             = APS_SHORT_ADDRESS;
+    404            zdpReq->dstAddress.shortAddress = ieeeAddrReq->nwkAddrOfInterest;
+    405            zdpReq->ZDO_ZdpResp             = zdpIeeeAddrResp;
+    406            zdpReq->reqCluster              = IEEE_ADDR_CLID;
+    407          
+    408            ZDO_ZdpReq(zdpReq);
+    409          }
+    410          
+    411          /**************************************************************************//**
+    412          \brief ZDP IEEE response callback
+    413          
+    414          \param[in] resp - pointer to response
+    415          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    416          static void zdpIeeeAddrResp(ZDO_ZdpResp_t *resp)
+    417          {
+   \                     zdpIeeeAddrResp: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    418            if (ZDO_SUCCESS_STATUS == resp->respPayload.status)
+   \   00000002   0x7E41             LDRB     R1,[R0, #+25]
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xD10A             BNE      ??zdpIeeeAddrResp_0
+    419            {
+    420              ezModeMem.extAddr = ((ZDO_IeeeAddrResp_t *)&resp->respPayload.ieeeAddrResp)->ieeeAddrRemote;
+   \   00000008   0x301A             ADDS     R0,R0,#+26
+   \   0000000A   0x.... 0x....      BL       __aeabi_uread8
+   \   0000000E   0x0002             MOVS     R2,R0
+   \   00000010   0x000B             MOVS     R3,R1
+   \   00000012   0x....             LDR      R0,??DataTable16_3
+   \   00000014   0xC00C             STM      R0!,{R2,R3}
+   \   00000016   0x3808             SUBS     R0,R0,#+8
+    421              doApsAndZdoBinding(&ezModeMem.extAddr);
+   \   00000018   0x.... 0x....      BL       doApsAndZdoBinding
+   \   0000001C   0xBD01             POP      {R0,PC}
+    422            }
+    423            else
+    424              bindNextCluster();
+   \                     ??zdpIeeeAddrResp_0: (+1)
+   \   0000001E   0x.... 0x....      BL       bindNextCluster
+    425          }
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+    426          
+    427          /**************************************************************************//**
+    428          \brief Initiates APS binding
+    429          
+    430          \param[in] ieeeAddr - address to bind
+    431          \returns true in case of success, false incase of fail
+    432          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    433          static bool doApsBinding(ExtAddr_t *ownExtAddr, ExtAddr_t *remoteDevExtAddr, Endpoint_t dstEndpoint)
+    434          {
+   \                     doApsBinding: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+   \   00000004   0x000B             MOVS     R3,R1
+    435            APS_BindReq_t apsBindReq;  
+    436            AppBindReq_t *appBindReq = ezModeMem.appBindReq[ezModeMem.endpointNumber];
+    437            
+    438            // APS binding  
+    439            apsBindReq.srcAddr = *ownExtAddr;
+   \   00000006   0xC803             LDM      R0,{R0,R1}
+   \   00000008   0x466C             MOV      R4,SP
+   \   0000000A   0xC403             STM      R4!,{R0,R1}
+    440            apsBindReq.srcEndpoint = appBindReq->srcEndpoint;
+   \   0000000C   0x....             LDR      R1,??DataTable16_1
+   \   0000000E   0x20CB             MOVS     R0,#+203
+   \   00000010   0x0040             LSLS     R0,R0,#+1        ;; #+406
+   \   00000012   0x1808             ADDS     R0,R1,R0
+   \   00000014   0x466C             MOV      R4,SP
+   \   00000016   0x7805             LDRB     R5,[R0, #+0]
+   \   00000018   0x00AD             LSLS     R5,R5,#+2
+   \   0000001A   0x1949             ADDS     R1,R1,R5
+   \   0000001C   0x25C8             MOVS     R5,#+200
+   \   0000001E   0x006D             LSLS     R5,R5,#+1        ;; #+400
+   \   00000020   0x5949             LDR      R1,[R1, R5]
+   \   00000022   0x7C89             LDRB     R1,[R1, #+18]
+   \   00000024   0x7221             STRB     R1,[R4, #+8]
+    441            apsBindReq.clusterId = ezModeMem.clusterId;
+   \   00000026   0x89C0             LDRH     R0,[R0, #+14]
+   \   00000028   0x8160             STRH     R0,[R4, #+10]
+    442            apsBindReq.dstAddrMode = APS_EXT_ADDRESS;
+   \   0000002A   0x2003             MOVS     R0,#+3
+   \   0000002C   0x7320             STRB     R0,[R4, #+12]
+    443            apsBindReq.dst.unicast.extAddr = *remoteDevExtAddr;
+   \   0000002E   0xCB03             LDM      R3!,{R0,R1}
+   \   00000030   0x466B             MOV      R3,SP
+   \   00000032   0x3310             ADDS     R3,R3,#+16
+   \   00000034   0xC303             STM      R3!,{R0,R1}
+    444            apsBindReq.dst.unicast.endpoint = dstEndpoint;
+   \   00000036   0x7622             STRB     R2,[R4, #+24]
+    445            APS_BindReq(&apsBindReq);
+   \   00000038   0x4668             MOV      R0,SP
+   \   0000003A   0x.... 0x....      BL       APS_BindReq
+    446            
+    447            if (APS_SUCCESS_STATUS != apsBindReq.confirm.status)
+   \   0000003E   0x3420             ADDS     R4,R4,#+32
+   \   00000040   0x7820             LDRB     R0,[R4, #+0]
+   \   00000042   0x2800             CMP      R0,#+0
+   \   00000044   0xD001             BEQ      ??doApsBinding_0
+    448              return false;
+   \   00000046   0x2000             MOVS     R0,#+0
+   \   00000048   0xE000             B        ??doApsBinding_1
+    449          
+    450            return true;
+   \                     ??doApsBinding_0: (+1)
+   \   0000004A   0x2001             MOVS     R0,#+1
+   \                     ??doApsBinding_1: (+1)
+   \   0000004C   0xB00B             ADD      SP,SP,#+44
+   \   0000004E   0xBD30             POP      {R4,R5,PC}       ;; return
+    451          }
+    452          /**************************************************************************//**
+    453          \brief Initiates APS and ZDO binding
+    454          
+    455          \param[in] ieeeAddr - address to bind
+    456          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    457          static void doApsAndZdoBinding(ExtAddr_t *remoteDevExtAddr)
+    458          {
+   \                     doApsAndZdoBinding: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB087             SUB      SP,SP,#+28
+   \   00000004   0x0007             MOVS     R7,R0
+    459            ZDO_ZdpReq_t *zdpReq = &ezModeMem.zdpReq;
+    460            ZDO_BindReq_t *zdoBindReq = &zdpReq->req.reqPayload.bindReq;
+    461            ExtAddr_t ownExtAddr;
+    462            ZDO_MatchDescResp_t *resp;
+    463            AppBindReq_t *appBindReq = ezModeMem.appBindReq[ezModeMem.endpointNumber];
+   \   00000006   0x....             LDR      R4,??DataTable16_1
+   \   00000008   0x20CA             MOVS     R0,#+202
+   \   0000000A   0x0040             LSLS     R0,R0,#+1        ;; #+404
+   \   0000000C   0x1820             ADDS     R0,R4,R0
+   \   0000000E   0x9000             STR      R0,[SP, #+0]
+   \   00000010   0x7880             LDRB     R0,[R0, #+2]
+   \   00000012   0x0080             LSLS     R0,R0,#+2
+   \   00000014   0x1820             ADDS     R0,R4,R0
+   \   00000016   0x21C8             MOVS     R1,#+200
+   \   00000018   0x0049             LSLS     R1,R1,#+1        ;; #+400
+   \   0000001A   0x5840             LDR      R0,[R0, R1]
+   \   0000001C   0x9004             STR      R0,[SP, #+16]
+    464            DeviceType_t deviceType;
+    465          
+    466            CS_ReadParameter(CS_UID_ID, &ownExtAddr);
+   \   0000001E   0xA902             ADD      R1,SP,#+8
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x.... 0x....      BL       CS_ReadParameter
+    467            CS_ReadParameter(CS_DEVICE_TYPE_ID, &deviceType);
+   \   00000026   0xA901             ADD      R1,SP,#+4
+   \   00000028   0x2021             MOVS     R0,#+33
+   \   0000002A   0x.... 0x....      BL       CS_ReadParameter
+    468           
+    469            resp = &ezModeMem.matchDescResp[ezModeMem.matchesReceived - 1];
+   \   0000002E   0x9800             LDR      R0,[SP, #+0]
+   \   00000030   0x7800             LDRB     R0,[R0, #+0]
+   \   00000032   0x210C             MOVS     R1,#+12
+   \   00000034   0x4348             MULS     R0,R1,R0
+   \   00000036   0x1820             ADDS     R0,R4,R0
+   \   00000038   0x21FF             MOVS     R1,#+255
+   \   0000003A   0x318C             ADDS     R1,R1,#+140      ;; #+395
+   \   0000003C   0x1845             ADDS     R5,R0,R1
+    470            
+    471            if (resp->matchLength)
+   \   0000003E   0x78A8             LDRB     R0,[R5, #+2]
+   \   00000040   0x2800             CMP      R0,#+0
+   \   00000042   0xD010             BEQ      ??doApsAndZdoBinding_0
+    472            {
+    473              if (DEVICE_TYPE_END_DEVICE == deviceType)
+   \   00000044   0x4669             MOV      R1,SP
+   \   00000046   0x7909             LDRB     R1,[R1, #+4]
+   \   00000048   0x2902             CMP      R1,#+2
+   \   0000004A   0xD115             BNE      ??doApsAndZdoBinding_1
+    474              {
+    475                do
+    476                {
+    477                  doApsBinding(&ownExtAddr, remoteDevExtAddr, resp->matchList[--resp->matchLength]);
+   \                     ??doApsAndZdoBinding_2: (+1)
+   \   0000004C   0x78A8             LDRB     R0,[R5, #+2]
+   \   0000004E   0x1E40             SUBS     R0,R0,#+1
+   \   00000050   0x70A8             STRB     R0,[R5, #+2]
+   \   00000052   0xB2C0             UXTB     R0,R0
+   \   00000054   0x1828             ADDS     R0,R5,R0
+   \   00000056   0x78C2             LDRB     R2,[R0, #+3]
+   \   00000058   0x0039             MOVS     R1,R7
+   \   0000005A   0xA802             ADD      R0,SP,#+8
+   \   0000005C   0x.... 0x....      BL       doApsBinding
+    478                } while(resp->matchLength);
+   \   00000060   0x78A8             LDRB     R0,[R5, #+2]
+   \   00000062   0x2800             CMP      R0,#+0
+   \   00000064   0xD1F2             BNE      ??doApsAndZdoBinding_2
+    479                
+    480                ezModeMem.matchesReceived--;
+    481                matchHandlingFinished();
+    482              }
+    483              else
+    484              {
+    485                resp->matchLength--;
+    486                if (!resp->matchLength)
+    487                  ezModeMem.matchesReceived--;
+    488          
+    489                // APS binding.
+    490                if (!doApsBinding(&ownExtAddr, remoteDevExtAddr, resp->matchList[resp->matchLength]))
+    491                {
+    492                  matchHandlingFinished();
+    493                  return;
+    494                }        
+    495                // ZDO binding.
+    496                zdpReq->ZDO_ZdpResp = zdpBindResp;
+    497                zdpReq->reqCluster = BIND_CLID;
+    498                zdpReq->dstAddrMode = APS_EXT_ADDRESS;
+    499                COPY_EXT_ADDR(zdpReq->dstAddress.extAddress, *remoteDevExtAddr);
+    500          
+    501                COPY_EXT_ADDR(zdoBindReq->srcAddr, *remoteDevExtAddr);
+    502                zdoBindReq->srcEndpoint = resp->matchList[resp->matchLength];
+    503                zdoBindReq->clusterId = ezModeMem.clusterId;
+    504                zdoBindReq->dstAddrMode = APS_EXT_ADDRESS;
+    505                COPY_EXT_ADDR(zdoBindReq->dstExtAddr, ownExtAddr);
+    506                zdoBindReq->dstEndpoint = appBindReq->srcEndpoint;
+    507          
+    508                ZDO_ZdpReq(zdpReq);
+    509              }
+    510            }
+    511            else
+    512            {
+    513              ezModeMem.matchesReceived--;
+   \                     ??doApsAndZdoBinding_0: (+1)
+   \   00000066   0x9800             LDR      R0,[SP, #+0]
+   \   00000068   0x7800             LDRB     R0,[R0, #+0]
+   \   0000006A   0x1E40             SUBS     R0,R0,#+1
+   \   0000006C   0x9900             LDR      R1,[SP, #+0]
+   \   0000006E   0x7008             STRB     R0,[R1, #+0]
+    514              matchHandlingFinished();
+   \                     ??doApsAndZdoBinding_3: (+1)
+   \   00000070   0x.... 0x....      BL       matchHandlingFinished
+    515            }
+    516          }
+   \                     ??doApsAndZdoBinding_4: (+1)
+   \   00000074   0xB007             ADD      SP,SP,#+28
+   \   00000076   0xBDF0             POP      {R4-R7,PC}       ;; return
+   \                     ??doApsAndZdoBinding_1: (+1)
+   \   00000078   0x1E40             SUBS     R0,R0,#+1
+   \   0000007A   0x70A8             STRB     R0,[R5, #+2]
+   \   0000007C   0x0600             LSLS     R0,R0,#+24
+   \   0000007E   0xD104             BNE      ??doApsAndZdoBinding_5
+   \   00000080   0x9800             LDR      R0,[SP, #+0]
+   \   00000082   0x7800             LDRB     R0,[R0, #+0]
+   \   00000084   0x1E40             SUBS     R0,R0,#+1
+   \   00000086   0x9900             LDR      R1,[SP, #+0]
+   \   00000088   0x7008             STRB     R0,[R1, #+0]
+   \                     ??doApsAndZdoBinding_5: (+1)
+   \   0000008A   0x78A8             LDRB     R0,[R5, #+2]
+   \   0000008C   0x1828             ADDS     R0,R5,R0
+   \   0000008E   0x78C2             LDRB     R2,[R0, #+3]
+   \   00000090   0x0039             MOVS     R1,R7
+   \   00000092   0xA802             ADD      R0,SP,#+8
+   \   00000094   0x.... 0x....      BL       doApsBinding
+   \   00000098   0x2800             CMP      R0,#+0
+   \   0000009A   0xD0E9             BEQ      ??doApsAndZdoBinding_3
+   \   0000009C   0x....             LDR      R0,??DataTable16_4
+   \   0000009E   0x2190             MOVS     R1,#+144
+   \   000000A0   0x0049             LSLS     R1,R1,#+1        ;; #+288
+   \   000000A2   0x5060             STR      R0,[R4, R1]
+   \   000000A4   0x0022             MOVS     R2,R4
+   \   000000A6   0x3280             ADDS     R2,R2,#+128
+   \   000000A8   0x2021             MOVS     R0,#+33
+   \   000000AA   0x8010             STRH     R0,[R2, #+0]
+   \   000000AC   0x2603             MOVS     R6,#+3
+   \   000000AE   0x7096             STRB     R6,[R2, #+2]
+   \   000000B0   0xCF03             LDM      R7!,{R0,R1}
+   \   000000B2   0x3F08             SUBS     R7,R7,#+8
+   \   000000B4   0x3210             ADDS     R2,R2,#+16
+   \   000000B6   0xC203             STM      R2!,{R0,R1}
+   \   000000B8   0x0022             MOVS     R2,R4
+   \   000000BA   0x32D3             ADDS     R2,R2,#+211
+   \   000000BC   0xCF03             LDM      R7!,{R0,R1}
+   \   000000BE   0x.... 0x....      BL       __aeabi_uwrite8
+   \   000000C2   0x0027             MOVS     R7,R4
+   \   000000C4   0x37DB             ADDS     R7,R7,#+219
+   \   000000C6   0x78A8             LDRB     R0,[R5, #+2]
+   \   000000C8   0x1828             ADDS     R0,R5,R0
+   \   000000CA   0x78C0             LDRB     R0,[R0, #+3]
+   \   000000CC   0x7038             STRB     R0,[R7, #+0]
+   \   000000CE   0x0020             MOVS     R0,R4
+   \   000000D0   0x30DC             ADDS     R0,R0,#+220
+   \   000000D2   0x9900             LDR      R1,[SP, #+0]
+   \   000000D4   0x8A09             LDRH     R1,[R1, #+16]
+   \   000000D6   0x7001             STRB     R1,[R0, #+0]
+   \   000000D8   0x0A09             LSRS     R1,R1,#+8
+   \   000000DA   0x7041             STRB     R1,[R0, #+1]
+   \   000000DC   0x70FE             STRB     R6,[R7, #+3]
+   \   000000DE   0x0022             MOVS     R2,R4
+   \   000000E0   0x32DF             ADDS     R2,R2,#+223
+   \   000000E2   0xA802             ADD      R0,SP,#+8
+   \   000000E4   0xC803             LDM      R0,{R0,R1}
+   \   000000E6   0x.... 0x....      BL       __aeabi_uwrite8
+   \   000000EA   0x9804             LDR      R0,[SP, #+16]
+   \   000000EC   0x7C80             LDRB     R0,[R0, #+18]
+   \   000000EE   0x7338             STRB     R0,[R7, #+12]
+   \   000000F0   0x0020             MOVS     R0,R4
+   \   000000F2   0x.... 0x....      BL       ZDO_ZdpReq
+   \   000000F6   0xE7BD             B        ??doApsAndZdoBinding_4
+    517          
+    518          /**************************************************************************//**
+    519          \brief Response to ZDP Bind request
+    520          
+    521          \param[in] resp - pointer to response
+    522          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    523          static void zdpBindResp(ZDO_ZdpResp_t *resp)
+    524          {
+   \                     zdpBindResp: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    525            (void)resp;
+    526          
+    527            if (ezModeMem.matchDescResp[ezModeMem.matchesReceived].matchLength)
+   \   00000002   0x....             LDR      R0,??DataTable16_1
+   \   00000004   0x21CA             MOVS     R1,#+202
+   \   00000006   0x0049             LSLS     R1,R1,#+1        ;; #+404
+   \   00000008   0x5C41             LDRB     R1,[R0, R1]
+   \   0000000A   0x220C             MOVS     R2,#+12
+   \   0000000C   0x4351             MULS     R1,R2,R1
+   \   0000000E   0x1841             ADDS     R1,R0,R1
+   \   00000010   0x22FF             MOVS     R2,#+255
+   \   00000012   0x329A             ADDS     R2,R2,#+154      ;; #+409
+   \   00000014   0x5C89             LDRB     R1,[R1, R2]
+   \   00000016   0x2900             CMP      R1,#+0
+   \   00000018   0xD005             BEQ      ??zdpBindResp_0
+    528              doApsAndZdoBinding(&ezModeMem.extAddr);
+   \   0000001A   0x21C4             MOVS     R1,#+196
+   \   0000001C   0x0049             LSLS     R1,R1,#+1        ;; #+392
+   \   0000001E   0x1840             ADDS     R0,R0,R1
+   \   00000020   0x.... 0x....      BL       doApsAndZdoBinding
+   \   00000024   0xBD01             POP      {R0,PC}
+    529            else
+    530              matchHandlingFinished();
+   \                     ??zdpBindResp_0: (+1)
+   \   00000026   0x.... 0x....      BL       matchHandlingFinished
+    531          }
+   \   0000002A   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \   00000000   0x........         DC32     isDeviceInitiator
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_1:
+   \   00000000   0x........         DC32     ezModeMem
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \   00000000   0x........         DC32     zdoPermitJoiningResponse
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \   00000000   0x0000FFFD         DC32     0xfffd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \   00000000   0x........         DC32     ezModeMem+0x1A6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \   00000000   0x0000FFFF         DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16:
+   \   00000000   0x........         DC32     zdpMatchDescResp
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_1:
+   \   00000000   0x........         DC32     ezModeMem
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_2:
+   \   00000000   0x........         DC32     zdpIeeeAddrResp
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_3:
+   \   00000000   0x........         DC32     ezModeMem+0x188
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_4:
+   \   00000000   0x........         DC32     zdpBindResp
+    532          
+    533          // eof ezModeManager.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   bindNextCluster
+         8   -> commissionNextEndpoint
+         8   -> matchBindDevices
+      24   commissionNextEndpoint
+        24   -- Indirect call
+        24   -> bindNextCluster
+        24   -> identifySendUpdateCommissioningState
+        24   -> identifyUpdateCommissioningState
+      48   doApsAndZdoBinding
+        48   -> CS_ReadParameter
+        48   -> ZDO_ZdpReq
+        48   -> doApsBinding
+        48   -> matchHandlingFinished
+        48 __aeabi_uwrite8
+      56   doApsBinding
+        56   -> APS_BindReq
+       8   ezModeIdentifyQueryTimerFired
+         8   -> identifySendIdentifyQuery
+       8   ezModeTimerFired
+         8   -> HAL_StopAppTimer
+      16   identifyQueryResponseCb
+        16   -> HAL_StopAppTimer
+        16   -> commissionNextEndpoint
+        16   -> getDeviceBindRequest
+       8   initEzModeManager
+         8   -> identifySubscribe
+      16   invokeEzMode
+        16   -> ZDO_GetNwkStatus
+        16   -> ZDO_ZdpReq
+        16   -> __aeabi_memclr4
+       0   isEzModeInProgress
+      16   matchBindDevices
+        16   -> ZDO_ZdpReq
+      24   matchHandlingFinished
+        24   -> ZDO_ZdpReq
+        24   -> bindNextCluster
+       0   resetEzModeInProgress
+      16   zdoPermitJoiningResponse
+        16   -- Indirect call
+        16   -> CS_ReadParameter
+        16   -> HAL_StartAppTimer
+        16   -> HAL_StopAppTimer
+        16   -> identifySendIdentifyQuery
+        16   -> idetifyStartIdentifying
+       8   zdpBindResp
+         8   -> doApsAndZdoBinding
+         8   -> matchHandlingFinished
+       8   zdpIeeeAddrResp
+         8   -> bindNextCluster
+         8   -> doApsAndZdoBinding
+         8 __aeabi_uread8
+       8   zdpMatchDescResp
+         8   -> __aeabi_memcpy
+         8   -> bindNextCluster
+         8   -> matchHandlingFinished
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_2
+       4  ??DataTable16_3
+       4  ??DataTable16_4
+      74  bindNextCluster
+      82  commissionNextEndpoint
+     248  doApsAndZdoBinding
+      80  doApsBinding
+      14  ezModeIdentifyQueryTimerFired
+     472  ezModeMem
+          ezModeTimer
+          ezModeIdentifyQueryTimer
+      26  ezModeTimerFired
+      66  identifyQueryResponseCb
+      14  initEzModeManager
+      84  invokeEzMode
+      28  isDeviceInitiator
+          subcriber
+       6  isEzModeInProgress
+     140  matchBindDevices
+     108  matchHandlingFinished
+       8  resetEzModeInProgress
+     108  zdoPermitJoiningResponse
+      44  zdpBindResp
+      36  zdpIeeeAddrResp
+      60  zdpMatchDescResp
+
+ 
+   500 bytes in section .data
+ 1 242 bytes in section .text
+ 
+ 1 242 bytes of CODE memory
+   500 bytes of DATA memory
+
+Errors: none
+Warnings: none

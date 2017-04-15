@@ -1,0 +1,59 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ATSAMR21E18A_OTAU", "ATSAMR21E18A_OTAU.cproj", "{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		Description = Application ZLLDemo
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM.ActiveCfg = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM.Build.0 = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM.ActiveCfg = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM.Build.0 = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM.ActiveCfg = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM.Build.0 = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM.ActiveCfg = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM.Build.0 = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM.ActiveCfg = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM.Build.0 = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM.ActiveCfg = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM.Build.0 = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM.ActiveCfg = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM.Build.0 = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM.ActiveCfg = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM.Build.0 = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM.ActiveCfg = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM.Build.0 = Router_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM.ActiveCfg = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+		{CC6AA9A4-54F0-4B2F-8307-CC205B8DBA8C}.EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM.Build.0 = EndDevice_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

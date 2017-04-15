@@ -1,0 +1,517 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:35
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\lcd.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\lcd.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\lcd.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\lcd.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\lcd.c
+      1          /**************************************************************************//**
+      2            \file lcd.c
+      3          
+      4            \brief
+      5              UG-2832HSWEG04 LCD routines implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              02.06.14 P. Mahendran - Created.
+     17          ******************************************************************************/
+     18          #if BSP_SUPPORT == BOARD_SAMR21_ZLLEK
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <sysTypes.h>
+     24          #include <gpio.h>
+     25          #include <spi.h>
+     26          #include <lcd.h>
+     27          #include <lcdExt.h>
+     28          #include <stdio.h>
+     29          #include <stdarg.h>
+     30          
+     31          /******************************************************************************
+     32                              Definitions section
+     33          ******************************************************************************/
+     34          #define LCD_CMD_COL_ADD_SET_LSB(column)         (0x00 | (column))
+     35          #define LCD_CMD_COL_ADD_SET_MSB(column)         (0x10 | (column))
+     36          #define LCD_CMD_SET_MEMORY_ADDRESSING_MODE      0x20
+     37          #define LCD_CMD_SET_COLUMN_ADDRESS              0x21
+     38          #define LCD_CMD_SET_PAGE_ADDRESS                0x22
+     39          #define LCD_CMD_SET_DISPLAY_START_LINE(line)    (0x40 | (line))
+     40          #define LCD_CMD_SET_CONTRAST_CONTROL_FOR_BANK0  0x81
+     41          #define LCD_CMD_SET_CHARGE_PUMP_SETTING         0x8D
+     42          #define LCD_CMD_SET_SEGMENT_RE_MAP_COL0_SEG0    0xA0
+     43          #define LCD_CMD_SET_SEGMENT_RE_MAP_COL127_SEG0  0xA1
+     44          #define LCD_CMD_ENTIRE_DISPLAY_AND_GDDRAM_ON    0xA4
+     45          #define LCD_CMD_ENTIRE_DISPLAY_ON               0xA5
+     46          #define LCD_CMD_SET_NORMAL_DISPLAY              0xA6
+     47          #define LCD_CMD_SET_INVERSE_DISPLAY             0xA7
+     48          #define LCD_CMD_SET_MULTIPLEX_RATIO             0xA8
+     49          #define LCD_CMD_SET_DISPLAY_ON                  0xAF
+     50          #define LCD_CMD_SET_DISPLAY_OFF                 0xAE
+     51          #define LCD_CMD_SET_PAGE_START_ADDRESS(page)    (0xB0 | (page))
+     52          #define LCD_CMD_SET_COM_OUTPUT_SCAN_UP          0xC0
+     53          #define LCD_CMD_SET_COM_OUTPUT_SCAN_DOWN        0xC8
+     54          #define LCD_CMD_SET_DISPLAY_OFFSET              0xD3
+     55          #define LCD_CMD_SET_DISPLAY_CLOCK_DIVIDE_RATIO  0xD5
+     56          #define LCD_CMD_SET_PRE_CHARGE_PERIOD           0xD9
+     57          #define LCD_CMD_SET_COM_PINS                    0xDA
+     58          #define LCD_CMD_SET_VCOMH_DESELECT_LEVEL        0xDB
+     59          #define LCD_CMD_NOP                             0xE3
+     60          #define LCD_CMD_SCROLL_H_RIGHT                  0x26
+     61          #define LCD_CMD_SCROLL_H_LEFT                   0x27
+     62          #define LCD_CMD_CONTINUOUS_SCROLL_V_AND_H_RIGHT 0x29
+     63          #define LCD_CMD_CONTINUOUS_SCROLL_V_AND_H_LEFT  0x2A
+     64          #define LCD_CMD_DEACTIVATE_SCROLL               0x2E
+     65          #define LCD_CMD_ACTIVATE_SCROLL                 0x2F
+     66          #define LCD_CMD_SET_VERTICAL_SCROLL_AREA        0xA3
+     67          
+     68          #define NUMBER_OF_LCD_BANKS     8
+     69          #define NUMBER_OF_LCD_COLUMNS   128
+     70          
+     71          #define NUMBER_OF_TEXT_LINES    4
+     72          #define NUMBER_OF_TEXT_COLUMNS  21
+     73          
+     74          #define LCD_SPI_CS_CONFIG   PORT_B, 22u, 3u
+     75          #define LCD_CMDSEL_CONFIG   PORT_A, 22u, 3u
+     76          #define LCD_RESET_CONFIG    PORT_A, 23u, 3u
+     77          
+     78          /******************************************************************************
+     79                              Local variables section
+     80          ******************************************************************************/
+     81          static HAL_SpiDescriptor_t lcdSpiDescriptor;
+     82          static uint8_t cursorx, cursory;
+     83          
+     84          static uint8_t PROGMEM_DECLARE(fontdata[]) =
+     85          {
+     86            0x00, 0x00, 0x00, 0x00, 0x00, // (space)    #32
+     87            0x00, 0x00, 0x5F, 0x00, 0x00, // !
+     88            0x00, 0x07, 0x00, 0x07, 0x00, // "
+     89            0x14, 0x7F, 0x14, 0x7F, 0x14, // #
+     90            0x24, 0x2A, 0x7F, 0x2A, 0x12, // $
+     91            0x23, 0x13, 0x08, 0x64, 0x62, // %
+     92            0x36, 0x49, 0x55, 0x22, 0x50, // &
+     93            0x00, 0x05, 0x03, 0x00, 0x00, // '
+     94            0x00, 0x1C, 0x22, 0x41, 0x00, // (          #40
+     95            0x00, 0x41, 0x22, 0x1C, 0x00, // )
+     96            0x08, 0x2A, 0x1C, 0x2A, 0x08, // *
+     97            0x08, 0x08, 0x3E, 0x08, 0x08, // +
+     98            0x00, 0x50, 0x30, 0x00, 0x00, // ,
+     99            0x08, 0x08, 0x08, 0x08, 0x08, // -
+    100            0x00, 0x60, 0x60, 0x00, 0x00, // .
+    101            0x20, 0x10, 0x08, 0x04, 0x02, // /
+    102            0x3E, 0x51, 0x49, 0x45, 0x3E, // 0
+    103            0x00, 0x42, 0x7F, 0x40, 0x00, // 1
+    104            0x42, 0x61, 0x51, 0x49, 0x46, // 2          #50
+    105            0x21, 0x41, 0x45, 0x4B, 0x31, // 3
+    106            0x18, 0x14, 0x12, 0x7F, 0x10, // 4
+    107            0x27, 0x45, 0x45, 0x45, 0x39, // 5
+    108            0x3C, 0x4A, 0x49, 0x49, 0x30, // 6
+    109            0x01, 0x71, 0x09, 0x05, 0x03, // 7
+    110            0x36, 0x49, 0x49, 0x49, 0x36, // 8
+    111            0x06, 0x49, 0x49, 0x29, 0x1E, // 9
+    112            0x00, 0x36, 0x36, 0x00, 0x00, // :
+    113            0x00, 0x56, 0x36, 0x00, 0x00, // ;
+    114            0x00, 0x08, 0x14, 0x22, 0x41, // <          #60
+    115            0x14, 0x14, 0x14, 0x14, 0x14, // =
+    116            0x41, 0x22, 0x14, 0x08, 0x00, // >
+    117            0x02, 0x01, 0x51, 0x09, 0x06, // ?
+    118            0x32, 0x49, 0x79, 0x41, 0x3E, // @
+    119            0x7E, 0x11, 0x11, 0x11, 0x7E, // A
+    120            0x7F, 0x49, 0x49, 0x49, 0x36, // B
+    121            0x3E, 0x41, 0x41, 0x41, 0x22, // C
+    122            0x7F, 0x41, 0x41, 0x22, 0x1C, // D
+    123            0x7F, 0x49, 0x49, 0x49, 0x41, // E
+    124            0x7F, 0x09, 0x09, 0x01, 0x01, // F          #70
+    125            0x3E, 0x41, 0x41, 0x51, 0x32, // G
+    126            0x7F, 0x08, 0x08, 0x08, 0x7F, // H
+    127            0x00, 0x41, 0x7F, 0x41, 0x00, // I
+    128            0x20, 0x40, 0x41, 0x3F, 0x01, // J
+    129            0x7F, 0x08, 0x14, 0x22, 0x41, // K
+    130            0x7F, 0x40, 0x40, 0x40, 0x40, // L
+    131            0x7F, 0x02, 0x04, 0x02, 0x7F, // M
+    132            0x7F, 0x04, 0x08, 0x10, 0x7F, // N
+    133            0x3E, 0x41, 0x41, 0x41, 0x3E, // O
+    134            0x7F, 0x09, 0x09, 0x09, 0x06, // P          #80
+    135            0x3E, 0x41, 0x51, 0x21, 0x5E, // Q
+    136            0x7F, 0x09, 0x19, 0x29, 0x46, // R
+    137            0x46, 0x49, 0x49, 0x49, 0x31, // S
+    138            0x01, 0x01, 0x7F, 0x01, 0x01, // T
+    139            0x3F, 0x40, 0x40, 0x40, 0x3F, // U
+    140            0x1F, 0x20, 0x40, 0x20, 0x1F, // V
+    141            0x7F, 0x20, 0x18, 0x20, 0x7F, // W
+    142            0x63, 0x14, 0x08, 0x14, 0x63, // X
+    143            0x03, 0x04, 0x78, 0x04, 0x03, // Y
+    144            0x61, 0x51, 0x49, 0x45, 0x43, // Z          #90
+    145            0x00, 0x00, 0x7F, 0x41, 0x41, // [
+    146            0x02, 0x04, 0x08, 0x10, 0x20, // "\"
+    147            0x41, 0x41, 0x7F, 0x00, 0x00, // ]
+    148            0x04, 0x02, 0x01, 0x02, 0x04, // ^
+    149            0x40, 0x40, 0x40, 0x40, 0x40, // _
+    150            0x00, 0x01, 0x02, 0x04, 0x00, // `
+    151            0x20, 0x54, 0x54, 0x54, 0x78, // a
+    152            0x7F, 0x48, 0x44, 0x44, 0x38, // b
+    153            0x38, 0x44, 0x44, 0x44, 0x20, // c
+    154            0x38, 0x44, 0x44, 0x48, 0x7F, // d         #100
+    155            0x38, 0x54, 0x54, 0x54, 0x18, // e
+    156            0x08, 0x7E, 0x09, 0x01, 0x02, // f
+    157            0x08, 0x14, 0x54, 0x54, 0x3C, // g
+    158            0x7F, 0x08, 0x04, 0x04, 0x78, // h
+    159            0x00, 0x44, 0x7D, 0x40, 0x00, // i
+    160            0x20, 0x40, 0x44, 0x3D, 0x00, // j
+    161            0x00, 0x7F, 0x10, 0x28, 0x44, // k
+    162            0x00, 0x41, 0x7F, 0x40, 0x00, // l
+    163            0x7C, 0x04, 0x18, 0x04, 0x78, // m
+    164            0x7C, 0x08, 0x04, 0x04, 0x78, // n         #110
+    165            0x38, 0x44, 0x44, 0x44, 0x38, // o
+    166            0x7C, 0x14, 0x14, 0x14, 0x08, // p
+    167            0x08, 0x14, 0x14, 0x18, 0x7C, // q
+    168            0x7C, 0x08, 0x04, 0x04, 0x08, // r
+    169            0x48, 0x54, 0x54, 0x54, 0x20, // s
+    170            0x04, 0x3F, 0x44, 0x40, 0x20, // t
+    171            0x3C, 0x40, 0x40, 0x20, 0x7C, // u
+    172            0x1C, 0x20, 0x40, 0x20, 0x1C, // v
+    173            0x3C, 0x40, 0x30, 0x40, 0x3C, // w
+    174            0x44, 0x28, 0x10, 0x28, 0x44, // x         #120
+    175            0x0C, 0x50, 0x50, 0x50, 0x3C, // y
+    176            0x44, 0x64, 0x54, 0x4C, 0x44, // z
+    177            0x00, 0x08, 0x36, 0x41, 0x00, // {
+    178            0x00, 0x00, 0x7F, 0x00, 0x00, // |
+    179            0x00, 0x41, 0x36, 0x08, 0x00, // }
+    180            0x02, 0x01, 0x02, 0x04, 0x02, // ~
+    181            0x78, 0x44, 0x42, 0x44, 0x78  // DEL
+    182          };
+    183          
+    184          /******************************************************************************
+    185                              Prototypes section
+    186          ******************************************************************************/
+    187          void HAL_Delay(uint8_t us);
+    188          
+    189          /******************************************************************************
+    190                              Implementations section
+    191          ******************************************************************************/
+    192          /**************************************************************************//**
+    193          \brief Send command to the LCD
+    194          ******************************************************************************/
+    195          static void lcdCommand(uint8_t command)
+    196          {
+    197            PinConfig_t lcdSpiCSPin = {LCD_SPI_CS_CONFIG};
+    198            PinConfig_t lcdCmdSelPin = {LCD_CMDSEL_CONFIG};
+    199            GPIO_clr(&lcdSpiCSPin);
+    200            GPIO_clr(&lcdCmdSelPin);
+    201            HAL_WriteSpi(&lcdSpiDescriptor,&command, 1);
+    202            GPIO_set(&lcdSpiCSPin);
+    203          }
+    204          /**************************************************************************//**
+    205          \brief Send data to the LCD
+    206          ******************************************************************************/
+    207          static void lcdData(uint8_t data)
+    208          {
+    209            PinConfig_t lcdSpiCSPin = {LCD_SPI_CS_CONFIG};
+    210            PinConfig_t lcdCmdSelPin = {LCD_CMDSEL_CONFIG};
+    211            GPIO_clr(&lcdSpiCSPin);
+    212            GPIO_set(&lcdCmdSelPin);
+    213            HAL_WriteSpi(&lcdSpiDescriptor,&data, 1);
+    214            GPIO_set(&lcdSpiCSPin);
+    215          }
+    216          
+    217          /**************************************************************************//**
+    218          \brief Print a character on the LCD at current position
+    219          ******************************************************************************/
+    220          static void lcdChar(uint8_t chr)
+    221          {
+    222            uint8_t font[5];
+    223            uint16_t offset;
+    224            uint8_t column = (cursorx)*6; // complex formula due to all the mirroring done by the LCD
+    225          
+    226            lcdCommand(LCD_CMD_COL_ADD_SET_LSB((column & 0x0f)));
+    227            lcdCommand(LCD_CMD_COL_ADD_SET_MSB((column >> 4) & 0x0F));
+    228            lcdCommand(LCD_CMD_SET_PAGE_START_ADDRESS((cursory & 0x03)));
+    229          
+    230            if (chr < 32 || chr > 127)
+    231              chr = '.';
+    232          
+    233            offset = (chr-32) * 5;
+    234            memcpy_P(font, &fontdata[offset], sizeof(font));
+    235          
+    236            for (uint8_t i = 0; i < 5; i++)
+    237              lcdData(font[i]);
+    238          
+    239            lcdData(0); // space between characters
+    240          
+    241            cursorx++;
+    242            if (cursorx == NUMBER_OF_TEXT_COLUMNS)
+    243            {
+    244              cursorx = 0;
+    245              cursory++;
+    246            }
+    247          
+    248            if (cursory > (NUMBER_OF_TEXT_COLUMNS-1))
+    249              cursory = 0;
+    250          }
+    251          
+    252          /**************************************************************************//**
+    253          \brief Clear screen
+    254          ******************************************************************************/
+    255          void BSP_LcdCls(void)
+    256          {
+    257            for (uint8_t i = 0; i < NUMBER_OF_LCD_BANKS; i++)
+    258            {
+    259              lcdCommand(LCD_CMD_COL_ADD_SET_LSB(0));
+    260              lcdCommand(LCD_CMD_COL_ADD_SET_MSB(0));
+    261              lcdCommand(LCD_CMD_SET_PAGE_START_ADDRESS(i));
+    262          
+    263              for (uint8_t j = 0; j < NUMBER_OF_LCD_COLUMNS; j++)
+    264                lcdData(0x00);
+    265            }
+    266          }
+    267          /**************************************************************************//**
+    268          \brief Fill the LCD screen (using internal test command)
+    269          ******************************************************************************/
+    270          void BSP_LcdFill(bool fill)
+    271          {
+    272            lcdCommand(LCD_CMD_SET_NORMAL_DISPLAY | (fill ? 1 : 0));
+    273          }
+    274          
+    275          /**************************************************************************//**
+    276          \brief Print a formatted string on the LCD
+    277          ******************************************************************************/
+    278          void BSP_LcdPrint(uint8_t x, uint8_t y, const char *format, ...)
+    279          {
+    280            uint8_t str[100];
+    281            char *ptr = (char *)str;
+    282            uint8_t len;
+    283            va_list ap;
+    284          
+    285            cursorx = x;
+    286            cursory = y;
+    287          
+    288            va_start(ap, format);
+    289            len = vsnprintf(ptr, 100, format, ap);
+    290            va_end(ap);
+    291            while (len--)
+    292              lcdChar(*ptr++);
+    293          }
+    294          
+    295          /**************************************************************************//**
+    296          \brief Initialize the LCD
+    297          ******************************************************************************/
+    298          void BSP_LcdInit(void)
+    299          {
+    300            PinConfig_t lcdResetPin = {LCD_RESET_CONFIG};
+    301            PinConfig_t lcdCmdSelPin = {LCD_CMDSEL_CONFIG};
+    302          
+    303            /* Initialize LCD Pins Other than SPI connected Pins */
+    304            GPIO_make_out(&lcdResetPin);
+    305            GPIO_make_out(&lcdCmdSelPin);
+    306          
+    307            /* Initialize SPI Interface */
+    308            lcdSpiDescriptor.tty       = SPI_CHANNEL_1;
+    309            lcdSpiDescriptor.baudRate  = SPI_CLOCK_RATE_1000;
+    310            lcdSpiDescriptor.clockMode = SPI_CLOCK_MODE0;
+    311            lcdSpiDescriptor.dataOrder = SPI_DATA_MSB_FIRST;
+    312            lcdSpiDescriptor.callback  = NULL;
+    313          
+    314            if (-1 == HAL_OpenSpi(&lcdSpiDescriptor))
+    315            {
+    316              return;
+    317            }
+    318          
+    319            /* Reset LCD before Initialization*/
+    320            GPIO_clr(&lcdResetPin);
+    321            HAL_Delay(100);
+    322            GPIO_set(&lcdResetPin);
+    323          
+    324            /* Multiplex ratio 1/32 Duty (0x0F~0x3F) */
+    325            lcdCommand(LCD_CMD_SET_MULTIPLEX_RATIO);
+    326            lcdCommand(0x1F);
+    327          
+    328            /* Set Display Offset */
+    329            lcdCommand(LCD_CMD_SET_DISPLAY_OFFSET);
+    330            lcdCommand(0x00);
+    331          
+    332            /* Set Display Start Line (0x00~0x3F) */
+    333            lcdCommand(LCD_CMD_SET_DISPLAY_START_LINE(0x00));
+    334          
+    335            /* Set Column Address 0 Mapped to SEG0 */
+    336            lcdCommand(LCD_CMD_SET_SEGMENT_RE_MAP_COL127_SEG0);
+    337          
+    338            /* Set COM/Row Scan Scan from COM63 to 0 */
+    339            lcdCommand(LCD_CMD_SET_COM_OUTPUT_SCAN_DOWN);
+    340          
+    341            /* Set COM Pins hardware configuration */
+    342            lcdCommand(LCD_CMD_SET_COM_PINS);
+    343            lcdCommand(0x02);
+    344          
+    345            /* Set Contrast Control */
+    346            lcdCommand(LCD_CMD_SET_CONTRAST_CONTROL_FOR_BANK0);
+    347            lcdCommand(0x7F);
+    348          
+    349            /* Disable Entire display On */
+    350            lcdCommand(LCD_CMD_ENTIRE_DISPLAY_AND_GDDRAM_ON);
+    351          
+    352            /* Set Normal Display */
+    353            lcdCommand(LCD_CMD_SET_NORMAL_DISPLAY);
+    354          
+    355            /* Set Display Oscillator Frequency/Clock Divide Ratio */
+    356            lcdCommand(LCD_CMD_SET_DISPLAY_CLOCK_DIVIDE_RATIO);
+    357            lcdCommand(0x80);
+    358          
+    359            /* Enable charge pump regulator */
+    360            lcdCommand(LCD_CMD_SET_CHARGE_PUMP_SETTING);
+    361            lcdCommand(0x14);
+    362          
+    363            /* Set Display On */
+    364            lcdCommand(LCD_CMD_SET_DISPLAY_ON);
+    365          
+    366            BSP_LcdCls();
+    367          }
+    368          
+    369          #endif // BSP_SUPPORT == BOARD_SAMR21_ZLLEK
+    370          // eof lcd.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

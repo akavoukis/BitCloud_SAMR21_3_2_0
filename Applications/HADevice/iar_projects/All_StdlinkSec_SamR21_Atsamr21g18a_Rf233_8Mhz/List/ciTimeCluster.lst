@@ -1,0 +1,579 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:11
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciTimeCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciTimeCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciTimeCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciTimeCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciTimeCluster.c
+      1          /**************************************************************************//**
+      2            \file ciTimeCluster.c
+      3          
+      4            \brief
+      5              Combined Interface time cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              16/10/2014 Unithra.C - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciTimeCluster.h>
+     24          #include <uartManager.h>
+     25          #include <commandManager.h>
+     26          #include <haClusters.h>
+     27          #include <zclAttributes.h>
+     28          /******************************************************************************
+     29                              Defines section
+     30          ******************************************************************************/
+     31          #define ONE_SEC_TIME                     1000L
+     32          #define UTCTIME_START_YEAR               2000L
+     33          #define NO_OF_SECONDS_PER_MIN            60L
+     34          #define NO_OF_SECONDS_PER_HOUR           3600L
+     35          #define NO_OF_SECONDS_PER_DAY            (NO_OF_SECONDS_PER_HOUR*24)
+     36          #define NO_OF_SECONDS_PER_YEAR           (NO_OF_SECONDS_PER_DAY*365)
+     37          #define NO_OF_SECONDS_PER_LEAP_YEAR      (NO_OF_SECONDS_PER_DAY*366)
+     38          #define NO_OF_LEAP_PER_HUNDRED_YRS       24L
+     39          // UTC + 5:30
+     40          #define TIME_ZONE_INDIA                  ((NO_OF_SECONDS_PER_HOUR*5) + (NO_OF_SECONDS_PER_MIN*30))
+     41          #define TIME_STATUS_ATTR_MASK            0x02
+     42          #define INIT_UTC_TIME                    { .date = 12,\
+     43                                                     .month = 12,\
+     44                                                     .year = 2012,\
+     45                                                     .hour = 00,\
+     46                                                     .minute = 00,\
+     47                                                     .seconds = 00\
+     48                                                   }
+     49          /******************************************************************************
+     50                             Prototypes section
+     51          ******************************************************************************/
+     52          static void timeUpdateClockTime(void);
+     53          static bool timeIsLeapYear(uint16_t year);
+     54          static uint32_t timeGetStandardTime(void);
+     55          static void timeUpdateLocalTimeForDst(void);
+     56          static void timeClusterEventListener(SYS_EventId_t eventId, SYS_EventData_t data);
+     57          static void ciTimeAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event);
+     58          /******************************************************************************
+     59                              Global variables
+     60          ******************************************************************************/
+     61          ZCL_TimeClusterServerAttributes_t ciTimeClusterServerAttributes =
+     62          {
+     63            ZCL_DEFINE_TIME_CLUSTER_SERVER_ATTRIBUTES()
+     64          };
+     65          static SYS_EventReceiver_t ciTimeEventReceiver = {.func = timeClusterEventListener};
+     66          static uint8_t dstUpdatedInLocalTime = 0;
+     67          /******************************************************************************
+     68                              Local variables
+     69          ******************************************************************************/
+     70          static HAL_AppTimer_t clockTimeTimer;
+     71          /******************************************************************************
+     72                              Implementation section
+     73          ******************************************************************************/
+     74          /**************************************************************************//**
+     75          \brief Initializes Time cluster
+     76          ******************************************************************************/
+     77          void timeClusterInit(void)
+     78          {
+     79            dateTime_t dateTimeInit = INIT_UTC_TIME;
+     80            
+     81            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, TIME_CLUSTER_ID, ZCL_CLUSTER_SIDE_SERVER);
+     82          
+     83            if (cluster)
+     84            {
+     85              cluster->ZCL_AttributeEventInd = ciTimeAttrEventInd;
+     86            }
+     87          
+     88            ciTimeClusterServerAttributes.time.value = CCPU_TO_LE16(timeCalculateUTCTime(&dateTimeInit));
+     89            ciTimeClusterServerAttributes.timeStatus.value.master = TIME_SERVER_MASTER;
+     90            ciTimeClusterServerAttributes.timeStatus.value.masterZoneDst = TIME_SERVER_MASTER_ZONE_DST;
+     91            ciTimeClusterServerAttributes.timeStatus.value.synchronized = 0;
+     92            ciTimeClusterServerAttributes.timeStatus.value.superseding = 0;
+     93            ciTimeClusterServerAttributes.timeStatus.value.reserved = 0;
+     94            // Since the master bit is set change the time attribute as READONLY.
+     95            ciTimeClusterServerAttributes.time.properties |= ZCL_READONLY_ATTRIBUTE;
+     96            
+     97            // Since the masterZoneDst bit is set change zone and Dst attributes as READONLY.
+     98            ciTimeClusterServerAttributes.timeZone.properties |= ZCL_READONLY_ATTRIBUTE;
+     99            ciTimeClusterServerAttributes.dstStart.properties |= ZCL_READONLY_ATTRIBUTE;
+    100            ciTimeClusterServerAttributes.dstEnd.properties |= ZCL_READONLY_ATTRIBUTE;
+    101            ciTimeClusterServerAttributes.dstShift.properties |= ZCL_READONLY_ATTRIBUTE;
+    102          
+    103            ciTimeClusterServerAttributes.timeZone.value = CCPU_TO_LE16(TIME_ZONE_INDIA);
+    104            ciTimeClusterServerAttributes.dstStart.value = CCPU_TO_LE16(ZCL_TIME_CLUSTER_DEF_INVALID_VALUE);
+    105            ciTimeClusterServerAttributes.dstEnd.value = CCPU_TO_LE16(ZCL_TIME_CLUSTER_DEF_INVALID_VALUE);
+    106            ciTimeClusterServerAttributes.dstShift.value = CCPU_TO_LE16(ZCL_TIME_CLUSTER_DEF_ZERO_VALUE);
+    107            ciTimeClusterServerAttributes.standardTime.value = CCPU_TO_LE16(timeGetStandardTime());
+    108            // no day light saving hence local time is standard time
+    109            ciTimeClusterServerAttributes.localTime.value = CCPU_TO_LE16(timeGetStandardTime());
+    110            // no update required for local time
+    111            dstUpdatedInLocalTime = true;
+    112            ciTimeClusterServerAttributes.lastSetTime.value = ciTimeClusterServerAttributes.time.value;
+    113            ciTimeClusterServerAttributes.validUntilTime.value = CCPU_TO_LE16(ZCL_TIME_CLUSTER_DEF_INVALID_VALUE);
+    114          
+    115            //start a timer to update the time value
+    116            // if a RTC is used, this shall be removed
+    117            clockTimeTimer.interval = ONE_SEC_TIME;
+    118            clockTimeTimer.mode = TIMER_REPEAT_MODE;
+    119            clockTimeTimer.callback = timeUpdateClockTime;
+    120            HAL_StartAppTimer(&clockTimeTimer);
+    121          
+    122            SYS_SubscribeToEvent(BC_ZCL_EVENT_ACTION_REQUEST, &ciTimeEventReceiver);
+    123          }
+    124          
+    125          /**************************************************************************//**
+    126          \brief Update time, standard and local time
+    127          
+    128          \param NA
+    129          ******************************************************************************/
+    130          static void timeUpdateClockTime(void)
+    131          {
+    132            ciTimeClusterServerAttributes.time.value += 1;
+    133            ciTimeClusterServerAttributes.standardTime.value += 1;
+    134          
+    135            if(dstUpdatedInLocalTime)
+    136            {
+    137              ciTimeClusterServerAttributes.localTime.value += 1;
+    138              if(ciTimeClusterServerAttributes.time.value >= ciTimeClusterServerAttributes.dstEnd.value)
+    139              {
+    140                ciTimeClusterServerAttributes.localTime.value = timeGetStandardTime();
+    141              }
+    142            }
+    143            else
+    144            {
+    145              timeUpdateLocalTimeForDst();
+    146            }
+    147          }
+    148          /**************************************************************************//**
+    149          \brief find whether an year is leap year or not 
+    150          
+    151          \param year
+    152          ******************************************************************************/
+    153          static bool timeIsLeapYear(uint16_t year)
+    154          {
+    155            if (year%400 == 0)
+    156              return true;
+    157            else if (year%100 == 0)
+    158              return false;
+    159            else if (year%4 == 0)
+    160              return true;
+    161            else
+    162              return false;
+    163          }
+    164          /**************************************************************************//**
+    165          \brief Number of leap years from 2000 till given year
+    166          
+    167          \param start year, end year
+    168          ******************************************************************************/
+    169          static uint8_t timeCountNoOfLeapYears(uint16_t currYear)
+    170          {
+    171            // UTCTIME_START_YEAR is a leap year
+    172            uint16_t noOfLeapYears = 0x0001;
+    173            uint16_t noOfYears;
+    174            uint16_t temp;
+    175          
+    176            if(currYear < UTCTIME_START_YEAR)
+    177              return 0;
+    178          
+    179            noOfYears = currYear - UTCTIME_START_YEAR;
+    180            if(noOfYears >= 100)
+    181            {
+    182              temp = noOfYears/100;
+    183              noOfLeapYears += temp * NO_OF_LEAP_PER_HUNDRED_YRS;
+    184            }
+    185            if(noOfYears >= 400)
+    186            {
+    187              temp = noOfYears/400;
+    188              // Every 100th year is not leap year unless it is divided by 400
+    189              // hence for every 400 years there are 3 years divisible by 100 but not leap years
+    190              noOfLeapYears += temp;
+    191            }
+    192            temp = noOfYears%100;
+    193            noOfLeapYears += temp/4;
+    194          
+    195            return noOfLeapYears;
+    196          }
+    197          /**************************************************************************//**
+    198          \brief find UTCTime - the no of seconds elapsed since  
+    199                                0hrs 0mins 0secs of 1st January,2000
+    200          \param pointer to dateTime structure
+    201          ******************************************************************************/
+    202          uint32_t timeCalculateUTCTime(dateTime_t* dateTime)
+    203          {
+    204            uint16_t i = 0;
+    205            uint32_t utcTime = 0;
+    206            //UTCTime data type mentioned in cluster specification starts by 2000
+    207            if(dateTime->year < UTCTIME_START_YEAR)
+    208              return ZCL_TIME_CLUSTER_DEF_ZERO_VALUE;
+    209             
+    210            utcTime = (NO_OF_SECONDS_PER_YEAR * (dateTime->year - UTCTIME_START_YEAR));
+    211            utcTime += NO_OF_SECONDS_PER_DAY * timeCountNoOfLeapYears(dateTime->year - 1);
+    212            for(i = MONTH_JANUARY; i< dateTime->month; i++)
+    213            {
+    214              switch(i)
+    215              {
+    216                case MONTH_JANUARY:
+    217                case MONTH_MARCH:
+    218                case MONTH_MAY:
+    219                case MONTH_JULY:
+    220                case MONTH_AUGUST:
+    221                case MONTH_OCTOBER:
+    222                case MONTH_DECEMBER:
+    223                  utcTime += NO_OF_SECONDS_PER_DAY * 31;
+    224                  break;
+    225                case MONTH_APRIL:
+    226                case MONTH_JUNE:
+    227                case MONTH_SEPTEMBER:
+    228                case MONTH_NOVEMBER:
+    229                  utcTime += NO_OF_SECONDS_PER_DAY * 30;
+    230                  break;
+    231                case MONTH_FEBRUARY:
+    232                  {
+    233                    if(timeIsLeapYear(dateTime->year))
+    234                      utcTime += NO_OF_SECONDS_PER_DAY * 29;
+    235                    else
+    236                      utcTime += NO_OF_SECONDS_PER_DAY * 28;
+    237                    break;
+    238                  }
+    239                default:
+    240                  break;
+    241               }
+    242             }
+    243            utcTime += ((dateTime->date - 1) * NO_OF_SECONDS_PER_DAY) + (dateTime->hour * NO_OF_SECONDS_PER_HOUR) +
+    244                       (dateTime->minute * NO_OF_SECONDS_PER_MIN) + dateTime->seconds;
+    245            return utcTime;
+    246          }
+    247          /**************************************************************************//**
+    248          \brief to get the standard time considering time and timeZone
+    249          \param none
+    250          ******************************************************************************/
+    251          static inline uint32_t timeGetStandardTime(void)
+    252          {
+    253            return (ciTimeClusterServerAttributes.time.value + ciTimeClusterServerAttributes.timeZone.value);
+    254          }
+    255          /**************************************************************************//**
+    256          \brief to get the local time considering time, timeZone and DST
+    257          \param none
+    258          ******************************************************************************/
+    259          static void timeUpdateLocalTimeForDst(void)
+    260          {
+    261            if(dstUpdatedInLocalTime)
+    262              return;
+    263            
+    264            if(ciTimeClusterServerAttributes.time.value >= ciTimeClusterServerAttributes.dstStart.value &&
+    265                 ciTimeClusterServerAttributes.time.value <= ciTimeClusterServerAttributes.dstEnd.value)
+    266            {
+    267               // time is in the day light saving period local time needs to be shifted
+    268               ciTimeClusterServerAttributes.localTime.value = ciTimeClusterServerAttributes.dstShift.value +
+    269                                                               timeGetStandardTime();
+    270               dstUpdatedInLocalTime = true;
+    271            }
+    272            else
+    273               ciTimeClusterServerAttributes.localTime.value = timeGetStandardTime();
+    274          }
+    275          /**************************************************************************//**
+    276          \brief to read the UTCTime
+    277          \param none
+    278          ******************************************************************************/
+    279          uint32_t timeReadTimeAttribute(void)
+    280          {
+    281            return ciTimeClusterServerAttributes.time.value;
+    282          }
+    283          /**************************************************************************//**
+    284          \brief set the UTCTime
+    285          \param date and time
+    286          ******************************************************************************/
+    287          void timeSetTimeAttribute(dateTime_t setDateTime)
+    288          {
+    289            ciTimeClusterServerAttributes.time.value = timeCalculateUTCTime(&setDateTime);
+    290            // store the current time in last set time
+    291            ciTimeClusterServerAttributes.lastSetTime.value = ciTimeClusterServerAttributes.time.value;
+    292            ciTimeClusterServerAttributes.standardTime.value = timeGetStandardTime();
+    293            dstUpdatedInLocalTime = false;
+    294            // local time
+    295            timeUpdateLocalTimeForDst();
+    296          }
+    297          /**************************************************************************//**
+    298          \brief  set the time status attribute bits
+    299          \param master - true if the server is the master
+    300                 synchronized - true if the time is synchronized with the network
+    301                 masterZoneDST - true if the server is the master for timeZone and DST
+    302                 Superseding - true if the server shall be choosen as best among other servers
+    303          ******************************************************************************/
+    304          void timeSetTimeStatus(bool master, bool synchronized, bool masterZoneDst, bool superseding)
+    305          {
+    306            ciTimeClusterServerAttributes.timeStatus.value.master = master;
+    307            // Since the master bit is set change time attribute as READONLY.
+    308            if(master == true)
+    309            {
+    310              ciTimeClusterServerAttributes.timeStatus.value.synchronized = false;
+    311              ciTimeClusterServerAttributes.time.properties |= ZCL_READONLY_ATTRIBUTE;
+    312            }
+    313            else
+    314            {
+    315              ciTimeClusterServerAttributes.time.properties &= ~ZCL_READONLY_ATTRIBUTE; 
+    316              ciTimeClusterServerAttributes.timeStatus.value.synchronized = synchronized;
+    317            }
+    318            
+    319            ciTimeClusterServerAttributes.timeStatus.value.masterZoneDst = masterZoneDst;
+    320            // Since the masterZoneDst bit is set change zone and Dst attributes as READONLY.
+    321            if(masterZoneDst == true)
+    322            {
+    323              ciTimeClusterServerAttributes.dstStart.properties |= ZCL_READONLY_ATTRIBUTE;
+    324              ciTimeClusterServerAttributes.dstEnd.properties |= ZCL_READONLY_ATTRIBUTE;
+    325              ciTimeClusterServerAttributes.dstShift.properties |= ZCL_READONLY_ATTRIBUTE; 
+    326            }
+    327            else
+    328            {
+    329              ciTimeClusterServerAttributes.dstStart.properties &= ~ZCL_READONLY_ATTRIBUTE;
+    330              ciTimeClusterServerAttributes.dstEnd.properties &= ~ZCL_READONLY_ATTRIBUTE;
+    331              ciTimeClusterServerAttributes.dstShift.properties &= ~ZCL_READONLY_ATTRIBUTE;
+    332            }
+    333            ciTimeClusterServerAttributes.timeStatus.value.superseding = superseding;  
+    334          }
+    335          /**************************************************************************//**
+    336          \brief set the time zone and DST attributes
+    337          \param timeZone, dstStart, dstEnd and dstShift in seconds
+    338          ******************************************************************************/
+    339          void timeSetTimezoneAndDSTAttributes(int32_t timeZone, uint32_t dstStart, uint32_t dstEnd, int32_t dstShift)
+    340          {
+    341            ciTimeClusterServerAttributes.timeZone.value = timeZone;
+    342            ciTimeClusterServerAttributes.dstStart.value = dstStart;
+    343            ciTimeClusterServerAttributes.dstEnd.value   = dstEnd;
+    344            ciTimeClusterServerAttributes.dstShift.value = dstShift;
+    345          
+    346            if(ciTimeClusterServerAttributes.dstStart.value == ZCL_TIME_CLUSTER_DEF_INVALID_VALUE ||
+    347             ciTimeClusterServerAttributes.dstEnd.value == ZCL_TIME_CLUSTER_DEF_INVALID_VALUE ||
+    348             ciTimeClusterServerAttributes.dstShift.value == ZCL_TIME_CLUSTER_DEF_ZERO_VALUE )
+    349            {
+    350              dstUpdatedInLocalTime = true;
+    351            }
+    352            else
+    353            {
+    354              dstUpdatedInLocalTime = false;
+    355            }
+    356          }
+    357          /**************************************************************************//**
+    358          \brief Attribute Event indication handler(to indicate when attr values have
+    359                  read or written)
+    360          
+    361          \param[in] addressing - pointer to addressing information;
+    362          \param[in] reportLength - data payload length;
+    363          \param[in] reportPayload - data pointer
+    364          ******************************************************************************/
+    365          static void ciTimeAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event)
+    366          {
+    367            if(attributeId == ZCL_TIME_CLUSTER_SERVER_TIME_ATTRIBUTE_ID && event == ZCL_WRITE_ATTRIBUTE_EVENT)
+    368            {
+    369              appSnprintf("Time updated by client\r\n");
+    370          
+    371              ciTimeClusterServerAttributes.lastSetTime.value = ciTimeClusterServerAttributes.time.value;
+    372              ciTimeClusterServerAttributes.standardTime.value = timeGetStandardTime();
+    373              dstUpdatedInLocalTime = false;
+    374              // local time
+    375              timeUpdateLocalTimeForDst();
+    376              appSnprintf("Updated standard and local time\r\n"); 
+    377            }
+    378            (void)addressing;
+    379          }
+    380          /**************************************************************************//**
+    381            \brief  ZCL action request event handler, 
+    382                    handles the ZCL_ACTION_WRITE_ATTR_REQUEST for attribute specific validation
+    383          
+    384            \param[in] ev - must be BC_ZCL_EVENT_ACTION_REQUEST.
+    385            \param[in] data - this field must contain pointer to the BcZCLActionReq_t structure,
+    386          
+    387            \return None.
+    388           ******************************************************************************/
+    389          static void timeClusterEventListener(SYS_EventId_t eventId, SYS_EventData_t data)
+    390          {
+    391            BcZCLActionReq_t *const actionReq = (BcZCLActionReq_t*)data;
+    392            int16_t requestedValue = 0;
+    393            if (BC_ZCL_EVENT_ACTION_REQUEST == eventId && ZCL_ACTION_WRITE_ATTR_REQUEST == actionReq->action)
+    394            {
+    395               ZCLActionWriteAttrReq_t *const zclWriteAttrReq = (ZCLActionWriteAttrReq_t*)actionReq->context;
+    396               if((TIME_CLUSTER_ID != zclWriteAttrReq->clusterId) || 
+    397                        (ZCL_CLUSTER_SIDE_SERVER != zclWriteAttrReq->clusterSide))
+    398               {
+    399                 return;
+    400               }
+    401               actionReq->denied = 0U;
+    402               switch(zclWriteAttrReq->attrId)
+    403               {
+    404                 case ZCL_TIME_CLUSTER_SERVER_TIME_ATTRIBUTE_ID:
+    405                 {
+    406                   if(ciTimeClusterServerAttributes.timeStatus.value.master == true ||
+    407                      ciTimeClusterServerAttributes.timeStatus.value.superseding == true)
+    408                     actionReq->denied = 1U;
+    409                 }
+    410                   break;
+    411                 case ZCL_TIME_CLUSTER_SERVER_TIME_STATUS_ATTRIBUTE_ID:
+    412                 { 
+    413                   requestedValue = *((int8_t*)(zclWriteAttrReq->attrValue));
+    414                   //Allow to write only the synchronized bit if the master bit is 0
+    415                   if(!ciTimeClusterServerAttributes.timeStatus.value.master && 
+    416                      (requestedValue == 0x00 || requestedValue == 0x02))
+    417                   {
+    418                     *((int8_t*)(zclWriteAttrReq->attrValue)) |= ciTimeClusterServerAttributes.timeStatus.value.masterZoneDst |
+    419                                                                 ciTimeClusterServerAttributes.timeStatus.value.superseding;
+    420                   }
+    421                   else
+    422                     actionReq->denied = 1U;
+    423                 }
+    424                   break;
+    425               default:
+    426                   break;
+    427                }
+    428              } 
+    429          }
+    430          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    431          
+    432          // eof ciTimeCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

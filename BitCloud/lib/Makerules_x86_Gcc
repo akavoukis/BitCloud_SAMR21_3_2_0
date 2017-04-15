@@ -1,0 +1,35 @@
+#----------------------------------------------
+#HAL makerules - should be included into components Makerules
+#----------------------------------------------
+
+#-Compiler type definition---------------------
+COMPILER_TYPE = GCC
+COMPILER_AND_MICRO_TYPE = GCC_X86
+#-Tools definitions----------------------------
+AS      = as
+LD      = ld
+CC      = gcc
+CPP     = g++
+AR      = ar
+NM      = nm
+STRIP   = strip
+OBJCOPY = objcopy
+OBJDUMP = objdump
+SIZE    = size
+
+#-Compiler flags-------------------------------
+CFLAGS = -Os -std=gnu99 -c -g -Wall -W -fshort-enums -DX86 -DPLATFORM_PC -DNONE_OS -D_RF_TX_RX_INDICATOR_ -D_UART_0_HW_CONTROL_ -D_SYS_LOG_ON_ -D_HAL_LOG_ON_ -D_MAC_LOG_ON_ -D_NWK_LOG_ON_ -D_APS_LOG_ON_ -D_ZDO_LOG_ON_ -D_SSP_TC_LOG_ON_ -D_ZSE_LOG_ON_ -D_APL_LOG_ON_ -D_HAL_LOG_INTERFACE_UART0_ -D_SYS_ASSERT_ON_ -D_HAL_ASSERT_INTERFACE_DBG_PORT_
+AR_KEYS = cr
+
+#-Thumb mode flags-----------------------------
+#ARM_MODE_THUMBS_CFLAGS = -mthumb
+#ARM_MODE_ARM_CFLAGS    = -marm
+
+#-Platform definitions-------------------------
+HAL   = X86
+PLATFORM = PLATFORM_PC
+
+#-Objects to be linked with app----------------
+#PLATFORM_SPECIFIC_OBJECTS  =  /FirmwareBootGcc.o
+
+SE_PATH      = $(COMPONENTS_PATH)/./SystemEnvironment

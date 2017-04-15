@@ -1,0 +1,704 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:18
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ConfigServer\src\csPersistentMem.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ConfigServer\src\csPersistentMem.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\csPersistentMem.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\csPersistentMem.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ConfigServer\src\csPersistentMem.c
+      1          /******************************************************************************
+      2            \file csPersistentMem.c
+      3          
+      4            \brief
+      5              Configuration Server persistent memory to store in non-volatile memory.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015 , Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              28.10.10 A. Razinkov - Created.
+     17          ******************************************************************************/
+     18          #ifndef ZAPPSI_HOST
+     19          /******************************************************************************
+     20                              Includes section
+     21          ******************************************************************************/
+     22          #include <pdsDataServer.h>
+     23          #include <macenvMem.h>
+     24          #include <csSIB.h>
+     25          #include <csBuffers.h>
+     26          #ifndef _MAC2_
+     27          #include <apsConfigServer.h>
+     28          #include <nwkConfigServer.h>
+     29          #include <zdoZib.h>
+     30          #endif
+     31          
+     32          #ifdef _ENABLE_PERSISTENT_SERVER_
+     33          /******************************************************************************
+     34                              External variables section
+     35          ******************************************************************************/
+     36          #if !defined(_USE_KF_MAC_)
+     37          extern PIB_t csPIB;
+     38          #endif // !defined(_USE_KF_MAC_)
+     39          extern SIB_t csSIB;
+     40          extern NIB_t csNIB;
+     41          extern AIB_t csAIB;
+     42          extern ZIB_t csZIB;
+     43          
+     44          extern CS_StackBuffers_t stackBuffers;
+     45          #ifdef _LINK_SECURITY_
+     46          extern CS_ReadOnlyItems_t PROGMEM_DECLARE(csReadOnlyItems);
+     47          #endif
+     48          
+     49          #if defined(_USE_KF_MAC_)
+     50          extern uint64_t tal_pib_IeeeAddress;
+     51          #endif // defined(_USE_KF_MAC_)
+     52          
+     53          /******************************************************************************
+     54                              Files definitions
+     55          ******************************************************************************/
+     56          #if PDS_ENABLE_WEAR_LEVELING != 1
+     57          /*******************************************
+     58                   BitCloud General parameters
+     59          ********************************************/
+     60          /* File descriptors definitions for BitCloud General parameters.
+     61             Shall be placed in the PDS_FF code segment. */
+     62          #ifdef _USE_KF_MAC_
+     63            PDS_DECLARE_FILE(CS_UID_MEM_ID,                          sizeof(tal_pib_IeeeAddress),                &tal_pib_IeeeAddress,                FILE_INTEGRITY_CONTROL_MARK);
+     64          #else
+     65            PDS_DECLARE_FILE(CS_UID_MEM_ID,                          sizeof(csPIB.macAttr.extAddr),              &csPIB.macAttr.extAddr,              FILE_INTEGRITY_CONTROL_MARK);
+     66          #endif /* _USE_KF_MAC_ */
+     67            PDS_DECLARE_FILE(CS_RF_TX_POWER_MEM_ID,                  sizeof(csSIB.csRfTxPower),                  &csSIB.csRfTxPower,                  FILE_INTEGRITY_CONTROL_MARK);
+     68          #ifndef _MAC2_
+     69            PDS_DECLARE_FILE(CS_EXT_PANID_MEM_ID,                    sizeof(csSIB.csExtPANID),                   &csSIB.csExtPANID,                   FILE_INTEGRITY_CONTROL_MARK);
+     70            PDS_DECLARE_FILE(CS_CHANNEL_MASK_MEM_ID,                 sizeof(csZIB.channelMask),                  &csZIB.channelMask,                  FILE_INTEGRITY_CONTROL_MARK);
+     71            PDS_DECLARE_FILE(CS_CHANNEL_PAGE_MEM_ID,                 sizeof(csNIB.channelPage),                  &csNIB.channelPage,                  FILE_INTEGRITY_CONTROL_MARK);
+     72            PDS_DECLARE_FILE(CS_DEVICE_TYPE_MEM_ID,                  sizeof(csNIB.deviceType),                   &csNIB.deviceType,                   FILE_INTEGRITY_CONTROL_MARK);
+     73            PDS_DECLARE_FILE(CS_RX_ON_WHEN_IDLE_MEM_ID,              sizeof(csSIB.csRxOnWhenIdle),               &csSIB.csRxOnWhenIdle,               FILE_INTEGRITY_CONTROL_MARK);
+     74            PDS_DECLARE_FILE(CS_COMPLEX_DESCRIPTOR_AVAILABLE_MEM_ID, sizeof(csSIB.csComplexDescriptorAvailable), &csSIB.csComplexDescriptorAvailable, FILE_INTEGRITY_CONTROL_MARK);
+     75            PDS_DECLARE_FILE(CS_USER_DESCRIPTOR_AVAILABLE_MEM_ID,    sizeof(csSIB.csUserDescriptorAvailable),    &csSIB.csUserDescriptorAvailable,    FILE_INTEGRITY_CONTROL_MARK);
+     76            PDS_DECLARE_FILE(CS_ZDP_USER_DESCRIPTOR_MEM_ID,          sizeof(csSIB.csUserDescriptor),             &csSIB.csUserDescriptor,             FILE_INTEGRITY_CONTROL_MARK);
+     77            PDS_DECLARE_FILE(CS_NWK_PANID_MEM_ID,                    sizeof(csSIB.csNwkPanid),                   &csSIB.csNwkPanid,                   FILE_INTEGRITY_CONTROL_MARK);
+     78            PDS_DECLARE_FILE(CS_NWK_PREDEFINED_PANID_MEM_ID,         sizeof(csSIB.csNwkPredefinedPanid),         &csSIB.csNwkPredefinedPanid,         FILE_INTEGRITY_CONTROL_MARK);
+     79            PDS_DECLARE_FILE(CS_NWK_ADDR_MEM_ID,                     sizeof(csNIB.networkAddress),               &csNIB.networkAddress,               FILE_INTEGRITY_CONTROL_MARK);
+     80            PDS_DECLARE_FILE(CS_NWK_UNIQUE_ADDR_MEM_ID,              sizeof(csNIB.uniqueAddr),                   &csNIB.uniqueAddr,                   FILE_INTEGRITY_CONTROL_MARK);
+     81            PDS_DECLARE_FILE(CS_NWK_LEAVE_REQ_ALLOWED_MEM_ID,        sizeof(csNIB.leaveReqAllowed),              &csNIB.leaveReqAllowed,              FILE_INTEGRITY_CONTROL_MARK);
+     82            PDS_DECLARE_FILE(CS_DTR_WAKEUP_MEM_ID,                   sizeof(csSIB.csDtrWakeup),                  &csSIB.csDtrWakeup,                  FILE_INTEGRITY_CONTROL_MARK);
+     83            PDS_DECLARE_FILE(NWK_UPDATE_ID_MEM_ID,                   sizeof(csNIB.updateId),                     &csNIB.updateId,                     FILE_INTEGRITY_CONTROL_MARK);
+     84            PDS_DECLARE_FILE(NWK_RREQ_IDENTIFIER_MEM_ID,             sizeof(csNIB.routeRequestIdTop),            &csNIB.routeRequestIdTop,            FILE_INTEGRITY_CONTROL_MARK);
+     85          #ifdef _SECURITY_
+     86            PDS_DECLARE_FILE(CS_APS_TRUST_CENTER_ADDRESS_MEM_ID,     sizeof(csAIB.trustCenterAddress),           &csAIB.trustCenterAddress,           FILE_INTEGRITY_CONTROL_MARK);
+     87            PDS_DECLARE_FILE(CS_SHORT_TRUST_CENTER_ADDRESS_MEM_ID,   sizeof(csAIB.tcNwkAddr),                    &csAIB.tcNwkAddr,                    FILE_INTEGRITY_CONTROL_MARK);
+     88            PDS_DECLARE_FILE(CS_ZDO_SECURITY_STATUS_MEM_ID,          sizeof(csSIB.csZdoSecurityStatus),          &csSIB.csZdoSecurityStatus,          FILE_INTEGRITY_CONTROL_MARK);
+     89          #endif /* _SECURITY_ */
+     90          #endif /* _MAC2_ */
+     91          
+     92          #ifndef _MAC2_
+     93          /*******************************************
+     94                   BitCloud Extended parameters
+     95          ********************************************/
+     96          /* File descriptors definitions for BitCloud Extneded parameters.
+     97             Shall be placed in the PDS_FF code segment. */
+     98          PDS_DECLARE_FILE(CS_NWK_PARENT_ADDR_MEM_ID,     sizeof(csNIB.parentNetworkAddress), &csNIB.parentNetworkAddress, FILE_INTEGRITY_CONTROL_MARK);
+     99          PDS_DECLARE_FILE(CS_NWK_DEPTH_MEM_ID,           sizeof(csNIB.depth),                &csNIB.depth,                FILE_INTEGRITY_CONTROL_MARK);
+    100          PDS_DECLARE_FILE(CS_NWK_EXT_PANID_MEM_ID,       sizeof(csNIB.extendedPanId),        &csNIB.extendedPanId,        FILE_INTEGRITY_CONTROL_MARK);
+    101          PDS_DECLARE_FILE(CS_NWK_LOGICAL_CHANNEL_MEM_ID, sizeof(csSIB.csNwkLogicalChannel),  &csSIB.csNwkLogicalChannel,  FILE_INTEGRITY_CONTROL_MARK);
+    102          
+    103          
+    104          /*******************************************
+    105                   BitCloud Neighbor table
+    106          ********************************************/
+    107          /* File descriptor definition for Neighbor table.
+    108             Shall be placed in the PDS_FF code segment. */
+    109          PDS_DECLARE_FILE(CS_NEIB_TABLE_MEM_ID, (CS_NEIB_TABLE_SIZE * sizeof(Neib_t)), &stackBuffers.csNeibTable, NO_FILE_MARKS);
+    110          
+    111          /*******************************************
+    112                   BitCloud Group table
+    113          ********************************************/
+    114          #ifdef _GROUP_TABLE_
+    115          /* File descriptor definition for Group table.
+    116             Shall be placed in the PDS_FF code segment. */
+    117            PDS_DECLARE_FILE(CS_GROUP_TABLE_MEM_ID, (CS_GROUP_TABLE_SIZE * sizeof(NWK_GroupTableEntry_t)), &stackBuffers.csGroupTable, FILE_INTEGRITY_CONTROL_MARK);
+    118          #endif /* _GROUP_TABLE_ */
+    119          
+    120          /*******************************************
+    121                   BitCloud Binding table
+    122          ********************************************/
+    123          #if defined(_BINDING_) && (CS_APS_BINDING_TABLE_SIZE > 0)
+    124          /* File descriptor definition for Binding table.
+    125             Shall be placed in the PDS_FF code segment. */
+    126            PDS_DECLARE_FILE(CS_APS_BINDING_TABLE_MEM_ID, (CS_APS_BINDING_TABLE_SIZE * sizeof(ApsBindingEntry_t)), &stackBuffers.csApsBindingTable, FILE_INTEGRITY_CONTROL_MARK);
+    127          #endif /* _BINDING_ && CS_APS_BINDING_TABLE_SIZE > 0 */
+    128          
+    129          #ifdef _SECURITY_
+    130          /*******************************************
+    131                   BitCloud NWK security tables
+    132          ********************************************/
+    133          /* File descriptors definitions for BitCloud NWK security parameters.
+    134             Shall be placed in the PDS_FF code segment. */
+    135            PDS_DECLARE_FILE(CS_NWK_SECURITY_IB_MEM_ID,   sizeof(csNIB.securityIB), &csNIB.securityIB, FILE_INTEGRITY_CONTROL_MARK | FILE_SECURITY_MARK);
+    136            PDS_DECLARE_FILE(CS_NWK_SECURITY_KEYS_MEM_ID, CS_NWK_SECURITY_KEYS_AMOUNT * sizeof(NWK_SecurityKey_t), &stackBuffers.csNwkSecKeys, FILE_INTEGRITY_CONTROL_MARK | FILE_SECURITY_MARK);
+    137            PDS_DECLARE_FILE(NWK_SECURITY_COUNTERS_MEM_ID, sizeof(csNIB.securityCounters.outCounterTop), &csNIB.securityCounters.outCounterTop, NO_FILE_MARKS);
+    138          
+    139          /*******************************************
+    140                   BitCloud APS key pair descroptors table
+    141          ********************************************/
+    142          #if defined(_LINK_SECURITY_) && CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT > 0
+    143          /* File descriptor definition for APS security tables.
+    144             Shall be placed in the PDS_FF code segment. */
+    145            PDS_DECLARE_FILE(CS_APS_KEY_PAIR_DESCRIPTORS_MEM_ID, (CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT * sizeof(ApsKeyPairDescriptor_t)), &stackBuffers.csApsKeyPairDescriptors, FILE_INTEGRITY_CONTROL_MARK | FILE_SECURITY_MARK);
+    146          #endif /* _LINK_SECURITY_ && CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT > 0 */
+    147          #endif /* _SECURITY_ */
+    148          
+    149          /*******************************************
+    150                   BitCloud permission table
+    151          ********************************************/
+    152          #if defined(_PERMISSIONS_) && CS_PERMISSIONS_TABLE_SIZE > 0
+    153          /* File descriptor definition for the permissions table.
+    154             Shall be placed in the PDS_FF code segment. */
+    155            PDS_DECLARE_FILE(CS_PERMISSIONS_TABLE_MEM_ID, (CS_PERMISSIONS_TABLE_SIZE * sizeof(ZdoPermissionsRecord_t)), &stackBuffers.csPermissionsTable, FILE_INTEGRITY_CONTROL_MARK);
+    156          #endif /* _PERMISSIONS_ && CS_PERMISSIONS_TABLE_SIZE > 0 */
+    157          #endif /* _MAC2_ */
+    158          
+    159          /****************************************************************
+    160                   Directories definitions
+    161          *****************************************************************/
+    162          /*! \brief The group of common BitCloud parameters that can be stored
+    163          in the non-volatile memory and identified via ::BC_GENERAL_PARAMS_MEM_ID
+    164          */
+    165          PROGMEM_DECLARE(PDS_MemId_t CsGeneralMemoryIdsTable[]) =
+    166          {
+    167            CS_UID_MEM_ID,
+    168            CS_RF_TX_POWER_MEM_ID,
+    169          #ifndef _MAC2_
+    170            CS_EXT_PANID_MEM_ID,
+    171            CS_CHANNEL_MASK_MEM_ID,
+    172            CS_CHANNEL_PAGE_MEM_ID,
+    173            CS_DEVICE_TYPE_MEM_ID,
+    174            CS_RX_ON_WHEN_IDLE_MEM_ID,
+    175            CS_COMPLEX_DESCRIPTOR_AVAILABLE_MEM_ID,
+    176            CS_USER_DESCRIPTOR_AVAILABLE_MEM_ID,
+    177            CS_ZDP_USER_DESCRIPTOR_MEM_ID,
+    178            CS_NWK_PANID_MEM_ID,
+    179            CS_NWK_PREDEFINED_PANID_MEM_ID,
+    180            CS_NWK_ADDR_MEM_ID,
+    181            CS_NWK_UNIQUE_ADDR_MEM_ID,
+    182            CS_NWK_LEAVE_REQ_ALLOWED_MEM_ID,
+    183            CS_DTR_WAKEUP_MEM_ID,
+    184            NWK_UPDATE_ID_MEM_ID,
+    185          #ifdef _SECURITY_
+    186            CS_APS_TRUST_CENTER_ADDRESS_MEM_ID,
+    187            CS_SHORT_TRUST_CENTER_ADDRESS_MEM_ID,
+    188            CS_ZDO_SECURITY_STATUS_MEM_ID,
+    189          #endif /* _SECURITY_ */
+    190          #endif /* _MAC2_ */
+    191          };
+    192          
+    193          /* BitCloud General parameters directory descriptor.
+    194             Shall be placed in the PDS_FD code segment. */
+    195          PDS_DECLARE_DIR(PDS_DirDescr_t csGeneralParamsDirDescr) =
+    196          {
+    197            .list       = CsGeneralMemoryIdsTable,
+    198            .filesCount = ARRAY_SIZE(CsGeneralMemoryIdsTable),
+    199            .memoryId     = BC_GENERAL_PARAMS_MEM_ID
+    200          };
+    201          
+    202          //---------------------------------------------------------------
+    203          /*! \brief The group of additional network parameters that can be stored
+    204          in the non-volatile memory and identified via ::BC_EXTENDED_PARAMS_MEM_ID
+    205          */
+    206          PROGMEM_DECLARE(PDS_MemId_t CsExtendedMemoryIdsTable[]) =
+    207          {
+    208            CS_NWK_PARENT_ADDR_MEM_ID,
+    209            CS_NWK_DEPTH_MEM_ID,
+    210            CS_NWK_EXT_PANID_MEM_ID,
+    211            CS_NWK_LOGICAL_CHANNEL_MEM_ID,
+    212          };
+    213          
+    214          /* BitCloud Extneded parameters directory descriptor.
+    215             Shall be placed in the PDS_FD code segment. */
+    216          PDS_DECLARE_DIR(PDS_DirDescr_t csExtendedParamsDirDescr) =
+    217          {
+    218            .list       = CsExtendedMemoryIdsTable,
+    219            .filesCount = ARRAY_SIZE(CsExtendedMemoryIdsTable),
+    220            .memoryId     = BC_EXTENDED_PARAMS_MEM_ID
+    221          };
+    222          
+    223          #ifdef _SECURITY_
+    224          //---------------------------------------------------------------
+    225          /*! \bried The group BitCloud NWK security parameters that can be stored
+    226          in the non-volatile memory and identified via ::BC_NWK_SECURITY_TABLES_MEM_ID
+    227          */
+    228          PROGMEM_DECLARE(PDS_MemId_t CsNwkSecurityMemoryIdsTable[]) =
+    229          {
+    230            CS_NWK_SECURITY_IB_MEM_ID,
+    231            CS_NWK_SECURITY_KEYS_MEM_ID,
+    232            NWK_SECURITY_COUNTERS_MEM_ID,
+    233          };
+    234          
+    235          /* BitCloud NWK security tables directory descriptor.
+    236             Shall be placed in the PDS_FD code segment. */
+    237          PDS_DECLARE_DIR(PDS_DirDescr_t csNwkSecurityTablesDirDescr) =
+    238          {
+    239            .list       = CsNwkSecurityMemoryIdsTable,
+    240            .filesCount = ARRAY_SIZE(CsNwkSecurityMemoryIdsTable),
+    241            .memoryId     = BC_NWK_SECURITY_TABLES_MEM_ID
+    242          };
+    243          #endif /* _SECURITY_ */
+    244          
+    245          //---------------------------------------------------------------
+    246          /*! \brief The most extended set of BitCloud parameters that can be stored
+    247          in the non-volatile memory and identified via BC_ALL_MEMORY_MEM_ID
+    248          */
+    249          PROGMEM_DECLARE(PDS_MemId_t BCSystemMemoryIdsTable[]) =
+    250          {
+    251            CS_UID_MEM_ID,
+    252            CS_RF_TX_POWER_MEM_ID,
+    253          #ifndef _MAC2_
+    254            CS_EXT_PANID_MEM_ID,
+    255            CS_CHANNEL_MASK_MEM_ID,
+    256            CS_CHANNEL_PAGE_MEM_ID,
+    257            CS_DEVICE_TYPE_MEM_ID,
+    258            CS_RX_ON_WHEN_IDLE_MEM_ID,
+    259            CS_COMPLEX_DESCRIPTOR_AVAILABLE_MEM_ID,
+    260            CS_USER_DESCRIPTOR_AVAILABLE_MEM_ID,
+    261            CS_ZDP_USER_DESCRIPTOR_MEM_ID,
+    262            CS_NWK_PANID_MEM_ID,
+    263            CS_NWK_PREDEFINED_PANID_MEM_ID,
+    264            CS_NWK_ADDR_MEM_ID,
+    265            CS_NWK_UNIQUE_ADDR_MEM_ID,
+    266            CS_NWK_LEAVE_REQ_ALLOWED_MEM_ID,
+    267            CS_DTR_WAKEUP_MEM_ID,
+    268            NWK_UPDATE_ID_MEM_ID,
+    269          #if defined(_SECURITY_)
+    270            CS_APS_TRUST_CENTER_ADDRESS_MEM_ID,
+    271            CS_SHORT_TRUST_CENTER_ADDRESS_MEM_ID,
+    272            CS_ZDO_SECURITY_STATUS_MEM_ID,
+    273          #endif /* _SECURITY_ */
+    274            CS_NWK_PARENT_ADDR_MEM_ID,
+    275            CS_NWK_DEPTH_MEM_ID,
+    276            CS_NWK_EXT_PANID_MEM_ID,
+    277            CS_NWK_LOGICAL_CHANNEL_MEM_ID,
+    278            CS_NEIB_TABLE_MEM_ID,
+    279            CS_GROUP_TABLE_MEM_ID,
+    280            CS_APS_BINDING_TABLE_MEM_ID,
+    281          #ifdef _SECURITY_
+    282            CS_NWK_SECURITY_IB_MEM_ID,
+    283            CS_NWK_SECURITY_KEYS_MEM_ID,
+    284            NWK_SECURITY_COUNTERS_MEM_ID,
+    285          #if defined(_LINK_SECURITY_) && CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT > 0
+    286            CS_APS_KEY_PAIR_DESCRIPTORS_MEM_ID,
+    287          #endif /* _LINK_SECURITY_ && CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT > 0 */
+    288          #if defined(_PERMISSIONS_) && CS_PERMISSIONS_TABLE_SIZE > 0
+    289            CS_PERMISSIONS_TABLE_MEM_ID,
+    290          #endif /* _PERMISSIONS_ && CS_PERMISSIONS_TABLE_SIZE > 0 */
+    291          #endif /* _SECURITY_ */
+    292            NWK_RREQ_IDENTIFIER_MEM_ID
+    293          #endif /* _MAC2_ */
+    294          };
+    295          
+    296          /* BitCloud system parameters directory descriptor.
+    297             Shall be placed in the PDS_FD code segment. */
+    298          PDS_DECLARE_DIR(PDS_DirDescr_t BCSystemDirDescr) =
+    299          {
+    300            .list       = BCSystemMemoryIdsTable,
+    301            .filesCount = ARRAY_SIZE(BCSystemMemoryIdsTable),
+    302            .memoryId     = BC_ALL_MEMORY_MEM_ID
+    303          };
+    304          
+    305          //---------------------------------------------------------------
+    306          /*! \brief The extended set of commonly used BitCloud parameters that can
+    307          be stored in the non-volatile memory and identified via BC_EXT_GEN_MEMORY_MEM_ID
+    308          */
+    309          PROGMEM_DECLARE(PDS_MemId_t BCExtGenParamsMemoryIdsTable[]) =
+    310          {
+    311            CS_UID_MEM_ID,
+    312            CS_RF_TX_POWER_MEM_ID,
+    313          #ifndef _MAC2_
+    314            CS_EXT_PANID_MEM_ID,
+    315            CS_CHANNEL_MASK_MEM_ID,
+    316            CS_CHANNEL_PAGE_MEM_ID,
+    317            CS_DEVICE_TYPE_MEM_ID,
+    318            CS_RX_ON_WHEN_IDLE_MEM_ID,
+    319            CS_COMPLEX_DESCRIPTOR_AVAILABLE_MEM_ID,
+    320            CS_USER_DESCRIPTOR_AVAILABLE_MEM_ID,
+    321            CS_ZDP_USER_DESCRIPTOR_MEM_ID,
+    322            CS_NWK_PANID_MEM_ID,
+    323            CS_NWK_PREDEFINED_PANID_MEM_ID,
+    324            CS_NWK_ADDR_MEM_ID,
+    325            CS_NWK_UNIQUE_ADDR_MEM_ID,
+    326            CS_NWK_LEAVE_REQ_ALLOWED_MEM_ID,
+    327            CS_DTR_WAKEUP_MEM_ID,
+    328            NWK_UPDATE_ID_MEM_ID,
+    329          #if defined(_SECURITY_)
+    330            CS_APS_TRUST_CENTER_ADDRESS_MEM_ID,
+    331            CS_SHORT_TRUST_CENTER_ADDRESS_MEM_ID,
+    332            CS_ZDO_SECURITY_STATUS_MEM_ID,
+    333          #endif /* _SECURITY_ */
+    334            CS_NWK_PARENT_ADDR_MEM_ID,
+    335            CS_NWK_DEPTH_MEM_ID,
+    336            CS_NWK_EXT_PANID_MEM_ID,
+    337            CS_NWK_LOGICAL_CHANNEL_MEM_ID,
+    338          #endif /* _MAC2_ */
+    339          };
+    340          
+    341          /* BitCloud system parameters directory descriptor.
+    342             Shall be placed in the PDS_FD code segment. */
+    343          PDS_DECLARE_DIR(PDS_DirDescr_t BCExtGenParamsDirDescr) =
+    344          {
+    345            .list       = BCExtGenParamsMemoryIdsTable,
+    346            .filesCount = ARRAY_SIZE(BCExtGenParamsMemoryIdsTable),
+    347            .memoryId     = BC_EXT_GEN_MEMORY_MEM_ID
+    348          };
+    349          
+    350          //---------------------------------------------------------------
+    351          /*! \brief A set of parameters to be stored in the non-volatile memory to
+    352          provide network rejoin after power failure.The set is identified
+    353          via BC_NETWORK_REJOIN_PARAMS_MEM_ID
+    354          */
+    355          PROGMEM_DECLARE(PDS_MemId_t BCRejoinParamsMemoryIdsTable[]) =
+    356          {
+    357            CS_UID_MEM_ID,
+    358            CS_RF_TX_POWER_MEM_ID,
+    359          #ifndef _MAC2_
+    360            CS_EXT_PANID_MEM_ID,
+    361            CS_CHANNEL_MASK_MEM_ID,
+    362            CS_CHANNEL_PAGE_MEM_ID,
+    363            CS_DEVICE_TYPE_MEM_ID,
+    364            CS_RX_ON_WHEN_IDLE_MEM_ID,
+    365            CS_COMPLEX_DESCRIPTOR_AVAILABLE_MEM_ID,
+    366            CS_USER_DESCRIPTOR_AVAILABLE_MEM_ID,
+    367            CS_ZDP_USER_DESCRIPTOR_MEM_ID,
+    368            CS_NWK_PANID_MEM_ID,
+    369            CS_NWK_PREDEFINED_PANID_MEM_ID,
+    370            CS_NWK_ADDR_MEM_ID,
+    371            CS_NWK_UNIQUE_ADDR_MEM_ID,
+    372            CS_NWK_LEAVE_REQ_ALLOWED_MEM_ID,
+    373            CS_DTR_WAKEUP_MEM_ID,
+    374            NWK_UPDATE_ID_MEM_ID,
+    375          #if defined(_SECURITY_)
+    376            CS_APS_TRUST_CENTER_ADDRESS_MEM_ID,
+    377            CS_SHORT_TRUST_CENTER_ADDRESS_MEM_ID,
+    378            CS_ZDO_SECURITY_STATUS_MEM_ID,
+    379          #endif /* _SECURITY_ */
+    380            CS_GROUP_TABLE_MEM_ID,
+    381          #ifdef _SECURITY_
+    382            CS_NWK_SECURITY_IB_MEM_ID,
+    383            CS_NWK_SECURITY_KEYS_MEM_ID,
+    384            NWK_SECURITY_COUNTERS_MEM_ID,
+    385          #if defined(_PERMISSIONS_) && CS_PERMISSIONS_TABLE_SIZE > 0
+    386            CS_PERMISSIONS_TABLE_MEM_ID,
+    387          #endif /* _PERMISSIONS_ && CS_PERMISSIONS_TABLE_SIZE > 0 */
+    388          #endif /* _SECURITY_ */
+    389          #endif /* _MAC2_ */
+    390          };
+    391          
+    392          /* BitCloud rejoin parameters directory descriptor.
+    393             Shall be placed in the PDS_FD code segment. */
+    394          PDS_DECLARE_DIR(PDS_DirDescr_t BCRejoinParamsDirDescr) =
+    395          {
+    396            .list       = BCRejoinParamsMemoryIdsTable,
+    397            .filesCount = ARRAY_SIZE(BCRejoinParamsMemoryIdsTable),
+    398            .memoryId     = BC_NETWORK_REJOIN_PARAMS_MEM_ID
+    399          };
+    400          #else /* PDS_ENABLE_WEAR_LEVELING != 1  */
+    401          
+
+   \                                 In section PDS_FF, align 4, root
+    402          PDS_DECLARE_ITEM(BC_EXT_GEN_MEMORY_ITEM_ID, EXTENDED_SET_ITEM_SIZE, &extGenMem, fillExtendedBcSet, NO_ITEM_FLAGS);
+   \                     pds_ff_BC_EXT_GEN_MEMORY_ITEM_ID:
+   \   00000000   0x0001 0x0060      DC16 1, 96
+   \   00000004   0x........         DC32 extGenMem, fillExtendedBcSet
+   \              0x........   
+   \   0000000C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section PDS_FF, align 4, root
+    403          PDS_DECLARE_ITEM(CS_NEIB_TABLE_ITEM_ID, NEIGHBOR_TABLE_ITEM_SIZE, &stackBuffers.csNeibTable, NULL, SIZE_MODIFICATION_ALLOWED);
+   \                     pds_ff_CS_NEIB_TABLE_ITEM_ID:
+   \   00000000   0x0002 0x00A0      DC16 2, 160
+   \   00000004   0x........         DC32 stackBuffers + 1B0H, 0H
+   \              0x00000000   
+   \   0000000C   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00    
+    404          #if defined _SECURITY_
+    405          #ifdef _LINK_SECURITY_
+
+   \                                 In section PDS_FF, align 4, root
+    406          PDS_DECLARE_ITEM(CS_APS_KEY_PAIR_DESCRIPTORS_ITEM_ID, KEY_PAIR_DESCRIPTOR_ITEM_SIZE, &stackBuffers.csApsKeyPairDescriptors, NULL, ITEM_UNDER_SECURITY_CONTROL);
+   \                     pds_ff_CS_APS_KEY_PAIR_DESCRIPTORS_ITEM_ID:
+   \   00000000   0x0003 0x00F0      DC16 3, 240
+   \   00000004   0x........         DC32 stackBuffers + 1808H, 0H
+   \              0x00000000   
+   \   0000000C   0x02 0x00          DC8 2, 0, 0, 0
+   \              0x00 0x00    
+    407          #endif
+
+   \                                 In section PDS_FF, align 4, root
+    408          PDS_DECLARE_ITEM(CS_NWK_SECURITY_IB_ITEM_ID, SECURITY_IB_ITEM_SIZE, &csNIB.securityIB, NULL, NO_ITEM_FLAGS);
+   \                     pds_ff_CS_NWK_SECURITY_IB_ITEM_ID:
+   \   00000000   0x0004 0x0003      DC16 4, 3
+   \   00000004   0x........         DC32 csNIB + 8AH, 0H
+   \              0x00000000   
+   \   0000000C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section PDS_FF, align 4, root
+    409          PDS_DECLARE_ITEM(CS_NWK_SECURITY_KEYS_ITEM_ID, SECURITY_KEYS_ITEM_SIZE, &stackBuffers.csNwkSecKeys, NULL, ITEM_UNDER_SECURITY_CONTROL);
+   \                     pds_ff_CS_NWK_SECURITY_KEYS_ITEM_ID:
+   \   00000000   0x0005 0x001C      DC16 5, 28
+   \   00000004   0x........         DC32 stackBuffers + 0E40H, 0H
+   \              0x00000000   
+   \   0000000C   0x02 0x00          DC8 2, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section PDS_FF, align 4, root
+    410          PDS_DECLARE_ITEM(NWK_SECURITY_COUNTERS_ITEM_ID, SECURITY_COUNTERS_ITEM_SIZE, &csNIB.securityCounters.outCounterTop, NULL, NO_ITEM_FLAGS);
+   \                     pds_ff_NWK_SECURITY_COUNTERS_ITEM_ID:
+   \   00000000   0x0006 0x0002      DC16 6, 2
+   \   00000004   0x........         DC32 csNIB + 90H, 0H
+   \              0x00000000   
+   \   0000000C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    411          #endif
+    412          #ifdef _BINDING_
+
+   \                                 In section PDS_FF, align 4, root
+    413          PDS_DECLARE_ITEM(CS_APS_BINDING_TABLE_ITEM_ID, BINDING_TABLE_ITEM_SIZE, &stackBuffers.csApsBindingTable, NULL, SIZE_MODIFICATION_ALLOWED);
+   \                     pds_ff_CS_APS_BINDING_TABLE_ITEM_ID:
+   \   00000000   0x0007 0x0230      DC16 7, 560
+   \   00000004   0x........         DC32 stackBuffers + 14F8H, 0H
+   \              0x00000000   
+   \   0000000C   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00    
+    414          #endif //_BINDING_
+    415          #ifdef _GROUP_TABLE_
+
+   \                                 In section PDS_FF, align 4, root
+    416          PDS_DECLARE_ITEM(CS_GROUP_TABLE_ITEM_ID, GROUP_TABLE_ITEM_SIZE, &stackBuffers.csGroupTable, NULL, SIZE_MODIFICATION_ALLOWED);
+   \                     pds_ff_CS_GROUP_TABLE_ITEM_ID:
+   \   00000000   0x0008 0x0020      DC16 8, 32
+   \   00000004   0x........         DC32 stackBuffers + 0E20H, 0H
+   \              0x00000000   
+   \   0000000C   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00    
+    417          #endif //_GROUP_TABLE_
+
+   \                                 In section PDS_FF, align 4, root
+    418          PDS_DECLARE_ITEM(NWK_RREQ_IDENTIFIER_ITEM_ID, RREQ_IDENTIFIER_ITEM_SIZE, &csNIB.routeRequestIdTop, NULL, NO_ITEM_FLAGS);
+   \                     pds_ff_NWK_RREQ_IDENTIFIER_ITEM_ID:
+   \   00000000   0x0009 0x0001      DC16 9, 1
+   \   00000004   0x........         DC32 csNIB + 6DH, 0H
+   \              0x00000000   
+   \   0000000C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    419          
+
+   \                                 In section .rodata, align 4, keep-with-next
+    420          PROGMEM_DECLARE(S_Nv_ItemId_t BCItemIdsTable[]) =
+   \                     BCItemIdsTable:
+   \   00000000   0x0001 0x0002      DC16 1, 2, 3, 4, 5, 6, 7, 8, 9
+   \              0x0003 0x0004
+   \              0x0005 0x0006
+   \              0x0007 0x0008
+   \              0x0009       
+   \   00000012   0x00 0x00          DC8 0, 0
+    421          {
+    422            BC_EXT_GEN_MEMORY_ITEM_ID,
+    423            CS_NEIB_TABLE_ITEM_ID,
+    424          #if defined _SECURITY_
+    425          #ifdef _LINK_SECURITY_
+    426            CS_APS_KEY_PAIR_DESCRIPTORS_ITEM_ID,
+    427          #endif // _LINK_SECURITY_
+    428            CS_NWK_SECURITY_IB_ITEM_ID,
+    429            CS_NWK_SECURITY_KEYS_ITEM_ID,
+    430            NWK_SECURITY_COUNTERS_ITEM_ID,
+    431          #endif  //_SECURITY_
+    432          #ifdef _BINDING_
+    433            CS_APS_BINDING_TABLE_ITEM_ID,
+    434          #endif //_BINDING_
+    435          #ifdef _GROUP_TABLE_
+    436            CS_GROUP_TABLE_ITEM_ID,
+    437          #endif //_GROUP_TABLE_
+    438            NWK_RREQ_IDENTIFIER_ITEM_ID
+    439          };
+    440          
+    441          /* BitCloud rejoin parameters directory descriptor.
+    442             Shall be placed in the PDS_FD code segment. */
+
+   \                                 In section PDS_FD, align 4, root
+    443          PDS_DECLARE_DIR(PDS_DirDescr_t BCRejoinParamsDirDescr) =
+   \                     BCRejoinParamsDirDescr:
+   \   00000000   0x........         DC32 BCItemIdsTable
+   \   00000004   0x0009 0x4001      DC16 9, 16385
+    444          {
+    445            .list       = BCItemIdsTable,
+    446            .filesCount = ARRAY_SIZE(BCItemIdsTable),
+    447            .memoryId   = BC_ALL_MEMORY_MEM_ID
+    448          };
+    449          
+    450          #endif /* PDS_ENABLE_WEAR_LEVELING != 1  */
+    451          #endif /* _ENABLE_PERSISTENT_SERVER_ */
+    452          #endif /* !ZAPPSI_HOST */
+    453          /* eof csPersistentMem.c */
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      20  BCItemIdsTable
+       8  BCRejoinParamsDirDescr
+      16  pds_ff_BC_EXT_GEN_MEMORY_ITEM_ID
+      16  pds_ff_CS_APS_BINDING_TABLE_ITEM_ID
+      16  pds_ff_CS_APS_KEY_PAIR_DESCRIPTORS_ITEM_ID
+      16  pds_ff_CS_GROUP_TABLE_ITEM_ID
+      16  pds_ff_CS_NEIB_TABLE_ITEM_ID
+      16  pds_ff_CS_NWK_SECURITY_IB_ITEM_ID
+      16  pds_ff_CS_NWK_SECURITY_KEYS_ITEM_ID
+      16  pds_ff_NWK_RREQ_IDENTIFIER_ITEM_ID
+      16  pds_ff_NWK_SECURITY_COUNTERS_ITEM_ID
+
+ 
+  20 bytes in section .rodata
+   8 bytes in section PDS_FD
+ 144 bytes in section PDS_FF
+ 
+ 172 bytes of CONST memory
+
+Errors: none
+Warnings: none

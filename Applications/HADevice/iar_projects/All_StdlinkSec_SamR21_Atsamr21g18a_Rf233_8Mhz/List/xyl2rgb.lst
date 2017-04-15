@@ -1,0 +1,373 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:13
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\xyl2rgb.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\xyl2rgb.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\xyl2rgb.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\xyl2rgb.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\xyl2rgb.c
+      1          /**************************************************************************//**
+      2            \file xyl2rgb.c
+      3          
+      4            \brief
+      5              X/Y/Lumen to RGB converter implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16          ******************************************************************************/
+     17          
+     18          #if defined(APP_USE_PWM)
+     19          /******************************************************************************
+     20                             Includes section
+     21          ******************************************************************************/
+     22          
+     23          #include "xyl2rgb.h"
+     24          
+     25          /******************************************************************************
+     26                             Define(s) section
+     27          ******************************************************************************/
+     28          
+     29          #define NR_OF_PRIMES (3u)    /* Red, Blue and Green */
+     30          #define SL_LIGHTLEVEL_RED   0u
+     31          #define SL_LIGHTLEVEL_GREEN 1u
+     32          #define SL_LIGHTLEVEL_BLUE  2u
+     33          
+     34          #define LED_DATA_RED   {0.7079f,0.2920f,150.0f,0.0f} /* 630 nm */
+     35          #define LED_DATA_GREEN {0.1547f,0.8059f,220.0f,0.0f} /* 530 nm */
+     36          #define LED_DATA_BLUE  {0.1241f,0.0578f,30.0f,0.0f}  /* 470 nm */
+     37          
+     38          /******************************************************************************
+     39                             Types section
+     40          ******************************************************************************/
+     41          
+     42          typedef struct
+     43          {
+     44              float fx;        // x point
+     45              float fy;        // y point
+     46              float fLm;       // lumen output
+     47              float usDC;      // last DutyCycle divided by 65535 (between 0 and 1)
+     48          } LedData_t;
+     49          
+     50          
+     51          /******************************************************************************
+     52                             Prototypes section
+     53          ******************************************************************************/
+     54          
+     55          /******************************************************************************
+     56                              Local variables
+     57          ******************************************************************************/
+     58          
+     59          static LedData_t s_ledData[NR_OF_PRIMES] = \
+     60                  {LED_DATA_RED, LED_DATA_GREEN, LED_DATA_BLUE};
+     61          
+     62          /******************************************************************************
+     63                             Implementations section
+     64          ******************************************************************************/
+     65          static void calcUsDC(float s_setX, float s_setY, float s_setL)
+     66          {
+     67              float fraction;
+     68              float rbg = 0.0F;
+     69              float bbg = 0.0F;
+     70              float rxMSetx = (s_ledData[SL_LIGHTLEVEL_RED].fx - s_setX);
+     71              float ryMSety = (s_ledData[SL_LIGHTLEVEL_RED].fy - s_setY);
+     72              float gxMSetx = (s_ledData[SL_LIGHTLEVEL_GREEN].fx - s_setX);
+     73              float gyMSety = (s_ledData[SL_LIGHTLEVEL_GREEN].fy - s_setY);
+     74              float bxMSetx = (s_ledData[SL_LIGHTLEVEL_BLUE].fx - s_setX);
+     75              float byMSety = (s_ledData[SL_LIGHTLEVEL_BLUE].fy - s_setY);
+     76          
+     77              // matrix inversion
+     78              float temp = s_ledData[SL_LIGHTLEVEL_GREEN].fy * ((rxMSetx * byMSety) - (bxMSetx * ryMSety));
+     79              if (temp != 0.0F)
+     80              { //robustness to assure that divider != 0
+     81                  rbg = (-s_ledData[SL_LIGHTLEVEL_RED].fy * ((gxMSetx * byMSety) - (bxMSetx * gyMSety)))/ temp;
+     82                  temp = s_ledData[SL_LIGHTLEVEL_GREEN].fy * ((bxMSetx * ryMSety) - (rxMSetx * byMSety));
+     83                  if (temp != 0.0F)
+     84                  { //robustness to assure that divider != 0
+     85                      bbg = (-s_ledData[SL_LIGHTLEVEL_BLUE].fy * ((gxMSetx * ryMSety) - (rxMSetx * gyMSety)))/ temp;
+     86                      temp = rbg + 1.0f + bbg;
+     87                      if (temp != 0.0F)
+     88                      { //robustness to assure that divider != 0
+     89                          temp = s_setL / temp;
+     90                      }
+     91                  }
+     92              }
+     93          
+     94              // introduce the lumen output in the fraction
+     95          
+     96              // calculate the red portion of the mixed light
+     97              if (s_ledData[SL_LIGHTLEVEL_RED].fLm != 0.0F)
+     98              {
+     99                  fraction = (temp * rbg) / s_ledData[SL_LIGHTLEVEL_RED].fLm;
+    100                  if (fraction > 0.0f)
+    101                  {
+    102                      s_ledData[SL_LIGHTLEVEL_RED].usDC =  fraction;
+    103                  }
+    104              }
+    105          
+    106              // calculate the green portion of the mixed light
+    107              if (s_ledData[SL_LIGHTLEVEL_GREEN].fLm != 0.0F)
+    108              {
+    109                  fraction = temp / s_ledData[SL_LIGHTLEVEL_GREEN].fLm;
+    110                  if (fraction > 0.0f)
+    111                  {
+    112                      s_ledData[SL_LIGHTLEVEL_GREEN].usDC =  fraction;
+    113                  }
+    114              }
+    115          
+    116              // calculate the blue portion of the mixed light
+    117              if (s_ledData[SL_LIGHTLEVEL_BLUE].fLm != 0.0F)
+    118              {
+    119                  fraction = (temp * bbg) / s_ledData[SL_LIGHTLEVEL_BLUE].fLm;
+    120                  if (fraction > 0.0f)
+    121                  {
+    122                      s_ledData[SL_LIGHTLEVEL_BLUE].usDC = fraction;
+    123                  }
+    124              }
+    125          }
+    126          
+    127          /**************************************************************************//**
+    128          \brief Converts X/Y/L values of the color to corresponding R/G/B values
+    129          
+    130          \param[in]
+    131              valX - X value of the color
+    132          \param[in]
+    133              valY - Y value of the color
+    134          \param[in]
+    135            valL - level value of the color
+    136          \param[in]
+    137            maxL - maximum Lumen value of the X/Y color	
+    138          
+    139          \param[out]
+    140              calcR - Pointer to the calculated R (red) value of the color
+    141          \param[out]
+    142              calcG - Pointer to the calculated G (green) value of the color
+    143          \param[out]
+    144              calcB - Pointer to the calculated B (blue) value of the color
+    145          ******************************************************************************/
+    146          void XYL2RGB(unsigned int valX, unsigned int valY, int valL, int maxL, unsigned int *calcR, unsigned int *calcG, unsigned int *calcB)
+    147          {
+    148            float s_setX, s_setY, valLf, s_setL, maxLf;  
+    149            float s_brightnessTemperatureFactor = 1.0f;
+    150            float s_minimumBri, s_1minMinimumBri;
+    151          
+    152            maxLf = (float)maxL; // depends on XY point.
+    153          
+    154            s_minimumBri = 0.01f;  // 1%
+    155            s_1minMinimumBri = 1.0f - s_minimumBri;
+    156          
+    157            s_setX = (float)valX/65535.0f;
+    158            s_setY = (float)valY/65535.0f;    
+    159          
+    160            valLf = (float)valL; //normalize the value between 0..254
+    161            if (valLf < 0.1f) //level = 0..254 whereby 1 = minimum and 0 = off
+    162            {
+    163                valLf = 0.0f;
+    164            }
+    165            else if (valLf < 1.0f)
+    166            {
+    167                // Between 0 and 1: linear interpolation between 0 and s_minimumBri (valLf * maxLf * (minimum_percentage of 1.0))
+    168                valLf = valLf * maxLf * s_minimumBri;
+    169            }
+    170            else
+    171            {
+    172                // between 1 and 254: quadratic curve from s_minimumBri*maxLf to maxLf
+    173                valLf -= 1.0f;  //level = 0..253
+    174                valLf *= valLf;
+    175                valLf = ((maxLf * s_minimumBri) + (((s_1minMinimumBri * maxLf)* valLf) / (253.0f * 253.0f)));//253 is now maxlevel (0-253)
+    176            }
+    177            s_setL = valLf;
+    178          
+    179          
+    180            for (unsigned int cnt = 0u; cnt < NR_OF_PRIMES; cnt++)
+    181            {
+    182                s_ledData[cnt].usDC = 0.0f;
+    183            }
+    184          
+    185            if ((s_setX != 0.0f) && (s_setY != 0.0f) && (s_setL != 0.0f))
+    186            {
+    187          
+    188                calcUsDC(s_setX, s_setY, s_setL);
+    189          
+    190                /* check for duty cycle > 1.0 */
+    191                float maxFactor = s_ledData[SL_LIGHTLEVEL_RED].usDC;
+    192                if (maxFactor < s_ledData[SL_LIGHTLEVEL_GREEN].usDC)
+    193                {
+    194                    maxFactor = s_ledData[SL_LIGHTLEVEL_GREEN].usDC;
+    195                }
+    196                if (maxFactor < s_ledData[SL_LIGHTLEVEL_BLUE].usDC)
+    197                {
+    198                    maxFactor = s_ledData[SL_LIGHTLEVEL_BLUE].usDC;
+    199                }
+    200          
+    201                if (maxFactor > 1.0f)
+    202                {
+    203                    maxFactor = s_brightnessTemperatureFactor/maxFactor;
+    204                }
+    205                else
+    206                {
+    207                    maxFactor = s_brightnessTemperatureFactor;
+    208                }
+    209          
+    210                if (maxFactor != 1.0f)
+    211                {
+    212                    s_ledData[SL_LIGHTLEVEL_RED].usDC *= maxFactor;
+    213                    s_ledData[SL_LIGHTLEVEL_GREEN].usDC *= maxFactor;
+    214                    s_ledData[SL_LIGHTLEVEL_BLUE].usDC *= maxFactor;
+    215                }
+    216            }
+    217          
+    218            float red = s_ledData[SL_LIGHTLEVEL_RED].usDC * 65535.0f;
+    219            float green = s_ledData[SL_LIGHTLEVEL_GREEN].usDC * 65535.0f;
+    220            float blue = s_ledData[SL_LIGHTLEVEL_BLUE].usDC * 65535.0f;
+    221          
+    222            *calcR = (unsigned int) red;
+    223            *calcG = (unsigned int) green;
+    224            *calcB = (unsigned int) blue;
+    225          }
+    226          #endif // defined(APP_USE_PWM)
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

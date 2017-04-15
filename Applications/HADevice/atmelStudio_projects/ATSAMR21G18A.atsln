@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ATSAMR21G18A", "ATSAMR21G18A.cproj", "{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		ATSAMRE18|ARM = ATSAMRE18|ARM
+		Description = Application HADevice
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.ATSAMRE18|ARM.ActiveCfg = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+		{CCE4E1D0-EBA5-4ACD-B057-9FC75EC39B72}.ATSAMRE18|ARM.Build.0 = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

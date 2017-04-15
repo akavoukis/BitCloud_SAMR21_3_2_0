@@ -1,0 +1,568 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:49
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysEventsHandler.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysEventsHandler.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\sysEventsHandler.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\sysEventsHandler.o
+#
+###############################################################################
+
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void *getNextQueueElem(void const *)
+   \                     getNextQueueElem: (+1)
+   \   00000000   0x2800             CMP      R0,#+0
+   \   00000002   0xD000             BEQ      ??getNextQueueElem_0
+   \   00000004   0x6800             LDR      R0,[R0, #+0]
+   \                     ??getNextQueueElem_0: (+1)
+   \   00000006   0x4770             BX       LR               ;; return
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysEventsHandler.c
+      1          /**************************************************************************//**
+      2          \file  sysEventsHandler.c
+      3          
+      4          \brief Event facility
+      5          
+      6          \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13          \internal
+     14            History:
+     15              28/02/12 D. Loskutnikov - Created
+     16          *******************************************************************************/
+     17          
+     18          /******************************************************************************
+     19                             Includes section
+     20          ******************************************************************************/
+     21          #include <sysQueue.h>
+     22          #include <sysDbg.h>
+     23          #include <sysEvents.h>
+     24          #include <sysAssert.h>
+     25          
+     26          /******************************************************************************
+     27                              Static variables section
+     28          ******************************************************************************/
+     29          // Queue of registered event receivers
+
+   \                                 In section .bss, align 4
+     30          static DECLARE_QUEUE(eventReceivers);
+   \                     eventReceivers:
+   \   00000000                      DS8 4
+   \   00000004                      DS8 8
+     31          // Mask for fast query if event have at least one subscriber
+     32          static sysEvWord_t subscribed[SYS_EVENTS_MASK_SIZE];
+     33          
+     34          static const unsigned int evWordNBits = sizeof(sysEvWord_t) * 8U;
+     35          
+     36          /******************************************************************************
+     37                              Implementation section
+     38          ******************************************************************************/
+     39          
+     40          /**************************************************************************//**
+     41          \brief Subscribe receiver to event. Same receiver may be subscribed to
+     42          multiple events by calling this function several times
+     43          
+     44          \param[in] id - event id
+     45          \param[in] recv - receiver description
+     46          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     47          void SYS_SubscribeToEvent(SYS_EventId_t id, SYS_EventReceiver_t *recv)
+     48          {
+   \                     SYS_SubscribeToEvent: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0005             MOVS     R5,R0
+   \   00000004   0x000E             MOVS     R6,R1
+     49            const int pos = id / evWordNBits;
+   \   00000006   0x096F             LSRS     R7,R5,#+5
+     50            const sysEvWord_t mask = 1U << (id % evWordNBits);
+   \   00000008   0x2401             MOVS     R4,#+1
+   \   0000000A   0x06E8             LSLS     R0,R5,#+27
+   \   0000000C   0x0EC0             LSRS     R0,R0,#+27
+   \   0000000E   0x4084             LSLS     R4,R4,R0
+     51          
+     52            SYS_E_ASSERT_FATAL((id <  SYS_MAX_EVENTS), SYS_ASSERT_WRONG_EVENT_SUBSCRIBE);
+   \   00000010   0x2D40             CMP      R5,#+64
+   \   00000012   0xD304             BCC      ??SYS_SubscribeToEvent_0
+   \   00000014   0x....             LDR      R0,??DataTable3  ;; 0x8003
+   \   00000016   0x....             LDR      R1,??DataTable3_1
+   \   00000018   0x8008             STRH     R0,[R1, #+0]
+   \   0000001A   0x.... 0x....      BL       SYS_DefAssertCallbackFatal
+     53          
+     54            // Stop processing, if receiver is already subscribed.
+     55            if (SYS_IsEventSubscriber(id, recv))
+   \                     ??SYS_SubscribeToEvent_0: (+1)
+   \   0000001E   0x0031             MOVS     R1,R6
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0x.... 0x....      BL       SYS_IsEventSubscriber
+   \   00000026   0x2800             CMP      R0,#+0
+   \   00000028   0xD117             BNE      ??SYS_SubscribeToEvent_1
+     56              return;
+     57          
+     58            if (!isQueueElem(&eventReceivers, recv))
+   \   0000002A   0x....             LDR      R5,??DataTable3_2
+   \   0000002C   0x0031             MOVS     R1,R6
+   \   0000002E   0x0028             MOVS     R0,R5
+   \   00000030   0x.... 0x....      BL       isQueueElem
+   \   00000034   0x2800             CMP      R0,#+0
+   \   00000036   0xD107             BNE      ??SYS_SubscribeToEvent_2
+     59            {
+     60              // Clear events mask (we're not in queue and therefore not subscribed to any event)
+     61              memset(recv->service.evmask, 0U, sizeof(recv->service.evmask));
+   \   00000038   0x1D30             ADDS     R0,R6,#+4
+   \   0000003A   0x2100             MOVS     R1,#+0
+   \   0000003C   0x2200             MOVS     R2,#+0
+   \   0000003E   0xC006             STM      R0!,{R1,R2}
+     62              putQueueElem(&eventReceivers, recv);
+   \   00000040   0x0031             MOVS     R1,R6
+   \   00000042   0x0028             MOVS     R0,R5
+   \   00000044   0x.... 0x....      BL       putQueueElem
+     63            }
+     64          
+     65            // Update receiver's mask and fast query mask
+     66            recv->service.evmask[pos] |= mask;
+   \                     ??SYS_SubscribeToEvent_2: (+1)
+   \   00000048   0x00B8             LSLS     R0,R7,#+2
+   \   0000004A   0x1831             ADDS     R1,R6,R0
+   \   0000004C   0x684A             LDR      R2,[R1, #+4]
+   \   0000004E   0x4322             ORRS     R2,R2,R4
+   \   00000050   0x604A             STR      R2,[R1, #+4]
+     67            subscribed[pos] |= mask;
+   \   00000052   0x1828             ADDS     R0,R5,R0
+   \   00000054   0x6841             LDR      R1,[R0, #+4]
+   \   00000056   0x430C             ORRS     R4,R4,R1
+   \   00000058   0x6044             STR      R4,[R0, #+4]
+     68          }
+   \                     ??SYS_SubscribeToEvent_1: (+1)
+   \   0000005A   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+     69          
+     70          /**************************************************************************//**
+     71          \brief Unsubscribe receiver from event
+     72          
+     73          \param[in] id - event id
+     74          \param[in] recv - receiver description
+     75          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     76          void SYS_UnsubscribeFromEvent(SYS_EventId_t id, SYS_EventReceiver_t *recv)
+     77          {
+   \                     SYS_UnsubscribeFromEvent: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000E             MOVS     R6,R1
+     78            const int pos = id / evWordNBits;
+   \   00000006   0x0965             LSRS     R5,R4,#+5
+     79            const sysEvWord_t mask = 1U << (id % evWordNBits);
+   \   00000008   0x2701             MOVS     R7,#+1
+   \   0000000A   0x06E0             LSLS     R0,R4,#+27
+   \   0000000C   0x0EC0             LSRS     R0,R0,#+27
+   \   0000000E   0x4087             LSLS     R7,R7,R0
+     80            bool more_subscribers = false;
+     81          
+     82            SYS_E_ASSERT_FATAL((id < SYS_MAX_EVENTS), SYS_ASSERT_WRONG_EVENT_SUBSCRIBE);
+   \   00000010   0x2C40             CMP      R4,#+64
+   \   00000012   0xD304             BCC      ??SYS_UnsubscribeFromEvent_0
+   \   00000014   0x....             LDR      R0,??DataTable3  ;; 0x8003
+   \   00000016   0x....             LDR      R1,??DataTable3_1
+   \   00000018   0x8008             STRH     R0,[R1, #+0]
+   \   0000001A   0x.... 0x....      BL       SYS_DefAssertCallbackFatal
+     83          
+     84            // Stop processing, if receiver wasn't subscribed.
+     85            if (!SYS_IsEventSubscriber(id, recv))
+   \                     ??SYS_UnsubscribeFromEvent_0: (+1)
+   \   0000001E   0x0031             MOVS     R1,R6
+   \   00000020   0x0020             MOVS     R0,R4
+   \   00000022   0x.... 0x....      BL       SYS_IsEventSubscriber
+   \   00000026   0x2800             CMP      R0,#+0
+   \   00000028   0xD014             BEQ      ??SYS_UnsubscribeFromEvent_1
+     86              return;
+     87          
+     88            // Update receiver's mask
+     89            recv->service.evmask[pos] &= ~mask;
+   \   0000002A   0x00AC             LSLS     R4,R5,#+2
+   \   0000002C   0x1930             ADDS     R0,R6,R4
+   \   0000002E   0x43FD             MVNS     R5,R7
+   \   00000030   0x6841             LDR      R1,[R0, #+4]
+   \   00000032   0x4029             ANDS     R1,R1,R5
+   \   00000034   0x6041             STR      R1,[R0, #+4]
+     90          
+     91            // Look if there is more subscribers for event
+     92            for (const SYS_EventReceiver_t *hnd = getQueueElem(&eventReceivers); hnd; hnd = getNextQueueElem(hnd))
+   \   00000036   0x....             LDR      R6,??DataTable3_2
+   \   00000038   0x6830             LDR      R0,[R6, #+0]
+   \   0000003A   0xE005             B        ??SYS_UnsubscribeFromEvent_2
+     93            {
+     94              if (hnd->service.evmask[pos] & mask)
+   \                     ??SYS_UnsubscribeFromEvent_3: (+1)
+   \   0000003C   0x1901             ADDS     R1,R0,R4
+   \   0000003E   0x6849             LDR      R1,[R1, #+4]
+   \   00000040   0x4039             ANDS     R1,R1,R7
+   \   00000042   0xD107             BNE      ??SYS_UnsubscribeFromEvent_1
+     95              {
+     96                more_subscribers = true;
+     97                break;
+     98              }
+     99            }
+   \   00000044   0x.... 0x....      BL       getNextQueueElem
+   \                     ??SYS_UnsubscribeFromEvent_2: (+1)
+   \   00000048   0x2800             CMP      R0,#+0
+   \   0000004A   0xD1F7             BNE      ??SYS_UnsubscribeFromEvent_3
+    100          
+    101            // No more subscribers for event. Update fast query mask.
+    102            if (!more_subscribers)
+    103              subscribed[pos] &= ~mask;
+   \   0000004C   0x1930             ADDS     R0,R6,R4
+   \   0000004E   0x6841             LDR      R1,[R0, #+4]
+   \   00000050   0x400D             ANDS     R5,R5,R1
+   \   00000052   0x6045             STR      R5,[R0, #+4]
+    104          
+    105          // Dequeuing receiver is dangerous since user could unsubscribe and modify queue
+    106          // while being called by PostEvent's event delivery loop. Disabled for now.
+    107          #if 0
+    108            for (int i = ARRAY_SIZE(recv->service.evlist), i, i--)
+    109            {
+    110              if (recv->service.evlist[i])
+    111                return;
+    112            }
+    113            // No more subscriptions, dequeue receiver
+    114            deleteQueueElem(eventReceivers, recv);
+    115          #endif
+    116          }
+   \                     ??SYS_UnsubscribeFromEvent_1: (+1)
+   \   00000054   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    117          
+    118          /**************************************************************************//**
+    119          \brief Post an event to be delivered to all subscribed receivers
+    120          
+    121          \param[in] id - event id
+    122          \param[in] data - associated data
+    123          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    124          void SYS_PostEvent(SYS_EventId_t id, SYS_EventData_t data)
+    125          {
+   \                     SYS_PostEvent: (+1)
+   \   00000000   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x0004             MOVS     R4,R0
+    126            const int pos = id / evWordNBits;
+   \   00000006   0x0940             LSRS     R0,R0,#+5
+   \   00000008   0x9000             STR      R0,[SP, #+0]
+    127            const sysEvWord_t mask = 1U << (id % evWordNBits);
+   \   0000000A   0x2701             MOVS     R7,#+1
+   \   0000000C   0x06E0             LSLS     R0,R4,#+27
+   \   0000000E   0x0EC0             LSRS     R0,R0,#+27
+   \   00000010   0x4087             LSLS     R7,R7,R0
+    128          
+    129            SYS_E_ASSERT_FATAL((id <  SYS_MAX_EVENTS), SYS_ASSERT_WRONG_EVENT_POST);
+   \   00000012   0x....             LDR      R6,??DataTable3_1
+   \   00000014   0x2C40             CMP      R4,#+64
+   \   00000016   0xD303             BCC      ??SYS_PostEvent_0
+   \   00000018   0x....             LDR      R0,??DataTable3_3  ;; 0x8004
+   \   0000001A   0x8030             STRH     R0,[R6, #+0]
+   \   0000001C   0x.... 0x....      BL       SYS_DefAssertCallbackFatal
+   \                     ??SYS_PostEvent_0: (+1)
+   \   00000020   0x....             LDR      R0,??DataTable3_2
+   \   00000022   0x9900             LDR      R1,[SP, #+0]
+   \   00000024   0x0089             LSLS     R1,R1,#+2
+   \   00000026   0x1841             ADDS     R1,R0,R1
+   \   00000028   0x6849             LDR      R1,[R1, #+4]
+   \   0000002A   0x4039             ANDS     R1,R1,R7
+   \   0000002C   0xD018             BEQ      ??SYS_PostEvent_1
+    130          
+    131            if (!(subscribed[pos] & mask))  // There is no one listening
+    132              return;
+    133          
+    134            for (const SYS_EventReceiver_t *hnd = getQueueElem(&eventReceivers); hnd; hnd = getNextQueueElem(hnd))
+   \   0000002E   0x6805             LDR      R5,[R0, #+0]
+   \   00000030   0x2D00             CMP      R5,#+0
+   \   00000032   0xE014             B        ??SYS_PostEvent_2
+    135            {
+    136              if (hnd->service.evmask[pos] & mask)
+   \                     ??SYS_PostEvent_3: (+1)
+   \   00000034   0x9800             LDR      R0,[SP, #+0]
+   \   00000036   0x0080             LSLS     R0,R0,#+2
+   \   00000038   0x1828             ADDS     R0,R5,R0
+   \   0000003A   0x6840             LDR      R0,[R0, #+4]
+   \   0000003C   0x4038             ANDS     R0,R0,R7
+   \   0000003E   0xD00A             BEQ      ??SYS_PostEvent_4
+    137              {
+    138                SYS_E_ASSERT_FATAL(hnd->func, SYS_POSTEVENT_NULLCALLBACK0);
+   \   00000040   0x68E8             LDR      R0,[R5, #+12]
+   \   00000042   0x2800             CMP      R0,#+0
+   \   00000044   0xD103             BNE      ??SYS_PostEvent_5
+   \   00000046   0x....             LDR      R0,??DataTable3_4  ;; 0x8005
+   \   00000048   0x8030             STRH     R0,[R6, #+0]
+   \   0000004A   0x.... 0x....      BL       SYS_DefAssertCallbackFatal
+    139                hnd->func(id, data);
+   \                     ??SYS_PostEvent_5: (+1)
+   \   0000004E   0x9902             LDR      R1,[SP, #+8]
+   \   00000050   0x0020             MOVS     R0,R4
+   \   00000052   0x68EA             LDR      R2,[R5, #+12]
+   \   00000054   0x4790             BLX      R2
+    140              }
+    141            }
+   \                     ??SYS_PostEvent_4: (+1)
+   \   00000056   0x0028             MOVS     R0,R5
+   \   00000058   0x.... 0x....      BL       getNextQueueElem
+   \   0000005C   0x0005             MOVS     R5,R0
+   \                     ??SYS_PostEvent_2: (+1)
+   \   0000005E   0xD1E9             BNE      ??SYS_PostEvent_3
+    142          }
+   \                     ??SYS_PostEvent_1: (+1)
+   \   00000060   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    143          
+    144          /**************************************************************************//**
+    145          \brief Check if event have at least one subscriber
+    146          
+    147          \param[in] id - event if
+    148          \return result
+    149          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    150          bool SYS_IsEventDeliverable(SYS_EventId_t id)
+    151          {
+    152            return subscribed[id / evWordNBits] & (1U << (id % evWordNBits));
+   \                     SYS_IsEventDeliverable: (+1)
+   \   00000000   0x....             LDR      R1,??DataTable3_2
+   \   00000002   0x....             B.N      ?Subroutine0
+    153          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x0942             LSRS     R2,R0,#+5
+   \   00000002   0x0092             LSLS     R2,R2,#+2
+   \   00000004   0x1889             ADDS     R1,R1,R2
+   \   00000006   0x6849             LDR      R1,[R1, #+4]
+   \   00000008   0x06C0             LSLS     R0,R0,#+27
+   \   0000000A   0x0EC0             LSRS     R0,R0,#+27
+   \   0000000C   0x40C1             LSRS     R1,R1,R0
+   \   0000000E   0x07C8             LSLS     R0,R1,#+31
+   \   00000010   0x0FC0             LSRS     R0,R0,#+31
+   \   00000012   0x4770             BX       LR               ;; return
+    154          
+    155          /**************************************************************************//**
+    156          \brief Check if specified receiver is subscribed to event.
+    157          
+    158          \param[in] id - event if
+    159          \param[in] recv - receiver description
+    160          
+    161          \return result
+    162          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    163          bool SYS_IsEventSubscriber(SYS_EventId_t id, SYS_EventReceiver_t *recv)
+   \                     SYS_IsEventSubscriber: (+1)
+   \   00000000   0xBF00             Nop      
+    164          {
+    165            const int pos = id / evWordNBits;
+    166            const sysEvWord_t mask = 1U << (id % evWordNBits);
+    167          
+    168            return recv->service.evmask[pos] & mask;
+   \   00000002                      REQUIRE ?Subroutine0
+   \   00000002                      ;; // Fall through to label ?Subroutine0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x00008003         DC32     0x8003
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     gAssertDbgCode
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x........         DC32     eventReceivers
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \   00000000   0x00008004         DC32     0x8004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \   00000000   0x00008005         DC32     0x8005
+    169          }
+    170          
+    171          // eof sysEventsHandler.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SYS_IsEventDeliverable
+       0   SYS_IsEventSubscriber
+      32   SYS_PostEvent
+        32   -- Indirect call
+        32   -> SYS_DefAssertCallbackFatal
+        32   -> getNextQueueElem
+      24   SYS_SubscribeToEvent
+        24   -> SYS_DefAssertCallbackFatal
+        24   -> SYS_IsEventSubscriber
+        24   -> isQueueElem
+        24   -> putQueueElem
+      24   SYS_UnsubscribeFromEvent
+        24   -> SYS_DefAssertCallbackFatal
+        24   -> SYS_IsEventSubscriber
+        24   -> getNextQueueElem
+       0   getNextQueueElem
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+      20  ?Subroutine0
+       4  SYS_IsEventDeliverable
+       2  SYS_IsEventSubscriber
+      98  SYS_PostEvent
+      92  SYS_SubscribeToEvent
+      86  SYS_UnsubscribeFromEvent
+      12  eventReceivers
+          subscribed
+       8  getNextQueueElem
+
+ 
+  12 bytes in section .bss
+ 330 bytes in section .text
+ 
+ 330 bytes of CODE memory
+  12 bytes of DATA memory
+
+Errors: none
+Warnings: none

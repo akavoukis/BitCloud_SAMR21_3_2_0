@@ -1,0 +1,897 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:24
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclSecurityManager.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclSecurityManager.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclSecurityManager.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclSecurityManager.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclSecurityManager.c
+      1          /************************************************************************//**
+      2            \file zclSecurityManager.c
+      3          
+      4            \brief
+      5              The ZCL Security Manager implementation
+      6          
+      7              The file implements the ZCL Security Manager
+      8          
+      9            \author
+     10              Atmel Corporation: http://www.atmel.com \n
+     11              Support email: avr@atmel.com
+     12          
+     13            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     14            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     15          
+     16            \internal
+     17              History:
+     18              18.03.09 A. Potashov - Created.
+     19          ******************************************************************************/
+     20          #if ZCL_SUPPORT == 1
+     21          #if(defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+     22          
+     23          /******************************************************************************
+     24                             Includes section
+     25          ******************************************************************************/
+     26          #include <aps.h>
+     27          #include <appFramework.h>
+     28          #include <zclSecurityManager.h>
+     29          #include <zclKeyEstablishmentCluster.h>
+     30          #include <sysUtils.h>
+     31          #include <configServer.h>
+     32          #include <zclTaskManager.h>
+     33          #include <zclDbg.h>
+     34          #include <sysAssert.h>
+     35          #include <clusters.h>
+     36          #include <zdo.h>
+     37          
+     38          #define ZCL_SM_INVALID_SHORT_ADDRESS       0xffff
+     39          #define ZCL_SM_INVALID_EXT_ADDRESS         0xffffffffffffffffLL
+     40          #define ZCL_SM_KE_INIT_TIMEOUT             5000
+     41          
+     42          #if CERTICOM_SUPPORT == 1
+     43            #ifndef ZCL_SM_PERMISSION_TABLE_SIZE
+     44              #define ZCL_SM_PERMISSION_TABLE_SIZE          0x05
+     45            #endif
+     46          #endif // CERTICOM_SUPPORT == 1
+     47          
+     48          
+     49          #if CERTICOM_SUPPORT == 1
+     50          typedef enum
+     51          {
+     52            ZCL_SM_TC_NOT_AUTHENTICATED_STATUS    = 0x00,
+     53            ZCL_SM_TC_AUTHENTICATION_STARTED      = 0x01,
+     54            ZCL_SM_TC_AUTHENTICATION_FAILED       = 0x02,
+     55            ZCL_SM_TC_AUTHENTICATED_STATUS        = 0x03,
+     56            ZCL_SM_TC_LINK_KEY_UPDATE_REQUIRED    = 0x04,
+     57          } ZclSmTcAuthenticateStatus_t;
+     58          
+     59          typedef struct
+     60          {
+     61            ShortAddr_t                   shortAddr;
+     62            ExtAddr_t                     extAddr;
+     63            Endpoint_t                    keEndpoint;
+     64            ZclSmTcAuthenticateStatus_t   authenticateStatus;
+     65            uint16_t                      linkKeyTimeout;     //in minutes (45 days as maximum)
+     66          } ZclSmPTEntry_t;
+     67          #endif // CERTICOM_SUPPORT == 1
+     68          
+     69          #if CERTICOM_SUPPORT == 1
+     70          extern Endpoint_t   keLocalEndpoint;
+     71          extern ZCL_KECertificateDescriptor_t keCertificateDescriptor;
+     72          
+     73          //API
+     74          extern void keReset(void);
+     75          extern bool keInitCluster(ExtAddr_t *remoteAddress);
+     76          extern bool keStartKE(void);
+     77          #endif // CERTICOM_SUPPORT == 1
+     78          
+
+   \                                 In section .bss, align 4
+     79          static ZCL_StartSecurityReq_t *smStartReq;
+   \                     smStartReq:
+   \   00000000                      DS8 4
+     80          
+     81          /******************************************************************************
+     82                                    Prototypes section
+     83          ******************************************************************************/
+     84          static void smMakeStartConf(void);
+     85          
+     86          /******************************************************************************
+     87                                     Implementations section
+     88          ******************************************************************************/
+     89          /**************************************************************************//**
+     90            \brief Security task handler of ZCL layer to handle start request with gap.
+     91          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     92          void zclSecurityTaskHandler(void)
+     93          {
+     94            smMakeStartConf();
+   \                     zclSecurityTaskHandler: (+1)
+   \   00000000   0x....             LDR      R1,??DataTable2
+   \   00000002   0x6808             LDR      R0,[R1, #+0]
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD100             BNE      ??zclSecurityTaskHandler_0
+   \   00000008   0x4770             BX       LR
+   \                     ??zclSecurityTaskHandler_0: (+1)
+   \   0000000A   0xB580             PUSH     {R7,LR}
+   \   0000000C   0x68C2             LDR      R2,[R0, #+12]
+   \   0000000E   0x3008             ADDS     R0,R0,#+8
+   \   00000010   0x2300             MOVS     R3,#+0
+   \   00000012   0x600B             STR      R3,[R1, #+0]
+   \   00000014   0x0011             MOVS     R1,R2
+   \   00000016   0xD105             BNE      ??zclSecurityTaskHandler_1
+   \   00000018   0x....             LDR      R0,??DataTable2_1  ;; 0xc702
+   \   0000001A   0x....             LDR      R1,??DataTable2_2
+   \   0000001C   0x8008             STRH     R0,[R1, #+0]
+   \   0000001E   0x.... 0x....      BL       SYS_DefAssertCallbackFatal
+   \   00000022   0xBD01             POP      {R0,PC}
+   \                     ??zclSecurityTaskHandler_1: (+1)
+   \   00000024   0x4790             BLX      R2
+     95          }
+   \   00000026   0xBD01             POP      {R0,PC}          ;; return
+     96          
+     97          /***************************************************************************//**
+     98          \brief Reset ZCL security module activity.
+     99          ********************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    100          void ZCL_ResetSecurity(void)
+    101          {
+    102            smStartReq = NULL;
+   \                     ZCL_ResetSecurity: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             LDR      R1,??DataTable2
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    103          #if CERTICOM_SUPPORT == 1
+    104            keReset();
+    105            APS_SetDefaultKeyPairStatus(APS_FLAG_NONE);
+    106          #endif
+    107          }
+   \   00000006   0x4770             BX       LR               ;; return
+    108          
+    109          #if CERTICOM_SUPPORT == 1
+    110          /***************************************************************************//**
+    111            \brief Notifies that Key Establishment is finished with status specified in parameters.
+    112          
+    113            \param status - status of Key Establishment.
+    114          ********************************************************************************/
+    115          void keNotification(ZCL_SecurityStatus_t status)
+    116          {
+    117            if (smStartReq)
+    118            {
+    119              if (ZCL_SECURITY_STATUS_INVALID_SETTINGS >= status)
+    120              {
+    121                smStartReq->confirm.status = status;
+    122                zclPostTask(ZCL_SECURITY_TASK_ID);
+    123              }
+    124            }
+    125          }
+    126          #endif
+    127          
+    128          /***************************************************************************//**
+    129            \brief Start ZCL with certain security settings.
+    130          
+    131            \param req - pointer to security start request structure.
+    132          ********************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    133          void ZCL_StartSecurityReq(ZCL_StartSecurityReq_t *req)
+    134          {
+   \                     ZCL_StartSecurityReq: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    135            if (NULL == req)
+   \   00000002   0x....             LDR      R1,??DataTable2_2
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD102             BNE      ??ZCL_StartSecurityReq_0
+    136            {
+    137              SYS_E_ASSERT_ERROR(req, ZCL_STARTSECURITY_NULLREQUEST);
+   \   00000008   0x20C1             MOVS     R0,#+193
+   \   0000000A   0x0200             LSLS     R0,R0,#+8        ;; #+49408
+   \   0000000C   0xE003             B.N      ??ZCL_StartSecurityReq_1
+    138              return;
+    139            }
+    140            else if (NULL == req->ZCL_StartSecurityConf)
+   \                     ??ZCL_StartSecurityReq_0: (+1)
+   \   0000000E   0x68C2             LDR      R2,[R0, #+12]
+   \   00000010   0x2A00             CMP      R2,#+0
+   \   00000012   0xD104             BNE      ??ZCL_StartSecurityReq_2
+    141            {
+    142              SYS_E_ASSERT_ERROR(req->ZCL_StartSecurityConf, ZCL_STARTSECURITY_NULLCONFIRM);
+   \   00000014   0x....             LDR      R0,??DataTable2_3  ;; 0xc101
+   \                     ??ZCL_StartSecurityReq_1: (+1)
+   \   00000016   0x8008             STRH     R0,[R1, #+0]
+   \   00000018   0x.... 0x....      BL       SYS_DefAssertCallbackError
+    143              return;
+   \   0000001C   0xBD01             POP      {R0,PC}
+    144            }
+    145          
+    146          
+    147            smStartReq = req;
+   \                     ??ZCL_StartSecurityReq_2: (+1)
+   \   0000001E   0x....             LDR      R1,??DataTable2
+   \   00000020   0x6008             STR      R0,[R1, #+0]
+    148          
+    149          #if CERTICOM_SUPPORT == 1
+    150            if (!req->remoteAddress)
+    151              COPY_EXT_ADDR(req->remoteAddress, *APS_GetTrustCenterAddress());
+    152            if (!keInitCluster(&req->remoteAddress) || !keStartKE())
+    153            {
+    154              smStartReq->confirm.status = ZCL_SECURITY_STATUS_INVALID_SETTINGS;
+    155              zclPostTask(ZCL_SECURITY_TASK_ID);
+    156            }
+    157          
+    158            if (MAC_IsOwnExtAddr(&req->remoteAddress))
+    159          #endif // CERTICOM_SUPPORT == 1
+    160            {
+    161              smStartReq->confirm.status = ZCL_SECURITY_STATUS_SUCCESS;
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0x6809             LDR      R1,[R1, #+0]
+   \   00000026   0x7208             STRB     R0,[R1, #+8]
+    162              zclPostTask(ZCL_SECURITY_TASK_ID);
+   \   00000028   0x2002             MOVS     R0,#+2
+   \   0000002A   0x.... 0x....      BL       zclPostTask
+    163            }
+    164          }
+   \   0000002E   0xBD01             POP      {R0,PC}          ;; return
+    165          
+    166          /***************************************************************************//**
+    167          \brief Confirmation about ZCL security start.
+    168          
+    169          \param req - pointer to security start request structure.
+    170          ********************************************************************************/
+    171          static void smMakeStartConf(void)
+    172          {
+    173            if (smStartReq)
+    174            {
+    175              void (*cf)(ZCL_StartSecurityConf_t *conf) = smStartReq->ZCL_StartSecurityConf;
+    176              ZCL_StartSecurityConf_t *conf = &smStartReq->confirm;
+    177              smStartReq = NULL;
+    178              if (NULL == cf)
+    179              {
+    180                SYS_E_ASSERT_FATAL(false, ZCL_STARTSECURITY_NULLCALLBACK0);
+    181              }
+    182              else
+    183              {
+    184                cf(conf);
+    185              }
+    186            }
+    187          }
+    188          
+
+   \                                 In section .text, align 2, keep-with-next
+    189          void ZCL_Set(ZCL_Set_t *req)
+    190          {
+   \                     ZCL_Set: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x0004             MOVS     R4,R0
+    191            req->status = ZCL_SUCCESS_STATUS;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x7420             STRB     R0,[R4, #+16]
+    192          
+    193            switch (req->attr.id)
+   \   0000000A   0x7820             LDRB     R0,[R4, #+0]
+   \   0000000C   0x2801             CMP      R0,#+1
+   \   0000000E   0xD004             BEQ      ??ZCL_Set_0
+   \   00000010   0x2802             CMP      R0,#+2
+   \   00000012   0xD018             BEQ      ??ZCL_Set_1
+   \   00000014   0x2804             CMP      R0,#+4
+   \   00000016   0xD00C             BEQ      ??ZCL_Set_2
+   \   00000018   0xE013             B        ??ZCL_Set_3
+    194            {
+    195              case ZCL_LINK_KEY_DESC_ID:
+    196          #ifdef _PERMISSIONS_
+    197                //Add to TC Permission Table
+    198                if (false == TC_AddDeviceToPermissionTable(&req->attr.value.linkKeyDesc->addr))
+    199                  req->status = ZCL_TC_PERMISSION_TABLE_ERROR_STATUS;
+    200          #endif //#ifdef _PERMISSIONS_
+    201          
+    202                if (ZCL_SUCCESS_STATUS == req->status)
+    203                {
+    204                  ExtAddr_t *addr =
+    205                    (ExtAddr_t*)GET_FIELD_PTR(req->attr.value.linkKeyDesc, ZCL_LinkKeyDesc_t, addr);
+    206          
+    207                  if (!APS_KEY_HANDLE_IS_VALID(APS_SetLinkKey(addr, req->attr.value.linkKeyDesc->key)))
+   \                     ??ZCL_Set_0: (+1)
+   \   0000001A   0x68A1             LDR      R1,[R4, #+8]
+   \   0000001C   0x3108             ADDS     R1,R1,#+8
+   \   0000001E   0x68A0             LDR      R0,[R4, #+8]
+   \   00000020   0x.... 0x....      BL       APS_SetLinkKey
+   \   00000024   0x9000             STR      R0,[SP, #+0]
+   \   00000026   0x9800             LDR      R0,[SP, #+0]
+   \   00000028   0xB200             SXTH     R0,R0
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD50B             BPL      ??ZCL_Set_1
+    208                  {
+    209                    req->status = ZCL_APS_LINK_KEY_ERROR_STATUS;
+   \   0000002E   0x2004             MOVS     R0,#+4
+   \   00000030   0xE008             B        ??ZCL_Set_4
+    210                  }
+    211          #ifdef _TC_PROMISCUOUS_MODE_
+    212                  else
+    213                  {
+    214                    APS_SetPreinstalledLinkKey(addr, req->attr.value.linkKeyDesc->key);
+    215                  }
+    216          #endif /* _TC_PROMISCUOUS_MODE_ */
+    217                }
+    218                break;
+    219          
+    220          
+    221              case ZCL_REMOVE_LINK_KEY_ID:
+    222                break;
+    223          
+    224          
+    225          #if CERTICOM_SUPPORT == 1
+    226              case ZCL_KE_ACTIVE_ENDPOINT_ID:
+    227                if ((APS_MIN_USER_ENDPOINT > req->attr.value.endpoint) ||
+    228                    (APS_MAX_USER_ENDPOINT < req->attr.value.endpoint))
+    229                {
+    230                  req->status = ZCL_INVALID_ATTRIBUTE_VALUE_STATUS;
+    231                }
+    232                else
+    233                {
+    234                  keLocalEndpoint = req->attr.value.endpoint;
+    235                }
+    236                break;
+    237          
+    238              case ZCL_CERTIFICATE_DESC_ID:
+    239                if (NULL == req->attr.value.certificateDesc)
+    240                {
+    241                  req->status = ZCL_INVALID_ATTRIBUTE_VALUE_STATUS;
+    242                }
+    243                else
+    244                {
+    245                  SYS_BYTE_MEMCPY(&keCertificateDescriptor, req->attr.value.certificateDesc, sizeof(ZCL_KECertificateDescriptor_t));
+    246                }
+    247                break;
+    248          #endif // CERTICOM_SUPPORT == 1
+    249          
+    250              case ZCL_NETWORK_KEY_ID:
+    251                NWK_SetKey(req->attr.value.networkKey, NWK_STARTUP_ACTIVE_KEY_SEQUENCE_NUMBER);
+   \                     ??ZCL_Set_2: (+1)
+   \   00000032   0x2100             MOVS     R1,#+0
+   \   00000034   0x68A0             LDR      R0,[R4, #+8]
+   \   00000036   0x.... 0x....      BL       NWK_SetKey
+    252                NWK_ActivateKey(NWK_STARTUP_ACTIVE_KEY_SEQUENCE_NUMBER);
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \   0000003C   0x.... 0x....      BL       NWK_ActivateKey
+    253                break;
+   \   00000040   0xBD13             POP      {R0,R1,R4,PC}
+    254          
+    255              default:
+    256                req->status = ZCL_UNSUPPORTED_ATTRIBUTE_STATUS;
+   \                     ??ZCL_Set_3: (+1)
+   \   00000042   0x2086             MOVS     R0,#+134
+   \                     ??ZCL_Set_4: (+1)
+   \   00000044   0x7420             STRB     R0,[R4, #+16]
+    257                break;
+    258            }
+    259          }
+   \                     ??ZCL_Set_1: (+1)
+   \   00000046   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+    260          
+
+   \                                 In section .text, align 2, keep-with-next
+    261          void ZCL_Get(ZCL_Get_t *req)
+    262          {
+   \                     ZCL_Get: (+1)
+   \   00000000   0xB51F             PUSH     {R0-R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    263            uint8_t *key;
+    264            req->status = ZCL_SUCCESS_STATUS;
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x7420             STRB     R0,[R4, #+16]
+    265            req->attr.length = 0;
+   \   00000008   0x7060             STRB     R0,[R4, #+1]
+    266          
+    267            switch (req->attr.id)
+   \   0000000A   0x7820             LDRB     R0,[R4, #+0]
+   \   0000000C   0x2801             CMP      R0,#+1
+   \   0000000E   0xD002             BEQ      ??ZCL_Get_0
+   \   00000010   0x2802             CMP      R0,#+2
+   \   00000012   0xD024             BEQ      ??ZCL_Get_1
+   \   00000014   0xE021             B        ??ZCL_Get_2
+    268            {
+    269              case ZCL_LINK_KEY_DESC_ID:
+    270                {
+    271                  ExtAddr_t addr = *(ExtAddr_t*)GET_FIELD_PTR(req->attr.value.linkKeyDesc, ZCL_LinkKeyDesc_t, addr);
+   \                     ??ZCL_Get_0: (+1)
+   \   00000016   0x68A0             LDR      R0,[R4, #+8]
+   \   00000018   0xC803             LDM      R0,{R0,R1}
+   \   0000001A   0xAA02             ADD      R2,SP,#+8
+   \   0000001C   0xC203             STM      R2!,{R0,R1}
+    272                  const APS_KeyHandle_t apsKeyHandle = APS_FindKeys(&addr);
+   \   0000001E   0xA802             ADD      R0,SP,#+8
+   \   00000020   0x.... 0x....      BL       APS_FindKeys
+   \   00000024   0x9000             STR      R0,[SP, #+0]
+    273          
+    274                  key = APS_KEYS_FOUND(apsKeyHandle)? APS_GetLinkKey(apsKeyHandle): NULL;
+   \   00000026   0x9800             LDR      R0,[SP, #+0]
+   \   00000028   0xB200             SXTH     R0,R0
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD404             BMI      ??ZCL_Get_3
+   \   0000002E   0x9800             LDR      R0,[SP, #+0]
+   \   00000030   0x.... 0x....      BL       APS_GetLinkKey
+    275                  if (NULL == key)
+   \   00000034   0x2800             CMP      R0,#+0
+   \   00000036   0xD101             BNE      ??ZCL_Get_4
+    276                  {
+    277                    req->status = ZCL_INVALID_ATTRIBUTE_VALUE_STATUS;
+   \                     ??ZCL_Get_3: (+1)
+   \   00000038   0x2002             MOVS     R0,#+2
+   \   0000003A   0xE00F             B        ??ZCL_Get_5
+    278                  }
+    279                  else
+    280                  {
+    281                    SYS_BYTE_MEMCPY(req->attr.value.linkKeyDesc->key, key, 16);
+   \                     ??ZCL_Get_4: (+1)
+   \   0000003C   0x2110             MOVS     R1,#+16
+   \   0000003E   0x68A2             LDR      R2,[R4, #+8]
+   \   00000040   0x3208             ADDS     R2,R2,#+8
+   \   00000042   0xE003             B        ??ZCL_Get_6
+   \                     ??ZCL_Get_7: (+1)
+   \   00000044   0x7803             LDRB     R3,[R0, #+0]
+   \   00000046   0x7013             STRB     R3,[R2, #+0]
+   \   00000048   0x1C40             ADDS     R0,R0,#+1
+   \   0000004A   0x1C52             ADDS     R2,R2,#+1
+   \                     ??ZCL_Get_6: (+1)
+   \   0000004C   0x000B             MOVS     R3,R1
+   \   0000004E   0x1E59             SUBS     R1,R3,#+1
+   \   00000050   0x041B             LSLS     R3,R3,#+16
+   \   00000052   0xD1F7             BNE      ??ZCL_Get_7
+    282                    req->attr.length = sizeof(ZCL_LinkKeyDesc_t);
+   \   00000054   0x2018             MOVS     R0,#+24
+   \   00000056   0x7060             STRB     R0,[R4, #+1]
+   \   00000058   0xBD1F             POP      {R0-R4,PC}
+    283                  }
+    284                  break;
+    285                }
+    286          
+    287              case ZCL_REMOVE_LINK_KEY_ID:
+    288                break;
+    289          #if CERTICOM_SUPPORT == 1
+    290              case ZCL_KE_ACTIVE_ENDPOINT_ID:
+    291                req->attr.value.endpoint = keLocalEndpoint;
+    292                if (ZCL_KE_INVALID_ENDPOINT == req->attr.value.endpoint)
+    293                  req->status = ZCL_INVALID_ATTRIBUTE_VALUE_STATUS;
+    294                break;
+    295          
+    296              case ZCL_CERTIFICATE_DESC_ID:
+    297                if (NULL == req->attr.value.certificateDesc)
+    298                {
+    299                  req->status = ZCL_INVALID_ATTRIBUTE_VALUE_STATUS;
+    300                }
+    301                else
+    302                {
+    303                  SYS_BYTE_MEMCPY(req->attr.value.certificateDesc, &keCertificateDescriptor, sizeof(ZCL_KECertificateDescriptor_t));
+    304                }
+    305                break;
+    306          
+    307          #endif // CERTICOM_SUPPORT == 1
+    308              default:
+    309                req->status = ZCL_UNSUPPORTED_ATTRIBUTE_STATUS;
+   \                     ??ZCL_Get_2: (+1)
+   \   0000005A   0x2086             MOVS     R0,#+134
+   \                     ??ZCL_Get_5: (+1)
+   \   0000005C   0x7420             STRB     R0,[R4, #+16]
+    310                break;
+    311            }
+    312          }
+   \                     ??ZCL_Get_1: (+1)
+   \   0000005E   0xBD1F             POP      {R0-R4,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     smStartReq
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x0000C702         DC32     0xc702
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x........         DC32     gAssertDbgCode
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \   00000000   0x0000C101         DC32     0xc101
+    313          
+    314          #if 0
+    315          
+    316          #if CERTICOM_SUPPORT == 1
+    317          static void smMatchDescResp(ZDO_ZdpResp_t *zdpResp)
+    318          {
+    319            ZDO_MatchDescResp_t *zdoMatchResp = &zdpResp->respPayload.matchDescResp;
+    320            APS_BindReq_t apsBindReq;
+    321          
+    322            if (ZDO_SUCCESS_STATUS == zdpResp->respPayload.status)
+    323            {
+    324                srvKEEndpoint = zdoMatchResp->matchList[0];
+    325                srvShortAddr = zdoMatchResp->nwkAddrOfInterest;
+    326            }
+    327            else if (ZDO_CMD_COMPLETED_STATUS == zdpResp->respPayload.status)
+    328            {
+    329              if ((APS_ZDO_ENDPOINT != srvKEEndpoint) &&
+    330                  (ZCL_SM_INVALID_SHORT_ADDRESS != srvShortAddr))
+    331              {
+    332                smMakeStartConf(ZCL_SECURITY_STATUS_DISCOVERY_FAIL);
+    333              }
+    334              else
+    335              {
+    336          /*
+    337          typedef struct
+    338          {
+    339            //Standard fields
+    340            ExtAddr_t srcAddr;
+    341            Endpoint_t srcEndpoint;
+    342            ClusterId_t clusterId;
+    343            APS_AddrMode_t dstAddrMode;
+    344            APS_Address_t dstAddr;
+    345            Endpoint_t dstEndpoint;
+    346            //Confirm
+    347            APS_BindConf_t confirm;
+    348          } APS_BindReq_t;
+    349          */
+    350                apsBindReq.srcAddr = *MAC_GetExtAddr();
+    351                apsBindReq.srcEndpoint = clKEEndpoint;
+    352                apsBindReq.clusterId = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+    353                apsBindReq.dstAddrMode = APS_EXT_ADDRESS;
+    354                COPY_EXT_ADDR(apsBindReq.dstAddr.extAddress, *APS_GetTrustCenterAddress());
+    355                apsBindReq.dstEndpoint = srvKEEndpoint;
+    356                APS_BindReq(&apsBindReq);
+    357                if (APS_SUCCESS_STATUS != apsBindReq.confirm.status)
+    358                {
+    359                  smMakeStartConf(ZCL_SECURITY_STATUS_APS_BINDING_FAIL);
+    360                }
+    361                else
+    362                {
+    363                  keInitiateKE(0x00, apsBindReq.dstAddr.extAddress, srvKEEndpoint);
+    364                }
+    365              }
+    366            }
+    367          }
+    368          
+    369          
+    370          static void smMakeKEWithTrustCenter(void)
+    371          {
+    372            //It's supposed that TrustCenter is in the coordinator which has
+    373            //short address equal to 0x0000
+    374            //TBD: For other cases the complex service discovery needed
+    375          
+    376            smMakeMatchDescReq();
+    377          }
+    378          
+    379          
+    380          //Function make discovery for KE Cluster at the TrustCenter
+    381          //It's assumed that TrustCenter is located at Coordinator
+    382          static smMakeMatchDescReq(void)
+    383          {
+    384            ZDO_MatchDescReq_t *zdoMatchDescReq = &zdpReq.req.reqPayload.matchDescReq;
+    385          
+    386            zdpReq.ZDO_ZdpResp = smMatchDescResp;
+    387            zdpReq.reqCluster = MATCH_DESCRIPTOR_CLID;
+    388            zdoMatchDescReq->nwkAddrOfInterest = 0x0000;
+    389            zdoMatchDescReq->profileId = PROFILE_ID_SMART_ENERGY;
+    390            zdoMatchDescReq->numInClusters = 1;
+    391            zdoMatchDescReq->numOutClusters = 0;
+    392            zdoMatchDescReq->inClusterList[0] = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+    393            ZDO_ZdpReq(&zdpReq);
+    394          }
+    395          
+    396          
+    397          static void smZdoIeeeAddrResp(ZDO_ZdpResp_t *zdpResp)
+    398          {
+    399            ZDO_IeeeAddrResp_t    *ieeeAddrResp = (ZDO_IeeeAddrResp_t *) &zdpResp->respPayload.ieeeAddrResp;
+    400            APS_BindReq_t         apsReq;
+    401            ZCL_SecurityStatus_t  status = ZCL_SUCCESS_STATUS;
+    402          
+    403            if (ZDO_SUCCESS_STATUS == zdpResp->respPayload.status)
+    404            {
+    405              srvExtAddr = ieeeAddrResp->ieeeAddrRemote;
+    406              COPY_EXT_ADDR(apsReq.srcAddr, *MAC_GetExtAddr());
+    407              apsReq.srcEndpoint = clKEEndpoint;
+    408              apsReq.clusterId = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+    409              apsReq.dstAddrMode = APS_EXT_ADDRESS;
+    410              apsReq.dstAddr.extAddress = ieeeAddrResp->ieeeAddrRemote;
+    411              apsReq.dstEndpoint = clKEEndpoint;
+    412              APS_BindReq(&apsReq);
+    413          
+    414              keSendInitiateKECommand();
+    415            }
+    416            else
+    417            {
+    418              status = ZCL_SECURITY_STATUS_DISCOVERY_FAIL;
+    419            }
+    420            smMakeStartConf(status);
+    421          }
+    422          
+    423          
+    424          static void smMakeIeeeAddrReq(ShortAddr_t shortAddr)
+    425          {
+    426            ZDO_IeeeAddrReq_t *zdoIeeeAddrReq = &zdpReq.req.reqPayload.ieeeAddrReq;
+    427          
+    428            zdpReq.ZDO_ZdpResp = smZdoIeeeAddrResp;
+    429            zdpReq.reqCluster = IEEE_ADDR_CLID;
+    430          
+    431            zdoIeeeAddrReq->nwkAddrOfInterest = shortAddr;
+    432          
+    433            zdoIeeeAddrReq->reqType = 0;
+    434            zdoIeeeAddrReq->startIndex = 0;
+    435          
+    436            ZDO_ZdpReq(&zdpReq);
+    437          }
+    438          #endif // CERTICOM_SUPPORT == 1
+    439          
+    440          
+    441          
+    442          void smTimoutHandler(void)
+    443          {
+    444            smMakeStartConf(ZCL_SECURITY_STATUS_TIMEOUT);
+    445          }
+    446          
+    447          void smSetTimeout(uint32_t timeout)
+    448          {
+    449            apsInitAppTimer(&smApsTimer, TIMER_ONE_SHOT_MODE, timeout, smTimoutHandler);
+    450            apsStartTimer(&smApsTimer);
+    451          }
+    452          
+    453          
+    454          static void smMakeKE(ZclSmPTEntry_t *permissionTableEntry)
+    455          {
+    456            if (NULL == currentPermissionTableEntry)
+    457            {
+    458              currentPermissionTableEntry = permissionTableEntry;
+    459            }
+    460          
+    461          }
+    462          
+    463          
+    464          
+    465          
+    466          
+    467          
+    468          
+    469          /***
+    470          CS_GetMemory(CS_TC_PERMISSION_TABLE_ID, (void*)&permissionDeviceTable);
+    471          CS_ReadParameter(CS_MAX_TC_ALLOWED_DEVICES_AMOUNT_ID, &maxAllowedDeviceAmount);
+    472          ***/
+    473          
+    474          static ZclSmPTEntry_t *smGetFromPermissionTable(ShortAddr_t *shortAddr, ExtAddr_t *extAddr)
+    475          {
+    476            uint8_t i;
+    477            uint8_t j = 0;
+    478            uint8_t k;
+    479            ShortAddr_t shortAddr_;
+    480            ExtAddr_t   extAddr_;
+    481          
+    482            if (NULL != shortAddr)
+    483            {
+    484              j |= (1 << 0);
+    485              shortAddr_ = *shortAddr;
+    486            }
+    487            if (NULL != extAddr)
+    488            {
+    489              j |= (1 << 1);
+    490              COPY_EXT_ADDR(extAddr_, *extAddr);
+    491            }
+    492          
+    493            if (0 != j)
+    494            {
+    495              for (i = 0; i < ZCL_SM_PERMISSION_TABLE_SIZE; i++)
+    496              {
+    497                k = 0;
+    498                if (0 != (j & (1 << 0)))
+    499                {
+    500                  if (smTcPermissionTable[i].shortAddr == shortAddr_)
+    501                    k |= (1 << 0);
+    502                  if (IS_EQ_EXT_ADDR(smTcPermissionTable[i].extAddr, extAddr_))
+    503                    k |= (1 << 1);
+    504                }
+    505                if (k == j)
+    506                  return &smTcPermissionTable[i];
+    507              }
+    508            }
+    509            return NULL;
+    510          }
+    511          
+    512          /*
+    513          ZclSmPermissionTableEntry_t *smAddToPermissionTable(ShortAddr_t shortAdddr, ExtAddr_t extAddr)
+    514          {
+    515            ZclSmPermissionTableEntry_t *result = NULL;
+    516          
+    517            result = smGetFromPermissionTable(shortAddr, extAddr);
+    518            if (NULL == result)
+    519              result = smGetFromPermissionTable(ZCL_SM_INVALID_SHORT_ADDRESS, ZCL_SM_INVALID_EXT_ADDRESS);
+    520            if (NULL != result)
+    521            {
+    522              result->shortAddr = shortAddr;
+    523              result->extAddr = extAddr;
+    524            }
+    525            return result;
+    526          }
+    527          */
+    528          
+    529          #endif //#if 0
+    530          
+    531          #else // (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+    532          void zclSecurityTaskHandler(void)
+    533          {}
+    534          #endif // (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+    535          #endif // ZCL_SUPPORT == 1
+    536          
+    537          //eof zclSecurityManager.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   ZCL_Get
+        24   -> APS_FindKeys
+        24   -> APS_GetLinkKey
+       0   ZCL_ResetSecurity
+      16   ZCL_Set
+        16   -> APS_SetLinkKey
+        16   -> NWK_ActivateKey
+        16   -> NWK_SetKey
+       8   ZCL_StartSecurityReq
+         8   -> SYS_DefAssertCallbackError
+         8   -> zclPostTask
+       8   zclSecurityTaskHandler
+         8   -- Indirect call
+         8   -> SYS_DefAssertCallbackFatal
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+      96  ZCL_Get
+       8  ZCL_ResetSecurity
+      72  ZCL_Set
+      48  ZCL_StartSecurityReq
+       4  smStartReq
+      40  zclSecurityTaskHandler
+
+ 
+   4 bytes in section .bss
+ 280 bytes in section .text
+ 
+ 280 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

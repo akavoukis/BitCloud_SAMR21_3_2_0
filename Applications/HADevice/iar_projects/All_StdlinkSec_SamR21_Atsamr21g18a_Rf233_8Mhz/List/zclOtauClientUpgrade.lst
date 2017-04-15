@@ -1,0 +1,337 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:21
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientUpgrade.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientUpgrade.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclOtauClientUpgrade.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclOtauClientUpgrade.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientUpgrade.c
+      1          /************************************************************************//**
+      2            \file zclOtauClientUpgrade.c
+      3          
+      4            \brief
+      5              The file implements the OTAU client upgrade end request/response handling
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              16.10.14 Karthik.P_u - Created.
+     17            Last change:
+     18              $Id: zclOtauClient.c 27261 2014-10-15 11:19:50Z karthik.p_u $
+     19          ******************************************************************************/
+     20          
+     21          #if (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+     22          
+     23          /******************************************************************************
+     24                             Includes section
+     25          ******************************************************************************/
+     26          #include <zclOtauManager.h>
+     27          #include <zclOtauClient.h>
+     28          
+     29          /******************************************************************************
+     30                             Global variables section
+     31          ******************************************************************************/
+     32          ZCL_Status_t otauUpgradeEndStatus = ZCL_SUCCESS_STATUS;
+     33          
+     34          /******************************************************************************
+     35                             External variables section
+     36          ******************************************************************************/
+     37          extern ZclOtauClientStateMachine_t stateMachine;
+     38          extern ZCL_OtauClusterClientAttributes_t otauClientAttributes;
+     39          extern ZclOtauImageNotifyParams_t imgNtfyServer;
+     40          extern uint8_t retryCount, otauMaxRetryCount;
+     41          
+     42          /******************************************************************************
+     43                             Implementation section
+     44          ******************************************************************************/
+     45          /***************************************************************************//**
+     46          \brief Send indication about finalizing otau process
+     47          ******************************************************************************/
+     48          void otauFinalizeProcess(void)
+     49          {
+     50            zclRaiseCustomMessage(OTAU_DEVICE_SHALL_CHANGE_IMAGE);
+     51          }
+     52          
+     53          /***************************************************************************//**
+     54          \brief Sends upgrade end request to server
+     55          ******************************************************************************/
+     56          void otauUpgradeEndReq(void)
+     57          {
+     58            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+     59            ZCL_OtauUpgradeEndReq_t *tmpOtauReq = &clientMem->zclReqMem.uUpgradeEndReq;
+     60            ZCL_Request_t *tmpZclReq = &clientMem->reqMem.zclCommandReq;
+     61            ZCL_OtauImageType_t imgType = OTAU_SPECIFIC_IMAGE_TYPE;
+     62            uint16_t csManufacturerId;
+     63            CS_ReadParameter(CS_MANUFACTURER_CODE_ID, &csManufacturerId);
+     64          
+     65            // If polling is happening already, no need to raise this action
+     66            if (!zclIsOtauBusy())
+     67            {
+     68              zclRaiseCustomMessage(OTAU_UPGRADE_REQUEST_INITIATED);
+     69            }
+     70          
+     71            if (!isOtauBusy)
+     72            {
+     73              isOtauBusy = true;
+     74            }
+     75           
+     76          #if (USE_IMAGE_SECURITY == 1)
+     77            imgType = clientMem->eepromImgType;
+     78          #endif
+     79          
+     80            zclOtauFillOutgoingZclRequest(UPGRADE_END_REQUEST_ID, sizeof(ZCL_OtauUpgradeEndReq_t), (uint8_t *)tmpOtauReq);
+     81          
+     82            tmpOtauReq->status          = otauUpgradeEndStatus;
+     83            tmpOtauReq->manufacturerId  = csManufacturerId;
+     84            tmpOtauReq->imageType       = imgType;
+     85            tmpOtauReq->firmwareVersion = clientMem->newFirmwareVersion;
+     86          
+     87            ZCL_CommandReq(tmpZclReq);
+     88          }
+     89          
+     90          /***************************************************************************//**
+     91          \brief Handles upgrade end response from server
+     92          
+     93          \param[in] addressing - source parameters
+     94          \param[in] payloadLength - length of payload
+     95          \param[in] payload - upgrade end parameters pointer
+     96          ******************************************************************************/
+     97          ZCL_Status_t upgradeEndRespInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauUpgradeEndResp_t *payload)
+     98          {
+     99            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    100            uint16_t csManufacturerId;
+    101            bool validManId;
+    102            bool validImgType;
+    103            bool validFwVer;
+    104            bool validUpgrdTime;
+    105            uint32_t deltaTime = 0;
+    106          
+    107            CS_ReadParameter(CS_MANUFACTURER_CODE_ID, &csManufacturerId);
+    108            (void)addressing;
+    109            (void)payloadLength;
+    110          
+    111            if (!OTAU_CHECK_STATE(stateMachine, OTAU_WAIT_TO_UPGRADE_STATE))
+    112            {
+    113              SYS_E_ASSERT_WARN(false, ZCL_OTAU_INVALID_STATE_UPGRADE_END_RSP);
+    114              retryCount = otauMaxRetryCount;
+    115              return ZCL_SUCCESS_STATUS;
+    116            }
+    117            else if(isOtauStopped())
+    118            {
+    119              retryCount = otauMaxRetryCount;
+    120              return ZCL_ABORT_STATUS;
+    121            }
+    122          
+    123            isOtauBusy = false;
+    124          
+    125            // process pending img notify(if from another server or for different file)
+    126            if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    127            {
+    128              if (ZCL_SUCCESS_STATUS == otauCheckServerAddrAndTakeAction(false, true))
+    129              {
+    130                return ZCL_SUCCESS_STATUS;
+    131              }
+    132            }
+    133          
+    134            validManId = (OTAU_UPGRADE_END_RESP_MAN_ID_WILDCARD_VAL == payload->manufacturerId)?true:(csManufacturerId == payload->manufacturerId);
+    135            validImgType = (OTAU_UPGRADE_END_RESP_IMG_TYPE_WILDCARD_VAL == payload->imageType)?true:(OTAU_SPECIFIC_IMAGE_TYPE == payload->imageType);
+    136            validFwVer = (OTAU_UPGRADE_END_RESP_FW_VER_WILDCARD_VAL == payload->firmwareVersion.memAlloc)?true:(clientMem->newFirmwareVersion.memAlloc == payload->firmwareVersion.memAlloc);
+    137            validUpgrdTime = (payload->upgradeTime >= payload->currentTime)?true:false;
+    138          
+    139            //go for upgrade if server keeps sending wrong parameters for otauMaxRetryCount times
+    140            if (!validManId || !validImgType || !validFwVer || !validUpgrdTime)
+    141            {
+    142              if (retryCount--)
+    143              {
+    144                otauStartGenericTimer(AMOUNT_MSEC_IN_SEC, otauPollServerEndUpgrade);
+    145              }
+    146              else
+    147              {
+    148                retryCount = otauMaxRetryCount;
+    149          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    150                otauClearPdsParams();
+    151          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+    152                otauStartGenericTimer(AMOUNT_MSEC_IN_SEC, otauFinalizeProcess);
+    153              }
+    154              return ZCL_MALFORMED_COMMAND_STATUS;
+    155            }
+    156          
+    157            // keep querying the server either until finite time is sent or until goes unreachable
+    158            if (UNLIMITED_WAITING_TIME == payload->upgradeTime)
+    159            {
+    160              retryCount = otauMaxRetryCount;
+    161              otauClientAttributes.imageUpgradeStatus.value = OTAU_WAITING_TO_UPGRADE;
+    162              otauStartGenericTimer(WAITING_UPGRADE_END_RESPONSE_TIMEOUT, otauPollServerEndUpgrade);
+    163              return ZCL_SUCCESS_STATUS;
+    164            }
+    165          
+    166            otauClientAttributes.imageUpgradeStatus.value = OTAU_COUNT_DOWN;
+    167          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    168            otauClearPdsParams();
+    169          #endif // APP_SUPPORT_OTAU_RECOVERY == 1
+    170            deltaTime = AMOUNT_MSEC_IN_SEC * (payload->upgradeTime - payload->currentTime);
+    171            if (AMOUNT_MSEC_IN_SEC > deltaTime)
+    172            {
+    173              deltaTime = AMOUNT_MSEC_IN_SEC;
+    174            }
+    175            
+    176            otauStartGenericTimer(deltaTime, otauFinalizeProcess);
+    177            retryCount = otauMaxRetryCount;
+    178            return ZCL_SUCCESS_STATUS;
+    179          }
+    180          
+    181          /***************************************************************************//**
+    182          \brief Poll otau server for upgrade end time
+    183          ******************************************************************************/
+    184          void otauPollServerEndUpgrade(void)
+    185          {
+    186            otauUpgradeEndReq();
+    187          }
+    188          #endif // (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+    189          
+    190          //eof zclOtauClientUpgrade.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

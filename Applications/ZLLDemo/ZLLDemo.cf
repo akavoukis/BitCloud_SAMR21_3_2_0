@@ -1,0 +1,3215 @@
+{<#ifndef _CONFIGURATION_H_
+#define _CONFIGURATION_H_
+
+//-----------------------------------------------
+// Includes board-specific peripherals support in application.
+//-----------------------------------------------
+#include <BoardConfig.h>
+
+//-----------------------------------------------
+// BSP identifiers
+//-----------------------------------------------
+#define BOARD_FAKE 0x01
+#define BOARD_RCB 0x02
+#define BOARD_RCB_KEY_REMOTE 0x03
+#define BOARD_ATMEGA256RFR2_XPRO 0x04
+#define BOARD_SAMR21_XPRO 0x05
+#define BOARD_SAMR21_ZLLEK 0x06
+#define BOARD_SAMR21_CUSTOM 0x07
+
+//-----------------------------------------------
+// Atmel communication interfaces identifiers.
+// Supported interfaces are platform and application dependent.
+//-----------------------------------------------
+#define APP_INTERFACE_USART 0x01
+#define APP_INTERFACE_VCP 0x02
+#define APP_INTERFACE_SPI 0x03
+#define APP_INTERFACE_UART 0x04
+#define APP_INTERFACE_USBFIFO 0x05
+#define APP_INTERFACE_STDIO 0x06
+
+//-----------------------------------------------
+// Atmel external memory identifiers.
+// Supported memory is platform and application dependent.
+//-----------------------------------------------
+#define AT25F2048  0x01
+#define AT45DB041  0x02
+#define AT25DF041A 0x03
+#define M25P40VMN6PB 0x04
+
+${all_tree}
+
+#endif // _CONFIGURATION_H_
+
+>}
+template Make {<PROJECT_NAME = ${prj_name}
+CONFIG_NAME = ${make_name}
+
+all:
+	make -C makefiles/$(PROJECT_NAME) -f Makefile_$(CONFIG_NAME) all
+
+clean:
+	make -C makefiles/$(PROJECT_NAME) -f Makefile_$(CONFIG_NAME) clean
+>}
+group Main
+{
+  group General
+  {
+    text "Library settings"
+  }
+
+  group Application
+  {
+    text "Application settings"
+    help "General application settings."
+  }
+
+  group Hardware
+  {
+    text "Hardware settings"
+    help "Settings that define hardware configuration of the used board."
+  }
+
+  group Stack
+  {
+    text "BitCloud stack settings"
+    help "BitCloud stack settings - Config Server settings that alter core
+      functionality and behavior of the stack. Names of these setings start
+      with 'CS_' prefix. Settings that are not configured here will have
+      defualt values set from csDefaults.h file."
+
+    group NetworkParameters
+    {
+      text "Network join/start parameters "
+    }
+
+    group NodeAddressing
+    {
+      text "Node addressing settings"
+    }
+
+    group Topology
+    {
+      text "Topology settings"
+    }
+
+    group PowerManagement
+    {
+      text "Power Management settings" 
+    }
+
+    group Security
+    {
+      text "Security settings"
+    }
+
+    group Tables
+    {
+      text "Tables sizes"
+    }
+
+    group Buffers
+    {
+      text "Data buffers settings"
+    }
+
+    group DataTransmission
+    {
+      text "Data tramsmission settings"
+      group Fragmentation
+      {
+        text "Fragmentation settings"
+      }
+    }
+
+    group OTAU
+    {
+      text "OTAU settings"
+    }
+  }
+  group Bottom
+  {
+  }
+}
+option BOARD
+{
+  text "Board"
+  help "Defines target ptatform."
+  group Hardware
+  destination config
+  writeType define
+  configOption
+}
+value BOARD_SAMR21
+{
+  text "BOARD_SAMR21"
+  option BOARD
+
+  enable BSP_SUPPORT
+  BSP_SUPPORT = [BOARD_FAKE, BOARD_SAMR21_XPRO, BOARD_SAMR21_ZLLEK, BOARD_SAMR21_CUSTOM]
+
+  HAL = []
+  HAL_FREQUENCY = [HAL_8MHz]
+
+  RFCHIP = [AT86RF233]
+
+  APP_INTERFACE = APP_INTERFACE_USART
+  APP_INTERFACE = [APP_INTERFACE_USART]
+  APP_USART_CHANNEL = USART_CHANNEL_0
+  APP_USART_CHANNEL = [USART_CHANNEL_0, USART_CHANNEL_1]
+}
+/*
+The second file for OTAU feature is for SE application and is needed because there are different projects
+in WSNDemo and Runner application with OTAU support and without with different makefiles and folder names.
+In SE application there is only one makefile and OTAU support is switched by APP_USE_OTAU definition in
+configuration.h. The problem is that OTAU feature for WSNDemo and Runner will use other pathes to makefiles.
+
+*/
+option APP_USE_OTAU
+{
+  group General
+  text "OTA Upgrade"
+  help "Enables or disables support for OTA Upgrade."
+
+  APP_USE_OTAU = 0
+
+  value 1
+  {
+    text "Enable"
+    enable ZCL_SUPPORT_ENABLE
+    enable APP_USE_ISD_CONSOLE_TUNNELING
+    enable APP_USE_FAKE_OFD_DRIVER
+    enable APP_SUPPORT_OTAU_PAGE_REQUEST
+    enable APP_SUPPORT_OTAU_RECOVERY
+    enable CS_ZCL_OTAU_DISCOVERED_SERVER_AMOUNT
+    enable CS_ZCL_OTAU_CLIENT_SESSION_AMOUNT
+    enable CS_ZCL_OTAU_SERVER_DISCOVERY_PERIOD
+    enable CS_ZCL_OTAU_QUERY_INTERVAL
+    enable CS_ZCL_OTAU_MAX_RETRY_COUNT
+    enable CS_ZCL_OTAU_DEFAULT_UPGRADE_SERVER_IEEE_ADDRESS
+    enable CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE
+    enable EXTERNAL_MEMORY
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option ZCL_SUPPORT_ENABLE
+{
+  writeType raw
+  group OTAU
+
+  disabled
+
+  ZCL_SUPPORT_ENABLE = "#undef ZCL_SUPPORT
+  #define ZCL_SUPPORT 1"
+}
+
+option APP_USE_ISD_CONSOLE_TUNNELING
+{
+  group OTAU
+  text "Enable or disable console tunneling support in image store driver."
+  help "Enable or disable console tunneling support in image store driver. Application can send date through tunnel in parallel to ISD driver."
+  disabled
+
+  APP_USE_ISD_CONSOLE_TUNNELING = 0
+
+  value 1
+  {
+    text "Enable"
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option APP_USE_FAKE_OFD_DRIVER
+{
+  group OTAU
+  text "Use fake OFD driver"
+  help "Use fake OFD driver instead of real one. This option is useful for
+    evaluation of OTA Upgrade feature on boards without external flash."
+  disabled
+
+  APP_USE_FAKE_OFD_DRIVER = 0
+
+  value 1
+  {
+    text "Enable"
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option APP_SUPPORT_OTAU_PAGE_REQUEST
+{
+  group OTAU
+  text "Use OTAU page request"
+  help "Support OTAU image page request features"
+
+  disabled
+
+  APP_SUPPORT_OTAU_PAGE_REQUEST = 1
+
+  value 1
+  {
+    text "Enable"
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option EXTERNAL_MEMORY
+{
+  group OTAU
+  text "External memory type"
+  help "Defines type of used external flash memory chip."
+
+  EXTERNAL_MEMORY = AT25DF041A
+
+  disabled
+
+  value AT45DB041
+  {
+    text "AT45DB041"
+  }
+
+  value AT25F2048
+  {
+    text "AT25F2048"
+  }
+
+  value AT25DF041A
+  {
+    text "AT25DF041A"
+  }
+
+  value M25P40VMN6PB
+  {
+    text "M25P40VMN6PB"
+  }
+}
+
+option APP_SUPPORT_OTAU_RECOVERY
+{
+  group OTAU
+  text "Use interrupted OTAU recovery"
+  help "Support interrupted OTAU recovery"
+
+  disabled
+
+  APP_SUPPORT_OTAU_RECOVERY = 0
+
+  value 0
+  {
+    text "Disable"
+  }
+  value 1
+  {
+    text "Enable"
+  }
+}
+
+widget OTAU
+{
+  view check
+  group General
+  option APP_USE_OTAU
+  on 1
+  off 0
+}
+
+option CS_ZCL_OTAU_DISCOVERED_SERVER_AMOUNT
+{
+  type int
+  disabled
+  text "The number of discovered servers"
+  help "The amount of servers the OTAU client can listen to during upgrade server discovery
+    <br><br>
+    The OTAU client can store information about several discovered OTAU servers. However, the client
+    device tries to connect to discovered servers one by one until the first successful attempt and then
+    communicates and uploads the whole image from the first suitable server.
+    <br><br>
+    The parameter is valid for OTAU clients only.
+    <br><br>
+    Value range: at least 1 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+  group OTAU
+
+  CS_ZCL_OTAU_DISCOVERED_SERVER_AMOUNT = 1
+}
+
+option CS_ZCL_OTAU_CLIENT_SESSION_AMOUNT
+{
+  type int
+  disabled
+  text "The number of uploaded clients"
+  help "The number of clients that the OTAU server can server simultaneously
+    <br><br>
+    If this parameter equals 1, the OTAU server will upgrade devices in the network
+    one by one. However, the server can process more than one client sessions at a time,
+    if this parameter is greater than 1.
+    <br><br>
+    The parameter is valid for OTAU servers only.
+    <br><br>
+    Value range: at least 1 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+  group OTAU
+
+  CS_ZCL_OTAU_CLIENT_SESSION_AMOUNT = 1
+}
+
+option CS_ZCL_OTAU_SERVER_DISCOVERY_PERIOD
+{
+  type int
+  disabled
+  text "Server discovery period"
+  help "The interval in milliseconds between two attempts to find an upgrade server
+    <br><br>
+    The parameter is valid for OTAU clients only.
+    <br><br>
+    Value range: any 32-bit value <br>
+    C-type: uint32_t <br>
+    Can be set: at any time before an OTAU start <br>
+    Persistent: No"
+  group OTAU
+
+  CS_ZCL_OTAU_SERVER_DISCOVERY_PERIOD = 60000
+}
+
+option CS_ZCL_OTAU_QUERY_INTERVAL
+{
+  type int
+  disabled
+  text "Query interval of client"
+  help "The interval in milliseconds between two successful attempts to query the server
+    <br><br>
+    The parameter is valid only for OTAU clients. 
+    <br><br>
+    Value range: any 32-bit value <br>
+    C-type: uint32_t <br>
+    Can be set: at any time before an OTAU start <br>
+    Persistent: No"
+  group OTAU
+  
+  CS_ZCL_OTAU_QUERY_INTERVAL = 5000
+}
+
+option CS_ZCL_OTAU_MAX_RETRY_COUNT
+{
+  type int
+  disabled
+  text "Max retry count"
+  help "Max retry count for commands (OTAU cluster, ZDO and APS) used for OTAU
+    <br><br>
+    The parameter is valid only for OTAU clients.
+    <br><br>
+    Value range: any 8-bit value <br>
+    C-type: uint8_t <br>
+    Can be set: at any time before an OTAU start <br>
+    Persistent: No"
+  group OTAU
+  
+  CS_ZCL_OTAU_MAX_RETRY_COUNT = 3
+}
+
+option CS_ZCL_OTAU_DEFAULT_UPGRADE_SERVER_IEEE_ADDRESS
+{
+  disabled
+  text "Default server address"
+  help "The default address of an upgrade server
+    <br><br>
+    The parameter indicates how the OTAU client will search for OTAU servers in the network.
+    If one of broadcast addresses is specified, the client will attempt to find all devices supporting
+    the OTAU server cluster and will request new images from the first server that will respond.
+    Otherwise, the client will try to connect to a particular device with the specified extended
+    address.
+    <br><br>
+    The parameter is valid for OTAU clients only.
+    <br><br>
+    Value range: any 64-bit value: <br>
+    0x0000000000000000ull, 0xFFFFFFFFFFFFFFFFull - a server discovery request is broadcast <br>
+    otherwise, the client tries to connect to a particular node <br>
+    <br><br>
+    C-type: ExtAddr_t <br>
+    Can be set: at any time before an OTAU start <br>
+    Persistent: No"
+  group OTAU
+
+  CS_ZCL_OTAU_DEFAULT_UPGRADE_SERVER_IEEE_ADDRESS = "0xFFFFFFFFFFFFFFFFull"
+}
+
+option CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE
+{
+  disabled
+  text "Enable image page requests"
+  help "Indicates that image page request are used to load an image
+    <br><br>
+    If the parameter is set to 1 the OTAU client will use image page requests
+    (rather than image block requests) to load an application image from the
+    OTAU server. In this case the server will send a whole page (consisting of
+    multiple blocks) without requesting an APS acknowledgement for each block. The
+    client marks not-delivered blocks and sends an image block request for each of
+    missed blocks after the transmission on the page finishes.
+    <br><br>
+    If the parameter is set to 0 image block requests will be used. The APS
+    acknowledgement is sent for each of received blocks. If any of the blocks is
+    missing loading of the image is restarted.
+    <br><br>
+    The parameter is valid only for OTAU clients.
+    <br><br>
+    Value range: 1 or 0 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+  group OTAU
+
+  CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE = 1
+
+  value 1
+  {
+    text "YES"
+    enable CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_RESPONSE_SPACING
+    enable CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_PAGE_SIZE
+  }
+  value 0
+  {
+    text "NO"
+  }
+}
+
+widget CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE_WIDGET
+{
+  view check
+  group OTAU
+  option CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_ENABLE
+  on 1
+  off 0
+}
+
+option CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_RESPONSE_SPACING
+{
+  disabled
+  text "Timeout between Image Block Responses"
+  help "Period in milliseconds between two image block responses sent from the OTAU server
+    <br><br>
+    The parameter indicates how fast the OTAU server shall send data (via the image block response command)
+    to the OTAU client. The value is set on the client. The server receives the value from the
+    client. The server shall wait for, at minimum, the period specified in the parameter before sending
+    another block to the client.
+    <br><br>
+    The parameter is valid only for OTAU clients.
+    <br><br>
+    Value range: not less than 200ms (according to the OTAU specification) <br>
+    C-type: uint16_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+  type int
+  group OTAU
+
+  CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_RESPONSE_SPACING = 200
+}
+
+option CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_PAGE_SIZE
+{
+  disabled
+  text "Page size"
+  help "The page size - the number of bytes sent for a single image page request
+    <br><br>
+    The parameter sets the number of bytes to be sent by the server for an image page
+    request sent by the OTAU client. A page is transmitted in several data frames, one
+    data frame for each block of data. The client, upon receiving individual blocks,
+    does not send an APS acknowledgement until all blocks for the current page are not
+    sent. Blocks that have not been delivered are requested by the client via image
+    block requests after loading of the current page finishes.
+    <br><br>
+    The page size should be greater than or equal to 64 bytes.
+    <br><br>
+    The parameter is valid only for OTAU clients.
+    <br><br>
+    Value range: equal to or greater than 64 <br>
+    C-type: uint16_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+  type int
+  group OTAU
+
+  CS_ZCL_OTAU_IMAGE_PAGE_REQUEST_PAGE_SIZE = 256
+}value BOARD_SAMR21
+{
+  text "BOARD_SAMR21"
+  option BOARD
+
+  enable BSP_SUPPORT
+  BSP_SUPPORT = [BOARD_FAKE, BOARD_SAMR21_XPRO, BOARD_SAMR21_ZLLEK, BOARD_SAMR21_CUSTOM]
+
+  HAL = []
+  HAL_FREQUENCY = [HAL_8MHz]
+
+  RFCHIP = [AT86RF233]
+
+  APP_INTERFACE = APP_INTERFACE_USART
+  APP_INTERFACE = [APP_INTERFACE_USART]
+  APP_USART_CHANNEL = USART_CHANNEL_0
+  APP_USART_CHANNEL = [USART_CHANNEL_0, USART_CHANNEL_1]
+}
+option HAL
+{
+  group Hardware
+  destination config
+  text "MCU"
+  help "Defines target MCU."
+  configOption
+
+  value ATMEGA1281
+  {
+    text "ATmega1281"
+
+    HAL_FREQUENCY = [HAL_4MHz,HAL_8MHz]
+    HAL_FREQUENCY = HAL_8MHz
+  }
+
+  value ATMEGA2561
+  {
+    text "ATmega2561"
+
+    HAL_FREQUENCY = [HAL_4MHz,HAL_8MHz]
+    HAL_FREQUENCY = HAL_8MHz
+  }
+
+  value ATXMEGA256A3
+  {
+    text "ATXmega256A3"
+
+    HAL_FREQUENCY = [HAL_4MHz, HAL_8MHz, HAL_12MHz, HAL_16MHz, HAL_32MHz]
+    HAL_FREQUENCY = HAL_16MHz
+    APP_USART_CHANNEL = [USART_CHANNEL_D0, USART_CHANNEL_F0]
+  }
+
+  value ATXMEGA256D3
+  {
+    text "ATXmega256D3"
+
+    HAL_FREQUENCY = [HAL_4MHz, HAL_8MHz, HAL_12MHz, HAL_16MHz, HAL_32MHz]
+    HAL_FREQUENCY = HAL_16MHz
+    APP_USART_CHANNEL = [USART_CHANNEL_D0]
+  }
+
+  value ATMEGA128RFA1
+  {
+    text "ATmega128RFA1"
+    disable RFCHIP
+
+    HAL_FREQUENCY = [HAL_4MHz, HAL_8MHz, HAL_16MHz]
+    HAL_FREQUENCY = HAL_8MHz
+    APP_USART_CHANNEL = [USART_CHANNEL_1, USART_CHANNEL_USBFIFO, USART_CHANNEL_0]
+  }
+
+  value ATMEGA256RFR2
+  {
+    text "ATmega256RFR2"
+    disable RFCHIP
+
+    HAL_FREQUENCY = [HAL_4MHz, HAL_8MHz, HAL_16MHz]
+    HAL_FREQUENCY = HAL_8MHz
+    APP_USART_CHANNEL = [USART_CHANNEL_1, USART_CHANNEL_USBFIFO]
+  }
+
+  value ATMEGA2564RFR2
+  {
+    text "ATmega2564RFR2"
+    disable RFCHIP
+
+    HAL_FREQUENCY = [HAL_4MHz, HAL_8MHz, HAL_16MHz]
+    HAL_FREQUENCY = HAL_8MHz
+    APP_USART_CHANNEL = [USART_CHANNEL_1, USART_CHANNEL_USBFIFO]
+  }
+}
+
+option HAL_FREQUENCY
+{
+  group Hardware
+  text "MCU frequency"
+  help "Defines target MCU operation frequency."
+  destination config
+  writeType define
+  configOption
+
+  value HAL_4MHz
+  {
+    text "4MHz"
+  }
+
+  value HAL_8MHz
+  {
+    text "8MHz"
+  }
+
+  value HAL_12MHz
+  {
+    text "12MHz"
+  }
+
+  value HAL_16MHz
+  {
+    text "16MHz"
+  }
+
+  value HAL_32MHz
+  {
+    text "32MHz"
+  }
+
+  value HAL_48MHz
+  {
+    text "48MHz"
+  }
+
+  value HAL_64MHz
+  {
+    text "64MHz"
+  }
+
+  value HAL_120MHz
+  {
+    text "120MHz"
+  }
+}
+
+option BSP_SUPPORT
+{
+  disabled
+  group Hardware
+  text "Board support package support"
+
+  value BOARD_RCB
+  {
+    text "Radio Controller Board"
+    enable BOARD_RCB
+  }
+  value BOARD_RCB_KEY_REMOTE
+  {
+    text "Key Remote Board"
+    enable BOARD_RCB_KEY_REMOTE
+  }
+  value BOARD_ATMEGA256RFR2_XPRO
+  {
+    text "ATmega256RFR2 Xplained Pro"
+    enable BOARD_ATMEGA256RFR2_XPRO
+  }
+  value BOARD_SAMR21_XPRO
+  {
+    text "SAMR21 Xplained Pro"
+    enable BOARD_SAMR21_XPRO
+  }
+  value BOARD_SAMR21_ZLLEK
+  {
+    text "SAMR21 ZLL EK"
+    enable BOARD_SAMR21_ZLLEK
+  }
+  value BOARD_SAMR21_CUSTOM
+  {
+    text "SAMR21 custom board"
+    enable BOARD_SAMR21_CUSTOM
+  }
+  value BOARD_FAKE
+  {
+    text "Fake or no board support"
+    enable BOARD_FAKE
+  }
+  
+}
+
+option APP_INTERFACE
+{
+  group Hardware
+  text "Serial interface type"
+  help "Defines primary serial interface type to be used by application."
+
+  value APP_INTERFACE_USART
+  {
+    text "USART"
+
+    enable APP_USART_CHANNEL
+    APP_USART_CHANNEL = [USART_CHANNEL_0,USART_CHANNEL_1,USART_CHANNEL_C0,USART_CHANNEL_D0,USART_CHANNEL_E0,USART_CHANNEL_F0, USART_CHANNEL_FAKE]
+  }
+
+  value APP_INTERFACE_VCP
+  {
+    text "VCP"
+
+    enable APP_USART_CHANNEL
+    APP_USART_CHANNEL = [USART_CHANNEL_VCP]
+  }
+
+  value APP_INTERFACE_SPI
+  {
+    text "SPI"
+
+    enable APP_SPI_MASTER_MODE
+    enable APP_SPI_CHANNEL
+    APP_SPI_CHANNEL = [SPI_CHANNEL_0,SPI_CHANNEL_1,SPI_CHANNEL_2,SPI_CHANNEL_D]
+    APP_SPI_MASTER_MODE = [0,1]
+  }
+
+  value APP_INTERFACE_UART
+  {
+    text "UART"
+
+    enable APP_UART_CHANNEL
+    APP_UART_CHANNEL = [UART_CHANNEL_0,UART_CHANNEL_1]
+  }
+
+  value APP_INTERFACE_USBFIFO
+  {
+    text "USB FIFO based on FT245RL"
+
+    enable APP_USART_CHANNEL
+    APP_USART_CHANNEL = [USART_CHANNEL_USBFIFO]
+  }
+
+  value APP_INTERFACE_STDIO
+  {
+    text "STDIO"
+    enable APP_USART_CHANNEL
+    APP_USART_CHANNEL = [USART_CHANNEL_FAKE]
+  }
+
+}
+
+option APP_USART_CHANNEL
+{
+  group Hardware
+  text "USART interface name"
+  help "Defines USART interface name to be used by application."
+  disabled
+
+  value USART_CHANNEL_0
+  {
+    text "Channel 0"
+  }
+
+  value USART_CHANNEL_1
+  {
+    text "Channel 1"
+  }
+
+  value USART_CHANNEL_C0
+  {
+    text "Channel C0"
+  }
+
+  value USART_CHANNEL_D0
+  {
+    text "Channel D0"
+  }
+
+  value USART_CHANNEL_E0
+  {
+    text "Channel E0"
+  }
+
+  value USART_CHANNEL_F0
+  {
+    text "Channel F0"
+  }
+
+  value USART_CHANNEL_VCP
+  {
+    text "Channel VCP"
+  }
+
+  value USART_CHANNEL_USBFIFO
+  {
+    text "Channel VCP based on FT245RL"
+  }
+
+  value USART_CHANNEL_FAKE
+  {
+    text "Fake USART channel for PC platform"
+  }
+}
+
+option APP_UART_CHANNEL
+{
+  group Hardware
+  text "UART interface name"
+  help "Defines UART interface name to be used by application."
+  disabled
+
+  value UART_CHANNEL_0
+  {
+    text "Channel 0"
+  }
+
+  value UART_CHANNEL_1
+  {
+    text "Channel 1"
+  }
+}
+
+option APP_SPI_CHANNEL
+{
+  group Hardware
+  text "SPI interface name"
+  help "Defines SPI interface name to be used by application."
+  disabled
+
+  value SPI_CHANNEL_0
+  {
+    text "Channel 0"
+  }
+
+  value SPI_CHANNEL_1
+  {
+    text "Channel 1"
+  }
+
+  value SPI_CHANNEL_2
+  {
+    text "Channel 2"
+  }
+
+  value SPI_CHANNEL_D
+  {
+    text "Channel D"
+  }
+}
+
+option APP_SPI_MASTER_MODE
+{
+  disabled
+  group Hardware
+  text "SPI  interface mode"
+  help "Defines SPI interface mode."
+
+
+  value 1
+  {
+    text "Master"
+  }
+
+  value 0
+  {
+    text "Slave"
+  }
+}
+
+option BSP_ENABLE_RS232_CONTROL
+{
+  disabled
+  group Hardware
+  text "TTL to RS232 converter control"
+  help "Enable this option if target board supports controlling of TTL to RS232
+    converter enable pin."
+
+  value 1
+  {
+    text "Enable"
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option APP_USART_SPEED
+{
+  disabled
+  group Hardware
+  text "USART interface speed"
+  help "Defines USART interface speed"
+
+  APP_USART_SPEED = 38400
+}
+
+option APP_ZAPPSI_INTERFACE
+{
+  disabled
+  group Hardware
+  text "ZAppSI Serial interface type"
+  help "Defines primary serial interface type to be used by ZAppSI."
+
+  value APP_INTERFACE_USART
+  {
+    text "USART"
+
+    enable APP_ZAPPSI_MEDIUM_CHANNEL
+    APP_ZAPPSI_MEDIUM_CHANNEL = [USART_CHANNEL_0,USART_CHANNEL_1,USART_CHANNEL_C0,USART_CHANNEL_D0,USART_CHANNEL_E0,USART_CHANNEL_F0, COM1]
+  }
+  value APP_INTERFACE_SPI
+  {
+    text "SPI"
+
+    enable APP_ZAPPSI_SPI_MASTER_MODE
+    enable APP_ZAPPSI_MEDIUM_CHANNEL
+    APP_ZAPPSI_MEDIUM_CHANNEL = [SPI_CHANNEL_0,SPI_CHANNEL_1,SPI_CHANNEL_2,SPI_CHANNEL_D]
+    APP_ZAPPSI_SPI_MASTER_MODE = [0,1]
+  }
+  value APP_INTERFACE_USBFIFO
+  {
+    text "USB FIFO based on FT245RL"
+
+    enable APP_ZAPPSI_MEDIUM_CHANNEL
+    APP_ZAPPSI_MEDIUM_CHANNEL = [USART_CHANNEL_USBFIFO]
+  }
+}
+
+option APP_ZAPPSI_MEDIUM_CHANNEL
+{
+  group Hardware
+  text "ZAppSI USART interface name"
+  help "Defines USART interface name to be used by ZAppSI."
+  disabled
+
+  value USART_CHANNEL_0
+  {
+    text "Channel 0"
+  }
+
+  value USART_CHANNEL_1
+  {
+    text "Channel 1"
+  }
+
+  value USART_CHANNEL_C0
+  {
+    text "Channel C0"
+  }
+
+  value USART_CHANNEL_D0
+  {
+    text "Channel D0"
+  }
+
+  value USART_CHANNEL_E0
+  {
+    text "Channel E0"
+  }
+
+  value USART_CHANNEL_F0
+  {
+    text "Channel F0"
+  }
+
+  value USART_CHANNEL_USBFIFO
+  {
+    text "USB to parallel port"
+  }
+
+  value SPI_CHANNEL_0
+  {
+    text "SPI channel 0"
+  }
+
+  value SPI_CHANNEL_1
+  {
+    text "SPI channel 1"
+  }
+
+  value SPI_CHANNEL_2
+  {
+    text "SPI channel 2"
+  }
+
+  value SPI_CHANNEL_D
+  {
+    text "SPI channel D"
+  }
+
+  value COM1
+  {
+    text "COM1"
+  }
+}
+
+option APP_ZAPPSI_SPI_MASTER_MODE
+{
+  disabled
+  group Hardware
+  text "SPI  interface mode"
+  help "Defines SPI interface mode."
+
+
+  value 1
+  {
+    text "Master"
+  }
+
+  value 0
+  {
+    text "Slave"
+  }
+}
+
+option USE_IMAGE_SECURITY
+{
+  disabled
+  group Hardware
+  text "Image en/decryption for OTAU"
+  help "Enable this option if hardware support for AES is present. This has
+        dependency on bootloader support and OTAU application support."
+
+  value 1
+  {
+    text "Enable"
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+}option COMPILER_TYPE
+{
+  group General
+  text "Compiler"
+  help "Defines compiler type that will be used to build application."
+  destination config
+  configOption
+
+  value GCC
+  {
+  }
+
+  value IAR
+  {
+  }
+}
+
+option STACK_TYPE
+{
+  group General
+  text "Library type"
+  help "Defines library type. Two kinds of BitCloud library are provided:<br>
+    1. Library that supports all device roles (Coordinator, Router and
+      End Device). It is possible to select device role at run time, but final
+      application image size is considerably larger.<br>
+    2. Library that supports only one device role (Coordinator, Router or
+      End Device). It is not possible to select device role at run time and
+      application must request library to work only in supported role, but
+      final application image may be smaller, especially for end devicces.<br>
+    <br>
+    This parameter should not be confused with application device type which
+    specifies actual role that device will be using no matter what library
+    (full or separate) is used to run application."
+  destination config
+  configOption
+
+  value ALL_DEVICES_TYPES
+  {
+    text "All"
+    help "Stack library supports all device roles (Coordinator, Router and EndDevice)"
+  }
+
+  value COORDINATOR
+  {
+    text "Coordinator"
+    help "Stack library supports only Coordinator role"
+    APP_DEVICE_TYPE == DEV_TYPE_COORDINATOR
+  }
+
+  value ROUTER
+  {
+    text "Router"
+    help "Stack library supports only Router role"
+    APP_DEVICE_TYPE == DEV_TYPE_ROUTER
+  }
+
+  value ENDDEVICE
+  {
+    text "End Device"
+    help "Stack library supports only End Device role"
+    APP_DEVICE_TYPE == DEV_TYPE_ENDDEVICE
+  }
+}
+
+option CS_CHANNEL_MASK
+{
+  disabled
+  group NetworkParameters
+  text "Channel mask"
+  help "32-bit mask of channels to be scanned before network is started.
+    Channels that should be used are marked with logical 1 at corresponding bit
+    location.<br>
+    Valid channel numbers for 2.4 GHz band are 0x0b - 0x1a<br>
+    Valid channel numbers for 900 MHz band are 0x00 - 0x0a<br>
+    <br>
+    Notes:<br>
+    1. for small amount of enabled channels it is more convinient to specify
+      list of channels in the form of '(1ul << 0x0b)'<br>
+    2. For 900 MHz band you also need to specify channel page <br>
+    <br>
+    Value range: 32-bit values: <br>
+    Valid channel numbers for 2.4 GHz band are 0x0b - 0x1a <br>
+    Valid channel numbers for 900 MHz band are 0x00 - 0x0a <br>
+    <br>
+    C-type: uint32_t <br>
+    Can be set: at any time before network start <br>
+    Persistent:  Yes"
+}
+
+option CS_CHANNEL_PAGE
+{
+  disabled
+  group NetworkParameters
+  text "Channel page"
+  help "Channel page number defines band and modulation scheme that will be
+    used for communication.<br>
+    <br>
+    Value range:<br>
+    0 -  915MHz (BPSK-40, channels 0x01 - 0x0a), 868MHz (BPSK-20, channel 0x00)<br>
+    2 -  915MHz (O-QPSK-250, channels 0x01 - 0x0a), 868Mhz (O-QPSK-100, channel 0x00)<br>
+    5 -  780MHz (O-QPSK-250, channels 0x00 - 0x03, Chinese band)<br>
+    <br>
+    C-type: uint8_t <br>
+    Can be set: at any time before network start <br>
+    Persistent:  Yes"
+
+  value 0
+  {
+    help "BPSK"
+  }
+
+  value 2
+  {
+    help "O-QPSK"
+  }
+
+  value 5
+  {
+    help "Chinese band"
+  }
+}
+
+option CS_RX_ON_WHEN_IDLE
+{
+  disabled
+  group PowerManagement
+  text "RX on when idle"
+  help "Specifies receiver state (enabled or disabled) during inactive period for an end device.
+    The parameter is taken into account on end devices only. Other devices behave as
+    if the parameter equals  true.
+    <br><br>
+    If on an end device the parameter equals  true,
+    then the end device can receive data at any time, radio is always on, and
+    its parent, which is informed about the parameter's value during association,
+    sends data to the child immediately  upon receiving a frame for the child.
+    <br><br>
+    Switching the parameter to  false on an end devices turns on indirect delivery:
+    the end device's parent suspends data delivery to the child until it receives
+    a polling request from the child; on the end device radio is only on when data is
+    being sent.
+    <br><br>
+    Value range:  true or  false <br>
+    C-type: bool <br>
+    Can be set: at any time before network start <br>
+    Persistent: Yes"
+
+  CS_RX_ON_WHEN_IDLE = false
+  value true
+  {
+    text "On"
+  }
+
+  value false
+  {
+    text "Off"
+  }
+}
+
+widget RxOnWnenIdle
+{
+  group PowerManagement
+  view check
+  option CS_RX_ON_WHEN_IDLE
+  on true
+  off false
+}
+
+
+option CS_EXT_PANID
+{
+  type ulong
+  disabled
+  group NetworkParameters
+  text "Extended PAN ID"
+  help "The parameter specifies the predefined extended PANID of the network to be formed
+    (for the coordinator) or joined (for a router or an end device). For a router or an end device
+    the parameter can equal 0 allowing them to join the first suitable network that they discover.
+    <br><br>
+    Value range: All 64-bit values except for 0xFFFFFFFFFFFFFFFFLL;
+    specify a value in the  0x123456789ABCDEFLL format. <br>
+    C-type: ExtPanId_t (equal to uint64_t)  <br>
+    Can be set: at any time before network start <br>
+    Persistent:  Yes"
+
+  CS_EXT_PANID = 0x00
+}
+
+option CS_UID
+{
+  type ulong
+  disabled
+  group NodeAddressing
+  text "UID"
+  help "64-bit Unique Identifier (UID) determining the device extended address.
+    If this value is 0 stack will try to read
+    hardware UID from external UID or EEPROM chip. at startup. Location of hardware
+    UID is platform dependend and it may not be available on all platforms. If the latter
+    case then UID value must be provided by user via this parameter. This parameter must
+    be unique for each device in a network.
+    This should not be 0 for Coordinator.
+    <br><br>
+    Value range: any 64-bit value except for broadcast extended addresses <br>
+    C-type: ExtAddr_t <br>
+    Can be set: at any time before network start <br>
+    Persistent: Yes"
+
+  CS_UID = 0x0
+}
+
+option CS_NWK_UNIQUE_ADDR
+{
+  disabled
+  group NodeAddressing
+  text "Use static short addressing"
+  help "Determines whether the static or automatic addressing mode will be used for the short address.
+    <br><br>
+    If set to  1, the CS_NWK_ADDR parameter will be used as the device's short address.
+    Otherwise, the short address is assigned automatically by the stack. An actual assignment
+    method is specified in CS_ADDRESS_ASSIGNMENT_METHOD.
+    <br><br>
+    Value range:  1 or  0 <br>
+    C-type: bool <br>
+    Can be set: at any time before network start <br>
+    Persistent:  Yes"
+
+  CS_NWK_UNIQUE_ADDR = 0
+
+  value 1
+  {
+    text "Enable"
+    enable CS_NWK_ADDR
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+widget NwkUniqueAddress
+{
+  group NodeAddressing
+  view check
+  option CS_NWK_UNIQUE_ADDR
+  on 1
+  off 0
+}
+
+option CS_NWK_ADDR
+{
+  disabled
+  group NodeAddressing
+  text "Network address"
+  help "Specifies short (network) address if CS_NWK_UNIQUE_ADDR equals 1
+    <br><br>
+    If static addressing is applied the stack uses the value of the parameter as a short address. Otherwise,
+    the stack assigns the parameter to a randomly chosen value  unique within the network. In both cases
+    after the network start the parameter holds actual short address of the device. While the device is in
+    the network its value must not be changed.
+    <br><br>
+    Note: the coordinator short address always equals  0x0000.
+    <br><br>
+    Value range:  0x0000 - 0xFFF8 <br>
+    C-type: ShortAddr_t <br>
+    Can be set: at any time before network start <br>
+    Persistent:  Yes"
+
+  CS_NWK_ADDR = "0x0001"
+}
+
+option CS_NWK_PREDEFINED_PANID
+{
+  disabled
+  group NetworkParameters
+  text "Use predefined PAN ID"
+  help "Enables or disables use of predefined PAN ID. Actual PAN ID is
+    specified via CS_NWK_PANID parameter. If predefined PAN ID is disabled then
+    PAN ID is selected randomly (default).
+    <br><br>
+    Value range:  true or  false <br>
+    C-type: bool <br>
+    Can be set: at any time before network start <br>
+    Persistent: Yes"
+
+  CS_NWK_PREDEFINED_PANID = false
+
+  value true
+  {
+    text "On"
+    enable CS_NWK_PANID
+  }
+
+  value false
+  {
+    text "Off"
+  }
+}
+
+widget NwkUPredefinedPanId
+{
+  group NetworkParameters
+  view check
+  option CS_NWK_PREDEFINED_PANID
+  on true
+  off false
+}
+
+option CS_NWK_PANID
+{
+  disabled
+  group NetworkParameters
+  text "Short PAN ID"
+  help "Short PAN ID of the network to start or to join to.
+    The parameter holds the short PANID value generated randomly if CS_NWK_PREDEFINED_PANID
+    equals  false. Otherwise, the predefined parameter's value is
+    used as the short PANID.
+    <br><br>
+    Value range: 16-bit values from the range 0x0000 - 0xFFFE <br>
+    C-type: PanId_t (typedef for uint16_t) <br>
+    Can be set: at any time before network start <br>
+    Persistent: Yes"
+
+  CS_NWK_PANID = "0x1234"
+}
+
+option CS_END_DEVICE_SLEEP_PERIOD
+{
+  disabled
+  type long
+  group PowerManagement
+  help "End device sleep period given in milliseconds.
+    <br><br>
+    On an end device this parameter determines the duration of a sleep period. Falling asleep is
+    performed with the ZDO_SleepReq() request. After sleeping period exceeds the node is awakened and
+    the application receives an indication via ZDO_WakeUpInd().
+    If the parameter's value is 0, then after the node falls asleep it can only be awakened by a
+    hardware interrupt; a callback for a given IRQ is registered via HAL_RegisterIrq().
+    <br><br>
+    On a router or the coordinator, the parameter is used in two ways:
+    <br><br>
+    1) To remove information about lost child end devices. If a parent receives no data polls or data
+    frames from the child end device for
+    CS_NWK_END_DEVICE_MAX_FAILURES * (CS_END_DEVICE_SLEEP_PERIOD + CS_INDIRECT_POLL_RATE) ms,
+    then it assumes it to be lost and deletes all information about such child.
+    <br><br>
+    2) To determine whether to store or drop a message addressed to a child end device.  The parent
+    estimates the time when its child end device will wake up by adding this value to the moment when the last poll
+    request has been received. If the time till end device wake up is greater than CS_MAC_TRANSACTION_TIME
+    the frame is stored. Otherwise, the frame is dropped.
+    <br><br>
+    Value range:  any value valid for the C-type; add 'L' after a value <br>
+    C-type: uint32_t <br>
+    Can be set: at any time <br>
+    Persistent:  No"
+
+  CS_END_DEVICE_SLEEP_PERIOD = 10000
+}
+
+option CS_INDIRECT_POLL_RATE
+{
+  disabled
+  type int
+  group NetworkParameters
+  text "Poll period, ms"
+  help "A period in ms of polling a parent for data by an end device.
+    On a sleeping end device the parameter determines a period with which poll requests
+    are sent to the parent while the end device is awaken. A parent of a sleeping end device
+    uses the parameter to calculate estimates of the time when the next poll request from a child
+    will be received.
+    <br><br>
+    Value range:  any value valid for the C-type <br>
+    C-type: uint32_t <br>
+    Can be set: at any time <br>
+    Persistent:  No"
+
+  CS_INDIRECT_POLL_RATE = 1000
+}
+option CS_ZDO_MAX_SYNC_FAIL_AMOUNT
+{
+  disabled
+  type int
+  group NetworkParameters
+  text "Maximum failed sync amount"
+  help "Maximum amount of a failed sync frame. Before attempting to rejoin.
+  <br><br>
+    Value range:  at minimum 1, the maximum value 255 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_ZDO_MAX_SYNC_FAIL_AMOUNT = 3
+}
+
+
+option CS_ZDO_PARENT_LINK_RETRY_THRESHOLD
+{
+  disabled
+  type int
+  group NetworkParameters
+  text "The maximum number of retries of send frame to the parent."
+  help "The maximum number of retries of send frame to the parent. Before attempting to rejoin.
+    <br><br>
+    Value range:  at minimum 1, the maximum value 255 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_ZDO_PARENT_LINK_RETRY_THRESHOLD = 3
+}
+option CS_MAX_CHILDREN_AMOUNT
+{
+  disabled
+  type int
+  group Topology
+  text "Maximum children amount"
+  help "The maximum number of direct children that a given device (the coordinator or a router) can have.
+    <br><br>
+    The parameter is only enabled for routers and the coordinator. An end device can not
+    have children. If an actual number of children reaches a parameter's value, the node
+    will have not been able to accept any more children joining the network. The parameter can be
+    set to 0 on a router thus preventing it from accepting any children and can help form a
+    desired network topology. For example, if the parameter is set to 0 on all routers, then the
+    coordinator will be the only device that can have children and the network will have star topology.
+    <br><br>
+    Value range:  from 0 to CS_NEIB_TABLE_SIZE <br>
+    C-type: uint8_t <br>
+    Can be set:  at compile time only <br>
+    Persistent: No"
+
+  CS_MAX_CHILDREN_AMOUNT = 6
+  CS_MAX_CHILDREN_AMOUNT <= CS_NEIB_TABLE_SIZE
+}
+
+option CS_MAX_CHILDREN_ROUTER_AMOUNT
+{
+  disabled
+  type int
+  group Topology
+  text "Maximum routers amount"
+  help "The maximum number of routers among the direct children of the device
+    <br><br>
+    The parameter determines how many routers the device can have as children. Note that the maximum number of
+    end devices is equal to CS_MAX_CHILDREN_AMOUNT - CS_MAX_CHILDREN_ROUTER_AMOUNT.
+    <br><br>
+    Value range:  from 0 to CS_MAX_CHILDREN_AMOUNT <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_MAX_CHILDREN_ROUTER_AMOUNT = 2
+  CS_MAX_CHILDREN_ROUTER_AMOUNT <= CS_MAX_CHILDREN_AMOUNT
+}
+
+option CS_APS_DATA_REQ_BUFFERS_AMOUNT
+{
+  disabled
+  type int
+  group Buffers
+  text "APS data requests buffers"
+  help "The number of buffers for data requests on the APS layer.
+    <br><br>
+    The parameter specifies the number of buffers that are allocated by APS
+    to store data requests parameters. The parameter puts an upper bound to the number of
+    data requests that can be processed by APS simultaneously. If all buffers are in
+    use and a new data request appears, it is kept in a queue until a buffer is released.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_APS_DATA_REQ_BUFFERS_AMOUNT = 2
+}
+
+option CS_APS_ACK_FRAME_BUFFERS_AMOUNT
+{
+  disabled
+  type int
+  group Buffers
+  text "APS ACK frames buffers"
+  help "The number of buffers for acknowledgement messages sent by APS.
+    <br><br>
+    This parameter determines the amount of memory that needs to be allocated for a special type
+    of buffers used by APS to store payloads for acknowledgement frames. The need to use the buffers
+    occurs when the node receives a frame that has to be acknowledged. That is, the APS component on
+    the node has to send an acknowledgement frame. For frames initiated by the application, the memory for
+    a payload is to be allocated by the application on its own, while the payload memory for an acknowledgement
+    frame shall be reserved by APS. The request parameters are still stored in the data request buffers.
+    <br><br>
+    Typically, a value of this parameter equals CS_APS_DATA_REQ_BUFFERS_AMOUNT - 1.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_APS_ACK_FRAME_BUFFERS_AMOUNT = 2
+}
+
+option CS_NWK_BUFFERS_AMOUNT
+{
+  disabled
+  type int
+  group Buffers
+  text "Network layer buffers amount"
+  help "Amount of buffers on NWK layer used to keep incoming and outgoing frames.
+  This parameters affects how many children of a parent are able to get broadcat messages."
+
+  CS_NWK_BUFFERS_AMOUNT = 4
+}
+
+option CS_GROUP_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Group table size"
+  help "Maximum amount of records in the Group Table.
+    <br><br>
+    The Group Table size cannot be 0. The group table stores pairs of a group address and an endpoint. Upon
+    receiving a frame addressed to members of a certain group which include the current node as well
+    the stack fires indications on all endpoints registered with the group address.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_GROUP_TABLE_SIZE = 1
+}
+
+option CS_NEIB_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Neighbor table size"
+  help "Maximum amount of records in the Neighbor Table.
+    <br><br>
+    The parameter determines the size of the neighbor table which is used to store
+    beacon responses from nearby devices. The parameter puts an upper bound
+    over the amount of child devices possible for the node.
+    <br><br>
+    Value range:  at minimum 1, the maximum value is limited to the available memory <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_NEIB_TABLE_SIZE = 7
+}
+
+option CS_ROUTE_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Route table size"
+  help "Maximum amount of records in the network Route Table.
+    <br><br>
+    The parameter sets the maximum number of records that can be kept in the
+    NWK route table. The table is used by NWK to store information about established
+    routes. Each table entry specifies the next-hop short address for a route from the
+    current node to a given destination node. The table is being filled automatically
+    during route discovery. An entry is added when a route is discovered.
+    <br><br>
+    Since the end device always sends a frame directly to its parent its route table size
+    should be set to 0.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_ROUTE_TABLE_SIZE = 4
+  CS_ROUTE_TABLE_SIZE >= CS_GROUP_TABLE_SIZE
+}
+
+option CS_ADDRESS_MAP_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Address map table size"
+  help "Maximum amount of records in the network Address Map Table.
+    <br><br>
+    The parameter sets the maximum number of records in the address map table used by
+    NWK to store pairs of corresponding short and extended addresses. The stack appeals
+    to the table when a data frame is being sent to a specified extended address to extract
+    the corresponding short address. If it fails to find the short address, an error is reported.
+    <br><br>
+    C-type: NwkSizeOfAddressMap_t (typedef for uint8_t) <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_ADDRESS_MAP_TABLE_SIZE = 5
+}
+
+option CS_ROUTE_DISCOVERY_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Route discovery table size"
+  help "Maximum amount of records in the network Route Discovery Table.
+    <br><br>
+    The parameter specifies the size of the route discovery table used by NWK to store
+    next-hop addresses of the nodes for routes that are not yet established. Upon exhausting
+    the capacity of the table, the stack starts rewriting old entries. If the size of the route table
+    is big enough after all used routes are established the table may not be used.
+    <br><br>
+    Since the end device always sends a frame directly to its parent its route discovery table size
+    should be set to 0.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_ROUTE_DISCOVERY_TABLE_SIZE = 3
+  CS_ROUTE_DISCOVERY_TABLE_SIZE <= CS_ROUTE_TABLE_SIZE
+}
+
+option CS_DUPLICATE_REJECTION_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Duplicate rejection table size"
+  help "Maximum amount of records in the Duplicate Rejection Table.
+    <br><br>
+    The duplicate rejection table is used by APS to store information about incoming
+    unicast messages in order to reject messages that have been already received and processed.
+    Following ZigBee specification, the parameter should be not less than 1.
+    <br><br>
+    Value range:  greater than 1 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_DUPLICATE_REJECTION_TABLE_SIZE = 10
+}
+
+option CS_ZCL_MEMORY_BUFFERS_AMOUNT
+{
+  disabled
+  type int
+  group Buffers
+  text "ZCL memory buffers amount"
+  help "Amount of ZCL memory buffers"
+
+  CS_ZCL_MEMORY_BUFFERS_AMOUNT = 5
+  CS_ZCL_MEMORY_BUFFERS_AMOUNT > 0
+}
+
+option CS_NWK_BTT_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Broadcast transaction table size"
+  help "Maximum amount of records in the Broadcast Transaction Table.
+    <br><br>
+    The broadcast transmission table is used for tracking incoming broadcast messages
+    to mark messages that have already been processed by the node. This causes only one
+    copy for each broadcast message to be processed. An entry for a broadcast message is
+    stored for a certain period of time and then removed.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_NWK_BTT_SIZE = 8
+}
+
+option CS_MAX_NETWORK_DEPTH
+{
+  disabled
+  type int
+  group Topology
+  text "Maximum network depth"
+  help "Network depht limits amount of hops that packet may travel in
+    the network. Actual maximum number of hops is network depth multiplied by 2.
+    <br><br>
+    The parameter determines the maximum depth of a network tree formed by
+    child-parent relationships between nodes.
+    <br><br>
+    While joining the network the node receives beacon responses from potential
+    parents containing their actual network depth and declines those which show values not
+    less than the maximum network depth on the  joining device. A potential parent will also reject a
+    beacon from the joining device and will not sent a response if the joining device shows the network
+    depth greater than it is allowed on the potential parent. This logic is enabled if the parameter value
+    is not greater  than 15. If its value is greater than 15, then device does not perform any checkings of
+    the network depth, neither when joining a network nor when accepting other nodes as children.
+    This allows forming long chains of devices across considerable distances.
+    <br><br>
+    The stack also uses the parameter to calculate several timeouts. Besides, the parameter determines the maximum radius
+    of a data packet, that is, the maximum number of hops that a packet may travel, which is calculated by
+    the following formula:
+    <br><br>
+    maximum radius = 2 * MIN(2 * maxNetworkDepth, 255) <br>
+    <br><br>
+    These uses of the parameter do not change if its value is greater than 15. Therefore to enable
+    transmitting data over long chains of devices, the parameter should be set to a real desired network depth,
+    rather than to an accidental value over 15.
+    <br><br>
+    The parameter should be the same on all devices in the network.
+    <br><br>
+    Value range:  from 0 to 255 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only  <br>
+    Persistent: No"
+
+  CS_MAX_NETWORK_DEPTH = 5
+}
+
+option CS_MAC_TRANSACTION_TIME
+{
+  type long
+  disabled
+  group DataTransmission
+  text "MAC transaction time"
+  help "MAC transaction persistence time.The parameter determines the maximum interval (in ms) a frame addressed to a sleeping
+    end device can be stored on the parent node. If the end device does not poll for data
+    during this time, then the frame is dropped.
+    <br><br>
+    Value range:  all unsinged 32-bit integers<br>
+    C-type: uint32_t <br>
+    Can be set: at any time <br>
+    Persistent: No"
+
+  CS_MAC_TRANSACTION_TIME = 7680
+}
+
+option CS_APS_MAX_FRAME_RETRIES
+{
+  disabled
+  type int
+  group DataTransmission
+  text "Maximum number of retries on the APS layer"
+  help "The maximum number of retries that will be performed by APS layer before
+    reporting failed transmission.
+    <br><br>
+    The parameter sets the number of attempts that will be made by APS layer to
+    transmit a data frame. If all these attempts fail due to underlying layers failures,
+    then APS response with an error status.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at any time before network start <br>
+    Persistent: No"
+
+  CS_APS_MAX_FRAME_RETRIES = 3
+}
+
+option CS_APS_BINDING_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "Binding table size"
+  help "Maximim amount of records in the Binding Table
+    <br><br>
+    The parameter sets the size of the binding table used by APS to store binding
+    links, which are structures containing information about source and destination
+    extended addresses and endpoints for unicast bindings and just group addresses
+    as destinations for group bindings. If the binding is going to be applied to send
+    a data frame, then the corresponding entry shall be first inserted into the table via
+    the APS_BindingReq() function.
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_APS_BINDING_TABLE_SIZE = 1
+  CS_APS_BINDING_TABLE_SIZE >= 0
+}
+
+option CS_APS_MAX_BLOCKS_AMOUNT
+{
+  disabled
+  type int
+  group Fragmentation
+  text "Maximim number of fragments"
+  help "This parameter limits the number of pieces to which the data sent with one APS request
+    can be split i f the fragmentation feature is applied. Thus it also limits the maximum amount
+    of data sent by the application  with a single request:<br>
+    maximum data length = CS_APS_MAX_BLOCKS_AMOUNT * CS_APS_BLOCK_SIZE if the latter
+    parameter is not 0, else <br>
+    maximum data length = CS_APS_MAX_BLOCKS_AMOUNT  * APS_MAX_ASDU_SIZE.
+    <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_APS_MAX_BLOCKS_AMOUNT = 2
+  CS_APS_MAX_BLOCKS_AMOUNT > 0
+}
+
+option CS_APS_BLOCK_SIZE
+{
+  disabled
+  type int
+  group Fragmentation
+  text "Maximum fragment size"
+  help "Maximim size of a single fragment during fragmented transmission.
+    <br><br>
+    If the value is 0, blocks will be of the maximum possilbe size; that is the size will
+    equal the value of CS_APS_MAX_ASDU_SIZE. The parameter and CS_APS_MAX_BLOCKS_AMOUNT are
+    also used to determine an amount of memory allocated for a special buffer that keeps parts of
+    incoming fragmented message until all of them are received.
+    <br><br>
+    C-type: uint16_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_APS_BLOCK_SIZE = 0
+  CS_APS_BLOCK_SIZE >= 0
+}
+
+option CS_BAN_TABLE_SIZE
+{
+  disabled
+  type int
+  group Tables
+  text "MAC ban table size"
+  help "MAC ban table size"
+
+  CS_BAN_TABLE_SIZE = 1
+  CS_BAN_TABLE_SIZE >= 0
+}
+
+option CS_ADDRESS_ASSIGNMENT_METHOD
+{
+  disabled
+  type int
+  group NodeAddressing
+  text "Address assignment method"
+  help "The method of automatic address assignment.
+    <br><br>
+    If CS_NWK_UNIQUE_ADDR equals 0 this parameter is used to determine
+    the assignment method that is applied when a device enters the network to choose
+    a short address. Otherwise, the parameter is ignored.
+    <br><br>
+    Value range: <br>
+    NWK_ADDR_ALLOC_DISTRIBUTED (equals 0) - distributed address allocation; the stack
+    applies a special recurrent algorithm to form a kind of a search tree from the network to simplify routing <br>
+    NWK_ADDR_ALLOC_STOCHASTIC (equals 2) - the address is set to a random value, different
+    from all other short addresses in the network <br>
+    NWK_ADDR_ALLOC_FROM_UID (equals 3) -  two lower bytes of the extended address are used
+    for the short address
+    <br><br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+
+  CS_ADDRESS_ASSIGNMENT_METHOD = 2
+  value 0
+  {
+    help "Use distributed address allocation"
+  }
+
+  value 2
+  {
+    help "Use stochastic address allocation"
+  }
+
+  value 3
+  {
+    help "Use 2 octet from IEEE extended address"
+  }
+}
+
+option CS_MAX_NEIGHBOR_ROUTE_COST
+{
+  disabled
+  type int
+  group DataTransmission
+  help "The maximum route cost between two nodes for direct delivery.
+    <br><br>
+    A data frame is routed directly to the neighbor only if the route cost, read
+    from the neighbor table, is less than the value of the parameter. If the route
+    cost is greater than the value of the parameter, route discovery will be
+    initiated to find an indirect route to the nighbor.
+    <br><br>
+    Value range: 0 - 8 <br>
+    0 - ignore information in the neighbor table (always start route discovery) <br>
+    8 - always send data directly to a neighbor
+    <br><br>
+    C-type: NwkLinkCost_t (typedef for uint8_t) <br>
+    Can be set: at any time before network start <br>
+    Persistent: No"
+
+  CS_MAX_NEIGHBOR_ROUTE_COST = 8
+  CS_MAX_NEIGHBOR_ROUTE_COST >= 0
+}
+
+option CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT
+{
+  type int
+  disabled
+  text "APS key pair descriptors amount"
+  help "The parameter enabled in the high security mode specifies the size of the APS key-pair set.
+    The APS key-pair set stores pairs of corresponding extended address and a link key or a master key.
+    For each node with which the current node is going to communicate it must keep an entry with
+    the remote node extended address and a link key. If the link key is unknown, the node can request
+    the trust center for it via APS_RequestKeyReq(). The trust center must store a link key or a master
+    key depending on the CS_SECURITY_STATUS used for each node it is going to authenticate.
+    Entries can also be added manually by APS_SetLinkKey() and APS_SetMasterKey().
+    <br><br>
+    Value range: 1 - 255 <br>
+    C-type: uint8_t <br>
+    Can be set: at compile time only <br>
+    Persistent:  No"
+  group Security
+
+  CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT = 4
+  CS_APS_KEY_PAIR_DESCRIPTORS_AMOUNT >= CS_MAX_CHILDREN_AMOUNT
+}
+
+option CS_DEVICE_TYPE
+{
+  disabled
+  text "The type of a device"
+  help "ZigBee device type determines network behavior of a given device and functions it
+    can perform. To give a brief overview, each networks contains exacty one coordinator and
+    an arbirtary number of routers and end devices; an end device does not have children, data
+    is passed through the parent, that is, a router or the coordinator.
+    <br><br>
+    Value range: <br>
+    DEVICE_TYPE_COORDINATOR (0) - the coordinator <br>
+    DEVICE_TYPE_ROUTER (1) - a router <br>
+    DEVICE_TYPE_END_DEVICE (2) - an end device
+    <br><br>
+    C-type: DeviceType_t <br>
+    Can be set: at any time before network start <br>
+    Persistent: Yes"
+  group NetworkParameters
+  CS_DEVICE_TYPE = DEVICE_TYPE_ROUTER
+
+  value DEVICE_TYPE_COORDINATOR
+  {
+    text "Coordinator"
+    help "Device is a coordinator."
+  }
+
+  value DEVICE_TYPE_ROUTER
+  {
+    text "Router"
+    help "Device is a router."
+  }
+
+  value DEVICE_TYPE_END_DEVICE
+  {
+    text "End device"
+    help "Device is an end device."
+  }
+}
+
+option CS_FFD_SLEEP_PERIOD
+{
+  type int
+  disabled
+  text "FFD sleep period"
+  help "Sleep period of routers and coordinator in ms."
+  group PowerManagement
+  CS_FFD_SLEEP_PERIOD = 10000
+}
+
+option CS_SCAN_DURATION
+{
+  type int
+  disabled
+  text "Scan duration time"
+  help "While scanning channels during network join the node keeps listening to each channel
+    specified by the ::CS_CHANNEL_MASK for a period of time calculated according to the
+    formula that for the 2.4GHz frequency band is:
+    960 * 16 * (2 raised to a power n + 1) microseconds,
+    providing n is a value of this parameter. Note that the formula for the Sub-GHz employs
+    another constant instead of 16."
+  group NetworkParameters
+  CS_SCAN_DURATION = 5
+}
+
+option CS_PERMIT_DURATION
+{
+  disabled
+  text "Permit duration"
+  help "If the parameter being switched between 0xff and 0x00, determines whether the device
+    accepts or not a child joining the network via MAC association, that is, if the joining device does not
+    possess the PANID value of the network and its PANID parameter is set to 0."
+  group Topology
+  CS_PERMIT_DURATION = 0xFF
+
+  value 0xFF
+  {
+    text "Always On"
+    help "MAC association is on."
+  }
+
+  value 0x00
+  {
+    text "Always off"
+    help "MAC association is off."
+  }
+}
+
+option CS_NWK_USE_MULTICAST
+{
+  disabled
+  text "Use NWK multicast"
+  help "If the parameter is set to true multicasting on the NWK level is used, otherwise,
+    multicasting on the APS level is applied. The parameter is recommended to be set to
+    true. For detail refer to ZigBee specification."
+  group DataTransmission
+  CS_NWK_USE_MULTICAST = true
+  value true
+  {
+    text "Yes"
+  }
+  value false
+  {
+    text "No"
+  }
+}
+
+widget csNwkUseMulticast
+{
+  group DataTransmission
+  view check
+  option CS_NWK_USE_MULTICAST
+  on true
+  off false
+}
+
+option CS_USER_DESCRIPTOR_AVAILABLE
+{
+  disabled
+  text "User descriptor available"
+  help "Specifies whether a user descriptor is available on this device."
+  group NodeAddressing
+  CS_USER_DESCRIPTOR_AVAILABLE = true
+  value true
+  {
+    text "Yes"
+  }
+  value false
+  {
+    text "No"
+  }
+}
+
+widget csUserDescriptorAvailable
+{
+  group NodeAddressing
+  view check
+  option CS_USER_DESCRIPTOR_AVAILABLE
+  on true
+  off false
+}
+
+option CS_NWK_MAX_LINK_STATUS_FAILURES
+{
+  type int
+  disabled
+  text "Maximum link status failures"
+  help "If the number of consecutive link status frames given by this parameter is missed
+    from a neighbor it is removed from the neighbor table. For all neighbors except for end device 
+    children the stack tracks the time of receiving link statuses.
+    If link statuses are not received from a given neighbor for this parameter's value times of link status
+    period (typically 15 seconds), then the neighbor is deleted from the neighbor table."
+  group Topology
+  CS_NWK_MAX_LINK_STATUS_FAILURES = 3
+}
+
+option CS_NWK_END_DEVICE_MAX_FAILURES
+{
+  type int
+  disabled
+  text "Maximum end device failures"
+  help "Is used to calculate the length of time after which a not responding
+    end device child is considered lost. A sleeping end device is considered lost and a corresponding
+    notification is raised on the parent, if the end device does not polls for data for the time span
+    which duration is calculated by the following formula: CS_NWK_END_DEVICE_MAX_FAILURES * (CS_END_DEVICE_SLEEP_PERIOD + CS_INDIRECT_POLL_RATE)"
+  group Topology
+  CS_NWK_END_DEVICE_MAX_FAILURES = 3
+}
+
+option CS_APS_MAX_TRANSMISSION_WINDOW_SIZE
+{
+  type int
+  disabled
+  text "Maximum transmission window size"
+  help "The parameter determines how many pieces of a fragmented message are sent before
+  waiting for an aknowledgement. After acknowledgement is received another
+  portion of frames are sent and so on."
+  group Fragmentation
+  CS_APS_MAX_TRANSMISSION_WINDOW_SIZE = 1
+}
+
+option CS_ZDO_JOIN_ATTEMPTS
+{
+  type int
+  disabled
+  text "Maximum join attempts"
+  help "Determines the maximum number of attempts to enter a network performed by the stack
+    during network start. Upon each attempt ZDO sends a beacon request and collects
+    beacon responses from nearby devices all over again."
+  group NetworkParameters
+  CS_ZDO_JOIN_ATTEMPTS = 4
+}
+
+option CS_ZDO_JOIN_INTERVAL
+{
+  type int
+  disabled
+  text "Join attempts interval"
+  help "The parameter specifies the time span in milliseconds between two attempts
+    to join the network."
+  group NetworkParameters
+  CS_ZDO_JOIN_INTERVAL = 1000
+}
+
+option CS_ZDP_RESPONSE_TIMEOUT
+{
+  type int
+  disabled
+  text "ZDP response timeout"
+  help "ZDP response waiting timeout in milliseconds. To use automatically calculated value set to 0.
+    The parameter determines the length of time for which the reply in response to a ZDP request
+    is waited. if the response is not received before the timeout exceeds the confirmation callback for
+    the ZDP request is called to report a failure status."
+  group Stack
+  CS_ZDP_RESPONSE_TIMEOUT = 0
+}
+
+option CS_ROUTE_CACHE_SIZE
+{
+  type int
+  disabled
+  text "Route cache size"
+  help "Maximum number of records in the route cache."
+  group Tables
+  CS_ROUTE_CACHE_SIZE = 1
+}
+
+option NWK_CONCENTRATOR_DISCOVERY_TIME
+{
+  disabled
+  text "Concentarator discovery time"
+  help "The time in milliseconds between concentrator route discoveries."
+  group Stack
+  NWK_CONCENTRATOR_DISCOVERY_TIME = "20000UL"
+}
+
+option CS_ZCL_ATTRIBUTE_REPORT_TIMER_INTERVAL
+{
+  type int
+  disabled
+  text "Attribute report time"
+  help "Attribute report time"
+  group Stack
+  CS_ZCL_ATTRIBUTE_REPORT_TIMER_INTERVAL = 4000
+}
+option CS_MAC_FRAME_RX_BUFFER_SIZE
+{
+  type int
+  disabled
+  text "Size of the buffer used by the MAC component for data frames"
+  help "Size of the buffer used by the MAC component for data frames"
+  group Stack
+  CS_MAC_FRAME_RX_BUFFER_SIZE = 132
+}
+option CS_ZCL_BUFFER_SIZE
+{
+  disabled
+  group Tables
+  text "ZCL memory buffers size"
+  help "ZCL memory buffers size"
+
+  CS_ZCL_BUFFER_SIZE = "(APS_MAX_ASDU_SIZE)"
+}
+
+option CS_SOFT_LINK_COST_THRESHOLD
+{
+  disabled
+  type int
+  group NetworkParameters
+
+  CS_SOFT_LINK_COST_THRESHOLD = 8
+  CS_SOFT_LINK_COST_THRESHOLD >= 0
+}
+
+option CS_MANUFACTURER_CODE
+{
+  type int
+  disabled
+  text "Manufacturer Code"
+  help "16-bit manufacturer code allocated by the ZigBee Alliance.
+    It is being used in payload of OTA commands as well as for 
+    filtering of manufacturer-specific ZCL commands and attributes. 
+    See ZigBee Manufacturer Code Database, 053874r16, Atmel code."
+  group Stack
+  CS_MANUFACTURER_CODE = 0x1014
+}option RFCHIP
+{
+  group Hardware
+  destination config
+  writeType define
+  text "Radio chip"
+  help "Defines target radio chip. For 2.4 GHz band select one of AT86RF231,
+    AT86RF230 or AT86RF230B. For 900 MHz band select AT86RF212."
+  configOption
+
+  value AT86RF231
+  {
+  }
+  
+  value AT86RF233
+  {
+  }
+
+  value AT86RF230
+  {
+  }
+
+  value AT86RF230B
+  {
+  }
+
+  value AT86RF212
+  {
+    enable CS_CHANNEL_PAGE
+    enable CS_LBT_MODE
+  }
+}
+
+option CS_LBT_MODE
+{
+  disabled
+  text "LTB mode"
+  help "Enables or disables Listen Before Talk feature."
+  group Hardware
+  CS_LBT_MODE = false
+  value true
+  {
+    text "On"
+  }
+  value false
+  {
+    text "Off"
+  }
+}
+
+widget csLbtMode
+{
+  group Hardware
+  view check
+  option CS_LBT_MODE
+  off false
+  on true
+}
+
+if (RFCHIP == AT86RF212)
+{
+  CS_CHANNEL_MASK = "(1L<<0x01)"
+//  CS_CHANNEL_MASK > 0x00000000
+//  CS_CHANNEL_MASK < 0x10000000
+  CS_RF_TX_POWER >= -11
+  CS_RF_TX_POWER <= 11
+}
+else 
+{
+  CS_CHANNEL_MASK = "(1L<<0x0f)"
+//  CS_CHANNEL_MASK > 0x00000000
+//  CS_CHANNEL_MASK < 0x10000000
+  CS_RF_TX_POWER >= -17
+  CS_RF_TX_POWER <= 3
+  CS_CHANNEL_PAGE = [0]
+}
+
+/*
+if ((RFCHIP == AT86RF230) && (RFCHIP  == AT86RF230B) && (RFCHIP == AT86RF231))
+{
+  CS_CHANNEL_MASK = 0x00400000
+  CS_CHANNEL_MASK > 0x00000000
+  CS_CHANNEL_MASK < 0x10000000
+  CS_RF_TX_POWER >= -17
+  CS_RF_TX_POWER <= 3
+  CS_CHANNEL_PAGE = [0]
+}
+*/
+
+option CS_RF_TX_POWER
+{
+  disabled
+  type int
+  group DataTransmission
+  text "Transmit power"
+  help "The parameter specifies the TX power of the transceiver device, is measured in dBm(s).
+    After the node has entered the network the value can only be changed via
+    the ZDO_SetTxPowerReq() function.
+    <br><br>
+    Value range: depends on the hardware. Transmit power must be in the range from -17 to 3 dBm for AT86RF231,
+    AT86RF230 and AT86RF230B. For AT86RF233 transmit power must be in the range from -17 to 4 dBm. 
+    For AT86RF212 transmit power must be in the range from -11 to 11 dBm.
+    <br><br>
+    C-type: int8_t <br>
+    Can be set: at any time <br>
+    Persistent: Yes"
+
+  CS_RF_TX_POWER = 3
+}
+option SECURITY_MODE
+{
+  text "Security mode"
+  help "Few modes are available:<br>
+    1. Standard Security mode with or without preconfigured network key<br>
+    2. High Security mode with Symmetric-Key Key Establishment (SKKE)<br>
+    3. High Security mode with Certificate Based Key Establishment (CBKE)
+    using Certicom library"
+
+  group General
+  destination config
+  writeType define
+  configOption
+
+  value NO_SECURITY_MODE
+  {
+    text "No security"
+  }
+
+  SECURITY_MODE = NO_SECURITY_MODE
+}
+
+option CS_ZDO_SECURITY_STATUS
+{
+  disabled
+  text "Security key type"
+  help "The parameter is used to determine the security type.
+    <br><br>
+    Value range: 0,3 - for standard security; 1,2 - for high security. <br>
+    0 - network key is preconfigured ; <br>
+    1 - network join without master key, but with a trust center link key, which must be set via APS_SetLinkKey();<br>
+    2 - network join employs a master key, which must be set APS_SetMasterKey(); <br>
+    3 - network key is no preconfigured, but rather received from the trust center in an unencrypted frame.
+    <br.<br>
+    C-type: uint8_t <br>
+    Can be set: at any time before network start <br>
+    Persistent:  Yes"
+  group Security
+}
+
+option CS_NETWORK_KEY
+{
+  type array
+  disabled
+  text "Security key"
+  help "Depending on security key type and security mode this is either network
+    key, master key, link key or initial link key.
+    <br><br>
+    Network key is used to encrypt a part of a 
+    data frame occupied by the NWK payload. This type of encryption is applied in both the standard and
+    high security mode. The high security mode also enables encryption of the APS payload with a link
+    key, but if the  txOptions.useNwkKey field in APS request parameters is set to 0, the
+    APS payload is encrypted with the network key.
+    <br><br>
+    The network key must be predefined if standard security is used with CS_ZDO_SECURITY_STATUS
+    set to 0. For all other values of CS_ZDO_SECURITY_STATUS the network key is received from the
+    trust center during device authentication. Note that in the standard security mode with 
+    CS_ZDO_SECURITY_STATUS equal to 3 the network key is transferred to the joining device
+    in an unencrypted frame. 
+    <br><br>
+    Value range: all 128-bit values <br>
+    C-type: uint8_t[16]  or any compatible <br>
+    Can be set: at any time before network start <br>
+    Persistent:  No"
+  group Security
+
+  CS_NETWORK_KEY = "{0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC,0xCC}"
+}
+
+option CS_NWK_SECURITY_KEYS_AMOUNT
+{
+  disabled
+  text "Amount of security network keys"
+  help "The maximum number of network keys that can be stored on the device
+    <br><br>
+    A device in a secured network can keep several network keys up to the value of this
+    parameter. Upon frame reception the device extracts key sequence number from the auxiliary
+    header of the frame and decrypts the message with the network key corresponding to this 
+    sequence number. Besides, one key is considered active for each device; this is the key that
+    is used for encrypting outgoing frames. The keys are distributed by the trust center with
+    the help of the APS_TransportKeyReq() command. The trust center can also change the active key 
+    of a remote node via a call to APS_SwitchKeyReq().
+    <br><br>
+    C-type: NwkKeyAmount_t (typedef for uint8_t) <br>
+    Can be set: at compile time only <br>
+    Persistent:  No"
+  group Security
+
+  CS_NWK_SECURITY_KEYS_AMOUNT = 1
+}
+
+option CS_APS_TRUST_CENTER_ADDRESS
+{
+  type ulong
+  disabled
+  text "Trust Center address"
+  help "Address of device responsible for authentication and key distribution (Trust Center).
+    <br><br>
+    The parameter specifies the trust center extended address. The stack makes use of the
+    parameter to support various operations in networks with security enabled. For correct network operation
+    a parameter's value must coincide with the actual trust center address.
+    <br><br>
+    In case the trust center extended address is unknown, for example, for testing purposes, the
+    parameter can be assigned to the universal trust center address which equals APS_SM_UNIVERSAL_TRUST_CENTER_EXT_ADDRESS.
+    <br><br>
+    Value range: All 64-bit values except for 0xFFFFFFFFFFFFFFFFLL, 
+    specify a value in the  0x123456789ABCDEFLL format. <br>
+    C-type: ExtAddr_t <br>
+    Can be set: at any time before network start <br>
+    Persistent: Yes"
+  group Security
+
+  CS_APS_TRUST_CENTER_ADDRESS = 0xAAAAAAAAAAAAAAAA
+}
+
+option CS_SHORT_TRUST_CENTER_ADDRESS
+{
+  type int
+  disabled
+  text "Trust Center short network address"
+  help "Network address of device responsible for authentication and key distribution (Trust Center).
+    <br><br>
+    The parameter specifies the trust center short address. The stack makes use of the
+    parameter to support various operations in networks with security enabled. For correct network operation
+    the parameter's value must coincide with the actual trust center address.
+    <br><br>
+    Value range: All 16-bit values except for broadcast addresses, 
+    specify a value in the hex format. <br>
+    C-type: ShortAddr_t <br>
+    Can be set: at any time before network start <br>
+    Persistent: Yes"
+  group Security
+
+  CS_SHORT_TRUST_CENTER_ADDRESS = 0x0000
+}
+
+option CS_APS_SECURITY_TIMEOUT_PERIOD
+{
+  type int
+  disabled
+  text "Security timeout period"
+  help "Security information waiting timeout before secure network join
+    considered failed.
+    <br><br>
+    A timeout is started when connection with a parent is established. If the
+    security related procedures that are performed after this will not be completed 
+    before the timeout exceeds, the device will fail joining the network. A value is 
+    measured  in milliseconds.
+    <br><br>
+    C-type: uint32_t <br>
+    Can be set: at compile time only <br>
+    Persistent: No"
+  group Security
+
+  CS_APS_SECURITY_TIMEOUT_PERIOD = 10000
+}
+
+option CS_PERMISSIONS_TABLE_SIZE
+{
+  type int
+  disabled
+  text "Size of the permission configuration table"
+  group Security
+  help "The maximum amount of records in the permission table."
+
+  CS_PERMISSIONS_TABLE_SIZE = 5
+}
+
+/* SECURITY_MODE values */
+value 0
+{
+  option CS_ZDO_SECURITY_STATUS
+  text "Preconfigured network key"
+}
+
+value 1
+{
+  option CS_ZDO_SECURITY_STATUS
+  text "Preconfigured trust center link key"
+}
+
+value 2
+{
+  option CS_ZDO_SECURITY_STATUS
+  text "Preconfigured trust center master key"
+}
+
+value 3
+{
+  option CS_ZDO_SECURITY_STATUS
+  text "No preconfigured security information"
+}
+
+option CS_SECURITY_ON
+{
+  disabled
+  text "Security"
+  help "Turns on/off security features."
+  group Security
+  CS_SECURITY_ON = true
+
+  value true
+  {
+    text "On"
+  }
+  value false
+  {
+    text "Off"
+  }
+}
+
+widget csSecurityOn
+{
+  group Security
+  view check
+  option CS_SECURITY_ON
+  on true
+  off false
+}
+
+option CS_SECURITY_LEVEL
+{
+  type int
+  disabled
+  text "Security level"
+  help "Default security level. Should not be changed without stack recompiling.
+    MAX_ASDU_LENGTH depends on this parameter through the footer length."
+  group Security
+
+  CS_SECURITY_LEVEL = 5
+}
+
+option CS_MAX_TC_AUTHENTIC_PROCESS_AMOUNT
+{
+  type int
+  disabled
+  text "Maximum authentic process amount"
+  help "The maximum number of authentication requests that the trust center can process simultaneously.
+    The parameter is used on the trust center to allocate memory for buffers used
+    during joining device authentication. A value of the parameter determines how many
+    authentication request the stack on the trust center can process at once."
+  group Security
+
+  CS_MAX_TC_AUTHENTIC_PROCESS_AMOUNT = 1
+}
+
+option CS_MAX_TC_ESTABLISH_KEY_AMOUNT
+{
+  type int
+  disabled
+  text "Maximum establish key amount"
+  group Security
+
+  CS_MAX_TC_ESTABLISH_KEY_AMOUNT = 1
+}
+
+option CS_ZDO_TC_KEEP_ALIVE_INTERVAL
+{
+  type int
+  disabled
+  text "Keep-alive polling interval"
+  help "Keep-alive polling interval"
+  group Security
+
+  CS_ZDO_TC_KEEP_ALIVE_INTERVAL = 20
+}
+value BOARD_SAMR21
+{
+  text "BOARD_SAMR21"
+  option BOARD
+
+  enable BSP_SUPPORT
+  BSP_SUPPORT = [BOARD_FAKE, BOARD_SAMR21_XPRO, BOARD_SAMR21_ZLLEK, BOARD_SAMR21_CUSTOM]
+
+  HAL = []
+  HAL_FREQUENCY = [HAL_8MHz]
+
+  RFCHIP = [AT86RF233]
+
+  APP_INTERFACE = APP_INTERFACE_USART
+  APP_INTERFACE = [APP_INTERFACE_USART]
+  APP_USART_CHANNEL = USART_CHANNEL_0
+  APP_USART_CHANNEL = [USART_CHANNEL_0, USART_CHANNEL_1]
+}
+projectName "ZLLDemo"
+
+/* Redefinition of external parameters */
+SECURITY_MODE = [STDLINK_SECURITY_MODE]
+
+enable CS_MAC_FRAME_RX_BUFFER_SIZE
+enable CS_APS_DATA_REQ_BUFFERS_AMOUNT
+enable CS_APS_ACK_FRAME_BUFFERS_AMOUNT
+enable CS_GROUP_TABLE_SIZE
+enable CS_SCAN_DURATION
+enable CS_ZDO_JOIN_ATTEMPTS
+enable CS_INDIRECT_POLL_RATE
+enable CS_NWK_END_DEVICE_MAX_FAILURES
+enable CS_APS_MAX_FRAME_RETRIES
+enable CS_PERMIT_DURATION
+enable CS_ROUTE_TABLE_SIZE
+enable CS_NEIB_TABLE_SIZE
+enable CS_ROUTE_DISCOVERY_TABLE_SIZE
+enable CS_APS_BINDING_TABLE_SIZE
+enable APP_USE_OTAU
+enable CS_ZDO_PARENT_LINK_RETRY_THRESHOLD
+enable CS_ZDO_MAX_SYNC_FAIL_AMOUNT
+enable CS_MANUFACTURER_CODE
+
+CS_MAC_FRAME_RX_BUFFER_SIZE     = 300
+CS_APS_DATA_REQ_BUFFERS_AMOUNT  = 4
+CS_APS_ACK_FRAME_BUFFERS_AMOUNT = 3
+CS_GROUP_TABLE_SIZE             = 10
+CS_SCAN_DURATION                = 5
+CS_ZDO_JOIN_ATTEMPTS            = 1
+CS_INDIRECT_POLL_RATE           = 500
+CS_NWK_END_DEVICE_MAX_FAILURES  = 4
+CS_APS_MAX_FRAME_RETRIES        = 1
+CS_PERMIT_DURATION              = 0x00
+CS_ROUTE_TABLE_SIZE             = 10
+CS_NEIB_TABLE_SIZE              = 10
+CS_ROUTE_DISCOVERY_TABLE_SIZE   = 10
+CS_ZDO_PARENT_LINK_RETRY_THRESHOLD = 0xff
+CS_ZDO_MAX_SYNC_FAIL_AMOUNT = 0xff
+CS_MANUFACTURER_CODE            = 0x1014
+
+if (APP_ZLL_DEVICE_TYPE == APP_DEVICE_TYPE_COLOR_SCENE_REMOTE)
+{
+  enable CS_NWK_BUFFERS_AMOUNT
+  CS_NWK_BUFFERS_AMOUNT = 5
+}
+
+if (APP_ZLL_DEVICE_TYPE != APP_DEVICE_TYPE_COLOR_SCENE_REMOTE)
+{
+  CS_APS_BINDING_TABLE_SIZE = 10
+}
+
+option ZLL_TASK_HANDLER_SUPPORT
+{
+  group Application
+  writeType raw
+  help "Enables the ZLL_TaskHandler()"
+
+  ZLL_TASK_HANDLER_SUPPORT = "#define _SYS_ZLL_TASK_"
+}
+
+/* Application-specific parameters definition */
+option APP_DEVICE_TYPE_COLOR_SCENE_REMOTE_DEFINITION
+{
+  writeType raw
+  group Application
+
+  APP_DEVICE_TYPE_COLOR_SCENE_REMOTE_DEFINITION = "#define APP_DEVICE_TYPE_COLOR_SCENE_REMOTE 1"
+}
+
+option APP_DEVICE_TYPE_ON_OFF_LIGHT_DEFINITION
+{
+  writeType raw
+  group Application
+
+  APP_DEVICE_TYPE_ON_OFF_LIGHT_DEFINITION = "#define APP_DEVICE_TYPE_ON_OFF_LIGHT 3"
+}
+
+option APP_DEVICE_TYPE_DIMMABLE_LIGHT_DEFINITION
+{
+  writeType raw
+  group Application
+
+  APP_DEVICE_TYPE_DIMMABLE_LIGHT_DEFINITION = "#define APP_DEVICE_TYPE_DIMMABLE_LIGHT 4"
+}
+
+option APP_DEVICE_TYPE_COLOR_LIGHT_DEFINITION
+{
+  writeType raw
+  group Application
+
+  APP_DEVICE_TYPE_COLOR_LIGHT_DEFINITION = "#define APP_DEVICE_TYPE_COLOR_LIGHT 5"
+}
+
+option APP_DEVICE_TYPE_EXTENDED_COLOR_LIGHT_DEFINITION
+{
+  writeType raw
+  group Application
+
+  APP_DEVICE_TYPE_EXTENDED_COLOR_LIGHT_DEFINITION = "#define APP_DEVICE_TYPE_EXTENDED_COLOR_LIGHT 6"
+}
+
+option APP_DEVICE_TYPE_TEMPERATURE_COLOR_LIGHT_DEFINITION
+{
+  writeType raw
+  group Application
+
+  APP_DEVICE_TYPE_TEMPERATURE_COLOR_LIGHT_DEFINITION = "#define APP_DEVICE_TYPE_TEMPERATURE_COLOR_LIGHT 7"
+}
+
+option APP_DEVICE_TYPE_BRIDGE_DEFINITION
+{
+  writeType raw
+  group Application
+
+  APP_DEVICE_TYPE_BRIDGE_DEFINITION = "#define APP_DEVICE_TYPE_BRIDGE 2"
+}
+
+option APP_ZLL_DEVICE_TYPE
+{
+  group Application
+  text "ZLL device type"
+  help "Select ZLL device type: either Color Scene Remote or Light"
+
+  value APP_DEVICE_TYPE_COLOR_SCENE_REMOTE
+  {
+    text "Color Scene Remote"
+  }
+
+  value APP_DEVICE_TYPE_ON_OFF_LIGHT
+  {
+    text "On/off light"
+  }
+
+  value APP_DEVICE_TYPE_DIMMABLE_LIGHT
+  {
+    text "Dimmable light"
+  }
+
+  value APP_DEVICE_TYPE_COLOR_LIGHT
+  {
+    text "Color light"
+  }
+
+  value APP_DEVICE_TYPE_EXTENDED_COLOR_LIGHT
+  {
+    text "Extended color light"
+  }
+
+  value APP_DEVICE_TYPE_TEMPERATURE_COLOR_LIGHT
+  {
+    text "Temperature color light"
+  }
+
+  value APP_DEVICE_TYPE_BRIDGE
+  {
+    text "Bridge device"
+  }
+
+  APP_ZLL_DEVICE_TYPE = APP_DEVICE_TYPE_COLOR_SCENE_REMOTE
+}
+
+option APP_ENABLE_CERTIFICATION_EXTENSION
+{
+  group Application
+  text "Enable/disable certification testing"
+  help "Enables or disables certification testing extension"
+
+  value 1
+  {
+    text "Enable"
+  }
+
+  value 0
+  {
+    text "Disable"
+  }
+
+  APP_ENABLE_CERTIFICATION_EXTENSION = 0
+}
+
+option BSP_RCB_KEY_REMOTE_SUPPORT
+{
+  type uint
+  group Application
+  text "RCB KeyRemote support"
+  help "Support Atmel RCB KeyRemote board"
+  disabled
+
+  value 1
+  {
+    text "Enabled"
+  }
+
+  value 0
+  {
+    text "Disabled"
+  }
+
+  BSP_RCB_KEY_REMOTE_SUPPORT = 0
+}
+
+if (BOARD == BOARD_SAMR21)
+{
+  enable CS_UID
+}
+
+if (BOARD == BOARD_RCB)
+{
+  enable  BSP_RCB_KEY_REMOTE_SUPPORT
+}
+
+if (BOARD == BOARD_SAMD20_XPLAINED_PRO)
+{
+  enable CS_UID
+}
+
+option APP_DEVICE_EVENTS_LOGGING
+{
+  group Application
+  text "Logging"
+  help "Specifies if logging enabled"
+
+  value 1
+  {
+    text "On"
+  }
+
+  value 0
+  {
+    text "Off"
+  }
+
+  APP_DEVICE_EVENTS_LOGGING = 1
+}
+
+option APP_ENABLE_CONSOLE
+{
+  group Application
+  text "Application console"
+
+  value 1
+  {
+    text "On"
+  }
+
+  value 0
+  {
+    text "Off"
+  }
+
+  APP_ENABLE_CONSOLE = 1
+}
+
+option APP_SCAN_ON_STARTUP
+{
+  group Application
+  text "Activate channel scanning on startup for FN Light/remote devices"
+  help "Activate channel scanning on startup for FN Light/remote devices"
+
+  value 1
+  {
+    text "On"
+  }
+
+  value 0
+  {
+    text "Off"
+  }
+
+  disabled
+}
+
+option APP_LIGHT_LED_DRIVER
+{
+  group Application
+  writeType define
+  text "LED driving method"
+  help "LED driving method"
+
+  disabled
+
+  value APP_USE_PWM
+  {
+    text "APP_USE_PWM"
+  }
+  APP_LIGHT_LED_DRIVER = APP_USE_PWM
+}
+
+option ENABLE_DITHERING_A
+{
+  group Application
+  text "Red channel"
+  help "Red channel"
+
+  value 1
+  {
+    text "On"
+  }
+
+  value 0
+  {
+    text "Off"
+  }
+
+  disabled
+}
+
+option ENABLE_DITHERING_B
+{
+  group Application
+  text "Green channel"
+  help "Green channel"
+
+  value 1
+  {
+    text "On"
+  }
+
+  value 0
+  {
+    text "Off"
+  }
+
+  disabled
+}
+
+option ENABLE_DITHERING_C
+{
+  group Application
+  text "Blue channel"
+  help "Blue channel"
+
+  value 1
+  {
+    text "On"
+  }
+
+  value 0
+  {
+    text "Off"
+  }
+
+  disabled
+}
+
+option APP_PWM_FREQUENCY
+{
+  group Application
+  text "PWM frequency in Hz"
+  help "PWM frequency in Hz"
+
+  disabled
+}
+
+option APP_EXT_PANID
+{
+  group Application
+  type ulong
+  text "Fixed extended PAN ID value for debug purpose"
+  help "Fixed extended PAN ID value for debug purpose"
+
+  disabled
+}
+
+option APP_SHORT_PANID
+{
+  group Application
+  text "Fixed short PAN ID value for debug purpose"
+  help "Fixed short PAN ID value for debug purpose"
+
+  disabled
+}
+
+option APP_ZLL_FIXED_PAN
+{
+  group Application
+  text "Fix PAN settings for debug purpose"
+  help "Fix PAN settings for debug purpose"
+
+  value 1
+  {
+    text "On"
+  }
+
+  value 0
+  {
+    text "Off"
+  }
+
+  APP_ZLL_FIXED_PAN = 0
+}
+
+option CHANNELS_SET
+{
+  writeType raw
+  group Stack
+  text "Channels set configuration"
+  help "Channels set configuration"
+
+  CHANNELS_SET = "
+#define APP_PRIMARY_CHANNELS_MASK     0x2108800 //standard (11, 15, 20, 25)
+#define APP_SECONDARY_CHANNELS_MASK   0x5EF7000 //standard
+
+//#define APP_PRIMARY_CHANNELS_MASK   0x4211000 //standard+1 (12, 16, 21, 26)
+//#define APP_SECONDARY_CHANNELS_MASK 0x3DEE800 //standard+1
+
+//#define APP_PRIMARY_CHANNELS_MASK   0x04A2000 //standard+2 (13, 17, 19, 22)
+//#define APP_SECONDARY_CHANNELS_MASK 0x7B5D800 //standard+2
+
+//#define APP_PRIMARY_CHANNELS_MASK   0x1844000 //standard+3 (14, 18, 23, 24)
+//#define APP_SECONDARY_CHANNELS_MASK 0x67BB800 //standard+3"
+}
+
+enable APP_SCAN_ON_STARTUP
+APP_SCAN_ON_STARTUP = 0
+
+if (APP_ZLL_DEVICE_TYPE != APP_DEVICE_TYPE_COLOR_SCENE_REMOTE)
+{
+  enable APP_SCAN_ON_STARTUP
+  enable APP_LIGHT_LED_DRIVER
+  APP_SCAN_ON_STARTUP = 1
+
+  enable APP_PWM_FREQUENCY
+  APP_PWM_FREQUENCY = 22000
+
+  enable CS_END_DEVICE_SLEEP_PERIOD
+  CS_END_DEVICE_SLEEP_PERIOD = 3600000
+
+  enable ENABLE_DITHERING_A
+  enable ENABLE_DITHERING_B
+  enable ENABLE_DITHERING_C
+}
+
+if (APP_ZLL_DEVICE_TYPE == APP_DEVICE_TYPE_COLOR_SCENE_REMOTE)
+{
+
+  enable CS_END_DEVICE_SLEEP_PERIOD
+  CS_END_DEVICE_SLEEP_PERIOD = 0
+}
+
+option APP_STUB_FOR_PDS
+{
+  writeType raw
+  group Application
+
+  APP_STUB_FOR_PDS = "/* Enable wear-leveling version of PDS */
+#define PDS_ENABLE_WEAR_LEVELING 1
+
+/* If PDS uses external flash. this should be uncommented. */
+//#define PDS_USE_EXTERNAL_FLASH
+
+/* If Bootloader will be used in parallel with application. this should be commented. */
+#define PDS_NO_BOOTLOADER_SUPPORT
+
+/* ZigBee Platform NV items list*/
+#define PERSISTENT_NV_ITEMS_PLATFORM    NWK_SECURITY_COUNTERS_MEM_ID
+/* Application NV items list */
+#define PERSISTENT_NV_ITEMS_APPLICATION 0xFFFu
+
+#if APP_ZLL_DEVICE_TYPE == APP_DEVICE_TYPE_COLOR_SCENE_REMOTE
+  #define ZIGBEE_END_DEVICE
+#endif"
+}
+
+option APP_OTAU_DEVICE_ROLE
+{
+  group OTAU
+  writeType define
+  text "Device role"
+  help "OTAU device role"
+
+  disabled
+
+  value OTAU_SERVER
+  {
+    text "OTAU_SERVER"
+  }
+
+  value OTAU_CLIENT
+  {
+    text "OTAU_CLIENT"
+  }
+
+  APP_OTAU_DEVICE_ROLE = OTAU_SERVER
+}
+
+option IMAGE_KEY
+{
+  writeType raw
+  group Application
+  disabled
+
+  IMAGE_KEY = "#define IMAGE_KEY {0x01, 0x12, 0x23, 0x34, 0x45, 0x56, 0x67, 0x78, 0x89, 0x90, 0x99, 0x88, 0x77, 0x66, 0x55, 0x44}"
+}
+
+option IMAGE_IV
+{
+  writeType raw
+  group Application
+  disabled
+
+  IMAGE_IV = "#define IMAGE_IV {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}"
+}
+
+if (APP_ZLL_DEVICE_TYPE == APP_DEVICE_TYPE_BRIDGE)
+{
+    if (APP_USE_OTAU == 1)
+    {
+      enable APP_OTAU_DEVICE_ROLE
+      APP_OTAU_DEVICE_ROLE = OTAU_SERVER
+    }
+}
+else
+{
+    if (APP_USE_OTAU == 1)
+    {
+      enable APP_OTAU_DEVICE_ROLE
+      enable USE_IMAGE_SECURITY
+      APP_OTAU_DEVICE_ROLE = OTAU_CLIENT
+      USE_IMAGE_SECURITY = 0
+      if (USE_IMAGE_SECURITY == 1)
+      {
+        enable IMAGE_KEY
+        enable IMAGE_IV
+      }
+    }
+}
+
+APP_USE_ISD_CONSOLE_TUNNELING = 1
+EXTERNAL_MEMORY = AT25DF041A
+
+option ZLL_DEMO_ZCL_SUPPORT
+{
+  writeType raw
+  group Application
+
+  ZLL_DEMO_ZCL_SUPPORT = "#define ZCL_SUPPORT 1"
+}
+
+option ATMEL_APPLICATION_SUPPORT
+{
+  group Application
+  text "Atmel generic ZLL Applications support"
+  help "Shall be enabled for Atmel generic ZLL Applications."
+
+  ATMEL_APPLICATION_SUPPORT = 1
+}

@@ -1,0 +1,392 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:48
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysAssert.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysAssert.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\sysAssert.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\sysAssert.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\SystemEnvironment\src\sysAssert.c
+      1          /***************************************************************************//**
+      2            \file sysAssert.c
+      3          
+      4            \brief
+      5             This component provides a Assert facility. The component provides application
+      6             to register hooks that are invoked when Assert is encountered in execution. 
+      7             Application handler should log the information and take corrective action.
+      8          
+      9            \author Atmel Corporation: http://www.atmel.com
+     10            \n  Support email: avr@atmel.com
+     11            \n Copyright (c) 2014, Atmel Corporation. All rights reserved.
+     12            \n Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15          
+     16            $Id: sysAssert.c 2014-04-12 21:25:35Z mukesh $
+     17          
+     18          *******************************************************************************/
+     19          
+     20          /******************************************************************************
+     21                                          Includes section
+     22           ******************************************************************************/
+     23          #include <sysTypes.h>
+     24          #include <sysAssert.h>
+     25          #ifndef MAP_ALL_ASSERT_LEVEL_TO_SYSASSERT
+     26          /******************************************************************************
+     27                                        Definitions section
+     28           ******************************************************************************/
+     29          
+     30          void SYS_AssertSubscribe(SYS_AssertCallback_t pCallback);
+     31          
+     32          /******************************************************************************
+     33                                        Global variable section
+     34           ******************************************************************************/
+     35          
+
+   \                                 In section .bss, align 4
+     36          SYS_AssertParam_t gAssertParam;
+   \                     gAssertParam:
+   \   00000000                      DS8 4
+     37          
+     38          #ifdef  USE_DBGCODE
+     39          uint16_t gAssertDbgCode;
+   \                     gAssertDbgCode:
+   \   00000004                      DS8 2
+   \   00000006                      DS8 2
+     40          #endif
+     41          
+     42          #ifdef  USE_COMPID
+     43          uint16_t gAssertCompId;
+     44          #endif
+     45          
+     46          
+     47          #ifdef  USE_LINENUM
+     48          int16_t gAssertLine;
+     49          #endif
+     50          
+     51          #ifdef USE_FILENAME
+     52          const char *gAssertFile;
+     53          #endif
+     54          
+     55          SYS_AssertCallback_t s_pAssertSubscriber;
+   \                     s_pAssertSubscriber:
+   \   00000008                      DS8 4
+     56          
+     57          
+     58          /** Subscribe callback, callback will be called when a assert occurs.
+     59              Only one subscriber is allowed.
+     60          */
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void SYS_AssertSubscribe(SYS_AssertCallback_t pCallback)
+     62          {
+     63            if (pCallback)
+   \                     SYS_AssertSubscribe: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+   \   00000002   0xD001             BEQ      ??SYS_AssertSubscribe_0
+     64              s_pAssertSubscriber = pCallback;
+   \   00000004   0x....             LDR      R1,??DataTable3
+   \   00000006   0x6088             STR      R0,[R1, #+8]
+     65          }
+   \                     ??SYS_AssertSubscribe_0: (+1)
+   \   00000008   0x4770             BX       LR               ;; return
+     66          
+     67          
+     68          /**************************************************************************//**
+     69            \brief SYS_DefAssertCallbackWarn callback invoked on WARN LEVEL ASSERTS
+     70            if enabled       
+     71            \param[in] None
+     72            \return None
+     73          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     74          void SYS_DefAssertCallbackWarn()
+     75          {
+     76            gAssertParam.level   = WARN_LEVEL;
+   \                     SYS_DefAssertCallbackWarn: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable3
+   \   00000002   0x2101             MOVS     R1,#+1
+   \   00000004   0x8001             STRH     R1,[R0, #+0]
+     77          
+     78          #ifdef USE_DBGCODE
+     79            gAssertParam.dbgCode = gAssertDbgCode;
+   \   00000006   0x8881             LDRH     R1,[R0, #+4]
+   \   00000008   0x8041             STRH     R1,[R0, #+2]
+     80          #endif
+     81          #ifdef USE_LINENUM
+     82            gAssertParam.line    = gAssertLine;
+     83          #endif
+     84          #ifdef USE_COMPID 
+     85            gAssertParam.componentId =  gAssertCompId;
+     86          #endif
+     87          #ifdef USE_FILENAME
+     88            gAssertParam.file = gAssertFile;
+     89          #endif
+     90          
+     91            if ( NULL != s_pAssertSubscriber ) 
+   \   0000000A   0x6881             LDR      R1,[R0, #+8]
+   \   0000000C   0x000A             MOVS     R2,R1
+   \   0000000E   0xD100             BNE      ??SYS_DefAssertCallbackWarn_0
+   \   00000010   0x4770             BX       LR
+     92              s_pAssertSubscriber(&gAssertParam); 
+   \                     ??SYS_DefAssertCallbackWarn_0: (+1)
+   \   00000012   0xB580             PUSH     {R7,LR}
+   \   00000014   0x4788             BLX      R1
+     93          } 
+   \   00000016   0xBD01             POP      {R0,PC}          ;; return
+     94           
+     95          /**************************************************************************//**
+     96            \brief SYS_DefAssertCallbackError callback invoked on ERROR LEVEL ASSERTS
+     97            if enabled       
+     98            \param[in] None
+     99            \return None
+    100          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    101          void SYS_DefAssertCallbackError()
+    102          {
+    103            gAssertParam.level   = ERROR_LEVEL;
+   \                     SYS_DefAssertCallbackError: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable3
+   \   00000002   0x2102             MOVS     R1,#+2
+   \   00000004   0x8001             STRH     R1,[R0, #+0]
+    104             
+    105          #ifdef USE_DBGCODE
+    106            gAssertParam.dbgCode = gAssertDbgCode;
+   \   00000006   0x8881             LDRH     R1,[R0, #+4]
+   \   00000008   0x8041             STRH     R1,[R0, #+2]
+    107          #endif
+    108          #ifdef USE_LINENUM
+    109            gAssertParam.line    = gAssertLine;
+    110          #endif
+    111          #ifdef USE_COMPID 
+    112            gAssertParam.componentId =  gAssertCompId;
+    113          #endif
+    114          #ifdef USE_FILENAME
+    115            gAssertParam.file = gAssertFile;
+    116          #endif
+    117          
+    118            if ( NULL !=  s_pAssertSubscriber  ) 
+   \   0000000A   0x6881             LDR      R1,[R0, #+8]
+   \   0000000C   0x000A             MOVS     R2,R1
+   \   0000000E   0xD100             BNE      ??SYS_DefAssertCallbackError_0
+   \   00000010   0x4770             BX       LR
+    119              s_pAssertSubscriber(&gAssertParam); 
+   \                     ??SYS_DefAssertCallbackError_0: (+1)
+   \   00000012   0xB580             PUSH     {R7,LR}
+   \   00000014   0x4788             BLX      R1
+    120          } 
+   \   00000016   0xBD01             POP      {R0,PC}          ;; return
+    121          
+    122          /**************************************************************************//**
+    123            \brief SYS_DefAssertCallbackFatal callback called on FATAL LEVEL ASSERTS
+    124            if enabled, This function invokes registered callback
+    125            \param[in] None
+    126            \return None
+    127          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    128          void SYS_DefAssertCallbackFatal()
+    129          {
+    130            gAssertParam.level   = FATAL_LEVEL;
+   \                     SYS_DefAssertCallbackFatal: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable3
+   \   00000002   0x2103             MOVS     R1,#+3
+   \   00000004   0x8001             STRH     R1,[R0, #+0]
+    131          
+    132          #ifdef USE_DBGCODE
+    133            gAssertParam.dbgCode = gAssertDbgCode;
+   \   00000006   0x8881             LDRH     R1,[R0, #+4]
+   \   00000008   0x8041             STRH     R1,[R0, #+2]
+    134          #endif
+    135          #ifdef USE_LINENUM
+    136            gAssertParam.line    = gAssertLine;
+    137          #endif
+    138          #ifdef USE_COMPID 
+    139            gAssertParam.componentId =  gAssertCompId;
+    140          #endif
+    141          #ifdef USE_FILENAME
+    142            gAssertParam.file = gAssertFile;
+    143          #endif
+    144          
+    145            if ( NULL != s_pAssertSubscriber ) 
+   \   0000000A   0x6881             LDR      R1,[R0, #+8]
+   \   0000000C   0x000A             MOVS     R2,R1
+   \   0000000E   0xD100             BNE      ??SYS_DefAssertCallbackFatal_0
+   \   00000010   0x4770             BX       LR
+    146              s_pAssertSubscriber(&gAssertParam); 
+   \                     ??SYS_DefAssertCallbackFatal_0: (+1)
+   \   00000012   0xB580             PUSH     {R7,LR}
+   \   00000014   0x4788             BLX      R1
+    147          } 
+   \   00000016   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     gAssertParam
+    148          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SYS_AssertSubscribe
+       8   SYS_DefAssertCallbackError
+         8   -- Indirect call
+       8   SYS_DefAssertCallbackFatal
+         8   -- Indirect call
+       8   SYS_DefAssertCallbackWarn
+         8   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+      10  SYS_AssertSubscribe
+      24  SYS_DefAssertCallbackError
+      24  SYS_DefAssertCallbackFatal
+      24  SYS_DefAssertCallbackWarn
+      12  gAssertParam
+          gAssertDbgCode
+          s_pAssertSubscriber
+
+ 
+ 12 bytes in section .bss
+ 86 bytes in section .text
+ 
+ 86 bytes of CODE memory
+ 12 bytes of DATA memory
+
+Errors: none
+Warnings: none

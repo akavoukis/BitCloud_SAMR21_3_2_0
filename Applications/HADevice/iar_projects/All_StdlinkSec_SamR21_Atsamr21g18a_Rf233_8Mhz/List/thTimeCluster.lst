@@ -1,0 +1,761 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:09
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thTimeCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thTimeCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\thTimeCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\thTimeCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thTimeCluster.c
+      1          /**************************************************************************//**
+      2            \file thTimeCluster.c
+      3          
+      4            \brief
+      5              Thermostat time cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              09/09/2014 Unithra.C - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_THERMOSTAT
+     19          /******************************************************************************
+     20                              Includes section
+     21          ******************************************************************************/
+     22          #include <thTimeCluster.h>
+     23          #include <uartManager.h>
+     24          #include <commandManager.h>
+     25          #include <haClusters.h>
+     26          /******************************************************************************
+     27                              Defines section
+     28          ******************************************************************************/
+     29          #define ONE_SEC_TIME    1000
+     30          /******************************************************************************
+     31                              Local variables section
+     32          ******************************************************************************/
+
+   \                                 In section .bss, align 4
+     33          static AttibuteReadCallback_t   readAttributeCallback;
+   \                     readAttributeCallback:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+     34          static AttributeWriteCallback_t writeAttributeCallback;
+   \                     writeAttributeCallback:
+   \   00000000                      DS8 4
+     35          /******************************************************************************
+     36                              Prototypes section
+     37          ******************************************************************************/
+     38          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy);
+     39          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy);
+     40          /******************************************************************************
+     41                              Implementation section
+     42          ******************************************************************************/
+     43          /**************************************************************************//**
+     44          \brief Sends Read Attribute command unicastly
+     45          
+     46          \param[in] mode - address mode;
+     47          \param[in] addr - short address of destination node;
+     48          \param[in] ep   - destination endpoint;
+     49          \param[in] attr - attribute id;
+     50          \param[in] cb   - callback function
+     51          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     52          void timeReadAttribute(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep,
+     53            uint16_t attr, AttibuteReadCallback_t cb)
+     54          {
+   \                     timeReadAttribute: (+1)
+   \   00000000   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \   00000002   0xB086             SUB      SP,SP,#+24
+   \   00000004   0x000F             MOVS     R7,R1
+   \   00000006   0x0015             MOVS     R5,R2
+   \   00000008   0x001E             MOVS     R6,R3
+     55            ZCL_Request_t *req;
+     56            ZCL_NextElement_t element;
+     57            ZCL_ReadAttributeReq_t readAttrReqElement;
+     58          
+     59            if (!(req = getFreeCommand()))
+   \   0000000A   0x.... 0x....      BL       getFreeCommand
+   \   0000000E   0x0004             MOVS     R4,R0
+   \   00000010   0xD023             BEQ      ??timeReadAttribute_0
+     60              return;
+     61          
+     62            readAttributeCallback = cb;
+   \   00000012   0x980C             LDR      R0,[SP, #+48]
+   \   00000014   0x....             LDR      R1,??DataTable8
+   \   00000016   0x6008             STR      R0,[R1, #+0]
+     63          
+     64            readAttrReqElement.id = attr;
+   \   00000018   0x4668             MOV      R0,SP
+   \   0000001A   0x8086             STRH     R6,[R0, #+4]
+     65          
+     66            element.payloadLength = 0;
+   \   0000001C   0x2000             MOVS     R0,#+0
+   \   0000001E   0xAE02             ADD      R6,SP,#+8
+   \   00000020   0x7070             STRB     R0,[R6, #+1]
+     67            element.payload = req->requestPayload;
+   \   00000022   0x6CE1             LDR      R1,[R4, #+76]
+   \   00000024   0x9103             STR      R1,[SP, #+12]
+     68            element.id = ZCL_READ_ATTRIBUTES_COMMAND_ID;
+   \   00000026   0x7030             STRB     R0,[R6, #+0]
+     69            element.content = &readAttrReqElement;
+   \   00000028   0xA801             ADD      R0,SP,#+4
+   \   0000002A   0x9004             STR      R0,[SP, #+16]
+     70            ZCL_PutNextElement(&element);
+   \   0000002C   0xA802             ADD      R0,SP,#+8
+   \   0000002E   0x.... 0x....      BL       ZCL_PutNextElement
+     71          
+     72            fillCommandRequest(req, ZCL_READ_ATTRIBUTES_COMMAND_ID, element.payloadLength);
+   \   00000032   0x7872             LDRB     R2,[R6, #+1]
+   \   00000034   0x2100             MOVS     R1,#+0
+   \   00000036   0x0020             MOVS     R0,R4
+   \   00000038   0x.... 0x....      BL       fillCommandRequest
+     73            fillDstAddressing(&req->dstAddressing, mode, addr, ep, TIME_CLUSTER_ID);
+   \   0000003C   0x200A             MOVS     R0,#+10
+   \   0000003E   0x9000             STR      R0,[SP, #+0]
+   \   00000040   0x002B             MOVS     R3,R5
+   \   00000042   0x003A             MOVS     R2,R7
+   \   00000044   0x4668             MOV      R0,SP
+   \   00000046   0x7E01             LDRB     R1,[R0, #+24]
+   \   00000048   0x0020             MOVS     R0,R4
+   \   0000004A   0x3020             ADDS     R0,R0,#+32
+   \   0000004C   0x.... 0x....      BL       fillDstAddressing
+     74            req->ZCL_Notify = ZCL_ReadAttributeResp;
+   \   00000050   0x....             LDR      R0,??DataTable8_1
+   \   00000052   0x61A0             STR      R0,[R4, #+24]
+     75          
+     76            commandManagerSendAttribute(req);
+   \   00000054   0x0020             MOVS     R0,R4
+   \   00000056   0x.... 0x....      BL       commandManagerSendAttribute
+     77          }
+   \                     ??timeReadAttribute_0: (+1)
+   \   0000005A   0xB007             ADD      SP,SP,#+28
+   \   0000005C   0xBDF0             POP      {R4-R7,PC}       ;; return
+     78          /**************************************************************************//**
+     79          \brief Sends Write Attribute command unicastly
+     80          
+     81          \param[in] mode - address mode;
+     82          \param[in] addr - short address of destination node;
+     83          \param[in] attr - attribute id;
+     84          \param[in] ep   - destination endpoint;
+     85          \param[in] type - attribute type;
+     86          \param[in] cb   - callback function;
+     87          \param[in] data - the pointer to memory with value to be written;
+     88          \param[in] size - size of data parameter in octets
+     89          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     90          void timeWriteAttribute(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+     91            uint16_t attr, uint8_t type, AttributeWriteCallback_t cb, void *data, uint8_t size)
+     92          {
+   \                     timeWriteAttribute: (+1)
+   \   00000000   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x000F             MOVS     R7,R1
+   \   00000006   0x0015             MOVS     R5,R2
+   \   00000008   0x001E             MOVS     R6,R3
+     93            ZCL_Request_t *req;
+     94            ZCL_WriteAttributeReq_t writeAttrReq;
+     95          
+     96            if (!(req = getFreeCommand()))
+   \   0000000A   0x.... 0x....      BL       getFreeCommand
+   \   0000000E   0x0004             MOVS     R4,R0
+   \   00000010   0xD027             BEQ      ??timeWriteAttribute_0
+     97              return;
+     98          
+     99            writeAttributeCallback = cb;
+   \   00000012   0x9809             LDR      R0,[SP, #+36]
+   \   00000014   0x....             LDR      R1,??DataTable8_2
+   \   00000016   0x6008             STR      R0,[R1, #+0]
+    100          
+    101            writeAttrReq.id = attr;
+   \   00000018   0x4668             MOV      R0,SP
+   \   0000001A   0x8086             STRH     R6,[R0, #+4]
+    102            writeAttrReq.type = type;
+   \   0000001C   0x9808             LDR      R0,[SP, #+32]
+   \   0000001E   0xA901             ADD      R1,SP,#+4
+   \   00000020   0x7088             STRB     R0,[R1, #+2]
+    103            memcpy(req->requestPayload, (uint8_t *)&writeAttrReq, sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+   \   00000022   0x2203             MOVS     R2,#+3
+   \   00000024   0x6CE0             LDR      R0,[R4, #+76]
+   \   00000026   0x.... 0x....      BL       __aeabi_memcpy
+   \   0000002A   0x9E0B             LDR      R6,[SP, #+44]
+    104            memcpy(req->requestPayload + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t), (uint8_t *)data, size);
+   \   0000002C   0x0032             MOVS     R2,R6
+   \   0000002E   0x990A             LDR      R1,[SP, #+40]
+   \   00000030   0x6CE0             LDR      R0,[R4, #+76]
+   \   00000032   0x1CC0             ADDS     R0,R0,#+3
+   \   00000034   0x.... 0x....      BL       __aeabi_memcpy
+    105          
+    106            fillCommandRequest(req, ZCL_WRITE_ATTRIBUTES_COMMAND_ID, size + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+   \   00000038   0x1CF6             ADDS     R6,R6,#+3
+   \   0000003A   0xB2F2             UXTB     R2,R6
+   \   0000003C   0x2102             MOVS     R1,#+2
+   \   0000003E   0x0020             MOVS     R0,R4
+   \   00000040   0x.... 0x....      BL       fillCommandRequest
+    107            fillDstAddressing(&req->dstAddressing, mode, addr, ep, TIME_CLUSTER_ID);
+   \   00000044   0x200A             MOVS     R0,#+10
+   \   00000046   0x9000             STR      R0,[SP, #+0]
+   \   00000048   0x002B             MOVS     R3,R5
+   \   0000004A   0x003A             MOVS     R2,R7
+   \   0000004C   0x4668             MOV      R0,SP
+   \   0000004E   0x7A01             LDRB     R1,[R0, #+8]
+   \   00000050   0x0020             MOVS     R0,R4
+   \   00000052   0x3020             ADDS     R0,R0,#+32
+   \   00000054   0x.... 0x....      BL       fillDstAddressing
+    108            req->ZCL_Notify = ZCL_WriteAttributeResp;
+   \   00000058   0x....             LDR      R0,??DataTable8_3
+   \   0000005A   0x61A0             STR      R0,[R4, #+24]
+    109          
+    110            commandManagerSendAttribute(req);
+   \   0000005C   0x0020             MOVS     R0,R4
+   \   0000005E   0x.... 0x....      BL       commandManagerSendAttribute
+    111          }
+   \                     ??timeWriteAttribute_0: (+1)
+   \   00000062   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    112          /**************************************************************************//**
+    113          \brief Indication of read attribute response
+    114          
+    115          \param[in] resp - pointer to response
+    116          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    117          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy)
+    118          {
+   \                     ZCL_ReadAttributeResp: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB0B0             SUB      SP,SP,#+192
+   \   00000004   0x0004             MOVS     R4,R0
+    119            ZCL_NextElement_t element;
+    120            ZCL_ReadAttributeResp_t *readAttributeResp;
+    121            int32_t attributeValue;
+    122          
+    123            if (ZCL_SUCCESS_STATUS == ntfy->status)
+   \   00000006   0x7820             LDRB     R0,[R4, #+0]
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD13D             BNE      ??ZCL_ReadAttributeResp_0
+    124            {
+    125              element.id            = ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID;
+   \   0000000C   0xA801             ADD      R0,SP,#+4
+   \   0000000E   0x2101             MOVS     R1,#+1
+   \   00000010   0x7001             STRB     R1,[R0, #+0]
+    126              element.payloadLength = ntfy->responseLength;
+   \   00000012   0x7A21             LDRB     R1,[R4, #+8]
+   \   00000014   0x7041             STRB     R1,[R0, #+1]
+    127              element.payload       = ntfy->responsePayload;
+   \   00000016   0x68E0             LDR      R0,[R4, #+12]
+   \   00000018   0x9002             STR      R0,[SP, #+8]
+    128              element.content       = NULL;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x9003             STR      R0,[SP, #+12]
+    129          
+    130              ZCL_GetNextElement(&element);
+   \   0000001E   0xA801             ADD      R0,SP,#+4
+   \   00000020   0x.... 0x....      BL       ZCL_GetNextElement
+    131              readAttributeResp = (ZCL_ReadAttributeResp_t *) element.content;
+   \   00000024   0x9C03             LDR      R4,[SP, #+12]
+    132          
+    133              if (readAttributeCallback)
+   \   00000026   0x....             LDR      R0,??DataTable8
+   \   00000028   0x6801             LDR      R1,[R0, #+0]
+   \   0000002A   0x0008             MOVS     R0,R1
+   \   0000002C   0xD001             BEQ      ??ZCL_ReadAttributeResp_1
+    134                readAttributeCallback((void *)&readAttributeResp->value[0]);
+   \   0000002E   0x1D20             ADDS     R0,R4,#+4
+   \   00000030   0x4788             BLX      R1
+    135          
+    136              // for time cluster only timeStatus attribute is 8bit
+    137              if(readAttributeResp->type == ZCL_8BIT_BITMAP_DATA_TYPE_ID)
+   \                     ??ZCL_ReadAttributeResp_1: (+1)
+   \   00000032   0x78E0             LDRB     R0,[R4, #+3]
+   \   00000034   0x2818             CMP      R0,#+24
+   \   00000036   0xD112             BNE      ??ZCL_ReadAttributeResp_2
+    138              {
+    139                memcpy(&attributeValue, &readAttributeResp->value[0], sizeof(int8_t));
+   \   00000038   0x1D20             ADDS     R0,R4,#+4
+   \   0000003A   0x4669             MOV      R1,SP
+   \   0000003C   0x7802             LDRB     R2,[R0, #0]
+   \   0000003E   0x700A             STRB     R2,[R1, #0]
+    140                LOG_STRING(readAttrSuccessStr, "<-Read Time attribute (0x%x) response: success  t = 0x%x\r\n");
+   \   00000040   0xA820             ADD      R0,SP,#+128
+   \   00000042   0xBF00             Nop      
+   \   00000044   0x....             ADR.N    R1,?_0
+   \   00000046   0x223C             MOVS     R2,#+60
+   \   00000048   0x.... 0x....      BL       __aeabi_memcpy4
+    141                appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id, (uint8_t)attributeValue);
+   \   0000004C   0x7821             LDRB     R1,[R4, #+0]
+   \   0000004E   0x7860             LDRB     R0,[R4, #+1]
+   \   00000050   0x0600             LSLS     R0,R0,#+24
+   \   00000052   0x0C00             LSRS     R0,R0,#+16
+   \   00000054   0x4301             ORRS     R1,R1,R0
+   \   00000056   0x9A00             LDR      R2,[SP, #+0]
+   \   00000058   0xB2D2             UXTB     R2,R2
+   \   0000005A   0xA820             ADD      R0,SP,#+128
+   \   0000005C   0xE011             B.N      ??ZCL_ReadAttributeResp_3
+    142              }
+    143              else
+    144              {
+    145                memcpy(&attributeValue, &readAttributeResp->value[0], sizeof(int32_t));
+   \                     ??ZCL_ReadAttributeResp_2: (+1)
+   \   0000005E   0x2204             MOVS     R2,#+4
+   \   00000060   0x1D21             ADDS     R1,R4,#+4
+   \   00000062   0x4668             MOV      R0,SP
+   \   00000064   0x.... 0x....      BL       __aeabi_memcpy
+    146                LOG_STRING(readAttrSuccessStr, "<-Read Time attribute (0x%x) response: success  t = 0x%08lx\r\n");
+   \   00000068   0xA810             ADD      R0,SP,#+64
+   \   0000006A   0xBF00             Nop      
+   \   0000006C   0x....             ADR.N    R1,?_1
+   \   0000006E   0x2240             MOVS     R2,#+64
+   \   00000070   0x.... 0x....      BL       __aeabi_memcpy4
+    147                appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id,attributeValue);
+   \   00000074   0x7821             LDRB     R1,[R4, #+0]
+   \   00000076   0x7860             LDRB     R0,[R4, #+1]
+   \   00000078   0x0600             LSLS     R0,R0,#+24
+   \   0000007A   0x0C00             LSRS     R0,R0,#+16
+   \   0000007C   0x4301             ORRS     R1,R1,R0
+   \   0000007E   0x9A00             LDR      R2,[SP, #+0]
+   \   00000080   0xA810             ADD      R0,SP,#+64
+   \                     ??ZCL_ReadAttributeResp_3: (+1)
+   \   00000082   0x.... 0x....      BL       appSnprintf
+   \   00000086   0xE009             B        ??ZCL_ReadAttributeResp_4
+    148              }
+    149          
+    150            }
+    151            else
+    152            {
+    153              LOG_STRING(readAttrFailStr, " +Read Time attribute failed: status = 0x%2x\r\n");
+   \                     ??ZCL_ReadAttributeResp_0: (+1)
+   \   00000088   0xA804             ADD      R0,SP,#+16
+   \   0000008A   0xBF00             Nop      
+   \   0000008C   0x....             ADR.N    R1,?_2
+   \   0000008E   0x2230             MOVS     R2,#+48
+   \   00000090   0x.... 0x....      BL       __aeabi_memcpy4
+    154              appSnprintf(readAttrFailStr, (unsigned)ntfy->status);
+   \   00000094   0x7821             LDRB     R1,[R4, #+0]
+   \   00000096   0xA804             ADD      R0,SP,#+16
+   \   00000098   0x.... 0x....      BL       appSnprintf
+    155            }
+    156          }
+   \                     ??ZCL_ReadAttributeResp_4: (+1)
+   \   0000009C   0xB030             ADD      SP,SP,#+192
+   \   0000009E   0xBD10             POP      {R4,PC}          ;; return
+    157          
+    158          /**************************************************************************//**
+    159          \brief Indication of write attribute response
+    160          
+    161          \param[in] resp - pointer to response
+    162          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    163          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy)
+    164          {
+   \                     ZCL_WriteAttributeResp: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB098             SUB      SP,SP,#+96
+   \   00000004   0x0004             MOVS     R4,R0
+    165            if (ZCL_SUCCESS_STATUS == ntfy->status)
+   \   00000006   0x7820             LDRB     R0,[R4, #+0]
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD10D             BNE      ??ZCL_WriteAttributeResp_0
+    166            {
+    167              if (writeAttributeCallback)
+   \   0000000C   0x....             LDR      R0,??DataTable8_2
+   \   0000000E   0x6800             LDR      R0,[R0, #+0]
+   \   00000010   0x0001             MOVS     R1,R0
+   \   00000012   0xD000             BEQ      ??ZCL_WriteAttributeResp_1
+    168                writeAttributeCallback();
+   \   00000014   0x4780             BLX      R0
+    169          
+    170              LOG_STRING(writeAttrSuccessStr, " <-Write Time attribute response: success\r\n");
+   \                     ??ZCL_WriteAttributeResp_1: (+1)
+   \   00000016   0xA80C             ADD      R0,SP,#+48
+   \   00000018   0x....             ADR.N    R1,?_3
+   \   0000001A   0x222C             MOVS     R2,#+44
+   \   0000001C   0x.... 0x....      BL       __aeabi_memcpy4
+    171              appSnprintf(writeAttrSuccessStr);
+   \   00000020   0xA80C             ADD      R0,SP,#+48
+   \   00000022   0x.... 0x....      BL       appSnprintf
+   \   00000026   0xE009             B        ??ZCL_WriteAttributeResp_2
+    172            }
+    173            else
+    174            {
+    175              LOG_STRING(writeAttrFailStrTwo, " +Write Time attribute failed: status = 0x%x\r\n");
+   \                     ??ZCL_WriteAttributeResp_0: (+1)
+   \   00000028   0x4668             MOV      R0,SP
+   \   0000002A   0xBF00             Nop      
+   \   0000002C   0x....             ADR.N    R1,?_4
+   \   0000002E   0x2230             MOVS     R2,#+48
+   \   00000030   0x.... 0x....      BL       __aeabi_memcpy4
+    176              appSnprintf(writeAttrFailStrTwo, (unsigned)ntfy->status);
+   \   00000034   0x7821             LDRB     R1,[R4, #+0]
+   \   00000036   0x4668             MOV      R0,SP
+   \   00000038   0x.... 0x....      BL       appSnprintf
+    177            }
+    178          }
+   \                     ??ZCL_WriteAttributeResp_2: (+1)
+   \   0000003C   0xB018             ADD      SP,SP,#+96
+   \   0000003E   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \   00000000   0x........         DC32     readAttributeCallback
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \   00000000   0x........         DC32     ZCL_ReadAttributeResp
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \   00000000   0x........         DC32     writeAttributeCallback
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \   00000000   0x........         DC32     ZCL_WriteAttributeResp
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_0:
+   \   00000000   0x3C 0x2D          DC8 3CH, 2DH, 52H, 65H, 61H, 64H, 20H, 54H
+   \              0x52 0x65    
+   \              0x61 0x64    
+   \              0x20 0x54    
+   \   00000008   0x69 0x6D          DC8 69H, 6DH, 65H, 20H, 61H, 74H, 74H, 72H
+   \              0x65 0x20    
+   \              0x61 0x74    
+   \              0x74 0x72    
+   \   00000010   0x69 0x62          DC8 69H, 62H, 75H, 74H, 65H, 20H, 28H, 30H
+   \              0x75 0x74    
+   \              0x65 0x20    
+   \              0x28 0x30    
+   \   00000018   0x78 0x25          DC8 78H, 25H, 78H, 29H, 20H, 72H, 65H, 73H
+   \              0x78 0x29    
+   \              0x20 0x72    
+   \              0x65 0x73    
+   \   00000020   0x70 0x6F          DC8 70H, 6FH, 6EH, 73H, 65H, 3AH, 20H, 73H
+   \              0x6E 0x73    
+   \              0x65 0x3A    
+   \              0x20 0x73    
+   \   00000028   0x75 0x63          DC8 75H, 63H, 63H, 65H, 73H, 73H, 20H, 20H
+   \              0x63 0x65    
+   \              0x73 0x73    
+   \              0x20 0x20    
+   \   00000030   0x74 0x20          DC8 74H, 20H, 3DH, 20H, 30H, 78H, 25H, 78H
+   \              0x3D 0x20    
+   \              0x30 0x78    
+   \              0x25 0x78    
+   \   00000038   0x0D 0x0A          DC8 0DH, 0AH, 0
+   \              0x00         
+   \   0000003B   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \   00000000   0x3C 0x2D          DC8 3CH, 2DH, 52H, 65H, 61H, 64H, 20H, 54H
+   \              0x52 0x65    
+   \              0x61 0x64    
+   \              0x20 0x54    
+   \   00000008   0x69 0x6D          DC8 69H, 6DH, 65H, 20H, 61H, 74H, 74H, 72H
+   \              0x65 0x20    
+   \              0x61 0x74    
+   \              0x74 0x72    
+   \   00000010   0x69 0x62          DC8 69H, 62H, 75H, 74H, 65H, 20H, 28H, 30H
+   \              0x75 0x74    
+   \              0x65 0x20    
+   \              0x28 0x30    
+   \   00000018   0x78 0x25          DC8 78H, 25H, 78H, 29H, 20H, 72H, 65H, 73H
+   \              0x78 0x29    
+   \              0x20 0x72    
+   \              0x65 0x73    
+   \   00000020   0x70 0x6F          DC8 70H, 6FH, 6EH, 73H, 65H, 3AH, 20H, 73H
+   \              0x6E 0x73    
+   \              0x65 0x3A    
+   \              0x20 0x73    
+   \   00000028   0x75 0x63          DC8 75H, 63H, 63H, 65H, 73H, 73H, 20H, 20H
+   \              0x63 0x65    
+   \              0x73 0x73    
+   \              0x20 0x20    
+   \   00000030   0x74 0x20          DC8 74H, 20H, 3DH, 20H, 30H, 78H, 25H, 30H
+   \              0x3D 0x20    
+   \              0x30 0x78    
+   \              0x25 0x30    
+   \   00000038   0x38 0x6C          DC8 38H, 6CH, 78H, 0DH, 0AH, 0
+   \              0x78 0x0D    
+   \              0x0A 0x00    
+   \   0000003E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \   00000000   0x20 0x2B          DC8 " +Read Time attribute failed: status = 0x%2x\015\012"
+   \              0x52 0x65    
+   \              0x61 0x64    
+   \              0x20 0x54    
+   \              0x69 0x6D    
+   \              0x65 0x20    
+   \              0x61 0x74    
+   \              0x74 0x72    
+   \              0x69 0x62    
+   \              0x75 0x74    
+   \              0x65 0x20    
+   \              0x66 0x61    
+   \              0x69 0x6C    
+   \              0x65 0x64    
+   \              0x3A 0x20    
+   \              0x73 0x74    
+   \              0x61 0x74    
+   \              0x75 0x73    
+   \              0x20 0x3D    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000002F   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \   00000000   0x20 0x3C          DC8 " <-Write Time attribute response: success\015\012"
+   \              0x2D 0x57    
+   \              0x72 0x69    
+   \              0x74 0x65    
+   \              0x20 0x54    
+   \              0x69 0x6D    
+   \              0x65 0x20    
+   \              0x61 0x74    
+   \              0x74 0x72    
+   \              0x69 0x62    
+   \              0x75 0x74    
+   \              0x65 0x20    
+   \              0x72 0x65    
+   \              0x73 0x70    
+   \              0x6F 0x6E    
+   \              0x73 0x65    
+   \              0x3A 0x20    
+   \              0x73 0x75    
+   \              0x63 0x63    
+   \              0x65 0x73    
+   \              0x73 0x0D    
+   \              0x0A 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \   00000000   0x20 0x2B          DC8 " +Write Time attribute failed: status = 0x%x\015\012"
+   \              0x57 0x72    
+   \              0x69 0x74    
+   \              0x65 0x20    
+   \              0x54 0x69    
+   \              0x6D 0x65    
+   \              0x20 0x61    
+   \              0x74 0x74    
+   \              0x72 0x69    
+   \              0x62 0x75    
+   \              0x74 0x65    
+   \              0x20 0x66    
+   \              0x61 0x69    
+   \              0x6C 0x65    
+   \              0x64 0x3A    
+   \              0x20 0x73    
+   \              0x74 0x61    
+   \              0x74 0x75    
+   \              0x73 0x20    
+   \              0x3D 0x20    
+   \              0x30 0x78    
+   \              0x25 0x78    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000002F   0x00               DC8 0
+    179          
+    180          #endif // APP_DEVICE_TYPE_THERMOSTAT
+    181          
+    182          // eof thTimeCluster.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     200   ZCL_ReadAttributeResp
+       200   -- Indirect call
+       200   -> ZCL_GetNextElement
+       200   -> __aeabi_memcpy
+       200   -> __aeabi_memcpy4
+       200   -> appSnprintf
+     104   ZCL_WriteAttributeResp
+       104   -- Indirect call
+       104   -> __aeabi_memcpy4
+       104   -> appSnprintf
+      48   timeReadAttribute
+        48   -> ZCL_PutNextElement
+        48   -> commandManagerSendAttribute
+        48   -> fillCommandRequest
+        48   -> fillDstAddressing
+        48   -> getFreeCommand
+      32   timeWriteAttribute
+        32   -> __aeabi_memcpy
+        32   -> commandManagerSendAttribute
+        32   -> fillCommandRequest
+        32   -> fillDstAddressing
+        32   -> getFreeCommand
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+      60  ?_0
+      64  ?_1
+      48  ?_2
+      44  ?_3
+      48  ?_4
+     160  ZCL_ReadAttributeResp
+      64  ZCL_WriteAttributeResp
+       4  readAttributeCallback
+      94  timeReadAttribute
+     100  timeWriteAttribute
+       4  writeAttributeCallback
+
+ 
+   8 bytes in section .bss
+ 698 bytes in section .text
+ 
+ 698 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

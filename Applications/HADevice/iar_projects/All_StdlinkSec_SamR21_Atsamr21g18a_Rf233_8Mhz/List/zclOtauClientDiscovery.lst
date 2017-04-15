@@ -1,0 +1,914 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:20
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientDiscovery.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientDiscovery.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclOtauClientDiscovery.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclOtauClientDiscovery.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientDiscovery.c
+      1          /************************************************************************//**
+      2            \file zclOtauClientDiscovery.c
+      3          
+      4            \brief
+      5              The file implements the OTAU server discovery part
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              16.10.14 Karthik.P_u - Created.
+     17            Last change:
+     18              $Id: zclOtauClient.c 27261 2014-10-15 11:19:50Z karthik.p_u $
+     19          ******************************************************************************/
+     20          
+     21          #if (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+     22          
+     23          /******************************************************************************
+     24                             Includes section
+     25          ******************************************************************************/
+     26          #include <zclOtauManager.h>
+     27          #include <zclOtauClient.h>
+     28          
+     29          #if defined(ATMEL_APPLICATION_SUPPORT)
+     30          #include <colorSceneRemoteBindings.h>
+     31          #include <N_Zdp_Bindings.h>
+     32          #include <N_Cmi.h>
+     33          #include <N_EndDeviceRobustness.h>
+     34          #endif
+     35          
+     36          /******************************************************************************
+     37                             External variables section
+     38          ******************************************************************************/
+     39          extern ZclOtauClientStateMachine_t stateMachine;
+     40          extern ZCL_OtauClusterClientAttributes_t otauClientAttributes;
+     41          extern ExtAddr_t serverExtAddr;
+     42          extern ExtAddr_t otauUnauthorizedServers[OTAU_MAX_UNAUTHORIZED_SERVERS];
+     43          extern QueueDescriptor_t zclOtauServerDiscoveryQueue;
+     44          extern ZclOtauImageNotifyParams_t imgNtfyServer;
+     45          extern uint8_t retryCount, otauMaxRetryCount;
+     46          
+     47          /******************************************************************************
+     48                             Static variables section
+     49          ******************************************************************************/
+     50          static ZclOtauDiscoveryResult_t otauActiveServer = {
+     51            .busy               = false,
+     52            .serverShortAddress = BROADCAST_ADDR_RX_ON_WHEN_IDLE,
+     53            .serverExtAddress   = ZERO_SERVER_EXT_ADDRESS,
+     54            .serverEndpoint     = 0xFF,
+     55            .service.next       = NULL
+     56          };
+     57          static uint8_t nwkAddrRetryCount;
+     58          static uint8_t matchDescUcRetryCount;
+     59          static uint8_t ieeeAddrRetryCount;
+     60          #if (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+     61          static uint8_t keyReqRetryCount;
+     62          #endif
+     63          
+     64          /******************************************************************************
+     65                             Global variables section
+     66          ******************************************************************************/
+     67          ZclOtauDiscoveryResult_t *actvServer = &otauActiveServer;
+     68          
+     69          /******************************************************************************
+     70                             Implementation section
+     71          ******************************************************************************/
+     72          
+     73          /***************************************************************************//**
+     74          \brief Enqueues an element to discovery queue
+     75          ******************************************************************************/
+     76          void otauEnqueueDiscoveryQueue(ShortAddr_t shortAddr, uint8_t endpoint)
+     77          {
+     78            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+     79            uint8_t tmpAmount = clientMem->discoveredServerAmount;
+     80            ZclOtauDiscoveryResult_t *tmpMem = clientMem->discoveredServerMem;
+     81          
+     82            while (tmpAmount--)
+     83            {
+     84              if (tmpMem->busy)
+     85              {
+     86                tmpMem++;
+     87                continue;
+     88              }
+     89          
+     90              tmpMem->busy = true;
+     91              tmpMem->serverShortAddress = shortAddr;
+     92              tmpMem->serverEndpoint = endpoint;
+     93              putQueueElem(&zclOtauServerDiscoveryQueue, tmpMem);
+     94              break;
+     95            }
+     96          }
+     97          
+     98          /***************************************************************************//**
+     99          \brief Brodcast Match Desc Response CMD completed status handling
+    100          ******************************************************************************/
+    101          static void otauBroadcastMatchDescRespCmdCompletedStatusHandling(void)
+    102          {
+    103            actvServer = (ZclOtauDiscoveryResult_t *)deleteHeadQueueElem(&zclOtauServerDiscoveryQueue);
+    104            if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    105            {
+    106              OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    107              otauIeeeAddrReq(&imgNtfyServer.addr);
+    108            }
+    109            else
+    110            {
+    111              if (NULL != actvServer)
+    112              {
+    113                OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    114                otauIeeeAddrReq(actvServer);
+    115              }
+    116              else
+    117              {
+    118                OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    119                otauStartDiscoveryTimer();
+    120              }
+    121            }
+    122          }
+    123          
+    124          /***************************************************************************//**
+    125          \brief Response on broadcast discovery of upgrade server
+    126          
+    127          \param zdpResp - pointer to response.
+    128          ******************************************************************************/
+    129          void otauBroadcastMatchDescResp(ZDO_ZdpResp_t *zdpResp)
+    130          {
+    131            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_MATCH_DESC_BROADCAST_STATE))
+    132            {
+    133              SYS_E_ASSERT_WARN(false, ZCL_OTAU_INVALID_STATE_BROADCAST_MATCH_DESC_RSP);
+    134              return;
+    135            }
+    136          
+    137            if ((ZDO_SUCCESS_STATUS == zdpResp->respPayload.status) && (zdpResp->respPayload.matchDescResp.matchLength))
+    138            {
+    139              otauEnqueueDiscoveryQueue(zdpResp->respPayload.matchDescResp.nwkAddrOfInterest, \
+    140                                        zdpResp->respPayload.matchDescResp.matchList[0]);
+    141            }
+    142            else if (ZDO_CMD_COMPLETED_STATUS == zdpResp->respPayload.status)
+    143            {
+    144              otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauBroadcastMatchDescRespCmdCompletedStatusHandling);
+    145            }
+    146            else
+    147            {
+    148              zclRaiseCustomMessage(OTAU_SERVER_HAS_NOT_BEEN_FOUND);
+    149              OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    150              otauStartDiscoveryTimer();
+    151            }
+    152          }
+    153          
+    154          /***************************************************************************//**
+    155          \brief Prepares the state machine to move to query state
+    156          ******************************************************************************/
+    157          void otauTransitionToQuery(void)
+    158          {
+    159            ExtAddr_t tcExtAddr = NULL;
+    160          
+    161          #if (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+    162            if (!APS_KEYS_FOUND(APS_FindKeys(&actvServer->serverExtAddress)))
+    163            {
+    164              CS_ReadParameter(CS_APS_TRUST_CENTER_ADDRESS_ID, &tcExtAddr);
+    165              OTAU_SET_STATE(stateMachine, OTAU_GET_LINK_KEY_STATE);
+    166              otauRequestKeyReq(&tcExtAddr);
+    167              return;
+    168            }
+    169          #endif // (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+    170            OTAU_SET_STATE(stateMachine, OTAU_QUERY_FOR_IMAGE_STATE);
+    171            otauStartQuery();
+    172            (void)tcExtAddr;
+    173            return;
+    174          }
+    175          
+    176          /***************************************************************************//**
+    177          \brief Unicast Match Desc Response Img Notify pending handling
+    178          ******************************************************************************/
+    179          static void otauUnicastMatchDescRespImgNtfyHandling(void)
+    180          {
+    181            otauCheckServerAddrAndTakeAction(false, false);
+    182          }
+    183          
+    184          /***************************************************************************//**
+    185          \brief Unicast Match Desc Retry handling
+    186          ******************************************************************************/
+    187          static void otauUnicastMatchDescRetryHandling(void)
+    188          {
+    189            if (matchDescUcRetryCount--)
+    190            {
+    191              otauMatchDescReq(otauUnicastMatchDescResp);
+    192            }
+    193            else
+    194            {
+    195              matchDescUcRetryCount = otauMaxRetryCount;
+    196              CS_ReadParameter(CS_ZCL_OTAU_DEFAULT_UPGRADE_SERVER_IEEE_ADDRESS_ID, &serverExtAddr);
+    197          
+    198              if (IS_EQ_EXT_ADDR(serverExtAddr, actvServer->serverExtAddress))
+    199              {
+    200                serverExtAddr = ZERO_SERVER_EXT_ADDRESS;
+    201                actvServer = &otauActiveServer;
+    202              }
+    203          
+    204              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    205              {
+    206                OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    207                otauIeeeAddrReq(&imgNtfyServer.addr);
+    208              }
+    209              else
+    210              {
+    211                OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    212                otauStartDiscoveryTimer();
+    213              }
+    214            }
+    215          }
+    216          
+    217          /***************************************************************************//**
+    218          \brief Response on unicast match descriptor discovery
+    219          
+    220          \param[in] zdpResp - pointer to response.
+    221          ******************************************************************************/
+    222          void otauUnicastMatchDescResp(ZDO_ZdpResp_t *zdpResp)
+    223          {
+    224            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_MATCH_DESC_UNICAST_STATE))
+    225            {
+    226              {
+    227                SYS_E_ASSERT_WARN(false, ZCL_OTAU_INVALID_STATE_UNICAST_MATCH_DESC_RSP);
+    228              }
+    229              return;
+    230            }
+    231          
+    232            if (ZDO_SUCCESS_STATUS == zdpResp->respPayload.status)
+    233            {
+    234              actvServer->serverEndpoint = zdpResp->respPayload.matchDescResp.matchList[0];
+    235              matchDescUcRetryCount = otauMaxRetryCount;
+    236            }
+    237            else if (ZDO_CMD_COMPLETED_STATUS == zdpResp->respPayload.status)
+    238            {
+    239              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    240              {
+    241                // if IN server is the active server, proceed. Otherwise,
+    242                // send IEEE Addr Req to IN server
+    243                otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauUnicastMatchDescRespImgNtfyHandling);
+    244              }
+    245              else
+    246              {
+    247                retryCount = otauMaxRetryCount;
+    248                otauTransitionToQuery();
+    249              }
+    250            }
+    251            else
+    252            {
+    253              otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauUnicastMatchDescRetryHandling);
+    254            }
+    255          }
+    256          
+    257          /***************************************************************************//**
+    258          \brief Send match descriptor response to know server endpoint
+    259          
+    260          \param[in] zdoZdpResp - pointer to response
+    261          ******************************************************************************/
+    262          void otauMatchDescReq(void (* zdoZdpResp)(ZDO_ZdpResp_t *zdpResp))
+    263          {
+    264            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    265            ZDO_ZdpReq_t *tmpZdpReq = &clientMem->reqMem.zdpOtauReq;
+    266          
+    267            if ((!OTAU_CHECK_STATE(stateMachine, OTAU_GET_MATCH_DESC_BROADCAST_STATE)) && \
+    268                (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_MATCH_DESC_UNICAST_STATE)))
+    269            {
+    270              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_MATCH_DESC_REQ);
+    271              return;
+    272            }
+    273          
+    274            tmpZdpReq->reqCluster = MATCH_DESCRIPTOR_CLID;
+    275            tmpZdpReq->dstAddrMode = APS_SHORT_ADDRESS;
+    276          
+    277            tmpZdpReq->dstAddress.shortAddress = actvServer->serverShortAddress;
+    278          
+    279            tmpZdpReq->req.reqPayload.matchDescReq.nwkAddrOfInterest = tmpZdpReq->dstAddress.shortAddress;
+    280            tmpZdpReq->req.reqPayload.matchDescReq.profileId = zclOtauMem.initParam.profileId;
+    281            tmpZdpReq->req.reqPayload.matchDescReq.numInClusters = 1;
+    282            tmpZdpReq->req.reqPayload.matchDescReq.inClusterList[0] = OTAU_CLUSTER_ID;
+    283            tmpZdpReq->req.reqPayload.matchDescReq.numOutClusters = 0;
+    284            tmpZdpReq->ZDO_ZdpResp = zdoZdpResp;
+    285          
+    286            isOtauBusy = true;
+    287          #if defined(ATMEL_APPLICATION_SUPPORT)
+    288            N_Zdp_ZdpRequest(tmpZdpReq);
+    289          #else
+    290            ZDO_ZdpReq(tmpZdpReq);
+    291          #endif
+    292          }
+    293          
+    294          /***************************************************************************//**
+    295          \brief Unicast Match Desc Retry handling
+    296          ******************************************************************************/
+    297          static void otauIeeeAddrReqFailureHandling(void)
+    298          {
+    299            ZclOtauDiscoveryResult_t *srv = actvServer;
+    300          
+    301            if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    302            {
+    303              srv = &imgNtfyServer.addr;
+    304            }
+    305          
+    306            if (ieeeAddrRetryCount--)
+    307            {
+    308              otauIeeeAddrReq(srv);
+    309            }
+    310            else
+    311            {
+    312              ieeeAddrRetryCount = otauMaxRetryCount;
+    313              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    314              {
+    315                // No response from IN server. Choose another candidate. Drop IN.
+    316                ieeeAddrRetryCount = otauMaxRetryCount;
+    317                otauWriteImgNtfyBusyStatus(false);
+    318                // push actvserver to disc Q, and start discovery
+    319                if (actvServer)
+    320                {
+    321                  otauEnqueueDiscoveryQueue(actvServer->serverShortAddress, actvServer->serverEndpoint);
+    322                }
+    323              }
+    324          
+    325              actvServer = (ZclOtauDiscoveryResult_t *)deleteHeadQueueElem(&zclOtauServerDiscoveryQueue);
+    326              if (NULL != actvServer)
+    327              {
+    328                ieeeAddrRetryCount = otauMaxRetryCount;
+    329                otauIeeeAddrReq(actvServer);
+    330              }
+    331              else
+    332              {
+    333                zclRaiseCustomMessage(OTAU_SERVER_HAS_NOT_BEEN_FOUND);
+    334                OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    335                otauStartDiscoveryTimer();
+    336              }
+    337            }
+    338          }
+    339          
+    340          /***************************************************************************//**
+    341          \brief Send ieeeAddrReq to Image Notify server
+    342          ******************************************************************************/
+    343          static void otauIeeeAddrReqToImgNtfyServer(void)
+    344          {
+    345            otauIeeeAddrReq(&imgNtfyServer.addr);
+    346          }
+    347          
+    348          /***************************************************************************//**
+    349          \brief Send ieeeAddrReq to active server
+    350          ******************************************************************************/
+    351          static void otauIeeeAddrReqToActiveServer(void)
+    352          {
+    353            otauIeeeAddrReq(actvServer);
+    354          }
+    355          
+    356          /***************************************************************************//**
+    357          \brief Server IEEE addresses response
+    358          
+    359          \param zdpResp - pointer to response.
+    360          ******************************************************************************/
+    361          void otauIeeeAddrResp(ZDO_ZdpResp_t *zdpResp)
+    362          {
+    363            uint8_t i;
+    364            bool serverIsUnauthorized = false;
+    365            ExtAddr_t tcExtAddr = NULL, ieeeAddr;
+    366          
+    367            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE))
+    368            {
+    369              SYS_E_ASSERT_WARN(false, ZCL_OTAU_INVALID_STATE_IEEE_ADDR_RSP);
+    370              return;
+    371            }
+    372          
+    373            if (ZDO_SUCCESS_STATUS != zdpResp->respPayload.status)
+    374            {
+    375              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    376              {
+    377                if (zdpResp->srcAddress.shortAddress != imgNtfyServer.addr.serverShortAddress)
+    378                {
+    379                  // received failure resp from another server.Restart the req with IN srv
+    380                  retryCount = otauMaxRetryCount;
+    381                }
+    382              }
+    383              otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqFailureHandling);
+    384              return;
+    385            }
+    386          
+    387            ieeeAddrRetryCount = otauMaxRetryCount;
+    388          
+    389            for (i = 0; i < OTAU_MAX_UNAUTHORIZED_SERVERS; i++)
+    390            {
+    391              COPY_EXT_ADDR(ieeeAddr, zdpResp->respPayload.ieeeAddrResp.ieeeAddrRemote);
+    392              if (IS_EQ_EXT_ADDR(otauUnauthorizedServers[i], ieeeAddr))
+    393              {
+    394                serverIsUnauthorized = true;
+    395              }
+    396            }
+    397          
+    398            if(serverIsUnauthorized)
+    399            {
+    400              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    401              {
+    402                if (zdpResp->respPayload.ieeeAddrResp.ieeeAddrRemote == imgNtfyServer.addr.serverShortAddress)
+    403                {
+    404                  otauWriteImgNtfyBusyStatus(false);
+    405                }
+    406                else
+    407                {
+    408                  // active server is an unauthorized server, continue with IN server
+    409                  otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqToImgNtfyServer);
+    410                  return;
+    411                }
+    412              }
+    413              else
+    414              {
+    415                actvServer = (ZclOtauDiscoveryResult_t *)deleteHeadQueueElem(&zclOtauServerDiscoveryQueue);
+    416              }
+    417          
+    418              if (NULL != actvServer)
+    419              {
+    420                otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqToActiveServer);
+    421              }
+    422              else
+    423              {
+    424                OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    425                otauStartDiscoveryTimer();
+    426              }
+    427            }
+    428            else
+    429            {
+    430              ieeeAddrRetryCount = otauMaxRetryCount;
+    431          
+    432              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    433              {
+    434                if (zdpResp->srcAddress.shortAddress == imgNtfyServer.addr.serverShortAddress)
+    435                {
+    436                  // Choosing IN server going forward. Queue the previously chosen
+    437                  // candidate back(ideally to the top of the queue)
+    438                  if (actvServer &&
+    439                      (actvServer->serverShortAddress != zdpResp->srcAddress.shortAddress))
+    440                  {
+    441                    otauEnqueueDiscoveryQueue(actvServer->serverShortAddress, actvServer->serverEndpoint);
+    442                    actvServer->serverShortAddress = imgNtfyServer.addr.serverShortAddress;
+    443                    actvServer->serverEndpoint = imgNtfyServer.addr.serverEndpoint;
+    444                  }
+    445                  otauWriteImgNtfyBusyStatus(false);
+    446                }
+    447                else
+    448                {
+    449                  // received successful response for another candidate. Now,
+    450                  // send req to IN server
+    451                  otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqToImgNtfyServer);
+    452                  return;
+    453                }
+    454              }
+    455          
+    456              COPY_EXT_ADDR(actvServer->serverExtAddress, zdpResp->respPayload.ieeeAddrResp.ieeeAddrRemote);
+    457              COPY_EXT_ADDR(serverExtAddr, actvServer->serverExtAddress);
+    458              otauTransitionToQuery();
+    459          
+    460              return;
+    461            }
+    462            (void)tcExtAddr;
+    463          }
+    464          
+    465          /***************************************************************************//**
+    466          \brief Server IEEE addresses request
+    467          ******************************************************************************/
+    468          void otauIeeeAddrReq(ZclOtauDiscoveryResult_t *srv)
+    469          {
+    470            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    471            ZDO_ZdpReq_t *tmpZdpReq = &clientMem->reqMem.zdpOtauReq;
+    472          
+    473            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE))
+    474            {
+    475              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_IEEE_ADDR_REQ);
+    476              return;
+    477            }
+    478          
+    479            tmpZdpReq->reqCluster = IEEE_ADDR_CLID;
+    480            tmpZdpReq->dstAddrMode = APS_SHORT_ADDRESS;
+    481          
+    482            tmpZdpReq->dstAddress.shortAddress = srv->serverShortAddress;
+    483          
+    484            tmpZdpReq->req.reqPayload.ieeeAddrReq.nwkAddrOfInterest = srv->serverShortAddress;
+    485            tmpZdpReq->req.reqPayload.ieeeAddrReq.reqType = 0;
+    486            tmpZdpReq->ZDO_ZdpResp = otauIeeeAddrResp;
+    487          
+    488          #if defined(ATMEL_APPLICATION_SUPPORT)
+    489            N_Zdp_ZdpRequest(&clientMem->reqMem.zdpOtauReq);
+    490          #else
+    491            ZDO_ZdpReq(&clientMem->reqMem.zdpOtauReq);
+    492          #endif
+    493          }
+    494          
+    495          /***************************************************************************//**
+    496          \brief Send match desc req uincast
+    497          ******************************************************************************/
+    498          static void otauSendMatchDescReqUnicast(void)
+    499          {
+    500            otauMatchDescReq(otauUnicastMatchDescResp);
+    501          }
+    502          
+    503          /***************************************************************************//**
+    504          \brief Server short address response.
+    505          
+    506          \param zdpResp - pointer to response structute.
+    507          ******************************************************************************/
+    508          void otauNwkAddrResp(ZDO_ZdpResp_t *zdpResp)
+    509          {
+    510            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_NWK_ADDR_STATE))
+    511            {
+    512              SYS_E_ASSERT_WARN(false, ZCL_OTAU_INVALID_STATE_NWK_ADDR_RSP);
+    513              return;
+    514            }
+    515          
+    516            if (ZDO_SUCCESS_STATUS == zdpResp->respPayload.status)
+    517            {
+    518              nwkAddrRetryCount = otauMaxRetryCount;
+    519              actvServer->serverShortAddress = zdpResp->respPayload.nwkAddrResp.nwkAddrRemote;
+    520          
+    521              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    522              {
+    523                if (zdpResp->srcAddress.shortAddress == imgNtfyServer.addr.serverShortAddress)
+    524                {
+    525                  // since EP, Nwk Addr, Ext Addr are known, goto query
+    526                  actvServer->serverEndpoint = imgNtfyServer.addr.serverEndpoint;
+    527                  otauWriteImgNtfyBusyStatus(false);
+    528                  nwkAddrRetryCount = otauMaxRetryCount;
+    529                  otauTransitionToQuery();
+    530                  return;
+    531                }
+    532                else
+    533                {
+    534                  // choose IN as the server going forward
+    535                  OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    536                  otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqToImgNtfyServer);
+    537                  return;
+    538                }
+    539              }
+    540              OTAU_SET_STATE(stateMachine, OTAU_GET_MATCH_DESC_UNICAST_STATE);
+    541              otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauSendMatchDescReqUnicast);
+    542              return;
+    543            }
+    544          
+    545            if (nwkAddrRetryCount--)
+    546            {
+    547              otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauNwkAddrReq);
+    548            }
+    549            else
+    550            {
+    551              nwkAddrRetryCount = otauMaxRetryCount;
+    552              CS_ReadParameter(CS_ZCL_OTAU_DEFAULT_UPGRADE_SERVER_IEEE_ADDRESS_ID, &serverExtAddr);
+    553          
+    554              if (IS_EQ_EXT_ADDR(serverExtAddr, actvServer->serverExtAddress))
+    555              {
+    556                serverExtAddr = ZERO_SERVER_EXT_ADDRESS;
+    557                actvServer = &otauActiveServer;
+    558              }
+    559          
+    560              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    561              {
+    562                OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    563                otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqToImgNtfyServer);
+    564              }
+    565              else
+    566              {
+    567                OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    568                otauStartDiscoveryTimer();
+    569              }
+    570            }
+    571          }
+    572          
+    573          /***************************************************************************//**
+    574          \brief Send server short address request
+    575          ******************************************************************************/
+    576          void otauNwkAddrReq(void)
+    577          {
+    578            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    579            ZDO_ZdpReq_t *tmpZdpReq = &clientMem->reqMem.zdpOtauReq;
+    580          
+    581            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_NWK_ADDR_STATE))
+    582            {
+    583              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_NWK_ADDR_REQ);
+    584              return;
+    585            }
+    586          
+    587            tmpZdpReq->reqCluster = NWK_ADDR_CLID;
+    588            tmpZdpReq->dstAddrMode = APS_EXT_ADDRESS;
+    589          
+    590            COPY_EXT_ADDR(tmpZdpReq->dstAddress.extAddress, actvServer->serverExtAddress);
+    591          
+    592            tmpZdpReq->req.reqPayload.nwkAddrReq.ieeeAddrOfInterest = actvServer->serverExtAddress;
+    593            tmpZdpReq->req.reqPayload.nwkAddrReq.reqType = 1;
+    594            tmpZdpReq->ZDO_ZdpResp = otauNwkAddrResp;
+    595          #if defined(ATMEL_APPLICATION_SUPPORT)
+    596            N_Zdp_ZdpRequest(tmpZdpReq);
+    597          #else
+    598            ZDO_ZdpReq(tmpZdpReq);
+    599          #endif
+    600          }
+    601          
+    602          #if (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+    603          /***************************************************************************//**
+    604          \brief APS get link key response
+    605          
+    606          \param conf - pointer to confirm.
+    607          ******************************************************************************/
+    608          void otauRequestKeyResp(APS_RequestKeyConf_t *conf)
+    609          {
+    610            ExtAddr_t tcExtAddr;
+    611            
+    612            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_LINK_KEY_STATE))
+    613            {
+    614              SYS_E_ASSERT_WARN(false, ZCL_OTAU_INVALID_STATE_REQUEST_KEY_RSP);
+    615              return;
+    616            }
+    617          
+    618            if (APS_RKR_SUCCESS_STATUS == conf->status)
+    619            {
+    620              keyReqRetryCount = otauMaxRetryCount;
+    621              COPY_EXT_ADDR(serverExtAddr, actvServer->serverExtAddress);
+    622              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    623              {
+    624                if (ZCL_SUCCESS_STATUS == otauCheckServerAddrAndTakeAction(false, false))
+    625                {
+    626                  return;
+    627                }
+    628              }
+    629          
+    630              zclRaiseCustomMessage(OTAU_SERVER_HAS_BEEN_FOUND);
+    631              OTAU_SET_STATE(stateMachine, OTAU_QUERY_FOR_IMAGE_STATE);
+    632              otauStartQuery();
+    633              return;
+    634            }
+    635          
+    636            if (keyReqRetryCount--)
+    637            {
+    638              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    639              {
+    640                if (actvServer->serverShortAddress != imgNtfyServer.addr.serverShortAddress)
+    641                {
+    642                  OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    643                  otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqToImgNtfyServer);
+    644                  return;
+    645                }
+    646              }
+    647              CS_ReadParameter(CS_APS_TRUST_CENTER_ADDRESS_ID, &tcExtAddr);
+    648              otauRequestKeyReq(&tcExtAddr);
+    649            }
+    650            else
+    651            {
+    652              if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    653              {
+    654                if (actvServer->serverShortAddress != imgNtfyServer.addr.serverShortAddress)
+    655                {
+    656                  OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    657                  otauStartGenericTimer(CONTEXT_BREAK_QUICK_TIMEOUT, otauIeeeAddrReqToImgNtfyServer);
+    658                  return;
+    659                }
+    660                else
+    661                {
+    662                  //drop IN
+    663                  otauWriteImgNtfyBusyStatus(false);
+    664                }
+    665              }
+    666          
+    667              keyReqRetryCount = otauMaxRetryCount;
+    668              CS_ReadParameter(CS_ZCL_OTAU_DEFAULT_UPGRADE_SERVER_IEEE_ADDRESS_ID, &serverExtAddr);
+    669          
+    670              if (IS_EQ_EXT_ADDR(serverExtAddr, actvServer->serverExtAddress))
+    671              {
+    672                serverExtAddr = ZERO_SERVER_EXT_ADDRESS;
+    673                actvServer = &otauActiveServer;
+    674              }
+    675          
+    676              OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE);
+    677              otauStartDiscoveryTimer();
+    678            }
+    679          }
+    680          
+    681          /***************************************************************************//**
+    682          \brief APS link key request
+    683          
+    684          \param tcAddr - pointer to trust center extended address.
+    685          ******************************************************************************/
+    686          void otauRequestKeyReq(ExtAddr_t *tcExtAddr)
+    687          {
+    688            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    689            APS_RequestKeyReq_t *tmpKeyReq = &clientMem->reqMem.apsKeyReq;
+    690          
+    691            if (!OTAU_CHECK_STATE(stateMachine, OTAU_GET_LINK_KEY_STATE))
+    692            {
+    693              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_REQUEST_KEY_REQ);
+    694              return;
+    695            }
+    696          
+    697            COPY_EXT_ADDR(tmpKeyReq->destAddress, *tcExtAddr);
+    698            tmpKeyReq->partnerAddress = actvServer->serverExtAddress;
+    699            tmpKeyReq->keyType = APS_APP_KEY_TYPE;
+    700          
+    701            tmpKeyReq->APS_RequestKeyConf = otauRequestKeyResp;
+    702            APS_RequestKeyReq(tmpKeyReq);
+    703          }
+    704          #endif // (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+    705          
+    706          /***************************************************************************//**
+    707          \brief Start timer to elapse discovery interval
+    708          ******************************************************************************/
+    709          void otauStartDiscoveryTimer(void)
+    710          {
+    711            uint32_t discoveryPeriod = 5000ul;
+    712            CS_ReadParameter(CS_ZCL_OTAU_DEFAULT_SERVER_DISCOVERY_PERIOD_ID, (void *)&discoveryPeriod);
+    713          
+    714            isOtauBusy = false;
+    715          
+    716            otauStartGenericTimer(discoveryPeriod, otauStartDiscovery);
+    717          }
+    718          
+    719          /***************************************************************************//**
+    720          \brief Start discovery of upgrade server
+    721          ******************************************************************************/
+    722          void otauStartDiscovery(void)
+    723          {
+    724            uint8_t i;
+    725            ExtAddr_t zeroAddr = ZERO_SERVER_EXT_ADDRESS;
+    726            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    727          
+    728            if (!OTAU_CHECK_STATE(stateMachine, OTAU_WAIT_TO_DISCOVER_STATE))
+    729            {
+    730              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_START_DISCOVERY);
+    731              return;
+    732            }
+    733          
+    734            clientMem->blockRequestDelayOn = OTAU_BLOCK_REQUEST_DELAY_OFF;
+    735          
+    736            for (i = 0; i < OTAU_MAX_UNAUTHORIZED_SERVERS; i++)
+    737            {
+    738              COPY_EXT_ADDR(otauUnauthorizedServers[i], zeroAddr);
+    739            }
+    740          
+    741            resetQueue(&zclOtauServerDiscoveryQueue);
+    742            zclClearOtauClientMemory();
+    743            CS_ReadParameter(CS_ZCL_OTAU_MAX_RETRY_COUNT_ID, &matchDescUcRetryCount);
+    744            CS_ReadParameter(CS_ZCL_OTAU_MAX_RETRY_COUNT_ID, &ieeeAddrRetryCount);
+    745            CS_ReadParameter(CS_ZCL_OTAU_MAX_RETRY_COUNT_ID, &nwkAddrRetryCount);
+    746          #if (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+    747            CS_ReadParameter(CS_ZCL_OTAU_MAX_RETRY_COUNT_ID, &keyReqRetryCount);
+    748          #endif
+    749            
+    750            if (!isExtAddrValid(serverExtAddr))
+    751            {
+    752              OTAU_SET_STATE(stateMachine, OTAU_GET_MATCH_DESC_BROADCAST_STATE);
+    753          
+    754              actvServer = &otauActiveServer;
+    755              otauMatchDescReq(otauBroadcastMatchDescResp);
+    756            }
+    757            else
+    758            {
+    759              OTAU_SET_STATE(stateMachine, OTAU_GET_NWK_ADDR_STATE);
+    760              actvServer->busy = true;
+    761              COPY_EXT_ADDR(actvServer->serverExtAddress, serverExtAddr);
+    762              otauNwkAddrReq();
+    763            }
+    764          }
+    765          #endif // (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+    766          
+    767          //eof zclOtauClientDiscovery.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

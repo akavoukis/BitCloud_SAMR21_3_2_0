@@ -1,0 +1,303 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:45
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsEvents.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsEvents.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\stdPdsEvents.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\stdPdsEvents.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsEvents.c
+      1          /**************************************************************************//**
+      2            \file pdsEvents.c
+      3          
+      4            \brief Persistent Data Server events handling mechanism.
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14             History:
+     15              2012-03-14 A. Razinkov  - Created.
+     16             Last change:
+     17              $Id: pdsEvents.c 19835 2012-01-24 16:51:08Z arazinkov $
+     18           ******************************************************************************/
+     19          
+     20          #if PDS_ENABLE_WEAR_LEVELING != 1
+     21          #ifdef _ENABLE_PERSISTENT_SERVER_
+     22          /******************************************************************************
+     23                                         Includes section
+     24           ******************************************************************************/
+     25          #include <pdsDataServer.h>
+     26          #include <stdPdsDbg.h>
+     27          #include <stdPdsMem.h>
+     28          #include <sysEvents.h>
+     29          #include <stdPdsMemAccess.h>
+     30          
+     31          #define EVENT_TO_MEM_ID_MAPPING(event, id)  {.eventId = event, .memoryId = id}
+     32          
+     33          typedef struct _EventToMemoryIdMapping_t
+     34          {
+     35            uint8_t eventId;
+     36            PDS_MemId_t memoryId;
+     37          } EventToMemoryIdMapping_t;
+     38          
+     39          /******************************************************************************
+     40                              Prototypes section
+     41          ******************************************************************************/
+     42          static void pdsObserver(SYS_EventId_t eventId, SYS_EventData_t data);
+     43          
+     44          /******************************************************************************
+     45                              Static variables section
+     46          ******************************************************************************/
+     47          /* BitCloud events receiver */
+     48          static SYS_EventReceiver_t pdsEventReceiver = { .func = pdsObserver};
+     49          
+     50          /* Memory map, shows relationships between BitCloud events and memory which
+     51             is updated on specific event. Such memory should be updated in non-volatile
+     52             storage on an event occurrence. */
+     53          static EventToMemoryIdMapping_t PROGMEM_DECLARE(pdsMemoryMap[]) =
+     54          {
+     55            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NETWORK_ENTERED,             BC_ALL_MEMORY_MEM_ID),
+     56            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NETWORK_STARTED,             BC_ALL_MEMORY_MEM_ID),
+     57            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NETWORK_LEFT,                BC_ALL_MEMORY_MEM_ID),
+     58            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NETWORK_LOST,                PDS_NO_MEMORY_SPECIFIED),
+     59            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NETWORK_UPDATE,              BC_EXT_GEN_MEMORY_MEM_ID),
+     60          
+     61            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_CHILD_JOINED,                CS_NEIB_TABLE_MEM_ID),
+     62            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_CHILD_REMOVED,               CS_NEIB_TABLE_MEM_ID),
+     63            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_CHILD_KEY_ABSENT,            CS_NEIB_TABLE_MEM_ID),
+     64          
+     65            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_KEY_PAIR_DELETED,            CS_APS_KEY_PAIR_DESCRIPTORS_MEM_ID),
+     66            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_APS_SECURITY_TABLES_UPDATED, CS_APS_KEY_PAIR_DESCRIPTORS_MEM_ID),
+     67            EVENT_TO_MEM_ID_MAPPING(BC_SECURITY_APS_COUNTERS_UPDATE,      CS_APS_KEY_PAIR_DESCRIPTORS_MEM_ID),
+     68            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NWK_SECURITY_TABLES_UPDATED, BC_NWK_SECURITY_TABLES_MEM_ID),
+     69            EVENT_TO_MEM_ID_MAPPING(BC_SECURITY_NWK_COUNTERS_UPDATE,      NWK_SECURITY_COUNTERS_MEM_ID),
+     70            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_BIND_TABLE_UPDATED,          CS_APS_BINDING_TABLE_MEM_ID),
+     71            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_GROUP_TABLE_UPDATED,         CS_GROUP_TABLE_MEM_ID),
+     72            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_GROUPS_REMOVED,              CS_GROUP_TABLE_MEM_ID),
+     73            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_PERMISSION_TABLE_UPDATED,    CS_PERMISSIONS_TABLE_MEM_ID),
+     74          
+     75            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_ADDRESS_CONFLICT, PDS_NO_MEMORY_SPECIFIED),
+     76            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_TC_OFFLINE,       PDS_NO_MEMORY_SPECIFIED),
+     77            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NEW_CONCENTRATOR, PDS_NO_MEMORY_SPECIFIED),
+     78            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_DEVICE_ANNCE,     PDS_NO_MEMORY_SPECIFIED),
+     79            EVENT_TO_MEM_ID_MAPPING(BC_EVENT_NWK_RREQ_ID_UPDATED,         NWK_RREQ_IDENTIFIER_MEM_ID)
+     80          };
+     81          
+     82          /******************************************************************************
+     83                             Implementation section
+     84          ******************************************************************************/
+     85          /***************************************************************************//**
+     86          \brief Provides PDS with information about memory that should be kept up-to-date
+     87                 in the non-volatile storage.
+     88          
+     89          \ingroup pds
+     90          
+     91          Data will be saved im non-volatile memory upon specific events.
+     92          
+     93          \param[in] memoryId - an identifier of PDS file or directory to be stored
+     94                                in non-volatile memory.
+     95          ******************************************************************************/
+     96          void PDS_StoreByEvents(PDS_MemId_t memoryId)
+     97          {
+     98            PDS_MemMask_t reqMemMask;
+     99            PDS_MemMask_t eventMemMask;
+    100            EventToMemoryIdMapping_t evMemoryIdMapping;
+    101          
+    102            PDS_MEM_MASK_CLEAR_ALL(eventMemMask);
+    103            pdsInitMemMask(memoryId, reqMemMask);
+    104          
+    105            /* Subscribe to required events to store memory specified */
+    106            for (uint8_t i = 0U; i < ARRAY_SIZE(pdsMemoryMap); i++)
+    107            {
+    108              memcpy_P(&evMemoryIdMapping, &pdsMemoryMap[i], sizeof(EventToMemoryIdMapping_t));
+    109          
+    110              /* Unsubscribe from all events at first */
+    111              SYS_UnsubscribeFromEvent(evMemoryIdMapping.eventId, &pdsEventReceiver);
+    112          
+    113              PDS_MEM_MASK_SET_BIT(eventMemMask, evMemoryIdMapping.memoryId);
+    114              pdsExpandWithDirContent(eventMemMask);
+    115          
+    116              for (uint8_t i = 0; i < PDS_MEM_MASK_LENGTH; i++)
+    117              {
+    118                if (eventMemMask[i] & reqMemMask[i])
+    119                {
+    120                  SYS_SubscribeToEvent(evMemoryIdMapping.eventId, &pdsEventReceiver);
+    121                  break;
+    122                }
+    123              }
+    124            }
+    125          }
+    126          
+    127          /******************************************************************************
+    128          \brief PDS observer routine. Force parameters storing by an event occurrence.
+    129          
+    130          \param[in] eventId - occured event identifier
+    131          \param[in] data - associated data
+    132          ******************************************************************************/
+    133          static void pdsObserver(SYS_EventId_t eventId, SYS_EventData_t data)
+    134          {
+    135            EventToMemoryIdMapping_t evMemoryIdMapping;
+    136          
+    137            /* Ignore all events in STOPPED state */
+    138            if (pdsMemory()->status & PDS_STOPPED_FLAG)
+    139              return;
+    140          
+    141            for (uint8_t i = 0U; i < ARRAY_SIZE(pdsMemoryMap); i++)
+    142            {
+    143              memcpy_P(&evMemoryIdMapping, &pdsMemoryMap[i], sizeof(EventToMemoryIdMapping_t));
+    144          
+    145              if (evMemoryIdMapping.eventId == eventId &&
+    146                  PDS_NO_MEMORY_SPECIFIED != evMemoryIdMapping.memoryId)
+    147                PDS_Store(evMemoryIdMapping.memoryId);
+    148            }
+    149          
+    150            (void)data;
+    151          }
+    152          
+    153          #endif /* _ENABLE_PERSISTENT_SERVER_ */
+    154          #endif /* PDS_ENABLE_WEAR_LEVELING != 1 */
+    155          /* eof pdsEvents.c */
+    156          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

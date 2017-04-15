@@ -1,0 +1,424 @@
+#-------------------------------------------------------------------------------
+# Check user's configuration.
+#-------------------------------------------------------------------------------
+ifeq ($(BOARD), BOARD_MESHBEAN)                   ######### MeshBean board #####
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_8MHz HAL_4MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  ifeq (, $(findstring $(HAL), ATMEGA1281 ATMEGA2561))
+    $(error ERROR Wrong configuration: Unknown type of HAL for $(BOARD) board: '$(HAL)')
+  endif
+
+else ifeq ($(BOARD), BOARD_STK600)                   ######### STK600 board #####
+  ifeq ($(HAL), ATMEGA128RFA1)
+    RFCHIP = ATMEGA128RFA1
+  endif
+
+  ifeq ($(HAL), ATMEGA256RFR2)
+    RFCHIP = ATMEGA256RFR2
+  endif
+
+  ifeq ($(HAL), ATMEGA2564RFR2)
+    RFCHIP = ATMEGA2564RFR2
+  endif
+
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF212 ATMEGA128RFA1 ATMEGA256RFR2 ATMEGA2564RFR2))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_16MHz HAL_32MHz HAL_12MHz HAL_8MHz HAL_4MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  ifeq (, $(findstring $(HAL), ATXMEGA128A1 ATXMEGA256A3 ATXMEGA256D3 ATMEGA128RFA1 ATMEGA256RFR2 ATMEGA2564RFR2))
+    $(error ERROR Wrong configuration: Unknown type of HAL for $(BOARD) board: '$(HAL)')
+  endif
+
+else ifeq ($(BOARD), BOARD_USB_DONGLE)                ######### Usb Dongle board #####
+  HAL = AT90USB1287
+  HAL_FREQUENCY = HAL_8MHz
+  RFCHIP = AT86RF230B
+
+else ifeq ($(BOARD), BOARD_SAM7X_EK)                   ##### ATML_SAM7X_EK board ####
+  HAL = AT91SAM7X256
+  HAL_CLOCK_SOURCE = CRYSTAL
+  HAL_FREQUENCY = HAL_18d432MHz
+
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+else ifeq ($(BOARD), BOARD_MESHBEAN_LAN)                 #### BOARD_MESHBEAN_LAN board ####
+  # Setting board parameters which can not be changed by user.
+  HAL = AT91SAM7X256
+  RFCHIP = AT86RF231
+
+else ifeq ($(BOARD), BOARD_MESHBEAN_TURBO)                 #### BOARD_MESHBEAN_TURBO board ####
+  # Setting board parameters which can not be changed by user.
+  HAL = AT91SAM7X256
+  RFCHIP = AT86RF231
+
+else ifeq ($(BOARD), BOARD_CUSTOM_1)                    ########### CUSTOM_1 board ####
+  HAL = AT91SAM7X256
+  HAL_CLOCK_SOURCE = CRYSTAL
+  RFCHIP = AT86RF230B
+  HAL_FREQUENCY = HAL_8MHz
+
+else ifeq ($(BOARD), BOARD_CUSTOM_2)            ########### CUSTOM_2 board ####
+  HAL = AT91SAM7X256
+  HAL_CLOCK_SOURCE = CRYSTAL
+  RFCHIP = AT86RF230B
+  HAL_FREQUENCY = HAL_8MHz
+
+else ifeq ($(BOARD), BOARD_SAM3S_EK)                   ##### ATML_SAMAS_EK board ####
+  HAL = AT91SAM3S4C
+
+  # Checking parameters which were set by user.
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_4MHz HAL_8MHz HAL_12MHz HAL_64MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF233 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+else ifeq ($(BOARD), BOARD_SAM3S_PIRRD)                   ##### SAMAS_PIRRD board ####
+  HAL = AT91SAM3S4C
+
+  # Checking parameters which were set by user.
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_4MHz HAL_8MHz HAL_12MHz HAL_64MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+else ifeq ($(BOARD), BOARD_SAM4S_PIRRD)                   ##### SAMAS_PIRRD board ####
+  HAL = AT91SAM4S16C
+
+  # Checking parameters which were set by user.
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_4MHz HAL_8MHz HAL_12MHz HAL_64MHz HAL_64MHz HAL_120MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+else ifeq ($(BOARD), BOARD_CUSTOM_3)                   ##### CUSTOM_3 board ####
+  HAL = AT91SAM3S4C
+  HAL_FREQUENCY = HAL_64MHz
+  RFCHIP = CUSTOMRF3
+
+else ifeq ($(BOARD), BOARD_RAVEN)            ########### BOARD_RAVEN board ####
+  HAL = ATMEGA1284
+  RFCHIP = AT86RF230B
+
+  # Checking parameters which were set by user.
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_8MHz HAL_4MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+else ifeq ($(BOARD), BOARD_MEGARF)            ########### MEGARF-based board ####
+  ifeq ($(HAL), ATMEGA256RFR2)
+    RFCHIP = ATMEGA256RFR2
+  else ifeq ($(HAL), ATMEGA2564RFR2)
+    RFCHIP = ATMEGA2564RFR2
+  endif
+  # Checking parameters which were set by user.
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_8MHz HAL_4MHz HAL_16MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+else ifeq ($(BOARD), BOARD_STK500)                   ######### STK500 board #####
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_8MHz HAL_4MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  ifeq (, $(findstring $(HAL), ATMEGA1281 ATMEGA2561))
+    $(error ERROR Wrong configuration: Unknown type of HAL for $(BOARD) board: '$(HAL)')
+  endif
+
+else ifeq ($(BOARD), BOARD_AVR32_EVK1105)
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230 AT86RF230B AT86RF231 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+  HAL = AT32UC3A0512
+
+else ifeq ($(BOARD), BOARD_XPLAIN)                   ######### Xplain board #####
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230B AT86RF231 AT86RF233 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_16MHz HAL_32MHz HAL_12MHz HAL_8MHz HAL_4MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  ifeq (, $(findstring $(HAL), ATXMEGA128A1 ATXMEGA128B1))
+    $(error ERROR Wrong configuration: Unknown type of HAL for $(BOARD) board: '$(HAL)')
+  endif
+
+else ifeq ($(BOARD), BOARD_REB_CBB)                   ######### REB CBB board #####
+  # Checking parameters which have been set by user.
+  ifeq (, $(findstring $(RFCHIP), AT86RF230B AT86RF231 AT86RF233 AT86RF212))
+    $(error ERROR Wrong configuration: Unknown type of RF chip for $(BOARD) board: '$(RFCHIP)')
+  endif
+
+  ifeq (, $(findstring $(HAL_FREQUENCY), HAL_16MHz HAL_32MHz HAL_12MHz HAL_8MHz HAL_4MHz))
+    $(error ERROR Wrong configuration: Unknown type of HAL frequency for $(BOARD) board: '$(HAL_FREQUENCY)')
+  endif
+
+  HAL = ATXMEGA256A3
+
+else ifeq ($(BOARD), BOARD_SIMULATOR)           ######### Simulator board #####
+  HAL = SIMULATOR
+  RFCHIP = AT86RF231
+  HAL_FREQUENCY = HAL_0MHz
+
+else ifeq ($(BOARD), BOARD_PC)           ######### Simulator board #####
+  RFCHIP = NONE
+  HAL_FREQUENCY = HAL_0MHz
+
+else ifeq ($(BOARD), BOARD_SAMD20_XPLAINED_PRO)                   ##### BOARD_SAMD20_XPLAINED_PRO board ####
+  HAL = ATSAMD20J18
+  HAL_CLOCK_SOURCE = RC_INTERNAL
+  HAL_FREQUENCY = HAL_8MHz
+
+else ifeq ($(BOARD), BOARD_SAMR21)                   ##### BOARD_SAMR21 board ####
+  HAL_CLOCK_SOURCE = RC_INTERNAL
+  HAL_FREQUENCY = HAL_8MHz
+ 
+else
+  $(error unknown BOARD)
+endif
+
+
+
+#-------------------------------------------------------------------------------
+# Automatic selection of Makerules and related parameters
+#-------------------------------------------------------------------------------
+ifndef LIB_TYPE
+  LIB_TYPE = Bc
+endif
+
+ifndef SECURITY_MODE
+  SECURITY_MODE = NO_SECURITY_MODE
+endif
+
+ifeq ($(COMPILER_TYPE), IAR)
+  LIB_NAME_COMPILER = _Iar
+else ifeq ($(COMPILER_TYPE), GCC)
+  LIB_NAME_COMPILER = _Gcc
+else
+  $(error unknown COMPILER_TYPE)
+endif
+
+ifneq ($(LIB_TYPE), HalSe)
+  ifeq ($(STACK_TYPE), ALL_DEVICES_TYPES)
+    LIB_NAME_DEV_TYPE = _All
+  else ifeq ($(STACK_TYPE), COORDINATOR)
+    LIB_NAME_DEV_TYPE = _Coordinator
+  else ifeq ($(STACK_TYPE), ROUTER)
+    LIB_NAME_DEV_TYPE = _Router
+  else ifeq ($(STACK_TYPE), ENDDEVICE)
+    LIB_NAME_DEV_TYPE = _EndDevice
+  else
+    $(error unknown STACK_TYPE)
+  endif
+
+  ifeq ($(SECURITY_MODE), NO_SECURITY_MODE)
+    LIB_NAME_SECURITY_MODE =
+  else ifeq ($(SECURITY_MODE), STANDARD_SECURITY_MODE)
+    LIB_NAME_SECURITY_MODE = _Sec
+  else ifeq ($(SECURITY_MODE), STDLINK_SECURITY_MODE)
+    LIB_NAME_SECURITY_MODE = _StdlinkSec
+  else ifeq ($(SECURITY_MODE), CERTICOM_SECURITY_MODE)
+    LIB_NAME_SECURITY_MODE = _SeSec
+  else ifeq ($(SECURITY_MODE), HIGH_SECURITY_MODE)
+    LIB_NAME_SECURITY_MODE = _HighSec
+  else ifeq ($(SECURITY_MODE), CUSTOM_4_SECURITY_MODE)
+    LIB_NAME_SECURITY_MODE = _Custom4Sec
+  else
+    $(error unknown SECURITY_MODE)
+  endif
+
+  ifeq ($(RFCHIP), AT86RF230)
+    LIB_NAME_RFCHIP = _Rf230
+  else ifeq ($(RFCHIP), AT86RF230B)
+    LIB_NAME_RFCHIP = _Rf230B
+  else ifeq ($(RFCHIP), AT86RF231)
+    LIB_NAME_RFCHIP = _Rf231
+  else ifeq ($(RFCHIP), AT86RF233)
+    LIB_NAME_RFCHIP = _Rf233
+  else ifeq ($(RFCHIP), AT86RF212)
+    LIB_NAME_RFCHIP = _Rf212
+  else ifeq ($(RFCHIP), ATMEGA128RFA1)
+    LIB_NAME_RFCHIP = _Atmega128rfa1
+  else ifeq ($(RFCHIP), ATMEGA256RFR2)
+    LIB_NAME_RFCHIP = _Atmega256rfr2
+  else ifeq ($(RFCHIP), ATMEGA2564RFR2)
+    LIB_NAME_RFCHIP = _Atmega2564rfr2
+  else ifeq ($(RFCHIP), CUSTOMRF3)
+    LIB_NAME_RFCHIP = _CustomRf3
+  else ifeq ($(RFCHIP), NONE)
+    LIB_NAME_RFCHIP =
+  else
+    $(error unknown LIB_TYPE)
+  endif
+endif
+
+
+ifeq ( , $(findstring $(HAL), AT91SAM7X256 WIN AT32UC3A0512 ATSAMD20J18))
+  ifeq ($(HAL_FREQUENCY), HAL_0MHz)
+    LIB_NAME_HAL_FREQ = _0Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_4MHz)
+    LIB_NAME_HAL_FREQ = _4Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_8MHz)
+    LIB_NAME_HAL_FREQ = _8Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_12MHz)
+    LIB_NAME_HAL_FREQ = _12Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_16MHz)
+    LIB_NAME_HAL_FREQ = _16Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_24MHz)
+    LIB_NAME_HAL_FREQ = _24Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_32MHz)
+    LIB_NAME_HAL_FREQ = _32Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_48MHz)
+    LIB_NAME_HAL_FREQ = _48Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_64MHz)
+    LIB_NAME_HAL_FREQ = _64Mhz
+  else ifeq ($(HAL_FREQUENCY), HAL_120MHz)
+    LIB_NAME_HAL_FREQ = _120Mhz
+  else
+    $(error unknown HAL_FREQUENCY)
+  endif
+endif
+
+ifeq ($(BOARD), BOARD_MESHBEAN)
+  HAL_LIB_NAME_PLATFORM = _ZigBit
+else ifeq ($(BOARD), BOARD_USB_DONGLE)
+  HAL_LIB_NAME_PLATFORM = _AtmlUsbDongle
+else ifeq ($(BOARD), BOARD_STK600)
+  HAL_LIB_NAME_PLATFORM = _AtmlStk600
+else ifeq ($(BOARD), BOARD_STK500)
+  HAL_LIB_NAME_PLATFORM = _AtmlStk500Rf2xx
+else ifeq ($(BOARD), BOARD_SAM7X_EK)
+  HAL_LIB_NAME_PLATFORM = _Sam7xEkRf2xx
+else ifeq ($(BOARD), BOARD_SAM3S_EK)
+  HAL_LIB_NAME_PLATFORM = _Sam3sEkRf2xx
+else ifeq ($(BOARD), BOARD_SAM3S_PIRRD)
+  HAL_LIB_NAME_PLATFORM = _Sam3sPirrd
+else ifeq ($(BOARD), BOARD_SAM4S_PIRRD)
+  HAL_LIB_NAME_PLATFORM = _Sam4sPirrd
+else ifeq ($(BOARD), BOARD_MESHBEAN_LAN)
+  HAL_LIB_NAME_PLATFORM = _ZigBitLan
+else ifeq ($(BOARD), BOARD_MESHBEAN_TURBO)
+  HAL_LIB_NAME_PLATFORM = _ZigBitTurbo
+else ifeq ($(BOARD), BOARD_CUSTOM_1)
+  HAL_LIB_NAME_PLATFORM = _Custom1
+else ifeq ($(BOARD), BOARD_CUSTOM_2)
+  HAL_LIB_NAME_PLATFORM = _Custom2
+else ifeq ($(BOARD), BOARD_CUSTOM_3)
+  HAL_LIB_NAME_PLATFORM = _Custom3
+else ifeq ($(BOARD), BOARD_RAVEN)
+  HAL_LIB_NAME_PLATFORM = _Raven
+else ifeq ($(BOARD), BOARD_MEGARF)
+  HAL_LIB_NAME_PLATFORM = _MegaRf
+else ifeq ($(BOARD), BOARD_PC)
+  HAL_LIB_NAME_PLATFORM = _PC
+else ifeq ($(BOARD), BOARD_AVR32_EVK1105)
+  HAL_LIB_NAME_PLATFORM = _Avr32Evk1105
+else ifeq ($(BOARD), BOARD_XPLAIN)
+  HAL_LIB_NAME_PLATFORM = _Xplain
+else ifeq ($(BOARD), BOARD_REB_CBB)
+  ifneq (, $(findstring $(RFCHIP), AT86RF230B))
+    HAL_LIB_NAME_PLATFORM = _RebCbb230
+  endif
+  ifneq (, $(findstring $(RFCHIP), AT86RF231 AT86RF233 AT86RF212))
+    HAL_LIB_NAME_PLATFORM = _RebCbb231_212
+  endif
+else ifeq ($(BOARD), BOARD_SIMULATOR)
+  HAL_LIB_NAME_PLATFORM = _Sim
+else ifeq ($(BOARD), BOARD_SAMD20_XPLAINED_PRO)
+  HAL_LIB_NAME_PLATFORM = _SamD20XplainedPro
+else ifeq ($(BOARD), BOARD_SAMR21)
+  HAL_LIB_NAME_PLATFORM = _SamR21
+else
+  $(error unknown HAL_LIB_NAME_PLATFORM for board $(BOARD))
+endif
+
+ifeq ($(HAL), ATMEGA1281)
+  LIB_NAME_MICRO = _Atmega1281
+else ifeq ($(HAL), ATMEGA2561)
+  LIB_NAME_MICRO = _Atmega2561
+else ifeq ($(HAL), AT90USB1287)
+  LIB_NAME_MICRO = _At90usb1287
+else ifeq ($(HAL), ATMEGA1284)
+  LIB_NAME_MICRO = _Atmega1284
+else ifeq ($(HAL), ATXMEGA128A1)
+  LIB_NAME_MICRO = _Atxmega128a1
+else ifeq ($(HAL), ATXMEGA128B1)
+  LIB_NAME_MICRO = _Atxmega128b1
+else ifeq ($(HAL), ATXMEGA256A3)
+  LIB_NAME_MICRO = _Atxmega256a3
+else ifeq ($(HAL), ATXMEGA256D3)
+  LIB_NAME_MICRO = _Atxmega256d3
+else ifeq ($(HAL), ATMEGA128RFA1)
+  LIB_NAME_MICRO = _Atmega128rfa1
+else ifeq ($(HAL), ATMEGA256RFR2)
+  LIB_NAME_MICRO = _Atmega256rfr2
+else ifeq ($(HAL), ATMEGA2564RFR2)
+  LIB_NAME_MICRO = _Atmega2564rfr2
+else ifeq ($(HAL), AT91SAM7X256)
+  LIB_NAME_MICRO = _At91sam7x256
+else ifeq ($(HAL), AT91SAM3S4C)
+  LIB_NAME_MICRO = _Atsam3s4c
+else ifeq ($(HAL), AT91SAM4S16C)
+  LIB_NAME_MICRO = _Atsam4s16c
+else ifeq ($(HAL), ATSAMD20J18)
+  LIB_NAME_MICRO = _Atsamd20j18
+else ifeq ($(HAL), ATSAMR21G18A)
+  LIB_NAME_MICRO = _Atsamr21g18a
+else ifeq ($(HAL), ATSAMR21E18A)
+  LIB_NAME_MICRO = _Atsamr21e18a
+else ifeq ($(HAL), WIN)
+  LIB_NAME_MICRO = _Win
+else ifeq ($(HAL), AT32UC3A0512)
+  LIB_NAME_MICRO = _At32uc3a0512
+else ifeq ($(HAL), SIMULATOR)
+  LIB_NAME_MICRO = _Sim
+else
+  $(error unknown HAL)
+endif
+
+ifeq ($(HAL_USE_AMPLIFIER), TRUE)
+  LIB_NAME_AMP = _Amp
+endif
+
+ifeq ($(USE_KF_MAC), TRUE)
+  LIB_NAME_KF = _Kf
+endif
+
+LIB_MAKERULES = Makerules$(LIB_TYPE)$(LIB_NAME_KF)$(LIB_NAME_DEV_TYPE)$(LIB_NAME_SECURITY_MODE)$(LIB_NAME_MICRO)$(LIB_NAME_RFCHIP)$(LIB_NAME_COMPILER)
+STACK_LIB = $(LIB_TYPE)$(LIB_NAME_KF)$(LIB_NAME_DEV_TYPE)$(LIB_NAME_SECURITY_MODE)$(LIB_NAME_MICRO)$(LIB_NAME_RFCHIP)$(LIB_NAME_COMPILER)
+HAL_LIB = HAL$(HAL_LIB_NAME_PLATFORM)$(LIB_NAME_MICRO)$(LIB_NAME_HAL_FREQ)$(LIB_NAME_COMPILER)$(LIB_NAME_AMP)$(LIB_NAME_KF)

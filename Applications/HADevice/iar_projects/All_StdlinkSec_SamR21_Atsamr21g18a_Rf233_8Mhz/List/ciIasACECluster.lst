@@ -1,0 +1,995 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:06
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciIasACECluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciIasACECluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciIasACECluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciIasACECluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciIasACECluster.c
+      1          /**************************************************************************//**
+      2            \file ciIasACECluster.c
+      3          
+      4            \brief
+      5              Combined Interface IAS ACE cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              18/11/2014 Yogesh- Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciIasACECluster.h>
+     24          #include <ciIasZoneCluster.h>
+     25          #include <uartManager.h>
+     26          #include <commandManager.h>
+     27          #include <haClusters.h>
+     28          
+     29          /******************************************************************************
+     30                              Local variables section
+     31          ******************************************************************************/
+     32          //ByPass Table
+     33          bypassTable_t byPassList;
+     34          
+     35          //Arm Table with a maximum entry of 3
+     36          ZCL_ACEArm_t armTable[ZONE_TABLE_ENTRIES];
+     37          
+     38          //Panel Status Timer
+     39          static uint8_t panelStatusTimer = 0;
+     40          
+     41          /******************************************************************************
+     42                              Prototypes section
+     43          ******************************************************************************/
+     44          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy);
+     45          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy);
+     46          static ZCL_Status_t aceGetZoneInformationCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetZoneInformationCommand_t *payload);
+     47          static ZCL_Status_t aceGetZoneStatusCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ACEGetZoneStatusCommand_t *payload);
+     48          static ZCL_Status_t aceByPassCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload);
+     49          static ZCL_Status_t aceArmCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ACEArm_t *payload);
+     50          static void iasACEFillGetZoneInformationCommand(ZCL_GetZoneInformationResp_t *zonepayload, uint8_t zoneId );
+     51          static ZCL_Status_t aceEmergencyCommandInd(ZCL_Addressing_t *addressing);
+     52          static ZCL_Status_t aceFireCommandInd(ZCL_Addressing_t *addressing);
+     53          static ZCL_Status_t acePanicCommandInd(ZCL_Addressing_t *addressing);
+     54          static ZCL_Status_t aceGetZoneIdMapCommandInd(ZCL_Addressing_t *addressing);
+     55          static ZCL_Status_t aceGetPanelStatusCommandInd(ZCL_Addressing_t *addressing);
+     56          static void getPanelStatusChangeCmdTimerCallback();
+     57          static ZCL_Status_t  aceGetByPassesZoneListCommandInd(ZCL_Addressing_t *addressing);
+     58          static AttibuteReadCallback_t   readAttributeCallback;
+     59          static AttributeWriteCallback_t writeAttributeCallback;
+     60          static HAL_AppTimer_t getZoneStatusChangeCmdTimer;
+     61          static void getPanelStatusChangeCmdTimerFired(void);
+     62          
+     63          /*****************************************************************************/
+     64          /******************************************************************************
+     65                              Prototypes section
+     66          ******************************************************************************/
+     67          ZCL_IasACEClusterCommands_t ciIASACEClusterCommands =
+     68          {
+     69            ZCL_DEFINE_IAS_ACE_CLUSTER_COMMANDS(aceArmCommandInd,\
+     70                              NULL,\
+     71                              aceByPassCommandInd,\
+     72                              aceEmergencyCommandInd,\
+     73                              aceFireCommandInd,\
+     74                              acePanicCommandInd,\
+     75                              aceGetZoneIdMapCommandInd,\
+     76                              NULL,\
+     77                              aceGetZoneInformationCommandInd,\
+     78                              NULL,\
+     79                              aceGetPanelStatusCommandInd,\
+     80                              NULL,\
+     81                              aceGetZoneStatusCommandInd,\
+     82                              NULL,\
+     83                              NULL,\
+     84                              NULL,\
+     85                              aceGetByPassesZoneListCommandInd,\
+     86                              NULL,\
+     87                              NULL
+     88                              )\
+     89          };
+     90          
+     91          /******************************************************************************
+     92                              Implementation section
+     93          ******************************************************************************/
+     94          /**************************************************************************//**
+     95          \brief Initializes IAS ACE cluster
+     96          ******************************************************************************/
+     97          void iasACEClusterInit(void)
+     98          {
+     99            //Initializes the byPass Table entries
+    100            byPassList.totalZones = DEFAULT_VAL;
+    101            
+    102            for(uint8_t bypassArmEntry= DEFAULT_VAL; bypassArmEntry < ZONE_TABLE_ENTRIES; bypassArmEntry++)
+    103            {
+    104              //Initializes the byPass Table entries
+    105              byPassList.bypassTable[bypassArmEntry].zoneId = 0xFF;
+    106              byPassList.bypassTable[bypassArmEntry].armDisarmCode[0] = DEFAULT_VAL;
+    107          
+    108              //Initializes the Arm Table entries  
+    109              armTable[bypassArmEntry].zoneId= 0xFF;
+    110              armTable[bypassArmEntry].armMode= 0xFF;
+    111              armTable[bypassArmEntry].lengthArmMode = 0xFF;
+    112              armTable[bypassArmEntry].armDisarmCode[0] = DEFAULT_VAL;
+    113            }
+    114          }
+    115          
+    116          /**************************************************************************//**
+    117          \brief Sends Read Attribute command unicastly
+    118          
+    119          \param[in] mode - address mode;
+    120          \param[in] addr - short address of destination node;
+    121          \param[in] ep   - destination endpoint;
+    122          \param[in] attr - attribute id;
+    123          \param[in] cb   - callback function
+    124          ******************************************************************************/
+    125          void iasACEReadAttribute(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep,
+    126            uint16_t attr, AttibuteReadCallback_t cb)
+    127          {
+    128            ZCL_Request_t *req;
+    129            ZCL_NextElement_t element;
+    130            ZCL_ReadAttributeReq_t readAttrReqElement;
+    131          
+    132            if (!(req = getFreeCommand()))
+    133              return;
+    134          
+    135            readAttributeCallback = cb;
+    136          
+    137            readAttrReqElement.id = attr;
+    138          
+    139            element.payloadLength = DEFAULT_VAL;
+    140            element.payload = req->requestPayload;
+    141            element.id = ZCL_READ_ATTRIBUTES_COMMAND_ID;
+    142            element.content = &readAttrReqElement;
+    143            ZCL_PutNextElement(&element);
+    144          
+    145            fillCommandRequest(req, ZCL_READ_ATTRIBUTES_COMMAND_ID, element.payloadLength);
+    146            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IAS_ACE_CLUSTER_ID);
+    147            req->ZCL_Notify = ZCL_ReadAttributeResp;
+    148          
+    149            commandManagerSendAttribute(req);
+    150          }
+    151          
+    152          /**************************************************************************//**
+    153          \brief Sends Write Attribute command unicastly
+    154          
+    155          \param[in] mode - address mode;
+    156          \param[in] addr - short address of destination node;
+    157          \param[in] attr - attribute id;
+    158          \param[in] ep   - destination endpoint;
+    159          \param[in] type - attribute type;
+    160          \param[in] cb   - callback function;
+    161          \param[in] data - the pointer to memory with value to be written;
+    162          \param[in] size - size of data parameter in octets
+    163          ******************************************************************************/
+    164          void iasACEWriteAttribute(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    165            uint16_t attr, uint8_t type, AttributeWriteCallback_t cb, void *data, uint8_t size)
+    166          {
+    167            ZCL_Request_t *req;
+    168            ZCL_WriteAttributeReq_t writeAttrReq;
+    169          
+    170            if (!(req = getFreeCommand()))
+    171              return;
+    172          
+    173            writeAttributeCallback = cb;
+    174          
+    175            writeAttrReq.id = attr;
+    176            writeAttrReq.type = type;
+    177            memcpy(req->requestPayload, (uint8_t *)&writeAttrReq, sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    178            memcpy(req->requestPayload + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t), (uint8_t *)data, size);
+    179          
+    180            fillCommandRequest(req, ZCL_WRITE_ATTRIBUTES_COMMAND_ID, size + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    181            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IAS_ACE_CLUSTER_ID);
+    182            req->ZCL_Notify = ZCL_WriteAttributeResp;
+    183          
+    184            commandManagerSendAttribute(req);
+    185          }
+    186          
+    187          /**************************************************************************//**
+    188          \brief Indication of read attribute response
+    189          
+    190          \param[in] resp - pointer to response
+    191          ******************************************************************************/
+    192          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy)
+    193          {
+    194            ZCL_NextElement_t element;
+    195            ZCL_ReadAttributeResp_t *readAttributeResp;
+    196            int16_t attributeValue;
+    197          
+    198            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    199            {
+    200              element.id            = ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    201              element.payloadLength = ntfy->responseLength;
+    202              element.payload       = ntfy->responsePayload;
+    203              element.content       = NULL;
+    204          
+    205              ZCL_GetNextElement(&element);
+    206              readAttributeResp = (ZCL_ReadAttributeResp_t *) element.content;
+    207          
+    208              if (readAttributeCallback)
+    209                readAttributeCallback((void *)&readAttributeResp->value[0]);
+    210              
+    211              memcpy(&attributeValue, &readAttributeResp->value[0], sizeof(uint16_t));
+    212          #if APP_ENABLE_CONSOLE == 1
+    213              LOG_STRING(readAttrSuccessStr, "<-Read IasACE attribute (0x%x) response: success  t = 0x%x\r\n");
+    214              appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id, attributeValue);
+    215          #endif
+    216            }
+    217            else
+    218            {
+    219          #if APP_ENABLE_CONSOLE == 1
+    220              LOG_STRING(readAttrFailStr, " +Read IasACE attribute failed: status = 0x%2x\r\n");
+    221              appSnprintf(readAttrFailStr, (unsigned)ntfy->status);
+    222          #endif
+    223            }
+    224          }
+    225          
+    226          /**************************************************************************//**
+    227          \brief Indication of write attribute response
+    228          
+    229          \param[in] resp - pointer to response
+    230          ******************************************************************************/
+    231          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy)
+    232          {
+    233            ZCL_NextElement_t element;
+    234          
+    235            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    236            {
+    237              element.id            = ZCL_WRITE_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    238              element.payloadLength = ntfy->responseLength;
+    239              element.payload       = ntfy->responsePayload;
+    240              element.content       = NULL;
+    241          
+    242              ZCL_GetNextElement(&element);
+    243          
+    244              if (writeAttributeCallback)
+    245                writeAttributeCallback();
+    246          #if APP_ENABLE_CONSOLE == 1
+    247              LOG_STRING(writeAttrSuccessStr, " <-Write IasACE attribute response: success\r\n");
+    248              appSnprintf(writeAttrSuccessStr);
+    249          #endif
+    250            }
+    251            else
+    252            {
+    253          #if APP_ENABLE_CONSOLE == 1
+    254              LOG_STRING(writeAttrFailStrTwo, " +Write IasACE attribute failed: status = 0x%x\r\n");
+    255              appSnprintf(writeAttrFailStrTwo, (unsigned)ntfy->status);
+    256          #endif
+    257            }
+    258          }
+    259          
+    260          /**************************************************************************//**
+    261          \brief Sends ACEGetPanelStatusChanged Command
+    262          
+    263          \param[in] mode - address mode;
+    264          \param[in] addr - short address of destination node;
+    265          \param[in] panel_status - Panel status value;
+    266          \param[in] seconds_remaining  - seconds remaining for the panel status;
+    267          \param[in] audible_noti - audible notificaiton;
+    268          \param[in] alarmstatus   - alarm status;
+    269          ******************************************************************************/
+    270          void acePanelStatusChangedCommand(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,ZCL_PanelStatus_t panelStatus,
+    271                                        uint8_t secondsRemaining, ZCL_AudibleNotification_t audibleNoti,ZCL_AlarmStatus_t alarmStatus)
+    272          {
+    273            ZCL_Request_t *req;
+    274            ZCL_ACEPanelStatusChangedCommand_t *resp;
+    275            
+    276            if (!(req = getFreeCommand()))
+    277              return;
+    278          
+    279            //Forming the command payload to be sent
+    280            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_PANEL_STATUS_CHANGED_COMMAND_ID, sizeof(ZCL_ACEPanelStatusChangedCommand_t));
+    281            resp = (ZCL_ACEPanelStatusChangedCommand_t *) req->requestPayload;
+    282            
+    283            //Filling the response structure with the input parameters
+    284            resp-> panel_status= panelStatus;
+    285            resp->seconds_remaining = secondsRemaining;
+    286            resp->audible_noti = audibleNoti;
+    287            resp->alarmstatus = alarmStatus;
+    288            
+    289            //To start the timer only when the state of the panel is of Exit and Entry Delay
+    290            if((panelStatus == EXIT_DELAY || panelStatus == ENTRY_DELAY) && (secondsRemaining > DEFAULT_VAL))
+    291            {
+    292                panelStatusTimer = secondsRemaining;
+    293                getZoneStatusChangeCmdTimer.interval = PANEL_STAUS_TIMER;
+    294                getZoneStatusChangeCmdTimer.mode     = TIMER_ONE_SHOT_MODE;
+    295                getZoneStatusChangeCmdTimer.callback = getPanelStatusChangeCmdTimerFired;
+    296                HAL_StartAppTimer(&getZoneStatusChangeCmdTimer);
+    297            }
+    298            fillDstAddressingServer(&req->dstAddressing, mode, addr, ep, IAS_ACE_CLUSTER_ID);
+    299            commandManagerSendCommand(req);
+    300            return;
+    301          }
+    302          
+    303          /**************************************************************************//**
+    304          \brief ACEGetPanelStatus Command Indication
+    305          
+    306          \param[in] addressing - pointer to addressing information;
+    307          
+    308          \return status of indication routine
+    309          ******************************************************************************/
+    310          static ZCL_Status_t aceGetPanelStatusCommandInd(ZCL_Addressing_t *addressing)
+    311          {
+    312            ZCL_Request_t *req;
+    313            ZCL_ACEGetPanelStatusCommandResp_t *resp;
+    314            
+    315            if (!(req = getFreeCommand()))
+    316              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    317          
+    318            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_GET_PANEL_STATUS_RESPONSE_COMMAND_ID, sizeof(ZCL_ACEGetPanelStatusCommandResp_t));
+    319            resp = (ZCL_ACEGetPanelStatusCommandResp_t *)req->requestPayload;
+    320            
+    321            resp->panel_status= PANEL_DEFAULT_STATE;
+    322            //To check whether the timer is already started or not
+    323            if(panelStatusTimer > DEFAULT_VAL)
+    324            {
+    325              resp->seconds_remain = getZoneStatusChangeCmdTimer.interval;
+    326            }
+    327            else
+    328            {
+    329              resp->seconds_remain = TIME_REMAINING_DEFAULT;
+    330            }
+    331            resp->audible_noti = DEFAULT_SOUND;
+    332            resp->alarmstatus = NO_ALARM;
+    333            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    334            commandManagerSendCommand(req);
+    335          #if APP_ENABLE_CONSOLE == 1    
+    336              LOG_STRING(aceCmdStr, " ->ACEGetPanelStatusCommandInd Received\r\n");
+    337              appSnprintf(aceCmdStr);
+    338          #endif    
+    339            return ZCL_SUCCESS_STATUS;
+    340          }
+    341          
+    342          /**************************************************************************//**
+    343          \brief ACEGetZoneStatus Command Indication
+    344          
+    345          \param[in] addressing - pointer to addressing information;
+    346          \param[in] payloadLength - data payload length;
+    347          \param[in] payload - data pointer
+    348          
+    349          \return status of indication routine
+    350          ******************************************************************************/
+    351          static ZCL_Status_t aceGetZoneStatusCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ACEGetZoneStatusCommand_t *payload)
+    352          {
+    353            ZCL_Request_t *req;
+    354            uint8_t payloadResponse[PAYLOAD_SIZE];
+    355            uint8_t payloadZoneResponseIndex = DEFAULT_VAL;
+    356            uint8_t resp_count = DEFAULT_VAL;
+    357            uint8_t zoneIdOffset = DEFAULT_VAL;  
+    358            
+    359            if (!(req = getFreeCommand()))
+    360              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    361          
+    362            payloadResponse[payloadZoneResponseIndex] = 1;
+    363            payloadZoneResponseIndex++;
+    364            payloadResponse[payloadZoneResponseIndex] = payload->max_number_zoneids;
+    365            payloadZoneResponseIndex++;
+    366            uint8_t maxZoneNumber = payload->max_number_zoneids;  
+    367            for(uint8_t zone_check = payload->starting_zone_id; zone_check < ZONE_TABLE_ENTRIES; zone_check++)
+    368            {
+    369              if(maxZoneNumber >0)
+    370              {
+    371                payloadResponse[payloadZoneResponseIndex] = zoneTables[zone_check].zoneId;
+    372                payloadZoneResponseIndex++;
+    373                uint16_t zoneStatus = zoneTables[zone_check].zoneStatus;
+    374                memcpy(&payloadResponse[payloadZoneResponseIndex],&zoneStatus, 2);
+    375                payloadZoneResponseIndex +=2;
+    376                maxZoneNumber--;
+    377                resp_count++;
+    378              }
+    379            }
+    380          
+    381            if(resp_count != payload->max_number_zoneids)
+    382            {
+    383              payloadResponse[zoneIdOffset] = DEFAULT_VAL;
+    384              zoneIdOffset++;
+    385              payloadResponse[zoneIdOffset] =resp_count;
+    386            }
+    387            
+    388            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_GET_ZONE_STATUS_RESPONSE_COMMAND_ID, payloadZoneResponseIndex);
+    389            memcpy(req->requestPayload , &payloadResponse[0],payloadZoneResponseIndex);
+    390            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    391            commandManagerSendCommand(req);
+    392          #if APP_ENABLE_CONSOLE == 1
+    393              LOG_STRING(aceCmdStr, " ->ACEGetZoneStatusCommandRespInd Received\r\n");
+    394              appSnprintf(aceCmdStr);
+    395          #endif
+    396            (void) payloadLength;  
+    397            return ZCL_SUCCESS_STATUS; 
+    398          }
+    399          
+    400          /**************************************************************************//**
+    401          \brief Sends ACEGetZoneStatusChanged Command
+    402          
+    403          \param[in] mode - address mode;
+    404          \param[in] addr - short address of destination node;
+    405          \param[in] zoneId - zoneId which changed the status;
+    406          \param[in] zoneStatus  - status of the zoneId which changed;
+    407          \param[in] audible_sound - audible sound;
+    408          \param[in] zone_label   - zone label;
+    409          ******************************************************************************/
+    410          void aceZoneStatusChangedCommand(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    411                                                  uint8_t zoneId, uint8_t zoneStatus, uint8_t audibleSound, uint16_t zoneLabel)
+    412          {
+    413            ZCL_Request_t *req;
+    414            ZCL_ACEZoneStatusChangedCommand_t *resp;
+    415            
+    416            if (!(req = getFreeCommand()))
+    417              return;
+    418            
+    419            //Memory Allocation 
+    420            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_ZONE_STATUS_CHANGED_COMMAND_ID, sizeof(ZCL_ACEZoneStatusChangedCommand_t));
+    421            resp = (ZCL_ACEZoneStatusChangedCommand_t *) req->requestPayload;
+    422            
+    423            //Response filling  
+    424            resp->zoneid = zoneId;
+    425            resp->zoneStatus = zoneStatus;
+    426            resp->audible_noti = audibleSound;
+    427            resp->zoneLength = ZCL_IAS_ACE_ZONE_LABEL_SIZE;
+    428            memcpy(&resp->zoneLabel[0], &zoneLabel, ZCL_IAS_ACE_ZONE_LABEL_SIZE);
+    429          
+    430            //Address Allocation
+    431            fillDstAddressingServer(&req->dstAddressing, mode, addr, ep, IAS_ACE_CLUSTER_ID);
+    432            commandManagerSendCommand(req);
+    433          
+    434            return;
+    435          }
+    436          
+    437          /**************************************************************************//**
+    438          \brief ACEArm Command Indication
+    439          
+    440          \param[in] addressing - pointer to addressing information;
+    441          \param[in] payloadLength - data payload length;
+    442          \param[in] payload - data pointer
+    443          
+    444          \return status of indication routine
+    445          ******************************************************************************/
+    446          static ZCL_Status_t aceArmCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ACEArm_t *payload)
+    447          {
+    448            ZCL_Request_t *req;
+    449            ZCL_ACEResponseArm_t arm_response;
+    450            uint8_t armAction = DEFAULT_VAL;
+    451            uint8_t armSeqCheck = DEFAULT_VAL;
+    452            
+    453            //Assigning default value
+    454            arm_response.armMode = DEFAULT_VAL;
+    455          
+    456            //Arm Payload extraction and action  
+    457            if(payload->zoneId < ZONE_TABLE_ENTRIES)
+    458            {
+    459              if(armTable[payload->zoneId].zoneId == payload->zoneId)
+    460              {
+    461                //Compare the disarm_code Code
+    462                for (uint8_t byteCheck = DEFAULT_VAL ; byteCheck < 8; byteCheck++)
+    463                {
+    464                  if(armTable[payload->zoneId].armDisarmCode[byteCheck] == payload->armDisarmCode[byteCheck])
+    465                    armSeqCheck++;
+    466                 }
+    467                if(armSeqCheck == ZCL_IAS_ACE_ARM_DISARM_CODE_SIZE)
+    468                  armAction = 1;
+    469                else
+    470                  arm_response.armMode = INVALID_ARMCODE;
+    471              }
+    472              else if(payload->zoneId == zoneTables[payload->zoneId].zoneId)
+    473              {
+    474                armTable[payload->zoneId].armMode = payload->armMode;
+    475                armTable[payload->zoneId].zoneId = payload->zoneId;
+    476                armTable[payload->zoneId].lengthArmMode = payload->lengthArmMode;
+    477                memcpy(&armTable[payload->zoneId].armDisarmCode,payload->armDisarmCode,ZCL_IAS_ACE_ARM_DISARM_CODE_SIZE);
+    478                armAction = 1;
+    479              }
+    480              if((armAction))
+    481              {
+    482                if(payload->armMode == ALL_ZONE_ARMED)
+    483                {
+    484                  armTable[payload->zoneId].armMode = ONLY_NIGHT_SLEEP_ZONES_ARMED;
+    485                  arm_response.armMode = armTable[payload->zoneId].armMode;
+    486                }
+    487                else if((payload->armMode == ALL_ZONE_DISARMED )  && (ALL_ZONE_DISARMED == armTable[payload->zoneId].armMode))
+    488                {
+    489                  arm_response.armMode = ALREADY_DISARMED;
+    490                }
+    491                else
+    492                {
+    493                  arm_response.armMode = armTable[payload->zoneId].armMode;
+    494                }
+    495              }
+    496            }
+    497            //Allocating Memory for the response
+    498            if (!(req = getFreeCommand()))
+    499              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    500            
+    501            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_ARM_RESPONSE_COMMAND_ID, sizeof(ZCL_ACEResponseArm_t));
+    502            memcpy(req->requestPayload, &arm_response, sizeof(ZCL_ACEResponseArm_t));
+    503            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    504            commandManagerSendCommand(req);
+    505            (void) payloadLength;
+    506            return ZCL_SUCCESS_STATUS; 
+    507          }
+    508          
+    509          /**************************************************************************//**
+    510          \brief Fills iasACEFillGetZoneInformation Command
+    511          
+    512          \param[in] zonepayload - pointer to payload for filling;
+    513          \param[in] zoneId - zoneId base to get relevant informationh;
+    514          
+    515          \return none
+    516          ******************************************************************************/
+    517          static void iasACEFillGetZoneInformationCommand(ZCL_GetZoneInformationResp_t *zonepayload, uint8_t zoneId)
+    518          {
+    519            if(zoneId < ZONE_TABLE_ENTRIES)
+    520            {
+    521              zonepayload->zoneId      = zoneTables[zoneId].zoneId;
+    522              zonepayload->zoneType    = zoneTables[zoneId].zoneType;
+    523              zonepayload->zoneAddress = zoneTables[zoneId].zoneAddress;
+    524            }
+    525            else
+    526            {
+    527              zonepayload->zoneId = 0xFF;
+    528              zonepayload->zoneType = 0xFFFF;
+    529              zonepayload->zoneAddress = DEFAULT_EXT_ADDR;
+    530            }
+    531            zonepayload->length    = ZCL_IAS_ACE_ZONE_LABEL_SIZE;
+    532            for ( uint8_t zoneLabelSize = 0; zoneLabelSize < ZCL_IAS_ACE_ZONE_LABEL_SIZE ; zoneLabelSize++)
+    533            {
+    534              zonepayload->zoneLabel[zoneLabelSize] = DEFAULT_VAL;
+    535              zonepayload->zoneLabel[zoneLabelSize] = DEFAULT_VAL;
+    536            }
+    537          }
+    538          
+    539          /**************************************************************************//**
+    540          \brief ACEGetZoneInformation Command Indication
+    541          
+    542          \param[in] addressing - pointer to addressing information;
+    543          \param[in] payloadLength - data payload length;
+    544          \param[in] payload - data pointer
+    545          
+    546          \return status of indication routine
+    547          ******************************************************************************/
+    548          static ZCL_Status_t aceGetZoneInformationCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetZoneInformationCommand_t *payload)
+    549          {
+    550            ZCL_Request_t *req;
+    551          
+    552            if (!(req = getFreeCommand()))
+    553              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    554            
+    555            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_GET_ZONE_INFORMATION_RESPONSE_COMMAND_ID, sizeof(ZCL_GetZoneInformationResp_t));
+    556            iasACEFillGetZoneInformationCommand((ZCL_GetZoneInformationResp_t *)req->requestPayload ,payload->zoneId);
+    557            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    558            commandManagerSendCommand(req);
+    559            (void) payloadLength;
+    560            return ZCL_SUCCESS_STATUS;
+    561          }
+    562          
+    563          /**************************************************************************//**
+    564          \brief ACEGetZoneIdMap Command Indication
+    565          
+    566          \param[in] addressing - pointer to addressing information;
+    567          
+    568          \return status of indication routine
+    569          ******************************************************************************/
+    570          static ZCL_Status_t aceGetZoneIdMapCommandInd(ZCL_Addressing_t *addressing)
+    571          {
+    572            ZCL_Request_t *req;
+    573            ZCL_GetZoneIdMapResponse_t *payload;
+    574            uint8_t responsePayload = DEFAULT_VAL;
+    575            uint8_t zoneidTrack = DEFAULT_VAL;
+    576            
+    577            if (!(req = getFreeCommand()))
+    578              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    579          
+    580            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_GET_ZONE_ID_MAP_RESPONSE_COMMAND_ID, sizeof(ZCL_GetZoneIdMapResponse_t));
+    581            payload = (ZCL_GetZoneIdMapResponse_t *) req->requestPayload;
+    582            
+    583            //Initializing the response payload
+    584            for(uint8_t zoneEntry = 0 ; zoneEntry < ZCL_IAS_ACE_MAP_ID_RESPONSE_SIZE ; zoneEntry++)
+    585            {
+    586              payload->getZoneIdMapResponse[zoneEntry] = DEFAULT_VAL;
+    587            }
+    588            
+    589            //Framing response packets and typically 256 zoneIds are allowed
+    590            for(uint8_t zoneIdEntry = DEFAULT_VAL; zoneIdEntry < ZONE_TABLE_ENTRIES; zoneIdEntry++)
+    591            {
+    592              if(zoneTables[zoneIdEntry].zoneId != 0xFF)
+    593              {
+    594                if(responsePayload < ZCL_IAS_ACE_MAP_ID_RESPONSE_SIZE)
+    595                {
+    596                  payload->getZoneIdMapResponse[responsePayload] |= 1 << zoneIdEntry;
+    597                  zoneidTrack++;
+    598                  if(zoneidTrack == ZCL_IAS_ACE_MAP_ID_RESPONSE_SIZE)
+    599                  {
+    600                    responsePayload++;
+    601                  }
+    602                }
+    603              }
+    604            }
+    605          
+    606            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    607            commandManagerSendCommand(req);
+    608            return ZCL_SUCCESS_STATUS;
+    609          }
+    610          
+    611          /**************************************************************************//**
+    612          \brief ACEByPass Command Indication
+    613          
+    614          \param[in] addressing - pointer to addressing information;
+    615          \param[in] payloadLength - data payload length;
+    616          \param[in] payload - data pointer
+    617          
+    618          \return status of indication routine
+    619          ******************************************************************************/         
+    620          static ZCL_Status_t aceByPassCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload)
+    621          {
+    622            ZCL_Request_t *req;
+    623            uint8_t payloadExtractLength = DEFAULT_VAL;
+    624            uint8_t payloadZoneResponseIndex = DEFAULT_VAL;
+    625            uint8_t zoneIdOffset = 1;
+    626            
+    627            //Extract Payload
+    628            uint8_t payload_extract[PAYLOAD_SIZE];
+    629            uint8_t payloadResponse[PAYLOAD_SIZE];
+    630            memcpy(&payload_extract[payloadExtractLength], payload,payloadLength);
+    631            uint8_t totalZones = payload_extract[payloadExtractLength];
+    632            payloadExtractLength++;
+    633            zoneIdOffset = payload_extract[payloadExtractLength];
+    634            payloadExtractLength++;
+    635            
+    636            //Total Number of Zones in the response
+    637            payloadResponse[payloadZoneResponseIndex] = totalZones;
+    638            payloadZoneResponseIndex++;
+    639            
+    640            for( uint8_t zonesearch = DEFAULT_VAL ;zonesearch < totalZones ;zonesearch++)
+    641            {
+    642              if(zoneIdOffset >= ZONE_TABLE_ENTRIES)
+    643              {
+    644                payloadResponse[payloadZoneResponseIndex]  = INVALID_ZONE_ID; /*Suitale would be Invalid*/
+    645              }    
+    646              else
+    647              {
+    648                if(zoneTables[zoneIdOffset].zoneId == zoneIdOffset)
+    649                {
+    650                  if(byPassList.bypassTable[zoneIdOffset].zoneId != zoneIdOffset)
+    651                  {
+    652                    byPassList.bypassTable[zoneIdOffset].zoneId = zoneIdOffset;
+    653                      
+    654                    //Compare the disarm_code Code
+    655                    if((byPassList.bypassTable[zoneIdOffset].armDisarmCode == DEFAULT_VAL) ||
+    656                         (memcmp(byPassList.bypassTable[zoneIdOffset].armDisarmCode,&payload_extract[totalZones+2],ZCL_IAS_ACE_ARM_DISARM_CODE_SIZE)))
+    657                    {
+    658                      memcpy(&byPassList.bypassTable[zoneIdOffset].armDisarmCode[0], &payload_extract[totalZones+2],ZCL_IAS_ACE_ARM_DISARM_CODE_SIZE);
+    659                      byPassList.totalZones++;
+    660                      payloadResponse[payloadZoneResponseIndex] = ZONE_BYPASSED; 
+    661                    }
+    662                    else
+    663                    {
+    664                      payloadResponse[payloadZoneResponseIndex] = INVALID_ARM_DISARM_CODE;
+    665                    }
+    666                  }
+    667                  else if(byPassList.bypassTable[zoneIdOffset].zoneId == zoneIdOffset)
+    668                  {
+    669                    uint8_t compareSeqCheck = DEFAULT_VAL;
+    670                    //Compare the disarm_code Code
+    671                    for (uint8_t byteCheck = DEFAULT_VAL ; byteCheck < 8; byteCheck++)
+    672                    {
+    673                      if(byPassList.bypassTable[zoneIdOffset].armDisarmCode[byteCheck] == payload_extract[totalZones+2+byteCheck])
+    674                        compareSeqCheck++;
+    675                    }
+    676                    if(compareSeqCheck == 0x08)
+    677                      payloadResponse[payloadZoneResponseIndex] = ZONE_BYPASSED;
+    678                    else
+    679                      payloadResponse[payloadZoneResponseIndex] = INVALID_ARM_DISARM_CODE;
+    680                  }
+    681                  else
+    682                  {
+    683                    payloadResponse[payloadZoneResponseIndex] = NOT_ALLOWED;
+    684                  } 
+    685                }
+    686                else
+    687                {
+    688                  payloadResponse[payloadZoneResponseIndex] = UNKNOWN_ZONE_ID;
+    689                }
+    690              }
+    691              zoneIdOffset = payload_extract[payloadExtractLength++];
+    692              payloadZoneResponseIndex++;
+    693            }
+    694            
+    695            //Allocating Memory for the response
+    696            if (!(req = getFreeCommand()))
+    697              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    698          
+    699             //Allocating Buffer Space for the Command
+    700             fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_BYPASS_RESPONSE_COMMAND_ID, payloadZoneResponseIndex);
+    701            
+    702             //Payload Copy into the request Payload.
+    703             memcpy(req->requestPayload, &payloadResponse[0],payloadZoneResponseIndex);
+    704             
+    705            //fillCommandRequest(req, BYPASS_RESP, sizeof(ZCL_AceByPassResponseCommand_t));
+    706            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    707            commandManagerSendCommand(req);
+    708            return ZCL_SUCCESS_STATUS;
+    709          }
+    710          
+    711          /**************************************************************************//**
+    712          \brief ACEGetByPassesZoneList Command Indication
+    713          
+    714          \param[in] addressing - pointer to addressing information;
+    715          
+    716          \return status of indication routine
+    717          ******************************************************************************/
+    718          static  ZCL_Status_t  aceGetByPassesZoneListCommandInd(ZCL_Addressing_t *addressing)
+    719          {
+    720            ZCL_Request_t *req;
+    721            uint8_t payloadSetResponseListIndex = DEFAULT_VAL;
+    722            uint8_t payloadResponse[PAYLOAD_SIZE];
+    723            
+    724            if (!(req = getFreeCommand()))
+    725              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    726            
+    727            payloadResponse[payloadSetResponseListIndex] = byPassList.totalZones;
+    728            payloadSetResponseListIndex++;
+    729          
+    730            for (uint8_t zonelist = DEFAULT_VAL; zonelist < byPassList.totalZones ; zonelist++)
+    731            {
+    732              payloadResponse[payloadSetResponseListIndex] = byPassList.bypassTable[zonelist].zoneId;
+    733              payloadSetResponseListIndex++;
+    734            }
+    735            
+    736             //Allocating Buffer Space for the Command
+    737             fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_SET_BYPASSED_ZONE_LIST_COMMAND_ID, payloadSetResponseListIndex--);
+    738            
+    739             //Payload Copy into the request Payload.
+    740             memcpy(req->requestPayload, &payloadResponse[0],payloadSetResponseListIndex--);
+    741          
+    742            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    743            commandManagerSendCommand(req);
+    744            return ZCL_SUCCESS_STATUS;
+    745          }
+    746          
+    747          /**************************************************************************//**
+    748          \brief ACEEmergency Command Indication
+    749          
+    750          \param[in] addressing - pointer to addressing information;
+    751          
+    752          \return status of indication routine
+    753          ******************************************************************************/
+    754          static ZCL_Status_t aceEmergencyCommandInd(ZCL_Addressing_t *addressing)
+    755          {
+    756            (void)addressing;
+    757          #if APP_ENABLE_CONSOLE == 1
+    758            appSnprintf(" ->ACE Emergency Command Received\r\n");
+    759          #endif
+    760            return ZCL_SUCCESS_STATUS;
+    761          }
+    762          
+    763          /**************************************************************************//**
+    764          \brief ACEFire Command Indication
+    765          
+    766          \param[in] addressing - pointer to addressing information;
+    767          
+    768          \return status of indication routine
+    769          ******************************************************************************/
+    770          static  ZCL_Status_t aceFireCommandInd(ZCL_Addressing_t *addressing)
+    771          {
+    772            (void)addressing;
+    773          #if APP_ENABLE_CONSOLE == 1
+    774            appSnprintf(" ->ACE Fire Command Received\r\n");
+    775          #endif
+    776            return ZCL_SUCCESS_STATUS;
+    777          }
+    778          
+    779          /**************************************************************************//**
+    780          \brief  ACEPanic Command Indication
+    781          
+    782          \param[in] addressing - pointer to addressing information;
+    783          
+    784          \return status of indication routine
+    785          ******************************************************************************/
+    786          static ZCL_Status_t acePanicCommandInd(ZCL_Addressing_t *addressing)
+    787          {
+    788            (void)addressing;
+    789          #if APP_ENABLE_CONSOLE == 1
+    790            appSnprintf(" ->ACE Panic Command Received\r\n");
+    791          #endif
+    792            return ZCL_SUCCESS_STATUS;
+    793          }
+    794          
+    795          /**************************************************************************//**
+    796           \brief getPanelStatusChangeCmdTimerCallback
+    797           \param none
+    798           \return none
+    799          ******************************************************************************/
+    800          void getPanelStatusChangeCmdTimerCallback()
+    801          {
+    802            ZCL_Request_t *req;
+    803            ZCL_ACEGetPanelStatusCommandResp_t *resp;
+    804            ShortAddr_t nwk_addr;
+    805            
+    806            if (!(req = getFreeCommand()))
+    807              return;
+    808            
+    809            fillCommandRequest(req, ZCL_IAS_ACE_CLUSTER_PANEL_STATUS_CHANGED_COMMAND_ID, sizeof(ZCL_ACEGetPanelStatusCommandResp_t));
+    810            resp = (ZCL_ACEGetPanelStatusCommandResp_t *) req->requestPayload;
+    811            nwk_addr = NWK_GetShortAddr();
+    812            
+    813            resp->panel_status= PANEL_DEFAULT_STATE;
+    814            resp->seconds_remain = panelStatusTimer;
+    815            resp->audible_noti = DEFAULT_SOUND;
+    816            resp->alarmstatus = NO_ALARM;
+    817            
+    818            fillDstAddressingServer(&req->dstAddressing, ADRESS_MODE, nwk_addr, ACE_ENDPT, IAS_ACE_CLUSTER_ID);
+    819            commandManagerSendCommand(req);
+    820            
+    821            //To Send periodic panel status change update of One second
+    822            if(panelStatusTimer > DEFAULT_VAL)
+    823            {
+    824              HAL_StartAppTimer(&getZoneStatusChangeCmdTimer);
+    825            }
+    826            else
+    827            {
+    828              //To reset the timer count
+    829              panelStatusTimer = 0;
+    830            }
+    831          #if APP_ENABLE_CONSOLE == 1
+    832              LOG_STRING(aceCmdStr, " ->ACEGetPanelStatusCommandInd Received\r\n");
+    833              appSnprintf(aceCmdStr);
+    834          #endif
+    835              
+    836          }
+    837          
+    838          /*********************************************************************************************************************//**
+    839           \brief getPanelStatusChangeCmdTimerFired
+    840          ***********************************************************************************************************************/
+    841          static void getPanelStatusChangeCmdTimerFired(void)
+    842          {
+    843            HAL_StopAppTimer(&getZoneStatusChangeCmdTimer);
+    844            panelStatusTimer--;
+    845            getPanelStatusChangeCmdTimerCallback();
+    846          }
+    847          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    848          // eof ciIasACECluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

@@ -1,0 +1,321 @@
+COMPONENTS_PATH = ../../../../../Components
+APP_NAME = HADevice
+CONFIG_NAME = All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc
+LIST_PATH = $(CONFIG_NAME)/List
+EXE_PATH = $(CONFIG_NAME)/Exe
+OBJ_PATH = $(CONFIG_NAME)/Obj
+
+include ../../../../../lib/Makerules_Atsamr21g18a_Gcc
+
+DEFINES = \
+  -DBOARD_SAMR21 \
+  -DAT86RF233 \
+  -DATSAMR21G18A \
+  -DBOOT_OTAU \
+  -DHAL_8MHz \
+  -DSTACK_TYPE_ALL \
+  -DSTDLINK_SECURITY_MODE 
+
+INCLUDES = \
+  -I../.. \
+  -I../../dimmableLight/include \
+  -I../../dimmerSwitch/include \
+  -I../../multiSensor/include \
+  -I../../thermostat/include \
+  -I../../ias_ace/include \
+  -I../../combinedInterface/include \
+  -I../../common/include \
+  -I../../common/clusters/include \
+  -I../../../../../Components/BSP/SAMR21/include \
+  -I../../../../../Components/SystemEnvironment/include \
+  -I../../../../../lib \
+  -I../../../../../Components/HAL/include \
+  -I../../../../../Components/BSP \
+  -I../../../../../Components/BSP/include \
+  -I../../../../../Components/NWK/include \
+  -I../../../../../Components/NWK/include/private \
+  -I../../../../../Components/ZDO/include \
+  -I../../../../../Components/ZDO/include/private \
+  -I../../../../../Components/APS/include \
+  -I../../../../../Components/APS/include/private \
+  -I../../../../../Components/SystemEnvironment/include \
+  -I../../../../../Components/ConfigServer/include \
+  -I../../../../../Components/ConfigServer/include/private \
+  -I../../../../../Components/PersistDataServer/include \
+  -I../../../../../Components/PersistDataServer/std/include \
+  -I../../../../../Components/PersistDataServer/wl/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_Types/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_Util/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_Timer/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_Task/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_ErrH/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_Log/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_Memory/include \
+  -I../../../../../Components/ZLLPlatform/Infrastructure/N_Init/include \
+  -I../../../../../Components/ZLLPlatform/ZLL/S_Nv/include \
+  -I../../../../../Components/ZLLPlatform/ZLL/S_XNv/include \
+  -I../../../../../Components/ZLLPlatform/ZLL/D_Nv/include \
+  -I../../../../../Components/ZLLPlatform/ZLL/D_XNv/include \
+  -I../../../../../Components/ZLLPlatform/ZLL/D_XNv/src \
+  -I../../../../../Components/ZLLPlatform/ZLL/S_XNv/src \
+  -I../../../../../Components/Security/TrustCentre/include \
+  -I../../../../../Components/Security/ServiceProvider/include \
+  -I../../../../../Components/HAL/drivers/include \
+  -I../../../../../Components/HAL/drivers/VCP/include \
+  -I../../../../../Components/HAL/cortexm0+/atsamr21/common/include \
+  -I../../../../../Components/ZCL/include/private \
+  -I../../../../../Components/ZCL/include \
+  -I../../../../../Components/HAL/drivers/include \
+  -I../../../../../Components/HAL/drivers/OFD/include \
+  -I../../../../../Components/HAL/drivers/include \
+  -I../../../../../Components/HAL/drivers/OFD/include \
+  -I../../../../../Components/HAL/drivers/ISD/include \
+  -I../../../../../Components/HAL/drivers/ISD/include \
+  -I../../../../../Components/MAC_PHY/include \
+  -I../../../../../Components/MAC_PHY/MAC_ENV/include \
+  -I../../../../../Components/MAC_PHY/MAC_HWI/include \
+  -I../../../../../Components/MAC_PHY/MAC_HWD_PHY/include \
+  -I../../../../../Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include \
+  -I../../../../../Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include 
+
+LIBS = \
+  ../../../../../lib/libBc_All_StdlinkSec_Atsamr21g18a_Rf233_Gcc.a \
+  ../../../../../lib/libHAL_SamR21_Atsamr21g18a_8Mhz_Gcc.a 
+
+SRCS = \
+  ../../dimmableLight/src/dlIdentifyCluster.c \
+  ../../dimmableLight/src/dlScenes.c \
+  ../../dimmableLight/src/dlScenesCluster.c \
+  ../../dimmableLight/src/dlPdt.c \
+  ../../dimmableLight/src/dlLevelControlCluster.c \
+  ../../dimmableLight/src/dlClusters.c \
+  ../../dimmableLight/src/dlBasicCluster.c \
+  ../../dimmableLight/src/dimmableLight.c \
+  ../../dimmableLight/src/dlGroupsCluster.c \
+  ../../dimmableLight/src/dlConsole.c \
+  ../../dimmableLight/src/dlOnOffCluster.c \
+  ../../thermostat/src/thGroupsCluster.c \
+  ../../thermostat/src/thFanControlCluster.c \
+  ../../thermostat/src/thTimeCluster.c \
+  ../../thermostat/src/thHumidityMeasurementCluster.c \
+  ../../thermostat/src/thThermostatCluster.c \
+  ../../thermostat/src/thOccupancySensingCluster.c \
+  ../../thermostat/src/thIdentifyCluster.c \
+  ../../thermostat/src/thPdt.c \
+  ../../thermostat/src/thDiagnosticsCluster.c \
+  ../../thermostat/src/thTemperatureMeasurementCluster.c \
+  ../../thermostat/src/thBasicCluster.c \
+  ../../thermostat/src/thClusters.c \
+  ../../thermostat/src/thConsole.c \
+  ../../thermostat/src/thermostat.c \
+  ../../thermostat/src/thScenesCluster.c \
+  ../../thermostat/src/thScenes.c \
+  ../../thermostat/src/thThermostatUiConfCluster.c \
+  ../../thermostat/src/thAlarmsCluster.c \
+  ../../dimmerSwitch/src/dsLevelControlCluster.c \
+  ../../dimmerSwitch/src/dsIdentifyCluster.c \
+  ../../dimmerSwitch/src/dsOnOffCluster.c \
+  ../../dimmerSwitch/src/dimmerSwitch.c \
+  ../../dimmerSwitch/src/dsConsole.c \
+  ../../dimmerSwitch/src/dsPowerConfigurationCluster.c \
+  ../../dimmerSwitch/src/dsBasicCluster.c \
+  ../../dimmerSwitch/src/dsClusters.c \
+  ../../dimmerSwitch/src/dsAlarmsCluster.c \
+  ../../multiSensor/src/msPdt.c \
+  ../../multiSensor/src/msTemperatureMeasurementCluster.c \
+  ../../multiSensor/src/msDiagnosticsCluster.c \
+  ../../multiSensor/src/msBasicCluster.c \
+  ../../multiSensor/src/msHumidityMeasurementCluster.c \
+  ../../multiSensor/src/msClusters.c \
+  ../../multiSensor/src/msConsole.c \
+  ../../multiSensor/src/msGroupsCluster.c \
+  ../../multiSensor/src/msIdentifyCluster.c \
+  ../../multiSensor/src/msIlluminanceMeasurementCluster.c \
+  ../../multiSensor/src/msOccupancySensingCluster.c \
+  ../../multiSensor/src/multiSensor.c \
+  ../../combinedInterface/src/ciThermostatCluster.c \
+  ../../combinedInterface/src/ciIlluminanceMeasurementCluster.c \
+  ../../combinedInterface/src/ciGroupsCluster.c \
+  ../../combinedInterface/src/ciBasicCluster.c \
+  ../../combinedInterface/src/ciOccupancySensingCluster.c \
+  ../../combinedInterface/src/ciIdentifyCluster.c \
+  ../../combinedInterface/src/ciClusters.c \
+  ../../combinedInterface/src/ciTemperatureMeasurementCluster.c \
+  ../../combinedInterface/src/ciLevelControlCluster.c \
+  ../../combinedInterface/src/ciThermostatUiConfCluster.c \
+  ../../combinedInterface/src/ciIasACECluster.c \
+  ../../combinedInterface/src/ciHumidityMeasurementCluster.c \
+  ../../combinedInterface/src/ciTimeCluster.c \
+  ../../combinedInterface/src/combinedInterface.c \
+  ../../combinedInterface/src/ciDiagnosticsCluster.c \
+  ../../combinedInterface/src/ciAlarmsCluster.c \
+  ../../combinedInterface/src/ciPowerConfigurationCluster.c \
+  ../../combinedInterface/src/ciFanControlCluster.c \
+  ../../combinedInterface/src/ciIasZoneCluster.c \
+  ../../combinedInterface/src/ciConsole.c \
+  ../../combinedInterface/src/ciOnOffCluster.c \
+  ../../combinedInterface/src/ciScenesCluster.c \
+  ../../common/src/commandManager.c \
+  ../../common/src/console.c \
+  ../../common/src/keyboardPoll.c \
+  ../../common/src/uartManager.c \
+  ../../common/src/otauService.c \
+  ../../common/src/ezModeManager.c \
+  ../../common/src/zclDevice.c \
+  ../../common/clusters/src/haClusters.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsMemAccess.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsTimer.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsMem.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsWriteData.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsCrcService.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsInit.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsEvents.c \
+  ../../../../../Components/PersistDataServer/std/src/stdPdsDataServer.c \
+  ../../../../../Components/PersistDataServer/src/fakePds.c \
+  ../../../../../Components/PersistDataServer/wl/src/wlPdsTypesConverter.c \
+  ../../../../../Components/PersistDataServer/wl/src/wlPdsTaskManager.c \
+  ../../../../../Components/PersistDataServer/wl/src/wlPdsSecurity.c \
+  ../../../../../Components/PersistDataServer/wl/src/wlPdsInit.c \
+  ../../../../../Components/PersistDataServer/wl/src/wlPdsDataServer.c \
+  ../../../../../Components/ZLLPlatform/ZLL/S_Nv/src/S_Nv.c \
+  ../../../../../Components/ZLLPlatform/ZLL/S_XNv/src/S_XNv.c \
+  ../../../../../Components/ZLLPlatform/ZLL/D_XNv/src/D_XNv-SamR21.c \
+  ../../../../../Components/ZLLPlatform/ZLL/S_Nv/src/S_Nv-External.c \
+  ../../../../../Components/ZLLPlatform/ZLL/D_Nv/src/D_Nv.c \
+  ../../../../../Components/ZLLPlatform/ZLL/S_Nv/src/S_Nv_Stub.c \
+  ../../../../../Components/SystemEnvironment/src/sysIdleHandler.c \
+  ../../../../../Components/SystemEnvironment/src/sysSleep.c \
+  ../../../../../Components/SystemEnvironment/src/sysStat.c \
+  ../../../../../Components/SystemEnvironment/src/sysEventsHandler.c \
+  ../../../../../Components/SystemEnvironment/src/sysQueue.c \
+  ../../../../../Components/SystemEnvironment/src/sysUtils.c \
+  ../../../../../Components/SystemEnvironment/src/sysAssert.c \
+  ../../../../../Components/SystemEnvironment/src/sysDuplicateTable.c \
+  ../../../../../Components/SystemEnvironment/src/sysInit.c \
+  ../../../../../Components/SystemEnvironment/src/sysTaskManager.c \
+  ../../../../../Components/SystemEnvironment/src/dbg.c \
+  ../../../../../Components/SystemEnvironment/src/sysMutex.c \
+  ../../../../../Components/SystemEnvironment/src/sysTimer.c \
+  ../../../../../Components/HAL/drivers/OFD/src/ofdCommand.c \
+  ../../../../../Components/HAL/drivers/OFD/src/ofdM25Driver.c \
+  ../../../../../Components/HAL/drivers/OFD/src/ofdAt45dbDriver.c \
+  ../../../../../Components/HAL/drivers/OFD/src/ofdSpiSerializer.c \
+  ../../../../../Components/HAL/drivers/OFD/src/ofdFakeDriver.c \
+  ../../../../../Components/HAL/drivers/OFD/src/ofdCrcService.c \
+  ../../../../../Components/HAL/drivers/OFD/src/ofdAt25Driver.c \
+  ../../../../../Components/ZCL/src/zclKeyEstablishmentCluster.c \
+  ../../../../../Components/ZCL/src/zclOtauClientPdt.c \
+  ../../../../../Components/ZCL/src/zclSecurityManager.c \
+  ../../../../../Components/ZCL/src/zclParser.c \
+  ../../../../../Components/ZCL/src/zclOtauClientDownload.c \
+  ../../../../../Components/ZCL/src/zclOtauManager.c \
+  ../../../../../Components/ZCL/src/zclOtauClientQuery.c \
+  ../../../../../Components/ZCL/src/zclOtauClientDiscovery.c \
+  ../../../../../Components/ZCL/src/zclCommandAnalyzer.c \
+  ../../../../../Components/ZCL/src/zclOtauClientUpgrade.c \
+  ../../../../../Components/ZCL/src/zclOtauClient.c \
+  ../../../../../Components/ZCL/src/zclTaskManager.c \
+  ../../../../../Components/ZCL/src/zclAttributes.c \
+  ../../../../../Components/ZCL/src/zcl.c \
+  ../../../../../Components/ZCL/src/zclMemoryManager.c \
+  ../../../../../Components/ZCL/src/zclOtauServer.c \
+  ../../../../../Components/BSP/SAMR21/src/bspUsart.c \
+  ../../../../../Components/BSP/SAMR21/src/MaxL.c \
+  ../../../../../Components/BSP/SAMR21/src/bspTempSensor.c \
+  ../../../../../Components/BSP/SAMR21/src/buttons.c \
+  ../../../../../Components/BSP/SAMR21/src/fakeBSP.c \
+  ../../../../../Components/BSP/SAMR21/src/lcd.c \
+  ../../../../../Components/BSP/SAMR21/src/xyl2rgb.c \
+  ../../../../../Components/BSP/SAMR21/src/joyStick.c \
+  ../../../../../Components/BSP/SAMR21/src/bspUid.c \
+  ../../../../../Components/BSP/SAMR21/src/bspI2c.c \
+  ../../../../../Components/BSP/SAMR21/src/bspVoltageSensor.c \
+  ../../../../../Components/BSP/SAMR21/src/bspTaskManager.c \
+  ../../../../../Components/BSP/SAMR21/src/hs2xy.c \
+  ../../../../../Components/BSP/SAMR21/src/leds.c \
+  ../../../../../Components/BSP/SAMR21/src/bspSpi.c \
+  ../../../../../Components/ConfigServer/src/csPersistentMem.c \
+  ../../../../../Components/ConfigServer/src/csMem.c \
+  ../../../../../Components/ConfigServer/src/configServer.c \
+  ../../../../../Components/HAL/drivers/ISD/src/isdImageStorage.c \
+  ../../../../../Components/HAL/drivers/ISD/src/isdConsoleTunneling.c \
+  ../../ias_ace/src/iasACEIdentifyCluster.c \
+  ../../ias_ace/src/iasACE.c \
+  ../../ias_ace/src/iasACEPdt.c \
+  ../../ias_ace/src/iasACECluster.c \
+  ../../ias_ace/src/iasACEConsole.c \
+  ../../ias_ace/src/iasACEZoneCluster.c \
+  ../../ias_ace/src/iasACEDiagnosticsCluster.c \
+  ../../ias_ace/src/iasACEBasicCluster.c 
+
+PREINCLUDE = MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Gcc.h
+
+CSRCS = $(filter %.c, $(SRCS))
+OBJS = $(addprefix $(OBJ_PATH)/, $(notdir %/$(subst .c,.o,$(CSRCS))))
+
+ASM_FILE_EXT = s
+
+ifneq (, $(findstring .$(ASM_FILE_EXT), $(SRCS)))
+  ASRCS = $(filter %.$(ASM_FILE_EXT), $(SRCS))
+  OBJS += $(addprefix $(OBJ_PATH)/, $(notdir %$(subst .$(ASM_FILE_EXT),.o,$(ASRCS))))
+endif
+
+CFLAGS += $(DEFINES)
+CFLAGS += $(INCLUDES)
+CFLAGS += --include $(PREINCLUDE)
+CFLAGS += -g
+
+ASFLAGS = $(INCLUDES)
+ASFLAGS += $(filter -mcpu%,$(CFLAGS))
+
+LD = $(CC)
+LINKER_FLAGS = -Wl,-Map=$(LIST_PATH)/$(APP_NAME).map -Wl,--gc-sections
+LINKER_FLAGS += -Wl,-T../../linkerScr/atsamr21g18a_OTAU.ld
+LINKER_FLAGS += -mthumb -nostartfiles
+LINKER_FLAGS += $(filter -mcpu%,$(CFLAGS))
+
+.PHONY: all directories clean size root_files images
+
+images: $(EXE_PATH)/$(APP_NAME).elf $(EXE_PATH)/$(APP_NAME).hex $(EXE_PATH)/$(APP_NAME).srec $(EXE_PATH)/$(APP_NAME).bin
+
+all: directories images root_files size
+
+$(OBJ_PATH)/%.o: $(SRCS)
+	$(CC) $(CFLAGS) $(filter %/$(subst .o,.c,$(notdir $@)), $(SRCS)) -o $@
+
+$(OBJS): directories
+
+
+$(EXE_PATH)/$(APP_NAME).elf: $(OBJS)
+	$(LD) $(LINKER_FLAGS) $(OBJS) -Wl,-\( $(LIBS) -Wl,-\) -o $@
+
+$(EXE_PATH)/$(APP_NAME).srec: $(EXE_PATH)/$(APP_NAME).elf
+	$(OBJCOPY) -O srec --srec-len 128 $^ $@
+
+$(EXE_PATH)/$(APP_NAME).hex: $(EXE_PATH)/$(APP_NAME).elf
+	$(OBJCOPY) -O ihex -R .eeprom $^ $@
+
+$(EXE_PATH)/$(APP_NAME).bin: $(EXE_PATH)/$(APP_NAME).elf
+	$(OBJCOPY) -O binary --strip-debug --strip-unneeded -R .eeprom $^ $@
+
+root_files: images
+	cp -f $(EXE_PATH)/*.* ./../../
+
+clean:
+	rm -rf $(CONFIG_NAME) ../../$(APP_NAME).elf ../../$(APP_NAME).hex ../../$(APP_NAME).srec ../../$(APP_NAME).bin
+
+directories:
+	@"mkdir" -p $(LIST_PATH)
+	@"mkdir" -p $(EXE_PATH)
+	@"mkdir" -p $(OBJ_PATH)
+
+size: $(EXE_PATH)/$(APP_NAME).elf
+	@echo
+	@$(SIZE) -td $(EXE_PATH)/$(APP_NAME).elf
+
+ifeq ($(MAKECMDGOALS), fresh)
+directories: clean
+endif
+fresh: all
+
+# eof Makefile

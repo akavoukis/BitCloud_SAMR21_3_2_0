@@ -1,0 +1,557 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:34
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACEZoneCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACEZoneCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\iasACEZoneCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\iasACEZoneCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACEZoneCluster.c
+      1          /**************************************************************************//**
+      2            \file iasZoneCluster.c
+      3          
+      4            \brief
+      5              IAS-Zone Cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              18/11/14 Yogesh Bellan - Created.
+     17          ******************************************************************************/
+     18          #if defined APP_DEVICE_TYPE_IAS_ACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <iasACEZoneCluster.h>
+     24          #if APP_ENABLE_CONSOLE == 1
+     25          #include <uartManager.h>
+     26          #endif
+     27          #include <iasACEBasicCluster.h>
+     28          #include <iasACEIdentifyCluster.h>
+     29          #include <iasACECluster.h>
+     30          #include <zclIasZoneCluster.h>
+     31          #include <zclIasACECluster.h>
+     32          #include <zclBasicCluster.h>
+     33          #include <zclIdentifyCluster.h>
+     34          #include <haClusters.h>
+     35          #include <commandManager.h>
+     36          
+     37          /*******************************************************************************
+     38                                       Types section
+     39          *******************************************************************************/
+     40          typedef struct PACK
+     41          {
+     42            uint16_t zoneStatus;
+     43            uint8_t  extendedStatus;
+     44          } zoneStatusChangeNot_t;
+     45          
+     46          typedef struct PACK
+     47          {
+     48            uint16_t zoneType;
+     49            uint16_t manufacturerCode;
+     50          } zoneEnrollReq_t;
+     51          
+     52          
+     53          /******************************************************************************
+     54                              Prototypes section
+     55          ******************************************************************************/
+     56          static ZCL_Status_t zoneEnrollResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength,ZCL_ZoneEnrollResCommand_t * payload);
+     57          static void iasZoneFillZoneZoneEnrollRequest(ZCL_ZoneEnrollRequest_t *payload, uint16_t zoneType, uint16_t manufCode);
+     58          static void zoneStatusChangeNotificationCommandCallback();
+     59          static void iasACEAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event);
+     60          static ZCL_Status_t zoneInitiateNormalOperatingModeInd(ZCL_Addressing_t *addressing);
+     61          static ZCL_Status_t zoneInitiateTestModeInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ZoneInitiateTestMode_t * payload);
+     62          static void zoneChangeNotiCmdTimerFired(void);
+     63          static void zoneTestModeOperationTimerFired(void);
+     64          static uint8_t currentZoneSensitivityLevelValue = DEFAULT_VAL;
+     65          /******************************************************************************
+     66                              Global variables
+     67          ******************************************************************************/
+     68          static HAL_AppTimer_t zoneChangeNotiCmdTimer;
+     69          static HAL_AppTimer_t zoneTestModeOperationTimer;
+     70          
+     71          //IAS Zone Server Attributes
+     72          ZCL_IasZoneClusterAttributes_t iasACEZoneClusterServerAttributes =
+     73          {
+     74            ZCL_DEFINE_IAS_ZONE_CLUSTER_SERVER_ATTRIBUTES()
+     75          };
+     76          
+     77          //IAS Zone Server Commands
+     78          ZCL_IasZoneClusterCommands_t iasACEZoneClusterServerCommands =
+     79          {
+     80            ZCL_DEFINE_IAS_ZONE_CLUSTER_COMMANDS(NULL, NULL, zoneEnrollResponseInd, zoneInitiateNormalOperatingModeInd, zoneInitiateTestModeInd)
+     81          };
+     82          
+     83          
+     84          /******************************************************************************
+     85                              Implementation section
+     86          ******************************************************************************/
+     87          /**************************************************************************//**
+     88           \brief iasZoneClusterInit
+     89           \param none
+     90           \return none
+     91          ******************************************************************************/
+     92          void iasZoneClusterInit(void)
+     93          {
+     94            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, IAS_ZONE_CLUSTER_ID, ZCL_CLUSTER_SIDE_SERVER);
+     95          
+     96            if (cluster)
+     97            {
+     98              cluster->ZCL_AttributeEventInd = iasACEAttrEventInd;
+     99            }
+    100            
+    101            //Initialization of the list of attributes to their default values of IAS Zones
+    102            iasACEZoneClusterServerAttributes.iaszoneState.value = ZCL_IAS_ZONE_CLUSTER_SERVER_ZONE_STATE_ATTRIBUTE_ID_DEFAULT;
+    103            iasACEZoneClusterServerAttributes.iaszoneType.value = APP_IAS_ZONE_TYPE_ATTRIBUTE_VALUE;
+    104            iasACEZoneClusterServerAttributes.iaszoneStatus.value = ZCL_IAS_ZONE_CLUSTER_SERVER_ZONE_STATUS_ATTRIBUTE_ID_DEFAULT;
+    105            iasACEZoneClusterServerAttributes.iasCieAddress.value = APP_IAS_ZONE_CIE_ADDRESS_ATTRIBUTE_VALUE;
+    106            iasACEZoneClusterServerAttributes.iasZoneId.value = ZCL_IAS_ZONE_CLUSTER_SERVER_ZONE_ID_ATTRIBUTE_ID_DEFAULT;
+    107            iasACEZoneClusterServerAttributes.iasZoneNumberOfZoneSensitivityLevelsSupported.value =ZCL_IAS_ZONE_CLUSTER_SERVER_NUMBEROFZONESENSITIVITY_LEVEL_SUPP_DEFAULT;
+    108            iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value =ZCL_IAS_ZONE_CLUSTER_SERVER_CURRENTZONESENSITIVITY_LEVEL_SUPP_DEFAULT;
+    109            currentZoneSensitivityLevelValue = iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value;
+    110          }
+    111          
+    112          /**************************************************************************//**
+    113           \brief iasZoneFillZoneStatusChangeNotification
+    114           \param payload - ZOne status change notification payload
+    115           \param zoneStatus  - device /zone statu attribute value
+    116           \param extendedStatus - extended status as part of payload
+    117           \return none
+    118          ******************************************************************************/
+    119          static void iasZoneFillZoneStatusChangeNotification(ZCL_ZoneStatusChangeNot_t *payload, uint16_t zoneStatus, uint8_t extendedStatus)
+    120          {
+    121            payload->zoneStatus          = zoneStatus;
+    122            payload->extendedStatus      = extendedStatus;
+    123            payload->zoneId              = iasACEZoneClusterServerAttributes.iasZoneId.value;
+    124            payload->delayTime           = ZONE_NOTI_PERIOD; 
+    125          }
+    126          
+    127          /**************************************************************************//**
+    128           \brief iasZoneFillZoneStatusChangeNotification Callback
+    129           \param payload - ZOne status change notification payload
+    130           \return none
+    131          ******************************************************************************/
+    132          static void iasZoneFillZoneStatusChangeNotificationCallback(ZCL_ZoneStatusChangeNot_t *payload)
+    133          {
+    134            payload->zoneStatus          = iasACEZoneClusterServerAttributes.iaszoneStatus.value;
+    135            payload->extendedStatus      = EXTENDED_STATE_DEFAULT;
+    136            payload->zoneId              = iasACEZoneClusterServerAttributes.iasZoneId.value;
+    137            payload->delayTime           = ZONE_NOTI_PERIOD; 
+    138          }
+    139          
+    140          /**************************************************************************//**
+    141           \brief iasZoneFillZoneZoneEnrollRequest
+    142           \param payload - Enroll request payload to be filled
+    143           \param zoneType  - type of the zone
+    144           \param manufCode - manufacturer code
+    145           \return none
+    146          ******************************************************************************/
+    147          static void iasZoneFillZoneZoneEnrollRequest(ZCL_ZoneEnrollRequest_t *payload, uint16_t zoneType, uint16_t manufCode)
+    148          {
+    149            payload->zoneType          = zoneType;
+    150            payload->manufacturerCode  = manufCode;
+    151          }
+    152          
+    153          /**************************************************************************//**
+    154           \brief zoneStatusChangeNotification Command
+    155           \param mode - Adress Mode
+    156           \param addr - short addr
+    157           \param ep  -  Endpoint of the device
+    158           \param zoneStatus - status of the zone
+    159           \param extendedStatus - extended status of the zone
+    160           \return none
+    161          ******************************************************************************/
+    162          void zoneStatusChangeNotificationCommand(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,uint16_t zoneStatus, uint8_t extendedStatus)
+    163          {
+    164            ZCL_Request_t *req;
+    165          
+    166            if (!(req = getFreeCommand()))
+    167              return;
+    168          
+    169            fillCommandRequest(req, ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_CHANGE_NOTIFY_COMMAND_ID, sizeof(ZCL_ZoneStatusChangeNot_t));
+    170            iasZoneFillZoneStatusChangeNotification((ZCL_ZoneStatusChangeNot_t *)req->requestPayload,zoneStatus,extendedStatus);
+    171            fillDstAddressingServer(&req->dstAddressing, mode, addr, ep, IAS_ZONE_CLUSTER_ID);
+    172            commandManagerSendCommand(req);
+    173          }
+    174          
+    175          /**************************************************************************//**
+    176           \brief zoneStatusChangeNotification Command
+    177           \return none
+    178          ******************************************************************************/
+    179          void zoneStatusChangeNotificationCommandCallback()
+    180          {
+    181            ZCL_Request_t *req;
+    182          
+    183            if (!(req = getFreeCommand()))
+    184              return;
+    185          
+    186            fillCommandRequest(req, ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_CHANGE_NOTIFY_COMMAND_ID, sizeof(ZCL_ZoneStatusChangeNot_t));
+    187            iasZoneFillZoneStatusChangeNotificationCallback((ZCL_ZoneStatusChangeNot_t *)req->requestPayload);
+    188            fillDstAddressingServer(&req->dstAddressing, ADRESS_MODE, CIE_ADDR, CIE_ENDPT, IAS_ZONE_CLUSTER_ID);
+    189            commandManagerSendCommand(req);
+    190          }
+    191          
+    192          /**************************************************************************//**
+    193           \brief zoneEnrollRequest Command
+    194           \param mode - Adress Mode
+    195           \param addr - short addr
+    196           \param ep  -  Endpoint of the device
+    197           \param zoneType -  type of the zone
+    198           \param manufCode  -  manufacturer code
+    199           \return none
+    200          ******************************************************************************/
+    201          void zoneEnrollRequestCommand(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep, uint16_t zoneType, uint16_t manufCode)
+    202          {
+    203            ZCL_Request_t *req;
+    204          
+    205            if (!(req = getFreeCommand()))
+    206              return;
+    207          
+    208            fillCommandRequest(req, ZCL_IAS_ZONE_CLUSTER_ZONE_ENROLL_REQUEST_COMMAND_ID, sizeof(ZCL_ZoneEnrollRequest_t));
+    209            iasZoneFillZoneZoneEnrollRequest((ZCL_ZoneEnrollRequest_t *)req->requestPayload,zoneType, manufCode);
+    210            fillDstAddressingServer(&req->dstAddressing, mode, addr, ep, IAS_ZONE_CLUSTER_ID);
+    211            commandManagerSendCommand(req);
+    212          }
+    213          
+    214          /**************************************************************************//**
+    215           \brief Initiating ZoneEnrollRequest Command
+    216           \param shortAddress - short address
+    217           \return none
+    218          ******************************************************************************/
+    219          void sendZoneEnrollRequestCommand(uint16_t shortAddress)
+    220          {
+    221            zoneEnrollRequestCommand(ADRESS_MODE, shortAddress, CIE_ENDPT, iasACEZoneClusterServerAttributes.iaszoneType.value, 0x0000 );
+    222          }
+    223          
+    224          /**************************************************************************//**
+    225           \brief ZoneEnrollResponseInd Command
+    226           \param addressing - source info
+    227           \param reportLength  - length of data in reportPayload
+    228           \param payload - payload data
+    229           \return none
+    230          ******************************************************************************/
+    231          static ZCL_Status_t zoneEnrollResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength,ZCL_ZoneEnrollResCommand_t * payload)
+    232          {
+    233            switch(payload->enrollResponseCode)
+    234            {
+    235              case ENROLL_RESP_SUCCESS:
+    236          #if APP_ENABLE_CONSOLE != 1
+    237                iasACEZoneClusterServerAttributes.iaszoneStatus.value = SUPERVISION_REPORT_STATE;
+    238                iasACEZoneClusterServerAttributes.iaszoneType.value = ZCL_IAS_ZONE_CLUSTER_ZONE_TYPE_ATTRIBUTE_MOTION_SENSOR;
+    239          #endif
+    240                iasACEZoneClusterServerAttributes.iaszoneState.value = ZCL_IAS_ZONE_CLUSTER_ZONE_STATE_ATTRIBUTE_ENROLLED;
+    241                iasACEZoneClusterServerAttributes.iasZoneId.value = payload->zoneId;
+    242                iasACEZoneClusterServerAttributes.iasCieAddress.value = addressing->addr.extAddress;
+    243                if((iasACEZoneClusterServerAttributes.iaszoneStatus.value) && ( 1<< ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_ATTRIBUTE_SUPERVISION_REPORTS))
+    244                {
+    245                  zoneChangeNotiCmdTimer.interval = ZONE_NOTI_PERIOD;
+    246                  zoneChangeNotiCmdTimer.mode     = TIMER_REPEAT_MODE;
+    247                  zoneChangeNotiCmdTimer.callback = zoneChangeNotiCmdTimerFired;
+    248                  HAL_StartAppTimer(&zoneChangeNotiCmdTimer);
+    249                }
+    250                break;
+    251              case ENROLL_RESP_NOT_SUPPORTED:
+    252              case ENROLL_RESP_NOT_ENROLL_PERMIT:
+    253              case ENROLL_RESP_TOO_MANY_ZONES:
+    254                break;
+    255              default:
+    256                break;
+    257             }
+    258          #if APP_ENABLE_CONSOLE == 1
+    259            LOG_STRING(writeAttrSuccessStr, " <-ZoneEnrollResponseInd Command : Status = %u\r\n");
+    260            appSnprintf(writeAttrSuccessStr, (unsigned)payload->enrollResponseCode);
+    261          #endif
+    262            (void) payloadLength;
+    263            return ZCL_SUCCESS_STATUS;
+    264          }
+    265          
+    266          /**************************************************************************//**
+    267           \brief ZoneInitiateNormalOperatingModeInd Command
+    268           \param addressing - source info
+    269           \return none
+    270          ******************************************************************************/
+    271          static ZCL_Status_t zoneInitiateNormalOperatingModeInd(ZCL_Addressing_t *addressing)
+    272          {
+    273            //To retain the default value of CurrentZoneSensitivitylevel
+    274            iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value =ZCL_IAS_ZONE_CLUSTER_SERVER_CURRENTZONESENSITIVITY_LEVEL_SUPP_DEFAULT;
+    275          
+    276            //To bring it back to the normal mode of the zone status value
+    277            iasACEZoneClusterServerAttributes.iaszoneStatus.value &= ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_ATTRIBUTE_TEST_MODE_TO_OPERATION_MODE;
+    278          
+    279            //To bring it back to the normal mode of the zone status value
+    280            iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value = currentZoneSensitivityLevelValue;
+    281          
+    282            //Stop the timer, if already initiated by the normal mode operation
+    283            HAL_StopAppTimer(&zoneTestModeOperationTimer);
+    284          
+    285            //Send notification to the IAS Zone Client
+    286            zoneStatusChangeNotificationCommandCallback();
+    287            (void) addressing;
+    288            return ZCL_SUCCESS_STATUS;
+    289          }
+    290          
+    291          /**************************************************************************//**
+    292           \brief ZoneInitiateTestModeInd Command
+    293           \param addressing - source info
+    294           \param payloadLength  - length of data in reportPayload
+    295           \param payload - payload data
+    296           \return none
+    297          ******************************************************************************/
+    298          static ZCL_Status_t zoneInitiateTestModeInd(ZCL_Addressing_t *addressing, uint8_t payloadLength,ZCL_ZoneInitiateTestMode_t * payload)
+    299          {
+    300            //To retain the default value of CurrentZoneSensitivitylevel
+    301            iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value = payload->currentZoneSensitivityLevel;
+    302          
+    303            //To bring it back to the normal mode of the zone status value
+    304            iasACEZoneClusterServerAttributes.iaszoneStatus.value |= (1<< ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_ATTRIBUTE_TEST_MODE);
+    305          
+    306            //To bring it back to the normal mode of the zone status value
+    307            currentZoneSensitivityLevelValue = iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value;
+    308            iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value = payload->currentZoneSensitivityLevel;
+    309          
+    310            //Timer to be in the test mode emulation for the Server  
+    311            zoneTestModeOperationTimer.interval = (payload->testmodeDuration) * TIME_IN_SECONDS;
+    312            zoneTestModeOperationTimer.mode     = TIMER_ONE_SHOT_MODE;
+    313            zoneTestModeOperationTimer.callback = zoneTestModeOperationTimerFired;
+    314            HAL_StartAppTimer(&zoneTestModeOperationTimer);
+    315          
+    316            //Send notification to the IAS Zone Client
+    317            zoneStatusChangeNotificationCommandCallback();
+    318            (void) payloadLength;
+    319            (void) addressing;
+    320            return ZCL_SUCCESS_STATUS;
+    321          }
+    322          
+    323          /***************************************************************************//**
+    324           \brief zoneTestModeOperationTimerFired
+    325          *******************************************************************************/
+    326          static void zoneTestModeOperationTimerFired(void)
+    327          {
+    328            //Stop the timer
+    329            HAL_StopAppTimer(&zoneTestModeOperationTimer);
+    330          
+    331            //Update the Test Bit to Zero
+    332            iasACEZoneClusterServerAttributes.iaszoneStatus.value &= ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_ATTRIBUTE_TEST_MODE_TO_OPERATION_MODE;
+    333          
+    334            //Update the CurrentZone Sensitivity level to the default value
+    335            iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value = currentZoneSensitivityLevelValue;
+    336          
+    337            //Send notification to the client and resume normal mode operation
+    338            zoneStatusChangeNotificationCommandCallback();
+    339          }
+    340          
+    341          /***************************************************************************//**
+    342           \brief zoneChangeNotiCmdTimerFired
+    343          *******************************************************************************/
+    344          static void zoneChangeNotiCmdTimerFired(void)
+    345          {
+    346            HAL_StopAppTimer(&zoneChangeNotiCmdTimer);
+    347            
+    348            //To check whether we need periodic reports or not
+    349            if((iasACEZoneClusterServerAttributes.iaszoneStatus.value) & ( 1<< ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_ATTRIBUTE_SUPERVISION_REPORTS))
+    350            {
+    351              HAL_StartAppTimer(&zoneChangeNotiCmdTimer);
+    352            }
+    353            //Callback for the Zone notification
+    354            zoneStatusChangeNotificationCommandCallback();
+    355          }
+    356          
+    357          /**************************************************************************//**
+    358           \brief Attribute Event indication handler(to indicate when attr values have
+    359                  read or written)
+    360           \param[in] addressing - pointer to addressing information;
+    361           \param[in] attributeId - Id of the attribute;
+    362           \param[in] event - event details
+    363           \return none
+    364          ******************************************************************************/
+    365          static void iasACEAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event)
+    366          {
+    367            //To take action for Current Zone Sensitivity level attribute
+    368            if ( (attributeId == ZCL_IAS_ZONE_CLUSTER_SERVER_CURRENTZONESENSITIVITY_LEVEL_SUPP_ID)
+    369                     && (event == ZCL_WRITE_ATTRIBUTE_EVENT) )
+    370            {
+    371              if(!(iasACEZoneClusterServerAttributes.iaszoneStatus.value & ~(1<< ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_ATTRIBUTE_TEST_MODE)))
+    372              {
+    373                currentZoneSensitivityLevelValue = iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value;
+    374              }
+    375            }
+    376          
+    377            //To take action for number of Zone Sensitivity level supported attribute
+    378            if ( (attributeId == ZCL_IAS_ZONE_CLUSTER_SERVER_NUMBEROFZONESENSITIVITY_LEVEL_SUPP_ID)
+    379                     && (event == ZCL_WRITE_ATTRIBUTE_EVENT) )
+    380            {
+    381              if(iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value <2)
+    382              {
+    383                iasACEZoneClusterServerAttributes.iasZoneCurrentZoneSensitivityLevel.value = ZCL_IAS_ZONE_CLUSTER_SERVER_CURRENTZONESENSITIVITY_LEVEL_SUPP_DEFAULT;
+    384              }
+    385            }
+    386            (void) addressing;
+    387          }
+    388          
+    389          /***************************************************************************//**
+    390           \brief zoneChange change to send out the notification to CIE
+    391           \param[in] addressing - pointer to addressing information;
+    392           \return none
+    393          *******************************************************************************/
+    394          void zoneStatusChangeCommand(uint16_t zoneStatusChangeValue)
+    395          {
+    396            if(zoneStatusChangeValue <= ZONE_MAXIMUM_LIMIT_VALUE)
+    397            {
+    398              iasACEZoneClusterServerAttributes.iaszoneStatus.value = zoneStatusChangeValue;
+    399              zoneStatusChangeNotificationCommandCallback();
+    400              if((iasACEZoneClusterServerAttributes.iaszoneStatus.value) & ( 1<< ZCL_IAS_ZONE_CLUSTER_ZONE_STATUS_ATTRIBUTE_SUPERVISION_REPORTS))
+    401              {
+    402                zoneChangeNotiCmdTimer.interval = ZONE_NOTI_PERIOD;
+    403                zoneChangeNotiCmdTimer.mode     = TIMER_ONE_SHOT_MODE;
+    404                zoneChangeNotiCmdTimer.callback = zoneChangeNotiCmdTimerFired;
+    405                HAL_StartAppTimer(&zoneChangeNotiCmdTimer);
+    406              }
+    407            }
+    408          }
+    409          #endif // APP_DEVICE_TYPE_IAS_ACE
+    410          // eof iasZoneCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

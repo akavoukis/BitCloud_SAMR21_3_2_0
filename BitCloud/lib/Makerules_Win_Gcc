@@ -1,0 +1,28 @@
+#----------------------------------------------
+#HAL makerules - should be included into components Makerules
+#----------------------------------------------
+
+#-Compiler type definition---------------------
+COMPILER_TYPE = GCC
+COMPILER_AND_MICRO_TYPE = GCC_X86
+#-Tools definitions----------------------------
+AS       = as
+LD       = ld
+CC       = gcc
+CPP      = g++
+AR       = ar
+NM       = nm
+STRIP    = strip
+OBJCOPY  = objcopy
+OBJDUMP  = objdump
+SIZE     = size
+
+#-Compiler flags-------------------------------
+CFLAGS =  -std=gnu99 -pipe -c -W -Wall -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -ffunction-sections -DRELEASE -D_RF_BAT_MON_ -D_SLEEP_WHEN_IDLE_
+AR_KEYS = cr
+
+
+#-Objects to be linked with app----------------
+PLATFORM_SPECIFIC_OBJECTS  = 
+
+SE_PATH      = $(COMPONENTS_PATH)/./SystemEnvironment

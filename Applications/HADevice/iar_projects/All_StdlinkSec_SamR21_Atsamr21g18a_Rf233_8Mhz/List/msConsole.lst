@@ -1,0 +1,359 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:37
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\msConsole.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\msConsole.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\msConsole.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\msConsole.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\msConsole.c
+      1          /**************************************************************************//**
+      2            \file msConsole.c
+      3          
+      4            \brief
+      5              Multi-Sensor console implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              12.12.12 N. Fomin - Created.
+     17              28.05.14 Viswanadham Kotla - Modified.
+     18          ******************************************************************************/
+     19          #ifdef APP_DEVICE_TYPE_MULTI_SENSOR
+     20          #if APP_ENABLE_CONSOLE == 1
+     21          
+     22          /******************************************************************************
+     23                              Includes section
+     24          ******************************************************************************/
+     25          #include <uartManager.h>
+     26          #include <console.h>
+     27          #include <resetReason.h>
+     28          #include <ezModeManager.h>
+     29          #include <zclDevice.h>
+     30          #include <sysUtils.h>
+     31          #include <pdsDataServer.h>
+     32          #include <configServer.h>
+     33          #include <nwkAttributes.h>
+     34          
+     35          /* This value used in ZLL tests to identify non-ZLL EndDevice */
+     36          #define TEST_DEVICE_TYPE_HA_END_DEVICE 0x04U
+     37          
+     38          /******************************************************************************
+     39                              Prototypes section
+     40          ******************************************************************************/
+     41          static void processHelpCmd(const ScanValue_t *args);
+     42          static void processResetCmd(const ScanValue_t *args);
+     43          //static void processStartBindingCmd(const ScanValue_t *args);
+     44          static void processResetToFactoryFreshCmd(const ScanValue_t *args);
+     45          static void processInvokeEzModeCmd(const ScanValue_t *args);
+     46          static void processGetDeviceTypeCmd(const ScanValue_t *args);
+     47          static void processPseudoPowerOffCmd(const ScanValue_t *args);
+     48          static void processRestartNwkCmd(const ScanValue_t *args);
+     49          static void processGetNetworkAddressCmd(const ScanValue_t *args);
+     50          
+     51          /******************************************************************************
+     52                              Local variables section
+     53          ******************************************************************************/
+     54          static uint8_t readBuffer[USART_RX_BUFFER_LENGTH];
+     55          static const ConsoleCommand_t cmds[] =
+     56          {
+     57            {"help",   "",     processHelpCmd, "->Show help you're reading now:  help\r\n"},
+     58            {"reset", "", processResetCmd, "->Reset device\r\n"},
+     59            {"getNetworkAddress", "", processGetNetworkAddressCmd, "-> Returns network address: getNetworkAddress\r\n"},
+     60            {"invokeEZMode", "", processInvokeEzModeCmd, "->Start finding and binding process\r\n"},
+     61            //{"startBinding", "", processStartBindingCmd, "->Start binding: startBinding\r\n"},
+     62            {"resetToFN", "", processResetToFactoryFreshCmd, "->Reset to factory fresh settings: resetToFN\r\n"},
+     63            {"getDeviceType", "", processGetDeviceTypeCmd, "-> Request for device type: getDeviceType\r\n"},
+     64            {"powerOff", "", processPseudoPowerOffCmd, "-> Powers off device: powerOff\r\n"},
+     65            {"restartNwk", "d", processRestartNwkCmd, "-> Restarts network on particular channel [channel]\r\n"},
+     66            {0,0,0,0},
+     67          };
+     68          
+     69          /******************************************************************************
+     70                              Implementation section
+     71          ******************************************************************************/
+     72          /**************************************************************************//**
+     73          \brief Sends single char to serial interface
+     74          ******************************************************************************/
+     75          void consoleTx(char chr)
+     76          {
+     77            appSnprintf(&chr);
+     78          }
+     79          
+     80          /**************************************************************************//**
+     81          \brief Processes single char read from serial interface
+     82          
+     83          \param[in] char - read char
+     84          ******************************************************************************/
+     85          void consoleTxStr(const char *str)
+     86          {
+     87            appSnprintf(str);
+     88          }
+     89          
+     90          /**************************************************************************//**
+     91          \brief Initializes console
+     92          ******************************************************************************/
+     93          void initConsole(void)
+     94          {
+     95            consoleRegisterCommands(cmds);
+     96          }
+     97          
+     98          /**************************************************************************//**
+     99          \brief Processes data received by console
+    100          ******************************************************************************/
+    101          void processConsole(uint16_t length)
+    102          {
+    103            int8_t bytesRead = readDataFromUart(readBuffer, MIN(USART_RX_BUFFER_LENGTH, length));
+    104          
+    105            for (int8_t i = 0; i < bytesRead; i++)
+    106              consoleRx(readBuffer[i]);
+    107          }
+    108          
+    109          /**************************************************************************//**
+    110          \brief Processes help command
+    111          
+    112          \param[in] args - array of command arguments
+    113          ******************************************************************************/
+    114          static void processHelpCmd(const ScanValue_t *args)
+    115          {
+    116            (void)args;
+    117            LOG_STRING(commandStr, "Commands: \r\n");
+    118            appSnprintf(commandStr);
+    119            for (const ConsoleCommand_t *cmd = cmds; cmd->name; cmd++)
+    120              appSnprintf("%s\r\n", cmd->name);
+    121          }
+    122          
+    123          /**************************************************************************//**
+    124          \brief Processes reset command: reset device
+    125          
+    126          \param[in] args - array of command arguments
+    127          ******************************************************************************/
+    128          static void processResetCmd(const ScanValue_t *args)
+    129          {
+    130            (void)args;
+    131            HAL_WarmReset();
+    132          }
+    133          
+    134          /**************************************************************************//**
+    135          \brief Processes get network address command
+    136          
+    137          \param[in] args - array of command arguments
+    138          ******************************************************************************/
+    139          static void processGetNetworkAddressCmd(const ScanValue_t *args)
+    140          {
+    141            (void)args;
+    142            appSnprintf("%04x\r\n", NWK_GetShortAddr());
+    143          }
+    144          
+    145          /**************************************************************************//**
+    146          \brief Processes start finding and binding command
+    147          
+    148          \param[in] args - array of command arguments
+    149          ******************************************************************************/
+    150          static void processInvokeEzModeCmd(const ScanValue_t *args)
+    151          {
+    152            (void)args;
+    153            invokeEzMode(NULL);
+    154          }
+    155          
+    156          /**************************************************************************//**
+    157          \brief Processes reset to factory fresh
+    158          
+    159          \param[in] args - array of command arguments
+    160          ******************************************************************************/
+    161          static void processResetToFactoryFreshCmd(const ScanValue_t *args)
+    162          {
+    163            (void)args;
+    164            PDS_DeleteAll(false);
+    165          
+    166            HAL_WarmReset();
+    167          }
+    168          
+    169          /**************************************************************************//**
+    170          \brief Processes request for device type obtaining
+    171          
+    172          \param[in] args - array of command arguments
+    173          ******************************************************************************/
+    174          static void processGetDeviceTypeCmd(const ScanValue_t *args)
+    175          {
+    176            LOG_STRING(deviceFnStatusStr, "DeviceType = %d\r\n");
+    177            appSnprintf(deviceFnStatusStr, TEST_DEVICE_TYPE_HA_END_DEVICE);
+    178            (void)args;
+    179          }
+    180          
+    181          /**************************************************************************//**
+    182          \brief Processes pseudo power off command
+    183          
+    184          \param[in] args - array of command arguments
+    185          ******************************************************************************/
+    186          static void processPseudoPowerOffCmd(const ScanValue_t *args)
+    187          {
+    188            /* Disable BitCloud tasks for preventing calls to the radio.
+    189               HAL is enabled so it it allows to receive commands through UART. */
+    190            SYS_DisableTask(ZDO_TASK_ID);
+    191            SYS_DisableTask(APS_TASK_ID);
+    192            SYS_DisableTask(NWK_TASK_ID);
+    193            SYS_DisableTask(MAC_PHY_HWD_TASK_ID);
+    194            (void)args;
+    195          }
+    196          
+    197          /**************************************************************************//**
+    198          \brief Processes Restart Network command
+    199          
+    200          \param[in] args - array of command arguments
+    201          ******************************************************************************/
+    202          static void processRestartNwkCmd(const ScanValue_t *args)
+    203          {
+    204            CS_WriteParameter(CS_CHANNEL_MASK_ID, &(uint32_t){1ul << args[0].uint8});
+    205          
+    206            appRestart(false);
+    207          }
+    208          
+    209          #endif // APP_ENABLE_CONSOLE == 1
+    210          #endif // APP_DEVICE_TYPE_MULTI_SENSOR
+    211          
+    212          // eof msConsole.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

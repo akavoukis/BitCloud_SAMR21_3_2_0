@@ -1,0 +1,382 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:24
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclTaskManager.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclTaskManager.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclTaskManager.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclTaskManager.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclTaskManager.c
+      1          /************************************************************************//**
+      2            \file zclTaskManager.c
+      3          
+      4            \brief
+      5              Implementation of ZCL Task Manager
+      6          
+      7              The file implements the ZCL Task Manager
+      8          
+      9            \author
+     10              Atmel Corporation: http://www.atmel.com \n
+     11              Support email: avr@atmel.com
+     12          
+     13            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     14            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     15          
+     16            \internal
+     17              History:
+     18              01.12.08 A. Potashov - Created.
+     19          ******************************************************************************/
+     20          #if ZCL_SUPPORT == 1
+     21          /******************************************************************************
+     22                             Includes section
+     23          ******************************************************************************/
+     24          #include <zclTaskManager.h>
+     25          #include <sysTaskManager.h>
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void SYS_PostTask(SYS_TaskId_t)
+   \                     SYS_PostTask: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x4668             MOV      R0,SP
+   \   00000008   0x.... 0x....      BL       halStartAtomic
+   \   0000000C   0x....             LDR      R0,??DataTable3
+   \   0000000E   0x8801             LDRH     R1,[R0, #+0]
+   \   00000010   0x430C             ORRS     R4,R4,R1
+   \   00000012   0x8004             STRH     R4,[R0, #+0]
+   \   00000014   0x4668             MOV      R0,SP
+   \   00000016   0x.... 0x....      BL       halEndAtomic
+   \   0000001A   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+     26          #include <zclDbg.h>
+     27          #include <sysAssert.h>
+     28          
+     29          /******************************************************************************
+     30                                      Definitions section
+     31           ******************************************************************************/
+     32          #define HANDLERS_GET(A, I) memcpy_P(A, &zclHandlers[I], sizeof(ZclTask_t))
+     33          
+     34          /******************************************************************************
+     35                                        Types section
+     36           ******************************************************************************/
+     37          /** Pointer to a ZCL task handler. */
+     38          typedef  void (* ZclTask_t)(void);
+     39          
+     40          /******************************************************************************
+     41                                    Prototypes section
+     42          ******************************************************************************/
+     43          extern void zclTaskHandler(void);
+     44          extern void zclParserTaskHandler(void);
+     45          extern void zclSecurityTaskHandler(void);
+     46          
+     47          /******************************************************************************
+     48                                       Constants section
+     49           ******************************************************************************/
+     50          /** Array of ZCL task handlers. */
+
+   \                                 In section .text, align 4, keep-with-next
+     51          static PROGMEM_DECLARE(ZclTask_t zclHandlers[ZCL_TASKS_SIZE]) =
+   \                     zclHandlers:
+   \   00000000   0x........         DC32 zclTaskHandler, zclParserTaskHandler, zclSecurityTaskHandler
+   \              0x........   
+   \              0x........   
+     52          {
+     53            [ZCL_SUBTASK_ID]          = zclTaskHandler,
+     54            [ZCL_PARSER_TASK_ID]      = zclParserTaskHandler,
+     55            [ZCL_SECURITY_TASK_ID]    = zclSecurityTaskHandler,
+     56          };
+     57          
+     58          /******************************************************************************
+     59                                    Global variables section
+     60           ******************************************************************************/
+
+   \                                 In section .bss, align 1
+     61          static ZclTaskBitMask_t zclTaskBitMap;
+   \                     zclTaskBitMap:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 1
+     62          static ZclTaskIdIter_t  zclCurrentTask;
+     63          
+     64          /******************************************************************************
+     65                                     Implementations section
+     66          ******************************************************************************/
+     67          /*****************************************************************************
+     68            Task Manager post task function
+     69          *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void zclPostTask(ZclTaskId_t taskId)
+     71          {
+   \                     zclPostTask: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     72            zclTaskBitMap |= (1U << taskId);
+   \   00000002   0x....             LDR      R1,??DataTable3_1
+   \   00000004   0x780A             LDRB     R2,[R1, #+0]
+   \   00000006   0x2301             MOVS     R3,#+1
+   \   00000008   0x4083             LSLS     R3,R3,R0
+   \   0000000A   0x4313             ORRS     R3,R3,R2
+   \   0000000C   0x700B             STRB     R3,[R1, #+0]
+     73            SYS_PostTask(ZCL_TASK_ID);
+   \   0000000E   0x2080             MOVS     R0,#+128
+   \   00000010   0x00C0             LSLS     R0,R0,#+3        ;; #+1024
+   \   00000012   0x.... 0x....      BL       SYS_PostTask
+     74          }
+   \   00000016   0xBD01             POP      {R0,PC}          ;; return
+     75          
+     76          /**************************************************************************//**
+     77            \brief Global task handler of ZCL layer.
+     78          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     79          void ZCL_TaskHandler(void)
+     80          {
+   \                     ZCL_TaskHandler: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     81            const ZclTaskIdIter_t last = zclCurrentTask;
+   \   00000002   0x....             LDR      R4,??DataTable3_1
+   \   00000004   0x7860             LDRB     R0,[R4, #+1]
+   \   00000006   0x7821             LDRB     R1,[R4, #+0]
+     82          
+     83            do
+     84            {
+     85              if (ZCL_TASKS_SIZE <= ++zclCurrentTask)
+   \                     ??ZCL_TaskHandler_0: (+1)
+   \   00000008   0x7862             LDRB     R2,[R4, #+1]
+   \   0000000A   0x1C52             ADDS     R2,R2,#+1
+   \   0000000C   0xB2D2             UXTB     R2,R2
+   \   0000000E   0x2A03             CMP      R2,#+3
+   \   00000010   0xDB00             BLT      ??ZCL_TaskHandler_1
+     86                zclCurrentTask = 0U;
+   \   00000012   0x2200             MOVS     R2,#+0
+   \                     ??ZCL_TaskHandler_1: (+1)
+   \   00000014   0x7062             STRB     R2,[R4, #+1]
+     87          
+     88              if (zclTaskBitMap & (1U << zclCurrentTask))
+   \   00000016   0x7862             LDRB     R2,[R4, #+1]
+   \   00000018   0x2301             MOVS     R3,#+1
+   \   0000001A   0x4093             LSLS     R3,R3,R2
+   \   0000001C   0x4219             TST      R1,R3
+   \   0000001E   0xD00E             BEQ      ??ZCL_TaskHandler_2
+     89              {
+     90                ZclTask_t handler;
+     91          
+     92                zclTaskBitMap ^= 1U << zclCurrentTask; //&=~
+   \   00000020   0x404B             EORS     R3,R3,R1
+   \   00000022   0x7023             STRB     R3,[R4, #+0]
+     93                HANDLERS_GET(&handler, zclCurrentTask);
+   \   00000024   0x....             ADR.N    R0,zclHandlers
+   \   00000026   0x0091             LSLS     R1,R2,#+2
+   \   00000028   0x5845             LDR      R5,[R0, R1]
+     94                SYS_E_ASSERT_FATAL(handler, ZCLTASKMANAGER_TASKHANDLER_0);
+   \   0000002A   0x0028             MOVS     R0,R5
+   \   0000002C   0xD105             BNE      ??ZCL_TaskHandler_3
+   \   0000002E   0x20C0             MOVS     R0,#+192
+   \   00000030   0x0200             LSLS     R0,R0,#+8        ;; #+49152
+   \   00000032   0x....             LDR      R1,??DataTable3_2
+   \   00000034   0x8008             STRH     R0,[R1, #+0]
+   \   00000036   0x.... 0x....      BL       SYS_DefAssertCallbackFatal
+     95                handler();
+   \                     ??ZCL_TaskHandler_3: (+1)
+   \   0000003A   0x47A8             BLX      R5
+     96                break;
+   \   0000003C   0xE001             B        ??ZCL_TaskHandler_4
+     97              }
+     98            } while (last != zclCurrentTask);
+   \                     ??ZCL_TaskHandler_2: (+1)
+   \   0000003E   0x4290             CMP      R0,R2
+   \   00000040   0xD1E2             BNE      ??ZCL_TaskHandler_0
+     99          
+    100            if (zclTaskBitMap)
+   \                     ??ZCL_TaskHandler_4: (+1)
+   \   00000042   0x7820             LDRB     R0,[R4, #+0]
+   \   00000044   0x2800             CMP      R0,#+0
+   \   00000046   0xD003             BEQ      ??ZCL_TaskHandler_5
+    101              SYS_PostTask(ZCL_TASK_ID);
+   \   00000048   0x2080             MOVS     R0,#+128
+   \   0000004A   0x00C0             LSLS     R0,R0,#+3        ;; #+1024
+   \   0000004C   0x.... 0x....      BL       SYS_PostTask
+    102          }
+   \                     ??ZCL_TaskHandler_5: (+1)
+   \   00000050   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     SYS_taskFlag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     zclTaskBitMap
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x........         DC32     gAssertDbgCode
+    103          #endif // ZCL_SUPPORT == 1
+    104          //eof zclTaskManager.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   SYS_PostTask
+        16   -> halEndAtomic
+        16   -> halStartAtomic
+      16   ZCL_TaskHandler
+        16   -- Indirect call
+        16   -> SYS_DefAssertCallbackFatal
+        16   -> SYS_PostTask
+       8   zclPostTask
+         8   -> SYS_PostTask
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+      28  SYS_PostTask
+      82  ZCL_TaskHandler
+      12  zclHandlers
+      24  zclPostTask
+       2  zclTaskBitMap
+          zclCurrentTask
+
+ 
+   2 bytes in section .bss
+ 158 bytes in section .text
+ 
+ 158 bytes of CODE memory
+   2 bytes of DATA memory
+
+Errors: none
+Warnings: none

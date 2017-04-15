@@ -1,0 +1,30 @@
+#----------------------------------------------
+#HAL makerules - should be included into components Makerules
+#----------------------------------------------
+
+#-Compiler type definition---------------------
+IAR_PATH = "$(IAR_ARM_HOME)/arm"
+COMPILER_TYPE = IAR
+COMPILER_AND_MICRO_TYPE = IAR_ARM
+#-Tools definitions----------------------------
+AS       = $(IAR_PATH)/bin/iasmarm
+LD       = $(IAR_PATH)/bin/ilinkarm
+CC       = $(IAR_PATH)/bin/iccarm
+CPP      = $(IAR_PATH)/bin/iccarm
+AR       = $(IAR_PATH)/bin/iarchive
+IELFTOOL = $(IAR_PATH)/bin/ielftool
+NM       = @echo ----NM: There is no such utility among IAR tools.
+STRIP    = @echo ----STRIP: There is no such utility among IAR tools.
+OBJCOPY  = arm-none-eabi-objcopy
+OBJDUMP  = @echo ----OBJDUMP: There is no such utility among IAR tools.
+SIZE     = @echo ----SIZE: There is no such utility among IAR tools.
+
+#-Compiler flags-------------------------------
+CFLAGS = --dlib_config $(IAR_PATH)/inc/c/DLib_Config_Full.h -I$(IAR_PATH)/inc   --endian little --fpu None --thumb -Ohz --diag_suppress Pa050,Pe188,Pa082 -e --cpu=cortex-m0+ --silent -DRELEASE -D_SLEEP_WHEN_IDLE_
+AR_KEYS = --create -o
+
+
+#-Objects to be linked with app----------------
+PLATFORM_SPECIFIC_OBJECTS  = 
+
+SE_PATH      = $(COMPONENTS_PATH)/./SystemEnvironment

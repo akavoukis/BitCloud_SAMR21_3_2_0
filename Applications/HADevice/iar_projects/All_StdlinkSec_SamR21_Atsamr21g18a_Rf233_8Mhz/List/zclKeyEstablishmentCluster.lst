@@ -1,0 +1,1802 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:18
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclKeyEstablishmentCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclKeyEstablishmentCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclKeyEstablishmentCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclKeyEstablishmentCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclKeyEstablishmentCluster.c
+      1          /***************************************************************************//**
+      2            \file zclKeyEstablishmentCluster.c
+      3          
+      4            \brief ZCL Key Establishment Cluster logic implementation
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14             History:
+     15              2010-01-27 arazinkov - Changed
+     16             Last change:
+     17              $Id: zclKeyEstablishmentCluster.c 24784 2013-03-19 08:52:51Z akhromykh $
+     18          ******************************************************************************/
+     19          #if ZCL_SUPPORT == 1
+     20          #if (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+     21          #if CERTICOM_SUPPORT == 1
+     22          
+     23          /*******************************************************************************
+     24                             Includes section
+     25          *******************************************************************************/
+     26          #include <sysTypes.h>
+     27          #include <zcl.h>
+     28          #include <clusters.h>
+     29          #include <zclKeyEstablishmentCluster.h>
+     30          #include <appTimer.h>
+     31          #include <sysUtils.h>
+     32          #include <zclSecurityManager.h>
+     33          #include <sysTimer.h>
+     34          #include <sspHash.h>
+     35          #include <zclDbg.h>
+     36          #include <dbg.h>
+     37          #include <genericEcc.h>
+     38          #include <eccAux.h>
+     39          #include <zdoNotify.h>
+     40          #include <aps.h>
+     41          #include <sysEvents.h>
+     42          
+     43          /*******************************************************************************
+     44                             Define(s) section
+     45          *******************************************************************************/
+     46          #define ZCL_KE_INVALID_EPHEMERAL_DATA_GENERATE_TIME   0xff
+     47          #define ZCL_KE_INVALID_CONFIRM_KEY_GENERATE_TIME      0xff
+     48          
+     49          #ifdef _ENDDEVICE_
+     50          #define ZCL_INDIRECT_POLL_RATE_DURING_KE 2 // 2 sec
+     51          #else
+     52          #define ZCL_INDIRECT_POLL_RATE_DURING_KE 1 // 1 sec
+     53          #endif
+     54          
+     55          #define ZCL_KE_INITIATE_RESPONSE_WAITING_TIME         2 * ZCL_INDIRECT_POLL_RATE_DURING_KE  // sec
+     56          #define TERMINATE_BASE_WAIT_TIME                      5 // sec
+     57          
+     58          #define ZCL_UPDATE_RAND_SEQ_TIMEOUT 40 //
+     59          
+     60          #define ZCL_KE_ADDITIONAL_MESSAGE_COMPONENT_SIZE sizeof(uint8_t)
+     61          #define ZCL_KE_INITATOR_ADDITIONAL_MESSAGE_COMPONENT 0x02
+     62          #define ZCL_KE_RESPONDER_ADDITIONAL_MESSAGE_COMPONENT 0x03
+     63          
+     64          #define ZCL_KE_MAC_DATA_SIZE ((2 * SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE) + \
+     65                                        (2 * sizeof(ExtAddr_t)) + \
+     66                                         ZCL_KE_ADDITIONAL_MESSAGE_COMPONENT_SIZE) // 61 bytes
+     67          
+     68          //C.3.1.1 Overview
+     69          //For the Initiate Key Establishment Response message, it is recommended the
+     70          //initiator wait at least 2 seconds before timing out the operation.
+     71          
+     72          /******************************************************************************
+     73                              Types section
+     74          ******************************************************************************/
+     75          typedef enum
+     76          {
+     77            INCOMING,
+     78            OUTCOMING
+     79          } TrxDirection_t;
+     80          
+     81          typedef enum
+     82          {
+     83            ZCL_KE_CLUSTER_INITIAL_STATE                        = 0x00, //There was init
+     84            ZCL_KE_CLUSTER_IDLE_STATE                           = 0x01, //There was reset
+     85          
+     86            //Discovery states
+     87            ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_SENDING_STATE     = 0x03,
+     88            ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_TERMINATE_STATE   = 0x04,
+     89          
+     90            //KE procedure states
+     91            ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_SENDING_STATE    = 0x06,
+     92            ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_WAITING_STATE    = 0x07,
+     93            ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_SENDING_STATE = 0x08,
+     94            ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_WAITING_STATE = 0x09,
+     95          
+     96            ZCL_KE_CLUSTER_MAC1_CALCULATING_STATE               = 0x0a,
+     97            ZCL_KE_CLUSTER_MAC2_CALCULATING_STATE               = 0x0b,
+     98          
+     99            ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_SENDING_STATE    = 0x0c,
+    100            ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_WAITING_STATE    = 0x0d,
+    101          
+    102            ZCL_KE_CLUSTER_WAITING_STATE                        = 0x0e, // There was termination with NO_RESOURCES
+    103          } ZclKEClusterState_t;
+    104          
+    105          typedef union
+    106          {
+    107            ZCL_InitiateKeyEstablishmentCommand_t   initiateKE;
+    108            ZCL_ConfirmKeyCommand_t                 confirmKey;
+    109            ZCL_TerminateKeyEstablishmentCommand_t  terminateKE;
+    110            ZCL_EphemeralDataCommand_t              ephemeralData;
+    111          } ZCL_KECommandPayload_t;
+    112          
+    113          BEGIN_PACK
+    114          typedef struct PACK _ZclKeMacBuffer_t
+    115          {
+    116            TOP_GUARD
+    117            volatile uint8_t keyExpander[SECURITY_KEY_SIZE];
+    118            uint8_t macData[ZCL_KE_MAC_DATA_SIZE];
+    119            volatile uint8_t bitsExpander[AES_MMO_HASH_SIZE];
+    120            BOTTOM_GUARD
+    121          } ZclKeMacBuffer_t;
+    122          END_PACK
+    123          
+    124          /******************************************************************************
+    125                             Static functions prototype section
+    126          ******************************************************************************/
+    127          static ZCL_Status_t initiateKECommandIndHandler(ZCL_Addressing_t *addressing,
+    128            uint8_t payloadLength, ZCL_InitiateKeyEstablishmentCommand_t *payload);
+    129          static ZCL_Status_t ephemeralDataCommandIndHandler(ZCL_Addressing_t *addressing,
+    130            uint8_t payloadLength, ZCL_EphemeralDataCommand_t *payload);
+    131          static ZCL_Status_t confirmKeyDataCommandIndHandler(ZCL_Addressing_t *addressing,
+    132            uint8_t payloadLength, ZCL_ConfirmKeyCommand_t *payload);
+    133          static ZCL_Status_t terminateKECommandIndHandler(ZCL_Addressing_t *addressing,
+    134            uint8_t payloadLength, ZCL_TerminateKeyEstablishmentCommand_t *payload);
+    135          
+    136          static void keMakeMatchDescReq(void);
+    137          static void keSendInitiateKECommand(void);
+    138          static void keSendEphemeralDataCommand(void);
+    139          static void keSendConfirmKeyDataCommand(void);
+    140          static void keSendTerminateKECommand(ShortAddr_t shortAddr, Endpoint_t endpoint, ZCL_TKEStatus_t status);
+    141          
+    142          static void keCalculateMac1(void);
+    143          static void keCalculateMac2(void);
+    144          static void keGenerateKey(void);
+    145          static void keSwitchKey(void);
+    146          static void restartKEFired(void);
+    147          static void keSetTimeoutInSec(uint16_t timeout, void (*callback)(void));
+    148          static void mac1Conf(void);
+    149          static void mac2Conf(void);
+    150          
+    151          static void keSendInitiateKECommandRespHandler(ZCL_Notify_t *zclResp);
+    152          static void keSendEphemeralDataCommandRespHandler(ZCL_Notify_t *zclResp);
+    153          static void keSendConfirmKeyDataCommandRespHandler(ZCL_Notify_t *zclResp);
+    154          static void keSendTerminateKECommandRespHandler(ZCL_Notify_t *zclResp);
+    155          static void keMatchDescResp(ZDO_ZdpResp_t *zdpResp);
+    156          
+    157          static void keCpyReverse(uint8_t *dst, uint8_t *src, uint8_t size);
+    158          static bool keIsRequestInProgress(void);
+    159          static void keStopKe(ZCL_SecurityStatus_t status);
+    160          static void keTimeoutHandler(void);
+    161          static void keCancelTimeout(void);
+    162          
+    163          static int ZCL_GetAnalogRandomSequence(uint8_t *buffer, unsigned long size);
+    164          
+    165          static ZCL_TKEStatus_t keInitiateKeReqProcessing(ZCL_Addressing_t *addressing,
+    166            ZCL_InitiateKeyEstablishmentCommand_t *payload);
+    167          static ZCL_TKEStatus_t keInitiateKeRespProcessing(ZCL_Addressing_t *addressing,
+    168            ZCL_InitiateKeyEstablishmentCommand_t *payload);
+    169          static ZCL_TKEStatus_t keEphemeralDataReqProcessing(ZCL_Addressing_t *addressing,
+    170            ZCL_EphemeralDataCommand_t *payload);
+    171          static ZCL_TKEStatus_t keEphemeralDataRespProcessing(ZCL_Addressing_t *addressing,
+    172            ZCL_EphemeralDataCommand_t *payload);
+    173          static ZCL_TKEStatus_t keConfirmKeyReqProcessing(ZCL_Addressing_t *addressing,
+    174            ZCL_ConfirmKeyCommand_t *payload);
+    175          static ZCL_TKEStatus_t keConfirmKeyRespProcessing(ZCL_Addressing_t *addressing,
+    176            ZCL_ConfirmKeyCommand_t *payload);
+    177          
+    178          #ifdef _ZSE_CERTIFICATION_
+    179          void delayTimerFired(void);
+    180          #endif // _ZSE_CERTIFICATION_
+    181          
+    182          /******************************************************************************
+    183                             Global functions prototype section
+    184          ******************************************************************************/
+    185          #ifdef _ZSE_CERTIFICATION_
+    186          void setKETimeouts(uint8_t ephemeralTimeout, uint8_t confirmTimeout, uint8_t ephemeralDelay, uint8_t confirmDelay);
+    187          void setBadCertificatesProcessing(void);
+    188          void setOutOfOrderResponse(void);
+    189          #endif // _ZSE_CERTIFICATION_
+    190          
+    191          /******************************************************************************
+    192                             Local variables section
+    193          ******************************************************************************/
+    194          static ZCL_KEClusterServerAttributes_t keClusterServerAttributes = ZCL_DEFINE_EK_CLUSTER_SERVER_ATTRIBUTES();
+    195          static ZCL_KEClusterCommands_t keClusterServerCommands =
+    196          {
+    197            KE_CLUSTER_COMMANDS(initiateKECommandIndHandler, NULL, ephemeralDataCommandIndHandler, NULL,
+    198                                confirmKeyDataCommandIndHandler, NULL, terminateKECommandIndHandler, NULL)
+    199          };
+    200          static ZCL_Cluster_t keClusterServer = ZCL_DEFINE_KE_CLUSTER_SERVER(&keClusterServerAttributes, &keClusterServerCommands);
+    201          
+    202          static ZCL_KEClusterClientAttributes_t keClusterClientAttributes = ZCL_DEFINE_EK_CLUSTER_CLIENT_ATTRIBUTES();
+    203          static ZCL_KEClusterCommands_t keClusterClientCommands =
+    204          {
+    205            KE_CLUSTER_COMMANDS(NULL, initiateKECommandIndHandler, NULL, ephemeralDataCommandIndHandler, NULL,
+    206                                confirmKeyDataCommandIndHandler, NULL, terminateKECommandIndHandler)
+    207          };
+    208          static ZCL_Cluster_t keClusterClient = ZCL_DEFINE_KE_CLUSTER_CLIENT(&keClusterClientAttributes, &keClusterClientCommands);
+    209          
+    210          
+    211          static ZCL_Request_t                          keZclReq;
+    212          static ZCL_KECommandPayload_t                 keCommandPayloadBuffer;
+    213          static ZCL_Request_t                          keTerminateZclReq;
+    214          static ZCL_TerminateKeyEstablishmentCommand_t keTerminateKEPayload;
+    215          
+    216          static SYS_Timer_t          keApsTimer;
+    217          static ZDO_ZdpReq_t         zdpReq; //Needed for certain discovery
+    218          static ZclKEClusterState_t  keState             = ZCL_KE_CLUSTER_INITIAL_STATE;
+    219          static bool  keTerminateReqBusy = false;
+    220          
+    221          
+    222          //For Certicom usage
+    223          static unsigned char keLocalEphemeralPrivateKey[SECT163K1_PRIVATE_KEY_SIZE];
+    224          static unsigned char keLocalEphemeralPublicKey[SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE];
+    225          static unsigned char keLocalKeyBits[SECT163K1_SHARED_SECRET_SIZE];
+    226          
+    227          static unsigned char keRemoteCertificate[SECT163K1_CERTIFICATE_SIZE];
+    228          static unsigned char keRemoteEphemeralPublicKey[SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE];
+    229          
+    230          static uint8_t digest1[AES_MMO_HASH_SIZE];
+    231          static uint8_t digest2[AES_MMO_HASH_SIZE];
+    232          static uint8_t macvHash[AES_MMO_HASH_SIZE];
+    233          static uint8_t macuHash[AES_MMO_HASH_SIZE];
+    234          static uint8_t receivedMacuHash[AES_MMO_HASH_SIZE];
+    235          
+    236          static ZclKeMacBuffer_t GUARDED_STRUCT(macBuf);
+    237          
+    238          static SSP_KeyedHashMacReq_t sspKeyedHashReq;
+    239          
+    240          #ifdef _ENDDEVICE_
+    241          static uint32_t keIndirectPollRate = ZCL_INDIRECT_POLL_RATE_DURING_KE * 1000;
+    242          #endif // _ENDDEVICE_
+    243          
+    244          static ShortAddr_t keRemoteShortAddr = ZCL_KE_INVALID_SHORT_ADDRESS;
+    245          static Endpoint_t  keRemoteEndpoint  = ZCL_KE_INVALID_ENDPOINT;
+    246          static uint16_t    keRemoteEphemeralDataGenerateTime;
+    247          static uint16_t    keRemoteConfirmKeyGenerateTime;
+    248          
+    249          static uint8_t buffForRandSeq[ZCL_KE_INITIATE_RANDOM_SEQ_SIZE];
+    250          static bool postponedProcessing = false;
+    251          static uint8_t keSeqNum;
+    252          
+    253          #ifdef _ZSE_CERTIFICATION_
+    254          static uint8_t ephemeralDataGenerateTime = ZCL_KE_EPHEMERAL_DATA_GENERATE_TIME;
+    255          static uint8_t confirmKeyGenerateTime = ZCL_KE_CONFIRM_KEY_GENERATE_TIME;
+    256          static uint8_t ephemeralDataGenerateDelay;
+    257          static uint8_t confirmKeyGenerateDelay;
+    258          static HAL_AppTimer_t delayTimer = {
+    259            .mode     = TIMER_ONE_SHOT_MODE,
+    260            .callback = delayTimerFired
+    261          };
+    262          bool useDelay = false;
+    263          bool sendTooLongCertificate = false;
+    264          bool passBadCertificates = false;
+    265          bool outOfOrder = false;
+    266          int8_t certAdditionLength = 0;
+    267          #endif // _ZSE_CERTIFICATION_
+    268          
+    269          /******************************************************************************
+    270                             Global variables section
+    271          ******************************************************************************/
+    272          Endpoint_t keLocalEndpoint = ZCL_KE_INVALID_ENDPOINT;
+    273          bool keSrvMode = false;
+    274          ZCL_KECertificateDescriptor_t keCertificateDescriptor;
+    275          ExtAddr_t keRemoteExtAddr = ZCL_KE_INVALID_EXT_ADDRESS;
+    276          
+    277          /******************************************************************************
+    278                             Implementation section
+    279          ******************************************************************************/
+    280          /*************************************************************************************//**
+    281            \brief Validates incoming command.
+    282          
+    283            \param addressing - command's source address information
+    284          
+    285            \return true - if command is valid, false - otherwise.
+    286          ******************************************************************************************/
+    287          static inline bool keIncomingCmdIsValid(ZCL_Addressing_t *addressing)
+    288          {
+    289            if (!keSrvMode)
+    290              if (addressing->sequenceNumber != keSeqNum)
+    291                return false;
+    292          
+    293            return ((keRemoteShortAddr == addressing->addr.shortAddress) &&
+    294              ((APS_EXT_ADDRESS != addressing->addrMode) || (keRemoteExtAddr == addressing->addr.extAddress)) &&
+    295              (keRemoteEndpoint == addressing->endpointId));
+    296          }
+    297          
+    298          /*************************************************************************************//**
+    299            \brief Resets KE management module.
+    300          ******************************************************************************************/
+    301          void keReset(void)
+    302          {
+    303            keRemoteExtAddr   = ZCL_KE_INVALID_EXT_ADDRESS;
+    304            keRemoteShortAddr = ZCL_KE_INVALID_SHORT_ADDRESS;
+    305            keRemoteEndpoint  = ZCL_KE_INVALID_ENDPOINT;
+    306            keSrvMode         = false;
+    307          
+    308            keLocalEndpoint   = ZCL_KE_INVALID_ENDPOINT;
+    309            memset(&keCertificateDescriptor, 0, sizeof(keCertificateDescriptor));
+    310          }
+    311          
+    312          /*************************************************************************************//**
+    313            \brief Inits KE management module.
+    314          
+    315            \return true if success, false otherwise.
+    316          ******************************************************************************************/
+    317          bool keInitCluster(ExtAddr_t *remoteAddress)
+    318          {
+    319            sysAssert(remoteAddress, KE_INIT_CLUSTER_0);
+    320            COPY_EXT_ADDR(keRemoteExtAddr, *remoteAddress);
+    321          
+    322            //Check the initial settings
+    323            if ((ZCL_KE_INVALID_EXT_ADDRESS == keRemoteExtAddr) ||
+    324                (ZCL_KE_INVALID_ENDPOINT == keLocalEndpoint))
+    325              return false;
+    326          
+    327            //Generate Random Seq using RF
+    328            SYS_GetRandomSequence(buffForRandSeq, ZCL_KE_INITIATE_RANDOM_SEQ_SIZE);
+    329          
+    330            keState = ZCL_KE_CLUSTER_IDLE_STATE;
+    331          
+    332            return true;
+    333          }
+    334          
+    335          /**************************************************************************//**
+    336            \brief This function copies size bytes of random data into buffer.
+    337          
+    338            \param: buffer - This is an unsigned char array of size at least sz to hold
+    339             the random data.
+    340            \param: size - The number of bytes of random data to compute and store.
+    341          
+    342            \return:  0 Indicates successful completion.
+    343          ******************************************************************************/
+    344          static int ZCL_GetAnalogRandomSequence(uint8_t *buffer, unsigned long size)
+    345          {
+    346            memcpy(buffer, buffForRandSeq, size);
+    347            if (MAC_IsOwnExtAddr(&keRemoteExtAddr))
+    348              SYS_GetRandomSequence(buffForRandSeq, ZCL_KE_INITIATE_RANDOM_SEQ_SIZE);
+    349            return 0;
+    350          }
+    351          
+    352          /*************************************************************************************//**
+    353            \brief Starts KE management module.
+    354          
+    355            \return true if success, false otherwise.
+    356          ******************************************************************************************/
+    357          bool keStartKE(void)
+    358          {
+    359            if (ZCL_KE_CLUSTER_IDLE_STATE != keState)
+    360              return false;
+    361          
+    362            if (!MAC_IsOwnExtAddr(&keRemoteExtAddr))
+    363            {
+    364              const ShortAddr_t *shortAddr = NWK_GetShortByExtAddress(&keRemoteExtAddr);
+    365          
+    366              if (shortAddr)
+    367                keRemoteShortAddr = *shortAddr;
+    368              else
+    369                // this is only an assumption. coordinator is trust center!!!
+    370                keRemoteShortAddr = 0;
+    371              keMakeMatchDescReq();
+    372            }
+    373          
+    374            return true;
+    375          }
+    376          
+    377          /*************************************************************************************//**
+    378            \brief Performs discovery of KE Cluster on ESP device
+    379          ******************************************************************************************/
+    380          static void keMakeMatchDescReq(void)
+    381          {
+    382            ZDO_MatchDescReq_t *zdoMatchDescReq = &zdpReq.req.reqPayload.matchDescReq;
+    383          
+    384            keRemoteEndpoint = ZCL_KE_INVALID_ENDPOINT;
+    385          
+    386            zdpReq.ZDO_ZdpResp = keMatchDescResp;
+    387            zdpReq.reqCluster = MATCH_DESCRIPTOR_CLID;
+    388            zdpReq.dstAddrMode = APS_SHORT_ADDRESS;
+    389            zdpReq.dstAddress.shortAddress = keRemoteShortAddr;
+    390          
+    391            zdoMatchDescReq->nwkAddrOfInterest = keRemoteShortAddr;
+    392            zdoMatchDescReq->profileId = PROFILE_ID_SMART_ENERGY;
+    393            zdoMatchDescReq->numInClusters = 1;
+    394            zdoMatchDescReq->numOutClusters = 0;
+    395            zdoMatchDescReq->inClusterList[0] = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+    396          
+    397            keState = ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_SENDING_STATE;
+    398          
+    399            ZDO_ZdpReq(&zdpReq);
+    400          }
+    401          
+    402          /*************************************************************************************//**
+    403            \brief ZDO ZDP Match Descriptor Response handler.
+    404          
+    405            \param zdpResp - response parameters' structure. See ZDO_ZdpResp_t type declaration
+    406              for details.
+    407          ******************************************************************************************/
+    408          static void keMatchDescResp(ZDO_ZdpResp_t *zdpResp)
+    409          {
+    410            ZDO_MatchDescResp_t *zdoMatchResp = &zdpResp->respPayload.matchDescResp;
+    411          
+    412            if (ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_SENDING_STATE == keState)
+    413            {
+    414              if (!keSrvMode)
+    415              {
+    416                if (ZDO_SUCCESS_STATUS == zdpResp->respPayload.status)
+    417                {
+    418                  keRemoteEndpoint = zdoMatchResp->matchList[0];
+    419                  keRemoteShortAddr = zdoMatchResp->nwkAddrOfInterest;
+    420                }
+    421                else if (ZDO_CMD_COMPLETED_STATUS == zdpResp->respPayload.status)
+    422                {
+    423                  if ((ZCL_KE_INVALID_ENDPOINT != keRemoteEndpoint) &&
+    424                      (ZCL_KE_INVALID_SHORT_ADDRESS != keRemoteShortAddr))
+    425                  {
+    426                    keSendInitiateKECommand();
+    427                  }
+    428                  else
+    429                  { // match discovery was completed but response was not received
+    430                    keState = ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_TERMINATE_STATE;
+    431                    keStopKe(ZCL_SECURITY_STATUS_DISCOVERY_FAIL);
+    432                  }
+    433                }
+    434                else
+    435                {
+    436                  keStopKe(ZCL_SECURITY_STATUS_DISCOVERY_FAIL);
+    437                }
+    438              }
+    439            }
+    440            else
+    441            {
+    442              if (ZDO_CMD_COMPLETED_STATUS == zdpResp->respPayload.status)
+    443                keStopKe(ZCL_SECURITY_STATUS_TERMINATED);
+    444            }
+    445          
+    446            SYS_PostEvent(BC_EVENT_KE_CLUSTER_MATCH_DESC_RESP, (uintptr_t)zdpResp);
+    447          }
+    448          
+    449          /*************************************************************************************//**
+    450            \brief Sends Key Establishment command (request or response - depends on keSrvMode).
+    451          ******************************************************************************************/
+    452          static void keSendInitiateKECommand(void)
+    453          {
+    454            ZCL_InitiateKeyEstablishmentCommand_t *buf = &keCommandPayloadBuffer.initiateKE;
+    455          
+    456          #if CERTICOM_SUPPORT == 1
+    457            //Generating the ephemeral public and private Key Pair
+    458            ZSE_ECCGenerateKey(keLocalEphemeralPrivateKey, keLocalEphemeralPublicKey, ZCL_GetAnalogRandomSequence, yield, YIELD_LEVEL);
+    459          #endif // CERTICOM_SUPPORT == 1
+    460          
+    461            //Prepare payload
+    462            buf->keyEstablishmentSuite        = ZCL_KE_CBKE_ECMQV_KEY_ESTABLISHMENT_SUITE_ID;
+    463          #ifdef _ZSE_CERTIFICATION_
+    464            buf->ephemeralDataGenerateTime    = ephemeralDataGenerateTime;
+    465            buf->confirmKeyGenerateTime       = confirmKeyGenerateTime;
+    466          #else
+    467            buf->ephemeralDataGenerateTime    = ZCL_KE_EPHEMERAL_DATA_GENERATE_TIME;
+    468            buf->confirmKeyGenerateTime       = ZCL_KE_CONFIRM_KEY_GENERATE_TIME;
+    469          #endif // _ZSE_CERTIFICATION_
+    470          
+    471            memcpy(buf->identify, &keCertificateDescriptor.certificate, sizeof(ZclCertificate_t));
+    472          
+    473            if (!keSrvMode)
+    474            {
+    475              //ZCL KE Cluster Initiate Key Establishment Command Request sending
+    476              keZclReq.id = ZCL_KE_INITIATE_KEY_ESTABLISHMENT_REQUEST_COMMAND_ID;
+    477              keZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_SERVER;
+    478              keSeqNum = ZCL_GetNextSeqNumber();
+    479              keZclReq.dstAddressing.sequenceNumber = keSeqNum;
+    480          
+    481              // the crutch to asynchornize data request
+    482          #ifdef _ENDDEVICE_
+    483              // store config server's indirect poll rate
+    484              uint32_t oldIndirectPollRate;
+    485              CS_ReadParameter(CS_INDIRECT_POLL_RATE_ID, &oldIndirectPollRate);
+    486              CS_WriteParameter(CS_INDIRECT_POLL_RATE_ID, &keIndirectPollRate);
+    487          
+    488              keIndirectPollRate = oldIndirectPollRate;
+    489          
+    490              if (ZDO_StopSyncReq() == ZDO_SUCCESS_STATUS)
+    491                ZDO_StartSyncReq();
+    492          #endif /* _ENDDEVICE_ */
+    493          
+    494            }
+    495            else
+    496            {
+    497              //ZCL KE Cluster Initiate Key Establishment Command Response sending
+    498              keZclReq.id = ZCL_KE_INITIATE_KEY_ESTABLISHMENT_RESPONSE_COMMAND_ID;
+    499              keZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_CLIENT;
+    500              keZclReq.dstAddressing.sequenceNumber = keSeqNum;
+    501            }
+    502          
+    503            keZclReq.dstAddressing.profileId  = PROFILE_ID_SMART_ENERGY;
+    504            keZclReq.dstAddressing.clusterId  = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+    505            keZclReq.dstAddressing.endpointId = keRemoteEndpoint;
+    506            keZclReq.dstAddressing.addrMode   = APS_SHORT_ADDRESS;
+    507            keZclReq.dstAddressing.addr.shortAddress = keRemoteShortAddr;
+    508            keZclReq.endpointId = keLocalEndpoint;
+    509            keZclReq.requestPayload = (uint8_t *) buf;
+    510            keZclReq.requestLength  = sizeof(ZCL_InitiateKeyEstablishmentCommand_t);
+    511          #ifdef _ZSE_CERTIFICATION_
+    512            if (sendTooLongCertificate)
+    513            {
+    514              keZclReq.requestLength += certAdditionLength;
+    515              sendTooLongCertificate = false;
+    516            }
+    517          #endif // _ZSE_CERTIFICATION_
+    518          
+    519            keZclReq.defaultResponse = 1;
+    520            keZclReq.ZCL_Notify = keSendInitiateKECommandRespHandler;
+    521            keState = ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_SENDING_STATE;
+    522            ZCL_CommandReq(&keZclReq);
+    523          }
+    524          
+    525          /*************************************************************************************//**
+    526            \brief Response handler for KE Initiate KE Command.
+    527          
+    528            \param zclResp - pointer to response parameters structure. See ZCL_responce_t declaration.
+    529          ******************************************************************************************/
+    530          static void keSendInitiateKECommandRespHandler(ZCL_Notify_t *zclResp)
+    531          {
+    532            sysAssert(ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_SENDING_STATE == keState, KE_WRONG_STATE_0);
+    533            if (ZCL_SUCCESS_STATUS == zclResp->status)
+    534            {
+    535              /* If response was already received - continue Key Establishment */
+    536              if (postponedProcessing)
+    537              {
+    538          #ifdef _ZSE_CERTIFICATION_
+    539                if (useDelay)
+    540                {
+    541                  delayTimer.interval = (uint32_t)ephemeralDataGenerateDelay * 1000;
+    542                  HAL_StartAppTimer(&delayTimer);
+    543                }
+    544                else
+    545          #endif // _ZSE_CERTIFICATION_
+    546                  keSendEphemeralDataCommand();
+    547                postponedProcessing = false;
+    548                return;
+    549              }
+    550          
+    551              if (!keSrvMode)
+    552              {
+    553                keState = ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_WAITING_STATE;
+    554                keSetTimeoutInSec(ZCL_KE_INITIATE_RESPONSE_WAITING_TIME, keTimeoutHandler);
+    555              }
+    556              else
+    557              {
+    558                keState = ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_WAITING_STATE;
+    559                keSetTimeoutInSec(keRemoteEphemeralDataGenerateTime, keTimeoutHandler);
+    560              }
+    561            }
+    562            else
+    563              keStopKe(ZCL_SECURITY_STATUS_SEND_COMMAND_FAIL);
+    564          }
+    565          
+    566          /*************************************************************************************//**
+    567            \brief Indicates that KE Initiate Command is received.
+    568          
+    569            \param addressing - command's source address information
+    570            \param payloadLength - command's payload length
+    571            \param payload - command's payload
+    572            \return command's processing status, in case if not SUCCESS - default response will be
+    573              generated
+    574          ******************************************************************************************/
+    575          static ZCL_Status_t initiateKECommandIndHandler(ZCL_Addressing_t *addressing,
+    576            uint8_t payloadLength, ZCL_InitiateKeyEstablishmentCommand_t *payload)
+    577          {
+    578            ZclCertificate_t *zclCertificate = (ZclCertificate_t *) payload->identify;
+    579            ZCL_TKEStatus_t tkeStatus = ZCL_TKE_NO_STATUS;
+    580          
+    581            if (ZCL_CLUSTER_SIDE_CLIENT == addressing->clusterSide)
+    582              //Server (Responder)
+    583              keSrvMode = true;
+    584            else
+    585              //Client (Initiator)
+    586              keSrvMode = false;
+    587          
+    588            keRemoteEphemeralDataGenerateTime = (uint16_t)payload->ephemeralDataGenerateTime + 2;
+    589            keRemoteConfirmKeyGenerateTime = (uint16_t)payload->confirmKeyGenerateTime + 2;
+    590            keCancelTimeout();
+    591          
+    592          #ifdef _ZSE_CERTIFICATION_
+    593            if (!passBadCertificates)
+    594          #endif // _ZSE_CERTIFICATION_
+    595            {
+    596              if (sizeof(ZCL_InitiateKeyEstablishmentCommand_t) <= payloadLength)
+    597              {
+    598                if (zclCertificate->issuer != keCertificateDescriptor.certificate.issuer)
+    599                {
+    600                  tkeStatus = ZCL_TKE_UNKNOWN_ISSUER_STATUS;
+    601                }
+    602                else if (ZCL_KE_CBKE_ECMQV_KEY_ESTABLISHMENT_SUITE_ID != payload->keyEstablishmentSuite)
+    603                {
+    604                  tkeStatus = ZCL_TKE_UNSUPPORTED_SUITE_STATUS;
+    605                }
+    606                else if ((ZCL_KE_INVALID_EPHEMERAL_DATA_GENERATE_TIME == payload->ephemeralDataGenerateTime) ||
+    607                        (ZCL_KE_INVALID_CONFIRM_KEY_GENERATE_TIME == payload->confirmKeyGenerateTime))
+    608                {
+    609                  tkeStatus = ZCL_TKE_BAD_MESSAGE_STATUS;
+    610                }
+    611                else if (keSrvMode)
+    612                {
+    613                  keSeqNum = addressing->sequenceNumber;
+    614                  tkeStatus = keInitiateKeReqProcessing(addressing, payload);
+    615                }
+    616                else
+    617                {
+    618                  tkeStatus = keInitiateKeRespProcessing(addressing, payload);
+    619                }
+    620              }
+    621              else
+    622                tkeStatus = ZCL_TKE_BAD_MESSAGE_STATUS;
+    623            }
+    624          #ifdef _ZSE_CERTIFICATION_
+    625            if (passBadCertificates)
+    626            {
+    627              keSeqNum = addressing->sequenceNumber;
+    628              tkeStatus = keInitiateKeReqProcessing(addressing, payload);
+    629            }
+    630          #endif // _ZSE_CERTIFICATION_
+    631            if (ZCL_TKE_NO_STATUS != tkeStatus)
+    632            {
+    633              keSendTerminateKECommand(addressing->addr.shortAddress, addressing->endpointId, tkeStatus);
+    634            }
+    635          
+    636            SYS_PostEvent((keSrvMode) ? BC_EVENT_KE_CLUSTER_INITIATE_KE_REQ : BC_EVENT_KE_CLUSTER_INITIATE_KE_RESP, (uintptr_t)payload);
+    637          
+    638            return ZCL_SUCCESS_STATUS;
+    639          }
+    640          
+    641          /*************************************************************************************//**
+    642            \brief Processes Initiate Key Establishment Request command.
+    643          
+    644            \param addressing - command's source address information
+    645            \param payload - command payload
+    646          
+    647            \return processing status
+    648          ******************************************************************************************/
+    649          static ZCL_TKEStatus_t keInitiateKeReqProcessing(ZCL_Addressing_t *addressing,
+    650            ZCL_InitiateKeyEstablishmentCommand_t *payload)
+    651          {
+    652            ExtAddr_t keRemoteExtAddrTmp;
+    653            ZclCertificate_t *zclCertificate = (ZclCertificate_t *) payload->identify;
+    654          
+    655            //Server (Responder)
+    656            if (ZCL_KE_CLUSTER_IDLE_STATE == keState)
+    657            {
+    658              //Save the client address (short and ext) and endpoint
+    659              keRemoteShortAddr = addressing->addr.shortAddress;
+    660              keRemoteEndpoint = addressing->endpointId;
+    661              keRemoteExtAddr = addressing->addr.extAddress;
+    662          
+    663              if (APS_EXT_ADDRESS != addressing->addrMode)
+    664              {
+    665                //There is no information about client in nwkAddrMapTable
+    666                //Let's get it from the Implicit Certificate
+    667                keRemoteExtAddr = zclCertificate->subject;
+    668              }
+    669              else
+    670              {
+    671                keCpyReverse((uint8_t *) &keRemoteExtAddrTmp, (uint8_t *) &keRemoteExtAddr, sizeof(ExtAddr_t));
+    672          #ifndef _ZSE_CERTIFICATION_
+    673                if (!IS_EQ_EXT_ADDR(keRemoteExtAddrTmp, zclCertificate->subject))
+    674                  return ZCL_TKE_BAD_MESSAGE_STATUS;
+    675          #endif
+    676              }
+    677          
+    678              memcpy(keRemoteCertificate, payload->identify, SECT163K1_CERTIFICATE_SIZE);
+    679          #ifdef _ZSE_CERTIFICATION_
+    680              if (outOfOrder)
+    681                keSendEphemeralDataCommand();
+    682              else
+    683          #endif // _ZSE_CERTIFICATION
+    684                keSendInitiateKECommand();
+    685          
+    686            }
+    687            else
+    688              return ZCL_TKE_NO_RESOURCES_STATUS;
+    689          
+    690            return ZCL_TKE_NO_STATUS;
+    691          }
+    692          
+    693          /*************************************************************************************//**
+    694            \brief Processes Initiate Key Establishment Response command.
+    695          
+    696            \param addressing - command's source address information
+    697            \param payload - command payload
+    698          
+    699            \return processing status
+    700          ******************************************************************************************/
+    701          static ZCL_TKEStatus_t keInitiateKeRespProcessing(ZCL_Addressing_t *addressing,
+    702            ZCL_InitiateKeyEstablishmentCommand_t *payload)
+    703          {
+    704            //Client (Initiator)
+    705            postponedProcessing = (ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_SENDING_STATE == keState);
+    706          
+    707            if (ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_WAITING_STATE == keState || postponedProcessing)
+    708            {
+    709              if (keIncomingCmdIsValid(addressing))
+    710              {
+    711                ExtAddr_t keRemoteExtAddrTmp;
+    712                ZclCertificate_t *zclCertificate = (ZclCertificate_t *) payload->identify;
+    713          
+    714                keCpyReverse((uint8_t *) &keRemoteExtAddrTmp, (uint8_t *) &keRemoteExtAddr, sizeof(ExtAddr_t));
+    715                if (!IS_EQ_EXT_ADDR(keRemoteExtAddrTmp, zclCertificate->subject))
+    716                  return ZCL_TKE_BAD_MESSAGE_STATUS;
+    717          
+    718                memcpy(keRemoteCertificate, payload->identify, SECT163K1_CERTIFICATE_SIZE);
+    719                if (!postponedProcessing)
+    720                {
+    721          #ifdef _ZSE_CERTIFICATION_
+    722                  if (useDelay)
+    723                  {
+    724                    delayTimer.interval = (uint32_t)ephemeralDataGenerateDelay * 1000;
+    725                    HAL_StartAppTimer(&delayTimer);
+    726                  }
+    727                  else
+    728          #endif // _ZSE_CERTIFICATION_
+    729                    keSendEphemeralDataCommand();
+    730                }
+    731                return ZCL_TKE_NO_STATUS;
+    732              }
+    733            }
+    734          
+    735            postponedProcessing = false;
+    736            return ZCL_TKE_BAD_MESSAGE_STATUS;
+    737          }
+    738          
+    739          /*************************************************************************************//**
+    740            \brief Sends Ephemeral Data KE Command.
+    741          ******************************************************************************************/
+    742          static void keSendEphemeralDataCommand(void)
+    743          {
+    744            ZCL_EphemeralDataCommand_t *buf = &keCommandPayloadBuffer.ephemeralData;
+    745          
+    746            //Prepare payload
+    747            memcpy(buf->data, keLocalEphemeralPublicKey, SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE);
+    748            if (!keSrvMode)
+    749            {
+    750              //ZCL KE Cluster Initiate Key Establishment Command Request sending
+    751              keZclReq.id = ZCL_KE_EPHEMERAL_DATA_REQUEST_COMMAND_ID;
+    752              keZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_SERVER;
+    753              keSeqNum = ZCL_GetNextSeqNumber();
+    754              keZclReq.dstAddressing.sequenceNumber = keSeqNum;
+    755          
+    756              // the crutch to asynchornize data request
+    757          #ifdef _ENDDEVICE_
+    758              if (ZDO_StopSyncReq() == ZDO_SUCCESS_STATUS)
+    759                ZDO_StartSyncReq();
+    760          #endif /* _ENDDEVICE_ */
+    761            }
+    762            else
+    763            {
+    764              //ZCL KE Cluster Initiate Key Establishment Command Response sending
+    765              keZclReq.id = ZCL_KE_EPHEMERAL_DATA_RESPONSE_COMMAND_ID;
+    766              keZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_CLIENT;
+    767              keZclReq.dstAddressing.sequenceNumber = keSeqNum;
+    768            }
+    769            keZclReq.dstAddressing.profileId  = PROFILE_ID_SMART_ENERGY;
+    770            keZclReq.dstAddressing.clusterId  = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+    771            keZclReq.dstAddressing.endpointId = keRemoteEndpoint;
+    772            keZclReq.dstAddressing.addrMode   = APS_SHORT_ADDRESS;
+    773            keZclReq.dstAddressing.addr.shortAddress = keRemoteShortAddr;
+    774            keZclReq.endpointId = keLocalEndpoint;
+    775            keZclReq.requestPayload = (uint8_t *) buf;
+    776            keZclReq.requestLength  = sizeof(ZCL_EphemeralDataCommand_t);
+    777            keZclReq.defaultResponse = 1;
+    778            keZclReq.ZCL_Notify = keSendEphemeralDataCommandRespHandler;
+    779            keState = ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_SENDING_STATE;
+    780          
+    781            ZCL_CommandReq(&keZclReq);
+    782          }
+    783          
+    784          /*************************************************************************************//**
+    785            \brief Response handler for KE Ephemeral Data Command.
+    786          
+    787            \param zclResp - pointer to response parameters structure. See ZCL_responce_t declaration.
+    788          ******************************************************************************************/
+    789          static void keSendEphemeralDataCommandRespHandler(ZCL_Notify_t *zclResp)
+    790          {
+    791            sysAssert(ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_SENDING_STATE == keState, KE_WRONG_STATE_1);
+    792            if (ZCL_SUCCESS_STATUS == zclResp->status)
+    793            {
+    794              if (!keSrvMode)
+    795              {
+    796                keState = ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_WAITING_STATE;
+    797                keSetTimeoutInSec(keRemoteEphemeralDataGenerateTime, keTimeoutHandler);
+    798              }
+    799              else
+    800              {
+    801                keSetTimeoutInSec(keRemoteConfirmKeyGenerateTime, keTimeoutHandler);
+    802                keGenerateKey();
+    803              }
+    804            }
+    805            else
+    806              keStopKe(ZCL_SECURITY_STATUS_SEND_COMMAND_FAIL);
+    807          }
+    808          
+    809          /*************************************************************************************//**
+    810            \brief Indicates that KE Ephemeral Data Command is received.
+    811          
+    812            \param addressing - command's source address information
+    813            \param payloadLength - command's payload length
+    814            \param payload - command's payload
+    815            \return command's processing status, in case if not SUCCESS - default response will be
+    816              generated
+    817          ******************************************************************************************/
+    818          static ZCL_Status_t ephemeralDataCommandIndHandler(ZCL_Addressing_t *addressing,
+    819            uint8_t payloadLength, ZCL_EphemeralDataCommand_t *payload)
+    820          {
+    821            ZCL_TKEStatus_t tkeStatus = ZCL_TKE_NO_STATUS;
+    822            keCancelTimeout();
+    823          
+    824            (void) payloadLength;
+    825          
+    826            if (ZCL_CLUSTER_SIDE_CLIENT == addressing->clusterSide)
+    827              //Server (Responder)
+    828              keSrvMode = true;
+    829            else
+    830              //Client (Initiator)
+    831              keSrvMode = false;
+    832          
+    833            //Some parameters checking
+    834            if (keIncomingCmdIsValid(addressing))
+    835            {
+    836              if (keSrvMode)
+    837              {
+    838                keSeqNum = addressing->sequenceNumber;
+    839                tkeStatus = keEphemeralDataReqProcessing(addressing, payload);
+    840              }
+    841              else
+    842                tkeStatus = keEphemeralDataRespProcessing(addressing, payload);
+    843            }
+    844            else
+    845              tkeStatus = ZCL_TKE_BAD_MESSAGE_STATUS;
+    846          
+    847            if (ZCL_TKE_NO_STATUS != tkeStatus)
+    848            {
+    849              keSendTerminateKECommand(addressing->addr.shortAddress, addressing->endpointId, tkeStatus);
+    850            }
+    851          
+    852            SYS_PostEvent((keSrvMode) ? BC_EVENT_KE_CLUSTER_EPH_DATA_REQ : BC_EVENT_KE_CLUSTER_EPH_DATA_RESP, (uintptr_t)payload);
+    853          
+    854            return ZCL_SUCCESS_STATUS;
+    855          }
+    856          
+    857          /*************************************************************************************//**
+    858            \brief Processes Ephemeral Data Request command.
+    859          
+    860            \param addressing - command's source address information
+    861            \param payload - command payload
+    862          
+    863            \return processing status
+    864          ******************************************************************************************/
+    865          static ZCL_TKEStatus_t keEphemeralDataReqProcessing(ZCL_Addressing_t *addressing,
+    866            ZCL_EphemeralDataCommand_t *payload)
+    867          {
+    868            (void)addressing;
+    869            postponedProcessing = (ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_SENDING_STATE == keState);
+    870          
+    871            if (ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_WAITING_STATE == keState || postponedProcessing)
+    872            {
+    873              //Save the remote node Ephemeral Public Key
+    874              memcpy(keRemoteEphemeralPublicKey, payload->data, SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE);
+    875              if (!postponedProcessing)
+    876              {
+    877          #ifdef _ZSE_CERTIFICATION_
+    878                if (useDelay)
+    879                {
+    880                  delayTimer.interval = (uint32_t)ephemeralDataGenerateDelay * 1000;
+    881                  HAL_StartAppTimer(&delayTimer);
+    882                }
+    883                else
+    884          #endif // _ZSE_CERTIFICATION_
+    885                keSendEphemeralDataCommand();
+    886              }
+    887              return ZCL_TKE_NO_STATUS;
+    888            }
+    889            else
+    890              return ZCL_TKE_BAD_MESSAGE_STATUS;
+    891          }
+    892          
+    893          /*************************************************************************************//**
+    894            \brief Processes Ephemeral Data Response command.
+    895          
+    896            \param addressing - command's source address information
+    897            \param payload - command payload
+    898          
+    899            \return processing status
+    900          ******************************************************************************************/
+    901          static ZCL_TKEStatus_t keEphemeralDataRespProcessing(ZCL_Addressing_t *addressing,
+    902            ZCL_EphemeralDataCommand_t *payload)
+    903          {
+    904            (void)addressing;
+    905            postponedProcessing = (ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_SENDING_STATE == keState);
+    906          
+    907            if (ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_WAITING_STATE == keState || postponedProcessing)
+    908            {
+    909              //Save the remote node Ephemeral Public Key
+    910              memcpy(keRemoteEphemeralPublicKey, payload->data, SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE);
+    911              keGenerateKey();
+    912              return ZCL_TKE_NO_STATUS;
+    913            }
+    914            else
+    915              return ZCL_TKE_BAD_MESSAGE_STATUS;
+    916          }
+    917          
+    918          /*************************************************************************************//**
+    919            \brief Sends Confirm Key Data KE Command
+    920          ******************************************************************************************/
+    921          static void keSendConfirmKeyDataCommand(void)
+    922          {
+    923            ZCL_ConfirmKeyCommand_t *buf = &keCommandPayloadBuffer.confirmKey;
+    924          
+    925            //Prepare payload
+    926          
+    927            if (!keSrvMode)
+    928            {
+    929              memcpy(buf->mac, macuHash, AES_MMO_HASH_SIZE);
+    930          
+    931              //ZCL KE Cluster Initiate Key Establishment Command Request sending
+    932              keZclReq.id = ZCL_KE_CONFIRM_KEY_DATA_REQUEST_COMMAND_ID;
+    933              keZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_SERVER;
+    934              keSeqNum = ZCL_GetNextSeqNumber();
+    935              keZclReq.dstAddressing.sequenceNumber = keSeqNum;
+    936          
+    937              // the crutch to asynchornize data request
+    938          #ifdef _ENDDEVICE_
+    939              if (ZDO_StopSyncReq() == ZDO_SUCCESS_STATUS)
+    940                ZDO_StartSyncReq();
+    941          #endif /* _ENDDEVICE_ */
+    942          
+    943            }
+    944            else
+    945            {
+    946              memcpy(buf->mac, macvHash, AES_MMO_HASH_SIZE);
+    947              //ZCL KE Cluster Initiate Key Establishment Command Response sending
+    948              keZclReq.id = ZCL_KE_CONFIRM_KEY_DATA_RESPONSE_COMMAND_ID;
+    949              keZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_CLIENT;
+    950              keZclReq.dstAddressing.sequenceNumber = keSeqNum;
+    951            }
+    952            keZclReq.dstAddressing.profileId  = PROFILE_ID_SMART_ENERGY;
+    953            keZclReq.dstAddressing.clusterId  = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+    954            keZclReq.dstAddressing.endpointId = keRemoteEndpoint;
+    955            keZclReq.dstAddressing.addrMode   = APS_SHORT_ADDRESS;
+    956            keZclReq.dstAddressing.addr.shortAddress = keRemoteShortAddr;
+    957            keZclReq.endpointId = keLocalEndpoint;
+    958          
+    959            keZclReq.requestPayload = (uint8_t *) buf;
+    960            keZclReq.requestLength  = sizeof(ZCL_ConfirmKeyCommand_t);
+    961            keZclReq.defaultResponse = 1;
+    962            keZclReq.ZCL_Notify = keSendConfirmKeyDataCommandRespHandler;
+    963            keState = ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_SENDING_STATE;
+    964            ZCL_CommandReq(&keZclReq);
+    965          }
+    966          
+    967          /*************************************************************************************//**
+    968            \brief Response handler for KE Confirm Key Data Command.
+    969          
+    970            \param zclResp - pointer to response parameters structure. See ZCL_responce_t declaration.
+    971          ******************************************************************************************/
+    972          static void keSendConfirmKeyDataCommandRespHandler(ZCL_Notify_t *zclResp)
+    973          {
+    974            sysAssert(ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_SENDING_STATE == keState, KE_WRONG_STATE_2);
+    975            if (ZCL_SUCCESS_STATUS == zclResp->status)
+    976            {
+    977              if (!keSrvMode)
+    978              {
+    979                if (postponedProcessing)
+    980                {
+    981                  keSwitchKey();
+    982                  postponedProcessing = false;
+    983                }
+    984                else
+    985                {
+    986                  keState = ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_WAITING_STATE;
+    987                  keSetTimeoutInSec(keRemoteConfirmKeyGenerateTime, keTimeoutHandler);
+    988                }
+    989              }
+    990              else
+    991              {
+    992                keState = ZCL_KE_CLUSTER_IDLE_STATE;
+    993                keSwitchKey();
+    994              }
+    995            }
+    996            else
+    997              keStopKe(ZCL_SECURITY_STATUS_SEND_COMMAND_FAIL);
+    998          }
+    999          
+   1000          /*************************************************************************************//**
+   1001            \brief Indicates that KE Key Data Command is received.
+   1002          
+   1003            \param addressing - command's source address information
+   1004            \param payloadLength - command's payload length
+   1005            \param payload - command's payload
+   1006            \return command's processing status, in case if not SUCCESS - default response will be
+   1007              generated
+   1008          ******************************************************************************************/
+   1009          static ZCL_Status_t confirmKeyDataCommandIndHandler(ZCL_Addressing_t *addressing,
+   1010            uint8_t payloadLength, ZCL_ConfirmKeyCommand_t *payload)
+   1011          {
+   1012            ZCL_TKEStatus_t tkeStatus = ZCL_TKE_NO_STATUS;
+   1013          
+   1014            if (ZCL_CLUSTER_SIDE_CLIENT == addressing->clusterSide)
+   1015              //Server (Responder)
+   1016              keSrvMode = true;
+   1017            else
+   1018              //Client (Initiator)
+   1019              keSrvMode = false;
+   1020          
+   1021            keCancelTimeout();
+   1022            SYS_PostEvent((keSrvMode) ? BC_EVENT_KE_CLUSTER_CONF_KEY_REQ : BC_EVENT_KE_CLUSTER_CONF_KEY_RESP, (uintptr_t)payload);
+   1023          
+   1024            (void) payloadLength;
+   1025          
+   1026            //Some parameters checking
+   1027            if (keIncomingCmdIsValid(addressing))
+   1028            {
+   1029              if (keSrvMode)
+   1030              {
+   1031                keSeqNum = addressing->sequenceNumber;
+   1032                tkeStatus = keConfirmKeyReqProcessing(addressing, payload);
+   1033              }
+   1034              else
+   1035                tkeStatus = keConfirmKeyRespProcessing(addressing, payload);
+   1036            }
+   1037            else
+   1038              tkeStatus = ZCL_TKE_BAD_MESSAGE_STATUS;
+   1039          
+   1040            if (ZCL_TKE_NO_STATUS != tkeStatus)
+   1041            {
+   1042              keSendTerminateKECommand(addressing->addr.shortAddress, addressing->endpointId, tkeStatus);
+   1043            }
+   1044          
+   1045            return ZCL_SUCCESS_STATUS;
+   1046          }
+   1047          
+   1048          /*************************************************************************************//**
+   1049            \brief Processes Confirm Key Request command.
+   1050          
+   1051            \param addressing - command's source address information
+   1052            \param payload - command payload
+   1053          
+   1054            \return processing status
+   1055          ******************************************************************************************/
+   1056          static ZCL_TKEStatus_t keConfirmKeyReqProcessing(ZCL_Addressing_t *addressing,
+   1057            ZCL_ConfirmKeyCommand_t *payload)
+   1058          {
+   1059            (void)addressing;
+   1060          
+   1061            if (ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_WAITING_STATE == keState)
+   1062            { // data has already calculated. we can send reply
+   1063              if (0 == memcmp(macuHash, payload->mac, AES_MMO_HASH_SIZE))
+   1064              {
+   1065          #ifdef _ZSE_CERTIFICATION_
+   1066                if (useDelay)
+   1067                {
+   1068                  delayTimer.interval = (uint32_t)ephemeralDataGenerateDelay * 1000;
+   1069                  HAL_StartAppTimer(&delayTimer);
+   1070                }
+   1071                else
+   1072          #endif // _ZSE_CERTIFICATION_
+   1073                  keSendConfirmKeyDataCommand();
+   1074              }
+   1075              else
+   1076              {
+   1077          #ifdef _ZSE_CERTIFICATION_
+   1078                if (passBadCertificates)
+   1079                  keSendConfirmKeyDataCommand();//return ZCL_TKE_NO_STATUS;
+   1080                else
+   1081          #endif // _ZSE_CERTIFICATION_
+   1082                  return ZCL_TKE_BAD_KEY_CONFIRM_STATUS;
+   1083              }
+   1084            }
+   1085            else
+   1086            { // data has not been ready. Store received hash to compare later
+   1087              postponedProcessing = true;
+   1088              memcpy(receivedMacuHash, payload->mac, AES_MMO_HASH_SIZE);
+   1089            }
+   1090          
+   1091            return ZCL_TKE_NO_STATUS;
+   1092          }
+   1093          
+   1094          /*************************************************************************************//**
+   1095            \brief Processes Confirm Key Response command.
+   1096          
+   1097            \param addressing - command's source address information
+   1098            \param payload - command payload
+   1099          
+   1100            \return processing status
+   1101          ******************************************************************************************/
+   1102          static ZCL_TKEStatus_t keConfirmKeyRespProcessing(ZCL_Addressing_t *addressing,
+   1103            ZCL_ConfirmKeyCommand_t *payload)
+   1104          {
+   1105            (void)addressing;
+   1106            postponedProcessing = (ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_SENDING_STATE == keState);
+   1107          
+   1108            if (ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_WAITING_STATE == keState || postponedProcessing)
+   1109            {
+   1110          #ifdef _ENDDEVICE_
+   1111               // restore indirect poll rate
+   1112               uint32_t oldIndirectPollRate;
+   1113               CS_ReadParameter(CS_INDIRECT_POLL_RATE_ID, &oldIndirectPollRate);
+   1114               CS_WriteParameter(CS_INDIRECT_POLL_RATE_ID, &keIndirectPollRate);
+   1115          
+   1116               keIndirectPollRate = oldIndirectPollRate;
+   1117          #endif /* _ENDDEIVE_ */
+   1118              if (0 == memcmp(macvHash, payload->mac, AES_MMO_HASH_SIZE))
+   1119              {
+   1120                if (!postponedProcessing)
+   1121                  keSwitchKey();
+   1122              }
+   1123              else
+   1124              {
+   1125                return ZCL_TKE_BAD_KEY_CONFIRM_STATUS;
+   1126              }
+   1127            }
+   1128            else
+   1129              return ZCL_TKE_BAD_MESSAGE_STATUS;
+   1130          
+   1131            return ZCL_TKE_NO_STATUS;
+   1132          }
+   1133          
+   1134          /*************************************************************************************//**
+   1135            \brief Sends KE Termionate command with specific status.
+   1136          
+   1137            \param shortAddr - ahort destanation address of the command
+   1138            \param endpoint - command destination endpoint
+   1139            \param status - statu of KE Terminate command
+   1140          ******************************************************************************************/
+   1141          static void keSendTerminateKECommand(ShortAddr_t shortAddr, Endpoint_t endpoint, ZCL_TKEStatus_t status)
+   1142          {
+   1143            ZCL_TerminateKeyEstablishmentCommand_t *buf = &keTerminateKEPayload;
+   1144          
+   1145            if (!keTerminateReqBusy)
+   1146            {
+   1147              buf->statusCode = status;
+   1148              buf->waitTime = TERMINATE_BASE_WAIT_TIME + (SYS_GetRandomNumber() & 0xf);
+   1149              buf->keyEstablishmentSuite = ZCL_KE_CBKE_ECMQV_KEY_ESTABLISHMENT_SUITE_ID;
+   1150          
+   1151              keTerminateZclReq.id = ZCL_KE_TERMINATE_KEY_ESTABLISHMENT_COMMAND_ID;
+   1152              keTerminateZclReq.endpointId = keLocalEndpoint;
+   1153              keTerminateZclReq.dstAddressing.profileId  = PROFILE_ID_SMART_ENERGY;
+   1154              keTerminateZclReq.dstAddressing.clusterId  = ZCL_KEY_ESTABLISHMENT_CLUSTER_ID;
+   1155              keTerminateZclReq.dstAddressing.endpointId = endpoint;
+   1156              keTerminateZclReq.dstAddressing.addrMode   = APS_SHORT_ADDRESS;
+   1157              keTerminateZclReq.dstAddressing.addr.shortAddress = shortAddr;
+   1158              if (!keSrvMode)
+   1159                keTerminateZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_SERVER;
+   1160              else
+   1161                keTerminateZclReq.dstAddressing.clusterSide = ZCL_CLUSTER_SIDE_CLIENT;
+   1162              keSeqNum = ZCL_GetNextSeqNumber();
+   1163              keTerminateZclReq.dstAddressing.sequenceNumber = keSeqNum;
+   1164          
+   1165              keTerminateZclReq.requestPayload = (uint8_t *) buf;
+   1166              keTerminateZclReq.requestLength  = sizeof(ZCL_TerminateKeyEstablishmentCommand_t);
+   1167              keTerminateZclReq.defaultResponse = 1;
+   1168              keTerminateZclReq.ZCL_Notify = keSendTerminateKECommandRespHandler;
+   1169              keTerminateReqBusy = true;
+   1170          
+   1171              if ((keRemoteShortAddr == shortAddr) &&
+   1172                  (keRemoteEndpoint == endpoint))
+   1173              {
+   1174                keRemoteExtAddr = ZCL_KE_INVALID_EXT_ADDRESS;
+   1175                keRemoteShortAddr = ZCL_KE_INVALID_SHORT_ADDRESS;
+   1176                keRemoteEndpoint  = ZCL_KE_INVALID_ENDPOINT;
+   1177              }
+   1178          
+   1179              ZCL_CommandReq(&keTerminateZclReq);
+   1180            }
+   1181          }
+   1182          
+   1183          /*************************************************************************************//**
+   1184            \brief Response handler for KE Terminate Command.
+   1185          
+   1186            \param zclResp - pointer to response parameters structure. See ZCL_responce_t declaration.
+   1187          ******************************************************************************************/
+   1188          static void keSendTerminateKECommandRespHandler(ZCL_Notify_t *zclResp)
+   1189          {
+   1190            (void)zclResp;
+   1191          
+   1192            sysAssert(keTerminateReqBusy, KE_WRONG_STATE_5);
+   1193            if ((ZCL_KE_INVALID_ENDPOINT == keRemoteEndpoint) ||
+   1194                (ZCL_KE_INVALID_SHORT_ADDRESS == keRemoteShortAddr) ||
+   1195                (ZCL_KE_INVALID_EXT_ADDRESS == keRemoteExtAddr))
+   1196            {
+   1197              keStopKe(ZCL_SECURITY_STATUS_TERMINATED);
+   1198            }
+   1199            keTerminateReqBusy = false;
+   1200          }
+   1201          
+   1202          /*************************************************************************************//**
+   1203            \brief Indicates that KE Terminate Command is received.
+   1204          
+   1205            \param addressing - command's source address information
+   1206            \param payloadLength - command's payload length
+   1207            \param payload - command's payload
+   1208            \return command's processing status, in case if not SUCCESS - default response will be
+   1209              generated
+   1210          ******************************************************************************************/
+   1211          static ZCL_Status_t terminateKECommandIndHandler(ZCL_Addressing_t *addressing,
+   1212            uint8_t payloadLength, ZCL_TerminateKeyEstablishmentCommand_t *payload)
+   1213          {
+   1214            (void) payloadLength;
+   1215          
+   1216            if ((keRemoteShortAddr == addressing->addr.shortAddress) &&
+   1217               ((APS_EXT_ADDRESS != addressing->addrMode) || (keRemoteExtAddr == addressing->addr.extAddress)) &&
+   1218               (keRemoteEndpoint == addressing->endpointId))
+   1219            {
+   1220              postponedProcessing = false;
+   1221              if (keIsRequestInProgress())
+   1222                return ZCL_SUCCESS_STATUS;
+   1223          
+   1224              if (ZCL_CLUSTER_SIDE_CLIENT == addressing->clusterSide)
+   1225                //Server (Responder)
+   1226                keSrvMode = true;
+   1227              else
+   1228                //Client (Initiator)
+   1229                keSrvMode = false;
+   1230          
+   1231              switch (payload->statusCode)
+   1232              {
+   1233                case ZCL_TKE_NO_RESOURCES_STATUS:
+   1234                  keState = ZCL_KE_CLUSTER_WAITING_STATE;
+   1235                  keSetTimeoutInSec(payload->waitTime, restartKEFired);
+   1236                  break;
+   1237                case ZCL_TKE_BAD_MESSAGE_STATUS:
+   1238                case ZCL_TKE_UNSUPPORTED_SUITE_STATUS:
+   1239                   /* If the device receives a status of UNKNOWN_SUITE it should examine the
+   1240                   KeyEstablishmentSuite field to determine if another suite can be used that is
+   1241                   supported by the partner device. It may re-initiate key establishment using that
+   1242                   one of the supported suites after waiting the amount of time specified in the Wait
+   1243                   Time field. If the device does not support any of the types in the
+   1244                   KeyEstablishmentSuite field, it should not attempt key establishment again with
+   1245                   that device. */
+   1246                case ZCL_TKE_UNKNOWN_ISSUER_STATUS:
+   1247                case ZCL_TKE_BAD_KEY_CONFIRM_STATUS:
+   1248                   /* Add ext addr to black list */
+   1249                default:
+   1250                  keStopKe(ZCL_SECURITY_STATUS_TERMINATED);
+   1251                  break;
+   1252              }
+   1253            }
+   1254          
+   1255            SYS_PostEvent(BC_EVENT_KE_CLUSTER_TERMINATE_CMD, (uintptr_t)&payload->statusCode);
+   1256            return ZCL_SUCCESS_STATUS;
+   1257          }
+   1258          
+   1259          /*************************************************************************************//**
+   1260            \brief
+   1261          
+   1262            \param
+   1263            \return
+   1264          ******************************************************************************************/
+   1265          static void keGenerateKey(void)
+   1266          {
+   1267            uint8_t hash1[25];
+   1268            uint8_t hash2[25];
+   1269            uint8_t *keLocalPrivateKey = keCertificateDescriptor.privateKey;
+   1270            uint8_t *keLocalPublicKey = keCertificateDescriptor.publicKey;
+   1271          
+   1272            //Derive the shared secret using the ECMQV primitive
+   1273            //Z = ECC_GenerateSharedSecret
+   1274            ZSE_ECCKeyBitGenerate(keLocalPrivateKey , keLocalEphemeralPrivateKey, keLocalEphemeralPublicKey,
+   1275                                    keRemoteCertificate, keRemoteEphemeralPublicKey, keLocalPublicKey /*CA Public Key*/,
+   1276                                    keLocalKeyBits, SSP_BcbHash, yield, YIELD_LEVEL);
+   1277            //Derive the Keying data
+   1278            //Hash-1 = Z || 00 00 00 01 || SharedData
+   1279            //Hash-2 = Z || 00 00 00 02 || SharedData
+   1280          
+   1281            //Hash-1
+   1282            //Concatenation
+   1283            memcpy((uint8_t *) hash1, keLocalKeyBits, SECT163K1_SHARED_SECRET_SIZE /*21*/);
+   1284            hash1[21] = 0; hash1[22] = 0; hash1[23] = 0; hash1[24] = 1;
+   1285          
+   1286            //hash
+   1287            SSP_BcbHash(digest1, 25, hash1);
+   1288          
+   1289          
+   1290            //Hash-2
+   1291            //Concatenation
+   1292            memcpy((uint8_t *) hash2, keLocalKeyBits, SECT163K1_SHARED_SECRET_SIZE /*21*/);
+   1293            hash2[21] = 0; hash2[22] = 0; hash2[23] = 0; hash2[24] = 2;
+   1294          
+   1295            //hash
+   1296            SSP_BcbHash(digest2, 25, hash2);
+   1297          
+   1298            keCalculateMac1();
+   1299          }
+   1300          
+   1301          /*************************************************************************************//**
+   1302            \brief
+   1303          
+   1304            \param
+   1305            \return
+   1306          ******************************************************************************************/
+   1307          static void keCalculateMac1(void)
+   1308          {
+   1309            ZclCertificate_t *remoteCertificate = (ZclCertificate_t *) &keRemoteCertificate;
+   1310            CHECK_GUARDS(&macBuf, ZCL_MEMORY_CORRUPTION_1);
+   1311            uint8_t *dst = macBuf.macData;
+   1312          
+   1313            keState = ZCL_KE_CLUSTER_MAC1_CALCULATING_STATE;
+   1314          
+   1315            if (!keSrvMode)
+   1316            {
+   1317              *dst = ZCL_KE_INITATOR_ADDITIONAL_MESSAGE_COMPONENT;
+   1318            }
+   1319            else
+   1320            {
+   1321              *dst = ZCL_KE_RESPONDER_ADDITIONAL_MESSAGE_COMPONENT;
+   1322            }
+   1323            dst += ZCL_KE_ADDITIONAL_MESSAGE_COMPONENT_SIZE;
+   1324          
+   1325            memcpy(dst,
+   1326              GET_FIELD_PTR(&keCertificateDescriptor.certificate, ZclCertificate_t, subject),
+   1327              sizeof(ExtAddr_t));
+   1328            dst += sizeof(ExtAddr_t);
+   1329          
+   1330            memcpy(dst,
+   1331              GET_FIELD_PTR(remoteCertificate, ZclCertificate_t, subject),
+   1332              sizeof(ExtAddr_t));
+   1333            dst += sizeof(ExtAddr_t);
+   1334          
+   1335            memcpy(dst, keLocalEphemeralPublicKey, SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE);
+   1336            dst += SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE;
+   1337          
+   1338            memcpy(dst, keRemoteEphemeralPublicKey, SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE);
+   1339          
+   1340            sspKeyedHashReq.text = macBuf.macData;
+   1341            sspKeyedHashReq.key = digest1;
+   1342            sspKeyedHashReq.textSize = ZCL_KE_MAC_DATA_SIZE;
+   1343            if (!keSrvMode)
+   1344            {
+   1345              sspKeyedHashReq.hash_i = macuHash;
+   1346            }
+   1347            else
+   1348            {
+   1349              sspKeyedHashReq.hash_i = macvHash;
+   1350            }
+   1351            sspKeyedHashReq.SSP_KeyedHashMacConf = mac1Conf;
+   1352            SSP_KeyedHashMacReq(&sspKeyedHashReq);
+   1353          }
+   1354          
+   1355          /*************************************************************************************//**
+   1356            \brief
+   1357          
+   1358            \param
+   1359            \return
+   1360          ******************************************************************************************/
+   1361          static void mac1Conf(void)
+   1362          {
+   1363            if (ZCL_KE_CLUSTER_MAC1_CALCULATING_STATE == keState)
+   1364            {
+   1365              keCalculateMac2();
+   1366            }
+   1367          }
+   1368          
+   1369          /*************************************************************************************//**
+   1370            \brief
+   1371          
+   1372            \param
+   1373            \return
+   1374          ******************************************************************************************/
+   1375          static void keCalculateMac2(void)
+   1376          {
+   1377            ZclCertificate_t *remoteCertificate = (ZclCertificate_t *) &keRemoteCertificate;
+   1378            CHECK_GUARDS(&macBuf, ZCL_MEMORY_CORRUPTION_2);
+   1379            uint8_t *dst = macBuf.macData;
+   1380          
+   1381            keState = ZCL_KE_CLUSTER_MAC2_CALCULATING_STATE;
+   1382          
+   1383            if (!keSrvMode)
+   1384            {
+   1385              *dst = ZCL_KE_RESPONDER_ADDITIONAL_MESSAGE_COMPONENT;
+   1386            }
+   1387            else
+   1388            {
+   1389              *dst = ZCL_KE_INITATOR_ADDITIONAL_MESSAGE_COMPONENT;
+   1390            }
+   1391            dst += ZCL_KE_ADDITIONAL_MESSAGE_COMPONENT_SIZE;
+   1392          
+   1393            memcpy(dst,
+   1394              GET_FIELD_PTR(remoteCertificate, ZclCertificate_t, subject),
+   1395              sizeof(ExtAddr_t));
+   1396            dst += sizeof(ExtAddr_t);
+   1397          
+   1398            memcpy(dst,
+   1399              GET_FIELD_PTR(&keCertificateDescriptor.certificate, ZclCertificate_t, subject),
+   1400              sizeof(ExtAddr_t));
+   1401            dst += sizeof(ExtAddr_t);
+   1402          
+   1403            memcpy(dst, keRemoteEphemeralPublicKey, SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE);
+   1404            dst += SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE;
+   1405          
+   1406            memcpy(dst, keLocalEphemeralPublicKey, SECT163K1_COMPRESSED_PUBLIC_KEY_SIZE);
+   1407          
+   1408            sspKeyedHashReq.text = macBuf.macData;
+   1409            sspKeyedHashReq.key = digest1;
+   1410            sspKeyedHashReq.textSize = ZCL_KE_MAC_DATA_SIZE;
+   1411            if (!keSrvMode)
+   1412            {
+   1413              sspKeyedHashReq.hash_i = macvHash;
+   1414            }
+   1415            else
+   1416            {
+   1417              sspKeyedHashReq.hash_i = macuHash;
+   1418            }
+   1419          
+   1420            sspKeyedHashReq.SSP_KeyedHashMacConf = mac2Conf;
+   1421            SSP_KeyedHashMacReq(&sspKeyedHashReq);
+   1422          }
+   1423          
+   1424          /*************************************************************************************//**
+   1425            \brief
+   1426          
+   1427            \param
+   1428            \return
+   1429          ******************************************************************************************/
+   1430          static void mac2Conf(void)
+   1431          {
+   1432            CHECK_GUARDS(&macBuf, ZCL_MEMORY_CORRUPTION_3);
+   1433            if (ZCL_KE_CLUSTER_MAC2_CALCULATING_STATE == keState)
+   1434            {
+   1435              if (!keSrvMode)
+   1436              {
+   1437                if (!postponedProcessing)
+   1438                {
+   1439          #ifdef _ZSE_CERTIFICATION_
+   1440                  if (useDelay)
+   1441                  {
+   1442                    delayTimer.interval = (uint32_t)confirmKeyGenerateDelay * 1000;
+   1443                    HAL_StartAppTimer(&delayTimer);
+   1444                  }
+   1445                  else
+   1446          #endif // _ZSE_CERTIFICATION_
+   1447                    keSendConfirmKeyDataCommand();
+   1448                }
+   1449              }
+   1450              else
+   1451              {
+   1452                if (postponedProcessing)
+   1453                {
+   1454                  postponedProcessing = false;
+   1455                  if (0 == memcmp(macuHash, receivedMacuHash, AES_MMO_HASH_SIZE))
+   1456                    keSendConfirmKeyDataCommand();
+   1457                  else
+   1458                    keSendTerminateKECommand(keRemoteShortAddr, keRemoteEndpoint, ZCL_TKE_BAD_KEY_CONFIRM_STATUS);
+   1459                }
+   1460                else
+   1461                  keState = ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_WAITING_STATE;
+   1462              }
+   1463            }
+   1464          }
+   1465          
+   1466          /*************************************************************************************//**
+   1467            \brief Sets new established key to APS and saves that KE procedure finished successfully.
+   1468          ******************************************************************************************/
+   1469          static void keSwitchKey(void)
+   1470          {
+   1471            if (APS_KEY_HANDLE_IS_VALID(APS_SetLinkKey(&keRemoteExtAddr, digest2)))
+   1472            {
+   1473              APS_SetAuthorizedStatus(&keRemoteExtAddr, true);
+   1474          
+   1475              SYS_PostEvent(BC_EVENT_UPDATE_LINK_KEY, (uintptr_t)&keRemoteExtAddr);
+   1476          
+   1477              if (!keSrvMode)
+   1478              {
+   1479                keStopKe(ZCL_SECURITY_STATUS_SUCCESS);
+   1480              }
+   1481              else
+   1482                keSrvMode = false;
+   1483            }
+   1484          }
+   1485          
+   1486          /*************************************************************************************//**
+   1487            \brief TimeOut Timer callback - restarts KE procedure after Terminate command with
+   1488              NO_RESOURCES status
+   1489          ******************************************************************************************/
+   1490          static void restartKEFired(void)
+   1491          {
+   1492            sysAssert(ZCL_KE_CLUSTER_WAITING_STATE == keState, KE_WRONG_STATE_6);
+   1493            keSendInitiateKECommand();
+   1494          }
+   1495          
+   1496          /*************************************************************************************//**
+   1497            \brief Timeout timer expired
+   1498          ******************************************************************************************/
+   1499          static void keTimeoutHandler(void)
+   1500          {
+   1501            sysAssert(!keIsRequestInProgress(), KE_WRONG_STATE_4);
+   1502            keStopKe(ZCL_SECURITY_STATUS_TIMEOUT);
+   1503          }
+   1504          
+   1505          /*************************************************************************************//**
+   1506            \brief Starts timeout timer
+   1507            \param[in] timeout - timeout in seconds
+   1508            \param[in] callback - timer callback function pointer
+   1509          ******************************************************************************************/
+   1510          static void keSetTimeoutInSec(uint16_t timeout, void (*callback)(void))
+   1511          {
+   1512            SYS_InitTimer(&keApsTimer, TIMER_ONE_SHOT_MODE, (uint32_t)timeout << 10ul, callback);
+   1513            SYS_StartTimer(&keApsTimer);
+   1514          }
+   1515          
+   1516          /*************************************************************************************//**
+   1517            \brief Stop Timeout timer
+   1518          ******************************************************************************************/
+   1519          static void keCancelTimeout(void)
+   1520          {
+   1521            SYS_StopTimer(&keApsTimer);
+   1522          }
+   1523          
+   1524          /*************************************************************************************//**
+   1525            \brief Stops KE
+   1526          
+   1527            \param status - status of KE execution - to be passed to ZCL Security Manager
+   1528          ******************************************************************************************/
+   1529          static void keStopKe(ZCL_SecurityStatus_t status)
+   1530          {
+   1531            if (ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_SENDING_STATE == keState)
+   1532            {
+   1533              keState = ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_TERMINATE_STATE;
+   1534              return; // wait for ending of the match descriptor discovery
+   1535            }
+   1536          
+   1537            keCancelTimeout();
+   1538            postponedProcessing = false;
+   1539            keState = ZCL_KE_CLUSTER_IDLE_STATE;
+   1540            keNotification(status);
+   1541          }
+   1542          
+   1543          /*************************************************************************************//**
+   1544            \brief Detects wether KE is in progress or not
+   1545            \return true if KE procedure is in progress, false othewise.
+   1546          ******************************************************************************************/
+   1547          static bool keIsRequestInProgress(void)
+   1548          {
+   1549            return keState == ZCL_KE_MATCH_DESCRIPTOR_DISCOVERY_SENDING_STATE
+   1550                || keState == ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_SENDING_STATE
+   1551                || keState == ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_SENDING_STATE
+   1552                || keState == ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_SENDING_STATE;
+   1553          }
+   1554          
+   1555          /*************************************************************************************//**
+   1556            \brief Performs copying with byte order change.
+   1557          
+   1558            \param dst - memory pointer to copy to
+   1559            \param src - memory pointer to copy from
+   1560            \param size - number of byte to copy
+   1561          ******************************************************************************************/
+   1562          static void keCpyReverse(uint8_t *dst, uint8_t *src, uint8_t size)
+   1563          {
+   1564            src += size - 1;
+   1565            while (size--)
+   1566            {
+   1567              *dst++ = *src--;
+   1568            }
+   1569          }
+   1570          
+   1571          /*************************************************************************************//**
+   1572            \brief Finds KE Certificate descriptor for the device with particular address
+   1573          
+   1574            \param subject - device's address which certificate is looking for
+   1575            \return pointer to KE Certificate descriptor if it was found, NULL otherwise
+   1576          ******************************************************************************************/
+   1577          ZclCertificate_t *keGetCertificate(ExtAddr_t subject)
+   1578          {
+   1579            uint8_t *result = NULL;
+   1580          
+   1581            SYS_Swap((uint8_t*)&subject, sizeof(ExtAddr_t));
+   1582            if (((ZclCertificate_t *) keRemoteCertificate)->subject == subject)
+   1583              result = keRemoteCertificate;
+   1584            else if (keCertificateDescriptor.certificate.subject == subject)
+   1585              result = keCertificateDescriptor.certificate.publicReconstrKey;
+   1586            return (ZclCertificate_t *)result;
+   1587          }
+   1588          
+   1589          /*************************************************************************************//**
+   1590            \brief Returns server or client cluster descriptor for external use.
+   1591          
+   1592            Use this function if you want register KE cluster on endpoint.
+   1593          
+   1594            \param[in] server - If true returns server descriptor, client descriptor otherwise.
+   1595            \return pointer to Cluster Descriptor.
+   1596          ******************************************************************************************/
+   1597          ZCL_Cluster_t* keGetClusterDescriptor(uint8_t server)
+   1598          {
+   1599            return (server) ? &keClusterServer : &keClusterClient;
+   1600          }
+   1601          
+   1602          #ifdef _ZSE_CERTIFICATION_
+   1603          /*****************************************************************************
+   1604            \brief   Sets timeouts for KE cluster
+   1605            \param:  None
+   1606            \return: None
+   1607          *****************************************************************************/
+   1608          void setKETimeouts(uint8_t ephemeralTimeout, uint8_t confirmTimeout, uint8_t ephemeralDelay, uint8_t confirmDelay)
+   1609          {
+   1610            ephemeralDataGenerateTime = ephemeralTimeout;
+   1611            confirmKeyGenerateTime = confirmTimeout;
+   1612            ephemeralDataGenerateDelay = ephemeralDelay;
+   1613            confirmKeyGenerateDelay = confirmDelay;
+   1614            useDelay = true;
+   1615          }
+   1616          
+   1617          void setBadCertificatesProcessing(void)
+   1618          {
+   1619            passBadCertificates = true;
+   1620          }
+   1621          
+   1622          void setOutOfOrderResponse(void)
+   1623          {
+   1624            outOfOrder = true;
+   1625          }
+   1626          
+   1627          /*****************************************************************************
+   1628            \brief   Delay timer has fired
+   1629            \param:  None
+   1630            \return: None
+   1631          *****************************************************************************/
+   1632          void delayTimerFired(void)
+   1633          {
+   1634            if (ZCL_KE_CLUSTER_EPHEMERAL_DATA_COMMAND_WAITING_STATE == keState)
+   1635              keSendEphemeralDataCommand();
+   1636            if (ZCL_KE_CLUSTER_INITIATE_KE_COMMAND_WAITING_STATE == keState)
+   1637              keSendEphemeralDataCommand();
+   1638            if (ZCL_KE_CLUSTER_MAC2_CALCULATING_STATE == keState)
+   1639              keSendConfirmKeyDataCommand();
+   1640            if (ZCL_KE_CLUSTER_CONFIRM_KEY_COMMAND_WAITING_STATE == keState)
+   1641              keSendConfirmKeyDataCommand();
+   1642          }
+   1643          
+   1644          void ZCL_KeSendTooLongCertificate(int8_t addLen)
+   1645          {
+   1646            sendTooLongCertificate = true;
+   1647            certAdditionLength = addLen;
+   1648          }
+   1649          
+   1650          #endif //_ZSE_CERTIFICATION_
+   1651          
+   1652          #endif // CERTICOM_SUPPORT == 1
+   1653          #endif // (defined _LINK_SECURITY_) && (!defined _LIGHT_LINK_PROFILE_)
+   1654          #endif // ZCL_SUPPORT == 1
+   1655          // eof zclKeyEstablishmentCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

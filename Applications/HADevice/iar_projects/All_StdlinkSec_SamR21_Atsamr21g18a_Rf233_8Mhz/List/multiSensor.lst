@@ -1,0 +1,771 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:40
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\multiSensor.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\multiSensor.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\multiSensor.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\multiSensor.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\multiSensor\src\multiSensor.c
+      1          /**************************************************************************//**
+      2            \file multiSensor.c
+      3          
+      4            \brief
+      5              Mutli-Sensor implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              12.12.12 N.Fomin - Created
+     17              28.05.14 Viswanadham Kotla - Modified
+     18          ******************************************************************************/
+     19          
+     20          #ifdef APP_DEVICE_TYPE_MULTI_SENSOR
+     21          
+     22          /******************************************************************************
+     23                                       Includes section
+     24          ******************************************************************************/
+     25          #include <msClusters.h>
+     26          #include <zclDevice.h>
+     27          #include <uartManager.h>
+     28          #include <zclSecurityManager.h>
+     29          #include <console.h>
+     30          #include <identifyCluster.h>
+     31          #include <sysIdleHandler.h>
+     32          #include <ezModeManager.h>
+     33          #include <pdsDataServer.h>
+     34          #include <haClusters.h>
+     35          #include <otauService.h>
+     36          #include <sleep.h>
+     37          #include <halSleep.h>
+     38          #include <msOccupancySensingCluster.h>
+     39          #include <msTemperatureMeasurementCluster.h>
+     40          #include <msHumidityMeasurementCluster.h>
+     41          #include <msIlluminanceMeasurementCluster.h>
+     42          #include <basicCluster.h>
+     43          #include <msIdentifyCluster.h>
+     44          #include <msDiagnosticsCluster.h>
+     45          
+     46          /******************************************************************************
+     47                                       Defines section
+     48          ******************************************************************************/
+     49          #define SWITCHING_PERIOD                    20000UL
+     50          
+     51          /* Multi sensor device type logical device Id form reserved space */
+     52          #define  APP_HA_MULTI_SENSOR_DEVICE_ID      0x01ff
+     53          /* Humidity Sensor logical device Id form reserved space */
+     54          #define APP_HA_HUMIDITY_SENSOR_DEVICE_ID    0x03ff
+     55          
+     56          /******************************************************************************
+     57                                  Prototypes section
+     58          ******************************************************************************/
+     59          static void isBusyOrPollCheck(SYS_EventId_t eventId, SYS_EventData_t data);
+     60          static void updateSensorsAttributeValues(void);
+     61          static void msConfigureReportingResp(ZCL_Notify_t *ntfy);
+     62          #if defined (_SLEEP_WHEN_IDLE_)
+     63          #if (APP_ENABLE_CONSOLE == 1)
+     64          static void sleepModeHandler(SYS_EventId_t eventId, SYS_EventData_t data);
+     65          #endif
+     66          static void sleepEventHandler(SYS_EventId_t eventId, SYS_EventData_t data);
+     67          static void ZDO_WakeUpConf(ZDO_WakeUpConf_t *conf);
+     68          #endif
+     69          
+     70          /******************************************************************************
+     71                              Local variables section
+     72          ******************************************************************************/
+     73          static ZCL_DeviceEndpoint_t msEndpoint =
+     74          {
+     75            .simpleDescriptor =
+     76            {
+     77              .endpoint            = APP_SRC_ENDPOINT_ID,
+     78              .AppProfileId        = PROFILE_ID_HOME_AUTOMATION,
+     79              .AppDeviceId         = APP_HA_MULTI_SENSOR_DEVICE_ID,
+     80              .AppInClustersCount  = ARRAY_SIZE(msServerClusterIds),
+     81              .AppInClustersList   = msServerClusterIds,
+     82              .AppOutClustersCount = ARRAY_SIZE(msClientClusterIds),
+     83              .AppOutClustersList  = msClientClusterIds,
+     84            },
+     85            .serverCluster = msServerClusters,
+     86            .clientCluster = msClientClusters,
+     87          };
+     88          
+     89          #ifdef APP_SENSOR_TYPE_OCCUPANCY_SENSOR
+     90          static ZCL_DeviceEndpoint_t osEndpoint =
+     91          {
+     92            .simpleDescriptor =
+     93            {
+     94              .endpoint            = APP_SRC_ENDPOINT1_ID,
+     95              .AppProfileId        = PROFILE_ID_HOME_AUTOMATION,
+     96              .AppDeviceId         = HA_OCCUPANCY_SENSOR_DEVICE_ID,
+     97              .AppInClustersCount  = ARRAY_SIZE(osServerClusterIds),
+     98              .AppInClustersList   = osServerClusterIds,
+     99              .AppOutClustersCount = 0,
+    100              .AppOutClustersList  = NULL,
+    101            },
+    102            .serverCluster = osServerClusters,
+    103            .clientCluster = NULL,//&osClientClusters,
+    104          };
+    105          
+    106          static ClusterId_t osServerClusterToBindIds[] =
+    107          {
+    108            OCCUPANCY_SENSING_CLUSTER_ID,
+    109          };
+    110          
+    111          static AppBindReq_t osBindReq =
+    112          {
+    113            .nwkAddrOfInterest = RX_ON_WHEN_IDLE_ADDR,
+    114            .remoteServers     = NULL,
+    115            .remoteServersCnt  = 0,
+    116            .remoteClients     = osServerClusterToBindIds,
+    117            .remoteClientsCnt  = ARRAY_SIZE(osServerClusterToBindIds),
+    118            .profile           = PROFILE_ID_HOME_AUTOMATION,
+    119            .srcEndpoint       = APP_SRC_ENDPOINT1_ID,
+    120            .callback          = NULL,
+    121          };
+    122          
+    123          #endif //APP_SENSOR_TYPE_OCCUPANCY_SENSOR
+    124          
+    125          #ifdef APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    126          static ZCL_DeviceEndpoint_t tsEndpoint =
+    127          {
+    128            .simpleDescriptor =
+    129            {
+    130              .endpoint            = APP_SRC_ENDPOINT2_ID,
+    131              .AppProfileId        = PROFILE_ID_HOME_AUTOMATION,
+    132              .AppDeviceId         = HA_TEMPERATURE_SENSOR_DEVICE_ID,
+    133              .AppInClustersCount  = ARRAY_SIZE(tsServerClusterIds),
+    134              .AppInClustersList   = tsServerClusterIds,
+    135              .AppOutClustersCount = 0,
+    136              .AppOutClustersList  = NULL,
+    137            },
+    138            .serverCluster = tsServerClusters,
+    139            .clientCluster = NULL,
+    140          };
+    141          
+    142          static ClusterId_t tsServerClusterToBindIds[] =
+    143          {
+    144            TEMPERATURE_MEASUREMENT_CLUSTER_ID
+    145          };
+    146          
+    147          static AppBindReq_t tsBindReq =
+    148          {
+    149            .nwkAddrOfInterest = RX_ON_WHEN_IDLE_ADDR,
+    150            .remoteServers     = NULL,
+    151            .remoteServersCnt  = 0,
+    152            .remoteClients     = tsServerClusterToBindIds,
+    153            .remoteClientsCnt  = ARRAY_SIZE(tsServerClusterToBindIds),
+    154            .profile           = PROFILE_ID_HOME_AUTOMATION,
+    155            .srcEndpoint       = APP_SRC_ENDPOINT2_ID,
+    156            .callback          = NULL,
+    157          };
+    158          #endif  //APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    159          
+    160          #ifdef APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    161          static ZCL_DeviceEndpoint_t hsEndpoint =
+    162          {
+    163            .simpleDescriptor =
+    164            {
+    165              .endpoint            = APP_SRC_ENDPOINT3_ID,
+    166              .AppProfileId        = PROFILE_ID_HOME_AUTOMATION,
+    167              .AppDeviceId         = APP_HA_HUMIDITY_SENSOR_DEVICE_ID,
+    168              .AppInClustersCount  = ARRAY_SIZE(hsServerClusterIds),
+    169              .AppInClustersList   = hsServerClusterIds,
+    170              .AppOutClustersCount = 0,
+    171              .AppOutClustersList  = NULL,
+    172            },
+    173            .serverCluster = hsServerClusters,
+    174            .clientCluster = NULL,
+    175          };
+    176          
+    177          static ClusterId_t hsServerClusterToBindIds[] =
+    178          {
+    179            HUMIDITY_MEASUREMENT_CLUSTER_ID
+    180          };
+    181          
+    182          static AppBindReq_t hsBindReq =
+    183          {
+    184            .nwkAddrOfInterest = RX_ON_WHEN_IDLE_ADDR,
+    185            .remoteServers     = NULL,
+    186            .remoteServersCnt  = 0,
+    187            .remoteClients     = hsServerClusterToBindIds,
+    188            .remoteClientsCnt  = ARRAY_SIZE(hsServerClusterToBindIds),
+    189            .profile           = PROFILE_ID_HOME_AUTOMATION,
+    190            .srcEndpoint       = APP_SRC_ENDPOINT3_ID,
+    191            .callback          = NULL,
+    192          };
+    193          #endif  //APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    194          
+    195          #ifdef APP_SENSOR_TYPE_LIGHT_SENSOR
+    196          static ZCL_DeviceEndpoint_t lsEndpoint =
+    197          {
+    198            .simpleDescriptor =
+    199            {
+    200              .endpoint            = APP_SRC_ENDPOINT4_ID,
+    201              .AppProfileId        = PROFILE_ID_HOME_AUTOMATION,
+    202              .AppDeviceId         = HA_LIGHT_SENSOR_DEVICE_ID,
+    203              .AppInClustersCount  = ARRAY_SIZE(lsServerClusterIds),
+    204              .AppInClustersList   = lsServerClusterIds,
+    205              .AppOutClustersCount = 0,
+    206              .AppOutClustersList  = NULL,
+    207            },
+    208            .serverCluster = lsServerClusters,
+    209            .clientCluster = NULL,
+    210          };
+    211          
+    212          static ClusterId_t lsServerClusterToBindIds[] =
+    213          {
+    214            ILLUMINANCE_MEASUREMENT_CLUSTER_ID,
+    215          };
+    216          
+    217          static AppBindReq_t lsBindReq =
+    218          {
+    219            .nwkAddrOfInterest = RX_ON_WHEN_IDLE_ADDR,
+    220            .remoteServers     = NULL,
+    221            .remoteServersCnt  = 0,
+    222            .remoteClients     = lsServerClusterToBindIds,
+    223            .remoteClientsCnt  = ARRAY_SIZE(lsServerClusterToBindIds),
+    224            .profile           = PROFILE_ID_HOME_AUTOMATION,
+    225            .srcEndpoint       = APP_SRC_ENDPOINT4_ID,
+    226            .callback          = NULL,
+    227          };
+    228          #endif //APP_SENSOR_TYPE_LIGHT_SENSOR
+    229          
+    230          static ZCL_LinkKeyDesc_t keyDesc = {CCPU_TO_LE64(APS_UNIVERSAL_EXTENDED_ADDRESS), HA_LINK_KEY};
+    231          
+    232          static HAL_AppTimer_t sensorAttributeUpdateTimer =
+    233          {
+    234            .interval = SWITCHING_PERIOD,
+    235            .mode     = TIMER_REPEAT_MODE,
+    236            .callback = updateSensorsAttributeValues,
+    237          };
+    238          
+    239          static SYS_EventReceiver_t zdoBusyPollCheck = { .func = isBusyOrPollCheck};
+    240          
+    241          AppBindReq_t* deviceBindReqs[APP_ENDPOINTS_AMOUNT];
+    242          #if defined (_SLEEP_WHEN_IDLE_)
+    243          static ZDO_WakeUpReq_t zdoWakeUpReq;
+    244          static SYS_EventReceiver_t sleepEventListener = {.func = sleepEventHandler};
+    245          #if (APP_ENABLE_CONSOLE == 1)
+    246          static SYS_EventReceiver_t sleepModeListener = {.func = sleepModeHandler};
+    247          #endif
+    248          #endif
+    249          
+    250          /******************************************************************************
+    251                             type(s) section
+    252          ******************************************************************************/
+    253          typedef enum _ReportingState_t
+    254          {
+    255            OCCUPANCY_SENSOR_REPORTING_CONFIGURED = 1,
+    256            TEMPERATURE_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED,
+    257            TEMPERATURE_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED,
+    258            HUMIDITY_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED,
+    259            HUMIDITY_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED,
+    260            LIGHT_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED,
+    261            LIGHT_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED,
+    262            CONFIGURE_REPORTING_COMPLETED
+    263          }ReportingState_t;
+    264          
+    265          /******************************************************************************
+    266                              Static variables section
+    267          ******************************************************************************/
+    268          static ReportingState_t configureReportingState = 0;
+    269          
+    270          /******************************************************************************
+    271                              Implementation section
+    272          ******************************************************************************/
+    273          /**************************************************************************//**
+    274          \brief Device initialization routine
+    275          ******************************************************************************/
+    276          void appDeviceInit(void)
+    277          {
+    278            uint8_t epIndex = 0;
+    279          
+    280          /* Bind requests with clusters to bind for initiator device */
+    281          #ifdef APP_SENSOR_TYPE_OCCUPANCY_SENSOR
+    282            deviceBindReqs[epIndex++] = &osBindReq;
+    283          #endif
+    284          #ifdef APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    285            deviceBindReqs[epIndex++] = &tsBindReq;
+    286          #endif
+    287          #ifdef APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    288            deviceBindReqs[epIndex++] = &hsBindReq;
+    289          #endif
+    290          #ifdef APP_SENSOR_TYPE_LIGHT_SENSOR
+    291            deviceBindReqs[epIndex++] = &lsBindReq;
+    292          #endif
+    293          
+    294            ZCL_RegisterEndpoint(&msEndpoint);
+    295          
+    296            basicClusterInit();
+    297            identifyClusterInit();
+    298            diagnosticsClusterInit();
+    299            /* Register defined endpoints */
+    300          #ifdef APP_SENSOR_TYPE_OCCUPANCY_SENSOR
+    301            ZCL_RegisterEndpoint(&osEndpoint);
+    302            occupancySensingClusterInit();
+    303            
+    304            if (PDS_IsAbleToRestore(APP_MS_OCCUPANCY_MEM_ID))
+    305              PDS_Restore(APP_MS_OCCUPANCY_MEM_ID);
+    306          #endif
+    307          
+    308          #ifdef APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    309            ZCL_RegisterEndpoint(&tsEndpoint);
+    310            temperatureMeasurementClusterInit();
+    311          
+    312            if (PDS_IsAbleToRestore(APP_MS_TEMP_MEASURED_VALUE_MEM_ID))
+    313              PDS_Restore(APP_MS_TEMP_MEASURED_VALUE_MEM_ID);
+    314          
+    315            if (PDS_IsAbleToRestore(APP_MS_TEMP_TOLERANCE_MEM_ID))
+    316              PDS_Restore(APP_MS_TEMP_TOLERANCE_MEM_ID);
+    317          #endif
+    318          
+    319          #ifdef APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    320            ZCL_RegisterEndpoint(&hsEndpoint);
+    321            humidityMeasurementClusterInit();
+    322          
+    323            if (PDS_IsAbleToRestore(APP_MS_HUMIDITY_MEASURED_VALUE_MEM_ID))
+    324              PDS_Restore(APP_MS_HUMIDITY_MEASURED_VALUE_MEM_ID);
+    325          
+    326            if (PDS_IsAbleToRestore(APP_MS_HUMIDITY_TOLERANCE_MEM_ID))
+    327              PDS_Restore(APP_MS_HUMIDITY_TOLERANCE_MEM_ID);
+    328          #endif
+    329          
+    330          #ifdef APP_SENSOR_TYPE_LIGHT_SENSOR
+    331            ZCL_RegisterEndpoint(&lsEndpoint);
+    332            illuminanceMeasurementClusterInit();
+    333          
+    334            if (PDS_IsAbleToRestore(APP_MS_ILLU_MEASURED_VALUE_MEM_ID))
+    335              PDS_Restore(APP_MS_ILLU_MEASURED_VALUE_MEM_ID);
+    336          
+    337            if (PDS_IsAbleToRestore(APP_MS_ILLU_TOLERANCE_MEM_ID))
+    338              PDS_Restore(APP_MS_ILLU_TOLERANCE_MEM_ID);
+    339          #endif
+    340          
+    341            /* Timer update the attribute values of various sensor types */
+    342            HAL_StartAppTimer(&sensorAttributeUpdateTimer);
+    343          
+    344          #if (APP_ENABLE_CONSOLE == 1) || (APP_DEVICE_EVENTS_LOGGING == 1)
+    345            uartInit();
+    346          #endif
+    347          #if APP_ENABLE_CONSOLE == 1
+    348            initConsole();
+    349          #endif
+    350          
+    351          #if defined (_SLEEP_WHEN_IDLE_)
+    352            SYS_EnableSleepWhenIdle();
+    353          #if (APP_ENABLE_CONSOLE == 1)
+    354            SYS_SubscribeToEvent(HAL_EVENT_FALLING_ASLEEP, &sleepModeListener);
+    355            SYS_SubscribeToEvent(HAL_EVENT_CONTINUING_SLEEP, &sleepModeListener);
+    356          #endif
+    357            SYS_SubscribeToEvent(HAL_EVENT_WAKING_UP, &sleepEventListener);
+    358          #endif
+    359            SYS_SubscribeToEvent(BC_EVENT_POLL_REQUEST, &zdoBusyPollCheck);
+    360          
+    361            ZCL_StartReporting();
+    362          }
+    363          
+    364          /**************************************************************************//**
+    365          \breif Performs security initialization actions
+    366          ******************************************************************************/
+    367          void appSecurityInit(void)
+    368          {
+    369            ZCL_Set_t zclSet;
+    370          
+    371            ZCL_ResetSecurity();
+    372          
+    373            zclSet.attr.id = ZCL_LINK_KEY_DESC_ID;
+    374            zclSet.attr.value.linkKeyDesc = &keyDesc;
+    375            ZCL_Set(&zclSet);
+    376          }
+    377          
+    378          /**************************************************************************//**
+    379          \brief Device common task handler
+    380          ******************************************************************************/
+    381          void appDeviceTaskHandler(void)
+    382          {
+    383            switch (appDeviceState) // Actual device state when one joined network
+    384            {
+    385              case DEVICE_INITIAL_STATE:
+    386                {
+    387                  appDeviceState = DEVICE_ACTIVE_IDLE_STATE;
+    388                  startOtauClient(&msClientClusters[MS_CLIENT_CLUSTERS_COUNT - 1]);
+    389                }
+    390                break;
+    391              case DEVICE_ACTIVE_IDLE_STATE:
+    392              default:
+    393                break;
+    394            }
+    395          }
+    396          
+    397          /**************************************************************************//**
+    398          \brief Gets bind request
+    399          
+    400          \return pointer to a bind request used by HA device
+    401          ******************************************************************************/
+    402          AppBindReq_t **getDeviceBindRequest(void)
+    403          {
+    404            return deviceBindReqs;
+    405          }
+    406          
+    407          /**************************************************************************//**
+    408          \brief Stops application
+    409          ******************************************************************************/
+    410          void appStop(void)
+    411          {
+    412            HAL_StopAppTimer(&sensorAttributeUpdateTimer);
+    413            identifyClusterStop();
+    414          }
+    415          
+    416          /**************************************************************************//**
+    417          \brief Asks device if it is an initiator
+    418          
+    419          \returns true if it is, false otherwise
+    420          ******************************************************************************/
+    421          bool appIsInitiator(void)
+    422          {
+    423            return true;
+    424          }
+    425          
+    426          /**************************************************************************//**
+    427          \brief EZ-Mode done callback
+    428          
+    429          \returns function which is called by EZ-Mode manager when it is done
+    430          ******************************************************************************/
+    431          void appEzModeDone(void)
+    432          {
+    433          #ifdef APP_SENSOR_TYPE_OCCUPANCY_SENSOR
+    434              sendConfigureReportingToNotify(APP_SRC_ENDPOINT1_ID, APP_ENDPOINT_COMBINED_INTERFACE, OCCUPANCY_SENSING_CLUSTER_ID,
+    435                ZCL_OCCUPANCY_SENSING_CLUSTER_OCCUPANCY_SERVER_ATTRIBUTE_ID, OCCUPANCY_SENSING_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    436              configureReportingState = OCCUPANCY_SENSOR_REPORTING_CONFIGURED;
+    437              
+    438          #elif defined APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    439              sendConfigureReportingToNotify(APP_SRC_ENDPOINT2_ID, APP_ENDPOINT_COMBINED_INTERFACE, TEMPERATURE_MEASUREMENT_CLUSTER_ID,
+    440                ZCL_TEMPERATURE_MEASUREMENT_CLUSTER_SERVER_MEASURED_VALUE_ATTRIBUTE_ID, TEMPERATURE_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    441              configureReportingState = TEMPERATURE_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED;
+    442              
+    443          #elif defined APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    444              sendConfigureReportingToNotify(APP_SRC_ENDPOINT3_ID, APP_ENDPOINT_COMBINED_INTERFACE, HUMIDITY_MEASUREMENT_CLUSTER_ID,
+    445                ZCL_HUMIDITY_MEASUREMENT_CLUSTER_SERVER_MEASURED_VALUE_ATTRIBUTE_ID, HUMIDITY_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    446              configureReportingState = HUMIDITY_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED;
+    447              
+    448          #elif defined APP_SENSOR_TYPE_LIGHT_SENSOR
+    449              sendConfigureReportingToNotify(APP_SRC_ENDPOINT4_ID, APP_ENDPOINT_COMBINED_INTERFACE, ILLUMINANCE_MEASUREMENT_CLUSTER_ID,
+    450                ZCL_ILLUMINANCE_MEASUREMENT_CLUSTER_MEASURED_VALUE_SERVER_ATTRIBUTE_ID, ILLUMINANCE_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    451              configureReportingState = LIGHT_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED;
+    452          
+    453          #endif
+    454          
+    455            ZCL_StartReporting();
+    456          }
+    457          
+    458          /**************************************************************************//**
+    459          \brief Indication of configure reporting response
+    460          
+    461          \param[in] resp - pointer to response
+    462          ******************************************************************************/
+    463          static void msConfigureReportingResp(ZCL_Notify_t *ntfy)
+    464          {
+    465            // The following state machine checks the reported state of a sensor and will try to send another reporting if that sensor is enabled.
+    466            // If that sensor is not enabled it will try to send the reporting of next available/enabled sensor.
+    467            // If all the sensors have finished reporting the status of the state machine will be changed to CONFIGURE_REPORTING_COMPLETED.
+    468            switch (configureReportingState)
+    469            {
+    470            case OCCUPANCY_SENSOR_REPORTING_CONFIGURED:
+    471          #ifdef APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    472              sendConfigureReportingToNotify(APP_SRC_ENDPOINT2_ID, APP_ENDPOINT_COMBINED_INTERFACE, TEMPERATURE_MEASUREMENT_CLUSTER_ID,
+    473                ZCL_TEMPERATURE_MEASUREMENT_CLUSTER_SERVER_MEASURED_VALUE_ATTRIBUTE_ID, TEMPERATURE_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    474              configureReportingState = TEMPERATURE_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED;
+    475              break;
+    476          #endif
+    477            case TEMPERATURE_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED:
+    478          #ifdef APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    479              sendConfigureReportingToNotify(APP_SRC_ENDPOINT2_ID, APP_ENDPOINT_COMBINED_INTERFACE, TEMPERATURE_MEASUREMENT_CLUSTER_ID,
+    480                ZCL_TEMPERATURE_MEASUREMENT_CLUSTER_SERVER_TOLERANCE_ATTRIBUTE_ID, TEMPERATURE_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    481              configureReportingState = TEMPERATURE_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED;
+    482              break;
+    483          #endif
+    484            case TEMPERATURE_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED:
+    485          #ifdef APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    486              sendConfigureReportingToNotify(APP_SRC_ENDPOINT3_ID, APP_ENDPOINT_COMBINED_INTERFACE, HUMIDITY_MEASUREMENT_CLUSTER_ID,
+    487                ZCL_HUMIDITY_MEASUREMENT_CLUSTER_SERVER_MEASURED_VALUE_ATTRIBUTE_ID, HUMIDITY_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    488              configureReportingState = HUMIDITY_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED;
+    489              break;
+    490          #endif
+    491            case HUMIDITY_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED:
+    492          #ifdef APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    493              sendConfigureReportingToNotify(APP_SRC_ENDPOINT3_ID, APP_ENDPOINT_COMBINED_INTERFACE, HUMIDITY_MEASUREMENT_CLUSTER_ID,
+    494                ZCL_HUMIDITY_MEASUREMENT_CLUSTER_SERVER_TOLERANCE_ATTRIBUTE_ID, HUMIDITY_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    495              configureReportingState = HUMIDITY_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED;
+    496              break;
+    497          #endif
+    498            case HUMIDITY_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED:
+    499          #ifdef APP_SENSOR_TYPE_LIGHT_SENSOR
+    500              sendConfigureReportingToNotify(APP_SRC_ENDPOINT4_ID, APP_ENDPOINT_COMBINED_INTERFACE, ILLUMINANCE_MEASUREMENT_CLUSTER_ID,
+    501                ZCL_ILLUMINANCE_MEASUREMENT_CLUSTER_MEASURED_VALUE_SERVER_ATTRIBUTE_ID, ILLUMINANCE_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    502              configureReportingState = LIGHT_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED;
+    503              break;
+    504          #endif
+    505            case LIGHT_SENSOR_MEASURED_VALUE_REPORTING_CONFIGURED:
+    506          #ifdef APP_SENSOR_TYPE_LIGHT_SENSOR
+    507              sendConfigureReportingToNotify(APP_SRC_ENDPOINT4_ID, APP_ENDPOINT_COMBINED_INTERFACE, ILLUMINANCE_MEASUREMENT_CLUSTER_ID,
+    508                ZCL_ILLUMINANCE_MEASUREMENT_CLUSTER_TOLERANCE_SERVER_ATTRIBUTE_ID, ILLUMINANCE_MEASUREMENT_VAL_MAX_REPORT_PERIOD, msConfigureReportingResp);
+    509              configureReportingState = LIGHT_SENSOR_TOLERANCE_VALUE_REPORTING_CONFIGURED;
+    510              break;
+    511          #endif
+    512            default:
+    513              configureReportingState = CONFIGURE_REPORTING_COMPLETED;
+    514              break;
+    515            }
+    516            (void)ntfy;
+    517          }
+    518          
+    519          /**************************************************************************//**
+    520          \brief Periodic update of various attributes of different sensors
+    521          *****************************************************************************/
+    522          static void updateSensorsAttributeValues(void)
+    523          {
+    524          #ifdef APP_SENSOR_TYPE_OCCUPANCY_SENSOR
+    525            occupancySensingToggleOccupancy();
+    526          #endif
+    527          #ifdef APP_SENSOR_TYPE_TEMPERATURE_SENSOR
+    528            tempeartureMeasurementUpdateMeasuredValue();
+    529          #endif
+    530          #ifdef APP_SENSOR_TYPE_HUMIDITY_SENSOR
+    531            humidityMeasurementUpdateMeasuredValue();
+    532          #endif
+    533          #ifdef APP_SENSOR_TYPE_LIGHT_SENSOR
+    534            illuminanceMeasurementUpdateMeasuredValue();
+    535          #endif
+    536          
+    537          }
+    538          /**************************************************************************//**
+    539          \brief ZDO Binding indication function
+    540          
+    541          \param[out] bindInd - ZDO bind indication parameters structure pointer.
+    542                                For details go to ZDO_BindInd_t declaration
+    543          ******************************************************************************/
+    544          void ZDO_BindIndication(ZDO_BindInd_t *bindInd)
+    545          {
+    546            (void)bindInd;
+    547          }
+    548          
+    549          /**************************************************************************//**
+    550          \brief ZDO Unbinding indication function
+    551          
+    552          \param[out] unbindInd - ZDO unbind indication parameters structure pointer.
+    553                                  For details go to ZDO_UnbindInd_t declaration
+    554          ******************************************************************************/
+    555          void ZDO_UnbindIndication(ZDO_UnbindInd_t *unbindInd)
+    556          {
+    557            (void)unbindInd;
+    558          }
+    559          
+    560          /**************************************************************************//**
+    561            \brief Processes BC_EVENT_POLL_REQUEST event
+    562          
+    563            \param[in] eventId - id of raised event;
+    564            \param[in] data    - event's data.
+    565          ******************************************************************************/
+    566          static void isBusyOrPollCheck(SYS_EventId_t eventId, SYS_EventData_t data)
+    567          {
+    568          #if defined (_SLEEP_WHEN_IDLE_)
+    569            bool *check = (bool *)data;
+    570          
+    571            *check |= isEzModeInProgress();
+    572            (void)eventId;
+    573          #else
+    574            (void)eventId, (void)data;
+    575          #endif
+    576          }
+    577          
+    578          #if defined (_SLEEP_WHEN_IDLE_)
+    579          /**************************************************************************//**
+    580            \brief Processes HAL_EVENT_WAKING_UP event
+    581          
+    582            \param[in] eventId - id of raised event;
+    583            \param[in] data    - event's data.
+    584          ******************************************************************************/
+    585          static void sleepEventHandler(SYS_EventId_t eventId, SYS_EventData_t data)
+    586          {
+    587            HAL_SleepControl_t *sleepControl = (HAL_SleepControl_t *)data;
+    588          
+    589            if (HAL_WAKEUP_SOURCE_EXT_IRQ == sleepControl->wakeupSource)
+    590            {
+    591              zdoWakeUpReq.ZDO_WakeUpConf = ZDO_WakeUpConf;
+    592              ZDO_WakeUpReq(&zdoWakeUpReq);
+    593            }
+    594            (void)eventId;
+    595          }
+    596          
+    597          /**************************************************************************//**
+    598            \brief Wake up confirmation handler.
+    599          
+    600            \param[in] conf - confirmation parameters.
+    601          *****************************************************************************/
+    602          static void ZDO_WakeUpConf(ZDO_WakeUpConf_t *conf)
+    603          {
+    604            (void)conf;
+    605          }
+    606          
+    607          #if (APP_ENABLE_CONSOLE == 1)
+    608          /**************************************************************************//**
+    609            \brief Processes HAL_EVENT_FALL_ASLEEP & HAL_EVENT_CONITUING_SLEEP events
+    610          
+    611            \param[in] eventId - id of raised event;
+    612            \param[in] data    - event's data.
+    613          ******************************************************************************/
+    614          static void sleepModeHandler(SYS_EventId_t eventId, SYS_EventData_t data)
+    615          {
+    616            // when console is enabled, we go to idle mode to handle UART Rx interrupt
+    617            // because UART Rx interrupt will not wake up the MCU from power save or power down modes
+    618            *(HAL_SleepMode_t *)data = HAL_SLEEP_MODE_IDLE;
+    619            (void)eventId;
+    620          }
+    621          #endif // #if (APP_ENABLE_CONSOLE == 1)
+    622          #endif // #if defined (_SLEEP_WHEN_IDLE_)
+    623          #endif // APP_DEVICE_TYPE_MULTI_SENSOR
+    624          // eof multiSensor.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

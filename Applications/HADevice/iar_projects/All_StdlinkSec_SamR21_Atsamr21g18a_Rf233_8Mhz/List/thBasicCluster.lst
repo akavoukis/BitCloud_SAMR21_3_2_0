@@ -1,0 +1,406 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:56
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thBasicCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thBasicCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\thBasicCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\thBasicCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thBasicCluster.c
+      1          /**************************************************************************//**
+      2            \file thBasicCluster.c
+      3          
+      4            \brief
+      5              Thermostat Basic cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              09/09/2014 Unithra.C - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_THERMOSTAT
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <thBasicCluster.h>
+     24          #include <basicCluster.h>
+     25          #include <thClusters.h>
+     26          
+     27          /******************************************************************************
+     28                              Prototypes section
+     29          ******************************************************************************/
+     30          static ZCL_Status_t resetToFactoryDefaultsInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload);
+     31          
+     32          /******************************************************************************
+     33                              Global variables
+     34          ******************************************************************************/
+
+   \                                 In section .data, align 4
+     35          ZCL_BasicClusterServerAttributes_t thBasicClusterServerAttributes =
+   \                     thBasicClusterServerAttributes:
+   \   00000000   0x0000             DC16 0
+   \   00000002   0x20 0x02          DC8 32, 2, 0
+   \              0x00         
+   \   00000005   0x0001             DC16 1
+   \   00000007   0x20 0x02          DC8 32, 2, 0
+   \              0x00         
+   \   0000000A   0x0002             DC16 2
+   \   0000000C   0x20 0x02          DC8 32, 2, 0
+   \              0x00         
+   \   0000000F   0x0003             DC16 3
+   \   00000011   0x20 0x02          DC8 32, 2, 0
+   \              0x00         
+   \   00000014   0x0004             DC16 4
+   \   00000016   0x42 0x02          DC8 66, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000028   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000038   0x0005             DC16 5
+   \   0000003A   0x42 0x02          DC8 66, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000004C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000005C   0x0007             DC16 7
+   \   0000005E   0x30 0x02          DC8 48, 2, 0
+   \              0x00         
+   \   00000061   0x0011             DC16 17
+   \   00000063   0x30 0x00          DC8 48, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00         
+     36          {
+     37            ZCL_DEFINE_BASIC_CLUSTER_SERVER_ATTRIBUTES()
+     38          };
+     39          
+
+   \                                 In section .data, align 4
+     40          ZCL_BasicClusterServerCommands_t thBasicClusterServerCommands =
+   \                     thBasicClusterServerCommands:
+   \   00000000   0x00 0x10          DC8 0, 16, 0, 0
+   \              0x00 0x00    
+   \   00000004   0x........         DC32 resetToFactoryDefaultsInd
+     41          {
+     42            ZCL_DEFINE_BASIC_CLUSTER_COMMANDS(resetToFactoryDefaultsInd)
+     43          };
+     44          
+     45          /******************************************************************************
+     46                              Implementation section
+     47          ******************************************************************************/
+     48          /**************************************************************************//**
+     49          \brief Initializes Basic cluster
+     50          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     51          void basicClusterInit(void)
+     52          {
+   \                     basicClusterInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     53            thBasicClusterServerAttributes.zclVersion.value          = ZCL_VERSION;
+   \   00000002   0x....             LDR      R1,??DataTable3
+   \   00000004   0x1D08             ADDS     R0,R1,#+4
+   \   00000006   0x2201             MOVS     R2,#+1
+   \   00000008   0x7002             STRB     R2,[R0, #+0]
+     54            thBasicClusterServerAttributes.powerSource.value         = ZCL_MAINS_THREE_PHASE;
+   \   0000000A   0x000A             MOVS     R2,R1
+   \   0000000C   0x3260             ADDS     R2,R2,#+96
+   \   0000000E   0x2302             MOVS     R3,#+2
+   \   00000010   0x7013             STRB     R3,[R2, #+0]
+     55            thBasicClusterServerAttributes.physicalEnvironment.value = ZCL_UNSPECIFIED_ENVIRONMENT;
+   \   00000012   0x2400             MOVS     R4,#+0
+   \   00000014   0x7154             STRB     R4,[R2, #+5]
+     56            thBasicClusterServerAttributes.applicationVersion.value  = 2;
+   \   00000016   0x7143             STRB     R3,[R0, #+5]
+     57            thBasicClusterServerAttributes.stackVersion.value        = 3;
+   \   00000018   0x2203             MOVS     R2,#+3
+   \   0000001A   0x7282             STRB     R2,[R0, #+10]
+     58            thBasicClusterServerAttributes.hwVersion.value           = 4;
+   \   0000001C   0x2204             MOVS     R2,#+4
+   \   0000001E   0x73C2             STRB     R2,[R0, #+15]
+     59          
+     60            memcpy(thBasicClusterServerAttributes.manufacturerName.value, "\x1f Atmel ", 8);
+   \   00000020   0x....             ADR.N    R2,?_0
+   \   00000022   0x0008             MOVS     R0,R1
+   \   00000024   0x3018             ADDS     R0,R0,#+24
+   \   00000026   0xCA18             LDM      R2!,{R3,R4}
+   \   00000028   0xC018             STM      R0!,{R3,R4}
+     61            memcpy(thBasicClusterServerAttributes.modelIdentifier.value, "\x1f Thermostat", 12);
+   \   0000002A   0xBF00             Nop      
+   \   0000002C   0x....             ADR.N    R0,?_1
+   \   0000002E   0x313C             ADDS     R1,R1,#+60
+   \   00000030   0xC81C             LDM      R0!,{R2-R4}
+   \   00000032   0xC11C             STM      R1!,{R2-R4}
+     62          }
+   \   00000034   0xBD10             POP      {R4,PC}          ;; return
+     63          
+     64          /**************************************************************************//**
+     65          \brief Callback on receive of resetToFactoryDefaults command
+     66          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     67          static ZCL_Status_t resetToFactoryDefaultsInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload)
+     68          {
+   \                     resetToFactoryDefaultsInd: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     69            for (uint8_t i=0; i<TH_SERVER_CLUSTER_INIT_COUNT; i++)
+   \   00000002   0x2400             MOVS     R4,#+0
+     70            {
+     71              if (thServerClusterInitFunctions[i])
+   \                     ??resetToFactoryDefaultsInd_0: (+1)
+   \   00000004   0x....             LDR      R0,??DataTable3_1
+   \   00000006   0x00A1             LSLS     R1,R4,#+2
+   \   00000008   0x5840             LDR      R0,[R0, R1]
+   \   0000000A   0x0001             MOVS     R1,R0
+   \   0000000C   0xD000             BEQ      ??resetToFactoryDefaultsInd_1
+     72                (thServerClusterInitFunctions[i])();
+   \   0000000E   0x4780             BLX      R0
+     73            }
+   \                     ??resetToFactoryDefaultsInd_1: (+1)
+   \   00000010   0x1C64             ADDS     R4,R4,#+1
+   \   00000012   0x2C0C             CMP      R4,#+12
+   \   00000014   0xDBF6             BLT      ??resetToFactoryDefaultsInd_0
+     74          
+     75          #ifdef OTAU_CLIENT
+     76            for (uint8_t i=0; i<TH_CLIENT_CLUSTER_INIT_COUNT; i++)
+     77            {
+     78              if (thClientClusterInitFunctions[i])
+     79                (thClientClusterInitFunctions[i])();
+     80            }
+     81          #endif
+     82          
+     83            // needs to enable after app directory is created
+     84            //PDS_Store(HA_APP_MEMORY_MEM_ID);
+     85          
+     86            (void)addressing;
+     87            (void)payloadLength;
+     88            (void)payload;
+     89            return ZCL_SUCCESS_STATUS;
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0xBD10             POP      {R4,PC}          ;; return
+     90          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     thBasicClusterServerAttributes
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     thServerClusterInitFunctions
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_0:
+   \   00000000   0x1F 0x20          DC8 "\037 Atmel "
+   \              0x41 0x74    
+   \              0x6D 0x65    
+   \              0x6C 0x20    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \   00000000   0x1F 0x20          DC8 "\037 Thermostat"
+   \              0x54 0x68    
+   \              0x65 0x72    
+   \              0x6D 0x6F    
+   \              0x73 0x74    
+   \              0x61 0x74    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+     91          
+     92          #endif // APP_DEVICE_TYPE_THERMOSTAT
+     93          
+     94          // eof thBasicCluster.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   basicClusterInit
+       8   resetToFactoryDefaultsInd
+         8   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+      12  ?_0
+      16  ?_1
+      54  basicClusterInit
+      26  resetToFactoryDefaultsInd
+     104  thBasicClusterServerAttributes
+       8  thBasicClusterServerCommands
+
+ 
+ 112 bytes in section .data
+ 116 bytes in section .text
+ 
+ 116 bytes of CODE memory
+ 112 bytes of DATA memory
+
+Errors: none
+Warnings: none

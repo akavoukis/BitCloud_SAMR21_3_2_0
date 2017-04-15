@@ -1,0 +1,378 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:17
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclCommandAnalyzer.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclCommandAnalyzer.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclCommandAnalyzer.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclCommandAnalyzer.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclCommandAnalyzer.c
+      1          /************************************************************************//**
+      2            \file zclCommandAnalyzer.c
+      3          
+      4            \brief
+      5              ZCL command analyzer implementation
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              21.03.13 N. Fomin - Created.
+     17          ******************************************************************************/
+     18          
+     19          /******************************************************************************
+     20                                     Includes section
+     21          ******************************************************************************/
+     22          #include <zclCommandAnalyzer.h>
+     23          #include <clusters.h>
+     24          #include <zclMessagingCluster.h>
+     25          #include <zclPriceCluster.h>
+     26          
+     27          /******************************************************************************
+     28                                      Definitions section
+     29          ******************************************************************************/
+     30          #define ZCL_COMMAND_TABLE_SIZE 2u
+     31          
+     32          /******************************************************************************
+     33                                      Types section
+     34          ******************************************************************************/
+     35          typedef bool (*CheckerRoutine_t)(uint8_t *);
+     36          
+     37          typedef struct
+     38          {
+     39            ClusterId_t      cluster;
+     40            ZCL_CommandId_t  command;
+     41            CheckerRoutine_t checker;
+     42          } ZclCommandRecord_t;
+     43          
+     44          /******************************************************************************
+     45                                     Prototypes section
+     46          ******************************************************************************/
+     47          static bool displayMessagePayloadChecker(uint8_t *payload);
+     48          static bool publishPricePayloadChecker(uint8_t *payload);
+     49          
+     50          /******************************************************************************
+     51                                     Constants section
+     52          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     53          PROGMEM_DECLARE(ZclCommandRecord_t zclCommandTable[ZCL_COMMAND_TABLE_SIZE]) =
+   \                     zclCommandTable:
+   \   00000000   0x0703             DC16 1795
+   \   00000002   0x00 0x00          DC8 0, 0
+   \   00000004   0x........         DC32 displayMessagePayloadChecker
+   \   00000008   0x0700             DC16 1792
+   \   0000000A   0x00 0x00          DC8 0, 0
+   \   0000000C   0x........         DC32 publishPricePayloadChecker
+     54          {
+     55            {MESSAGE_CLUSTER_ID, DISPLAY_MESSAGE_COMMAND_ID, displayMessagePayloadChecker},
+     56            {PRICE_CLUSTER_ID,   PUBLISH_PRICE_COMMAND_ID,   publishPricePayloadChecker}
+     57          };
+     58          
+     59          /******************************************************************************
+     60                                     Implementation section
+     61          ******************************************************************************/
+     62          /**************************************************************************//**
+     63          \brief Checks if response for command is required based on its payload
+     64          
+     65          \param[in] cluster - cluster id of command
+     66          \param[in] cmd     - command id
+     67          \param[in] payload - command payload
+     68          
+     69          \returns true if resposne is required, false otherwise
+     70          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     71          bool zclIsResponseRequiredByPayload(ClusterId_t cluster, ZCL_CommandId_t cmd, uint8_t dir, uint8_t *payload)
+     72          {
+   \                     zclIsResponseRequiredByPayload: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+     73            for (uint8_t i = 0; i < ZCL_COMMAND_TABLE_SIZE; i++)
+   \   00000002   0x2400             MOVS     R4,#+0
+     74            {
+     75              if (cluster == zclCommandTable[i].cluster)
+   \                     ??zclIsResponseRequiredByPayload_0: (+1)
+   \   00000004   0x....             ADR.N    R5,zclCommandTable
+   \   00000006   0x00E6             LSLS     R6,R4,#+3
+   \   00000008   0x19AD             ADDS     R5,R5,R6
+   \   0000000A   0x882E             LDRH     R6,[R5, #+0]
+   \   0000000C   0x42B0             CMP      R0,R6
+   \   0000000E   0xD108             BNE      ??zclIsResponseRequiredByPayload_1
+     76                if (cmd == zclCommandTable[i].command)
+   \   00000010   0x78AE             LDRB     R6,[R5, #+2]
+   \   00000012   0x42B1             CMP      R1,R6
+   \   00000014   0xD105             BNE      ??zclIsResponseRequiredByPayload_1
+     77                  if (ZCL_FRAME_CONTROL_DIRECTION_SERVER_TO_CLIENT == dir)
+   \   00000016   0x2A01             CMP      R2,#+1
+   \   00000018   0xD103             BNE      ??zclIsResponseRequiredByPayload_1
+     78                    return zclCommandTable[i].checker(payload);
+   \   0000001A   0x0018             MOVS     R0,R3
+   \   0000001C   0x6869             LDR      R1,[R5, #+4]
+   \   0000001E   0x4788             BLX      R1
+   \   00000020   0xBD70             POP      {R4-R6,PC}
+     79            }
+   \                     ??zclIsResponseRequiredByPayload_1: (+1)
+   \   00000022   0x1C64             ADDS     R4,R4,#+1
+   \   00000024   0xB2E4             UXTB     R4,R4
+   \   00000026   0x2C02             CMP      R4,#+2
+   \   00000028   0xD3EC             BCC      ??zclIsResponseRequiredByPayload_0
+     80          
+     81            return false;
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \   0000002C   0xBD70             POP      {R4-R6,PC}       ;; return
+     82          }
+     83          
+     84          /***************************************************************************//**
+     85          \brief Checks whether response for command is required based on its address mode
+     86          
+     87          \param[in] req - pointer to request structure
+     88          
+     89          \return true - if response is required, false - otherwise.
+     90          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     91          bool zclIsResponseRequiredByAddrMode(ZCL_Request_t *req)
+     92          {
+     93            if ((APS_SHORT_ADDRESS == req->dstAddressing.addrMode &&
+     94                 IS_BROADCAST_ADDR(req->dstAddressing.addr.shortAddress))
+     95          #ifdef _APS_MULTICAST_
+     96                 || APS_GROUP_ADDRESS == req->dstAddressing.addrMode
+     97          #endif
+     98               )
+   \                     zclIsResponseRequiredByAddrMode: (+1)
+   \   00000000   0x2120             MOVS     R1,#+32
+   \   00000002   0x5C41             LDRB     R1,[R0, R1]
+   \   00000004   0x2902             CMP      R1,#+2
+   \   00000006   0xD105             BNE      ??zclIsResponseRequiredByAddrMode_0
+   \   00000008   0x8D00             LDRH     R0,[R0, #+40]
+   \   0000000A   0x....             LDR      R1,??DataTable1  ;; 0xfff8
+   \   0000000C   0x4288             CMP      R0,R1
+   \   0000000E   0xD203             BCS      ??zclIsResponseRequiredByAddrMode_1
+     99              return false;
+    100          
+    101            return true;
+   \                     ??zclIsResponseRequiredByAddrMode_2: (+1)
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0x4770             BX       LR               ;; return
+   \                     ??zclIsResponseRequiredByAddrMode_0: (+1)
+   \   00000014   0x2901             CMP      R1,#+1
+   \   00000016   0xD1FB             BNE      ??zclIsResponseRequiredByAddrMode_2
+   \                     ??zclIsResponseRequiredByAddrMode_1: (+1)
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x4770             BX       LR
+    102          }
+    103          
+    104          /**************************************************************************//**
+    105          \brief Checks if response for Display Message is required
+    106          
+    107          \param[in] payload - comamnd payload
+    108          
+    109          \returns true if resposne is required, false otherwise
+    110          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    111          static bool displayMessagePayloadChecker(uint8_t *payload)
+    112          {
+    113            DisplayMessage_t *cmd = (DisplayMessage_t *)payload;
+    114          
+    115            return cmd->messageControl.messageConfirmation;
+   \                     displayMessagePayloadChecker: (+1)
+   \   00000000   0x7900             LDRB     R0,[R0, #+4]
+   \   00000002   0x09C0             LSRS     R0,R0,#+7
+   \   00000004   0x4770             BX       LR               ;; return
+    116          }
+    117          
+    118          /**************************************************************************//**
+    119          \brief Checks if response for Publish Price is required
+    120          
+    121          \param[in] payload - comamnd payload
+    122          
+    123          \returns true if resposne is required, false otherwise
+    124          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    125          static bool publishPricePayloadChecker(uint8_t *payload)
+    126          {
+    127            ZCL_PublishPrice_t *cmd = (ZCL_PublishPrice_t *)payload;
+    128          
+    129            return cmd->priceControl;
+   \                     publishPricePayloadChecker: (+1)
+   \   00000000   0x3035             ADDS     R0,R0,#+53
+   \   00000002   0x7800             LDRB     R0,[R0, #+0]
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD000             BEQ      ??publishPricePayloadChecker_0
+   \   00000008   0x2001             MOVS     R0,#+1
+   \                     ??publishPricePayloadChecker_0: (+1)
+   \   0000000A   0x4770             BX       LR               ;; return
+    130          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x0000FFF8         DC32     0xfff8
+    131          
+    132          //eof zclCommandAnalyzer.c
+    133          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   displayMessagePayloadChecker
+       0   publishPricePayloadChecker
+       0   zclIsResponseRequiredByAddrMode
+      16   zclIsResponseRequiredByPayload
+        16   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       6  displayMessagePayloadChecker
+      12  publishPricePayloadChecker
+      16  zclCommandTable
+      28  zclIsResponseRequiredByAddrMode
+      46  zclIsResponseRequiredByPayload
+
+ 
+ 112 bytes in section .text
+ 
+ 112 bytes of CODE memory
+
+Errors: none
+Warnings: none

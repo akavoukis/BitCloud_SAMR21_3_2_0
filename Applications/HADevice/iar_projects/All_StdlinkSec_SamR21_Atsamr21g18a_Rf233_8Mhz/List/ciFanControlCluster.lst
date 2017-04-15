@@ -1,0 +1,366 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:05
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciFanControlCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciFanControlCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciFanControlCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciFanControlCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciFanControlCluster.c
+      1          /**************************************************************************//**
+      2            \file ciFanControlCluster.c
+      3          
+      4            \brief
+      5              Combined Interface Fan Control cluster(client) implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              17/11/2014 Parthasarathy G - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciFanControlCluster.h>
+     24          #if APP_ENABLE_CONSOLE == 1
+     25          #include <uartManager.h>
+     26          #endif
+     27          #include <commandManager.h>
+     28          #include <haClusters.h>
+     29          
+     30          /******************************************************************************
+     31                              Local variables section
+     32          ******************************************************************************/
+     33          static AttibuteReadCallback_t   readAttributeCallback;
+     34          static AttributeWriteCallback_t writeAttributeCallback;
+     35          
+     36          /******************************************************************************
+     37                              Prototypes section
+     38          ******************************************************************************/
+     39          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy);
+     40          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy);
+     41          
+     42          /*****************************************************************************/
+     43          /******************************************************************************
+     44                              Prototypes section
+     45          ******************************************************************************/
+     46          static void ciFanControlAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event);
+     47          
+     48          /******************************************************************************
+     49                              Implementation section
+     50          ******************************************************************************/
+     51          /**************************************************************************//**
+     52          \brief Initializes fan control client cluster
+     53          ******************************************************************************/
+     54          void fanControlClusterInit(void)
+     55          {
+     56            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, FAN_CONTROL_CLUSTER_ID, ZCL_CLUSTER_SIDE_CLIENT);
+     57          
+     58            if (cluster)
+     59            {
+     60              cluster->ZCL_AttributeEventInd = ciFanControlAttrEventInd;
+     61            }
+     62          }
+     63          
+     64          /**************************************************************************//**
+     65          \brief Sends Read Attribute command unicastly
+     66          
+     67          \param[in] mode - address mode;
+     68          \param[in] addr - short address of destination node;
+     69          \param[in] ep   - destination endpoint;
+     70          \param[in] attr - attribute id;
+     71          \param[in] cb   - callback function
+     72          ******************************************************************************/
+     73          void fanControlReadAttribute(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep,
+     74            uint16_t attr, AttibuteReadCallback_t cb)
+     75          {
+     76            ZCL_Request_t *req;
+     77            ZCL_NextElement_t element;
+     78            ZCL_ReadAttributeReq_t readAttrReqElement;
+     79          
+     80            if (!(req = getFreeCommand()))
+     81              return;
+     82          
+     83            readAttributeCallback = cb;
+     84          
+     85            readAttrReqElement.id = attr;
+     86          
+     87            element.payloadLength = 0;
+     88            element.payload = req->requestPayload;
+     89            element.id = ZCL_READ_ATTRIBUTES_COMMAND_ID;
+     90            element.content = &readAttrReqElement;
+     91            ZCL_PutNextElement(&element);
+     92          
+     93            fillCommandRequest(req, ZCL_READ_ATTRIBUTES_COMMAND_ID, element.payloadLength);
+     94            fillDstAddressing(&req->dstAddressing, mode, addr, ep, FAN_CONTROL_CLUSTER_ID);
+     95            req->ZCL_Notify = ZCL_ReadAttributeResp;
+     96          
+     97            commandManagerSendAttribute(req);
+     98          }
+     99          
+    100          /**************************************************************************//**
+    101          \brief Sends Write Attribute command unicastly
+    102          
+    103          \param[in] mode - address mode;
+    104          \param[in] addr - short address of destination node;
+    105          \param[in] attr - attribute id;
+    106          \param[in] ep   - destination endpoint;
+    107          \param[in] type - attribute type;
+    108          \param[in] cb   - callback function;
+    109          \param[in] data - the pointer to memory with value to be written;
+    110          \param[in] size - size of data parameter in octets
+    111          ******************************************************************************/
+    112          void fanControlWriteAttribute(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    113            uint16_t attr, uint8_t type, AttributeWriteCallback_t cb, void *data, uint8_t size)
+    114          {
+    115            ZCL_Request_t *req;
+    116            ZCL_WriteAttributeReq_t writeAttrReq;
+    117          
+    118            if (!(req = getFreeCommand()))
+    119              return;
+    120          
+    121            writeAttributeCallback = cb;
+    122          
+    123            writeAttrReq.id = attr;
+    124            writeAttrReq.type = type;
+    125            memcpy(req->requestPayload, (uint8_t *)&writeAttrReq, sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    126            memcpy(req->requestPayload + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t), (uint8_t *)data, size);
+    127          
+    128            fillCommandRequest(req, ZCL_WRITE_ATTRIBUTES_COMMAND_ID, size + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    129            fillDstAddressing(&req->dstAddressing, mode, addr, ep, FAN_CONTROL_CLUSTER_ID);
+    130            req->ZCL_Notify = ZCL_WriteAttributeResp;
+    131          
+    132            commandManagerSendAttribute(req);
+    133          }
+    134          /**************************************************************************//**
+    135          \brief Attribute Event indication handler(to indicate when attr values have
+    136                  read or written)
+    137          
+    138          \param[in] addressing - pointer to addressing information;
+    139          \param[in] reportLength - data payload length;
+    140          \param[in] reportPayload - data pointer
+    141          ******************************************************************************/
+    142          static void ciFanControlAttrEventInd(ZCL_Addressing_t *addressing, ZCL_AttributeId_t attributeId, ZCL_AttributeEvent_t event)
+    143          {
+    144          #if APP_ENABLE_CONSOLE == 1
+    145            LOG_STRING(AttrEventIndStr, "<-Attr ID 0x%x event 0x%x\r\n");
+    146            appSnprintf(AttrEventIndStr, attributeId, event);
+    147          #else
+    148            (void)attributeId;
+    149            (void)event;
+    150          #endif
+    151            (void)addressing;
+    152          }
+    153          
+    154          /**************************************************************************//**
+    155          \brief Indication of read attribute response
+    156          
+    157          \param[in] resp - pointer to response
+    158          ******************************************************************************/
+    159          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy)
+    160          {
+    161            ZCL_NextElement_t element;
+    162            ZCL_ReadAttributeResp_t *readAttributeResp;
+    163            uint8_t attributeValue;
+    164          
+    165            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    166            {
+    167              element.id            = ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    168              element.payloadLength = ntfy->responseLength;
+    169              element.payload       = ntfy->responsePayload;
+    170              element.content       = NULL;
+    171          
+    172              ZCL_GetNextElement(&element);
+    173              readAttributeResp = (ZCL_ReadAttributeResp_t *) element.content;
+    174          
+    175              if (readAttributeCallback)
+    176                readAttributeCallback((void *)&readAttributeResp->value[0]);
+    177          
+    178              memcpy(&attributeValue, &readAttributeResp->value[0], sizeof(uint8_t));
+    179          #if APP_ENABLE_CONSOLE == 1
+    180              LOG_STRING(readAttrSuccessStr, "<-Read Fan Control attribute (0x%x) response: success value = 0x%x\r\n");
+    181              appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id, attributeValue);
+    182          #endif
+    183            }
+    184            else
+    185            {
+    186          #if APP_ENABLE_CONSOLE == 1
+    187              LOG_STRING(readAttrFailStr, " +Read Fan Control attribute failed: status = 0x%2x\r\n");
+    188              appSnprintf(readAttrFailStr, (unsigned)ntfy->status);
+    189          #endif
+    190            }
+    191          }
+    192          
+    193          /**************************************************************************//**
+    194          \brief Indication of write attribute response
+    195          
+    196          \param[in] resp - pointer to response
+    197          ******************************************************************************/
+    198          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy)
+    199          {
+    200            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    201            {
+    202              if (writeAttributeCallback)
+    203                writeAttributeCallback();
+    204          #if APP_ENABLE_CONSOLE == 1
+    205              LOG_STRING(writeAttrSuccessStr, " <-Write Fan Control attribute response: success\r\n");
+    206              appSnprintf(writeAttrSuccessStr);
+    207          #endif
+    208            }
+    209            else
+    210            {
+    211          #if APP_ENABLE_CONSOLE == 1
+    212              LOG_STRING(writeAttrFailStrTwo, " +Write Fan Control attribute failed: status = 0x%x\r\n");
+    213              appSnprintf(writeAttrFailStrTwo, (unsigned)ntfy->status);
+    214          #endif
+    215            }
+    216          }
+    217          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    218          
+    219          // eof ciFanControlCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

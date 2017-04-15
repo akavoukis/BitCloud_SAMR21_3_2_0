@@ -1,0 +1,578 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:32
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACEConsole.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACEConsole.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\iasACEConsole.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\iasACEConsole.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACEConsole.c
+      1          /**************************************************************************//**
+      2            \file iasACEConsole.c
+      3          
+      4            \brief
+      5              IAS ACE console implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              18/11/2014 Yogesh - Created
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_IAS_ACE
+     19          #if APP_ENABLE_CONSOLE == 1
+     20          
+     21          /******************************************************************************
+     22                              Includes section
+     23          ******************************************************************************/
+     24          #include <uartManager.h>
+     25          #include <console.h>
+     26          #include <iasACEZoneCluster.h>
+     27          #include <iasACECluster.h>
+     28          #include <resetReason.h>
+     29          #include <zclDevice.h>
+     30          #include <sysUtils.h>
+     31          #include <pdsDataServer.h>
+     32          #include <zdo.h>
+     33          #include <zclDevice.h>
+     34          #include <ezModeManager.h>
+     35          
+     36          
+     37          
+     38          /******************************************************************************
+     39                              Defines section
+     40          ******************************************************************************/
+     41          /* This value used in ZLL tests to identify non-ZLL Router */
+     42          #define TEST_DEVICE_TYPE_HA_ROUTER 0x03U
+     43          #define TEMPERATURE_SCALE 100
+     44          /******************************************************************************
+     45                              Types section
+     46          ******************************************************************************/
+     47          
+     48          /******************************************************************************
+     49                              Prototypes section
+     50          ******************************************************************************/
+     51          static void processHelpCmd(const ScanValue_t *args);
+     52          static void processResetCmd(const ScanValue_t *args);
+     53          static void processInvokeEzModeCmd(const ScanValue_t *args);
+     54          static void processResetToFactoryFreshCmd(const ScanValue_t *args);
+     55          static void processGetDeviceTypeCmd(const ScanValue_t *args);
+     56          static void processPseudoPowerOffCmd(const ScanValue_t *args);
+     57          static void processRestartNwkCmd(const ScanValue_t *args);
+     58          static void processGetNetworkAddressCmd(const ScanValue_t *args);
+     59          static void processZoneEnrollRequestCommand(const ScanValue_t *args);
+     60          static void processZoneStatusChangeNotificationCommand(const ScanValue_t *args);
+     61          static APS_AddrMode_t determineAddressMode(const ScanValue_t *args);
+     62          static void processIASACEArmCommand(const ScanValue_t *args);
+     63          static void processIASACEBypassCommand(const ScanValue_t *args);
+     64          static void processIASACEEmergencyommand(const ScanValue_t *args);
+     65          static void processIASACEFireCommand(const ScanValue_t *args);
+     66          static void processIASACEPanicCommand(const ScanValue_t *args);
+     67          static void processIASACEGetZoneIdMapCommand(const ScanValue_t *args);
+     68          static void processIASACEGetZoneIdInformationCommand(const ScanValue_t *args);
+     69          static void processZoneEnrollRequestCommand(const ScanValue_t *args);
+     70          static void processZoneStatusChangeNotificationCommand(const ScanValue_t *args);
+     71          static void processZoneStatusChangeCommand(const ScanValue_t *args);
+     72          static void processIASACEGetPanelStatusCommand(const ScanValue_t *args);
+     73          static void processIASACEGetZoneStatusCommand(const ScanValue_t *args);
+     74          static void processGetByPassZoneListCommand(const ScanValue_t *args);
+     75          
+     76          /******************************************************************************
+     77                              Local variables section
+     78          ******************************************************************************/
+     79          static uint8_t readBuffer[USART_RX_BUFFER_LENGTH];
+     80          static const ConsoleCommand_t cmds[] =
+     81          {
+     82            {"help",   "", processHelpCmd, "->Show help you're reading now:  help\r\n"},
+     83            {"reset", "", processResetCmd, "->Reset device\r\n"},
+     84            {"getNetworkAddress", "", processGetNetworkAddressCmd, "-> Returns network address: getNetworkAddress\r\n"},
+     85            {"invokeEZMode", "", processInvokeEzModeCmd, "->Start finding and binding process\r\n"},
+     86            {"resetToFN", "", processResetToFactoryFreshCmd, "->Reset to factory fresh settings: resetToFN\r\n"},
+     87            {"getDeviceType", "", processGetDeviceTypeCmd, "-> Request for device type: getDeviceType\r\n"},
+     88            {"powerOff", "", processPseudoPowerOffCmd, "-> Powers off device: powerOff\r\n"},
+     89            {"IASACEArmCommand", "sdddsd", processIASACEArmCommand,
+     90              "Sends IASACEAlarmCommand: [addrMode][addr][ep][ArmMode][Arm/Code][ZoneId]\r\n"},
+     91            {"IASACEBypassCommand", "sdddddds", processIASACEBypassCommand,
+     92            "Sends IASACEBypassCommand: [addrMode][addr][ep][zone_numbers][zone_id1][zone_id2][zone_id3][arm_code_code]\r\n"},
+     93            {"IASACEEmergencyCommand", "sdd", processIASACEEmergencyommand,
+     94              "Sends IASACEEmergencyCommand: [addrMode][addr][ep]\r\n"},
+     95            {"IASACEFireCommand", "sdd", processIASACEFireCommand,
+     96              "Sends IASACEFireCommand: [addrMode][addr][ep]\r\n"},
+     97            {"IASACEPanicCommand", "sdd", processIASACEPanicCommand,
+     98              "Sends IASACEPanicCommand: [addrMode][addr][ep]\r\n"},
+     99            {"IASACEGetZoneIdMapCommand", "sdd", processIASACEGetZoneIdMapCommand,
+    100              "Sends IASACEGetZoneIdMapCommand: [addrMode][addr][ep]\r\n"},
+    101            {"IASACEGetZoneIdInformationCommand", "sddd", processIASACEGetZoneIdInformationCommand,
+    102              "Sends IASACEGetZoneIdInformationCommand: [addrMode][addr][ep][zone_id]\r\n"},
+    103            {"IASACEGetPanelStatusCommand", "sdd", processIASACEGetPanelStatusCommand,
+    104              "Sends IASACEIASACEPanelStatusChangeCommand: [addrMode][addr][ep]\r\n"},
+    105            {"IASACEGetZoneStatusCommand", "sdddddd", processIASACEGetZoneStatusCommand,
+    106              "Sends IASACEZoneStatusChangeCommand: [addrMode][addr][ep][starting_zone_id][max_number_zoneids][zonestatus_maskflag][zonestatus_mask]\r\n"},
+    107            {"ZoneEnrollReqCmd", "sdddd", processZoneEnrollRequestCommand,
+    108              "Sends ZoneEnrollRequestCommand: [addrMode][addr][ep][zonetype][manuf_code]\r\n"},
+    109            {"ZoneStatusChangeNotifiCmd", "sdddd", processZoneStatusChangeNotificationCommand,
+    110              "Sends ZoneStatusChangeNotification Command: [addrMode][addr][ep][zonestatus][ext_status]\r\n"},
+    111            {"ZoneStatusChange", "d", processZoneStatusChangeCommand,
+    112              "Chnges Internal Zone Status to Initiate Notifications: [Device_Spec_Bits]\r\n"},
+    113            {"GetByPassZoneList", "sdd", processGetByPassZoneListCommand,
+    114              "To get the list of bypass zones: [addrMode][addr][ep]\r\n"},
+    115            {"restartNwk", "d", processRestartNwkCmd, "-> Restarts network on particular channel [channel]\r\n"},
+    116            {0,0,0,0},
+    117          };
+    118          
+    119          /******************************************************************************
+    120                              Implementation section
+    121          ******************************************************************************/
+    122          /**************************************************************************//**
+    123          \brief Sends single char to serial interface
+    124          ******************************************************************************/
+    125          void consoleTx(char chr)
+    126          {
+    127            appSnprintf(&chr);
+    128          }
+    129          
+    130          /**************************************************************************//**
+    131          \brief Processes single char read from serial interface
+    132          
+    133          \param[in] char - read char
+    134          ******************************************************************************/
+    135          void consoleTxStr(const char *str)
+    136          {
+    137            appSnprintf(str);
+    138          }
+    139          
+    140          /**************************************************************************//**
+    141          \brief Initializes console
+    142          ******************************************************************************/
+    143          void initConsole(void)
+    144          {
+    145            consoleRegisterCommands(cmds);
+    146          }
+    147          
+    148          /**************************************************************************//**
+    149          \brief Processes data received by console
+    150          ******************************************************************************/
+    151          void processConsole(uint16_t length)
+    152          {
+    153            int8_t bytesRead = readDataFromUart(readBuffer, MIN(USART_RX_BUFFER_LENGTH, length));
+    154          
+    155            for (int8_t i = 0; i < bytesRead; i++)
+    156              consoleRx(readBuffer[i]);
+    157          }
+    158          
+    159          /**************************************************************************//**
+    160          \brief Processes help command
+    161          
+    162          \param[in] args - array of command arguments
+    163          ******************************************************************************/
+    164          static void processHelpCmd(const ScanValue_t *args)
+    165          {
+    166            (void)args;
+    167          
+    168            LOG_STRING(commandStr, "Commands: \r\n");
+    169            appSnprintf(commandStr);
+    170            for (const ConsoleCommand_t *cmd = cmds; cmd->name; cmd++)
+    171              appSnprintf("%s\r\n", cmd->name);
+    172          }
+    173          
+    174          /**************************************************************************//**
+    175          \brief Processes reset command: reset device
+    176          
+    177          \param[in] args - array of command arguments
+    178          ******************************************************************************/
+    179          static void processResetCmd(const ScanValue_t *args)
+    180          {
+    181            (void)args;
+    182          
+    183            HAL_WarmReset();
+    184          }
+    185          /**************************************************************************//**
+    186          \brief Processes get network address command
+    187          
+    188          \param[in] args - array of command arguments
+    189          ******************************************************************************/
+    190          static void processGetNetworkAddressCmd(const ScanValue_t *args)
+    191          {
+    192            (void)args;
+    193            appSnprintf("%04x\r\n", NWK_GetShortAddr());
+    194          }
+    195          /**************************************************************************//**
+    196          \brief Processes start finding and binding command
+    197          
+    198          \param[in] args - array of command arguments
+    199          ******************************************************************************/
+    200          static void processInvokeEzModeCmd(const ScanValue_t *args)
+    201          {
+    202            (void)args;
+    203            invokeEzMode(NULL);
+    204          }
+    205          
+    206          /**************************************************************************//**
+    207          \brief Processes reset to factory fresh
+    208          
+    209          \param[in] args - array of command arguments
+    210          ******************************************************************************/
+    211          static void processResetToFactoryFreshCmd(const ScanValue_t *args)
+    212          {
+    213            (void)args;
+    214            PDS_DeleteAll(false);
+    215            HAL_WarmReset();
+    216          }
+    217          
+    218          /**************************************************************************//**
+    219          \brief Processes request for device type obtaining
+    220          
+    221          \param[in] args - array of command arguments
+    222          ******************************************************************************/
+    223          static void processGetDeviceTypeCmd(const ScanValue_t *args)
+    224          {
+    225            LOG_STRING(deviceFnStatusStr, "DeviceType = %d\r\n");
+    226            appSnprintf(deviceFnStatusStr, TEST_DEVICE_TYPE_HA_ROUTER);
+    227            (void)args;
+    228          }
+    229          
+    230          /**************************************************************************//**
+    231          \brief Processes pseudo power off command
+    232          
+    233          \param[in] args - array of command arguments
+    234          ******************************************************************************/
+    235          static void processPseudoPowerOffCmd(const ScanValue_t *args)
+    236          {
+    237            /* Disable BitCloud tasks for preventing calls to the radio.
+    238               HAL is enabled so it it allows to receive commands through UART. */
+    239            SYS_DisableTask(ZDO_TASK_ID);
+    240            SYS_DisableTask(APS_TASK_ID);
+    241            SYS_DisableTask(NWK_TASK_ID);
+    242            SYS_DisableTask(MAC_PHY_HWD_TASK_ID);
+    243            (void)args;
+    244          }
+    245          
+    246          /**************************************************************************//**
+    247          \brief Processes Restart Network command
+    248          
+    249          \param[in] args - array of command arguments
+    250          ******************************************************************************/
+    251          static void processRestartNwkCmd(const ScanValue_t *args)
+    252          {
+    253            CS_WriteParameter(CS_CHANNEL_MASK_ID, &(uint32_t){1ul << args[0].uint8});
+    254          
+    255            appRestart(false);
+    256          }
+    257          
+    258          
+    259          /**************************************************************************//**
+    260          \brief Processes Restart Network command
+    261          
+    262          \param[in] args - array of command arguments
+    263          ******************************************************************************/
+    264          static void processZoneEnrollRequestCommand(const ScanValue_t *args)
+    265          {
+    266            zoneEnrollRequestCommand(determineAddressMode(args), args[1].uint16, args[2].uint8, args[3].uint16,args[4].uint16);
+    267          
+    268          }
+    269          
+    270          /**************************************************************************//**
+    271          \brief Processes Restart Network command
+    272          
+    273          \param[in] args - array of command arguments
+    274          ******************************************************************************/
+    275          static void processZoneStatusChangeNotificationCommand(const ScanValue_t *args)
+    276          {
+    277            zoneStatusChangeNotificationCommand(determineAddressMode(args), args[1].uint16, args[2].uint8, args[3].uint16, args[4].uint8);
+    278          }
+    279          
+    280          /**************************************************************************//**
+    281          \brief Determines address mode for command
+    282          
+    283          \param[in] arg - pointer to command argument with address mode string
+    284          
+    285          \returns address mode
+    286          ******************************************************************************/
+    287          static APS_AddrMode_t determineAddressMode(const ScanValue_t *arg)
+    288          {
+    289            if (!memcmp("-g", arg->str, 2))
+    290              return APS_GROUP_ADDRESS;
+    291          
+    292            if (!memcmp("-b", arg->str, 2))
+    293              return APS_NO_ADDRESS;
+    294          
+    295            return APS_SHORT_ADDRESS;
+    296          }
+    297          
+    298          /**************************************************************************//**
+    299          \brief ACE Client Commands
+    300          
+    301          \param[in] arg - pointer to command argument with address mode string
+    302          
+    303          \returns address mode
+    304          ******************************************************************************/
+    305          static void processIASACEArmCommand(const ScanValue_t *args)
+    306          {
+    307            aceArmCommand(determineAddressMode(args), args[1].uint16, args[2].uint8, args[3].uint8, args[4].str, args[5].uint8);
+    308          }
+    309          
+    310          /**************************************************************************//**
+    311          \brief ACE Client Commands
+    312          
+    313          \param[in] arg - pointer to command argument with address mode string
+    314          
+    315          \returns address mode
+    316          ******************************************************************************/
+    317          static void processIASACEBypassCommand(const ScanValue_t *args)
+    318          {
+    319            aceByPassCommand(determineAddressMode(args), args[1].uint16, args[2].uint8, args[3].uint8, args[4].uint8, args[5].uint8,  args[6].uint8, args[7].str);
+    320          }
+    321          
+    322          /**************************************************************************//**
+    323          \brief ACE Client Commands
+    324          
+    325          \param[in] arg - pointer to command argument with address mode string
+    326          
+    327          \returns address mode
+    328          ******************************************************************************/
+    329          static void processIASACEEmergencyommand(const ScanValue_t *args)
+    330          {
+    331            aceEmergencyCommand(determineAddressMode(args), args[1].uint16, args[2].uint8);
+    332          }
+    333          
+    334          /**************************************************************************//**
+    335          \brief ACE Client Commands
+    336          
+    337          \param[in] arg - pointer to command argument with address mode string
+    338          
+    339          \returns address mode
+    340          ******************************************************************************/
+    341          static void processIASACEFireCommand(const ScanValue_t *args)
+    342          {
+    343            aceFireCommand(determineAddressMode(args), args[1].uint16, args[2].uint8);
+    344          }
+    345          /**************************************************************************//**
+    346          \brief ACE Client Commands
+    347          
+    348          \param[in] arg - pointer to command argument with address mode string
+    349          
+    350          \returns address mode
+    351          ******************************************************************************/
+    352          static void processIASACEPanicCommand(const ScanValue_t *args)
+    353          {
+    354            acePanicCommand(determineAddressMode(args), args[1].uint16, args[2].uint8);
+    355          }
+    356          
+    357          /**************************************************************************//**
+    358          \brief ACE Client Commands
+    359          
+    360          \param[in] arg - pointer to command argument with address mode string
+    361          
+    362          \returns address mode
+    363          ******************************************************************************/
+    364          static void processIASACEGetZoneIdMapCommand(const ScanValue_t *args)
+    365          {
+    366            aceGetZoneIdMapCommand(determineAddressMode(args), args[1].uint16, args[2].uint8);
+    367          }
+    368          
+    369          /**************************************************************************//**
+    370          \brief ACE Client Commands
+    371          
+    372          \param[in] arg - pointer to command argument with address mode string
+    373          
+    374          \returns address mode
+    375          ******************************************************************************/
+    376          static void processIASACEGetZoneIdInformationCommand(const ScanValue_t *args)
+    377          {
+    378            aceGetZoneInformationCommand(determineAddressMode(args), args[1].uint16, args[2].uint8, args[3].uint8);
+    379          }
+    380          
+    381          /**************************************************************************//**
+    382          \brief ACE Client Commands
+    383          
+    384          \param[in] arg - pointer to command argument with address mode string
+    385          
+    386          \returns address mode
+    387          ******************************************************************************/
+    388          static void processZoneStatusChangeCommand(const ScanValue_t *args)
+    389          {
+    390            zoneStatusChangeCommand(args[0].uint16);
+    391          }
+    392          
+    393          /**************************************************************************//**
+    394          \brief ACE Client Commands
+    395          
+    396          \param[in] arg - pointer to command argument with address mode string
+    397          
+    398          \returns address mode
+    399          ******************************************************************************/
+    400          static void processIASACEGetPanelStatusCommand(const ScanValue_t *args)
+    401          {
+    402            aceGetPanelStatusCommand(determineAddressMode(args), args[1].uint16, args[2].uint8);
+    403          }
+    404          
+    405          /**************************************************************************//**
+    406          \brief ACE Client Commands
+    407          
+    408          \param[in] arg - pointer to command argument with address mode string
+    409          
+    410          \returns address mode
+    411          ******************************************************************************/
+    412          static void processIASACEGetZoneStatusCommand(const ScanValue_t *args)
+    413          {
+    414            aceGetZoneStatusCommand(determineAddressMode(args), args[1].uint16, args[2].uint8, args[3].uint8, args[4].uint8, args[5].uint8, args[6].uint16);
+    415          }
+    416          
+    417          /**************************************************************************//**
+    418          \brief ACE Client Commands
+    419          
+    420          \param[in] arg - pointer to command argument with address mode string
+    421          
+    422          \returns address mode
+    423          ******************************************************************************/
+    424          static void processGetByPassZoneListCommand(const ScanValue_t *args)
+    425          {
+    426            getByPassZoneListCommand(determineAddressMode(args), args[1].uint16, args[2].uint8);
+    427          }
+    428          #endif // APP_ENABLE_CONSOLE == 1
+    429          #endif // APP_DEVICE_TYPE_IAS_ZONE
+    430          
+    431          // eof iasACEConsole.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

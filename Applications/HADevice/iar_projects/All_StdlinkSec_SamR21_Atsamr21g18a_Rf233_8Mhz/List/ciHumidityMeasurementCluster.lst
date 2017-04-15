@@ -1,0 +1,412 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:06
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciHumidityMeasurementCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciHumidityMeasurementCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciHumidityMeasurementCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciHumidityMeasurementCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciHumidityMeasurementCluster.c
+      1          /**************************************************************************//**
+      2            \file ciHumidityMeasurementCluster.c
+      3          
+      4            \brief
+      5              Combined Interface Humidity Measurement cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              06.06.14 Viswanadham Kotla - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciHumidityMeasurementCluster.h>
+     24          #include <uartManager.h>
+     25          #include <commandManager.h>
+     26          #include <haClusters.h>
+     27          
+     28          #include <zclOnOffCluster.h>
+     29          #include <zclLevelControlCluster.h>
+     30          
+     31          /******************************************************************************
+     32          //                      Global variables section
+     33          *****************************************************************************/
+     34          
+     35          /******************************************************************************
+     36                              Local variables section
+     37          ******************************************************************************/
+     38          static AttibuteReadCallback_t   readAttributeCallback;
+     39          static AttributeWriteCallback_t writeAttributeCallback;
+     40          
+     41          /******************************************************************************
+     42                              Prototypes section
+     43          ******************************************************************************/
+     44          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy);
+     45          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy);
+     46          
+     47          /*****************************************************************************/
+     48          /******************************************************************************
+     49                              Prototypes section
+     50          ******************************************************************************/
+     51          static void ciHumidityMeasurementReportInd(ZCL_Addressing_t *addressing, uint8_t reportLength, uint8_t *reportPayload);
+     52          static void ZCL_ConfigureReportingResp(ZCL_Notify_t *ntfy);
+     53          
+     54          /******************************************************************************
+     55                              Implementation section
+     56          ******************************************************************************/
+     57          /**************************************************************************//**
+     58          \brief Initializes Humidity Measurement cluster
+     59          ******************************************************************************/
+     60          void humidityMeasurementClusterInit(void)
+     61          {
+     62            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, HUMIDITY_MEASUREMENT_CLUSTER_ID, ZCL_CLUSTER_SIDE_CLIENT);
+     63          
+     64            if (cluster)
+     65              cluster->ZCL_ReportInd = ciHumidityMeasurementReportInd;
+     66          }
+     67          
+     68          /**************************************************************************//**
+     69          \brief Sends Read Attribute command unicastly
+     70          
+     71          \param[in] mode - address mode;
+     72          \param[in] addr - short address of destination node;
+     73          \param[in] ep   - destination endpoint;
+     74          \param[in] attr - attribute id;
+     75          \param[in] cb   - callback function
+     76          ******************************************************************************/
+     77          void humidityMeasurementReadAttribute(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep,
+     78            uint16_t attr, AttibuteReadCallback_t cb)
+     79          {
+     80            ZCL_Request_t *req;
+     81            ZCL_NextElement_t element;
+     82            ZCL_ReadAttributeReq_t readAttrReqElement;
+     83          
+     84            if (!(req = getFreeCommand()))
+     85              return;
+     86          
+     87            readAttributeCallback = cb;
+     88          
+     89            readAttrReqElement.id = attr;
+     90          
+     91            element.payloadLength = 0;
+     92            element.payload = req->requestPayload;
+     93            element.id = ZCL_READ_ATTRIBUTES_COMMAND_ID;
+     94            element.content = &readAttrReqElement;
+     95            ZCL_PutNextElement(&element);
+     96          
+     97            fillCommandRequest(req, ZCL_READ_ATTRIBUTES_COMMAND_ID, element.payloadLength);
+     98            fillDstAddressing(&req->dstAddressing, mode, addr, ep, HUMIDITY_MEASUREMENT_CLUSTER_ID);
+     99            req->ZCL_Notify = ZCL_ReadAttributeResp;
+    100          
+    101            commandManagerSendAttribute(req);
+    102          }  
+    103          
+    104          /**************************************************************************//**
+    105          \brief Sends Write Attribute command unicastly
+    106          
+    107          \param[in] mode - address mode;
+    108          \param[in] addr - short address of destination node;
+    109          \param[in] attr - attribute id;
+    110          \param[in] ep   - destination endpoint;
+    111          \param[in] type - attribute type;
+    112          \param[in] cb   - callback function;
+    113          \param[in] data - the pointer to memory with value to be written;
+    114          \param[in] size - size of data parameter in octets
+    115          ******************************************************************************/
+    116          void humidityMeasurementWriteAttribute(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    117            uint16_t attr, uint8_t type, AttributeWriteCallback_t cb, void *data, uint8_t size)
+    118          {
+    119            ZCL_Request_t *req;
+    120            ZCL_WriteAttributeReq_t writeAttrReq;
+    121          
+    122            if (!(req = getFreeCommand()))
+    123              return;
+    124          
+    125            writeAttributeCallback = cb;
+    126          
+    127            writeAttrReq.id = attr;
+    128            writeAttrReq.type = type;
+    129            memcpy(req->requestPayload, (uint8_t *)&writeAttrReq, sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    130            memcpy(req->requestPayload + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t), (uint8_t *)data, size);
+    131          
+    132            fillCommandRequest(req, ZCL_WRITE_ATTRIBUTES_COMMAND_ID, size + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    133            fillDstAddressing(&req->dstAddressing, mode, addr, ep, HUMIDITY_MEASUREMENT_CLUSTER_ID);
+    134            req->ZCL_Notify = ZCL_WriteAttributeResp;
+    135          
+    136            commandManagerSendAttribute(req);
+    137          }
+    138          
+    139          /**************************************************************************//**
+    140          \brief Sends the Configure Reporting for Humidity Measurement cluster
+    141          
+    142          \param[in] mode - address mode;
+    143          \param[in] addr - short address of destination node;
+    144          \param[in] ep   - destination endpoint;
+    145          \param[in] min  - the minimum reporting interval;
+    146          \param[in] max  - the maximum reporting interval
+    147          ******************************************************************************/
+    148          void humidityMeasurementConfigureReporting(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    149            ZCL_AttributeId_t attrId, uint8_t attrType, ZCL_ReportTime_t min, ZCL_ReportTime_t max)
+    150          {
+    151            ZCL_Request_t *req;
+    152            ZCL_NextElement_t element;
+    153            ZCL_ConfigureReportingReq_t configureReportingReq;
+    154          
+    155            if (!(req = getFreeCommand()))
+    156              return;
+    157          
+    158            configureReportingReq.direction            = ZCL_FRAME_CONTROL_DIRECTION_CLIENT_TO_SERVER;
+    159            configureReportingReq.attributeId          = attrId;
+    160            configureReportingReq.attributeType        = attrType;
+    161            configureReportingReq.minReportingInterval = min;
+    162            configureReportingReq.maxReportingInterval = max;
+    163          
+    164            element.payloadLength = 0;
+    165            element.payload = req->requestPayload;
+    166            element.id = ZCL_CONFIGURE_REPORTING_COMMAND_ID;
+    167            element.content = &configureReportingReq;
+    168            ZCL_PutNextElement(&element);
+    169          
+    170            fillCommandRequest(req, ZCL_CONFIGURE_REPORTING_COMMAND_ID, element.payloadLength);
+    171            fillDstAddressing(&req->dstAddressing, mode, addr, ep, HUMIDITY_MEASUREMENT_CLUSTER_ID);
+    172            req->ZCL_Notify = ZCL_ConfigureReportingResp;
+    173          
+    174            commandManagerSendAttribute(req);
+    175          }
+    176          
+    177          /**************************************************************************//**
+    178          \brief Report attribute indication handler
+    179          
+    180          \param[in] addressing - pointer to addressing information;
+    181          \param[in] reportLength - data payload length;
+    182          \param[in] reportPayload - data pointer
+    183          ******************************************************************************/
+    184          static void ciHumidityMeasurementReportInd(ZCL_Addressing_t *addressing, uint8_t reportLength, uint8_t *reportPayload)
+    185          {
+    186            ZCL_Report_t *rep = (ZCL_Report_t *)reportPayload;
+    187            uint16_t reportValue;
+    188          
+    189            memcpy(&reportValue, &rep->value[0], sizeof(uint16_t));
+    190            LOG_STRING(reportAttrIndStr, "<-Humidity Measurement Attr Report: t = %u\r\n");
+    191            appSnprintf(reportAttrIndStr, reportValue);
+    192          
+    193            (void)addressing, (void)reportLength, (void)rep;
+    194          }
+    195          
+    196          /**************************************************************************//**
+    197          \brief Indication of read attribute response
+    198          
+    199          \param[in] resp - pointer to response
+    200          ******************************************************************************/
+    201          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy)
+    202          {
+    203            ZCL_NextElement_t element;
+    204            ZCL_ReadAttributeResp_t *readAttributeResp;
+    205            uint16_t attributeValue;
+    206          
+    207            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    208            {
+    209              element.id            = ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    210              element.payloadLength = ntfy->responseLength;
+    211              element.payload       = ntfy->responsePayload;
+    212              element.content       = NULL;
+    213          
+    214              ZCL_GetNextElement(&element);
+    215              readAttributeResp = (ZCL_ReadAttributeResp_t *) element.content;
+    216          
+    217              if (readAttributeCallback)
+    218                readAttributeCallback((void *)&readAttributeResp->value[0]);
+    219          
+    220              memcpy(&attributeValue, &readAttributeResp->value[0], sizeof(uint16_t));
+    221              LOG_STRING(readAttrSuccessStr, " <-Read Humidity Measurement attribute (0x%x) response: success\r\n  t = %u\r\n");
+    222              appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id, attributeValue);
+    223            }
+    224            else
+    225            {
+    226              LOG_STRING(readAttrFailStr, " +Read Humidity Measurement attribute failed: status = 0x%x\r\n");
+    227              appSnprintf(readAttrFailStr, (unsigned)ntfy->status);
+    228            }
+    229          }
+    230          
+    231          /**************************************************************************//**
+    232          \brief Indication of write attribute response
+    233          
+    234          \param[in] resp - pointer to response
+    235          ******************************************************************************/
+    236          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy)
+    237          {
+    238            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    239            {
+    240              if (writeAttributeCallback)
+    241                writeAttributeCallback();
+    242          
+    243              LOG_STRING(writeAttrSuccessStr, " <-Write Humidity Measurement attribute response: success\r\n");
+    244              appSnprintf(writeAttrSuccessStr);
+    245            }
+    246            else
+    247            {
+    248              LOG_STRING(writeAttrFailStrTwo, " +Write Humidity Measurement attribute failed: status = 0x%x\r\n");
+    249              appSnprintf(writeAttrFailStrTwo, (unsigned)ntfy->status);
+    250            }
+    251          }
+    252          
+    253          /**************************************************************************//**
+    254          \brief Indication of configure reporting response
+    255          
+    256          \param[in] resp - pointer to response
+    257          ******************************************************************************/
+    258          static void ZCL_ConfigureReportingResp(ZCL_Notify_t *ntfy)
+    259          {
+    260            (void)ntfy;
+    261          }
+    262          
+    263          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    264          
+    265          // eof ciHumidityMeasurementCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

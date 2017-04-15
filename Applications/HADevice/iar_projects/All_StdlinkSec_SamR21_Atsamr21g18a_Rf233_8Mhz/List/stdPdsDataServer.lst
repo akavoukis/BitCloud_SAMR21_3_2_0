@@ -1,0 +1,563 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:45
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsDataServer.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsDataServer.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\stdPdsDataServer.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\stdPdsDataServer.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsDataServer.c
+      1          /***************************************************************************//**
+      2            \file pdsDataServer.c
+      3          
+      4            \brief Persistence Data Server implementation
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14            History:
+     15              22/01/08 A. Khromykh - Created
+     16              01/11/10 A. Razinkov - Modified
+     17            Last change:
+     18              $Id: stdPdsDataServer.c 27584 2015-01-09 14:45:42Z unithra.c $
+     19          *****************************************************************************/
+     20          
+     21          #if PDS_ENABLE_WEAR_LEVELING != 1
+     22          /******************************************************************************
+     23                             Includes section
+     24          ******************************************************************************/
+     25          #include <pdsDataServer.h>
+     26          #include <stdPdsCrcService.h>
+     27          #include <stdPdsMemAccess.h>
+     28          #include <stdPdsWriteData.h>
+     29          #include <sysTaskManager.h>
+     30          #include <stdPdsMem.h>
+     31          #include <stdPdsDbg.h>
+     32          #include <configServer.h>
+     33          
+     34          #ifdef _ENABLE_PERSISTENT_SERVER_
+     35          
+     36          /*****************************************************************************
+     37                                         Types section
+     38          ******************************************************************************/
+     39          /* Enumeration of memory by it's ability to be stored/restored */
+     40          typedef enum _PDS_MemoryAllowedType_t
+     41          {
+     42            ALLOWED_FOR_STORING,
+     43            ALLOWED_FOR_RESTORING
+     44          } PDS_MemoryAllowedType_t;
+     45          
+     46          /****************************************************************************
+     47                                        Static functions prototypes section
+     48          ******************************************************************************/
+     49          static bool pdsGetMemoryAllowed(PDS_MemoryAllowedType_t type, PDS_MemMask_t memoryMask);
+     50          
+     51          /******************************************************************************
+     52                             Implementations section
+     53          ******************************************************************************/
+     54          /***************************************************************************//**
+     55          \brief Restores data from non-volatile storage.
+     56          
+     57          \ingroup pds
+     58          
+     59          PDS files not included in the current build configuration will be ignored.
+     60          Restoring process will be performed only if all files, expected for actual
+     61          configuration, are presented in NV storage.
+     62          
+     63          \param[in] memoryId - an identifier of PDS file or directory to be restored
+     64                                from non-volatile memory.
+     65          
+     66          \return true, if all expected files have been restored, false - otherwise.
+     67          *******************************************************************************/
+     68          bool PDS_Restore(PDS_MemId_t memoryId)
+     69          {
+     70            PDS_MemMask_t memoryToRestore, existentMemory;
+     71          
+     72            pdsInitMemMask(memoryId, memoryToRestore);
+     73          
+     74            /* Ignore all memory, unexistent for current build configuration */
+     75            pdsGetMemoryAllowed(ALLOWED_FOR_STORING, memoryToRestore);
+     76          
+     77            if (pdsMemMaskIsAnyBitSet(memoryToRestore))
+     78            {
+     79              /* Check a non-volatile storage for required content */
+     80              memcpy(existentMemory, memoryToRestore, PDS_MEM_MASK_LENGTH);
+     81              pdsGetMemoryAllowed(ALLOWED_FOR_RESTORING, existentMemory);
+     82          
+     83              /* If required data exists - try to update from non-volatile memory */
+     84              if (0 == memcmp(memoryToRestore, existentMemory, PDS_MEM_MASK_LENGTH))
+     85                return PDS_SUCCESS == pdsUpdate(memoryToRestore);
+     86            }
+     87          
+     88            /* Required region(s) wasn't found in non-volatile memory or error occured */
+     89            return false;
+     90          }
+     91          
+     92          /***************************************************************************//**
+     93          \brief Stores data in non-volatile memory in background, not blocking other
+     94                 processes.
+     95          
+     96          \ingroup pds
+     97          
+     98          All PDS files which are absent in the current build configuration will be ignored.
+     99          
+    100          \param[in] memoryId - an identifier of PDS file or directory to be stored
+    101                                in non-volatile memory.
+    102          
+    103          \return True, if storing process has begun, false - otherwise.
+    104          ******************************************************************************/
+    105          bool PDS_Store(PDS_MemId_t memoryId)
+    106          {
+    107            PDS_MemMask_t memoryMask;
+    108          
+    109            pdsInitMemMask(memoryId, memoryMask);
+    110          
+    111            /* Ignore all memory, unexistent for current build configuration */
+    112            pdsGetMemoryAllowed(ALLOWED_FOR_STORING, memoryMask);
+    113          
+    114            if (pdsMemMaskIsAnyBitSet(memoryMask))
+    115            {
+    116              pdsAddDataForCommitment(memoryMask);
+    117          
+    118              if (!(pdsMemory()->status & PDS_WRITING_INPROGRESS_FLAG))
+    119                pdsStartCommitment();
+    120          
+    121              return true;
+    122            }
+    123          
+    124            return false;
+    125          }
+    126          
+    127          /***************************************************************************//**
+    128          \brief Stores data in non-volatile memory in a synchronous way -
+    129                 the application execution will be blocked until the process is completed.
+    130          
+    131          \ingroup pds
+    132          
+    133          All PDS files which are absent in the current build configuration will be ignored.
+    134          
+    135          \param[in] memoryId - an identifier of PDS file or directory to be stored
+    136                                in non-volatile memory.
+    137          
+    138          \return True, if storing process has been performed successfully, false - otherwise.
+    139          ******************************************************************************/
+    140          bool PDS_BlockingStore(PDS_MemId_t memoryId)
+    141          {
+    142            if (PDS_Store(memoryId))
+    143            {
+    144              while (pdsMemory()->status & PDS_WRITING_INPROGRESS_FLAG)
+    145                SYS_ForceRunTask();
+    146          
+    147              return true;
+    148            }
+    149          
+    150            return false;
+    151          }
+    152          
+    153          /***************************************************************************//**
+    154          \brief Checks if the specified PDS file or directory can be restored
+    155                 from non-volatile memory
+    156          
+    157          \ingroup pds
+    158          
+    159          PDS files not included in the current build configuration will be ignored.
+    160          
+    161          \param[in] memoryId - an identifier of PDS file or directory to be checked.
+    162          
+    163          \return true, if the specified memory can be restored; false - otherwise.
+    164          ******************************************************************************/
+    165          bool PDS_IsAbleToRestore(PDS_MemId_t memoryId)
+    166          {
+    167            PDS_MemMask_t memoryToRestore, existentMemory;
+    168          
+    169            pdsInitMemMask(memoryId, memoryToRestore);
+    170            /* Ignore all memory, unexistent for current build configuration */
+    171            pdsGetMemoryAllowed(ALLOWED_FOR_STORING, memoryToRestore);
+    172          
+    173            if (pdsMemMaskIsAnyBitSet(memoryToRestore))
+    174            {
+    175              /* Check a non-volatile storage for required content */
+    176              memcpy(existentMemory, memoryToRestore, PDS_MEM_MASK_LENGTH);
+    177              pdsGetMemoryAllowed(ALLOWED_FOR_RESTORING, existentMemory);
+    178          
+    179              /* True - only if all required data exists in NV storage */
+    180              if (0 == memcmp(memoryToRestore, existentMemory, PDS_MEM_MASK_LENGTH))
+    181                return true;
+    182            }
+    183          
+    184            return false;
+    185          }
+    186          
+    187          /***************************************************************************//**
+    188          \brief Checks if the specified PDS file or directory can be stored
+    189                 in non-volatile memory
+    190          
+    191          \ingroup pds
+    192          
+    193          \param[in] memoryId - an identifier of PDS file or directory to be checked.
+    194          
+    195          \return true, if the specified memory can be stored; false - otherwise.
+    196          *******************************************************************************/
+    197          bool PDS_IsAbleToStore(PDS_MemId_t memoryId)
+    198          {
+    199            PDS_MemMask_t memoryMask;
+    200          
+    201            pdsInitMemMask(memoryId, memoryMask);
+    202            /* Ignore all memory, unexistent for current build configuration */
+    203            pdsGetMemoryAllowed(ALLOWED_FOR_STORING, memoryMask);
+    204          
+    205            if (pdsMemMaskIsAnyBitSet(memoryMask))
+    206              return true;
+    207          
+    208            return false;
+    209          }
+    210          
+    211          /***************************************************************************//**
+    212          \brief Returns mask of PDS files, which allowed to be stored in
+    213                 (or restored from) non-volatile storage.
+    214                 Particular set depends on build configuration and actual storage content.
+    215          
+    216          \param[in] type - request type (ALLOWED_FOR_STORING / ALLOWED_FOR_RESTORING).
+    217          \param[out] memoryMask - mask of PDS files.
+    218          
+    219          \return true if operation has been successful, false otherwise.
+    220          *******************************************************************************/
+    221          static bool pdsGetMemoryAllowed(PDS_MemoryAllowedType_t type, PDS_MemMask_t memoryMask)
+    222          {
+    223            switch (type)
+    224            {
+    225              case ALLOWED_FOR_STORING:
+    226                for (uint8_t i = 0; i < PDS_MEM_MASK_LENGTH; i++)
+    227                  memoryMask[i] &= pdsMemory()->allowedForStoring[i];
+    228                return pdsMemMaskIsAnyBitSet(memoryMask);
+    229                break;
+    230          
+    231              case ALLOWED_FOR_RESTORING:
+    232                /* Check if required data exists in non-volatile memory */
+    233                return (PDS_SUCCESS == pdsCheckStorage(memoryMask));
+    234                break;
+    235          
+    236              default:
+    237                break;
+    238            }
+    239          
+    240            return false;
+    241          }
+    242          
+    243          /***************************************************************************//**
+    244          \brief Checks if files specified have been restored from non-volatile memory
+    245                 during the latest restoring procedure
+    246          
+    247          \ingroup pds
+    248          
+    249          \param[in] memoryId - an identifier of PDS file or directory to be checked.
+    250          
+    251          \return true, if the specified PDT(s) have been restored; false - otherwise.
+    252          ******************************************************************************/
+    253          bool PDS_IsMemoryRestored(PDS_MemId_t memoryId)
+    254          {
+    255            PDS_MemMask_t memoryMask;
+    256          
+    257            pdsInitMemMask(memoryId, memoryMask);
+    258            /* Ignore all memory, unexistent for current build configuration */
+    259            pdsGetMemoryAllowed(ALLOWED_FOR_STORING, memoryMask);
+    260          
+    261            if (pdsMemMaskIsAnyBitSet(memoryMask))
+    262            {
+    263              for (uint8_t i = 0; i < PDS_MEM_MASK_LENGTH; i++)
+    264                memoryMask[i] &= pdsMemory()->restoredMemory[i];
+    265          
+    266              if (pdsMemMaskIsAnyBitSet(memoryMask))
+    267                return true;
+    268            }
+    269          
+    270            return false;
+    271          }
+    272          
+    273          /***************************************************************************//**
+    274          \brief Marks the specified restored PDS files to be cleared during a reset phase
+    275                (during ZDO_StartNetwork() execution)
+    276          
+    277          \ingroup pds
+    278          
+    279          \param[in] memoryId - an identifier of PDS file or directory to be cleared.
+    280          ******************************************************************************/
+    281          void PDS_ClearRestoredMemory(PDS_MemId_t memoryId)
+    282          {
+    283            PDS_MemMask_t memoryMask;
+    284          
+    285            pdsInitMemMask(memoryId, memoryMask);
+    286          
+    287            for (uint8_t i = 0; i < PDS_MEM_MASK_LENGTH; i++)
+    288              pdsMemory()->restoredMemory[i] &= ~memoryMask[i];
+    289          }
+    290          
+    291          /*****************************************************************************//**
+    292          \brief Removes specified file records from NV Storage
+    293          
+    294          \ingroup pds
+    295          
+    296          \param[in] memoryId - an identifier of PDS file or directory to be removed
+    297                                from NV memory.
+    298          
+    299          \return - PDS state as an operation result.
+    300          ******************************************************************************/
+    301          PDS_DataServerState_t PDS_Delete(PDS_MemId_t memoryId)
+    302          {
+    303            PDS_MemMask_t memoryMask;
+    304          
+    305            PDS_MEM_MASK_CLEAR_ALL(memoryMask);
+    306            PDS_MEM_MASK_SET_BIT(memoryMask, memoryId);
+    307          
+    308            return (PDS_SUCCESS == pdsCorruptFiles(memoryMask));
+    309          }
+    310          
+    311          /**************************************************************************//**
+    312          \brief Deletes data from non-volatile storage except the Persistant items
+    313                 depending on the parameter passed.
+    314          
+    315          \param[in] includingPersistentItems - deletes persistant items if TRUE
+    316                                                deletes all other items except persistant 
+    317                                                items if FALSE
+    318          
+    319          \return PDS_DataServerState_t - status of PDS DeleteAll
+    320          ******************************************************************************/
+    321          PDS_DataServerState_t PDS_DeleteAll(bool includingPersistentItems)
+    322          {
+    323            // TBD
+    324            // added to remove compiler warning
+    325            (void)includingPersistentItems;
+    326            return PDS_SUCCESS;
+    327          }
+    328          
+    329          /******************************************************************************
+    330          \brief This function is deprecated - use PDS_BlockingStore() instead.
+    331          ******************************************************************************/
+    332          void PDS_FlushData(PDS_MemId_t memoryId)
+    333          {
+    334            PDS_BlockingStore(memoryId);
+    335          }
+    336          
+    337          /******************************************************************************
+    338          \brief This function is deprecated - use PDS_Delete() instead.
+    339          ******************************************************************************/
+    340          PDS_DataServerState_t PDS_ResetStorage(PDS_MemId_t memoryId)
+    341          {
+    342            return PDS_Delete(memoryId);
+    343          }
+    344          
+    345          /******************************************************************************
+    346            \brief General PDS task handler - just a stub for this version of PDS
+    347           ******************************************************************************/
+    348          void PDS_TaskHandler(void) {}
+    349          
+    350          /******************************************************************************
+    351          \brief Must be called from the ::APL_TaskHandler() function only.\n
+    352          Reads data from the user area of EEPROM.
+    353          
+    354          \param[in] offset   - data offset
+    355          \param[in] data     - pointer to user data area
+    356          \param[in] length   - data length
+    357          \param[in] callback - pointer to a callback function; if callback is NULL,
+    358                                then data will be read syncronously
+    359          
+    360          \return - PDS state as a result of data reading operation
+    361          *******************************************************************************/
+    362          PDS_DataServerState_t PDS_ReadUserData(uint16_t offset, uint8_t *data,
+    363                                                 uint16_t length, void (*callback)(void))
+    364          {
+    365            MEMORY_DESCRIPTOR descriptor;
+    366            PDS_DataServerState_t status;
+    367          
+    368            descriptor.address = USER_BASE_STORAGE_ADDRESS + offset;
+    369            descriptor.length = length;
+    370            descriptor.data = data;
+    371          
+    372            if (NULL == callback)
+    373              callback = pdsDummyCallback;
+    374          
+    375            status = pdsRead(&descriptor, callback);
+    376            if (status != PDS_SUCCESS)
+    377              return status;
+    378          
+    379            return PDS_SUCCESS;
+    380          }
+    381          
+    382          /******************************************************************************
+    383          \brief Must be called only from ::APL_TaskHandler() function.\n
+    384          Writes data to user area of EEPROM.
+    385          
+    386          \param[in] offset   - data offset
+    387          \param[in] data     - pointer to user data area
+    388          \param[in] length   - data length
+    389          \param[in] callback - pointer to a callback function; if callback is NULL,
+    390                                then data will be written syncronously
+    391          
+    392          \return - PDS state as a result of data writing operation
+    393          *******************************************************************************/
+    394          PDS_DataServerState_t PDS_WriteUserData(uint16_t offset, uint8_t *data,
+    395                                                  uint16_t length, void (*callback)(void))
+    396          {
+    397            MEMORY_DESCRIPTOR descriptor;
+    398            PDS_DataServerState_t status;
+    399          
+    400            descriptor.address = USER_BASE_STORAGE_ADDRESS + offset;
+    401            descriptor.length = length;
+    402            descriptor.data = data;
+    403          
+    404            if (NULL == callback)
+    405              callback = pdsDummyCallback;
+    406          
+    407            status = pdsWrite(&descriptor, callback);
+    408            if (status != PDS_SUCCESS)
+    409              return status;
+    410          
+    411            return PDS_SUCCESS;
+    412          }
+    413          
+    414          #endif /* _ENABLE_PERSISTENT_SERVER_ */
+    415          #endif /* PDS_ENABLE_WEAR_LEVELING != 1 */
+    416          // eof pdsDataServer.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

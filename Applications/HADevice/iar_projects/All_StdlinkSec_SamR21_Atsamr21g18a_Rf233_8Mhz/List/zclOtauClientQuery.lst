@@ -1,0 +1,782 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:21
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientQuery.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientQuery.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\zclOtauClientQuery.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\zclOtauClientQuery.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\ZCL\src\zclOtauClientQuery.c
+      1          /************************************************************************//**
+      2            \file zclOtauClientQuery.c
+      3          
+      4            \brief
+      5              The file implements the OTAU client querying for image part
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              16.10.14 Karthik.P_u - Created.
+     17            Last change:
+     18              $Id: zclOtauClient.c 27261 2014-10-15 11:19:50Z karthik.p_u $
+     19          ******************************************************************************/
+     20          
+     21          #if (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+     22          
+     23          /******************************************************************************
+     24                             Includes section
+     25          ******************************************************************************/
+     26          #include <zclOtauManager.h>
+     27          #include <zclOtauClient.h>
+     28          #include <sysUtils.h>
+     29          
+     30          /******************************************************************************
+     31                             External variables section
+     32          ******************************************************************************/
+     33          extern ZclOtauClientStateMachine_t stateMachine;
+     34          extern ZCL_OtauClusterClientAttributes_t otauClientAttributes;
+     35          extern ExtAddr_t serverExtAddr;
+     36          extern ExtAddr_t otauServerExtAddr;
+     37          extern uint32_t otauImageSize, otauImageVersion, otauNextOffset;
+     38          extern uint8_t otauRunningChecksum;
+     39          extern uint32_t otauInternalLength, otauImageRemainder;
+     40          extern uint8_t otauInternalAddrStatus;
+     41          extern OtauImageAuxVar_t recoveryLoading;
+     42          extern ExtAddr_t otauUnauthorizedServers[OTAU_MAX_UNAUTHORIZED_SERVERS];
+     43          extern ZclOtauDiscoveryResult_t *actvServer;
+     44          extern uint8_t retryCount, otauMaxRetryCount;
+     45          extern ZCL_Status_t otauUpgradeEndStatus;
+     46          #if APP_SUPPORT_OTAU_RECOVERY == 1
+     47          extern uint32_t otauFlashWriteOffset;
+     48          #endif
+     49          
+     50          /******************************************************************************
+     51                             Global variables section
+     52          ******************************************************************************/
+     53          ZclOtauImageNotifyParams_t imgNtfyServer = 
+     54          {
+     55            .addr = {
+     56              .service.next       = NULL,
+     57              .busy               = false,
+     58              .serverEndpoint     = 0,
+     59              .serverShortAddress = BROADCAST_ADDR_RX_ON_WHEN_IDLE,
+     60              .serverExtAddress   = COMMON_SERVER_EXT_ADDRESS
+     61             },  
+     62            .ver.memAlloc = 0
+     63          };
+     64          
+     65          /******************************************************************************
+     66                             Implementation section
+     67          ******************************************************************************/
+     68          
+     69          /***************************************************************************//**
+     70          \brief Start to query the server for image
+     71          ******************************************************************************/
+     72          void otauStartQuery(void)
+     73          {
+     74            if (!OTAU_CHECK_STATE(stateMachine, OTAU_QUERY_FOR_IMAGE_STATE))
+     75            {
+     76              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_START_QUERY);
+     77              return;
+     78            }
+     79          
+     80            OTAU_SET_STATE(stateMachine, OTAU_QUERY_FOR_IMAGE_STATE);
+     81            retryCount = otauMaxRetryCount;
+     82            otauQueryNextImageReq();
+     83          }
+     84          
+     85          /***************************************************************************//**
+     86          \brief Send query next image request
+     87          ******************************************************************************/
+     88          void otauQueryNextImageReq(void)
+     89          {
+     90            uint16_t csManufacturerId;
+     91            CS_ReadParameter(CS_MANUFACTURER_CODE_ID, &csManufacturerId);
+     92          #if (USE_IMAGE_SECURITY == 1)
+     93            otauReadImgTypeFromEeprom();
+     94          #else
+     95            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+     96            ZCL_OtauQueryNextImageReq_t *tmpOtauReq = &clientMem->zclReqMem.uQueryNextImageReq;
+     97            ZCL_Request_t *tmpZclReq = &clientMem->reqMem.zclCommandReq;
+     98          
+     99            if (!isOtauBusy)
+    100            {
+    101              zclRaiseCustomMessage(OTAU_QUERY_NEXT_IMAGE_INITIATED);
+    102              isOtauBusy = true;
+    103            }
+    104          
+    105            zclOtauFillOutgoingZclRequest(QUERY_NEXT_IMAGE_REQUEST_ID, sizeof(ZCL_OtauQueryNextImageReq_t), (uint8_t *)tmpOtauReq);
+    106          
+    107            tmpOtauReq->controlField.hardwareVersionPresent = 0;
+    108            tmpOtauReq->controlField.reserved               = 0;
+    109            tmpOtauReq->manufacturerId                      = csManufacturerId;
+    110            tmpOtauReq->imageType                           = OTAU_SPECIFIC_IMAGE_TYPE;
+    111            tmpOtauReq->currentFirmwareVersion              = zclOtauMem.initParam.firmwareVersion;
+    112          
+    113            ZCL_CommandReq(tmpZclReq);
+    114          #endif
+    115          }
+    116          
+    117          /***************************************************************************//**
+    118          \brief Start to query after elapsing a jitter
+    119          
+    120          \param[in] queryJitter - queryJitter value
+    121          ******************************************************************************/
+    122          void otauQueryAfterJitter(uint8_t queryJitter)
+    123          {
+    124            uint32_t randomJitter;
+    125            zclRaiseCustomMessage(OTAU_IMAGE_NOTIFICATION_RECEIVED);
+    126          
+    127            if (!OTAU_CHECK_STATE(stateMachine, OTAU_WAIT_TO_QUERY_STATE))
+    128            {
+    129              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_STATE_QUERY_AFTER_JITTER);
+    130              return;
+    131            }
+    132          
+    133            randomJitter = (uint32_t)SYS_GetNormalizedRandomNumber(OTAU_IMAGE_NOTIFY_MAX_QUERY_JITTER_VALUE);
+    134            if (randomJitter <= queryJitter)
+    135            {
+    136              otauStartQueryTimer();
+    137            }
+    138            else
+    139            {
+    140              OTAU_SET_STATE(stateMachine, OTAU_QUERY_FOR_IMAGE_STATE);
+    141              otauStartQueryTimer();
+    142            }
+    143          }
+    144          
+    145          /***************************************************************************//**
+    146          \brief Query next image response indication
+    147          
+    148          \param[in] addressing - pointer to addressing information;
+    149          \param[in] payloadLength - data payload length;
+    150          \param[in] payload - data pointer.
+    151          
+    152          \return status of indication routine
+    153          ******************************************************************************/
+    154          ZCL_Status_t queryNextImageRespInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauQueryNextImageResp_t *payload)
+    155          {
+    156            ZCL_Status_t status = ZCL_SUCCESS_STATUS;
+    157            uint8_t i;
+    158            uint16_t csManufacturerId;
+    159            CS_ReadParameter(CS_MANUFACTURER_CODE_ID, &csManufacturerId);
+    160          
+    161            if (!OTAU_CHECK_STATE(stateMachine, OTAU_QUERY_FOR_IMAGE_STATE))
+    162            {
+    163              SYS_E_ASSERT_WARN(false, ZCL_OTAU_INVALID_STATE_QUERY_NEXT_IMAGE_RSP);
+    164              return status;
+    165            }
+    166          
+    167            isOtauBusy = false;
+    168          
+    169            // process pending img notify(if from another server or for different file)
+    170            if (IS_IMGNTFY_PENDING(imgNtfyServer.addr))
+    171            {
+    172              if (ZCL_SUCCESS_STATUS == otauCheckServerAddrAndTakeAction(false, true))
+    173              {
+    174                return status;
+    175              }
+    176            }
+    177          
+    178            switch (payload->status)
+    179            {
+    180              case ZCL_NO_IMAGE_AVAILABLE_STATUS:
+    181                otauStartQueryTimer();
+    182                break;
+    183          
+    184              case ZCL_NOT_AUTHORIZED_STATUS:
+    185                for (i = 0; i < OTAU_MAX_UNAUTHORIZED_SERVERS; i++)
+    186                {
+    187                  if ((otauUnauthorizedServers[i] == ZERO_SERVER_EXT_ADDRESS) || \
+    188                      (otauUnauthorizedServers[i] == COMMON_SERVER_EXT_ADDRESS))
+    189                  {
+    190                    COPY_EXT_ADDR(otauUnauthorizedServers[i], serverExtAddr);
+    191                  }
+    192                }
+    193                serverExtAddr = ZERO_SERVER_EXT_ADDRESS;
+    194                otauStartDiscovery();
+    195                break;
+    196          
+    197              case ZCL_SUCCESS_STATUS:
+    198                if ((csManufacturerId != payload->manufacturerId) || (OTAU_SPECIFIC_IMAGE_TYPE != payload->imageType))
+    199                {
+    200                  zclRaiseCustomMessage(OTAU_SERVER_RECEIVED_MALFORMED_COMMAND);
+    201                  status = ZCL_MALFORMED_COMMAND_STATUS;
+    202                }
+    203                else
+    204                {
+    205          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    206                  if (PDS_IsAbleToRestore(OTAU_PDT_MEMORY_MEM_ID))
+    207                  {
+    208                    PDS_Restore(OTAU_PDT_MEMORY_MEM_ID);
+    209                  }
+    210          #endif
+    211                  otauStartImageLoading(payload);
+    212                }
+    213                break;
+    214          
+    215              default:
+    216                status = ZCL_MALFORMED_COMMAND_STATUS;
+    217                break;
+    218            }
+    219          
+    220            (void)addressing;
+    221            (void)payloadLength;
+    222          
+    223            return status;
+    224          }
+    225          
+    226          /***************************************************************************//**
+    227          \brief Start image downloading process
+    228          ******************************************************************************/
+    229          void otauStartImageLoading(ZCL_OtauQueryNextImageResp_t *payload)
+    230          {
+    231            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    232            ZclOtauClientImageBuffer_t *tmpParam = &clientMem->otauParam;
+    233            ZCL_OtauFirmwareVersion_t version = clientMem->newFirmwareVersion;
+    234            uint32_t tmpSize = payload->imageSize;
+    235            ExtAddr_t zeroAddr = ZERO_SERVER_EXT_ADDRESS;
+    236          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    237            OFD_MemoryAccessParam_t *tmpMemParam = &clientMem->memParam;
+    238          #endif
+    239            
+    240          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    241            OTAU_SET_STATE(stateMachine, OTAU_GET_IMAGE_PAGES_STATE);
+    242          #else
+    243            OTAU_SET_STATE(stateMachine, OTAU_GET_IMAGE_BLOCKS_STATE);
+    244          #endif // APP_SUPPORT_OTAU_PAGE_REQUEST == 1
+    245          
+    246            if ((sizeof(ZCL_OtauSubElementHeader_t) + sizeof(ZCL_OtauUpgradeImageHeader_t)) >= payload->imageSize)
+    247            {
+    248              SYS_E_ASSERT_ERROR(false, ZCL_OTAU_INVALID_IMAGE_RECEIVED);
+    249          
+    250              clientMem->imageAuxParam.currentFileOffset     = sizeof(ZCL_OtauSubElementHeader_t) + sizeof(ZCL_OtauUpgradeImageHeader_t);
+    251              clientMem->imageAuxParam.currentDataSize       = AUXILIARY_STRUCTURE_IS_FULL;
+    252              clientMem->imageAuxParam.imageInternalLength   = 0;
+    253              clientMem->imageAuxParam.internalAddressStatus = 0;
+    254              clientMem->imageAuxParam.imageRemainder        = 0;
+    255              clientMem->firstStart                          = OTAU_FIRST_CLIENT_START;
+    256          #if APP_SUPPORT_OTAU_PAGE_REQUEST == 1        
+    257              clientMem->missedBytesGetting                  = OTAU_NOT_GET_MISSED_BYTES;
+    258          #endif
+    259          
+    260          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    261              COPY_EXT_ADDR(otauServerExtAddr, zeroAddr);
+    262              otauNextOffset          = 0;
+    263              otauInternalAddrStatus  = 0;
+    264              otauInternalLength      = 0;
+    265              otauImageSize           = 0;
+    266              otauImageRemainder      = 0;
+    267              otauImageVersion        = 0;
+    268              otauFlashWriteOffset    = 0;
+    269              otauRunningChecksum     = 0xFF;
+    270          
+    271              PDS_Store(OTAU_PDT_MEMORY_MEM_ID);
+    272          #endif
+    273              (void)zeroAddr;
+    274              
+    275              //file is empty, send upgrade end req with invalid image status
+    276              OTAU_SET_STATE(stateMachine, OTAU_WAIT_TO_UPGRADE_STATE);
+    277              otauUpgradeEndStatus = ZCL_INVALID_IMAGE_STATUS;
+    278              otauStartGenericTimer(0, otauUpgradeEndReq);    
+    279              return;
+    280            }
+    281            
+    282          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    283            if ((IS_EQ_EXT_ADDR(otauServerExtAddr, serverExtAddr)) && \
+    284                (0 == memcmp(&otauImageVersion, &payload->currentFirmwareVersion, sizeof(ZCL_OtauFirmwareVersion_t))) && \
+    285                (0 == memcmp(&otauImageSize, &tmpSize, sizeof(uint32_t))) && \
+    286                (0 < otauImageSize) && (0 != otauNextOffset))
+    287            {
+    288              if (OTAU_FIRST_CLIENT_START == clientMem->firstStart)
+    289              {
+    290                clientMem->imageAuxParam.currentFileOffset     = otauNextOffset;
+    291                clientMem->imageAuxParam.imageInternalLength   = otauInternalLength;
+    292                clientMem->imageAuxParam.imageRemainder        = otauImageRemainder;
+    293                clientMem->imageAuxParam.internalAddressStatus = otauInternalAddrStatus;
+    294                tmpMemParam->offset                            = otauFlashWriteOffset;
+    295                clientMem->firstStart                          = OTAU_CONTINUE_CLIENT_WORK;
+    296          
+    297                COPY_EXT_ADDR(clientMem->otauServer, otauServerExtAddr);
+    298                clientMem->newFirmwareVersion.memAlloc = payload->currentFirmwareVersion.memAlloc;
+    299                tmpParam->imageSize = payload->imageSize;
+    300          
+    301                otauCountActuallyDataSize();
+    302                otauStartDownload();
+    303              }
+    304              else // OTAU_CONTINUE_CLIENT_WORK
+    305              { // Same server rediscovered
+    306                clientMem->imageAuxParam = recoveryLoading;
+    307                otauStartDownload();
+    308              }
+    309            }
+    310            else
+    311            {
+    312              COPY_EXT_ADDR(clientMem->otauServer, serverExtAddr);
+    313              clientMem->newFirmwareVersion.memAlloc = payload->currentFirmwareVersion.memAlloc;
+    314              tmpParam->imageSize = payload->imageSize;
+    315                
+    316              otauStartErase();
+    317            }
+    318           (void)version;
+    319          #else // APP_SUPPORT_OTAU_RECOVERY == 1
+    320            if ((OTAU_CONTINUE_CLIENT_WORK == clientMem->firstStart) && \
+    321                (IS_EQ_EXT_ADDR(clientMem->otauServer, serverExtAddr)) && \
+    322                (0 == memcmp(&version, &payload->currentFirmwareVersion, sizeof(ZCL_OtauFirmwareVersion_t))) && \
+    323                (0 == memcmp(&tmpParam->imageSize, &tmpSize, sizeof(uint32_t))))
+    324            { // Server is rediscovered. Ensure that client has found the same server,
+    325              // same image version and the image should be same size it was downloading
+    326              // previously. If yes, resume the download from where it left.
+    327              clientMem->imageAuxParam = recoveryLoading;
+    328              otauStartDownload();
+    329            }
+    330            else
+    331            { // If atleast one of the above check failed then restart the download from scratch.
+    332              COPY_EXT_ADDR(clientMem->otauServer, serverExtAddr);
+    333              clientMem->newFirmwareVersion.memAlloc = payload->currentFirmwareVersion.memAlloc;
+    334              tmpParam->imageSize = payload->imageSize;
+    335          
+    336              otauStartErase();
+    337            }
+    338          #endif
+    339          }
+    340          
+    341          /***************************************************************************//**
+    342          \brief Write image notify command busyness status
+    343          
+    344          \param[in] busyness - true->entry is valid, false->entry is invalid;
+    345          ******************************************************************************/
+    346          void otauWriteImgNtfyBusyStatus(bool busyness)
+    347          {
+    348            imgNtfyServer.addr.busy = busyness;
+    349            if (false == busyness)
+    350            {
+    351              imgNtfyServer.addr.serverShortAddress = 0xFFFF;
+    352              imgNtfyServer.addr.serverEndpoint = 0;
+    353              imgNtfyServer.ver.memAlloc = 0;
+    354              imgNtfyServer.queryJitter = 0;
+    355            }
+    356          }
+    357          
+    358          /***************************************************************************//**
+    359          \brief Process Image notify indication depending on the current state of client
+    360          
+    361          \param[in] newState - proposed new state;
+    362          \param[in] newUpgrdSts - proposed upgrade status;
+    363          ******************************************************************************/
+    364          void otauPrepareForNewState(ZclOtauClientStateMachine_t newState, ZCL_ImageUpdateStatus_t newUpgrdSts)
+    365          {
+    366            isOtauBusy = false;
+    367            otauStopGenericTimer();
+    368            otauClientAttributes.imageUpgradeStatus.value = newUpgrdSts;
+    369          
+    370          #if APP_SUPPORT_OTAU_RECOVERY == 1
+    371            otauClearPdsParams();
+    372          #endif
+    373            OTAU_SET_STATE(stateMachine, newState);
+    374          }
+    375          
+    376          /***************************************************************************//**
+    377          \brief Process Image notify by checking server address, take appropriate action
+    378          
+    379          \param[in] saveImgNtfyParams - request to keep image notify as pending request
+    380          \param[in] checkImgVer - request to compare firmware version
+    381          
+    382          \return status of whether the command was processed or not
+    383          ******************************************************************************/
+    384          ZCL_Status_t otauCheckServerAddrAndTakeAction(bool saveImgNtfyParams, bool checkImgVer)
+    385          {
+    386            ZCL_OtauClientMem_t *clientMem = zclGetOtauClientMem();
+    387            ZCL_Status_t sts = ZCL_SUCCESS_STATUS;
+    388          
+    389            if (saveImgNtfyParams)
+    390            {
+    391              otauWriteImgNtfyBusyStatus(true);
+    392            }
+    393          
+    394            if ((NULL == actvServer) || (actvServer->serverShortAddress != imgNtfyServer.addr.serverShortAddress))
+    395            {
+    396              if (checkImgVer)
+    397              {
+    398                // from new server. save server ep, short addr, find ieee address
+    399                if ((clientMem->newFirmwareVersion.memAlloc != imgNtfyServer.ver.memAlloc) ||
+    400                    (OTAU_UPGRADE_END_RESP_FW_VER_WILDCARD_VAL == imgNtfyServer.ver.memAlloc))
+    401                {
+    402                  otauPrepareForNewState(OTAU_GET_IEEE_ADDR_STATE, OTAU_NORMAL);
+    403                  otauIeeeAddrReq(&imgNtfyServer.addr);
+    404                }
+    405                else
+    406                {
+    407                  sts = ZCL_INVALID_DATA_TYPE_STATUS;
+    408                }
+    409              }
+    410              else
+    411              {
+    412                otauPrepareForNewState(OTAU_GET_IEEE_ADDR_STATE, OTAU_NORMAL);
+    413                otauIeeeAddrReq(&imgNtfyServer.addr);
+    414              }
+    415            }
+    416            else
+    417            {
+    418              if (checkImgVer)
+    419              {
+    420                // same server. different fw version or wildcard are pass
+    421                if ((clientMem->newFirmwareVersion.memAlloc != imgNtfyServer.ver.memAlloc) ||
+    422                    (OTAU_UPGRADE_END_RESP_FW_VER_WILDCARD_VAL == imgNtfyServer.ver.memAlloc))
+    423                {
+    424                  otauPrepareForNewState(OTAU_QUERY_FOR_IMAGE_STATE, OTAU_NORMAL);
+    425                  otauTransitionToQuery();
+    426                }
+    427                else
+    428                {
+    429                  sts = ZCL_INVALID_DATA_TYPE_STATUS;
+    430                }
+    431              }
+    432              else
+    433              {
+    434                otauPrepareForNewState(OTAU_WAIT_TO_QUERY_STATE, OTAU_NORMAL);
+    435                otauQueryAfterJitter(imgNtfyServer.queryJitter);
+    436              }
+    437              
+    438              otauWriteImgNtfyBusyStatus(false);
+    439            }
+    440            return sts;
+    441          }
+    442          
+    443          /***************************************************************************//**
+    444          \brief Process Image notify indication depending on the current state of client
+    445          
+    446          \param[in] addressing - pointer to addressing information;
+    447          \param[in] payloadLength - data payload length;
+    448          \param[in] payload - data pointer.
+    449          ******************************************************************************/
+    450          void otauProcessImageNotify(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauImageNotify_t *payload)
+    451          {
+    452            imgNtfyServer.addr.serverShortAddress = addressing->addr.shortAddress;
+    453            imgNtfyServer.addr.serverEndpoint = addressing->endpointId;
+    454            imgNtfyServer.queryJitter = payload->queryJitter;
+    455            
+    456            switch(stateMachine)
+    457            {
+    458              //----------------------- discovery states -----------------------
+    459              case OTAU_INIT_OFD_STATE:
+    460                otauWriteImgNtfyBusyStatus(true);
+    461                break;
+    462              case OTAU_WAIT_TO_DISCOVER_STATE:
+    463                otauWriteImgNtfyBusyStatus(true);
+    464                otauStopGenericTimer();
+    465                OTAU_SET_STATE(stateMachine, OTAU_GET_IEEE_ADDR_STATE);
+    466                otauIeeeAddrReq(&imgNtfyServer.addr);
+    467                break;
+    468              case OTAU_GET_MATCH_DESC_BROADCAST_STATE:
+    469              case OTAU_GET_IEEE_ADDR_STATE:
+    470              case OTAU_GET_MATCH_DESC_UNICAST_STATE:
+    471              case OTAU_GET_NWK_ADDR_STATE:
+    472              case OTAU_GET_LINK_KEY_STATE:
+    473                otauWriteImgNtfyBusyStatus(true);
+    474                break;
+    475              //----------------------- query states --------------------------
+    476              case OTAU_WAIT_TO_QUERY_STATE:
+    477              case OTAU_QUERY_FOR_IMAGE_STATE:
+    478                if (!addressing->nonUnicast)
+    479                {
+    480                  // consider unicast IN as forced upgrade
+    481                  imgNtfyServer.ver.memAlloc = OTAU_UPGRADE_END_RESP_FW_VER_WILDCARD_VAL;
+    482                }
+    483                else if (OTAU_PAYLOAD_TYPE_NEW_FILE_VERSION <= payload->payloadType)
+    484                {
+    485                  // broadcast IN with FW version received
+    486                  imgNtfyServer.ver.memAlloc = payload->newFileVersion;
+    487                }
+    488          
+    489                if (false == isOtauBusy)
+    490                {
+    491                  otauCheckServerAddrAndTakeAction(true, false);
+    492                }
+    493                else
+    494                {
+    495                  otauWriteImgNtfyBusyStatus(true);
+    496                }
+    497                break;
+    498              //----------------------- download states -----------------------
+    499              case OTAU_GET_IMAGE_BLOCKS_STATE:
+    500              case OTAU_GET_IMAGE_PAGES_STATE:
+    501              case OTAU_GET_MISSED_BLOCKS_STATE:
+    502              //----------------------- upgrade state -------------------------
+    503              case OTAU_WAIT_TO_UPGRADE_STATE:
+    504                if (!addressing->nonUnicast)
+    505                {
+    506                  // consider unicast IN as forced upgrade
+    507                  imgNtfyServer.ver.memAlloc = OTAU_UPGRADE_END_RESP_FW_VER_WILDCARD_VAL;
+    508                }
+    509                else if (OTAU_PAYLOAD_TYPE_NEW_FILE_VERSION <= payload->payloadType)
+    510                {
+    511                  // broadcast IN with FW version received
+    512                  imgNtfyServer.ver.memAlloc = payload->newFileVersion;
+    513                }
+    514                else
+    515                {
+    516                  // broadcast IN without FW version
+    517                  otauEnqueueDiscoveryQueue(addressing->addr.shortAddress, actvServer->serverEndpoint);
+    518                  return;
+    519                }
+    520                
+    521                if (false == isOtauBusy)
+    522                {
+    523                  otauCheckServerAddrAndTakeAction(true, true);
+    524                }
+    525                else
+    526                {
+    527                  otauWriteImgNtfyBusyStatus(true);
+    528                }
+    529                break;
+    530              //----------------------- default -------------------------
+    531              default:
+    532                break;
+    533            }
+    534            
+    535            (void)payloadLength;
+    536          }
+    537          
+    538          /***************************************************************************//**
+    539          \brief Image notify indication
+    540          
+    541          \param[in] addressing - pointer to addressing information;
+    542          \param[in] payloadLength - data payload length;
+    543          \param[in] payload - data pointer.
+    544          
+    545          \return status of indication routine
+    546          ******************************************************************************/
+    547          ZCL_Status_t imageNotifyInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_OtauImageNotify_t *payload)
+    548          {
+    549            bool processImageNotify = true;
+    550            uint16_t csManufacturerId;
+    551            CS_ReadParameter(CS_MANUFACTURER_CODE_ID, &csManufacturerId);
+    552          
+    553            if (!addressing->nonUnicast)
+    554            { // Unicast IN
+    555              zclRaiseCustomMessage(OTAU_IMAGE_NOTIFICATION_RECEIVED);
+    556          
+    557              if ((OTAU_PAYLOAD_TYPE_QUERY_JITTER != payload->payloadType) && \
+    558                  (OTAU_IMAGE_NOTIFY_MAX_QUERY_JITTER_VALUE != payload->queryJitter))
+    559              {/* Scenarios for this error case include unicast Image Notify command
+    560               * with payload type of non-zero value, unicast Image Notify command
+    561               * with query jitter value that is not 100. In such scenario, the
+    562               * client should ignore the invalid message and shall send default
+    563               * response command with MALFORMED_COMMAND status to the server.
+    564               *
+    565               * - Chapter 6.10.3.5.1, ZigBee OTAU Cluster Spec 095264r19
+    566               */
+    567                return ZCL_MALFORMED_COMMAND_STATUS;
+    568              }
+    569            }
+    570            else
+    571            { // Broadcast IN
+    572              if ((OTAU_IMAGE_NOTIFY_MAX_QUERY_JITTER_VALUE < payload->queryJitter) || \
+    573                  (OTAU_PAYLOAD_TYPE_RESERVED == payload->payloadType))
+    574              {/* For invalid broadcast or multicast Image Notify command, for example,
+    575               * out-of-range query jitter value is used, or the reserved payload type
+    576               * value is used, or the command is badly formatted, the client shall
+    577               * ignore such command and no processing shall be done.
+    578               *
+    579               * - Chapter 6.10.3.5, ZigBee OTAU Cluster Spec 095264r19
+    580               */
+    581                return ZCL_SUCCESS_STATUS;
+    582              }
+    583            }
+    584          
+    585            /* For payload type value of 0x01, if manufacturer code matches the
+    586            * device's own value, the device shall proceed. For payload type value
+    587            * of 0x02, if both manufacturer code and image type match the device's
+    588            * own values, the device shall proceed. For payload type value of 0x03
+    589            * if both manufacturer code and image type match the device's own values
+    590            * but the new file version is not a match, the device shall proceed.
+    591            *
+    592            * - Chapter 6.10.3.4, ZigBee OTAU Cluster Spec 095264r19
+    593            */
+    594            switch (payload->payloadType)
+    595            {
+    596              case OTAU_PAYLOAD_TYPE_RESERVED:
+    597                processImageNotify = false;
+    598                break;
+    599          
+    600              case OTAU_PAYLOAD_TYPE_NEW_FILE_VERSION:
+    601                // do version check later based on current state 
+    602              case OTAU_PAYLOAD_TYPE_IMAGE_TYPE:
+    603                processImageNotify &= ((OTAU_SPECIFIC_IMAGE_TYPE == payload->imageType) || (OTAU_UPGRADE_END_RESP_IMG_TYPE_WILDCARD_VAL == payload->imageType));
+    604          
+    605              case OTAU_PAYLOAD_TYPE_MANUFACTURER_CODE:
+    606                processImageNotify &= (csManufacturerId == payload->manufacturerCode);
+    607          
+    608              case OTAU_PAYLOAD_TYPE_QUERY_JITTER:
+    609                break;
+    610            }
+    611          
+    612            if (processImageNotify)
+    613            {
+    614              otauProcessImageNotify(addressing, payloadLength, payload);
+    615            }
+    616          
+    617            (void)payloadLength;
+    618            return ZCL_SUCCESS_STATUS;
+    619          }
+    620          
+    621          /***************************************************************************//**
+    622          \brief Start timer to elapse query interval
+    623          ******************************************************************************/
+    624          void otauStartQueryTimer(void)
+    625          {
+    626            uint32_t queryInterval;
+    627            isOtauBusy = false;
+    628            CS_ReadParameter(CS_ZCL_OTAU_QUERY_INTERVAL_ID, &queryInterval);
+    629            
+    630            otauStartGenericTimer(queryInterval, otauTransitionToQuery);
+    631          }
+    632          
+    633          #endif // (ZCL_SUPPORT == 1) && (APP_USE_OTAU == 1)
+    634          
+    635          //eof zclOtauClientQuery.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

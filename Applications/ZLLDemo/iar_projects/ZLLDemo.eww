@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<workspace>
+  <batchBuild/>
+  <project>
+    <path>$WS_DIR$\ATSAMR21G18A.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\ATSAMR21G18A_OTAU.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\ATSAMR21E18A.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\ATSAMR21E18A_OTAU.ewp</path>
+  </project>
+</workspace>

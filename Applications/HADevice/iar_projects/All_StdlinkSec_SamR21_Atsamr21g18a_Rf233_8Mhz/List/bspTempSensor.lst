@@ -1,0 +1,328 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:39:59
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\bspTempSensor.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\bspTempSensor.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\bspTempSensor.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\bspTempSensor.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\bspTempSensor.c
+      1          /**************************************************************************//**
+      2            \file   bspTempSensor.c
+      3          
+      4            \brief  Implementation of temperature sensor interface.
+      5          
+      6            \author
+      7                Atmel Corporation: http://www.atmel.com \n
+      8                Support email: avr@atmel.com
+      9          
+     10              Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11              Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14              History:
+     15                5/9/14 Unithra.C - Created
+     16           ******************************************************************************/
+     17          #if BSP_SUPPORT != BOARD_FAKE
+     18          /******************************************************************************
+     19                             includes section
+     20          ******************************************************************************/
+     21          #include <tempSensor.h>
+     22          #include <halAdc.h>
+     23          /******************************************************************************
+     24                             Global variables section
+     25          ******************************************************************************/
+
+   \                                 In section .bss, align 4
+     26          static HAL_TSDescriptor_t tempSensor;
+   \                     tempSensor:
+   \   00000000                      DS8 32
+   \   00000020                      DS8 2
+   \   00000022                      DS8 2
+     27          static uint16_t adcBuffer;
+     28          static int16_t measuredTemp;
+     29          /******************************************************************************
+     30                             Prototypes section
+     31          ******************************************************************************/
+     32          static void tempSensorHandler(void);
+     33          /******************************************************************************
+     34                             Implementation section
+     35          ******************************************************************************/
+     36          /**************************************************************************//**
+     37            \brief Reads temperature from internal temperature sensor
+     38            \param value - pointer to the value to be written.
+     39            \return none
+     40          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     41          void BSP_ReadTempSensor(int16_t *value)
+     42          {
+   \                     BSP_ReadTempSensor: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     43            HAL_ReadTempSensor(&tempSensor);
+   \   00000004   0x....             LDR      R5,??DataTable2
+   \   00000006   0x0028             MOVS     R0,R5
+   \   00000008   0x.... 0x....      BL       HAL_ReadTempSensor
+     44            *value = measuredTemp;
+   \   0000000C   0x8C28             LDRH     R0,[R5, #+32]
+   \   0000000E   0x8020             STRH     R0,[R4, #+0]
+     45          }
+   \   00000010   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+     46          /**************************************************************************//**
+     47            \brief Initializes temperature sensor and redirects the output to ADC
+     48            \param none
+     49            \return none
+     50          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     51          void BSP_OpenTempSensor(void)
+     52          {
+   \                     BSP_OpenTempSensor: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     53            /* Configure Internal temperature sensor*/
+     54            tempSensor.temperature = &measuredTemp;
+   \   00000002   0x....             LDR      R0,??DataTable2
+   \   00000004   0x0001             MOVS     R1,R0
+   \   00000006   0x3120             ADDS     R1,R1,#+32
+   \   00000008   0x6001             STR      R1,[R0, #+0]
+     55            tempSensor.tsCallback = tempSensorHandler;
+   \   0000000A   0x....             LDR      R1,??DataTable2_1
+   \   0000000C   0x6041             STR      R1,[R0, #+4]
+     56            tempSensor.tsAdcDescriptor.resolution = RESOLUTION_16_BIT;
+   \   0000000E   0x2101             MOVS     R1,#+1
+   \   00000010   0x7281             STRB     R1,[R0, #+10]
+     57            tempSensor.tsAdcDescriptor.sampleRate = ADC_350KSPS;
+   \   00000012   0x2200             MOVS     R2,#+0
+   \   00000014   0x72C2             STRB     R2,[R0, #+11]
+     58            tempSensor.tsAdcDescriptor.selectionsAmount = 1;
+   \   00000016   0x8281             STRH     R1,[R0, #+20]
+     59            tempSensor.tsAdcDescriptor.voltageReference = INTVCC1;
+   \   00000018   0x2302             MOVS     R3,#+2
+   \   0000001A   0x7303             STRB     R3,[R0, #+12]
+     60            tempSensor.tsAdcDescriptor.corrEn = 0; //calibration of ADC is not done
+   \   0000001C   0x7702             STRB     R2,[R0, #+28]
+     61            tempSensor.tsAdcDescriptor.sampleNum = 4; //for averaging
+   \   0000001E   0x2304             MOVS     R3,#+4
+   \   00000020   0x7743             STRB     R3,[R0, #+29]
+     62            tempSensor.tsAdcDescriptor.adjRes = 4; //for averaging 
+   \   00000022   0x7783             STRB     R3,[R0, #+30]
+     63            tempSensor.tsAdcDescriptor.sampTime = 1; //number of ADC clock cycles
+   \   00000024   0x77C1             STRB     R1,[R0, #+31]
+     64            tempSensor.tsAdcDescriptor.bufferPointer = &adcBuffer;
+   \   00000026   0x0001             MOVS     R1,R0
+   \   00000028   0x3122             ADDS     R1,R1,#+34
+   \   0000002A   0x6101             STR      R1,[R0, #+16]
+     65            tempSensor.tsAdcDescriptor.callback = NULL;
+   \   0000002C   0x6182             STR      R2,[R0, #+24]
+     66            
+     67            HAL_OpenTempSensor(&tempSensor);
+   \   0000002E   0x.... 0x....      BL       HAL_OpenTempSensor
+     68          }
+   \   00000032   0xBD01             POP      {R0,PC}          ;; return
+     69          /**************************************************************************//**
+     70            \brief stops measuring and closes the ADC channel
+     71            \param none
+     72            \return none
+     73          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     74          void BSP_CloseTempSensor(void)
+     75          {
+   \                     BSP_CloseTempSensor: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     76            HAL_CloseTempSensor(&tempSensor);
+   \   00000002   0x....             LDR      R0,??DataTable2
+   \   00000004   0x.... 0x....      BL       HAL_CloseTempSensor
+     77          }
+   \   00000008   0xBD01             POP      {R0,PC}          ;; return
+     78          /**************************************************************************//**
+     79          \brief Temperature sensor handler
+     80          
+     81          \param NA
+     82          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     83          static void tempSensorHandler(void)
+     84          {
+     85           
+     86          }
+   \                     tempSensorHandler: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     tempSensor
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x........         DC32     tempSensorHandler
+     87          #endif // BSP_SUPPORT != BOARD_FAKE
+     88          
+     89          // eof bspTempSensor.h
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   BSP_CloseTempSensor
+         8   -> HAL_CloseTempSensor
+       8   BSP_OpenTempSensor
+         8   -> HAL_OpenTempSensor
+      16   BSP_ReadTempSensor
+        16   -> HAL_ReadTempSensor
+       0   tempSensorHandler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      10  BSP_CloseTempSensor
+      52  BSP_OpenTempSensor
+      18  BSP_ReadTempSensor
+      36  tempSensor
+          measuredTemp
+          adcBuffer
+       2  tempSensorHandler
+
+ 
+ 36 bytes in section .bss
+ 90 bytes in section .text
+ 
+ 90 bytes of CODE memory
+ 36 bytes of DATA memory
+
+Errors: none
+Warnings: none

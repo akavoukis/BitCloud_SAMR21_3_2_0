@@ -1,0 +1,815 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:24
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmableLight\src\dlScenesCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmableLight\src\dlScenesCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\dlScenesCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\dlScenesCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmableLight\src\dlScenesCluster.c
+      1          /**************************************************************************//**
+      2            \file dlScenesCluster.c
+      3          
+      4            \brief
+      5              Dimmable Light Scenes cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              11.12.12 N. Fomin - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_DIMMABLE_LIGHT
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <dlScenesCluster.h>
+     24          #include <dlScenes.h>
+     25          #include <dlOnOffCluster.h>
+     26          #include <dlLevelControlCluster.h>
+     27          #include <haClusters.h>
+     28          #include <uartManager.h>
+     29          #include <commandManager.h>
+     30          #include <pdsDataServer.h>
+     31          
+     32          /******************************************************************************
+     33                              Definitions section
+     34          ******************************************************************************/
+     35          #define GLOBAL_SCENE_SCENE_ID 0u
+     36          #define GLOBAL_SCENE_GROUP_ID 0u
+     37          
+     38          /******************************************************************************
+     39                              Prototypes section
+     40          ******************************************************************************/
+     41          static ZCL_Status_t addSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddScene_t *payload);
+     42          static ZCL_Status_t viewSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewScene_t *payload);
+     43          static ZCL_Status_t removeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveScene_t *payload);
+     44          static ZCL_Status_t removeAllScenesInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveAllScenes_t *payload);
+     45          static ZCL_Status_t storeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StoreScene_t *payload);
+     46          static ZCL_Status_t recallSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RecallScene_t *payload);
+     47          static ZCL_Status_t getSceneMembershipInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetSceneMembership_t *payload);
+     48          
+     49          static void dlFillAddRemoveStoreSceneResponsePayload(ZCL_AddSceneResponse_t *payload, uint16_t group, uint8_t scene, uint8_t status);
+     50          static uint8_t dlFillViewSceneResponsePayload(ZCL_ViewSceneResponse_t *payload, Scene_t *scene, uint8_t status, ZCL_ViewScene_t *request);
+     51          static void dlFillRemoveAllScenesResponsePayload(ZCL_RemoveAllScenesResponse_t *payload, uint16_t group, uint8_t status);
+     52          static uint8_t dlFillGetSceneMembershipPayload(ZCL_GetSceneMembershipResponse_t *payload, uint16_t group);
+     53          
+     54          static bool isValidGroup(uint16_t group);
+     55          static ZCL_Status_t extractSceneInfo(ZCL_AddScene_t *payload, Scene_t *scene, uint8_t length);
+     56          
+     57          static ZCL_Status_t addScene(ZCL_AddScene_t *addScene, uint8_t payloadLength);
+     58          static ZCL_Status_t viewScene(ZCL_ViewScene_t *viewScene, Scene_t **scene);
+     59          static ZCL_Status_t removeScene(ZCL_RemoveScene_t *removeScene);
+     60          static ZCL_Status_t removeAllScenes(uint16_t group);
+     61          static ZCL_Status_t storeScene(ZCL_StoreScene_t *storeScene);
+     62          static void recallScene(ZCL_RecallScene_t *recallScene);
+     63          
+     64          /******************************************************************************
+     65                              Global variables section
+     66          ******************************************************************************/
+     67          ZCL_SceneClusterServerAttributes_t dlScenesClusterServerAttributes =
+     68          {
+     69            ZCL_DEFINE_SCENES_CLUSTER_SERVER_ATTRIBUTES()
+     70          };
+     71          ZCL_ScenesClusterCommands_t        dlScenesCommands =
+     72          {
+     73            ZCL_DEFINE_SCENES_CLUSTER_COMMANDS(addSceneInd, viewSceneInd, removeSceneInd, removeAllScenesInd,
+     74                                               storeSceneInd, recallSceneInd, getSceneMembershipInd,
+     75                                               NULL, NULL, NULL, NULL, NULL, NULL)
+     76          };
+     77          
+     78          /******************************************************************************
+     79                              Implementation section
+     80          ******************************************************************************/
+     81          /**************************************************************************//**
+     82          \brief Initializes Scenes cluster
+     83          ******************************************************************************/
+     84          void scenesClusterInit(void)
+     85          {
+     86            dlScenesClusterServerAttributes.sceneCount.value   = 0;
+     87            dlScenesClusterServerAttributes.currentScene.value = 0;
+     88            dlScenesClusterServerAttributes.currentGroup.value = 0;
+     89            dlScenesClusterServerAttributes.sceneValid.value   = true;
+     90            dlScenesClusterServerAttributes.nameSupport.value  = 0;
+     91          
+     92            initScenes();
+     93          }
+     94          
+     95          /**************************************************************************//**
+     96          \brief Invalidates scene
+     97          ******************************************************************************/
+     98          void scenesInvalidate(void)
+     99          {
+    100            dlScenesClusterServerAttributes.sceneValid.value = false;
+    101          }
+    102          
+    103          /**************************************************************************//**
+    104          \brief Removes all scenes from scene table
+    105          
+    106          \param[in] group - group id
+    107          
+    108          \returns status of scene removing
+    109          ******************************************************************************/
+    110          ZCL_Status_t removeAllScenes(uint16_t group)
+    111          {
+    112            if (isValidGroup(group))
+    113              dlScenesClusterServerAttributes.sceneCount.value -= removeScenesByGroup(group);
+    114            else
+    115              return ZCL_INVALID_FIELD_STATUS;
+    116          
+    117            return ZCL_SUCCESS_STATUS;
+    118          }
+    119          
+    120          /**************************************************************************//**
+    121          \brief Callback on receiving Add Scene command
+    122          
+    123          \param[in] addressing - pointer to addressing information;
+    124          \param[in] payloadLength - data payload length;
+    125          \param[in] payload - data pointer
+    126          
+    127          \return status of indication routine
+    128          ******************************************************************************/
+    129          static ZCL_Status_t addSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddScene_t *payload)
+    130          {
+    131            ZCL_Status_t status;
+    132            ZCL_Request_t *req;
+    133          
+    134            LOG_STRING(addSceneStr, "addSceneInd(): 0x%04x, 0x%02x\r\n");
+    135            appSnprintf(addSceneStr, payload->groupId, payload->sceneId);
+    136          
+    137            status = addScene(payload, payloadLength);
+    138          
+    139            // Update scenes in non-volatile memory
+    140            if (ZCL_SUCCESS_STATUS == status)
+    141              PDS_Store(APP_DL_SCENES_MEM_ID);
+    142          
+    143            // If received via multicast or broadcast service no response shall be given
+    144            if (addressing->nonUnicast)
+    145              return ZCL_SUCCESS_STATUS;
+    146          
+    147            if (!(req = getFreeCommand()))
+    148              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    149          
+    150            fillCommandRequest(req, ZCL_SCENES_CLUSTER_ADD_SCENE_RESPONSE_COMMAND_ID,
+    151                                 sizeof(ZCL_AddSceneResponse_t));
+    152            dlFillAddRemoveStoreSceneResponsePayload((ZCL_AddSceneResponse_t *)req->requestPayload, payload->groupId, payload->sceneId, status);
+    153            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    154            commandManagerSendCommand(req);
+    155          
+    156            (void)payloadLength;
+    157            return ZCL_SUCCESS_STATUS;
+    158          }
+    159          
+    160          /**************************************************************************//**
+    161          \brief Callback on receiving View Scene command
+    162          
+    163          \param[in] addressing - pointer to addressing information;
+    164          \param[in] payloadLength - data payload length;
+    165          \param[in] payload - data pointer
+    166          
+    167          \return status of indication routine
+    168          ******************************************************************************/
+    169          static ZCL_Status_t viewSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewScene_t *payload)
+    170          {
+    171            ZCL_Status_t status;
+    172            ZCL_Request_t *req;
+    173            uint8_t size;
+    174            Scene_t *scene;
+    175          
+    176            LOG_STRING(viewSceneStr, "viewSceneInd(): 0x%04x, 0x%02x\r\n");
+    177            appSnprintf(viewSceneStr, payload->groupId, payload->sceneId);
+    178          
+    179            // If received via multicast or broadcast service no response shall be given
+    180            if (addressing->nonUnicast)
+    181              return ZCL_SUCCESS_STATUS;
+    182          
+    183            if (!(req = getFreeCommand()))
+    184              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    185          
+    186            status = viewScene(payload, &scene);
+    187          
+    188            size = dlFillViewSceneResponsePayload((ZCL_ViewSceneResponse_t *)req->requestPayload, scene, status, payload);
+    189            fillCommandRequest(req, ZCL_SCENES_CLUSTER_VIEW_SCENE_RESPONSE_COMMAND_ID,
+    190                                 size);
+    191            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    192            commandManagerSendCommand(req);
+    193          
+    194            (void)payloadLength;
+    195            return ZCL_SUCCESS_STATUS;
+    196          }
+    197          
+    198          /**************************************************************************//**
+    199          \brief Callback on receiving Remove Scene command
+    200          
+    201          \param[in] addressing - pointer to addressing information;
+    202          \param[in] payloadLength - data payload length;
+    203          \param[in] payload - data pointer
+    204          
+    205          \return status of indication routine
+    206          ******************************************************************************/
+    207          static ZCL_Status_t removeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveScene_t *payload)
+    208          {
+    209            ZCL_Status_t status;
+    210            ZCL_Request_t *req;
+    211          
+    212            LOG_STRING(removeSceneStr, "removeSceneInd(): 0x%04x, 0x%02x\r\n");
+    213            appSnprintf(removeSceneStr, payload->groupId, payload->sceneId);
+    214          
+    215            status = removeScene(payload);
+    216          
+    217            // Update scenes in non-volatile memory
+    218            if (ZCL_SUCCESS_STATUS == status)
+    219              PDS_Store(APP_DL_SCENES_MEM_ID);
+    220          
+    221            // If received via multicast or broadcast service no response shall be given
+    222            if (addressing->nonUnicast)
+    223              return ZCL_SUCCESS_STATUS;
+    224          
+    225            if (!(req = getFreeCommand()))
+    226              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    227          
+    228            fillCommandRequest(req, ZCL_SCENES_CLUSTER_REMOVE_SCENE_RESPONSE_COMMAND_ID,
+    229                                 sizeof(ZCL_RemoveSceneResponse_t));
+    230            dlFillAddRemoveStoreSceneResponsePayload((ZCL_AddSceneResponse_t *)req->requestPayload, payload->groupId, payload->sceneId, status);
+    231            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    232            commandManagerSendCommand(req);
+    233          
+    234            (void)payloadLength;
+    235            return ZCL_SUCCESS_STATUS;
+    236          }
+    237          
+    238          /**************************************************************************//**
+    239          \brief Callback on receiving Remove All Scenes command
+    240          
+    241          \param[in] addressing - pointer to addressing information;
+    242          \param[in] payloadLength - data payload length;
+    243          \param[in] payload - data pointer
+    244          
+    245          \return status of indication routine
+    246          ******************************************************************************/
+    247          static ZCL_Status_t removeAllScenesInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveAllScenes_t *payload)
+    248          {
+    249            ZCL_Status_t status;
+    250            ZCL_Request_t *req;
+    251          
+    252            LOG_STRING(removeAllScenesStr, "removeAllScenesInd(): 0x%04x\r\n");
+    253            appSnprintf(removeAllScenesStr, payload->groupId);
+    254          
+    255            status = removeAllScenes(payload->groupId);
+    256          
+    257            // Update scenes in non-volatile memory
+    258            if (ZCL_SUCCESS_STATUS == status)
+    259              PDS_Store(APP_DL_SCENES_MEM_ID);
+    260          
+    261            // If received via multicast or broadcast service no response shall be given
+    262            if (addressing->nonUnicast)
+    263              return ZCL_SUCCESS_STATUS;
+    264          
+    265            if (!(req = getFreeCommand()))
+    266              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    267          
+    268            fillCommandRequest(req, ZCL_SCENES_CLUSTER_REMOVE_ALL_SCENES_RESPONSE_COMMAND_ID,
+    269                                 sizeof(ZCL_RemoveAllScenesResponse_t));
+    270            dlFillRemoveAllScenesResponsePayload((ZCL_RemoveAllScenesResponse_t *)req->requestPayload, payload->groupId, status);
+    271            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    272            commandManagerSendCommand(req);
+    273          
+    274            (void)payloadLength;
+    275            return ZCL_SUCCESS_STATUS;
+    276          }
+    277          
+    278          /**************************************************************************//**
+    279          \brief Callback on receiving Store Scene command
+    280          
+    281          \param[in] addressing - pointer to addressing information;
+    282          \param[in] payloadLength - data payload length;
+    283          \param[in] payload - data pointer
+    284          
+    285          \return status of indication routine
+    286          ******************************************************************************/
+    287          static ZCL_Status_t storeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StoreScene_t *payload)
+    288          {
+    289            ZCL_Status_t status;
+    290            ZCL_Request_t *req;
+    291          
+    292            LOG_STRING(storeSceneStr, "storeSceneInd(): 0x%04x, %d\r\n");
+    293            appSnprintf(storeSceneStr, payload->groupId, payload->sceneId);
+    294          
+    295            status = storeScene(payload);
+    296          
+    297            // Update scenes in non-volatile memory
+    298            if (ZCL_SUCCESS_STATUS == status)
+    299              PDS_Store(APP_DL_SCENES_MEM_ID);
+    300          
+    301            // If received via multicast or broadcast service no response shall be given
+    302            if (addressing->nonUnicast)
+    303              return ZCL_SUCCESS_STATUS;
+    304          
+    305            if (!(req = getFreeCommand()))
+    306              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    307          
+    308            fillCommandRequest(req, ZCL_SCENES_CLUSTER_STORE_SCENE_RESPONSE_COMMAND_ID,
+    309                                 sizeof(ZCL_StoreSceneResponse_t));
+    310            dlFillAddRemoveStoreSceneResponsePayload((ZCL_AddSceneResponse_t *)req->requestPayload, payload->groupId, payload->sceneId, status);
+    311            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    312            commandManagerSendCommand(req);
+    313          
+    314            (void)payloadLength;
+    315            return ZCL_SUCCESS_STATUS;
+    316          }
+    317          
+    318          /**************************************************************************//**
+    319          \brief Callback on receiving Recall Scene command
+    320          
+    321          \param[in] addressing - pointer to addressing information;
+    322          \param[in] payloadLength - data payload length;
+    323          \param[in] payload - data pointer
+    324          
+    325          \return status of indication routine
+    326          ******************************************************************************/
+    327          static ZCL_Status_t recallSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RecallScene_t *payload)
+    328          {
+    329            LOG_STRING(recallSceneStr, "recallSceneInd(): 0x%04x, %d\r\n");
+    330            appSnprintf(recallSceneStr, payload->groupId, payload->sceneId);
+    331          
+    332            recallScene(payload);
+    333          
+    334            (void)addressing, (void)payloadLength;
+    335            return ZCL_SUCCESS_STATUS;
+    336          }
+    337          
+    338          /**************************************************************************//**
+    339          \brief Callback on receiving Get Scenes Membership command
+    340          
+    341          \param[in] addressing - pointer to addressing information;
+    342          \param[in] payloadLength - data payload length;
+    343          \param[in] payload - data pointer
+    344          
+    345          \return status of indication routine
+    346          ******************************************************************************/
+    347          static ZCL_Status_t getSceneMembershipInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetSceneMembership_t *payload)
+    348          {
+    349            uint8_t size;
+    350            ZCL_Request_t *req;
+    351          
+    352            LOG_STRING(getSceneMembershipStr, "getSceneMembershipInd(): 0x%04x\r\n");
+    353            appSnprintf(getSceneMembershipStr, payload->groupId);
+    354          
+    355            /* A response should be sent if the request is unicast or (the request is broadcast
+    356                and scene(s) for given group exist(s)) */
+    357            if (!(!addressing->nonUnicast ||
+    358              (addressing->nonUnicast && isValidGroup(payload->groupId) && getNextSceneByGroup(NULL, payload->groupId))))
+    359              return ZCL_SUCCESS_STATUS;
+    360          
+    361            if (!(req = getFreeCommand()))
+    362              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    363          
+    364            size = dlFillGetSceneMembershipPayload((ZCL_GetSceneMembershipResponse_t *)req->requestPayload, payload->groupId);
+    365            fillCommandRequest(req, ZCL_SCENES_CLUSTER_GET_SCENE_MEMBERSHIP_RESPONSE_COMMAND_ID,
+    366                                 size);
+    367            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+    368            commandManagerSendCommand(req);
+    369          
+    370            (void)payloadLength;
+    371            return ZCL_SUCCESS_STATUS;
+    372          }
+    373          
+    374          /**************************************************************************//**
+    375          \brief Fills Add Scene Response command structure
+    376          
+    377          \param[out] payload - pointer to command structure;
+    378          \param[in]  group   - group id;
+    379          \param[in]  scene   - scene id;
+    380          \param[in]  status  - the status of scene adding
+    381          ******************************************************************************/
+    382          static void dlFillAddRemoveStoreSceneResponsePayload(ZCL_AddSceneResponse_t *payload, uint16_t group, uint8_t scene, uint8_t status)
+    383          {
+    384            payload->status  = status;
+    385            payload->groupId = group;
+    386            payload->sceneId = scene;
+    387          }
+    388          
+    389          /**************************************************************************//**
+    390          \brief Fills View Scene Response command structure
+    391          
+    392          \param[out] payload - pointer to command structure;
+    393          \param[in]  scene   - scene info;
+    394          \param[in]  status  - the status of scene viewing;
+    395          \param[in] request  - the pointer to appropriate View Scene request
+    396          
+    397          \returns size of payload in octets
+    398          ******************************************************************************/
+    399          static uint8_t dlFillViewSceneResponsePayload(ZCL_ViewSceneResponse_t *payload, Scene_t *scene, uint8_t status, ZCL_ViewScene_t *request)
+    400          {
+    401            ZCL_OnOffClusterExtensionFieldSet_t    *onOffExt;
+    402            ZCL_LevelControlSceneExtensionFields_t *levelControlExt;
+    403            uint8_t                                *tmp;
+    404          
+    405            payload->status  = status;
+    406            payload->groupId = request->groupId;
+    407            payload->sceneId = request->sceneId;
+    408          
+    409            if (ZCL_SUCCESS_STATUS != status)
+    410              return sizeof(ZCL_ViewSceneResponse_t) - sizeof(uint16_t) /*transitionTime*/ - sizeof(uint8_t); /*nameAndExtField*/
+    411          
+    412            payload->transitionTime     = scene->transitionTime;
+    413            payload->nameAndExtField[0] = 0;
+    414          
+    415            onOffExt = (ZCL_OnOffClusterExtensionFieldSet_t *)&payload->nameAndExtField[1];
+    416            onOffExt->clusterId  = ONOFF_CLUSTER_ID;
+    417            onOffExt->length     = sizeof(ZCL_OnOffClusterExtensionFieldSet_t) - sizeof(ZCL_ExtensionFieldSets_t);
+    418            onOffExt->onOffValue = scene->onOff;
+    419          
+    420            tmp = (uint8_t *)&payload->nameAndExtField[1] + sizeof(ZCL_OnOffClusterExtensionFieldSet_t);
+    421            levelControlExt = (ZCL_LevelControlSceneExtensionFields_t *)tmp;
+    422          
+    423            levelControlExt->clusterId    = LEVEL_CONTROL_CLUSTER_ID;
+    424            levelControlExt->length       = sizeof(ZCL_LevelControlSceneExtensionFields_t) - sizeof(ZCL_ExtensionFieldSets_t);
+    425            levelControlExt->currentLevel = scene->currentLevel;
+    426          
+    427            return sizeof(ZCL_ViewSceneResponse_t) + sizeof(ZCL_OnOffClusterExtensionFieldSet_t) + sizeof(ZCL_LevelControlSceneExtensionFields_t);
+    428          }
+    429          
+    430          /**************************************************************************//**
+    431          \brief Fills Remove Scene Response command structure
+    432          
+    433          \param[out] payload - pointer to command structure;
+    434          \param[in]  group   - group id;
+    435          \param[in]  status  - the status of scenes removing
+    436          ******************************************************************************/
+    437          static void dlFillRemoveAllScenesResponsePayload(ZCL_RemoveAllScenesResponse_t *payload, uint16_t group, uint8_t status)
+    438          {
+    439            payload->status  = status;
+    440            payload->groupId = group;
+    441          }
+    442          
+    443          /**************************************************************************//**
+    444          \brief Fills Get Scene Membership command structure
+    445          
+    446          \param[out] payload - pointer to command structure;
+    447          \param[in]  group   - group id;
+    448          ******************************************************************************/
+    449          static uint8_t dlFillGetSceneMembershipPayload(ZCL_GetSceneMembershipResponse_t *payload, uint16_t group)
+    450          {
+    451            payload->capacity = MAX_SCENES_AMOUNT - dlScenesClusterServerAttributes.sceneCount.value;
+    452            payload->groupId  = group;
+    453          
+    454            if (isValidGroup(group))
+    455            {
+    456              Scene_t *scene = NULL;
+    457          
+    458              while ((scene = getNextSceneByGroup(scene, group)))
+    459                payload->sceneList[payload->sceneCount++] = scene->sceneId;
+    460              payload->status = ZCL_SUCCESS_STATUS;
+    461            }
+    462            else
+    463            {
+    464              payload->status = ZCL_INVALID_FIELD_STATUS;
+    465              return sizeof(ZCL_GetSceneMembershipResponse_t) - sizeof(uint8_t) /*sceneCount*/ - sizeof(uint8_t); /*sceneList*/
+    466            }
+    467          
+    468            return sizeof(ZCL_GetSceneMembershipResponse_t) + payload->sceneCount - sizeof(uint8_t); /*sceneList*/
+    469          }
+    470          
+    471          /**************************************************************************//**
+    472          \brief Checks whether given group id is a group id that exists on this device
+    473          
+    474          \param[in] group - group id
+    475          
+    476          \returns true if group id exists on this device, false otherwise
+    477          ******************************************************************************/
+    478          static bool isValidGroup(uint16_t group)
+    479          {
+    480            return (group == 0 || NWK_IsGroupMember(group, APP_SRC_ENDPOINT_ID));
+    481          }
+    482          
+    483          /**************************************************************************//**
+    484          \brief Extracts scene information from received packet and fills scene structure
+    485          
+    486          \param[in]  payload - received packet payload
+    487          \param[out] scene   - scene to be filled
+    488          ******************************************************************************/
+    489          static ZCL_Status_t extractSceneInfo(ZCL_AddScene_t *payload, Scene_t *scene, uint8_t length)
+    490          {
+    491            int16_t commandSize  = sizeof(ZCL_AddScene_t) + payload->name[0];
+    492            int16_t extFieldSize = (int16_t)length - commandSize;
+    493            uint8_t *extFields   = (uint8_t *)payload + commandSize;
+    494            ZCL_ExtensionFieldSets_t *ext;
+    495          
+    496            scene->sceneId        = payload->sceneId;
+    497            scene->groupId        = payload->groupId;
+    498            scene->transitionTime = payload->transitionTime;
+    499          
+    500            while (extFieldSize)
+    501            {
+    502              ext = (ZCL_ExtensionFieldSets_t *)extFields;
+    503          
+    504              if (ONOFF_CLUSTER_ID == ext->clusterId)
+    505              {
+    506                ZCL_OnOffClusterExtensionFieldSet_t *ext = (ZCL_OnOffClusterExtensionFieldSet_t *)extFields;
+    507          
+    508                scene->onOff = ext->onOffValue;
+    509              }
+    510              else if (LEVEL_CONTROL_CLUSTER_ID == ext->clusterId)
+    511              {
+    512                ZCL_LevelControlSceneExtensionFields_t *ext =
+    513                  (ZCL_LevelControlSceneExtensionFields_t *)extFields;
+    514          
+    515                scene->currentLevel = ext->currentLevel;
+    516              }
+    517              else
+    518                return ZCL_INVALID_FIELD_STATUS;
+    519          
+    520              extFields += sizeof(ZCL_ExtensionFieldSets_t) + ext->length;
+    521              extFieldSize -= (sizeof(ZCL_ExtensionFieldSets_t) + ext->length);
+    522            }
+    523          
+    524            return ZCL_SUCCESS_STATUS;
+    525          }
+    526          
+    527          /**************************************************************************//**
+    528          \brief Adds scene to scene table
+    529          
+    530          \param[in] addScene      - the pointer to Add Scene request;
+    531          \param[in] payloadLength - the length of request
+    532          
+    533          \returns status of scene adding
+    534          ******************************************************************************/
+    535          static ZCL_Status_t addScene(ZCL_AddScene_t *addScene, uint8_t payloadLength)
+    536          {
+    537            Scene_t *scene;
+    538          
+    539            if (isValidGroup(addScene->groupId))
+    540            {
+    541              scene = findSceneBySceneAndGroup(addScene->groupId, addScene->sceneId);
+    542              if (!scene)
+    543                scene = allocateScene();
+    544          
+    545              if (scene)
+    546              {
+    547                dlScenesClusterServerAttributes.sceneCount.value++;
+    548                return extractSceneInfo(addScene, scene, payloadLength);
+    549              }
+    550              else
+    551                return ZCL_INSUFFICIENT_SPACE_STATUS;
+    552            }
+    553          
+    554            return ZCL_INVALID_FIELD_STATUS;
+    555          }
+    556          
+    557          /**************************************************************************//**
+    558          \brief Views scene in scene table
+    559          
+    560          \param[in] viewScene - the pointer to View Scene request;
+    561          \param[in] scene     - the pointer to the pointer to scene
+    562          
+    563          \returns status of scene viewing
+    564          ******************************************************************************/
+    565          static ZCL_Status_t viewScene(ZCL_ViewScene_t *viewScene, Scene_t **scene)
+    566          {
+    567            if (isValidGroup(viewScene->groupId))
+    568            {
+    569              *scene = findSceneBySceneAndGroup(viewScene->groupId, viewScene->sceneId);
+    570              if (!(*scene))
+    571                return ZCL_NOT_FOUND_STATUS;
+    572              else
+    573                return ZCL_SUCCESS_STATUS;
+    574            }
+    575          
+    576            return ZCL_INVALID_FIELD_STATUS;
+    577          }
+    578          
+    579          /**************************************************************************//**
+    580          \brief Removes scene from scene table
+    581          
+    582          \param[in] removeScene - the pointer to Remove Scene request
+    583          
+    584          \returns status of scene removing
+    585          ******************************************************************************/
+    586          static ZCL_Status_t removeScene(ZCL_RemoveScene_t *removeScene)
+    587          {
+    588            if (isValidGroup(removeScene->groupId))
+    589            {
+    590              Scene_t *scene;
+    591          
+    592              scene = findSceneBySceneAndGroup(removeScene->groupId, removeScene->sceneId);
+    593              if (!scene)
+    594                return ZCL_NOT_FOUND_STATUS;
+    595              else
+    596              {
+    597                freeScene(scene);
+    598                dlScenesClusterServerAttributes.sceneCount.value--;
+    599                return ZCL_SUCCESS_STATUS;
+    600              }
+    601            }
+    602          
+    603            return ZCL_INVALID_FIELD_STATUS;
+    604          }
+    605          
+    606          /**************************************************************************//**
+    607          \brief Stores scene to scene table
+    608          
+    609          \param[in] storeScene - the pointer to Store Scene request
+    610          
+    611          \returns status of scene storing
+    612          ******************************************************************************/
+    613          static ZCL_Status_t storeScene(ZCL_StoreScene_t *storeScene)
+    614          {
+    615            if (isValidGroup(storeScene->groupId))
+    616            {
+    617              Scene_t *scene;
+    618          
+    619              scene = findSceneBySceneAndGroup(storeScene->groupId, storeScene->sceneId);
+    620              if (!scene)
+    621                scene = allocateScene();
+    622          
+    623              if (scene)
+    624              {
+    625                dlScenesClusterServerAttributes.sceneCount.value++;
+    626          
+    627                scene->onOff          = onOffState();
+    628                scene->currentLevel   = levelControlCurrentLevel();
+    629                scene->transitionTime = 0;
+    630                scene->groupId        = storeScene->groupId;
+    631                scene->sceneId        = storeScene->sceneId;
+    632          
+    633                dlScenesClusterServerAttributes.currentScene.value = scene->sceneId;
+    634                dlScenesClusterServerAttributes.currentGroup.value = scene->groupId;
+    635                dlScenesClusterServerAttributes.sceneValid.value   = true;
+    636          
+    637                return ZCL_SUCCESS_STATUS;
+    638              }
+    639              else
+    640                return ZCL_INSUFFICIENT_SPACE_STATUS;
+    641            }
+    642          
+    643            return ZCL_INVALID_FIELD_STATUS;
+    644          }
+    645          
+    646          /**************************************************************************//**
+    647          \brief Recalls scene from scene table
+    648          
+    649          \param[in] recallScene - the pointer to Recall Scene request
+    650          ******************************************************************************/
+    651          static void recallScene(ZCL_RecallScene_t *recallScene)
+    652          {
+    653            Scene_t *scene = findSceneBySceneAndGroup(recallScene->groupId, recallScene->sceneId);
+    654          
+    655            if (scene)
+    656            {
+    657              onOffSetOnOffState(scene->onOff);
+    658              levelControlSetLevel(scene->currentLevel);
+    659          
+    660              dlScenesClusterServerAttributes.currentScene.value = scene->sceneId;
+    661              dlScenesClusterServerAttributes.currentGroup.value = scene->groupId;
+    662              dlScenesClusterServerAttributes.sceneValid.value   = true;
+    663              PDS_Store(APP_DL_SCENES_MEM_ID);
+    664            }
+    665          }
+    666          
+    667          #endif // APP_DEVICE_TYPE_DIMMABLE_LIGH
+    668          //eof dlScenesCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

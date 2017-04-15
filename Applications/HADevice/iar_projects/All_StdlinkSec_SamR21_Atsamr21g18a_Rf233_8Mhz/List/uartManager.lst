@@ -1,0 +1,422 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:10
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\common\src\uartManager.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\common\src\uartManager.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\uartManager.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\uartManager.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\common\src\uartManager.c
+      1          /************************************************************************//**
+      2            \file uartManager.c
+      3          
+      4            \brief
+      5              ZclDevice: Uart Manager implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              05.02.09 I. Fedina - Created.
+     17          ******************************************************************************/
+     18          #if (APP_DEVICE_EVENTS_LOGGING == 1) || (APP_ENABLE_CONSOLE == 1)
+     19          
+     20          /*******************************************************************************
+     21                                       Includes section
+     22          *******************************************************************************/
+     23          #include <uartManager.h>
+     24          #include <console.h>
+     25          #include <stdarg.h>
+     26          #include <stdio.h>
+     27          #include <rs232Controller.h>
+     28          
+     29          /*******************************************************************************
+     30                                       Definition(s) section
+     31          *******************************************************************************/
+     32          /* This should be large enough to accommodate the longest output console string. */
+     33          #define TMP_STRING_BUFFER_SIZE              180
+     34          // UART Tx buffer size
+     35          #ifndef APP_UART_TX_BUFFER_SIZE
+     36            #define APP_UART_TX_BUFFER_SIZE           750 // Size to accommodate complete menu,
+     37          #endif                                          // can be increased/decreased based on the requirement
+     38          
+     39          /*******************************************************************************
+     40                                       Local variables section
+     41          *******************************************************************************/
+
+   \                                 In section .bss, align 4
+     42          static HAL_UsartDescriptor_t appUsartDescriptor;      // UART descriptor (required by stack)
+   \                     appUsartDescriptor:
+   \   00000000                      DS8 60
+   \   0000003C                      DS8 752
+   \   0000032C                      DS8 52
+     43          static uint8_t uartTxBuffer[APP_UART_TX_BUFFER_SIZE]; // UART Tx buffer
+     44          static uint8_t uartRxBuffer[USART_RX_BUFFER_LENGTH];  // UART Rx buffer
+     45          
+     46          /*******************************************************************************
+     47                                       Prototypes section
+     48          *******************************************************************************/
+     49          static void uartDataReceived(uint16_t length);
+     50          
+     51          /*******************************************************************************
+     52                                       Implementation section
+     53          *******************************************************************************/
+     54          /**************************************************************************//**
+     55          /brief Inits UART, register UART callbacks
+     56          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     57          void uartInit(void)
+     58          {
+   \                     uartInit: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     59            appUsartDescriptor.tty             = USART_CHANNEL;
+   \   00000002   0x....             LDR      R0,??DataTable2
+   \   00000004   0x0001             MOVS     R1,R0
+   \   00000006   0x310C             ADDS     R1,R1,#+12
+   \   00000008   0x....             LDR      R2,??DataTable2_1
+   \   0000000A   0x600A             STR      R2,[R1, #+0]
+     60            appUsartDescriptor.mode            = USART_MODE_ASYNC;
+   \   0000000C   0x2200             MOVS     R2,#+0
+   \   0000000E   0x604A             STR      R2,[R1, #+4]
+     61            appUsartDescriptor.baudrate        = USART_BAUDRATE_38400;
+   \   00000010   0x....             LDR      R3,??DataTable2_2  ;; 0xec56
+   \   00000012   0x810B             STRH     R3,[R1, #+8]
+     62            appUsartDescriptor.dataLength      = USART_DATA8;
+   \   00000014   0x728A             STRB     R2,[R1, #+10]
+     63            appUsartDescriptor.parity          = USART_PARITY_NONE;
+   \   00000016   0x818A             STRH     R2,[R1, #+12]
+     64            appUsartDescriptor.stopbits        = USART_STOPBIT_1;
+   \   00000018   0x738A             STRB     R2,[R1, #+14]
+     65            appUsartDescriptor.rxBuffer        = uartRxBuffer;
+   \   0000001A   0x23CB             MOVS     R3,#+203
+   \   0000001C   0x009B             LSLS     R3,R3,#+2        ;; #+812
+   \   0000001E   0x18C3             ADDS     R3,R0,R3
+   \   00000020   0x614B             STR      R3,[R1, #+20]
+     66            appUsartDescriptor.rxBufferLength  = USART_RX_BUFFER_LENGTH;
+   \   00000022   0x2332             MOVS     R3,#+50
+   \   00000024   0x830B             STRH     R3,[R1, #+24]
+     67            appUsartDescriptor.txBuffer        = uartTxBuffer;
+   \   00000026   0x0003             MOVS     R3,R0
+   \   00000028   0x333C             ADDS     R3,R3,#+60
+   \   0000002A   0x61CB             STR      R3,[R1, #+28]
+     68            appUsartDescriptor.txBufferLength  = APP_UART_TX_BUFFER_SIZE;
+   \   0000002C   0x....             LDR      R3,??DataTable2_3  ;; 0x2ee
+   \   0000002E   0x840B             STRH     R3,[R1, #+32]
+     69            appUsartDescriptor.rxCallback      = uartDataReceived;
+   \   00000030   0x....             LDR      R3,??DataTable2_4
+   \   00000032   0x624B             STR      R3,[R1, #+36]
+     70            appUsartDescriptor.txCallback      = NULL;
+   \   00000034   0x628A             STR      R2,[R1, #+40]
+     71            appUsartDescriptor.flowControl     = USART_FLOW_CONTROL_NONE;
+   \   00000036   0x2138             MOVS     R1,#+56
+   \   00000038   0x5442             STRB     R2,[R0, R1]
+     72          
+     73          #if BSP_ENABLE_RS232_CONTROL == 1 && !defined(OTAU_SERVER)
+     74            BSP_EnableRs232();
+     75          #endif
+     76            OPEN_USART(&appUsartDescriptor);
+   \   0000003A   0x.... 0x....      BL       HAL_OpenUsart
+     77          }
+   \   0000003E   0xBD01             POP      {R0,PC}          ;; return
+     78          
+     79          /**************************************************************************//**
+     80          \brief Sends data to the Serial Interface
+     81          
+     82          \param[in] data   - pointer to data to be sent;
+     83          \param[in] length - number of bytes (length) of data to be sent
+     84          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     85          void sendDataToUart(uint8_t *data, uint8_t length)
+     86          {
+   \                     sendDataToUart: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     87            WRITE_USART(&appUsartDescriptor, data, length);
+   \   00000002   0x000A             MOVS     R2,R1
+   \   00000004   0x0001             MOVS     R1,R0
+   \   00000006   0x....             LDR      R0,??DataTable2
+   \   00000008   0x.... 0x....      BL       HAL_WriteUsart
+     88          }
+   \   0000000C   0xBD01             POP      {R0,PC}          ;; return
+     89          
+     90          /**************************************************************************//**
+     91          \brief Reads data from the Serial Interface
+     92          
+     93          \params[out] data - pointer to receive buffer;
+     94          \params[in]  length - number of bytes (length) in receive buffer;
+     95          
+     96          \returns amount of read bytes
+     97          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     98          uint8_t readDataFromUart(uint8_t *data, uint8_t length)
+     99          {
+   \                     readDataFromUart: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    100            return READ_USART(&appUsartDescriptor, data, length);
+   \   00000002   0x000A             MOVS     R2,R1
+   \   00000004   0x0001             MOVS     R1,R0
+   \   00000006   0x....             LDR      R0,??DataTable2
+   \   00000008   0x.... 0x....      BL       HAL_ReadUsart
+   \   0000000C   0xB2C0             UXTB     R0,R0
+   \   0000000E   0xBD02             POP      {R1,PC}          ;; return
+    101          }
+    102          
+    103          /**************************************************************************//**
+    104          \brief Callback on receiving data via Serial interface
+    105          
+    106          \param[in] length - amount of received bytes
+    107          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    108          static void uartDataReceived(uint16_t length)
+    109          {
+   \                     uartDataReceived: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    110          #if APP_ENABLE_CONSOLE == 1
+    111            processConsole(length);
+   \   00000002   0x.... 0x....      BL       processConsole
+    112          #else
+    113            (void)length;
+    114          #endif // APP_ENABLE_CONSOLE == 1
+    115          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+    116          
+    117          #if APP_DEVICE_EVENTS_LOGGING == 1 && !defined BOARD_PC
+    118          /**************************************************************************//**
+    119          \brief Outputs formated string to serial interface
+    120          
+    121          \param[in] formt - formatted string pointer
+    122          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    123          void appSnprintf(const char *formt, ...)
+    124          {
+   \                     appSnprintf: (+1)
+   \   00000000   0xB40E             PUSH     {R1-R3}
+   \   00000002   0xB500             PUSH     {LR}
+   \   00000004   0xB0AE             SUB      SP,SP,#+184
+    125            uint8_t str[TMP_STRING_BUFFER_SIZE];
+    126            uint8_t length;
+    127            va_list ap;
+    128          
+    129            va_start(ap, formt);
+   \   00000006   0xAB2F             ADD      R3,SP,#+188
+    130            length = vsnprintf((char*) str, TMP_STRING_BUFFER_SIZE, formt, ap);
+   \   00000008   0x0002             MOVS     R2,R0
+   \   0000000A   0x21B4             MOVS     R1,#+180
+   \   0000000C   0x4668             MOV      R0,SP
+   \   0000000E   0x.... 0x....      BL       vsnprintf
+    131            va_end(ap);
+    132            sendDataToUart(str, length);
+   \   00000012   0xB2C1             UXTB     R1,R0
+   \   00000014   0x4668             MOV      R0,SP
+   \   00000016   0x.... 0x....      BL       sendDataToUart
+    133          }
+   \   0000001A   0x982E             LDR      R0,[SP, #+184]
+   \   0000001C   0xB032             ADD      SP,SP,#+200
+   \   0000001E   0x4700             BX       R0               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     appUsartDescriptor
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x........         DC32     usartChannel
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x0000EC56         DC32     0xec56
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \   00000000   0x000002EE         DC32     0x2ee
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \   00000000   0x........         DC32     uartDataReceived
+    134          #endif // APP_DEVICE_EVENTS_LOGGING
+    135          #endif // (APP_DEVICE_EVENTS_LOGGING == 1) || (APP_ENABLE_CONSOLE == 1)
+    136          
+    137          // eof uartManager.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     200   appSnprintf
+       200   -> sendDataToUart
+       200   -> vsnprintf
+       8   readDataFromUart
+         8   -> HAL_ReadUsart
+       8   sendDataToUart
+         8   -> HAL_WriteUsart
+       8   uartDataReceived
+         8   -> processConsole
+       8   uartInit
+         8   -> HAL_OpenUsart
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+      32  appSnprintf
+     864  appUsartDescriptor
+          uartTxBuffer
+          uartRxBuffer
+      16  readDataFromUart
+      14  sendDataToUart
+       8  uartDataReceived
+      64  uartInit
+
+ 
+ 864 bytes in section .bss
+ 154 bytes in section .text
+ 
+ 154 bytes of CODE memory
+ 864 bytes of DATA memory
+
+Errors: none
+Warnings: none

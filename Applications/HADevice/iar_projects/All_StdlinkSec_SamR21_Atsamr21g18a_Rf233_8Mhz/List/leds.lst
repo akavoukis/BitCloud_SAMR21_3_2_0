@@ -1,0 +1,593 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:36
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\leds.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\leds.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\leds.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\leds.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\leds.c
+      1          /***************************************************************************//**
+      2          \file  leds.c
+      3          
+      4          \brief The module to access to the leds.
+      5          
+      6          \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13          \internal
+     14            History:
+     15              07/04/14 karthik.p_u - Created
+     16          *******************************************************************************/
+     17          
+     18          /******************************************************************************
+     19                             Includes section
+     20          ******************************************************************************/
+     21          #include <bspLeds.h>
+     22          #include <leds.h>
+     23          #include <pwm.h>
+     24          #include <appTimer.h>
+     25          #include <hs2xy.h>
+     26          #include <maxL.h>
+     27          #include <xyl2rgb.h>
+     28          
+     29          #if BSP_SUPPORT != BOARD_FAKE
+     30          
+     31          /******************************************************************************
+     32                              Definitions section
+     33          ******************************************************************************/
+     34          /* Maximum duty cycle (%) */
+     35          #define APP_MAX_DUTY_CYCLE 100
+     36          
+     37          /* Minimum duty cycle (%) */
+     38          #define APP_MIN_DUTY_CYCLE 0
+     39          
+     40          /* Base frequency in Hz */
+     41          #define APP_BASE_FREQUENCY 900
+     42          
+     43          /* Macro for top counter value calculation */
+     44          #define GET_TOP(freq, prescale)   (F_PERI / (2 * freq * prescale))
+     45          /* Use prescale factor 1 */
+     46          #define PRESCALER  PWM_PRESCALER_1
+     47          /* Set top counter value using base frequency of 10kHz */
+     48          #define TOP GET_TOP(APP_BASE_FREQUENCY, PRESCALER)
+     49          
+     50          /******************************************************************************
+     51                             Prototypes section
+     52          ******************************************************************************/
+     53          #if defined(APP_USE_PWM)
+     54          static void initPwm(void);
+     55          void bspSetPwmChannelCompareValue(uint16_t r, uint16_t g, uint16_t b);
+     56          #endif // APP_USE_PWM
+     57          
+     58          #if defined(APP_USE_PWM)
+     59          static uint8_t currentL;
+     60          #endif
+     61          
+     62          #if defined(APP_USE_PWM)
+     63          static void ledsSetColor(void);
+     64          
+     65          /******************************************************************************
+     66                              Local variables
+     67          ******************************************************************************/
+     68          static uint16_t currentX, currentY;
+     69          #endif /* APP_USE_PWM */
+     70          
+     71          /******************************************************************************
+     72                              Local variables
+     73          ******************************************************************************/
+     74          #if defined(APP_USE_PWM)
+     75          static HAL_PwmDescriptor_t pwmChannel0;
+     76          #endif
+     77          
+     78          /******************************************************************************
+     79                             Implementations section
+     80          ******************************************************************************/
+     81          
+     82          /**************************************************************************//**
+     83          \brief Opens leds module to use.
+     84          
+     85          \return
+     86              operation state
+     87          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     88          void BSP_InitLeds(void)
+     89          {
+   \                     BSP_InitLeds: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     90            halInitFirstLed();
+   \   00000002   0x....             LDR      R0,??DataTable5  ;; 0x41004408
+   \   00000004   0x2180             MOVS     R1,#+128
+   \   00000006   0x0309             LSLS     R1,R1,#+12       ;; #+524288
+   \   00000008   0x6001             STR      R1,[R0, #+0]
+   \   0000000A   0x....             LDR      R2,??DataTable5_1  ;; 0x41004453
+   \   0000000C   0x7813             LDRB     R3,[R2, #+0]
+   \   0000000E   0x2402             MOVS     R4,#+2
+   \   00000010   0x431C             ORRS     R4,R4,R3
+   \   00000012   0x7014             STRB     R4,[R2, #+0]
+     91          
+     92          #if defined(APP_USE_PWM)
+     93            initPwm();
+     94          #endif // APP_USE_PWM
+     95          
+     96            BSP_OffLed(LED_FIRST);
+   \   00000014   0x6101             STR      R1,[R0, #+16]
+     97          }
+   \   00000016   0xBD10             POP      {R4,PC}          ;; return
+     98          
+     99          /**************************************************************************//**
+    100          \brief Opens leds module to use.
+    101          
+    102          \return
+    103              operation state
+    104          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    105          result_t BSP_OpenLeds(void)
+    106          {
+   \                     BSP_OpenLeds: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    107            BSP_InitLeds();
+   \   00000002   0x.... 0x....      BL       BSP_InitLeds
+    108            return BC_SUCCESS;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0xBD02             POP      {R1,PC}          ;; return
+    109          }
+    110          
+    111          /****************************************************************
+    112          Closes leds module.
+    113          ****************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    114          result_t BSP_CloseLeds(void)
+    115          {
+    116            halUnInitFirstLed();
+   \                     BSP_CloseLeds: (+1)
+   \   00000000   0x2080             MOVS     R0,#+128
+   \   00000002   0x0300             LSLS     R0,R0,#+12       ;; #+524288
+   \   00000004   0x....             LDR      R1,??DataTable5_2  ;; 0x41004404
+   \   00000006   0x6008             STR      R0,[R1, #+0]
+   \   00000008   0x....             LDR      R0,??DataTable5_1  ;; 0x41004453
+   \   0000000A   0x7801             LDRB     R1,[R0, #+0]
+   \   0000000C   0x2202             MOVS     R2,#+2
+   \   0000000E   0x430A             ORRS     R2,R2,R1
+   \   00000010   0x7002             STRB     R2,[R0, #+0]
+   \   00000012   0x7801             LDRB     R1,[R0, #+0]
+   \   00000014   0x22FB             MOVS     R2,#+251
+   \   00000016   0x400A             ANDS     R2,R2,R1
+   \   00000018   0x7002             STRB     R2,[R0, #+0]
+    117            return BC_SUCCESS;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x4770             BX       LR               ;; return
+    118          }
+    119          
+    120          /****************************************************************
+    121          Turn on LED.
+    122          Parameters:
+    123              id - number of led
+    124          ****************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    125          void BSP_OnLed(uint8_t id)
+    126          {
+    127            if (LED_FIRST == id)
+   \                     BSP_OnLed: (+1)
+   \   00000000   0x2800             CMP      R0,#+0
+   \   00000002   0xD103             BNE      ??BSP_OnLed_0
+    128              halOnFirstLed();
+   \   00000004   0x2080             MOVS     R0,#+128
+   \   00000006   0x0300             LSLS     R0,R0,#+12       ;; #+524288
+   \   00000008   0x....             LDR      R1,??DataTable5_3  ;; 0x41004414
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+    129          }
+   \                     ??BSP_OnLed_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+    130          
+    131          /****************************************************************
+    132          Turn off LED.
+    133          Parameters:
+    134                id - number of led
+    135          ****************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    136          void BSP_OffLed(uint8_t id)
+    137          {
+    138            if (LED_FIRST == id)
+   \                     BSP_OffLed: (+1)
+   \   00000000   0x2800             CMP      R0,#+0
+   \   00000002   0xD103             BNE      ??BSP_OffLed_0
+    139              halOffFirstLed();
+   \   00000004   0x2080             MOVS     R0,#+128
+   \   00000006   0x0300             LSLS     R0,R0,#+12       ;; #+524288
+   \   00000008   0x....             LDR      R1,??DataTable5_4  ;; 0x41004418
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+    140          }
+   \                     ??BSP_OffLed_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+    141          
+    142          /****************************************************************
+    143          Change LED state to opposite.
+    144              Parameters:
+    145                id - number of led
+    146          ****************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    147          void BSP_ToggleLed(uint8_t id)
+    148          {
+    149            if (LED_FIRST == id)
+   \                     BSP_ToggleLed: (+1)
+   \   00000000   0x2800             CMP      R0,#+0
+   \   00000002   0xD103             BNE      ??BSP_ToggleLed_0
+    150              halToggleFirstLed();
+   \   00000004   0x2080             MOVS     R0,#+128
+   \   00000006   0x0300             LSLS     R0,R0,#+12       ;; #+524288
+   \   00000008   0x....             LDR      R1,??DataTable5_5  ;; 0x4100441c
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+    151          }
+   \                     ??BSP_ToggleLed_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+    152          
+    153          /**************************************************************************//**
+    154          \brief Set brightness level
+    155          \param[in] level - new brightness level
+    156          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    157          void BSP_SetLedBrightnessLevel(uint8_t level)
+    158          {
+    159          #if defined(APP_USE_PWM)
+    160            currentL = level;
+    161            ledsSetColor();
+    162          #else
+    163            if (level)
+   \                     BSP_SetLedBrightnessLevel: (+1)
+   \   00000000   0x....             LDR      R1,??DataTable5_3  ;; 0x41004414
+   \   00000002   0x2280             MOVS     R2,#+128
+   \   00000004   0x0312             LSLS     R2,R2,#+12       ;; #+524288
+   \   00000006   0x2800             CMP      R0,#+0
+   \   00000008   0xD001             BEQ      ??BSP_SetLedBrightnessLevel_0
+    164              BSP_OnLed(LED_FIRST);
+   \   0000000A   0x600A             STR      R2,[R1, #+0]
+   \   0000000C   0x4770             BX       LR
+    165            else
+    166              BSP_OffLed(LED_FIRST);
+   \                     ??BSP_SetLedBrightnessLevel_0: (+1)
+   \   0000000E   0x604A             STR      R2,[R1, #+4]
+    167          #endif /* APP_USE_PWM */
+    168            (void)level;
+    169          }
+   \   00000010   0x4770             BX       LR               ;; return
+    170          #if defined(APP_USE_PWM)
+    171          /**************************************************************************//**
+    172          \brief Supported PWM channels initialization.
+    173          ******************************************************************************/
+    174          static void initPwm(void)
+    175          {
+    176          #if BSP_SUPPORT == BOARD_SAMR21_XPRO
+    177            /* Descriptors initialization */
+    178            pwmChannel0.unit = PWM_UNIT_0;
+    179            pwmChannel0.channelMask = (1 << PWM_CHANNEL_3);
+    180            pwmChannel0.polarityMask = (PWM_POLARITY_INVERTED << PWM_CHANNEL_3);
+    181            pwmChannel0.channelPinCfg[PWM_CHANNEL_3].portNum = PORT_A;
+    182            pwmChannel0.channelPinCfg[PWM_CHANNEL_3].pinNum =  19;
+    183            pwmChannel0.channelPinCfg[PWM_CHANNEL_3].functionConfig = 5;
+    184          #elif BSP_SUPPORT == BOARD_SAMR21_ZLLEK
+    185            /* Descriptors initialization */
+    186            pwmChannel0.unit = PWM_UNIT_0;
+    187            pwmChannel0.channelMask = (1 << PWM_CHANNEL_0) | (1 << PWM_CHANNEL_1) | (1 << PWM_CHANNEL_2);
+    188            pwmChannel0.polarityMask = (PWM_POLARITY_NON_INVERTED << PWM_CHANNEL_0) | (PWM_POLARITY_NON_INVERTED << PWM_CHANNEL_1) | (PWM_POLARITY_NON_INVERTED << PWM_CHANNEL_2);
+    189            pwmChannel0.channelPinCfg[PWM_CHANNEL_0].portNum = PORT_A;
+    190            pwmChannel0.channelPinCfg[PWM_CHANNEL_0].pinNum =  16;
+    191            pwmChannel0.channelPinCfg[PWM_CHANNEL_0].functionConfig = 5;  
+    192            pwmChannel0.channelPinCfg[PWM_CHANNEL_1].portNum = PORT_A;
+    193            pwmChannel0.channelPinCfg[PWM_CHANNEL_1].pinNum =  17;
+    194            pwmChannel0.channelPinCfg[PWM_CHANNEL_1].functionConfig = 5;
+    195            pwmChannel0.channelPinCfg[PWM_CHANNEL_2].portNum = PORT_A;
+    196            pwmChannel0.channelPinCfg[PWM_CHANNEL_2].pinNum =  18;
+    197            pwmChannel0.channelPinCfg[PWM_CHANNEL_2].functionConfig = 5;
+    198            pwmChannel0.ditheringMask = (ENABLE_DITHERING_A << PWM_CHANNEL_0) | (ENABLE_DITHERING_B << PWM_CHANNEL_1) | (ENABLE_DITHERING_C << PWM_CHANNEL_2);
+    199            pwmChannel0.dithResoultion = DITH6;
+    200            pwmChannel0.dithercycles = 64;
+    201          #elif BSP_SUPPORT == BOARD_SAMR21_CUSTOM
+    202            /* Descriptors initialization */
+    203            pwmChannel0.unit = PWM_UNIT_0;
+    204            pwmChannel0.channelMask = (1 << PWM_CHANNEL_2);
+    205            pwmChannel0.polarityMask = (PWM_POLARITY_NON_INVERTED << PWM_CHANNEL_2);
+    206            pwmChannel0.channelPinCfg[PWM_CHANNEL_2].portNum = PORT_A;
+    207            pwmChannel0.channelPinCfg[PWM_CHANNEL_2].pinNum =  18;
+    208            pwmChannel0.channelPinCfg[PWM_CHANNEL_2].functionConfig = 5;
+    209          #endif
+    210            /* Prepare required PWM channels */
+    211            HAL_OpenPwm(PWM_UNIT_0);
+    212            /* Set PWM frequency for required module */
+    213            HAL_SetPwmFrequency(&pwmChannel0, TOP, PRESCALER);
+    214          
+    215            /* Start PWM on supported channels */
+    216            HAL_StartPwm(&pwmChannel0);
+    217          }
+    218          #endif
+    219          /**************************************************************************//**
+    220          \brief Set the color using Hue and Saturation as parameters
+    221          \param[in] level - a new brightness level
+    222          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    223          void BSP_SetLedColorHS(uint16_t hue, uint8_t saturation)
+    224          {
+    225          #ifdef APP_USE_PWM
+    226            unsigned int x, y;
+    227          
+    228            HS2XY(hue >> 8, saturation, &x, &y);
+    229            currentX = x;
+    230            currentY = y;
+    231            ledsSetColor();
+    232          #else
+    233            (void)hue, (void)saturation;
+    234          #endif
+    235          }
+   \                     BSP_SetLedColorHS: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    236          
+    237          /**************************************************************************//**
+    238          \brief Set the color using X and Y as parameters
+    239          \param[in] level - a new brightness level
+    240          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    241          void BSP_SetLedColorXY(uint16_t x, uint16_t y)
+    242          {
+    243          #ifdef APP_USE_PWM
+    244            currentX = x;
+    245            currentY = y;
+    246            ledsSetColor();
+    247          #else
+    248            (void)x, (void)y;
+    249          #endif
+    250          }
+   \                     BSP_SetLedColorXY: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0x41004408         DC32     0x41004408
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0x41004453         DC32     0x41004453
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \   00000000   0x41004404         DC32     0x41004404
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \   00000000   0x41004414         DC32     0x41004414
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \   00000000   0x41004418         DC32     0x41004418
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \   00000000   0x4100441C         DC32     0x4100441c
+    251          
+    252          #if defined(APP_USE_PWM)
+    253          /**************************************************************************//**
+    254          \brief Set compare value for PWM channels
+    255          \param[in] ch1, ch2, ch3 - compare value
+    256          ******************************************************************************/
+    257          void bspSetPwmChannelCompareValue(uint16_t r, uint16_t g, uint16_t b)
+    258          {
+    259            pwmChannel0.channelMask = (1 << PWM_CHANNEL_2);
+    260            HAL_SetPwmCompareValue(&pwmChannel0, b);
+    261          
+    262            pwmChannel0.channelMask = (1 << PWM_CHANNEL_1);
+    263            HAL_SetPwmCompareValue(&pwmChannel0, g);
+    264          
+    265            pwmChannel0.channelMask = (1 << PWM_CHANNEL_0);
+    266            HAL_SetPwmCompareValue(&pwmChannel0, r);
+    267          }
+    268          #endif
+    269          
+    270          /**************************************************************************//**
+    271          \brief Set PWM values for current X, Y and L values
+    272          ******************************************************************************/
+    273          #if defined(APP_USE_PWM)
+    274          static void ledsSetColor(void)
+    275          {
+    276          #ifdef APP_USE_PWM
+    277            int maxL;
+    278            unsigned int r, g, b;
+    279          
+    280            maxL_FromXY(currentX, currentY, &maxL);
+    281            XYL2RGB(currentX, currentY, currentL, maxL, &r, &g, &b);
+    282          
+    283            r = r * TOP / 65535;
+    284            g = g * TOP / 65535;
+    285            b = b * TOP / 65535;
+    286            bspSetPwmChannelCompareValue(r, g, b);
+    287          #endif
+    288          }
+    289          
+    290          #endif /* APP_USE_PWM */
+    291          
+    292          #endif
+    293          // eof leds.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BSP_CloseLeds
+       8   BSP_InitLeds
+       0   BSP_OffLed
+       0   BSP_OnLed
+       8   BSP_OpenLeds
+         8   -> BSP_InitLeds
+       0   BSP_SetLedBrightnessLevel
+       0   BSP_SetLedColorHS
+       0   BSP_SetLedColorXY
+       0   BSP_ToggleLed
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+      30  BSP_CloseLeds
+      24  BSP_InitLeds
+      14  BSP_OffLed
+      14  BSP_OnLed
+      10  BSP_OpenLeds
+      18  BSP_SetLedBrightnessLevel
+       2  BSP_SetLedColorHS
+       2  BSP_SetLedColorXY
+      14  BSP_ToggleLed
+
+ 
+ 152 bytes in section .text
+ 
+ 152 bytes of CODE memory
+
+Errors: none
+Warnings: none

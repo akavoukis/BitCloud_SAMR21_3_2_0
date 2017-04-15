@@ -1,0 +1,401 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:46
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsMemAccess.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsMemAccess.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\stdPdsMemAccess.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\stdPdsMemAccess.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\std\src\stdPdsMemAccess.c
+      1          /**************************************************************************//**
+      2            \file pdsMemAccess.c
+      3          
+      4            \brief Implementation of memory access functionality.
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14            History:
+     15              2012-03-15 A. Razinkov - Modified
+     16            $Id: pdsMemAccess.c 19883 2012-01-27 14:20:37Z arazinkov $
+     17          *****************************************************************************/
+     18          
+     19          #if PDS_ENABLE_WEAR_LEVELING != 1
+     20          #ifdef _ENABLE_PERSISTENT_SERVER_
+     21          /******************************************************************************
+     22                             Includes section
+     23          ******************************************************************************/
+     24          #include <stdPdsMemAccess.h>
+     25          #include <stdPdsMem.h>
+     26          #include <stdPdsDbg.h>
+     27          #include <stdPdsWriteData.h>
+     28          #include <sysAssert.h>
+     29          
+     30          /*****************************************************************************
+     31                             Definitions section
+     32          ******************************************************************************/
+     33          #define BAD_FILE_INDEX      0xFFFF
+     34          
+     35          /****************************************************************************
+     36                             Static functions prototypes section
+     37          ******************************************************************************/
+     38          static uint16_t pdsGetFileOffsetTableIndex(PDS_MemId_t memoryId);
+     39          
+     40          /******************************************************************************
+     41                             Implementation section
+     42          ******************************************************************************/
+     43          /******************************************************************************
+     44          \brief Obtains appropriate file descriptor record by specified memory identifier.
+     45          
+     46          \param[in] memoryId - an unique file identifier.
+     47          
+     48          \return Appropriate file descriptor record or NULL, if no one exists.
+     49          ******************************************************************************/
+     50          PDS_FileDescrRec_t pdsGetFileDescrRec(PDS_MemId_t memoryId)
+     51          {
+     52            PDS_FileDescrRec_t ffTable = pdsMemory()->ffStart;
+     53            PDS_MemId_t fileMemoryId;
+     54          
+     55            for (uint16_t recordIndex = 0; recordIndex < pdsMemory()->ffSize; recordIndex++)
+     56            {
+     57              memcpy_P(&fileMemoryId, &ffTable[recordIndex].memoryId, sizeof(fileMemoryId));
+     58              if (fileMemoryId == memoryId)
+     59                return &ffTable[recordIndex];
+     60            }
+     61            return NULL;
+     62          }
+     63          /******************************************************************************
+     64          \brief Obtains appropriate directory descriptor record by specified memory identifier.
+     65          
+     66          \param[in] memoryId - an unique directory identifier.
+     67          
+     68          \return Appropriate directory descriptor record or NULL, if no one exists.
+     69          ******************************************************************************/
+     70          PDS_DirDescrRec_t pdsGetDirectoryDescrRec(PDS_MemId_t memoryId)
+     71          {
+     72            PDS_DirDescrRec_t fdTable = pdsMemory()->fdStart;
+     73            PDS_MemId_t directoryMemoryId;
+     74          
+     75            for (uint16_t recordIndex = 0; recordIndex < pdsMemory()->fdSize; recordIndex++)
+     76            {
+     77              memcpy_P(&directoryMemoryId, &fdTable[recordIndex].memoryId, sizeof(directoryMemoryId));
+     78              if (directoryMemoryId == memoryId)
+     79                return &fdTable[recordIndex];
+     80            }
+     81            return NULL;
+     82          }
+     83          
+     84          /******************************************************************************
+     85          \brief Calculates file sequence number by memory mask of allowed for storing
+     86                 files.
+     87          
+     88          \param[in] memoryId - an unique file identifier.
+     89          
+     90          \return File index or BAD_FILE_INDEX if error is occured.
+     91          *******************************************************************************/
+     92          static uint16_t pdsGetFileOffsetTableIndex(PDS_MemId_t memoryId)
+     93          {
+     94            PDS_MemMask_t memoryMask;
+     95            uint16_t index = 0;
+     96            uint8_t i;
+     97          
+     98            if (!PDS_MEM_MASK_IS_BIT_SET(pdsMemory()->allowedForStoring, memoryId))
+     99              return BAD_FILE_INDEX;
+    100          
+    101            memcpy(memoryMask, pdsMemory()->allowedForStoring, PDS_MEM_MASK_LENGTH);
+    102          
+    103            /* Count bits set in mask before byte which contains bit specified by memoryId */
+    104            for (i = 0; i < memoryId / 8; i++)
+    105            {
+    106              memoryMask[i] = (memoryMask[i] & 0x55) + ((memoryMask[i] >> 1) & 0x55);
+    107              memoryMask[i] = (memoryMask[i] & 0x33) + ((memoryMask[i] >> 2) & 0x33);
+    108              index += (memoryMask[i] & 0x0f) + ((memoryMask[i] >> 4) & 0x0f);
+    109            }
+    110          
+    111            /* Count bits set in byte which contains bit specified by memoryId */
+    112            for (i = 0; i < memoryId % 8; i++)
+    113              index += (memoryMask[memoryId / 8] & (1U << i)) ? 1 : 0;
+    114          
+    115            return index;
+    116          }
+    117          
+    118          /******************************************************************************
+    119          \brief Calculates file offset within non-volatile memory.
+    120          
+    121          \param[in] memoryId - a unique file identifier.
+    122          
+    123          \return Offset in non-volatile memory from which the file stored.
+    124          ******************************************************************************/
+    125          void pdsGetFileOffset(PDS_MemId_t memoryId, uint16_t *fileOffset)
+    126          {
+    127            MEMORY_DESCRIPTOR descriptor;
+    128            PDS_FileOffsetInfo_t fileOffsetInfo;
+    129            uint16_t offsetTableIndex = pdsGetFileOffsetTableIndex(memoryId);
+    130          
+    131            descriptor.data = (uint8_t *)&fileOffsetInfo;
+    132            descriptor.address = SYSTEM_BASE_STORAGE_ADDRESS + offsetTableIndex * sizeof(PDS_FileOffsetInfo_t);
+    133            descriptor.length = sizeof(PDS_FileOffsetInfo_t);
+    134            pdsRead(&descriptor, pdsDummyCallback);
+    135          
+    136            SYS_E_ASSERT_FATAL((memoryId == fileOffsetInfo.memoryId), PDSMEMACCESS_PDSPREPAREACCESSCONTEXT1);
+    137          
+    138            *fileOffset = fileOffsetInfo.offset;
+    139          }
+    140          
+    141          /******************************************************************************
+    142          \brief Prepares a context for access to data stored in non-volatile memory.
+    143          \
+    144          \param[out] accessContext - access context pointer.
+    145          \param[in] memoryMask - bitmask of non-volatile memory contents to which access
+    146                                  is needed.
+    147          ******************************************************************************/
+    148          void pdsPrepareAccessContext(PdsDataAccessContext_t *accessContext, const uint8_t *const memoryMask)
+    149          {
+    150            accessContext->memoryId = PDS_NO_MEMORY_SPECIFIED;
+    151            memcpy(accessContext->memoryMask, memoryMask, PDS_MEM_MASK_LENGTH);
+    152            pdsExpandWithDirContent(accessContext->memoryMask);
+    153          
+    154            /* Ignore all memory, unexistent for current build configuration */
+    155            for (uint8_t i = 0; i < PDS_MEM_MASK_LENGTH; i++)
+    156            {
+    157              accessContext->memoryMask[i] &= pdsMemory()->allowedForStoring[i];
+    158            }
+    159          }
+    160          
+    161          /******************************************************************************
+    162          \brief Locates first file by specified access context and prepares memory
+    163                 descriptor to store the file's data in non-volatile memory.
+    164                 Located file is deleted from a list in the access context structure.
+    165          
+    166          \param[in] accessContext - access context pointer.
+    167          \param[out] fileDataDescr - memory descriptor to store the file's value.
+    168          
+    169          \return True if location has been successful, false otherwise.
+    170          ******************************************************************************/
+    171          bool pdsPrepareMemoryAccess(PdsDataAccessContext_t *accessContext,
+    172                                      MEMORY_DESCRIPTOR *fileDataDescr)
+    173          {
+    174            PDS_MemId_t memoryId;
+    175            PDS_FileDescrRec_t fileDescrRec = NULL;
+    176            PDS_FileDescr_t fileDescr;
+    177          
+    178            /* Obtain currently processed file memoryId */
+    179            for (memoryId = 0; memoryId < PDS_MEM_IDS_AMOUNT; memoryId++)
+    180              if (PDS_MEM_MASK_IS_BIT_SET(accessContext->memoryMask, memoryId))
+    181              {
+    182                PDS_MEM_MASK_CLEAR_BIT(accessContext->memoryMask, memoryId);
+    183                fileDescrRec = pdsGetFileDescrRec(memoryId);
+    184                break;
+    185              }
+    186          
+    187            // Fill memory descriptor if file descroptor is found
+    188            if (fileDescrRec)
+    189            {
+    190              memcpy_P(&fileDescr, fileDescrRec, sizeof(PDS_FileDescr_t));
+    191          
+    192              fileDataDescr->data = fileDescr.RAMAddr;
+    193              pdsGetFileOffset(fileDescr.memoryId, &fileDataDescr->address);
+    194              fileDataDescr->address += sizeof(PDS_FileHeader_t);
+    195              fileDataDescr->length = fileDescr.size;
+    196          
+    197              SYS_E_ASSERT_FATAL(fileDataDescr->data, PDSMEMACCESS_PDSPREPAREMEMORYACCESS0);
+    198          
+    199              accessContext->memoryId = fileDescr.memoryId;
+    200              return true;
+    201            }
+    202          
+    203            accessContext->memoryId = PDS_NO_MEMORY_SPECIFIED;
+    204            return false;
+    205          }
+    206          
+    207          /******************************************************************************
+    208          \brief If memory mask contains any directory memoryIds they'll be expanded
+    209                 into set of file memoryIds.
+    210          
+    211          \param[in] accessContext - access context pointer
+    212          \param[in] memoryId - unique memory identifier
+    213          ******************************************************************************/
+    214          void pdsExpandWithDirContent(PDS_MemMask_t memoryMask)
+    215          {
+    216            PDS_DirDescrRec_t dirDescrRec = pdsMemory()->fdStart;
+    217            PDS_DirDescr_t dir;
+    218            PDS_MemId_t memoryId;
+    219            bool expanded;
+    220          
+    221            if (PDS_MEM_MASK_IS_BIT_SET(memoryMask, PDS_ALL_EXISTENT_MEMORY))
+    222            {
+    223              PDS_MEM_MASK_SET_ALL(memoryMask);
+    224              return;
+    225            }
+    226          
+    227            /* Looping through all directories, including nested ones and expanding them */
+    228            do
+    229            {
+    230              expanded = false;
+    231          
+    232              for (uint16_t recordIndex = 0; recordIndex < pdsMemory()->fdSize; recordIndex++)
+    233              {
+    234                memcpy_P(&dir, &dirDescrRec[recordIndex], sizeof(PDS_DirDescr_t));
+    235          
+    236                if (PDS_MEM_MASK_IS_BIT_SET(memoryMask, dir.memoryId))
+    237                {
+    238                  PDS_MEM_MASK_CLEAR_BIT(memoryMask, dir.memoryId);
+    239          
+    240                  /* Loop one more time in case of nested directory */
+    241                  expanded = true;
+    242                  for (uint8_t i = 0; i < dir.filesCount; i++)
+    243                  {
+    244                    memcpy_P(&memoryId, &dir.list[i], sizeof(PDS_MemId_t));
+    245                    PDS_MEM_MASK_SET_BIT(memoryMask, memoryId);
+    246                  }
+    247                }
+    248              }
+    249            } while (expanded);
+    250          }
+    251          
+    252          #endif /* _ENABLE_PERSISTENT_SERVER_ */
+    253          #endif /* PDS_ENABLE_WEAR_LEVELING != 1 */
+    254          // eof pdsMemAccess.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

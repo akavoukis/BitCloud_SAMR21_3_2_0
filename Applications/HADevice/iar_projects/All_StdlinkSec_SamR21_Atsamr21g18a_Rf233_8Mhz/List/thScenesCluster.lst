@@ -1,0 +1,1967 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:06
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thScenesCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thScenesCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\thScenesCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\thScenesCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\thermostat\src\thScenesCluster.c
+      1          /**************************************************************************//**
+      2            \file thScenesCluster.c
+      3          
+      4            \brief
+      5              Thermostat Scenes server cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              21.11.14 Viswanadham Kotla - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_THERMOSTAT
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <thScenesCluster.h>
+     24          #include <thScenes.h>
+     25          #include <thThermostatCluster.h>
+     26          #include <haClusters.h>
+     27          #include <uartManager.h>
+     28          #include <commandManager.h>
+     29          #include <pdsDataServer.h>
+     30          
+     31          /******************************************************************************
+     32                              Prototypes section
+     33          ******************************************************************************/
+     34          static ZCL_Status_t addSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddScene_t *payload);
+     35          static ZCL_Status_t viewSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewScene_t *payload);
+     36          static ZCL_Status_t removeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveScene_t *payload);
+     37          static ZCL_Status_t removeAllScenesInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveAllScenes_t *payload);
+     38          static ZCL_Status_t storeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StoreScene_t *payload);
+     39          static ZCL_Status_t recallSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RecallScene_t *payload);
+     40          static ZCL_Status_t getSceneMembershipInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetSceneMembership_t *payload);
+     41          
+     42          static void thFillAddRemoveStoreSceneResponsePayload(ZCL_AddSceneResponse_t *payload, uint16_t group, uint8_t scene, uint8_t status);
+     43          static uint8_t thFillViewSceneResponsePayload(ZCL_ViewSceneResponse_t *payload, Scene_t *scene, uint8_t status, ZCL_ViewScene_t *request);
+     44          static void thFillRemoveAllScenesResponsePayload(ZCL_RemoveAllScenesResponse_t *payload, uint16_t group, uint8_t status);
+     45          static uint8_t thFillGetSceneMembershipPayload(ZCL_GetSceneMembershipResponse_t *payload, uint16_t group);
+     46          
+     47          static bool isValidGroup(uint16_t group);
+     48          static ZCL_Status_t extractSceneInfo(ZCL_AddScene_t *payload, Scene_t *scene, uint8_t length);
+     49          static ZCL_Status_t getExtensionFieldInfo(Scene_t* scene);
+     50          
+     51          static ZCL_Status_t addScene(ZCL_AddScene_t *addScene, uint8_t payloadLength);
+     52          static ZCL_Status_t viewScene(ZCL_ViewScene_t *viewScene, Scene_t **scene);
+     53          static ZCL_Status_t removeScene(ZCL_RemoveScene_t *removeScene);
+     54          static ZCL_Status_t removeAllScenes(uint16_t group);
+     55          static ZCL_Status_t storeScene(ZCL_StoreScene_t *storeScene);
+     56          static void recallScene(ZCL_RecallScene_t *recallScene);
+     57          
+     58          /******************************************************************************
+     59                              Global variables section
+     60          ******************************************************************************/
+
+   \                                 In section .data, align 4
+     61          ZCL_SceneClusterServerAttributes_t thScenesClusterServerAttributes =
+   \                     thScenesClusterServerAttributes:
+   \   00000000   0x0000             DC16 0
+   \   00000002   0x20 0x02          DC8 32, 2, 0
+   \              0x00         
+   \   00000005   0x0001             DC16 1
+   \   00000007   0x20 0x02          DC8 32, 2, 0
+   \              0x00         
+   \   0000000A   0x0002             DC16 2
+   \   0000000C   0x21 0x12          DC8 33, 18
+   \   0000000E   0x0000 0x0000      DC16 0, 0, 65527, 3
+   \              0xFFF7 0x0003
+   \   00000016   0x10 0x02          DC8 16, 2, 0
+   \              0x00         
+   \   00000019   0x0004             DC16 4
+   \   0000001B   0x18 0x02          DC8 24, 2, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00         
+     62          {
+     63            ZCL_DEFINE_SCENES_CLUSTER_SERVER_ATTRIBUTES()
+     64          };
+
+   \                                 In section .data, align 4
+     65          ZCL_ScenesClusterCommands_t        thScenesCommands =
+   \                     thScenesCommands:
+   \   00000000   0x00 0x14          DC8 0, 20, 0, 0
+   \              0x00 0x00    
+   \   00000004   0x........         DC32 addSceneInd
+   \   00000008   0x01 0x14          DC8 1, 20, 0, 0
+   \              0x00 0x00    
+   \   0000000C   0x........         DC32 viewSceneInd
+   \   00000010   0x02 0x14          DC8 2, 20, 0, 0
+   \              0x00 0x00    
+   \   00000014   0x........         DC32 removeSceneInd
+   \   00000018   0x03 0x14          DC8 3, 20, 0, 0
+   \              0x00 0x00    
+   \   0000001C   0x........         DC32 removeAllScenesInd
+   \   00000020   0x04 0x14          DC8 4, 20, 0, 0
+   \              0x00 0x00    
+   \   00000024   0x........         DC32 storeSceneInd
+   \   00000028   0x05 0x10          DC8 5, 16, 0, 0
+   \              0x00 0x00    
+   \   0000002C   0x........         DC32 recallSceneInd
+   \   00000030   0x06 0x14          DC8 6, 20, 0, 0
+   \              0x00 0x00    
+   \   00000034   0x........         DC32 getSceneMembershipInd
+   \   00000038   0x00 0x11          DC8 0, 17, 0, 0
+   \              0x00 0x00    
+   \   0000003C   0x00000000         DC32 0H
+   \   00000040   0x01 0x11          DC8 1, 17, 0, 0
+   \              0x00 0x00    
+   \   00000044   0x00000000         DC32 0H
+   \   00000048   0x02 0x11          DC8 2, 17, 0, 0
+   \              0x00 0x00    
+   \   0000004C   0x00000000         DC32 0H
+   \   00000050   0x03 0x11          DC8 3, 17, 0, 0
+   \              0x00 0x00    
+   \   00000054   0x00000000         DC32 0H
+   \   00000058   0x04 0x11          DC8 4, 17, 0, 0
+   \              0x00 0x00    
+   \   0000005C   0x00000000         DC32 0H
+   \   00000060   0x06 0x11          DC8 6, 17, 0, 0
+   \              0x00 0x00    
+   \   00000064   0x00000000         DC32 0H
+     66          {
+     67            ZCL_DEFINE_SCENES_CLUSTER_COMMANDS(addSceneInd, viewSceneInd, removeSceneInd, removeAllScenesInd,
+     68                                               storeSceneInd, recallSceneInd, getSceneMembershipInd,
+     69                                               NULL, NULL, NULL, NULL, NULL, NULL)
+     70          };
+     71          
+     72          /******************************************************************************
+     73                              Implementation section
+     74          ******************************************************************************/
+     75          /**************************************************************************//**
+     76          \brief Initializes Scenes cluster
+     77          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     78          void scenesClusterInit(void)
+     79          {
+   \                     scenesClusterInit: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     80            thScenesClusterServerAttributes.sceneCount.value   = 0;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x....             LDR      R1,??DataTable11
+   \   00000006   0x7108             STRB     R0,[R1, #+4]
+     81            thScenesClusterServerAttributes.currentScene.value = 0;
+   \   00000008   0x7248             STRB     R0,[R1, #+9]
+     82            thScenesClusterServerAttributes.currentGroup.value = 0;
+   \   0000000A   0x81C8             STRH     R0,[R1, #+14]
+     83            thScenesClusterServerAttributes.sceneValid.value   = true;
+   \   0000000C   0x2201             MOVS     R2,#+1
+   \   0000000E   0x760A             STRB     R2,[R1, #+24]
+     84            thScenesClusterServerAttributes.nameSupport.value  = 0;
+   \   00000010   0x7748             STRB     R0,[R1, #+29]
+     85          
+     86            initScenes();
+   \   00000012   0x.... 0x....      BL       initScenes
+     87          }
+   \   00000016   0xBD01             POP      {R0,PC}          ;; return
+     88          
+     89          /**************************************************************************//**
+     90          \brief Invalidates scene
+     91          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     92          void scenesInvalidate(void)
+     93          {
+     94            thScenesClusterServerAttributes.sceneValid.value = false;
+   \                     scenesInvalidate: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             LDR      R1,??DataTable11
+   \   00000004   0x7608             STRB     R0,[R1, #+24]
+     95          }
+   \   00000006   0x4770             BX       LR               ;; return
+     96          
+     97          /**************************************************************************//**
+     98          \brief Removes all scenes from scene table
+     99          
+    100          \param[in] group - group id
+    101          
+    102          \returns status of scene removing
+    103          ******************************************************************************/
+    104          ZCL_Status_t removeAllScenes(uint16_t group)
+    105          {
+    106            if (isValidGroup(group))
+    107              thScenesClusterServerAttributes.sceneCount.value -= removeScenesByGroup(group);
+    108            else
+    109              return ZCL_INVALID_FIELD_STATUS;
+    110          
+    111            return ZCL_SUCCESS_STATUS;
+    112          }
+    113          
+    114          /**************************************************************************//**
+    115          \brief Callback on receiving Add Scene command
+    116          
+    117          \param[in] addressing - pointer to addressing information;
+    118          \param[in] payloadLength - data payload length;
+    119          \param[in] payload - data pointer
+    120          
+    121          \return status of indication routine
+    122          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    123          static ZCL_Status_t addSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddScene_t *payload)
+    124          {
+   \                     addSceneInd: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB089             SUB      SP,SP,#+36
+   \   00000004   0x0007             MOVS     R7,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0014             MOVS     R4,R2
+    125            ZCL_Status_t status;
+    126            ZCL_Request_t *req;
+    127          
+    128            LOG_STRING(addSceneStr, "addSceneInd(): 0x%04x, 0x%02x\r\n");
+   \   0000000A   0x4668             MOV      R0,SP
+   \   0000000C   0x....             ADR.N    R1,?_0
+   \   0000000E   0x2220             MOVS     R2,#+32
+   \   00000010   0x.... 0x....      BL       __aeabi_memcpy4
+    129            appSnprintf(addSceneStr, payload->groupId, payload->sceneId);
+   \   00000014   0x7821             LDRB     R1,[R4, #+0]
+   \   00000016   0x7860             LDRB     R0,[R4, #+1]
+   \   00000018   0x0600             LSLS     R0,R0,#+24
+   \   0000001A   0x0C00             LSRS     R0,R0,#+16
+   \   0000001C   0x4301             ORRS     R1,R1,R0
+   \   0000001E   0x78A2             LDRB     R2,[R4, #+2]
+   \   00000020   0x4668             MOV      R0,SP
+   \   00000022   0x.... 0x....      BL       appSnprintf
+    130          
+    131            status = addScene(payload, payloadLength);
+   \   00000026   0x0029             MOVS     R1,R5
+   \   00000028   0x0020             MOVS     R0,R4
+   \   0000002A   0x.... 0x....      BL       addScene
+   \   0000002E   0x0006             MOVS     R6,R0
+    132          
+    133            // Update scenes in non-volatile memory
+    134            if (ZCL_SUCCESS_STATUS == status)
+   \   00000030   0xD102             BNE      ??addSceneInd_0
+    135              PDS_Store(APP_TH_SCENES_MEM_ID);
+   \   00000032   0x2017             MOVS     R0,#+23
+   \   00000034   0x.... 0x....      BL       PDS_Store
+    136          
+    137            // If received via multicast or broadcast service no response shall be given
+    138            if (addressing->nonUnicast)
+   \                     ??addSceneInd_0: (+1)
+   \   00000038   0x2023             MOVS     R0,#+35
+   \   0000003A   0x5C38             LDRB     R0,[R7, R0]
+   \   0000003C   0x2800             CMP      R0,#+0
+   \   0000003E   0xD11C             BNE      ??addSceneInd_1
+    139              return ZCL_SUCCESS_STATUS;
+    140          
+    141            if (!(req = getFreeCommand()))
+   \   00000040   0x.... 0x....      BL       getFreeCommand
+   \   00000044   0x0005             MOVS     R5,R0
+   \   00000046   0xD101             BNE      ??addSceneInd_2
+    142              return ZCL_INSUFFICIENT_SPACE_STATUS;
+   \   00000048   0x2089             MOVS     R0,#+137
+   \   0000004A   0xE017             B        ??addSceneInd_3
+    143          
+    144            fillCommandRequest(req, ZCL_SCENES_CLUSTER_ADD_SCENE_RESPONSE_COMMAND_ID,
+    145                                 sizeof(ZCL_AddSceneResponse_t));
+   \                     ??addSceneInd_2: (+1)
+   \   0000004C   0x2204             MOVS     R2,#+4
+   \   0000004E   0x2100             MOVS     R1,#+0
+   \   00000050   0x.... 0x....      BL       fillCommandRequest
+    146            thFillAddRemoveStoreSceneResponsePayload((ZCL_AddSceneResponse_t *)req->requestPayload, payload->groupId, payload->sceneId, status);
+   \   00000054   0x7821             LDRB     R1,[R4, #+0]
+   \   00000056   0x7860             LDRB     R0,[R4, #+1]
+   \   00000058   0x0600             LSLS     R0,R0,#+24
+   \   0000005A   0x0C00             LSRS     R0,R0,#+16
+   \   0000005C   0x4301             ORRS     R1,R1,R0
+   \   0000005E   0x0033             MOVS     R3,R6
+   \   00000060   0x78A2             LDRB     R2,[R4, #+2]
+   \   00000062   0x6CE8             LDR      R0,[R5, #+76]
+   \   00000064   0x.... 0x....      BL       thFillAddRemoveStoreSceneResponsePayload
+    147            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+   \   00000068   0x2201             MOVS     R2,#+1
+   \   0000006A   0x0039             MOVS     R1,R7
+   \   0000006C   0x0028             MOVS     R0,R5
+   \   0000006E   0x3020             ADDS     R0,R0,#+32
+   \   00000070   0x.... 0x....      BL       fillDstAddressingViaSourceAddressing
+    148            commandManagerSendCommand(req);
+   \   00000074   0x0028             MOVS     R0,R5
+   \   00000076   0x.... 0x....      BL       commandManagerSendCommand
+    149          
+    150            (void)payloadLength;
+    151            return ZCL_SUCCESS_STATUS;
+   \                     ??addSceneInd_1: (+1)
+   \   0000007A   0x2000             MOVS     R0,#+0
+   \                     ??addSceneInd_3: (+1)
+   \   0000007C   0xB009             ADD      SP,SP,#+36
+   \   0000007E   0xBDF0             POP      {R4-R7,PC}       ;; return
+    152          }
+    153          
+    154          /**************************************************************************//**
+    155          \brief Callback on receiving View Scene command
+    156          
+    157          \param[in] addressing - pointer to addressing information;
+    158          \param[in] payloadLength - data payload length;
+    159          \param[in] payload - data pointer
+    160          
+    161          \return status of indication routine
+    162          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    163          static ZCL_Status_t viewSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewScene_t *payload)
+    164          {
+   \                     viewSceneInd: (+1)
+   \   00000000   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \   00000002   0xB08A             SUB      SP,SP,#+40
+   \   00000004   0x0014             MOVS     R4,R2
+    165            ZCL_Status_t status;
+    166            ZCL_Request_t *req;
+    167            uint8_t size;
+    168            Scene_t *scene;
+    169          
+    170            LOG_STRING(viewSceneStr, "viewSceneInd(): 0x%04x, 0x%02x\r\n");
+   \   00000006   0x4668             MOV      R0,SP
+   \   00000008   0x....             ADR.N    R1,?_1
+   \   0000000A   0x2224             MOVS     R2,#+36
+   \   0000000C   0x.... 0x....      BL       __aeabi_memcpy4
+    171            appSnprintf(viewSceneStr, payload->groupId, payload->sceneId);
+   \   00000010   0x7821             LDRB     R1,[R4, #+0]
+   \   00000012   0x7860             LDRB     R0,[R4, #+1]
+   \   00000014   0x0600             LSLS     R0,R0,#+24
+   \   00000016   0x0C00             LSRS     R0,R0,#+16
+   \   00000018   0x4301             ORRS     R1,R1,R0
+   \   0000001A   0x78A2             LDRB     R2,[R4, #+2]
+   \   0000001C   0x4668             MOV      R0,SP
+   \   0000001E   0x.... 0x....      BL       appSnprintf
+    172          
+    173            // If received via multicast or broadcast service no response shall be given
+    174            if (addressing->nonUnicast)
+   \   00000022   0x980A             LDR      R0,[SP, #+40]
+   \   00000024   0x3023             ADDS     R0,R0,#+35
+   \   00000026   0x7800             LDRB     R0,[R0, #+0]
+   \   00000028   0x2800             CMP      R0,#+0
+   \   0000002A   0xD154             BNE      ??viewSceneInd_0
+    175              return ZCL_SUCCESS_STATUS;
+    176          
+    177            if (!(req = getFreeCommand()))
+   \   0000002C   0x.... 0x....      BL       getFreeCommand
+   \   00000030   0x0007             MOVS     R7,R0
+   \   00000032   0xD101             BNE      ??viewSceneInd_1
+    178              return ZCL_INSUFFICIENT_SPACE_STATUS;
+   \   00000034   0x2089             MOVS     R0,#+137
+   \   00000036   0xE04F             B        ??viewSceneInd_2
+    179          
+    180            status = viewScene(payload, &scene);
+   \                     ??viewSceneInd_1: (+1)
+   \   00000038   0x7820             LDRB     R0,[R4, #+0]
+   \   0000003A   0x7861             LDRB     R1,[R4, #+1]
+   \   0000003C   0x0609             LSLS     R1,R1,#+24
+   \   0000003E   0x0C09             LSRS     R1,R1,#+16
+   \   00000040   0x4308             ORRS     R0,R0,R1
+   \   00000042   0x2500             MOVS     R5,#+0
+   \   00000044   0x.... 0x....      BL       isValidGroup
+   \   00000048   0x2800             CMP      R0,#+0
+   \   0000004A   0xD00D             BEQ      ??viewSceneInd_3
+   \   0000004C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000004E   0x7861             LDRB     R1,[R4, #+1]
+   \   00000050   0x0609             LSLS     R1,R1,#+24
+   \   00000052   0x0C09             LSRS     R1,R1,#+16
+   \   00000054   0x4308             ORRS     R0,R0,R1
+   \   00000056   0x78A1             LDRB     R1,[R4, #+2]
+   \   00000058   0x.... 0x....      BL       findSceneBySceneAndGroup
+   \   0000005C   0x0006             MOVS     R6,R0
+   \   0000005E   0xD101             BNE      ??viewSceneInd_4
+   \   00000060   0x208B             MOVS     R0,#+139
+   \   00000062   0xE002             B        ??viewSceneInd_5
+   \                     ??viewSceneInd_4: (+1)
+   \   00000064   0x2000             MOVS     R0,#+0
+   \   00000066   0xE000             B        ??viewSceneInd_5
+   \                     ??viewSceneInd_3: (+1)
+   \   00000068   0x2085             MOVS     R0,#+133
+    181          
+    182            size = thFillViewSceneResponsePayload((ZCL_ViewSceneResponse_t *)req->requestPayload, scene, status, payload);
+   \                     ??viewSceneInd_5: (+1)
+   \   0000006A   0x6CF9             LDR      R1,[R7, #+76]
+   \   0000006C   0x7008             STRB     R0,[R1, #+0]
+   \   0000006E   0x7822             LDRB     R2,[R4, #+0]
+   \   00000070   0x7863             LDRB     R3,[R4, #+1]
+   \   00000072   0x061B             LSLS     R3,R3,#+24
+   \   00000074   0x0C1B             LSRS     R3,R3,#+16
+   \   00000076   0x431A             ORRS     R2,R2,R3
+   \   00000078   0x704A             STRB     R2,[R1, #+1]
+   \   0000007A   0x0A12             LSRS     R2,R2,#+8
+   \   0000007C   0x708A             STRB     R2,[R1, #+2]
+   \   0000007E   0x78A2             LDRB     R2,[R4, #+2]
+   \   00000080   0x70CA             STRB     R2,[R1, #+3]
+   \   00000082   0x2800             CMP      R0,#+0
+   \   00000084   0xD001             BEQ      ??viewSceneInd_6
+   \   00000086   0x2204             MOVS     R2,#+4
+   \   00000088   0xE018             B        ??viewSceneInd_7
+   \                     ??viewSceneInd_6: (+1)
+   \   0000008A   0x88B0             LDRH     R0,[R6, #+4]
+   \   0000008C   0x7108             STRB     R0,[R1, #+4]
+   \   0000008E   0x0A00             LSRS     R0,R0,#+8
+   \   00000090   0x7148             STRB     R0,[R1, #+5]
+   \   00000092   0x718D             STRB     R5,[R1, #+6]
+   \   00000094   0x1DC9             ADDS     R1,R1,#+7
+   \   00000096   0x....             LDR      R0,??DataTable12  ;; 0x201
+   \   00000098   0x7008             STRB     R0,[R1, #+0]
+   \   0000009A   0x2002             MOVS     R0,#+2
+   \   0000009C   0x7048             STRB     R0,[R1, #+1]
+   \   0000009E   0x2005             MOVS     R0,#+5
+   \   000000A0   0x7088             STRB     R0,[R1, #+2]
+   \   000000A2   0x2006             MOVS     R0,#+6
+   \   000000A4   0x5E30             LDRSH    R0,[R6, R0]
+   \   000000A6   0x70C8             STRB     R0,[R1, #+3]
+   \   000000A8   0x0A00             LSRS     R0,R0,#+8
+   \   000000AA   0x7108             STRB     R0,[R1, #+4]
+   \   000000AC   0x2008             MOVS     R0,#+8
+   \   000000AE   0x5E30             LDRSH    R0,[R6, R0]
+   \   000000B0   0x7148             STRB     R0,[R1, #+5]
+   \   000000B2   0x0A00             LSRS     R0,R0,#+8
+   \   000000B4   0x7188             STRB     R0,[R1, #+6]
+   \   000000B6   0x7AB0             LDRB     R0,[R6, #+10]
+   \   000000B8   0x71C8             STRB     R0,[R1, #+7]
+   \   000000BA   0x220F             MOVS     R2,#+15
+    183            fillCommandRequest(req, ZCL_SCENES_CLUSTER_VIEW_SCENE_RESPONSE_COMMAND_ID,
+    184                                 size);
+   \                     ??viewSceneInd_7: (+1)
+   \   000000BC   0x2101             MOVS     R1,#+1
+   \   000000BE   0x0038             MOVS     R0,R7
+   \   000000C0   0x.... 0x....      BL       fillCommandRequest
+    185            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+   \   000000C4   0x2201             MOVS     R2,#+1
+   \   000000C6   0x990A             LDR      R1,[SP, #+40]
+   \   000000C8   0x0038             MOVS     R0,R7
+   \   000000CA   0x3020             ADDS     R0,R0,#+32
+   \   000000CC   0x.... 0x....      BL       fillDstAddressingViaSourceAddressing
+    186            commandManagerSendCommand(req);
+   \   000000D0   0x0038             MOVS     R0,R7
+   \   000000D2   0x.... 0x....      BL       commandManagerSendCommand
+    187          
+    188            (void)payloadLength;
+    189            return ZCL_SUCCESS_STATUS;
+   \                     ??viewSceneInd_0: (+1)
+   \   000000D6   0x2000             MOVS     R0,#+0
+   \                     ??viewSceneInd_2: (+1)
+   \   000000D8   0xB00B             ADD      SP,SP,#+44
+   \   000000DA   0xBDF0             POP      {R4-R7,PC}       ;; return
+    190          }
+    191          
+    192          /**************************************************************************//**
+    193          \brief Callback on receiving Remove Scene command
+    194          
+    195          \param[in] addressing - pointer to addressing information;
+    196          \param[in] payloadLength - data payload length;
+    197          \param[in] payload - data pointer
+    198          
+    199          \return status of indication routine
+    200          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    201          static ZCL_Status_t removeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveScene_t *payload)
+    202          {
+   \                     removeSceneInd: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB089             SUB      SP,SP,#+36
+   \   00000004   0x0007             MOVS     R7,R0
+   \   00000006   0x0015             MOVS     R5,R2
+    203            ZCL_Status_t status;
+    204            ZCL_Request_t *req;
+    205          
+    206            LOG_STRING(removeSceneStr, "removeSceneInd(): 0x%04x, 0x%02x\r\n");
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0xBF00             Nop      
+   \   0000000C   0x....             ADR.N    R1,?_2
+   \   0000000E   0x2224             MOVS     R2,#+36
+   \   00000010   0x.... 0x....      BL       __aeabi_memcpy4
+    207            appSnprintf(removeSceneStr, payload->groupId, payload->sceneId);
+   \   00000014   0x7829             LDRB     R1,[R5, #+0]
+   \   00000016   0x7868             LDRB     R0,[R5, #+1]
+   \   00000018   0x0600             LSLS     R0,R0,#+24
+   \   0000001A   0x0C00             LSRS     R0,R0,#+16
+   \   0000001C   0x4301             ORRS     R1,R1,R0
+   \   0000001E   0x78AA             LDRB     R2,[R5, #+2]
+   \   00000020   0x4668             MOV      R0,SP
+   \   00000022   0x.... 0x....      BL       appSnprintf
+    208          
+    209            status = removeScene(payload);
+   \   00000026   0x7828             LDRB     R0,[R5, #+0]
+   \   00000028   0x7869             LDRB     R1,[R5, #+1]
+   \   0000002A   0x0609             LSLS     R1,R1,#+24
+   \   0000002C   0x0C09             LSRS     R1,R1,#+16
+   \   0000002E   0x4308             ORRS     R0,R0,R1
+   \   00000030   0x.... 0x....      BL       isValidGroup
+   \   00000034   0x2800             CMP      R0,#+0
+   \   00000036   0xD016             BEQ      ??removeSceneInd_0
+   \   00000038   0x7828             LDRB     R0,[R5, #+0]
+   \   0000003A   0x7869             LDRB     R1,[R5, #+1]
+   \   0000003C   0x0609             LSLS     R1,R1,#+24
+   \   0000003E   0x0C09             LSRS     R1,R1,#+16
+   \   00000040   0x4308             ORRS     R0,R0,R1
+   \   00000042   0x78A9             LDRB     R1,[R5, #+2]
+   \   00000044   0x.... 0x....      BL       findSceneBySceneAndGroup
+   \   00000048   0x2800             CMP      R0,#+0
+   \   0000004A   0xD101             BNE      ??removeSceneInd_1
+   \   0000004C   0x248B             MOVS     R4,#+139
+   \   0000004E   0xE00B             B        ??removeSceneInd_2
+   \                     ??removeSceneInd_1: (+1)
+   \   00000050   0x.... 0x....      BL       freeScene
+   \   00000054   0x....             LDR      R0,??DataTable11
+   \   00000056   0x7901             LDRB     R1,[R0, #+4]
+   \   00000058   0x1E49             SUBS     R1,R1,#+1
+   \   0000005A   0x7101             STRB     R1,[R0, #+4]
+   \   0000005C   0x2400             MOVS     R4,#+0
+    210          
+    211            // Update scenes in non-volatile memory
+    212            if (ZCL_SUCCESS_STATUS == status)
+    213              PDS_Store(APP_TH_SCENES_MEM_ID);
+   \   0000005E   0x2017             MOVS     R0,#+23
+   \   00000060   0x.... 0x....      BL       PDS_Store
+   \   00000064   0xE000             B        ??removeSceneInd_2
+   \                     ??removeSceneInd_0: (+1)
+   \   00000066   0x2485             MOVS     R4,#+133
+    214          
+    215            // If received via multicast or broadcast service no response shall be given
+    216            if (addressing->nonUnicast)
+   \                     ??removeSceneInd_2: (+1)
+   \   00000068   0x2023             MOVS     R0,#+35
+   \   0000006A   0x5C38             LDRB     R0,[R7, R0]
+   \   0000006C   0x2800             CMP      R0,#+0
+   \   0000006E   0xD11C             BNE      ??removeSceneInd_3
+    217              return ZCL_SUCCESS_STATUS;
+    218          
+    219            if (!(req = getFreeCommand()))
+   \   00000070   0x.... 0x....      BL       getFreeCommand
+   \   00000074   0x0006             MOVS     R6,R0
+   \   00000076   0xD101             BNE      ??removeSceneInd_4
+    220              return ZCL_INSUFFICIENT_SPACE_STATUS;
+   \   00000078   0x2089             MOVS     R0,#+137
+   \   0000007A   0xE017             B        ??removeSceneInd_5
+    221          
+    222            fillCommandRequest(req, ZCL_SCENES_CLUSTER_REMOVE_SCENE_RESPONSE_COMMAND_ID,
+    223                                 sizeof(ZCL_RemoveSceneResponse_t));
+   \                     ??removeSceneInd_4: (+1)
+   \   0000007C   0x2204             MOVS     R2,#+4
+   \   0000007E   0x2102             MOVS     R1,#+2
+   \   00000080   0x.... 0x....      BL       fillCommandRequest
+    224            thFillAddRemoveStoreSceneResponsePayload((ZCL_AddSceneResponse_t *)req->requestPayload, payload->groupId, payload->sceneId, status);
+   \   00000084   0x7829             LDRB     R1,[R5, #+0]
+   \   00000086   0x7868             LDRB     R0,[R5, #+1]
+   \   00000088   0x0600             LSLS     R0,R0,#+24
+   \   0000008A   0x0C00             LSRS     R0,R0,#+16
+   \   0000008C   0x4301             ORRS     R1,R1,R0
+   \   0000008E   0x0023             MOVS     R3,R4
+   \   00000090   0x78AA             LDRB     R2,[R5, #+2]
+   \   00000092   0x6CF0             LDR      R0,[R6, #+76]
+   \   00000094   0x.... 0x....      BL       thFillAddRemoveStoreSceneResponsePayload
+    225            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+   \   00000098   0x2201             MOVS     R2,#+1
+   \   0000009A   0x0039             MOVS     R1,R7
+   \   0000009C   0x0030             MOVS     R0,R6
+   \   0000009E   0x3020             ADDS     R0,R0,#+32
+   \   000000A0   0x.... 0x....      BL       fillDstAddressingViaSourceAddressing
+    226            commandManagerSendCommand(req);
+   \   000000A4   0x0030             MOVS     R0,R6
+   \   000000A6   0x.... 0x....      BL       commandManagerSendCommand
+    227          
+    228            (void)payloadLength;
+    229            return ZCL_SUCCESS_STATUS;
+   \                     ??removeSceneInd_3: (+1)
+   \   000000AA   0x2000             MOVS     R0,#+0
+   \                     ??removeSceneInd_5: (+1)
+   \   000000AC   0xB009             ADD      SP,SP,#+36
+   \   000000AE   0xBDF0             POP      {R4-R7,PC}       ;; return
+    230          }
+    231          
+    232          /**************************************************************************//**
+    233          \brief Callback on receiving Remove All Scenes command
+    234          
+    235          \param[in] addressing - pointer to addressing information;
+    236          \param[in] payloadLength - data payload length;
+    237          \param[in] payload - data pointer
+    238          
+    239          \return status of indication routine
+    240          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    241          static ZCL_Status_t removeAllScenesInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveAllScenes_t *payload)
+    242          {
+   \                     removeAllScenesInd: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB089             SUB      SP,SP,#+36
+   \   00000004   0x0007             MOVS     R7,R0
+   \   00000006   0x0016             MOVS     R6,R2
+    243            ZCL_Status_t status;
+    244            ZCL_Request_t *req;
+    245          
+    246            LOG_STRING(removeAllScenesStr, "removeAllScenesInd(): 0x%04x\r\n");
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0xBF00             Nop      
+   \   0000000C   0x....             ADR.N    R1,?_3
+   \   0000000E   0x2220             MOVS     R2,#+32
+   \   00000010   0x.... 0x....      BL       __aeabi_memcpy4
+    247            appSnprintf(removeAllScenesStr, payload->groupId);
+   \   00000014   0x7831             LDRB     R1,[R6, #+0]
+   \   00000016   0x7870             LDRB     R0,[R6, #+1]
+   \   00000018   0x0600             LSLS     R0,R0,#+24
+   \   0000001A   0x0C00             LSRS     R0,R0,#+16
+   \   0000001C   0x4301             ORRS     R1,R1,R0
+   \   0000001E   0x4668             MOV      R0,SP
+   \   00000020   0x.... 0x....      BL       appSnprintf
+    248          
+    249            status = removeAllScenes(payload->groupId);
+   \   00000024   0x7834             LDRB     R4,[R6, #+0]
+   \   00000026   0x7870             LDRB     R0,[R6, #+1]
+   \   00000028   0x0600             LSLS     R0,R0,#+24
+   \   0000002A   0x0C00             LSRS     R0,R0,#+16
+   \   0000002C   0x4304             ORRS     R4,R4,R0
+   \   0000002E   0x0020             MOVS     R0,R4
+   \   00000030   0x.... 0x....      BL       isValidGroup
+   \   00000034   0x2800             CMP      R0,#+0
+   \   00000036   0xD00B             BEQ      ??removeAllScenesInd_0
+   \   00000038   0x0020             MOVS     R0,R4
+   \   0000003A   0x.... 0x....      BL       removeScenesByGroup
+   \   0000003E   0x....             LDR      R1,??DataTable11
+   \   00000040   0x790A             LDRB     R2,[R1, #+4]
+   \   00000042   0x1A10             SUBS     R0,R2,R0
+   \   00000044   0x7108             STRB     R0,[R1, #+4]
+   \   00000046   0x2400             MOVS     R4,#+0
+    250          
+    251            // Update scenes in non-volatile memory
+    252            if (ZCL_SUCCESS_STATUS == status)
+    253              PDS_Store(APP_TH_SCENES_MEM_ID);
+   \   00000048   0x2017             MOVS     R0,#+23
+   \   0000004A   0x.... 0x....      BL       PDS_Store
+   \   0000004E   0xE000             B        ??removeAllScenesInd_1
+   \                     ??removeAllScenesInd_0: (+1)
+   \   00000050   0x2485             MOVS     R4,#+133
+    254          
+    255            // If received via multicast or broadcast service no response shall be given
+    256            if (addressing->nonUnicast)
+   \                     ??removeAllScenesInd_1: (+1)
+   \   00000052   0x2023             MOVS     R0,#+35
+   \   00000054   0x5C38             LDRB     R0,[R7, R0]
+   \   00000056   0x2800             CMP      R0,#+0
+   \   00000058   0xD11C             BNE      ??removeAllScenesInd_2
+    257              return ZCL_SUCCESS_STATUS;
+    258          
+    259            if (!(req = getFreeCommand()))
+   \   0000005A   0x.... 0x....      BL       getFreeCommand
+   \   0000005E   0x0005             MOVS     R5,R0
+   \   00000060   0xD101             BNE      ??removeAllScenesInd_3
+    260              return ZCL_INSUFFICIENT_SPACE_STATUS;
+   \   00000062   0x2089             MOVS     R0,#+137
+   \   00000064   0xE017             B        ??removeAllScenesInd_4
+    261          
+    262            fillCommandRequest(req, ZCL_SCENES_CLUSTER_REMOVE_ALL_SCENES_RESPONSE_COMMAND_ID,
+    263                                 sizeof(ZCL_RemoveAllScenesResponse_t));
+   \                     ??removeAllScenesInd_3: (+1)
+   \   00000066   0x2203             MOVS     R2,#+3
+   \   00000068   0x2103             MOVS     R1,#+3
+   \   0000006A   0x.... 0x....      BL       fillCommandRequest
+    264            thFillRemoveAllScenesResponsePayload((ZCL_RemoveAllScenesResponse_t *)req->requestPayload, payload->groupId, status);
+   \   0000006E   0x7830             LDRB     R0,[R6, #+0]
+   \   00000070   0x7871             LDRB     R1,[R6, #+1]
+   \   00000072   0x0609             LSLS     R1,R1,#+24
+   \   00000074   0x0C09             LSRS     R1,R1,#+16
+   \   00000076   0x4308             ORRS     R0,R0,R1
+   \   00000078   0x6CE9             LDR      R1,[R5, #+76]
+   \   0000007A   0x700C             STRB     R4,[R1, #+0]
+   \   0000007C   0x7048             STRB     R0,[R1, #+1]
+   \   0000007E   0x0A00             LSRS     R0,R0,#+8
+   \   00000080   0x7088             STRB     R0,[R1, #+2]
+    265            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+   \   00000082   0x2201             MOVS     R2,#+1
+   \   00000084   0x0039             MOVS     R1,R7
+   \   00000086   0x0028             MOVS     R0,R5
+   \   00000088   0x3020             ADDS     R0,R0,#+32
+   \   0000008A   0x.... 0x....      BL       fillDstAddressingViaSourceAddressing
+    266            commandManagerSendCommand(req);
+   \   0000008E   0x0028             MOVS     R0,R5
+   \   00000090   0x.... 0x....      BL       commandManagerSendCommand
+    267          
+    268            (void)payloadLength;
+    269            return ZCL_SUCCESS_STATUS;
+   \                     ??removeAllScenesInd_2: (+1)
+   \   00000094   0x2000             MOVS     R0,#+0
+   \                     ??removeAllScenesInd_4: (+1)
+   \   00000096   0xB009             ADD      SP,SP,#+36
+   \   00000098   0xBDF0             POP      {R4-R7,PC}       ;; return
+    270          }
+    271          
+    272          /**************************************************************************//**
+    273          \brief Callback on receiving Store Scene command
+    274          
+    275          \param[in] addressing - pointer to addressing information;
+    276          \param[in] payloadLength - data payload length;
+    277          \param[in] payload - data pointer
+    278          
+    279          \return status of indication routine
+    280          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    281          static ZCL_Status_t storeSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StoreScene_t *payload)
+    282          {
+   \                     storeSceneInd: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB089             SUB      SP,SP,#+36
+   \   00000004   0x0007             MOVS     R7,R0
+   \   00000006   0x0015             MOVS     R5,R2
+    283            ZCL_Status_t status;
+    284            ZCL_Request_t *req;
+    285          
+    286            LOG_STRING(storeSceneStr, "storeSceneInd(): 0x%04x, %d\r\n");
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0xBF00             Nop      
+   \   0000000C   0x....             ADR.N    R1,?_4
+   \   0000000E   0x2220             MOVS     R2,#+32
+   \   00000010   0x.... 0x....      BL       __aeabi_memcpy4
+    287            appSnprintf(storeSceneStr, payload->groupId, payload->sceneId);
+   \   00000014   0x7829             LDRB     R1,[R5, #+0]
+   \   00000016   0x7868             LDRB     R0,[R5, #+1]
+   \   00000018   0x0600             LSLS     R0,R0,#+24
+   \   0000001A   0x0C00             LSRS     R0,R0,#+16
+   \   0000001C   0x4301             ORRS     R1,R1,R0
+   \   0000001E   0x78AA             LDRB     R2,[R5, #+2]
+   \   00000020   0x4668             MOV      R0,SP
+   \   00000022   0x.... 0x....      BL       appSnprintf
+    288          
+    289            status = storeScene(payload);
+   \   00000026   0x7828             LDRB     R0,[R5, #+0]
+   \   00000028   0x7869             LDRB     R1,[R5, #+1]
+   \   0000002A   0x0609             LSLS     R1,R1,#+24
+   \   0000002C   0x0C09             LSRS     R1,R1,#+16
+   \   0000002E   0x4308             ORRS     R0,R0,R1
+   \   00000030   0x.... 0x....      BL       isValidGroup
+   \   00000034   0x2800             CMP      R0,#+0
+   \   00000036   0xD030             BEQ      ??storeSceneInd_0
+   \   00000038   0x7828             LDRB     R0,[R5, #+0]
+   \   0000003A   0x7869             LDRB     R1,[R5, #+1]
+   \   0000003C   0x0609             LSLS     R1,R1,#+24
+   \   0000003E   0x0C09             LSRS     R1,R1,#+16
+   \   00000040   0x4308             ORRS     R0,R0,R1
+   \   00000042   0x78A9             LDRB     R1,[R5, #+2]
+   \   00000044   0x.... 0x....      BL       findSceneBySceneAndGroup
+   \   00000048   0x2401             MOVS     R4,#+1
+   \   0000004A   0x....             LDR      R6,??DataTable16
+   \   0000004C   0x2800             CMP      R0,#+0
+   \   0000004E   0xD122             BNE      ??storeSceneInd_1
+   \   00000050   0x.... 0x....      BL       allocateScene
+   \   00000054   0x2800             CMP      R0,#+0
+   \   00000056   0xD101             BNE      ??storeSceneInd_2
+   \   00000058   0x2489             MOVS     R4,#+137
+   \   0000005A   0xE017             B        ??storeSceneInd_3
+   \                     ??storeSceneInd_2: (+1)
+   \   0000005C   0x7931             LDRB     R1,[R6, #+4]
+   \   0000005E   0x1C49             ADDS     R1,R1,#+1
+   \   00000060   0x7131             STRB     R1,[R6, #+4]
+   \   00000062   0x2100             MOVS     R1,#+0
+   \   00000064   0x8081             STRH     R1,[R0, #+4]
+   \   00000066   0x7829             LDRB     R1,[R5, #+0]
+   \   00000068   0x786A             LDRB     R2,[R5, #+1]
+   \   0000006A   0x0612             LSLS     R2,R2,#+24
+   \   0000006C   0x0C12             LSRS     R2,R2,#+16
+   \   0000006E   0x4311             ORRS     R1,R1,R2
+   \   00000070   0x8041             STRH     R1,[R0, #+2]
+   \   00000072   0x78A9             LDRB     R1,[R5, #+2]
+   \   00000074   0x7041             STRB     R1,[R0, #+1]
+   \                     ??storeSceneInd_4: (+1)
+   \   00000076   0x7271             STRB     R1,[R6, #+9]
+   \   00000078   0x8841             LDRH     R1,[R0, #+2]
+   \   0000007A   0x81F1             STRH     R1,[R6, #+14]
+   \   0000007C   0x7634             STRB     R4,[R6, #+24]
+   \   0000007E   0x.... 0x....      BL       getExtensionFieldInfo
+   \   00000082   0x0004             MOVS     R4,R0
+    290          
+    291            // Update scenes in non-volatile memory
+    292            if (ZCL_SUCCESS_STATUS == status)
+   \   00000084   0xD102             BNE      ??storeSceneInd_3
+    293              PDS_Store(APP_TH_SCENES_MEM_ID);
+   \   00000086   0x2017             MOVS     R0,#+23
+   \   00000088   0x.... 0x....      BL       PDS_Store
+    294          
+    295            // If received via multicast or broadcast service no response shall be given
+    296            if (addressing->nonUnicast)
+   \                     ??storeSceneInd_3: (+1)
+   \   0000008C   0x2023             MOVS     R0,#+35
+   \   0000008E   0x5C38             LDRB     R0,[R7, R0]
+   \   00000090   0x2800             CMP      R0,#+0
+   \   00000092   0xD004             BEQ      ??storeSceneInd_5
+    297              return ZCL_SUCCESS_STATUS;
+   \   00000094   0xE020             B        ??storeSceneInd_6
+   \                     ??storeSceneInd_1: (+1)
+   \   00000096   0x7841             LDRB     R1,[R0, #+1]
+   \   00000098   0xE7ED             B        ??storeSceneInd_4
+   \                     ??storeSceneInd_0: (+1)
+   \   0000009A   0x2485             MOVS     R4,#+133
+   \   0000009C   0xE7F6             B        ??storeSceneInd_3
+    298          
+    299            if (!(req = getFreeCommand()))
+   \                     ??storeSceneInd_5: (+1)
+   \   0000009E   0x.... 0x....      BL       getFreeCommand
+   \   000000A2   0x0006             MOVS     R6,R0
+   \   000000A4   0xD101             BNE      ??storeSceneInd_7
+    300              return ZCL_INSUFFICIENT_SPACE_STATUS;
+   \   000000A6   0x2089             MOVS     R0,#+137
+   \   000000A8   0xE017             B        ??storeSceneInd_8
+    301          
+    302            fillCommandRequest(req, ZCL_SCENES_CLUSTER_STORE_SCENE_RESPONSE_COMMAND_ID,
+    303                                 sizeof(ZCL_StoreSceneResponse_t));
+   \                     ??storeSceneInd_7: (+1)
+   \   000000AA   0x2204             MOVS     R2,#+4
+   \   000000AC   0x2104             MOVS     R1,#+4
+   \   000000AE   0x.... 0x....      BL       fillCommandRequest
+    304            thFillAddRemoveStoreSceneResponsePayload((ZCL_AddSceneResponse_t *)req->requestPayload, payload->groupId, payload->sceneId, status);
+   \   000000B2   0x7829             LDRB     R1,[R5, #+0]
+   \   000000B4   0x7868             LDRB     R0,[R5, #+1]
+   \   000000B6   0x0600             LSLS     R0,R0,#+24
+   \   000000B8   0x0C00             LSRS     R0,R0,#+16
+   \   000000BA   0x4301             ORRS     R1,R1,R0
+   \   000000BC   0x0023             MOVS     R3,R4
+   \   000000BE   0x78AA             LDRB     R2,[R5, #+2]
+   \   000000C0   0x6CF0             LDR      R0,[R6, #+76]
+   \   000000C2   0x.... 0x....      BL       thFillAddRemoveStoreSceneResponsePayload
+    305            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+   \   000000C6   0x2201             MOVS     R2,#+1
+   \   000000C8   0x0039             MOVS     R1,R7
+   \   000000CA   0x0030             MOVS     R0,R6
+   \   000000CC   0x3020             ADDS     R0,R0,#+32
+   \   000000CE   0x.... 0x....      BL       fillDstAddressingViaSourceAddressing
+    306            commandManagerSendCommand(req);
+   \   000000D2   0x0030             MOVS     R0,R6
+   \   000000D4   0x.... 0x....      BL       commandManagerSendCommand
+    307          
+    308            (void)payloadLength;
+    309            return ZCL_SUCCESS_STATUS;
+   \                     ??storeSceneInd_6: (+1)
+   \   000000D8   0x2000             MOVS     R0,#+0
+   \                     ??storeSceneInd_8: (+1)
+   \   000000DA   0xB009             ADD      SP,SP,#+36
+   \   000000DC   0xBDF0             POP      {R4-R7,PC}       ;; return
+    310          }
+    311          
+    312          /**************************************************************************//**
+    313          \brief Callback on receiving Recall Scene command
+    314          
+    315          \param[in] addressing - pointer to addressing information;
+    316          \param[in] payloadLength - data payload length;
+    317          \param[in] payload - data pointer
+    318          
+    319          \return status of indication routine
+    320          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    321          static ZCL_Status_t recallSceneInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RecallScene_t *payload)
+    322          {
+   \                     recallSceneInd: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB088             SUB      SP,SP,#+32
+   \   00000004   0x0014             MOVS     R4,R2
+    323            LOG_STRING(recallSceneStr, "recallSceneInd(): 0x%04x, %d\r\n");
+   \   00000006   0x4668             MOV      R0,SP
+   \   00000008   0x....             ADR.N    R1,?_5
+   \   0000000A   0x2220             MOVS     R2,#+32
+   \   0000000C   0x.... 0x....      BL       __aeabi_memcpy4
+    324            appSnprintf(recallSceneStr, payload->groupId, payload->sceneId);
+   \   00000010   0x7821             LDRB     R1,[R4, #+0]
+   \   00000012   0x7860             LDRB     R0,[R4, #+1]
+   \   00000014   0x0600             LSLS     R0,R0,#+24
+   \   00000016   0x0C00             LSRS     R0,R0,#+16
+   \   00000018   0x4301             ORRS     R1,R1,R0
+   \   0000001A   0x78A2             LDRB     R2,[R4, #+2]
+   \   0000001C   0x4668             MOV      R0,SP
+   \   0000001E   0x.... 0x....      BL       appSnprintf
+    325          
+    326            recallScene(payload);
+   \   00000022   0x7820             LDRB     R0,[R4, #+0]
+   \   00000024   0x7861             LDRB     R1,[R4, #+1]
+   \   00000026   0x0609             LSLS     R1,R1,#+24
+   \   00000028   0x0C09             LSRS     R1,R1,#+16
+   \   0000002A   0x4308             ORRS     R0,R0,R1
+   \   0000002C   0x78A1             LDRB     R1,[R4, #+2]
+   \   0000002E   0x.... 0x....      BL       findSceneBySceneAndGroup
+   \   00000032   0x2800             CMP      R0,#+0
+   \   00000034   0xD01B             BEQ      ??recallSceneInd_0
+   \   00000036   0x....             LDR      R1,??DataTable16
+   \   00000038   0x7842             LDRB     R2,[R0, #+1]
+   \   0000003A   0x724A             STRB     R2,[R1, #+9]
+   \   0000003C   0x8842             LDRH     R2,[R0, #+2]
+   \   0000003E   0x81CA             STRH     R2,[R1, #+14]
+   \   00000040   0x2201             MOVS     R2,#+1
+   \   00000042   0x760A             STRB     R2,[R1, #+24]
+   \   00000044   0x....             LDR      R1,??DataTable16_1
+   \   00000046   0x000A             MOVS     R2,R1
+   \   00000048   0x3261             ADDS     R2,R2,#+97
+   \   0000004A   0x2306             MOVS     R3,#+6
+   \   0000004C   0x5EC3             LDRSH    R3,[R0, R3]
+   \   0000004E   0x7013             STRB     R3,[R2, #+0]
+   \   00000050   0x0A1B             LSRS     R3,R3,#+8
+   \   00000052   0x7053             STRB     R3,[R2, #+1]
+   \   00000054   0x000A             MOVS     R2,R1
+   \   00000056   0x326B             ADDS     R2,R2,#+107
+   \   00000058   0x2308             MOVS     R3,#+8
+   \   0000005A   0x5EC3             LDRSH    R3,[R0, R3]
+   \   0000005C   0x7013             STRB     R3,[R2, #+0]
+   \   0000005E   0x0A1B             LSRS     R3,R3,#+8
+   \   00000060   0x7053             STRB     R3,[R2, #+1]
+   \   00000062   0x7A80             LDRB     R0,[R0, #+10]
+   \   00000064   0x31C6             ADDS     R1,R1,#+198
+   \   00000066   0x7008             STRB     R0,[R1, #+0]
+   \   00000068   0x2017             MOVS     R0,#+23
+   \   0000006A   0x.... 0x....      BL       PDS_Store
+    327          
+    328            (void)addressing, (void)payloadLength;
+    329            return ZCL_SUCCESS_STATUS;
+   \                     ??recallSceneInd_0: (+1)
+   \   0000006E   0x2000             MOVS     R0,#+0
+   \   00000070   0xB008             ADD      SP,SP,#+32
+   \   00000072   0xBD10             POP      {R4,PC}          ;; return
+    330          }
+    331          
+    332          /**************************************************************************//**
+    333          \brief Callback on receiving Get Scenes Membership command
+    334          
+    335          \param[in] addressing - pointer to addressing information;
+    336          \param[in] payloadLength - data payload length;
+    337          \param[in] payload - data pointer
+    338          
+    339          \return status of indication routine
+    340          ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    341          static ZCL_Status_t getSceneMembershipInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetSceneMembership_t *payload)
+    342          {
+   \                     getSceneMembershipInd: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+   \   00000004   0x0007             MOVS     R7,R0
+   \   00000006   0x0014             MOVS     R4,R2
+    343            uint8_t size;
+    344            ZCL_Request_t *req;
+    345          
+    346            LOG_STRING(getSceneMembershipStr, "getSceneMembershipInd(): 0x%04x\r\n");
+   \   00000008   0xA801             ADD      R0,SP,#+4
+   \   0000000A   0xBF00             Nop      
+   \   0000000C   0x....             ADR.N    R1,?_6
+   \   0000000E   0x2224             MOVS     R2,#+36
+   \   00000010   0x.... 0x....      BL       __aeabi_memcpy4
+    347            appSnprintf(getSceneMembershipStr, payload->groupId);
+   \   00000014   0x7821             LDRB     R1,[R4, #+0]
+   \   00000016   0x7860             LDRB     R0,[R4, #+1]
+   \   00000018   0x0600             LSLS     R0,R0,#+24
+   \   0000001A   0x0C00             LSRS     R0,R0,#+16
+   \   0000001C   0x4301             ORRS     R1,R1,R0
+   \   0000001E   0xA801             ADD      R0,SP,#+4
+   \   00000020   0x.... 0x....      BL       appSnprintf
+    348          
+    349            /* A response should be sent if the request is unicast or (the request is broadcast
+    350                and scene(s) for given group exist(s)) */
+    351            if (!(!addressing->nonUnicast ||
+    352              (addressing->nonUnicast && isValidGroup(payload->groupId) && getNextSceneByGroup(NULL, payload->groupId))))
+   \   00000024   0x2023             MOVS     R0,#+35
+   \   00000026   0x5C38             LDRB     R0,[R7, R0]
+   \   00000028   0x2800             CMP      R0,#+0
+   \   0000002A   0xD012             BEQ      ??getSceneMembershipInd_0
+   \   0000002C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000002E   0x7861             LDRB     R1,[R4, #+1]
+   \   00000030   0x0609             LSLS     R1,R1,#+24
+   \   00000032   0x0C09             LSRS     R1,R1,#+16
+   \   00000034   0x4308             ORRS     R0,R0,R1
+   \   00000036   0x.... 0x....      BL       isValidGroup
+   \   0000003A   0x2800             CMP      R0,#+0
+   \   0000003C   0xD04B             BEQ      ??getSceneMembershipInd_1
+   \   0000003E   0x7821             LDRB     R1,[R4, #+0]
+   \   00000040   0x7860             LDRB     R0,[R4, #+1]
+   \   00000042   0x0600             LSLS     R0,R0,#+24
+   \   00000044   0x0C00             LSRS     R0,R0,#+16
+   \   00000046   0x4301             ORRS     R1,R1,R0
+   \   00000048   0x2000             MOVS     R0,#+0
+   \   0000004A   0x.... 0x....      BL       getNextSceneByGroup
+   \   0000004E   0x2800             CMP      R0,#+0
+   \   00000050   0xD041             BEQ      ??getSceneMembershipInd_1
+    353              return ZCL_SUCCESS_STATUS;
+    354          
+    355            if (!(req = getFreeCommand()))
+   \                     ??getSceneMembershipInd_0: (+1)
+   \   00000052   0x.... 0x....      BL       getFreeCommand
+   \   00000056   0x0006             MOVS     R6,R0
+   \   00000058   0xD101             BNE      ??getSceneMembershipInd_2
+    356              return ZCL_INSUFFICIENT_SPACE_STATUS;
+   \   0000005A   0x2089             MOVS     R0,#+137
+   \   0000005C   0xE03C             B        ??getSceneMembershipInd_3
+    357          
+    358            size = thFillGetSceneMembershipPayload((ZCL_GetSceneMembershipResponse_t *)req->requestPayload, payload->groupId);
+   \                     ??getSceneMembershipInd_2: (+1)
+   \   0000005E   0x4668             MOV      R0,SP
+   \   00000060   0x7822             LDRB     R2,[R4, #+0]
+   \   00000062   0x7861             LDRB     R1,[R4, #+1]
+   \   00000064   0x0609             LSLS     R1,R1,#+24
+   \   00000066   0x0C09             LSRS     R1,R1,#+16
+   \   00000068   0x430A             ORRS     R2,R2,R1
+   \   0000006A   0x8002             STRH     R2,[R0, #+0]
+   \   0000006C   0x6CF4             LDR      R4,[R6, #+76]
+   \   0000006E   0x2010             MOVS     R0,#+16
+   \   00000070   0x....             LDR      R1,??DataTable16
+   \   00000072   0x7909             LDRB     R1,[R1, #+4]
+   \   00000074   0x1A40             SUBS     R0,R0,R1
+   \   00000076   0x7060             STRB     R0,[R4, #+1]
+   \   00000078   0x4668             MOV      R0,SP
+   \   0000007A   0x8800             LDRH     R0,[R0, #+0]
+   \   0000007C   0x70A0             STRB     R0,[R4, #+2]
+   \   0000007E   0x0A00             LSRS     R0,R0,#+8
+   \   00000080   0x70E0             STRB     R0,[R4, #+3]
+   \   00000082   0x4668             MOV      R0,SP
+   \   00000084   0x8800             LDRH     R0,[R0, #+0]
+   \   00000086   0x.... 0x....      BL       isValidGroup
+   \   0000008A   0x2800             CMP      R0,#+0
+   \   0000008C   0xD012             BEQ      ??getSceneMembershipInd_4
+   \   0000008E   0x2500             MOVS     R5,#+0
+   \   00000090   0x2000             MOVS     R0,#+0
+   \   00000092   0xE005             B        ??getSceneMembershipInd_5
+   \                     ??getSceneMembershipInd_6: (+1)
+   \   00000094   0x7921             LDRB     R1,[R4, #+4]
+   \   00000096   0x1C4A             ADDS     R2,R1,#+1
+   \   00000098   0x7122             STRB     R2,[R4, #+4]
+   \   0000009A   0x7842             LDRB     R2,[R0, #+1]
+   \   0000009C   0x1861             ADDS     R1,R4,R1
+   \   0000009E   0x714A             STRB     R2,[R1, #+5]
+   \                     ??getSceneMembershipInd_5: (+1)
+   \   000000A0   0x4669             MOV      R1,SP
+   \   000000A2   0x8809             LDRH     R1,[R1, #+0]
+   \   000000A4   0x.... 0x....      BL       getNextSceneByGroup
+   \   000000A8   0x2800             CMP      R0,#+0
+   \   000000AA   0xD1F3             BNE      ??getSceneMembershipInd_6
+   \   000000AC   0x7025             STRB     R5,[R4, #+0]
+   \   000000AE   0x7922             LDRB     R2,[R4, #+4]
+   \   000000B0   0x1D52             ADDS     R2,R2,#+5
+   \   000000B2   0xE002             B        ??getSceneMembershipInd_7
+   \                     ??getSceneMembershipInd_4: (+1)
+   \   000000B4   0x2085             MOVS     R0,#+133
+   \   000000B6   0x7020             STRB     R0,[R4, #+0]
+   \   000000B8   0x2204             MOVS     R2,#+4
+    359            fillCommandRequest(req, ZCL_SCENES_CLUSTER_GET_SCENE_MEMBERSHIP_RESPONSE_COMMAND_ID,
+    360                                 size);
+   \                     ??getSceneMembershipInd_7: (+1)
+   \   000000BA   0xB2D2             UXTB     R2,R2
+   \   000000BC   0x2106             MOVS     R1,#+6
+   \   000000BE   0x0030             MOVS     R0,R6
+   \   000000C0   0x.... 0x....      BL       fillCommandRequest
+    361            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_CLIENT);
+   \   000000C4   0x2201             MOVS     R2,#+1
+   \   000000C6   0x0039             MOVS     R1,R7
+   \   000000C8   0x0030             MOVS     R0,R6
+   \   000000CA   0x3020             ADDS     R0,R0,#+32
+   \   000000CC   0x.... 0x....      BL       fillDstAddressingViaSourceAddressing
+    362            commandManagerSendCommand(req);
+   \   000000D0   0x0030             MOVS     R0,R6
+   \   000000D2   0x.... 0x....      BL       commandManagerSendCommand
+    363          
+    364            (void)payloadLength;
+    365            return ZCL_SUCCESS_STATUS;
+   \                     ??getSceneMembershipInd_1: (+1)
+   \   000000D6   0x2000             MOVS     R0,#+0
+   \                     ??getSceneMembershipInd_3: (+1)
+   \   000000D8   0xB00B             ADD      SP,SP,#+44
+   \   000000DA   0xBDF0             POP      {R4-R7,PC}       ;; return
+    366          }
+    367          
+    368          /**************************************************************************//**
+    369          \brief Fills Add Scene Response command structure
+    370          
+    371          \param[out] payload - pointer to command structure;
+    372          \param[in]  group   - group id;
+    373          \param[in]  scene   - scene id;
+    374          \param[in]  status  - the status of scene adding
+    375          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    376          static void thFillAddRemoveStoreSceneResponsePayload(ZCL_AddSceneResponse_t *payload, uint16_t group, uint8_t scene, uint8_t status)
+    377          {
+    378            payload->status  = status;
+   \                     thFillAddRemoveStoreSceneResponsePayload: (+1)
+   \   00000000   0x7003             STRB     R3,[R0, #+0]
+    379            payload->groupId = group;
+   \   00000002   0x7041             STRB     R1,[R0, #+1]
+   \   00000004   0x0A09             LSRS     R1,R1,#+8
+   \   00000006   0x7081             STRB     R1,[R0, #+2]
+    380            payload->sceneId = scene;
+   \   00000008   0x70C2             STRB     R2,[R0, #+3]
+    381          }
+   \   0000000A   0x4770             BX       LR               ;; return
+    382          
+    383          /**************************************************************************//**
+    384          \brief Fills View Scene Response command structure
+    385          
+    386          \param[out] payload - pointer to command structure;
+    387          \param[in]  scene   - scene info;
+    388          \param[in]  status  - the status of scene viewing;
+    389          \param[in] request  - the pointer to appropriate View Scene request
+    390          
+    391          \returns size of payload in octets
+    392          ******************************************************************************/
+    393          static uint8_t thFillViewSceneResponsePayload(ZCL_ViewSceneResponse_t *payload, Scene_t *scene, uint8_t status, ZCL_ViewScene_t *request)
+    394          {
+    395            ZCL_ThermostatClusterExtensionFieldSet_t    *thermostatExt;
+    396            
+    397            payload->status  = status;
+    398            payload->groupId = request->groupId;
+    399            payload->sceneId = request->sceneId;
+    400          
+    401            if (ZCL_SUCCESS_STATUS != status)
+    402              return sizeof(ZCL_ViewSceneResponse_t) - sizeof(uint16_t) /*transitionTime*/ - sizeof(uint8_t); /*nameAndExtField*/
+    403          
+    404            payload->transitionTime     = scene->transitionTime;
+    405            payload->nameAndExtField[0] = 0;
+    406          
+    407            thermostatExt = (ZCL_ThermostatClusterExtensionFieldSet_t *)&payload->nameAndExtField[1];
+    408          
+    409            thermostatExt->clusterId  = THERMOSTAT_CLUSTER_ID;
+    410            thermostatExt->length     = sizeof(ZCL_ThermostatClusterExtensionFieldSet_t) - sizeof(ZCL_ExtensionFieldSets_t);
+    411            thermostatExt->occupiedCoolingSetpoint = scene->occupiedCoolingSetpoint;
+    412            thermostatExt->occupiedHeatingSetpoint = scene->occupiedHeatingSetpoint;
+    413            thermostatExt->systemMode              = scene->systemMode;
+    414          
+    415            return sizeof(ZCL_ViewSceneResponse_t) + sizeof(ZCL_ThermostatClusterExtensionFieldSet_t);
+    416          }
+    417          
+    418          /**************************************************************************//**
+    419          \brief Fills Remove Scene Response command structure
+    420          
+    421          \param[out] payload - pointer to command structure;
+    422          \param[in]  group   - group id;
+    423          \param[in]  status  - the status of scenes removing
+    424          ******************************************************************************/
+    425          static void thFillRemoveAllScenesResponsePayload(ZCL_RemoveAllScenesResponse_t *payload, uint16_t group, uint8_t status)
+    426          {
+    427            payload->status  = status;
+    428            payload->groupId = group;
+    429          }
+    430          
+    431          /**************************************************************************//**
+    432          \brief Fills Get Scene Membership command structure
+    433          
+    434          \param[out] payload - pointer to command structure;
+    435          \param[in]  group   - group id;
+    436          ******************************************************************************/
+    437          static uint8_t thFillGetSceneMembershipPayload(ZCL_GetSceneMembershipResponse_t *payload, uint16_t group)
+    438          {
+    439            payload->capacity = MAX_SCENES_AMOUNT - thScenesClusterServerAttributes.sceneCount.value;
+    440            payload->groupId  = group;
+    441          
+    442            if (isValidGroup(group))
+    443            {
+    444              Scene_t *scene = NULL;
+    445          
+    446              while ((scene = getNextSceneByGroup(scene, group)))
+    447                payload->sceneList[payload->sceneCount++] = scene->sceneId;
+    448              payload->status = ZCL_SUCCESS_STATUS;
+    449            }
+    450            else
+    451            {
+    452              payload->status = ZCL_INVALID_FIELD_STATUS;
+    453              return sizeof(ZCL_GetSceneMembershipResponse_t) - sizeof(uint8_t) /*sceneCount*/ - sizeof(uint8_t); /*sceneList*/
+    454            }
+    455          
+    456            return sizeof(ZCL_GetSceneMembershipResponse_t) + payload->sceneCount - sizeof(uint8_t); /*sceneList*/
+    457          }
+    458          
+    459          /**************************************************************************//**
+    460          \brief Checks whether given group id is a group id that exists on this device
+    461          
+    462          \param[in] group - group id
+    463          
+    464          \returns true if group id exists on this device, false otherwise
+    465          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    466          static bool isValidGroup(uint16_t group)
+    467          {
+   \                     isValidGroup: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    468            return (group == 0 || NWK_IsGroupMember(group, APP_SRC_ENDPOINT_ID));
+   \   00000002   0x2800             CMP      R0,#+0
+   \   00000004   0xD003             BEQ      ??isValidGroup_0
+   \   00000006   0x2119             MOVS     R1,#+25
+   \   00000008   0x.... 0x....      BL       NWK_IsGroupMember
+   \   0000000C   0xBD02             POP      {R1,PC}
+   \                     ??isValidGroup_0: (+1)
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0xBD02             POP      {R1,PC}          ;; return
+    469          }
+    470          
+    471          
+    472          /**************************************************************************//**
+    473          \brief Extracts scene information from received packet and fills scene structure
+    474          
+    475          \param[in]  payload - received packet payload
+    476          \param[out] scene   - scene to be filled
+    477          ******************************************************************************/
+    478          static ZCL_Status_t extractSceneInfo(ZCL_AddScene_t *payload, Scene_t *scene, uint8_t length)
+    479          {
+    480            int16_t commandSize  = sizeof(ZCL_AddScene_t) + payload->name[0];
+    481            int16_t extFieldSize = (int16_t)length - commandSize;
+    482            uint8_t *extFields   = (uint8_t *)payload + commandSize;
+    483            ZCL_ExtensionFieldSets_t *ext;
+    484          
+    485            scene->sceneId        = payload->sceneId;
+    486            scene->groupId        = payload->groupId;
+    487            scene->transitionTime = payload->transitionTime;
+    488          
+    489            while (extFieldSize)
+    490            {
+    491              ext = (ZCL_ExtensionFieldSets_t *)extFields;
+    492          
+    493              if (THERMOSTAT_CLUSTER_ID == ext->clusterId)
+    494              {
+    495                ZCL_ThermostatClusterExtensionFieldSet_t *ext = (ZCL_ThermostatClusterExtensionFieldSet_t *)extFields;
+    496          
+    497                scene->occupiedCoolingSetpoint = ext->occupiedCoolingSetpoint;
+    498                scene->occupiedHeatingSetpoint = ext->occupiedHeatingSetpoint;
+    499                scene->systemMode              = ext->systemMode;
+    500              }
+    501              else
+    502                return ZCL_INVALID_FIELD_STATUS;
+    503          
+    504              extFields += sizeof(ZCL_ExtensionFieldSets_t) + ext->length;
+    505              extFieldSize -= (sizeof(ZCL_ExtensionFieldSets_t) + ext->length);
+    506            }
+    507          
+    508            return ZCL_SUCCESS_STATUS;
+    509          }
+    510          
+    511          /**************************************************************************//**
+    512          \brief Adds scene to scene table
+    513          
+    514          \param[in] addScene      - the pointer to Add Scene request;
+    515          \param[in] payloadLength - the length of request
+    516          
+    517          \returns status of scene adding
+    518          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    519          static ZCL_Status_t addScene(ZCL_AddScene_t *addScene, uint8_t payloadLength)
+    520          {
+   \                     addScene: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    521            Scene_t *scene;
+    522          
+    523            if (isValidGroup(addScene->groupId))
+   \   00000006   0x7820             LDRB     R0,[R4, #+0]
+   \   00000008   0x7861             LDRB     R1,[R4, #+1]
+   \   0000000A   0x0609             LSLS     R1,R1,#+24
+   \   0000000C   0x0C09             LSRS     R1,R1,#+16
+   \   0000000E   0x4308             ORRS     R0,R0,R1
+   \   00000010   0x.... 0x....      BL       isValidGroup
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD048             BEQ      ??addScene_0
+    524            {
+    525              scene = findSceneBySceneAndGroup(addScene->groupId, addScene->sceneId);
+   \   00000018   0x7820             LDRB     R0,[R4, #+0]
+   \   0000001A   0x7861             LDRB     R1,[R4, #+1]
+   \   0000001C   0x0609             LSLS     R1,R1,#+24
+   \   0000001E   0x0C09             LSRS     R1,R1,#+16
+   \   00000020   0x4308             ORRS     R0,R0,R1
+   \   00000022   0x78A1             LDRB     R1,[R4, #+2]
+   \   00000024   0x.... 0x....      BL       findSceneBySceneAndGroup
+    526              if (!scene)
+   \   00000028   0x2800             CMP      R0,#+0
+   \   0000002A   0xD107             BNE      ??addScene_1
+    527              {
+    528                scene = allocateScene();
+   \   0000002C   0x.... 0x....      BL       allocateScene
+    529                if (scene)
+   \   00000030   0x2800             CMP      R0,#+0
+   \   00000032   0xD038             BEQ      ??addScene_2
+    530                  thScenesClusterServerAttributes.sceneCount.value++;
+   \   00000034   0x....             LDR      R1,??DataTable16
+   \   00000036   0x790A             LDRB     R2,[R1, #+4]
+   \   00000038   0x1C52             ADDS     R2,R2,#+1
+   \   0000003A   0x710A             STRB     R2,[R1, #+4]
+    531              }
+    532          
+    533              if (scene)
+    534              {
+    535                return extractSceneInfo(addScene, scene, payloadLength);
+   \                     ??addScene_1: (+1)
+   \   0000003C   0x7962             LDRB     R2,[R4, #+5]
+   \   0000003E   0x1D92             ADDS     R2,R2,#+6
+   \   00000040   0x1AA9             SUBS     R1,R5,R2
+   \   00000042   0xB209             SXTH     R1,R1
+   \   00000044   0x18A2             ADDS     R2,R4,R2
+   \   00000046   0x78A3             LDRB     R3,[R4, #+2]
+   \   00000048   0x7043             STRB     R3,[R0, #+1]
+   \   0000004A   0x7823             LDRB     R3,[R4, #+0]
+   \   0000004C   0x7865             LDRB     R5,[R4, #+1]
+   \   0000004E   0x062D             LSLS     R5,R5,#+24
+   \   00000050   0x0C2D             LSRS     R5,R5,#+16
+   \   00000052   0x432B             ORRS     R3,R3,R5
+   \   00000054   0x8043             STRH     R3,[R0, #+2]
+   \   00000056   0x78E3             LDRB     R3,[R4, #+3]
+   \   00000058   0x7925             LDRB     R5,[R4, #+4]
+   \   0000005A   0x062D             LSLS     R5,R5,#+24
+   \   0000005C   0x0C2D             LSRS     R5,R5,#+16
+   \   0000005E   0x432B             ORRS     R3,R3,R5
+   \   00000060   0x8083             STRH     R3,[R0, #+4]
+   \   00000062   0xE013             B        ??addScene_3
+   \                     ??addScene_4: (+1)
+   \   00000064   0x78D4             LDRB     R4,[R2, #+3]
+   \   00000066   0x7915             LDRB     R5,[R2, #+4]
+   \   00000068   0x062D             LSLS     R5,R5,#+24
+   \   0000006A   0x142D             ASRS     R5,R5,#+16
+   \   0000006C   0x432C             ORRS     R4,R4,R5
+   \   0000006E   0x80C4             STRH     R4,[R0, #+6]
+   \   00000070   0x7954             LDRB     R4,[R2, #+5]
+   \   00000072   0x7995             LDRB     R5,[R2, #+6]
+   \   00000074   0x062D             LSLS     R5,R5,#+24
+   \   00000076   0x142D             ASRS     R5,R5,#+16
+   \   00000078   0x432C             ORRS     R4,R4,R5
+   \   0000007A   0x8104             STRH     R4,[R0, #+8]
+   \   0000007C   0x79D4             LDRB     R4,[R2, #+7]
+   \   0000007E   0x7284             STRB     R4,[R0, #+10]
+   \   00000080   0x7893             LDRB     R3,[R2, #+2]
+   \   00000082   0x18D2             ADDS     R2,R2,R3
+   \   00000084   0x1CD2             ADDS     R2,R2,#+3
+   \   00000086   0x1AC9             SUBS     R1,R1,R3
+   \   00000088   0x1EC9             SUBS     R1,R1,#+3
+   \   0000008A   0xB209             SXTH     R1,R1
+   \                     ??addScene_3: (+1)
+   \   0000008C   0x2900             CMP      R1,#+0
+   \   0000008E   0xD008             BEQ      ??addScene_5
+   \   00000090   0x7814             LDRB     R4,[R2, #+0]
+   \   00000092   0x7855             LDRB     R5,[R2, #+1]
+   \   00000094   0x062D             LSLS     R5,R5,#+24
+   \   00000096   0x0C2D             LSRS     R5,R5,#+16
+   \   00000098   0x432C             ORRS     R4,R4,R5
+   \   0000009A   0x....             LDR      R5,??DataTable16_2  ;; 0x201
+   \   0000009C   0x42AC             CMP      R4,R5
+   \   0000009E   0xD0E1             BEQ      ??addScene_4
+   \   000000A0   0xE003             B        ??addScene_0
+   \                     ??addScene_5: (+1)
+   \   000000A2   0x2000             MOVS     R0,#+0
+    536              }
+   \   000000A4   0xBD32             POP      {R1,R4,R5,PC}
+    537              else
+    538                return ZCL_INSUFFICIENT_SPACE_STATUS;
+   \                     ??addScene_2: (+1)
+   \   000000A6   0x2089             MOVS     R0,#+137
+   \   000000A8   0xBD32             POP      {R1,R4,R5,PC}
+    539            }
+    540          
+    541            return ZCL_INVALID_FIELD_STATUS;
+   \                     ??addScene_0: (+1)
+   \   000000AA   0x2085             MOVS     R0,#+133
+   \   000000AC   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    542          }
+    543          
+    544          /**************************************************************************//**
+    545          \brief Views scene in scene table
+    546          
+    547          \param[in] viewScene - the pointer to View Scene request;
+    548          \param[in] scene     - the pointer to the pointer to scene
+    549          
+    550          \returns status of scene viewing
+    551          ******************************************************************************/
+    552          static ZCL_Status_t viewScene(ZCL_ViewScene_t *viewScene, Scene_t **scene)
+    553          {
+    554            if (isValidGroup(viewScene->groupId))
+    555            {
+    556              *scene = findSceneBySceneAndGroup(viewScene->groupId, viewScene->sceneId);
+    557              if (!(*scene))
+    558                return ZCL_NOT_FOUND_STATUS;
+    559              else
+    560                return ZCL_SUCCESS_STATUS;
+    561            }
+    562          
+    563            return ZCL_INVALID_FIELD_STATUS;
+    564          }
+    565          
+    566          /**************************************************************************//**
+    567          \brief Removes scene from scene table
+    568          
+    569          \param[in] removeScene - the pointer to Remove Scene request
+    570          
+    571          \returns status of scene removing
+    572          ******************************************************************************/
+    573          static ZCL_Status_t removeScene(ZCL_RemoveScene_t *removeScene)
+    574          {
+    575            if (isValidGroup(removeScene->groupId))
+    576            {
+    577              Scene_t *scene;
+    578          
+    579              scene = findSceneBySceneAndGroup(removeScene->groupId, removeScene->sceneId);
+    580              if (!scene)
+    581                return ZCL_NOT_FOUND_STATUS;
+    582              else
+    583              {
+    584                freeScene(scene);
+    585                thScenesClusterServerAttributes.sceneCount.value--;
+    586                return ZCL_SUCCESS_STATUS;
+    587              }
+    588            }
+    589          
+    590            return ZCL_INVALID_FIELD_STATUS;
+    591          }
+    592          
+    593          /**************************************************************************//**
+    594          \brief Stores scene to scene table
+    595          
+    596          \param[in] storeScene - the pointer to Store Scene request
+    597          
+    598          \returns status of scene storing
+    599          ******************************************************************************/
+    600          static ZCL_Status_t storeScene(ZCL_StoreScene_t *storeScene)
+    601          {
+    602            if (isValidGroup(storeScene->groupId))
+    603            {
+    604              Scene_t *scene;
+    605          
+    606              scene = findSceneBySceneAndGroup(storeScene->groupId, storeScene->sceneId);
+    607              if (!scene)
+    608              {
+    609                scene = allocateScene();
+    610              }
+    611              else
+    612              {
+    613                thScenesClusterServerAttributes.currentScene.value = scene->sceneId;
+    614                thScenesClusterServerAttributes.currentGroup.value = scene->groupId;
+    615                thScenesClusterServerAttributes.sceneValid.value   = true;
+    616          
+    617                /* scene alraedy exists; update with current extension field sets */
+    618                return getExtensionFieldInfo(scene);
+    619              }
+    620          
+    621              if (scene)
+    622              {
+    623                thScenesClusterServerAttributes.sceneCount.value++;
+    624          
+    625                scene->transitionTime = 0;
+    626                scene->groupId        = storeScene->groupId;
+    627                scene->sceneId        = storeScene->sceneId;
+    628          
+    629                thScenesClusterServerAttributes.currentScene.value = scene->sceneId;
+    630                thScenesClusterServerAttributes.currentGroup.value = scene->groupId;
+    631                thScenesClusterServerAttributes.sceneValid.value   = true;
+    632          
+    633                return getExtensionFieldInfo(scene);
+    634              }
+    635              else
+    636                return ZCL_INSUFFICIENT_SPACE_STATUS;
+    637            }
+    638          
+    639            return ZCL_INVALID_FIELD_STATUS;
+    640          }
+    641          
+    642          /**************************************************************************//**
+    643          \brief Recalls scene from scene table
+    644          
+    645          \param[in] recallScene - the pointer to Recall Scene request
+    646          ******************************************************************************/
+    647          static void recallScene(ZCL_RecallScene_t *recallScene)
+    648          {
+    649            Scene_t *scene = findSceneBySceneAndGroup(recallScene->groupId, recallScene->sceneId);
+    650          
+    651            if (scene)
+    652            {
+    653              thScenesClusterServerAttributes.currentScene.value = scene->sceneId;
+    654              thScenesClusterServerAttributes.currentGroup.value = scene->groupId;
+    655              thScenesClusterServerAttributes.sceneValid.value   = true;
+    656              
+    657              /* recall Scene extensions for thermostat */
+    658              thThermostatClusterServerAttributes.occupiedCoolingSetpoint.value = scene->occupiedCoolingSetpoint;
+    659              thThermostatClusterServerAttributes.occupiedHeatingSetpoint.value = scene->occupiedHeatingSetpoint;
+    660              thThermostatClusterServerAttributes.systemMode.value = scene->systemMode;
+    661              PDS_Store(APP_TH_SCENES_MEM_ID);
+    662            }
+    663          }
+    664          
+    665          
+    666          /**************************************************************************//**
+    667          \brief gets the scene extensions info from other clusterson teh devices
+    668          
+    669          \param[in] scene - Scene to be updated
+    670          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    671          static ZCL_Status_t getExtensionFieldInfo(Scene_t* scene)
+    672          {
+   \                     getExtensionFieldInfo: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    673            ZCL_Cluster_t *cluster = ZCL_GetCluster(APP_SRC_ENDPOINT_ID, THERMOSTAT_CLUSTER_ID, ZCL_CLUSTER_SIDE_SERVER);
+    674          
+    675            if (cluster)
+   \   00000004   0x2200             MOVS     R2,#+0
+   \   00000006   0x....             LDR      R1,??DataTable16_2  ;; 0x201
+   \   00000008   0x2019             MOVS     R0,#+25
+   \   0000000A   0x.... 0x....      BL       ZCL_GetCluster
+   \   0000000E   0x2800             CMP      R0,#+0
+   \   00000010   0xD015             BEQ      ??getExtensionFieldInfo_0
+    676            {
+    677              scene->occupiedCoolingSetpoint = thThermostatClusterServerAttributes.occupiedCoolingSetpoint.value;
+   \   00000012   0x....             LDR      R1,??DataTable16_1
+   \   00000014   0x0008             MOVS     R0,R1
+   \   00000016   0x3061             ADDS     R0,R0,#+97
+   \   00000018   0x7802             LDRB     R2,[R0, #+0]
+   \   0000001A   0x7843             LDRB     R3,[R0, #+1]
+   \   0000001C   0x061B             LSLS     R3,R3,#+24
+   \   0000001E   0x141B             ASRS     R3,R3,#+16
+   \   00000020   0x431A             ORRS     R2,R2,R3
+   \   00000022   0x80E2             STRH     R2,[R4, #+6]
+    678              scene->occupiedHeatingSetpoint = thThermostatClusterServerAttributes.occupiedHeatingSetpoint.value;
+   \   00000024   0x0008             MOVS     R0,R1
+   \   00000026   0x306B             ADDS     R0,R0,#+107
+   \   00000028   0x7802             LDRB     R2,[R0, #+0]
+   \   0000002A   0x7843             LDRB     R3,[R0, #+1]
+   \   0000002C   0x061B             LSLS     R3,R3,#+24
+   \   0000002E   0x141B             ASRS     R3,R3,#+16
+   \   00000030   0x431A             ORRS     R2,R2,R3
+   \   00000032   0x8122             STRH     R2,[R4, #+8]
+    679              scene->systemMode              = thThermostatClusterServerAttributes.systemMode.value;
+   \   00000034   0x31C6             ADDS     R1,R1,#+198
+   \   00000036   0x7808             LDRB     R0,[R1, #+0]
+   \   00000038   0x72A0             STRB     R0,[R4, #+10]
+    680          
+    681              return ZCL_SUCCESS_STATUS;
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \   0000003C   0xBD10             POP      {R4,PC}
+    682            }
+    683            else
+    684              return ZCL_INVALID_FIELD_STATUS;
+   \                     ??getExtensionFieldInfo_0: (+1)
+   \   0000003E   0x2085             MOVS     R0,#+133
+   \   00000040   0xBD10             POP      {R4,PC}          ;; return
+    685          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_0:
+   \   00000000   0x61 0x64          DC8 "addSceneInd(): 0x%04x, 0x%02x\015\012"
+   \              0x64 0x53    
+   \              0x63 0x65    
+   \              0x6E 0x65    
+   \              0x49 0x6E    
+   \              0x64 0x28    
+   \              0x29 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x30 0x34    
+   \              0x78 0x2C    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x30 0x32    
+   \              0x78 0x0D    
+   \              0x0A 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \   00000000   0x76 0x69          DC8 "viewSceneInd(): 0x%04x, 0x%02x\015\012"
+   \              0x65 0x77    
+   \              0x53 0x63    
+   \              0x65 0x6E    
+   \              0x65 0x49    
+   \              0x6E 0x64    
+   \              0x28 0x29    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x30    
+   \              0x34 0x78    
+   \              0x2C 0x20    
+   \              0x30 0x78    
+   \              0x25 0x30    
+   \              0x32 0x78    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   00000021   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \   00000000   0x72 0x65          DC8 "removeSceneInd(): 0x%04x, 0x%02x\015\012"
+   \              0x6D 0x6F    
+   \              0x76 0x65    
+   \              0x53 0x63    
+   \              0x65 0x6E    
+   \              0x65 0x49    
+   \              0x6E 0x64    
+   \              0x28 0x29    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x30    
+   \              0x34 0x78    
+   \              0x2C 0x20    
+   \              0x30 0x78    
+   \              0x25 0x30    
+   \              0x32 0x78    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   00000023   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \   00000000   0x........         DC32     thScenesClusterServerAttributes
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \   00000000   0x72 0x65          DC8 "removeAllScenesInd(): 0x%04x\015\012"
+   \              0x6D 0x6F    
+   \              0x76 0x65    
+   \              0x41 0x6C    
+   \              0x6C 0x53    
+   \              0x63 0x65    
+   \              0x6E 0x65    
+   \              0x73 0x49    
+   \              0x6E 0x64    
+   \              0x28 0x29    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x30    
+   \              0x34 0x78    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000001F   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \   00000000   0x00000201         DC32     0x201
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \   00000000   0x73 0x74          DC8 "storeSceneInd(): 0x%04x, %d\015\012"
+   \              0x6F 0x72    
+   \              0x65 0x53    
+   \              0x63 0x65    
+   \              0x6E 0x65    
+   \              0x49 0x6E    
+   \              0x64 0x28    
+   \              0x29 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x30 0x34    
+   \              0x78 0x2C    
+   \              0x20 0x25    
+   \              0x64 0x0D    
+   \              0x0A 0x00    
+   \   0000001E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16:
+   \   00000000   0x........         DC32     thScenesClusterServerAttributes
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_1:
+   \   00000000   0x........         DC32     thThermostatClusterServerAttributes
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_2:
+   \   00000000   0x00000201         DC32     0x201
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_5:
+   \   00000000   0x72 0x65          DC8 "recallSceneInd(): 0x%04x, %d\015\012"
+   \              0x63 0x61    
+   \              0x6C 0x6C    
+   \              0x53 0x63    
+   \              0x65 0x6E    
+   \              0x65 0x49    
+   \              0x6E 0x64    
+   \              0x28 0x29    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x30    
+   \              0x34 0x78    
+   \              0x2C 0x20    
+   \              0x25 0x64    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000001F   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_6:
+   \   00000000   0x67 0x65          DC8 "getSceneMembershipInd(): 0x%04x\015\012"
+   \              0x74 0x53    
+   \              0x63 0x65    
+   \              0x6E 0x65    
+   \              0x4D 0x65    
+   \              0x6D 0x62    
+   \              0x65 0x72    
+   \              0x73 0x68    
+   \              0x69 0x70    
+   \              0x49 0x6E    
+   \              0x64 0x28    
+   \              0x29 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x30 0x34    
+   \              0x78 0x0D    
+   \              0x0A 0x00    
+   \   00000022   0x00 0x00          DC8 0, 0
+    686          
+    687          
+    688          #endif // APP_DEVICE_TYPE_THERMOSTAT
+    689          //eof thScenesCluster.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   addScene
+        16   -> allocateScene
+        16   -> findSceneBySceneAndGroup
+        16   -> isValidGroup
+      56   addSceneInd
+        56   -> PDS_Store
+        56   -> __aeabi_memcpy4
+        56   -> addScene
+        56   -> appSnprintf
+        56   -> commandManagerSendCommand
+        56   -> fillCommandRequest
+        56   -> fillDstAddressingViaSourceAddressing
+        56   -> getFreeCommand
+        56   -> thFillAddRemoveStoreSceneResponsePayload
+       8   getExtensionFieldInfo
+         8   -> ZCL_GetCluster
+      64   getSceneMembershipInd
+        64   -> __aeabi_memcpy4
+        64   -> appSnprintf
+        64   -> commandManagerSendCommand
+        64   -> fillCommandRequest
+        64   -> fillDstAddressingViaSourceAddressing
+        64   -> getFreeCommand
+        64   -> getNextSceneByGroup
+        64   -> isValidGroup
+       8   isValidGroup
+         8   -> NWK_IsGroupMember
+      40   recallSceneInd
+        40   -> PDS_Store
+        40   -> __aeabi_memcpy4
+        40   -> appSnprintf
+        40   -> findSceneBySceneAndGroup
+      56   removeAllScenesInd
+        56   -> PDS_Store
+        56   -> __aeabi_memcpy4
+        56   -> appSnprintf
+        56   -> commandManagerSendCommand
+        56   -> fillCommandRequest
+        56   -> fillDstAddressingViaSourceAddressing
+        56   -> getFreeCommand
+        56   -> isValidGroup
+        56   -> removeScenesByGroup
+      56   removeSceneInd
+        56   -> PDS_Store
+        56   -> __aeabi_memcpy4
+        56   -> appSnprintf
+        56   -> commandManagerSendCommand
+        56   -> fillCommandRequest
+        56   -> fillDstAddressingViaSourceAddressing
+        56   -> findSceneBySceneAndGroup
+        56   -> freeScene
+        56   -> getFreeCommand
+        56   -> isValidGroup
+        56   -> thFillAddRemoveStoreSceneResponsePayload
+       8   scenesClusterInit
+         8   -> initScenes
+       0   scenesInvalidate
+      56   storeSceneInd
+        56   -> PDS_Store
+        56   -> __aeabi_memcpy4
+        56   -> allocateScene
+        56   -> appSnprintf
+        56   -> commandManagerSendCommand
+        56   -> fillCommandRequest
+        56   -> fillDstAddressingViaSourceAddressing
+        56   -> findSceneBySceneAndGroup
+        56   -> getExtensionFieldInfo
+        56   -> getFreeCommand
+        56   -> isValidGroup
+        56   -> thFillAddRemoveStoreSceneResponsePayload
+       0   thFillAddRemoveStoreSceneResponsePayload
+      64   viewSceneInd
+        64   -> __aeabi_memcpy4
+        64   -> appSnprintf
+        64   -> commandManagerSendCommand
+        64   -> fillCommandRequest
+        64   -> fillDstAddressingViaSourceAddressing
+        64   -> findSceneBySceneAndGroup
+        64   -> getFreeCommand
+        64   -> isValidGroup
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable12
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_2
+      32  ?_0
+      36  ?_1
+      36  ?_2
+      32  ?_3
+      32  ?_4
+      32  ?_5
+      36  ?_6
+     174  addScene
+     128  addSceneInd
+      66  getExtensionFieldInfo
+     220  getSceneMembershipInd
+      18  isValidGroup
+     116  recallSceneInd
+     154  removeAllScenesInd
+     176  removeSceneInd
+      24  scenesClusterInit
+       8  scenesInvalidate
+     222  storeSceneInd
+      12  thFillAddRemoveStoreSceneResponsePayload
+      32  thScenesClusterServerAttributes
+     104  thScenesCommands
+     220  viewSceneInd
+
+ 
+   136 bytes in section .data
+ 1 794 bytes in section .text
+ 
+ 1 794 bytes of CODE memory
+   136 bytes of DATA memory
+
+Errors: none
+Warnings: none

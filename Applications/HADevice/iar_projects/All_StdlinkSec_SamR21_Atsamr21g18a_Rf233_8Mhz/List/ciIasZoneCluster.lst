@@ -1,0 +1,494 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:07
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciIasZoneCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciIasZoneCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciIasZoneCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciIasZoneCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciIasZoneCluster.c
+      1          /**************************************************************************//**
+      2            \file ciIasZoneCluster.c
+      3          
+      4            \brief
+      5              Combined Interface IASZone cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              18/11/2014 Yogesh- Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciIasZoneCluster.h>
+     24          #include <ciIasACECluster.h>
+     25          #include <uartManager.h>
+     26          #include <commandManager.h>
+     27          #include <haClusters.h>
+     28          
+     29          /******************************************************************************
+     30                              Local variables section
+     31          ******************************************************************************/
+     32          static AttibuteReadCallback_t   readAttributeCallback;
+     33          static AttributeWriteCallback_t writeAttributeCallback;
+     34          zoneTable_t zoneTables[ZONE_TABLE_ENTRIES];
+     35          //Initialize Zone Table entries
+     36          static  uint8_t Zone_table_entries = DEFAULT_VAL;
+     37          
+     38          /******************************************************************************
+     39                              Prototypes section
+     40          ******************************************************************************/
+     41          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy);
+     42          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy);
+     43          static ZCL_Status_t ZoneStatusChangeNotificationCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ZoneStatusChangeNot_t *payload);
+     44          static ZCL_Status_t ZoneEnrollRequestCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ZoneEnrollRequest_t *payload);
+     45          static void ZoneTableEntry(ZCL_ZoneEnrollResCommand_t *response, ZCL_ZoneEnrollRequest_t *payload, ZCL_Addressing_t *addressing);
+     46          
+     47          /*****************************************************************************/
+     48          /******************************************************************************
+     49                              Prototypes section
+     50          ******************************************************************************/
+     51          ZCL_IasZoneClusterCommands_t ciIASZoneClusterServerCommands =
+     52          {
+     53            ZCL_DEFINE_IAS_ZONE_CLUSTER_COMMANDS(ZoneStatusChangeNotificationCommandInd, ZoneEnrollRequestCommandInd, NULL, NULL, NULL)
+     54          };
+     55          
+     56          /******************************************************************************
+     57                              Implementation section
+     58          ******************************************************************************/
+     59          /**************************************************************************//**
+     60          \brief Initializes Thermostat cluster
+     61          ******************************************************************************/
+     62          void iaszoneClusterInit(void)
+     63          {
+     64            for(uint8_t zoneEntry= DEFAULT_VAL; zoneEntry < ZONE_TABLE_ENTRIES; zoneEntry++)
+     65            {
+     66              zoneTables[zoneEntry].zoneId = 0xFF;
+     67              zoneTables[zoneEntry].zoneType = 0xFFFF;
+     68              zoneTables[zoneEntry].zoneStatus = 0x0000;
+     69              zoneTables[zoneEntry].zoneAddress = DEFAULT_EXT_ADDR;
+     70            }
+     71          }
+     72          
+     73          /**************************************************************************//**
+     74          \brief Sends Read Attribute command unicastly
+     75          
+     76          \param[in] mode - address mode;
+     77          \param[in] addr - short address of destination node;
+     78          \param[in] ep   - destination endpoint;
+     79          \param[in] attr - attribute id;
+     80          \param[in] cb   - callback function
+     81          ******************************************************************************/
+     82          void iaszoneReadAttribute(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep,
+     83            uint16_t attr, AttibuteReadCallback_t cb)
+     84          {
+     85            ZCL_Request_t *req;
+     86            ZCL_NextElement_t element;
+     87            ZCL_ReadAttributeReq_t readAttrReqElement;
+     88          
+     89            if (!(req = getFreeCommand()))
+     90              return;
+     91          
+     92            readAttributeCallback = cb;
+     93          
+     94            readAttrReqElement.id = attr;
+     95          
+     96            element.payloadLength = 0;
+     97            element.payload = req->requestPayload;
+     98            element.id = ZCL_READ_ATTRIBUTES_COMMAND_ID;
+     99            element.content = &readAttrReqElement;
+    100            ZCL_PutNextElement(&element);
+    101          
+    102            fillCommandRequest(req, ZCL_READ_ATTRIBUTES_COMMAND_ID, element.payloadLength);
+    103            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IAS_ZONE_CLUSTER_ID);
+    104            req->ZCL_Notify = ZCL_ReadAttributeResp;
+    105          
+    106            commandManagerSendAttribute(req);
+    107          }
+    108          
+    109          /**************************************************************************//**
+    110          \brief Sends Write Attribute command unicastly
+    111          
+    112          \param[in] mode - address mode;
+    113          \param[in] addr - short address of destination node;
+    114          \param[in] attr - attribute id;
+    115          \param[in] ep   - destination endpoint;
+    116          \param[in] type - attribute type;
+    117          \param[in] cb   - callback function;
+    118          \param[in] data - the pointer to memory with value to be written;
+    119          \param[in] size - size of data parameter in octets
+    120          ******************************************************************************/
+    121          void iaszoneWriteAttribute(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    122            uint16_t attr, uint8_t type, AttributeWriteCallback_t cb, void *data, uint8_t size)
+    123          {
+    124            ZCL_Request_t *req;
+    125            ZCL_WriteAttributeReq_t writeAttrReq;
+    126          
+    127            if (!(req = getFreeCommand()))
+    128              return;
+    129          
+    130            writeAttributeCallback = cb;
+    131          
+    132            writeAttrReq.id = attr;
+    133            writeAttrReq.type = type;
+    134            memcpy(req->requestPayload, (uint8_t *)&writeAttrReq, sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    135            memcpy(req->requestPayload + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t), (uint8_t *)data, size);
+    136          
+    137            fillCommandRequest(req, ZCL_WRITE_ATTRIBUTES_COMMAND_ID, size + sizeof(ZCL_WriteAttributeReq_t) - sizeof(uint8_t));
+    138            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IAS_ZONE_CLUSTER_ID);
+    139            req->ZCL_Notify = ZCL_WriteAttributeResp;
+    140          
+    141            commandManagerSendAttribute(req);
+    142          }
+    143          
+    144          /**************************************************************************//**
+    145            \brief ZoneStatusChangeNotificationCommandInd
+    146            \param[in] addressing - pointer to addressing information
+    147            \param[in] payloadLength - payloadlength
+    148            \param[in] payload - ChangeNotification payload
+    149            \return status of indication routine
+    150          ******************************************************************************/
+    151          static ZCL_Status_t ZoneStatusChangeNotificationCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ZoneStatusChangeNot_t *payload)
+    152          {
+    153            //Expected to Send the Changed Command to the Device , but what happens for the Periodic report and CIE do not maintain attributes to check for the change.
+    154            //For now the locally maintained zonestatus within the zonetable is used for the same
+    155            if(zoneTables[payload->zoneId].zoneStatus != payload->zoneStatus)
+    156            {
+    157              zoneTables[payload->zoneId].zoneStatus = payload->zoneStatus;
+    158              aceZoneStatusChangedCommand(ADRESS_MODE, addressing->addr.shortAddress, addressing->endpointId, payload->zoneId, payload->zoneStatus, DEFAULT_SOUND, DEFAULT_VAL);
+    159            }
+    160          #if APP_ENABLE_CONSOLE == 1  
+    161            LOG_STRING(writeAttrSuccessStr, " <-Zone Status Change Notification Received\r\n");
+    162            appSnprintf(writeAttrSuccessStr); 
+    163          #endif
+    164            (void) payloadLength;  
+    165            return ZCL_SUCCESS_STATUS;
+    166          }
+    167          
+    168          /**************************************************************************//**
+    169            \brief ZoneTableEntry
+    170            \param[in] response - Zone enroll resp;
+    171            \param[in] payload - Zone enroll req;
+    172            \param[in] addressing   - address details;
+    173            \return none
+    174          ******************************************************************************/
+    175          static void ZoneTableEntry(ZCL_ZoneEnrollResCommand_t *response, ZCL_ZoneEnrollRequest_t *payload, ZCL_Addressing_t *addressing)
+    176          {
+    177            static uint8_t zoneSet = DEFAULT_VAL;
+    178            response->enrollResponseCode = ENROLL_RESP_TOO_MANY_ZONES;
+    179          
+    180            for(uint8_t zoneEntry= DEFAULT_VAL;zoneEntry < ZONE_TABLE_ENTRIES;zoneEntry++)
+    181            {
+    182              if(!zoneSet && (zoneTables[zoneEntry].zoneAddress == addressing->addr.extAddress))
+    183              {
+    184                response->enrollResponseCode = ENROLL_RESP_SUCCESS;
+    185                response->zoneId = zoneTables[zoneEntry].zoneId;
+    186                zoneSet = 1;
+    187              }
+    188              if(!zoneSet && (zoneTables[zoneEntry].zoneId == 0xFF))
+    189              {
+    190                zoneTables[zoneEntry].zoneId = Zone_table_entries;
+    191                zoneTables[zoneEntry].zoneType=payload->zoneType;
+    192                zoneTables[zoneEntry].zoneAddress=addressing->addr.extAddress;
+    193                response->enrollResponseCode = ENROLL_RESP_SUCCESS;
+    194                response->zoneId = Zone_table_entries++;
+    195                zoneSet = 1;
+    196              }
+    197            }
+    198            zoneSet = 0;
+    199          }
+    200          
+    201          /**************************************************************************//**
+    202            \brief ZoneEnrollRequestCommandInd
+    203            \param[in] addressing - pointer to addressing information;
+    204            \param[in] payload - Zone enroll req payload;
+    205            \param[in] request - Zone enroll request;
+    206            \return status of indication routine
+    207          ******************************************************************************/
+    208          ZCL_Status_t ZoneEnrollRequestCommandInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ZoneEnrollRequest_t *payload)
+    209          {
+    210            ZCL_Request_t *req;
+    211          
+    212            if (!(req = getFreeCommand()))
+    213              return ZCL_INSUFFICIENT_SPACE_STATUS;
+    214            
+    215            fillCommandRequest(req, ZCL_IAS_ZONE_CLUSTER_ZONE_ENROLL_RESPONSE_COMMAND_ID, sizeof(ZCL_ZoneEnrollResCommand_t));
+    216            ZoneTableEntry((ZCL_ZoneEnrollResCommand_t *)req->requestPayload, payload ,addressing);
+    217            fillDstAddressingViaSourceAddressing(&req->dstAddressing, addressing, ZCL_CLUSTER_SIDE_SERVER);
+    218            commandManagerSendCommand(req);
+    219            (void) payloadLength; 
+    220            return ZCL_SUCCESS_STATUS;
+    221          }
+    222          
+    223          /**************************************************************************//**
+    224            \brief ZoneInitiateNormalOperatingModeCommand
+    225            \param[in] mode   - address mode;
+    226            \param[in] addr   - short address of destination node;
+    227            \param[in] ep     - destination endpoint;
+    228            \return none
+    229          ******************************************************************************/  
+    230          void ZoneInitiateNormalOperatingModeCommand(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep)
+    231          {
+    232            ZCL_Request_t *req;
+    233          
+    234            if (!(req = getFreeCommand()))
+    235              return;
+    236            
+    237            fillCommandRequest(req, ZCL_IAS_ZONE_CLUSTER_ZONE_NORMAL_OPERATIONG_MODE, 0);
+    238            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IAS_ZONE_CLUSTER_ID);
+    239            commandManagerSendCommand(req);
+    240          }
+    241          
+    242          /**************************************************************************//**
+    243            \brief ZoneInitiateTestModeCommand
+    244            \param[in] mode   - address mode;
+    245            \param[in] addr   - short address of destination node;
+    246            \param[in] ep     - destination endpoint;
+    247            \param[in] testmode_duration     - test mode duration;
+    248            \param[in] testmode_duration     - test mode duration;
+    249            \return none
+    250          ******************************************************************************/
+    251          void ZoneInitiateTestModeCommand(APS_AddrMode_t mode,ShortAddr_t addr, Endpoint_t ep, uint8_t testmodeDuration, uint8_t currentZoneSensitivityLevel)
+    252          {
+    253            ZCL_Request_t *req;
+    254            ZCL_ZoneInitiateTestMode_t reqpayload;
+    255            //ZCL_ZoneEnrollResCommand_t response;
+    256          
+    257            if (!(req = getFreeCommand()))
+    258              return;
+    259            
+    260            //Test Mode dutaion - typically it should be greater than zero
+    261            if(testmodeDuration > 0)
+    262            {
+    263              reqpayload.testmodeDuration = testmodeDuration;
+    264            }
+    265            else
+    266            {
+    267              reqpayload.testmodeDuration = TEST_MODE_DURATION;
+    268            }
+    269            //CurrentZoneSensitivit level to be modified in Zone Server
+    270            reqpayload.currentZoneSensitivityLevel = currentZoneSensitivityLevel;
+    271            
+    272            fillCommandRequest(req, ZCL_IAS_ZONE_CLUSTER_ZONE_TEST_MODE, sizeof(ZCL_ZoneInitiateTestMode_t));
+    273            memcpy((ZCL_ZoneInitiateTestMode_t *)req->requestPayload, &reqpayload , sizeof(ZCL_ZoneInitiateTestMode_t));
+    274            fillDstAddressing(&req->dstAddressing, mode, addr, ep, IAS_ZONE_CLUSTER_ID);
+    275            commandManagerSendCommand(req);
+    276          }
+    277          /**************************************************************************//**
+    278          \brief Indication of read attribute response
+    279          
+    280          \param[in] resp - pointer to response
+    281          ******************************************************************************/
+    282          static void ZCL_ReadAttributeResp(ZCL_Notify_t *ntfy)
+    283          {
+    284            ZCL_NextElement_t element;
+    285            ZCL_ReadAttributeResp_t *readAttributeResp;
+    286          
+    287            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    288            {
+    289              element.id            = ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    290              element.payloadLength = ntfy->responseLength;
+    291              element.payload       = ntfy->responsePayload;
+    292              element.content       = NULL;
+    293          
+    294              ZCL_GetNextElement(&element);
+    295              readAttributeResp = (ZCL_ReadAttributeResp_t *) element.content;
+    296          
+    297              if (readAttributeCallback)
+    298                readAttributeCallback((void *)&readAttributeResp->value[0]);
+    299          #if APP_ENABLE_CONSOLE == 1
+    300              LOG_STRING(readAttrSuccessStr, " <-Read IasZone attribute (0x%x) response: success value = %u\r\n");
+    301              appSnprintf(readAttrSuccessStr, (unsigned)readAttributeResp->id, *((uint8_t*)&readAttributeResp->value[0]));
+    302          #endif
+    303            }
+    304            else
+    305            {
+    306          #if APP_ENABLE_CONSOLE == 1
+    307              LOG_STRING(readAttrFailStr, " +Read IasZone attribute failed: status = 0x%2x\r\n");
+    308              appSnprintf(readAttrFailStr, (unsigned)ntfy->status);
+    309          #endif
+    310            }
+    311          }
+    312          
+    313          /**************************************************************************//**
+    314          \brief Indication of write attribute response
+    315          
+    316          \param[in] resp - pointer to response
+    317          ******************************************************************************/
+    318          static void ZCL_WriteAttributeResp(ZCL_Notify_t *ntfy)
+    319          {
+    320            ZCL_NextElement_t element;
+    321            
+    322            if (ZCL_SUCCESS_STATUS == ntfy->status)
+    323            {
+    324              element.id            = ZCL_WRITE_ATTRIBUTES_RESPONSE_COMMAND_ID;
+    325              element.payloadLength = ntfy->responseLength;
+    326              element.payload       = ntfy->responsePayload;
+    327              element.content       = NULL;
+    328          
+    329              ZCL_GetNextElement(&element);
+    330              
+    331              if (writeAttributeCallback)
+    332                writeAttributeCallback();
+    333          #if APP_ENABLE_CONSOLE == 1
+    334              LOG_STRING(writeAttrSuccessStr, " <-Write IasZone attribute response: success\r\n");
+    335              appSnprintf(writeAttrSuccessStr);
+    336          #endif
+    337            }
+    338            else
+    339            {
+    340          #if APP_ENABLE_CONSOLE == 1
+    341              LOG_STRING(writeAttrFailStrTwo, " +Write IasZone attribute response failed: status value = 0x%x\r\n");
+    342              appSnprintf(writeAttrFailStrTwo, (unsigned)ntfy->status);
+    343          #endif
+    344            }
+    345          }
+    346          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    347          // eof ciIasZoneCluster.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

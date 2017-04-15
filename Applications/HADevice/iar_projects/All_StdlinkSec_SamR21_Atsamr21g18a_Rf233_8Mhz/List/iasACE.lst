@@ -1,0 +1,368 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:31
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACE.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACE.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\iasACE.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\iasACE.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\ias_ace\src\iasACE.c
+      1          /**************************************************************************//**
+      2            \file iasACE.c
+      3          
+      4            \brief
+      5              Intruder Alarm System -  Ancillary Control Equipment.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              18/11/2014 Yogesh  - Created
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_IAS_ACE
+     19          
+     20          /******************************************************************************
+     21                                       Includes section
+     22          ******************************************************************************/
+     23          #include <iasACECluster.h>
+     24          #include <iasACEZoneCluster.h>
+     25          #include <basicCluster.h>
+     26          #include <identifyCluster.h>
+     27          #include <zclDevice.h>
+     28          #include <zclSecurityManager.h>
+     29          #include <uartManager.h>
+     30          #include <console.h>
+     31          #include <pdsDataServer.h>
+     32          #include <ezModeManager.h>
+     33          #include <haClusters.h>
+     34          #include <otauService.h>
+     35          #include <iasACEIdentifyCluster.h>
+     36          #include <iasACEDiagnosticsCluster.h>
+     37          #include <iasACEBasicCluster.h>
+     38          
+     39          /******************************************************************************
+     40                             Define(s) section
+     41          ******************************************************************************/
+     42          
+     43          /*******************************************************************************
+     44                              Static functions section
+     45          *******************************************************************************/
+     46          static void updateCommissioningStateCb(ZCL_Addressing_t *addressing, ZCL_UpdateCommissioningState_t *payload);
+     47          /******************************************************************************
+     48                              Local variables section
+     49          ******************************************************************************/
+     50          static ZCL_DeviceEndpoint_t iasACEEndpoint =
+     51          {
+     52            .simpleDescriptor =
+     53            {
+     54              .endpoint            = APP_SRC_ENDPOINT_ID,
+     55              .AppProfileId        = PROFILE_ID_HOME_AUTOMATION,
+     56              .AppDeviceId         = HA_IAS_ACE_DEVICE_ID,
+     57              .AppInClustersCount  = ARRAY_SIZE(iasACEServerClusterIds),
+     58              .AppInClustersList   = iasACEServerClusterIds,
+     59              .AppOutClustersCount = ARRAY_SIZE(iasACEClientClusterIds),
+     60              .AppOutClustersList  = iasACEClientClusterIds,
+     61            },
+     62            .serverCluster = iasACEServerClusters,
+     63            .clientCluster = iasACEClientClusters,
+     64          };
+     65          
+     66          static ZCL_LinkKeyDesc_t iasZoneKeyDesc = {CCPU_TO_LE64(APS_UNIVERSAL_EXTENDED_ADDRESS)  /*addr*/,HA_LINK_KEY /*key*/};
+     67          
+     68          static IdentifySubscriber_t subcriber =
+     69          {
+     70            .updateCommissioningState = updateCommissioningStateCb
+     71          };
+     72          
+     73          /******************************************************************************
+     74                              Implementation section
+     75          ******************************************************************************/
+     76          
+     77          /**************************************************************************//**
+     78          \brief Device initialization routine
+     79          ******************************************************************************/
+     80          void appDeviceInit(void)
+     81          {
+     82            ZCL_RegisterEndpoint(&iasACEEndpoint);
+     83          
+     84          #if (APP_ENABLE_CONSOLE == 1) || (APP_DEVICE_EVENTS_LOGGING == 1)
+     85            uartInit();
+     86          #endif
+     87          #if APP_ENABLE_CONSOLE == 1
+     88            initConsole();
+     89          #endif
+     90            /* Subscribe the Commissioning update command for Target devices */
+     91            identifySubscribe(&subcriber);
+     92          
+     93            basicClusterInit();
+     94            identifyClusterInit();
+     95            diagnosticsClusterInit();
+     96            iasZoneClusterInit();
+     97            iasACEClusterInit();
+     98          
+     99            //PDS store for Attributes - IAS Zones
+    100            if (PDS_IsAbleToRestore(APP_IAS_ACE_ZONE_STATE_MEM_ID))
+    101              PDS_Restore(APP_IAS_ACE_ZONE_STATE_MEM_ID);
+    102            if (PDS_IsAbleToRestore(APP_IAS_ACE_ZONE_TYPE_MEM_ID))
+    103              PDS_Restore(APP_IAS_ACE_ZONE_TYPE_MEM_ID);
+    104            if (PDS_IsAbleToRestore(APP_IAS_ACE_ZONE_STATUS_MEM_ID))
+    105              PDS_Restore(APP_IAS_ACE_ZONE_STATUS_MEM_ID);
+    106            if (PDS_IsAbleToRestore(APP_IAS_ACE_ZONE_CIE_ADDR_MEM_ID))
+    107              PDS_Restore(APP_IAS_ACE_ZONE_CIE_ADDR_MEM_ID);
+    108            if (PDS_IsAbleToRestore(APP_IAS_ACE_ZONE_ID_MEM_ID))
+    109              PDS_Restore(APP_IAS_ACE_ZONE_ID_MEM_ID);
+    110            if (PDS_IsAbleToRestore(APP_IAS_ACE_ZONE_NO_SENSITIVITY_LEVELS_MEM_ID))
+    111              PDS_Restore(APP_IAS_ACE_ZONE_NO_SENSITIVITY_LEVELS_MEM_ID);
+    112            if (PDS_IsAbleToRestore(APP_IAS_ACE_ZONE_NO_CURR_SENSITIVITY_LEV_MEM_ID))
+    113              PDS_Restore(APP_IAS_ACE_ZONE_NO_CURR_SENSITIVITY_LEV_MEM_ID);
+    114          }
+    115          
+    116          /**************************************************************************//**
+    117          \breif Performs security initialization actions
+    118          ******************************************************************************/
+    119          void appSecurityInit(void)
+    120          {
+    121            ZCL_Set_t zclSet;
+    122          
+    123            ZCL_ResetSecurity();
+    124            zclSet.attr.id = ZCL_LINK_KEY_DESC_ID;
+    125            zclSet.attr.value.linkKeyDesc = &iasZoneKeyDesc;
+    126            ZCL_Set(&zclSet);
+    127          }
+    128          /**************************************************************************//**
+    129          \brief Device common task handler
+    130          ******************************************************************************/
+    131          void appDeviceTaskHandler(void)
+    132          {
+    133            switch (appDeviceState) // Actual device state when one joined network
+    134            {
+    135              case DEVICE_INITIAL_STATE:
+    136                {
+    137                  appDeviceState = DEVICE_ACTIVE_IDLE_STATE;
+    138                }
+    139          #ifdef OTAU_CLIENT
+    140            startOtauClient(&iasACEClientClusters[IAS_ACE_CLIENT_CLUSTERS_COUNT - 1]);
+    141          #endif
+    142                break;
+    143              case DEVICE_ACTIVE_IDLE_STATE:
+    144              default:
+    145                break;
+    146            }
+    147          }
+    148          
+    149          /**************************************************************************//**
+    150          \brief Gets bind request
+    151          
+    152          \return pointer to a bind request used by HA device
+    153          ******************************************************************************/
+    154          AppBindReq_t **getDeviceBindRequest(void)
+    155          {
+    156            return NULL;
+    157          }
+    158          
+    159          /**************************************************************************//**
+    160          \brief Stops application
+    161          ******************************************************************************/
+    162          void appStop(void)
+    163          {
+    164            identifyClusterStop();
+    165          }
+    166          
+    167          /**************************************************************************//**
+    168          \brief Asks device if it is an initiator
+    169          
+    170          \returns true if it is, false otherwise
+    171          ******************************************************************************/
+    172          bool appIsInitiator(void)
+    173          {
+    174            return false;
+    175          }
+    176          
+    177          /**************************************************************************//**
+    178          \brief EZ-Mode done callback
+    179          
+    180          \returns function which is called by EZ-Mode manager when it is done
+    181          ******************************************************************************/
+    182          void appEzModeDone(void)
+    183          {}
+    184          
+    185          /**************************************************************************//**
+    186          \brief Update Commissioning State received callback
+    187          
+    188          \param[in] addressing - pointer to addressing information;
+    189          \param[in] payload - data pointer
+    190          ******************************************************************************/
+    191          static void updateCommissioningStateCb(ZCL_Addressing_t *addressing, ZCL_UpdateCommissioningState_t *payload)
+    192          {
+    193          #if APP_ENABLE_CONSOLE != 1
+    194            sendZoneEnrollRequestCommand(addressing->addr.shortAddress);
+    195          #endif  
+    196            (void)addressing, (void)payload;
+    197          }
+    198          
+    199          /**************************************************************************//**
+    200          \brief ZDO Binding indication function
+    201          
+    202          \param[out] bindInd - ZDO bind indication parameters structure pointer. For details go to
+    203                      ZDO_BindInd_t declaration
+    204          ******************************************************************************/
+    205          void ZDO_BindIndication(ZDO_BindInd_t *bindInd)
+    206          {
+    207            (void)bindInd;
+    208          }
+    209          
+    210          /**************************************************************************//**
+    211          \brief ZDO Unbinding indication function
+    212          
+    213          \param[out] unbindInd - ZDO unbind indication parameters structure pointer. For details go to
+    214                      ZDO_UnbindInd_t declaration
+    215          ******************************************************************************/
+    216          void ZDO_UnbindIndication(ZDO_UnbindInd_t *unbindInd)
+    217          {
+    218            (void)unbindInd;
+    219          }
+    220          #endif // APP_DEVICE_TYPE_THERMOSTAT
+    221          // eof iasACE.c
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

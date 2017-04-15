@@ -1,0 +1,466 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:06
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciGroupsCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciGroupsCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\ciGroupsCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\ciGroupsCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\combinedInterface\src\ciGroupsCluster.c
+      1          /**************************************************************************//**
+      2            \file ciGroupsCluster.c
+      3          
+      4            \brief
+      5              Combined Interface Groups cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              03.09.13 N. Fomin - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_COMBINED_INTERFACE
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <ciGroupsCluster.h>
+     24          #include <haClusters.h>
+     25          #include <zclOnOffCluster.h>
+     26          #include <zclLevelControlCluster.h>
+     27          #include <commandManager.h>
+     28          #include <uartManager.h>
+     29          
+     30          /******************************************************************************
+     31                              Prototypes section
+     32          ******************************************************************************/
+     33          static ZCL_Status_t addGroupResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddGroupResponse_t *payload);
+     34          static ZCL_Status_t viewGroupResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewGroupResponse_t *payload);
+     35          static ZCL_Status_t getGroupMembershipResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetGroupMembershipResponse_t *payload);
+     36          static ZCL_Status_t removeGroupResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveGroupResponse_t *payload);
+     37          
+     38          static void ciFillAddGroupIfIdentifyingPayload(ZCL_AddGroup_t *payload, uint16_t group);
+     39          static void ciFillViewRemoveGroupPayload(ZCL_ViewGroup_t *payload, uint16_t group);
+     40          static uint8_t ciFillGetGroupMembershipPayload(ZCL_GetGroupMembership_t *payload, uint8_t count, uint16_t *list);
+     41          
+     42          /******************************************************************************
+     43                              Global variables section
+     44          ******************************************************************************/
+     45          ZCL_GroupsClusterCommands_t ciGroupsCommands =
+     46          {
+     47            ZCL_DEFINE_GROUPS_CLUSTER_COMMANDS(NULL, NULL, NULL, NULL, NULL, NULL,
+     48                                               addGroupResponseInd, viewGroupResponseInd,
+     49                                               getGroupMembershipResponseInd, removeGroupResponseInd)
+     50          };
+     51          
+     52          /******************************************************************************
+     53                              Implementation section
+     54          ******************************************************************************/
+     55          /**************************************************************************//**
+     56          \brief Initializes Groups cluster
+     57          ******************************************************************************/
+     58          void groupsClusterInit(void)
+     59          {}
+     60          
+     61          /**************************************************************************//**
+     62          \brief Sends Add Group command to bound devices
+     63          
+     64          \param[in] mode  - address mode;
+     65          \param[in] addr  - short address of destination node or number of group;
+     66          \param[in] ep    - endpoint number of destination device;
+     67          \param[in] group - group id
+     68          ******************************************************************************/
+     69          void groupsSendAddGroup(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+     70            uint16_t group)
+     71          {
+     72            ZCL_Request_t *req;
+     73          
+     74            if (!(req = getFreeCommand()))
+     75              return;
+     76          
+     77            fillCommandRequest(req, ZCL_GROUPS_CLUSTER_ADD_GROUP_COMMAND_ID, sizeof(ZCL_AddGroup_t) - sizeof(uint8_t));
+     78            ciFillAddGroupIfIdentifyingPayload((ZCL_AddGroup_t *)req->requestPayload, group);
+     79            fillDstAddressing(&req->dstAddressing, mode, addr, ep, GROUPS_CLUSTER_ID);
+     80            commandManagerSendCommand(req);
+     81          }
+     82          
+     83          /**************************************************************************//**
+     84          \brief Sends View Group command to bound devices
+     85          
+     86          \param[in] mode  - address mode;
+     87          \param[in] addr  - short address of destination node or number of group;
+     88          \param[in] ep    - endpoint number of destination device;
+     89          \param[in] group - group id
+     90          ******************************************************************************/
+     91          void groupsSendViewGroup(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+     92            uint16_t group)
+     93          {
+     94            ZCL_Request_t *req;
+     95          
+     96            if (!(req = getFreeCommand()))
+     97              return;
+     98          
+     99            fillCommandRequest(req, ZCL_GROUPS_CLUSTER_VIEW_GROUP_COMMAND_ID, sizeof(ZCL_ViewGroup_t));
+    100            ciFillViewRemoveGroupPayload((ZCL_ViewGroup_t *)req->requestPayload, group);
+    101            fillDstAddressing(&req->dstAddressing, mode, addr, ep, GROUPS_CLUSTER_ID);
+    102            commandManagerSendCommand(req);
+    103          }
+    104          
+    105          /**************************************************************************//**
+    106          \brief Sends Get Group Membership command to bound devices
+    107          
+    108          \param[in] mode  - address mode;
+    109          \param[in] addr  - short address of destination node or number of group;
+    110          \param[in] ep    - endpoint number of destination device;
+    111          \param[in] count - group count;
+    112          \param[in] list  - group list;
+    113          ******************************************************************************/
+    114          void groupsSendGetGroupMembership(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    115            uint8_t count, uint16_t *list)
+    116          {
+    117            ZCL_Request_t *req;
+    118            uint8_t size;
+    119          
+    120            if (!(req = getFreeCommand()))
+    121              return;
+    122          
+    123            size = ciFillGetGroupMembershipPayload((ZCL_GetGroupMembership_t *)req->requestPayload, count, list);
+    124            fillCommandRequest(req, ZCL_GROUPS_CLUSTER_GET_GROUP_MEMBERSHIP_COMMAND_ID, size);
+    125            fillDstAddressing(&req->dstAddressing, mode, addr, ep, GROUPS_CLUSTER_ID);
+    126            commandManagerSendCommand(req);
+    127          }
+    128          
+    129          /**************************************************************************//**
+    130          \brief Sends Remove Group command to bound devices
+    131          
+    132          \param[in] mode  - address mode;
+    133          \param[in] addr  - short address of destination node or number of group;
+    134          \param[in] ep    - endpoint number of destination device;
+    135          \param[in] group - group id
+    136          ******************************************************************************/
+    137          void groupsSendRemoveGroup(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    138            uint16_t group)
+    139          {
+    140            ZCL_Request_t *req;
+    141          
+    142            if (!(req = getFreeCommand()))
+    143              return;
+    144          
+    145            fillCommandRequest(req, ZCL_GROUPS_CLUSTER_REMOVE_GROUP_COMMAND_ID, sizeof(ZCL_RemoveGroup_t));
+    146            ciFillViewRemoveGroupPayload((ZCL_ViewGroup_t *)req->requestPayload, group);
+    147            fillDstAddressing(&req->dstAddressing, mode, addr, ep, GROUPS_CLUSTER_ID);
+    148            commandManagerSendCommand(req);
+    149          }
+    150          
+    151          /**************************************************************************//**
+    152          \brief Sends Remove All Groups command to bound devices
+    153          
+    154          \param[in] mode  - address mode;
+    155          \param[in] addr  - short address of destination node or number of group;
+    156          \param[in] ep    - endpoint number of destination device;
+    157          \param[in] group - group id
+    158          ******************************************************************************/
+    159          void groupsSendRemoveAllGroups(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep)
+    160          {
+    161            ZCL_Request_t *req;
+    162          
+    163            if (!(req = getFreeCommand()))
+    164              return;
+    165          
+    166            fillCommandRequest(req, ZCL_GROUPS_CLUSTER_REMOVE_ALL_GROUPS_COMMAND_ID, 0);
+    167            fillDstAddressing(&req->dstAddressing, mode, addr, ep, GROUPS_CLUSTER_ID);
+    168            commandManagerSendCommand(req);
+    169          }
+    170          
+    171          /**************************************************************************//**
+    172          \brief Sends Add Group If Identifying command to bound devices
+    173          
+    174          \param[in] mode  - address mode;
+    175          \param[in] addr  - short address of destination node or number of group;
+    176          \param[in] ep    - endpoint number of destination device;
+    177          \param[in] group - group id
+    178          ******************************************************************************/
+    179          void groupsSendAddGroupIfIdentifying(APS_AddrMode_t mode, ShortAddr_t addr, Endpoint_t ep,
+    180            uint16_t group)
+    181          {
+    182            ZCL_Request_t *req;
+    183          
+    184            if (!(req = getFreeCommand()))
+    185              return;
+    186          
+    187            fillCommandRequest(req, ZCL_GROUPS_CLUSTER_ADD_GROUP_IF_IDENTIFYING_COMMAND_ID, sizeof(ZCL_AddGroup_t) - sizeof(uint8_t));
+    188            ciFillAddGroupIfIdentifyingPayload((ZCL_AddGroup_t *)req->requestPayload, group);
+    189            fillDstAddressing(&req->dstAddressing, mode, addr, ep, GROUPS_CLUSTER_ID);
+    190            commandManagerSendCommand(req);
+    191          }
+    192          
+    193          /**************************************************************************//**
+    194          \brief Callback on receiving Add Group Response command
+    195          
+    196          \param[in] addressing - pointer to addressing information;
+    197          \param[in] payloadLength - data payload length;
+    198          \param[in] payload - data pointer
+    199          
+    200          \return status of indication routine
+    201          ******************************************************************************/
+    202          static ZCL_Status_t addGroupResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_AddGroupResponse_t *payload)
+    203          {
+    204            LOG_STRING(addGroupRespStr, "addGroupResponseInd()\r\n");
+    205          
+    206            appSnprintf(addGroupRespStr);
+    207            (void)addressing, (void)payloadLength, (void)payload;
+    208            return ZCL_SUCCESS_STATUS;
+    209          }
+    210          
+    211          /**************************************************************************//**
+    212          \brief Callback on receiving View Group Response command
+    213          
+    214          \param[in] addressing - pointer to addressing information;
+    215          \param[in] payloadLength - data payload length;
+    216          \param[in] payload - data pointer
+    217          
+    218          \return status of indication routine
+    219          ******************************************************************************/
+    220          static ZCL_Status_t viewGroupResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_ViewGroupResponse_t *payload)
+    221          {
+    222            LOG_STRING(respStr, "viewGroupResponse(): status = 0x%02x\r\n");
+    223            LOG_STRING(groupStr, "groupId = 0x%04x\r\n");
+    224          
+    225            appSnprintf(respStr, payload->status);
+    226            appSnprintf(groupStr, payload->groupId);
+    227          
+    228            (void)addressing, (void)payloadLength, (void)payload;
+    229            return ZCL_SUCCESS_STATUS;
+    230          }
+    231          
+    232          /**************************************************************************//**
+    233          \brief Callback on receiving Group Membership Response command
+    234          
+    235          \param[in] addressing - pointer to addressing information;
+    236          \param[in] payloadLength - data payload length;
+    237          \param[in] payload - data pointer
+    238          
+    239          \return status of indication routine
+    240          ******************************************************************************/
+    241          static ZCL_Status_t getGroupMembershipResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_GetGroupMembershipResponse_t *payload)
+    242          {
+    243            LOG_STRING(respStr, "getGroupMembershipResponse()\r\n");
+    244            LOG_STRING(groupCountStr, "groupCount = %d\r\n");
+    245            LOG_STRING(groupStr, "groupId = 0x%04x\r\n");
+    246          
+    247            appSnprintf(respStr);
+    248            appSnprintf(groupCountStr, payload->groupCount);
+    249          
+    250            for (uint8_t i = 0; i < payload->groupCount; i++)
+    251              appSnprintf(groupStr, payload->groupList[i]);
+    252          
+    253            (void)addressing, (void)payloadLength, (void)payload;
+    254            return ZCL_SUCCESS_STATUS;
+    255          }
+    256          
+    257          /**************************************************************************//**
+    258          \brief Callback on receiving Remove Group Response command
+    259          
+    260          \param[in] addressing - pointer to addressing information;
+    261          \param[in] payloadLength - data payload length;
+    262          \param[in] payload - data pointer
+    263          
+    264          \return status of indication routine
+    265          ******************************************************************************/
+    266          static ZCL_Status_t removeGroupResponseInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_RemoveGroupResponse_t *payload)
+    267          {
+    268            LOG_STRING(removeGroupRespStr, "removeGroupResponseInd()\r\n");
+    269            appSnprintf(removeGroupRespStr);
+    270          
+    271            (void)addressing, (void)payloadLength, (void)payload;
+    272            return ZCL_SUCCESS_STATUS;
+    273          }
+    274          
+    275          /**************************************************************************//**
+    276          \brief Fills Add Group and Add Group If Identifying command structure
+    277          
+    278          \param[out] payload - pointer to command structure;
+    279          \param[in]  group   - group id
+    280          ******************************************************************************/
+    281          static void ciFillAddGroupIfIdentifyingPayload(ZCL_AddGroup_t *payload, uint16_t group)
+    282          {
+    283            payload->groupId      = group;
+    284            payload->groupName[0] = 0;
+    285          }
+    286          
+    287          /**************************************************************************//**
+    288          \brief Fills View Group and Remove Group command structure
+    289          
+    290          \param[out] payload - pointer to command structure;
+    291          \param[in]  group   - group id
+    292          ******************************************************************************/
+    293          static void ciFillViewRemoveGroupPayload(ZCL_ViewGroup_t *payload, uint16_t group)
+    294          {
+    295            payload->groupId = group;
+    296          }
+    297          
+    298          /**************************************************************************//**
+    299          \brief Fills Get Group Membership command structure
+    300          
+    301          \param[out] payload - pointer to command structure;
+    302          \param[in]  group   - group id
+    303          ******************************************************************************/
+    304          static uint8_t ciFillGetGroupMembershipPayload(ZCL_GetGroupMembership_t *payload, uint8_t count, uint16_t *list)
+    305          {
+    306            payload->groupCount = count;
+    307          
+    308            if (!count)
+    309              return sizeof(ZCL_GetGroupMembership_t) - sizeof(uint16_t); /*groupList[1]*/
+    310          
+    311            for (uint8_t i = 0; i < count; i++)
+    312              payload->groupList[i] = list[i];
+    313          
+    314            return sizeof(ZCL_GetGroupMembership_t) - sizeof(uint16_t) /*groupList[1]*/ + count * sizeof(uint16_t);
+    315          }
+    316          
+    317          #endif // APP_DEVICE_TYPE_COMBINED_INTERFACE
+    318          // eof ciGroupsCluster.c
+    319          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

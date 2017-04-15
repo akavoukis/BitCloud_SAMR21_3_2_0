@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?><Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup>
+<SchemaVersion>2.0</SchemaVersion>
+<ProjectVersion>6.1</ProjectVersion>
+<ProjectGuid>{e7a7ae25-9fc5-4269-8341-d3bde8c187b4}</ProjectGuid>
+<avrdevice>Atsamr21g18a</avrdevice>
+<avrdeviceseries>none</avrdeviceseries>
+<ToolchainFlavour>Native</ToolchainFlavour>
+<OutputType>Executable</OutputType>
+<OutputFileName>ZAppSINP</OutputFileName>
+<OutputFileExtension>.elf</OutputFileExtension>
+<Language>C</Language>
+<ToolchainName>com.Atmel.ARMGCC.C</ToolchainName>
+<UseGlobalToolchain>False</UseGlobalToolchain>
+<avrtoolinterface/>
+<avrtool/>
+</PropertyGroup>
+<Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\Compiler.targets"/>
+<PropertyGroup Condition=" '$(Configuration)' == 'All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_Sec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_Sec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_4Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_Sec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_16Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_Sec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_24Mhz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_Sec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc' ">
+<UsesExternalMakeFile>True</UsesExternalMakeFile>
+<OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21G18A_ZAppSINP\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc\Exe</OutputDirectory>
+<ExternalMakeFilePath>..\makefiles\ATSAMR21G18A_ZAppSINP\Makefile_All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_48MHz_Gcc</ExternalMakeFilePath>
+<PostBuildEvent>cp -fu $(OutputDirectory)\ZAppSINP.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+</PropertyGroup><ItemGroup>
+<Compile Include=".\..\src\ZAppSINP.c">
+<SubType>compile</SubType>
+<Link>src\ZAppSINP.c</Link>
+</Compile>
+<Compile Include=".\..\include\ZAppSINP.h">
+<SubType>compile</SubType>
+<Link>include\ZAppSINP.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsMemAccess.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsMemAccess.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsTimer.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsTimer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsMem.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsMem.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsWriteData.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsWriteData.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsCrcService.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsCrcService.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsInit.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsInit.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsEvents.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsEvents.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsDataServer.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\src\stdPdsDataServer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsDbg.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsFiles.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsFiles.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsWriteData.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsWriteData.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsTimer.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsTimer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemAccess.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMemAccess.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemAbstract.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMemAbstract.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsCrcService.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsCrcService.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMem.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMem.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemIds.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\std\include\stdPdsMemIds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\fakePds.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\src\fakePds.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\pdsDataServer.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\include\pdsDataServer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\pdsMemIds.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\include\pdsMemIds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsTypesConverter.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsTypesConverter.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsSecurity.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsSecurity.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsInit.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsInit.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsDataServer.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\src\wlPdsDataServer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_Nv.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\src\S_XNv.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_XNv.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\src\D_XNv-SamR21.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\D_XNv-SamR21.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv-External.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_Nv-External.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_Nv\src\D_Nv.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\D_Nv.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv_Stub.c">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\src\S_Nv_Stub.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\S_Nv.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv_Init.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_XNv_Init.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_XNv_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_Nv\include\D_Nv.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_Nv.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\include\S_XNv_Bindings.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\S_XNv_Bindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\nv_components\include\D_XNv.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsBindings.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsBindings.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsSecurity.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsSecurity.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsMemIds.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsMemIds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTypesConverter.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsTypesConverter.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTypes.h">
+<SubType>compile</SubType>
+<Link>Components\PersistDataServer\wl\include\wlPdsTypes.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysIdleHandler.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysIdleHandler.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysSleep.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysSleep.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysStat.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysStat.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysEventsHandler.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysEventsHandler.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysQueue.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysQueue.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysUtils.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysUtils.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysAssert.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysAssert.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysDuplicateTable.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysDuplicateTable.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysInit.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysInit.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\dbg.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\dbg.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysMutex.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysMutex.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysTimer.c">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\src\sysTimer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEventsHandler.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysEventsHandler.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\dbg.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\dbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysQueue.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysQueue.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysDuplicateTable.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysDuplicateTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysIdleHandler.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysIdleHandler.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysSleep.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysSleep.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEvents.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysEvents.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysUtils.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysUtils.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysMutex.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysMutex.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTimer.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysTimer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysStat.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysStat.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysIncrementMacro.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysIncrementMacro.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysDbg.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysAssert.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysAssert.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysRepeatMacro.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysRepeatMacro.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTypes.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysTypes.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysInit.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysInit.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEndian.h">
+<SubType>compile</SubType>
+<Link>Components\SystemEnvironment\include\sysEndian.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspUsart.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspUsart.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\MaxL.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\MaxL.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspTempSensor.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspTempSensor.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\buttons.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\buttons.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\fakeBSP.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\fakeBSP.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\lcd.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\lcd.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\xyl2rgb.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\xyl2rgb.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\joyStick.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\joyStick.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspUid.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspUid.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspI2c.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspI2c.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspVoltageSensor.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspVoltageSensor.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\hs2xy.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\hs2xy.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\leds.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\leds.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspSpi.c">
+<SubType>compile</SubType>
+<Link>Components\BSP\src\bspSpi.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspDbg.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspLeds.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspLeds.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\ledsExt.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\ledsExt.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspVoltageSensor.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspVoltageSensor.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspI2c.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspI2c.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspTempSensor.h">
+<SubType>compile</SubType>
+<Link>Components\BSP\include\bspTempSensor.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiZdoSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiZdoSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiKeSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiKeSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiMac.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiMac.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiNotify.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiNotify.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiDriver.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiDriver.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiHalSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiHalSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiNwk.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiNwk.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiZdpSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiZdpSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiApsSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiApsSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiNwkSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiNwkSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiTaskManager.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiTaskManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiHal.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiHal.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiMacSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiMacSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiBspSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiBspSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiSys.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiSys.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiMem.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiMem.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiBsp.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiBsp.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiSpiAdapter.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiSpiAdapter.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiKe.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiKe.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiAps.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiAps.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiSysSerialization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiSysSerialization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiZdo.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiZdo.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiUsartAdapter.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiUsartAdapter.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiSerialController.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiSerialController.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiMemoryManager.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiMemoryManager.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiSerializer.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiSerializer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiInit.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiInit.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiStubs.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiStubs.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiZdp.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiZdp.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\src\zsiSynchronization.c">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\src\zsiSynchronization.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiZdoSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiZdoSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiMemoryManager.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiMemoryManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiFrames.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiFrames.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiApsSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiApsSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiDbg.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiInit.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiInit.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiHalSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiHalSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiSerialController.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiSerialController.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiTaskManager.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiTaskManager.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiMacSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiMacSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiMem.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiMem.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiSerialInterface.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiSerialInterface.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiCommandId.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiCommandId.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiSerializer.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiSerializer.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiZdpSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiZdpSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiNwkSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiNwkSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiBspSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiBspSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiNotify.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiNotify.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiKeSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiKeSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiSysSerialization.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiSysSerialization.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ZAppSI\include\zsiDriver.h">
+<SubType>compile</SubType>
+<Link>Components\ZAppSI\include\zsiDriver.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csPersistentMem.c">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\src\csPersistentMem.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csMem.c">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\src\csMem.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\configServer.c">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\src\configServer.c</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csConstTable.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csConstTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csBuffers.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csBuffers.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csMemTable.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csMemTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csVarTable.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csVarTable.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csSIB.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csSIB.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csDbg.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\private\csDbg.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\csDefaults.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\csDefaults.h</Link>
+</Compile>
+<Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\configServer.h">
+<SubType>compile</SubType>
+<Link>Components\ConfigServer\include\configServer.h</Link>
+</Compile>
+<Compile Include=".\..\configuration.h">
+<SubType>compile</SubType>
+<Link>configuration\configuration.h</Link>
+</Compile></ItemGroup><ItemGroup><Folder Include="src"/><Folder Include="Components\ConfigServer\src"/><Folder Include="configuration"/><Folder Include="Components\SystemEnvironment\src"/><Folder Include="Components\SystemEnvironment\include"/><Folder Include="Components\PersistDataServer\std\include"/><Folder Include="Components\ConfigServer\include\private"/><Folder Include="Components\PersistDataServer\std\src"/><Folder Include="Components\ZAppSI\include"/><Folder Include="Components\BSP\src"/><Folder Include="Components\ConfigServer\include"/><Folder Include="Components\PersistDataServer\wl\nv_components\src"/><Folder Include="Components\PersistDataServer\src"/><Folder Include="Components\ZAppSI\src"/><Folder Include="Components\PersistDataServer\wl\include"/><Folder Include="Components\PersistDataServer\wl\src"/><Folder Include="Components\PersistDataServer\wl\nv_components\include"/><Folder Include="Components\PersistDataServer\include"/><Folder Include="include"/><Folder Include="Components\BSP\include"/></ItemGroup></Project>

@@ -1,0 +1,583 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:23
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmableLight\src\dlLevelControlCluster.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmableLight\src\dlLevelControlCluster.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\dlLevelControlCluster.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\dlLevelControlCluster.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\dimmableLight\src\dlLevelControlCluster.c
+      1          /**************************************************************************//**
+      2            \file dlLevelControlCluster.c
+      3          
+      4            \brief
+      5              Dimmable Light Level Control cluster implementation.
+      6          
+      7            \author
+      8              Atmel Corporation: http://www.atmel.com \n
+      9              Support email: avr@atmel.com
+     10          
+     11            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     12            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     13          
+     14            \internal
+     15              History:
+     16              11.12.12 N. Fomin - Created.
+     17          ******************************************************************************/
+     18          #ifdef APP_DEVICE_TYPE_DIMMABLE_LIGHT
+     19          
+     20          /******************************************************************************
+     21                              Includes section
+     22          ******************************************************************************/
+     23          #include <dlLevelControlCluster.h>
+     24          #include <dlOnOffCluster.h>
+     25          #include <dlScenesCluster.h>
+     26          #include <appTimer.h>
+     27          #include <uartManager.h>
+     28          #include <pdsDataServer.h>
+     29          
+     30          /******************************************************************************
+     31                              Definition(s) section
+     32          ******************************************************************************/
+     33          #define MAX_LIGHT_LEVEL 254
+     34          #define MIN_LIGHT_LEVEL 1
+     35          
+     36          #define LEVEL_TRANSITION_TIMER_INTERVAL 100
+     37          
+     38          /******************************************************************************
+     39                              Types section
+     40          ******************************************************************************/
+     41          typedef struct
+     42          {
+     43            uint16_t transitionTime;
+     44            uint8_t  level;
+     45            int16_t  levelDelta;
+     46            uint16_t remainingTime;
+     47          } DlLevelControlMem_t;
+     48          
+     49          /******************************************************************************
+     50                              Prototypes section
+     51          ******************************************************************************/
+     52          static ZCL_Status_t moveToLevelInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_MoveToLevel_t *payload);
+     53          static ZCL_Status_t moveInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Move_t *payload);
+     54          static ZCL_Status_t stepInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Step_t *payload);
+     55          static ZCL_Status_t stopInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload);
+     56          static ZCL_Status_t moveToLevelWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_MoveToLevelWithOnOff_t *payload);
+     57          static ZCL_Status_t moveWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_MoveWithOnOff_t *payload);
+     58          static ZCL_Status_t stepWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StepWithOnOff_t *payload);
+     59          static ZCL_Status_t stopWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload);
+     60          
+     61          static void moveToLevel(uint8_t level, uint16_t time, bool onOff);
+     62          static void moveLevel(uint8_t mode, uint8_t rate, bool onOff);
+     63          static void stepLevel(uint8_t mode, uint8_t size, uint16_t time, bool onOff);
+     64          
+     65          static void levelTransitionTimerFired(void);
+     66          
+     67          static void setLevel(uint8_t level);
+     68          
+     69          /******************************************************************************
+     70                              Global variables section
+     71          ******************************************************************************/
+     72          ZCL_LevelControlClusterServerAttributes_t dlLevelControlClusterServerAttributes =
+     73          {
+     74            ZCL_DEFINE_LEVEL_CONTROL_CLUSTER_SERVER_MANDATORY_ATTRIBUTES(LEVEL_CONTROL_VAL_MIN_REPORT_PERIOD, LEVEL_CONTROL_VAL_MAX_REPORT_PERIOD)
+     75          };
+     76          ZCL_LevelControlClusterCommands_t         dlLevelControlCommands =
+     77          {
+     78            ZCL_DEFINE_LEVEL_CONTROL_CLUSTER_COMMANDS(moveToLevelInd, moveInd, stepInd, stopInd,
+     79                                                      moveToLevelWOnOffInd, moveWOnOffInd, stepWOnOffInd, stopWOnOffInd)
+     80          };
+     81          
+     82          /******************************************************************************
+     83                              Static variables section
+     84          ******************************************************************************/
+     85          static HAL_AppTimer_t      levelTransitionTimer;
+     86          static DlLevelControlMem_t levelControlMem;
+     87          
+     88          /******************************************************************************
+     89                              Implementation section
+     90          ******************************************************************************/
+     91          /**************************************************************************//**
+     92          \brief Initializes Level Control cluster
+     93          ******************************************************************************/
+     94          void levelControlClusterInit(void)
+     95          {
+     96            dlLevelControlClusterServerAttributes.currentLevel.value = 0;
+     97          
+     98            levelTransitionTimer.mode     = TIMER_REPEAT_MODE;
+     99            levelTransitionTimer.interval = LEVEL_TRANSITION_TIMER_INTERVAL;
+    100            levelTransitionTimer.callback = levelTransitionTimerFired;
+    101          }
+    102          
+    103          /**************************************************************************//**
+    104          \brief Stops Level Control cluster
+    105          ******************************************************************************/
+    106          void levelControlClusterStop(void)
+    107          {
+    108            HAL_StopAppTimer(&levelTransitionTimer);
+    109          }
+    110          
+    111          /**************************************************************************//**
+    112          \brief Gets current color level
+    113          
+    114          \returns current coloe level
+    115          ******************************************************************************/
+    116          uint8_t levelControlCurrentLevel(void)
+    117          {
+    118            return dlLevelControlClusterServerAttributes.currentLevel.value;
+    119          }
+    120          
+    121          /**************************************************************************//**
+    122          \brief Sets color level
+    123          
+    124          \param[in] level - color level
+    125          ******************************************************************************/
+    126          void levelControlSetLevel(uint8_t level)
+    127          {
+    128            HAL_StopAppTimer(&levelTransitionTimer);
+    129          
+    130            dlLevelControlClusterServerAttributes.currentLevel.value = level;
+    131            ZCL_ReportOnChangeIfNeeded(&dlLevelControlClusterServerAttributes.currentLevel);
+    132            PDS_Store(APP_DL_LEVEL_CONTROL_MEM_ID);
+    133          }
+    134          
+    135          /**************************************************************************//**
+    136          \brief Callback on receiving Move To Level command
+    137          
+    138          \param[in] addressing - pointer to addressing information;
+    139          \param[in] payloadLength - data payload length;
+    140          \param[in] payload - data pointer
+    141          
+    142          \return status of indication routine
+    143          ******************************************************************************/
+    144          static ZCL_Status_t moveToLevelInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_MoveToLevel_t *payload)
+    145          {
+    146            LOG_STRING(moveToLevelStr, "->MoveToLevel: lvl=0x%x trTime=%u\r\n");
+    147            appSnprintf(moveToLevelStr, payload->level, payload->transitionTime);
+    148            moveToLevel(payload->level, payload->transitionTime, false);
+    149          
+    150            (void)addressing, (void)payloadLength;
+    151            return ZCL_SUCCESS_STATUS;
+    152          }
+    153          
+    154          /**************************************************************************//**
+    155          \brief Callback on receiving Move command
+    156          
+    157          \param[in] addressing - pointer to addressing information;
+    158          \param[in] payloadLength - data payload length;
+    159          \param[in] payload - data pointer
+    160          
+    161          \return status of indication routine
+    162          ******************************************************************************/
+    163          static ZCL_Status_t moveInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Move_t *payload)
+    164          {
+    165            LOG_STRING(moveStr, "->Move: mode=0x%x rate=0x%x\r\n");
+    166            appSnprintf(moveStr, payload->moveMode, payload->rate);
+    167            moveLevel(payload->moveMode, payload->rate, false);
+    168          
+    169            (void)addressing, (void)payloadLength;
+    170            return ZCL_SUCCESS_STATUS;
+    171          }
+    172          
+    173          /**************************************************************************//**
+    174          \brief Callback on receiving Step command
+    175          
+    176          \param[in] addressing - pointer to addressing information;
+    177          \param[in] payloadLength - data payload length;
+    178          \param[in] payload - data pointer
+    179          
+    180          \return status of indication routine
+    181          ******************************************************************************/
+    182          static ZCL_Status_t stepInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Step_t *payload)
+    183          {
+    184            LOG_STRING(stepStr, "->Step: mode=0x%x stepSize=0x%x trTime=%u\r\n");
+    185            appSnprintf(stepStr, payload->stepMode, payload->stepSize, payload->transitionTime);
+    186            stepLevel(payload->stepMode, payload->stepSize, payload->transitionTime, false);
+    187          
+    188            (void)addressing, (void)payloadLength;
+    189            return ZCL_SUCCESS_STATUS;
+    190          }
+    191          
+    192          /**************************************************************************//**
+    193          \brief Callback on receiving Stop command
+    194          
+    195          \param[in] addressing - pointer to addressing information;
+    196          \param[in] payloadLength - data payload length;
+    197          \param[in] payload - data pointer
+    198          
+    199          \return status of indication routine
+    200          ******************************************************************************/
+    201          static ZCL_Status_t stopInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload)
+    202          {
+    203            LOG_STRING(stopStr, "->Stop\r\n");
+    204            appSnprintf(stopStr);
+    205          
+    206            HAL_StopAppTimer(&levelTransitionTimer);
+    207          
+    208            (void)addressing, (void)payloadLength, (void)payload;
+    209            return ZCL_SUCCESS_STATUS;
+    210          }
+    211          
+    212          /**************************************************************************//**
+    213          \brief Callback on receiving Move To Level With On/Off command
+    214          
+    215          \param[in] addressing - pointer to addressing information;
+    216          \param[in] payloadLength - data payload length;
+    217          \param[in] payload - data pointer
+    218          
+    219          \return status of indication routine
+    220          ******************************************************************************/
+    221          static ZCL_Status_t moveToLevelWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_MoveToLevelWithOnOff_t *payload)
+    222          {
+    223            LOG_STRING(moveToLevelStr, "->MoveToLevelWithOnOff: lvl=0x%x trTime=%u\r\n");
+    224            appSnprintf(moveToLevelStr, payload->level, payload->transitionTime);
+    225            moveToLevel(payload->level, payload->transitionTime, true);
+    226          
+    227            (void)addressing, (void)payloadLength;
+    228            return ZCL_SUCCESS_STATUS;
+    229          }
+    230          
+    231          /**************************************************************************//**
+    232          \brief Callback on receiving Move With On/Off command
+    233          
+    234          \param[in] addressing - pointer to addressing information;
+    235          \param[in] payloadLength - data payload length;
+    236          \param[in] payload - data pointer
+    237          
+    238          \return status of indication routine
+    239          ******************************************************************************/
+    240          static ZCL_Status_t moveWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_MoveWithOnOff_t *payload)
+    241          {
+    242            LOG_STRING(moveStr, "->Move with on/off: mode=0x%x rate=0x%x\r\n");
+    243            appSnprintf(moveStr, payload->moveMode, payload->rate);
+    244            moveLevel(payload->moveMode, payload->rate, true);
+    245          
+    246            (void)addressing, (void)payloadLength;
+    247            return ZCL_SUCCESS_STATUS;
+    248          }
+    249          
+    250          /**************************************************************************//**
+    251          \brief Callback on receiving Step With On/Off command
+    252          
+    253          \param[in] addressing - pointer to addressing information;
+    254          \param[in] payloadLength - data payload length;
+    255          \param[in] payload - data pointer
+    256          
+    257          \return status of indication routine
+    258          ******************************************************************************/
+    259          static ZCL_Status_t stepWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_StepWithOnOff_t *payload)
+    260          {
+    261            LOG_STRING(stepStr, "->Step with on/off: mode=0x%x stepSize=0x%x trTime=%u\r\n");
+    262            appSnprintf(stepStr, payload->stepMode, payload->stepSize, payload->transitionTime);
+    263            stepLevel(payload->stepMode, payload->stepSize, payload->transitionTime, true);
+    264          
+    265            (void)addressing, (void)payloadLength;
+    266            return ZCL_SUCCESS_STATUS;
+    267          }
+    268          
+    269          /**************************************************************************//**
+    270          \brief Callback on receiving Stop With On/Off command
+    271          
+    272          \param[in] addressing - pointer to addressing information;
+    273          \param[in] payloadLength - data payload length;
+    274          \param[in] payload - data pointer
+    275          
+    276          \return status of indication routine
+    277          ******************************************************************************/
+    278          static ZCL_Status_t stopWOnOffInd(ZCL_Addressing_t *addressing, uint8_t payloadLength, uint8_t *payload)
+    279          {
+    280            LOG_STRING(stopStr, "->Stop with on/off\r\n");
+    281            appSnprintf(stopStr);
+    282          
+    283            HAL_StopAppTimer(&levelTransitionTimer);
+    284          
+    285            (void)addressing, (void)payloadLength, (void)payload;
+    286            return ZCL_SUCCESS_STATUS;
+    287          }
+    288          
+    289          /**************************************************************************//**
+    290          \brief Moves to color level
+    291          
+    292          \param[in] level - new color level;
+    293          \param[in] time  - transition time;
+    294          \param[in] onOff - true if level should be moved with on/off effect
+    295          ******************************************************************************/
+    296          static void moveToLevel(uint8_t level, uint16_t time, bool onOff)
+    297          {
+    298            // stop any other level changing
+    299            HAL_StopAppTimer(&levelTransitionTimer);
+    300          
+    301            // update on/off cluster (on the same ep) attribute value if command is with on/off effect
+    302            if (onOff)
+    303              onOffSetOnOffState(true);
+    304          
+    305            if (level > MAX_LIGHT_LEVEL)
+    306              level = MAX_LIGHT_LEVEL;
+    307            if (level < MIN_LIGHT_LEVEL)
+    308              level = MIN_LIGHT_LEVEL;
+    309          
+    310            if (ZCL_LEVEL_CONTROL_CLUSTER_ASAP_TRANSITION_TIME == time)
+    311            {
+    312              setLevel(level);
+    313              return;
+    314            }
+    315          
+    316            // store current level transition parameters
+    317            levelControlMem.transitionTime = time;
+    318            levelControlMem.level          = level;
+    319            levelControlMem.levelDelta     = level - dlLevelControlClusterServerAttributes.currentLevel.value;
+    320            levelControlMem.remainingTime  = time;
+    321          
+    322            HAL_StartAppTimer(&levelTransitionTimer);
+    323          }
+    324          
+    325          /**************************************************************************//**
+    326          \brief Moves color level
+    327          
+    328          \param[in] mode  - move mode (up or down);
+    329          \param[in] rate  - move rate;
+    330          \param[in] onOff - true if level should be moved with on/off effect
+    331          ******************************************************************************/
+    332          static void moveLevel(uint8_t mode, uint8_t rate, bool onOff)
+    333          {
+    334            // stop any other level changing
+    335            HAL_StopAppTimer(&levelTransitionTimer);
+    336          
+    337            // update on/off cluster (on the same ep) attribute value if command is with on/off effect
+    338            if (onOff)
+    339              onOffSetOnOffState(true);
+    340          
+    341            if (ZCL_MOVE_MODE_UP == mode)
+    342            {
+    343              levelControlMem.level          = MAX_LIGHT_LEVEL;
+    344              levelControlMem.transitionTime = ((MAX_LIGHT_LEVEL - dlLevelControlClusterServerAttributes.currentLevel.value) *
+    345                10) / rate;
+    346            }
+    347            else
+    348            {
+    349              levelControlMem.level          = MIN_LIGHT_LEVEL;
+    350              levelControlMem.transitionTime = ((dlLevelControlClusterServerAttributes.currentLevel.value - MIN_LIGHT_LEVEL) *
+    351                10) / rate;
+    352            }
+    353            levelControlMem.levelDelta    = levelControlMem.level - dlLevelControlClusterServerAttributes.currentLevel.value;
+    354            levelControlMem.remainingTime = levelControlMem.transitionTime;
+    355          
+    356            HAL_StartAppTimer(&levelTransitionTimer);
+    357          }
+    358          
+    359          /**************************************************************************//**
+    360          \brief Steps color level
+    361          
+    362          \param[in] mode  - step mode (up or down);
+    363          \param[in] size  - step size;
+    364          \param[in] time  - transition time;
+    365          \param[in] onOff - true if level should be moved with on/off effect
+    366          ******************************************************************************/
+    367          static void stepLevel(uint8_t mode, uint8_t size, uint16_t time, bool onOff)
+    368          {
+    369            // stop any other level changing
+    370            HAL_StopAppTimer(&levelTransitionTimer);
+    371          
+    372            // update on/off cluster (on the same ep) attribute value if command is with on/off effect
+    373            if (onOff)
+    374              onOffSetOnOffState(true);
+    375          
+    376            if (ZCL_STEP_MODE_UP == mode)
+    377            {
+    378              levelControlMem.level += size;
+    379              levelControlMem.level = MIN(levelControlMem.level, MAX_LIGHT_LEVEL);
+    380            }
+    381            else
+    382            {
+    383              levelControlMem.level -= size;
+    384              levelControlMem.level = MAX(levelControlMem.level, MIN_LIGHT_LEVEL);
+    385            }
+    386          
+    387            if (ZCL_LEVEL_CONTROL_CLUSTER_ASAP_TRANSITION_TIME == time)
+    388            {
+    389              setLevel(levelControlMem.level);
+    390              return;
+    391            }
+    392          
+    393            levelControlMem.levelDelta    = levelControlMem.level - dlLevelControlClusterServerAttributes.currentLevel.value;
+    394            levelControlMem.remainingTime = time;
+    395            HAL_StartAppTimer(&levelTransitionTimer);
+    396          }
+    397          
+    398          /**************************************************************************//**
+    399          \brief Level transition timer has fired
+    400          ******************************************************************************/
+    401          static void levelTransitionTimerFired(void)
+    402          {
+    403            if (--levelControlMem.remainingTime)
+    404            {
+    405              uint32_t remainingTime = levelControlMem.remainingTime;
+    406              int16_t  level         = (int16_t)levelControlMem.level -
+    407                (remainingTime * levelControlMem.levelDelta) / (int32_t)levelControlMem.transitionTime;
+    408          
+    409              setLevel((uint8_t)level);
+    410            }
+    411            else
+    412            {
+    413              HAL_StopAppTimer(&levelTransitionTimer);
+    414              setLevel(levelControlMem.level);
+    415              LOG_STRING(levelTransactionFinishedStr, " + Color level transition is finished. Current level is %u\r\n");
+    416              appSnprintf(levelTransactionFinishedStr, levelControlMem.level);
+    417              PDS_Store(APP_DL_LEVEL_CONTROL_MEM_ID);
+    418            }
+    419          }
+    420          
+    421          /**************************************************************************//**
+    422          \brief Sets color level
+    423          
+    424          \param[in] level - new color level
+    425          ******************************************************************************/
+    426          static void setLevel(uint8_t level)
+    427          {
+    428            dlLevelControlClusterServerAttributes.currentLevel.value = level;
+    429            ZCL_ReportOnChangeIfNeeded(&dlLevelControlClusterServerAttributes.currentLevel);
+    430          
+    431            scenesInvalidate();
+    432          }
+    433          
+    434          #endif // APP_DEVICE_TYPE_DIMMABLE_LIGHT
+    435          // eof dlLevelControlCluster.c
+    436          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

@@ -1,0 +1,812 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:41:12
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\wl\src\wlPdsSecurity.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\wl\src\wlPdsSecurity.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\wlPdsSecurity.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\wlPdsSecurity.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\PersistDataServer\wl\src\wlPdsSecurity.c
+      1          /**************************************************************************//**
+      2            \file wlPdsSecurity.c
+      3          
+      4            \brief PDS security implementation.
+      5          
+      6            \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2013, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13            \internal
+     14             History:
+     15              04.06.13 N. Fomin - Created.
+     16          ******************************************************************************/
+     17          
+     18          #if PDS_ENABLE_WEAR_LEVELING == 1
+     19          #ifdef _ENABLE_PERSISTENT_SERVER_
+     20          #ifdef PDS_SECURITY_CONTROL_ENABLE
+     21          /******************************************************************************
+     22                              Includes section
+     23          ******************************************************************************/
+     24          #include <wlPdsMemIds.h>
+     25          #include <csDefaults.h>
+     26          #include <nwkSecurity.h>
+     27          #include <wlPdsSecurity.h>
+     28          #include <wlPdsTypesConverter.h>
+     29          #include <eeprom.h>
+     30          #include <N_ErrH.h>
+     31          #include <sysUtils.h>
+     32          #include <csBuffers.h>
+     33          
+     34          /******************************************************************************
+     35                              Definitions section
+     36          ******************************************************************************/
+     37          #define COMPID                           "wlPdsSecurity"
+     38          #define EEPROM_STORAGE_BASE_ADDRESS      8U
+     39          #define MAGIC_NUMBER                     0x5AU
+     40          #define MAGIC_NUMBER_INVALID             0xFFU
+     41          #define AREA_ONE_BIT_FIELD               0U
+     42          #define AREA_TWO_BIT_FIELD               1U
+     43          #define INVALID_DATA_IN_BOTH_AREA        0U
+     44          #define ONLY_AREA_ONE_VALID              1U
+     45          #define ONLY_AREA_TWO_VALID              2U
+     46          #define VALID_DATA_IN_BOTH_AREA          3U
+     47          
+     48          #define NWK_KEYS_STORAGE_AREA_ONE_START  EEPROM_STORAGE_BASE_ADDRESS
+     49          #define NWK_KEYS_STORAGE_AREA_TWO_START  (NWK_KEYS_STORAGE_AREA_ONE_START + \
+     50            sizeof(PdsSecureItemHeader_t) + SECURITY_KEYS_ITEM_SIZE)
+     51          #define LINK_KEYS_STORAGE_AREA_ONE_START (NWK_KEYS_STORAGE_AREA_TWO_START + \
+     52            sizeof(PdsSecureItemHeader_t) + SECURITY_KEYS_ITEM_SIZE)
+     53          #define LINK_KEYS_STORAGE_AREA_TWO_START (LINK_KEYS_STORAGE_AREA_ONE_START + \
+     54            sizeof(PdsSecureItemHeader_t) + KEY_PAIR_DESCRIPTOR_ITEM_SIZE)
+     55          
+     56          #define ITEM_ID_TO_ADDRESS_MAPPING(item, address1, address2) \
+     57            {.itemId = item, .areaOneStartAddress = address1, .areaTwoStartAddress = address2}
+     58          
+     59          /******************************************************************************
+     60                              Types section
+     61          ******************************************************************************/
+     62          BEGIN_PACK
+     63          typedef struct PACK
+     64          {
+     65            uint8_t        magicNumber;
+     66            S_Nv_ItemId_t id;
+     67            uint16_t       size;
+     68            uint16_t       crc;
+     69            uint16_t       version;
+     70          } PdsSecureItemHeader_t;
+     71          END_PACK
+     72          
+     73          typedef enum
+     74          {
+     75            PDS_SECURITY_IDLE,
+     76            PDS_SECURITY_WRITING_DATA,
+     77            PDS_SECURITY_WRITING_HEADER,
+     78            PDS_SECURITY_WRITING_MAGIC_NUMBER,
+     79          } PdsSecurityState_t;
+     80          
+     81          typedef struct
+     82          {
+     83            S_Nv_ItemId_t id;
+     84            uint16_t       size;
+     85            void           *data;
+     86          } PdsDataDescriptor_t;
+     87          
+     88          typedef struct
+     89          {
+     90            void     *data;
+     91            uint16_t startAddress;
+     92          } PdsSecurityMem_t;
+     93          
+     94          typedef struct
+     95          {
+     96            S_Nv_ItemId_t itemId;
+     97            uint16_t       areaOneStartAddress;
+     98            uint16_t       areaTwoStartAddress;
+     99          } ItemIdToEepromOffsetMapping_t;
+    100          
+    101          /******************************************************************************
+    102                              Prototypes section
+    103          ******************************************************************************/
+    104          static uint16_t pdsCalculateCrc(uint16_t size, uint8_t *data);
+    105          static void initializeEepromDescriptor(HAL_EepromParams_t *params, uint16_t address, uint8_t *data, uint16_t length);
+    106          static void writeDone(void);
+    107          static bool isDataModified(uint16_t eepromOffset, uint8_t *ramData, uint16_t size);
+    108          static bool readData(PdsSecureItemHeader_t *header, uint16_t address, void *data, uint16_t size);
+    109          static int8_t getEepromItemPosition(S_Nv_ItemId_t id);
+    110          static bool isValidArea(uint16_t eepromOffset, uint16_t size, PdsSecureItemHeader_t *header);
+    111          
+    112          /******************************************************************************
+    113                              Static variables section
+    114          ******************************************************************************/
+    115          static PdsSecureItemHeader_t itemHeader;
+    116          static PdsSecurityState_t state;
+    117          static PdsSecurityMem_t pdsSecMem;
+    118          static ItemIdToEepromOffsetMapping_t PROGMEM_DECLARE(pdsSecMemoryMap[]) =
+    119          {
+    120            ITEM_ID_TO_ADDRESS_MAPPING(CS_NWK_SECURITY_KEYS_ITEM_ID,
+    121              NWK_KEYS_STORAGE_AREA_ONE_START,
+    122              NWK_KEYS_STORAGE_AREA_TWO_START),
+    123            ITEM_ID_TO_ADDRESS_MAPPING(CS_APS_KEY_PAIR_DESCRIPTORS_ITEM_ID,
+    124              LINK_KEYS_STORAGE_AREA_ONE_START,
+    125              LINK_KEYS_STORAGE_AREA_TWO_START)
+    126          };
+    127          static PdsDataDescriptor_t postoponedStoring[ARRAY_SIZE(pdsSecMemoryMap)];
+    128          
+    129          /******************************************************************************
+    130                              Implementation section
+    131          ******************************************************************************/
+    132          /******************************************************************************
+    133          \brief To get the length of an item.
+    134          
+    135          \param[in] id   - item id
+    136          \returns The length of the item
+    137          ******************************************************************************/
+    138          uint16_t pdsSecureItemLength(S_Nv_ItemId_t id)
+    139          {
+    140            HAL_EepromParams_t eepromParams;
+    141            PdsSecureItemHeader_t header1, header2;
+    142            int8_t pos;
+    143            ItemIdToEepromOffsetMapping_t mapItem;
+    144          
+    145            N_ERRH_ASSERT_FATAL(PDS_SECURITY_IDLE == state);
+    146            pos = getEepromItemPosition(id);
+    147            N_ERRH_ASSERT_FATAL(-1 != pos);
+    148          
+    149            memcpy_P(&mapItem, &pdsSecMemoryMap[pos], sizeof(ItemIdToEepromOffsetMapping_t));
+    150            // find the latest version of item stored
+    151            initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&header1, sizeof(PdsSecureItemHeader_t));
+    152            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    153            initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&header2, sizeof(PdsSecureItemHeader_t));
+    154            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    155            
+    156            if ((!((UINT16_MAX == header1.version) && (0L == header2.version))) &&
+    157                 (((0L == header1.version) && (UINT16_MAX == header2.version)) || (header1.version > header2.version)))
+    158            {
+    159              if (MAGIC_NUMBER == header1.magicNumber)
+    160                return (header1.size);
+    161              else
+    162                return (header2.size);
+    163            }
+    164            else
+    165            {
+    166              if (MAGIC_NUMBER == header2.magicNumber)
+    167                return (header2.size);
+    168              else
+    169                return (header1.size);
+    170            }
+    171          }
+    172          
+    173          /******************************************************************************
+    174          \brief This will check whether the item is found in the storage area
+    175          
+    176          \param[in] id   - item id
+    177          \returns true if item is available, false - otherwise
+    178          ******************************************************************************/
+    179          bool pdsIsSecureItemAvailable(S_Nv_ItemId_t id)
+    180          {
+    181            HAL_EepromParams_t eepromParams;
+    182            PdsSecureItemHeader_t header1, header2;
+    183            int8_t pos;
+    184            ItemIdToEepromOffsetMapping_t mapItem;
+    185          
+    186            N_ERRH_ASSERT_FATAL(PDS_SECURITY_IDLE == state);
+    187            pos = getEepromItemPosition(id);
+    188            N_ERRH_ASSERT_FATAL(-1 != pos);
+    189          
+    190            memcpy_P(&mapItem, &pdsSecMemoryMap[pos], sizeof(ItemIdToEepromOffsetMapping_t));
+    191            // find the latest version of item stored
+    192            initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&header1, sizeof(PdsSecureItemHeader_t));
+    193            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    194            initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&header2, sizeof(PdsSecureItemHeader_t));
+    195            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    196            
+    197            if ((!((UINT16_MAX == header1.version) && (0L == header2.version))) &&
+    198                 (((0L == header1.version) && (UINT16_MAX == header2.version)) || (header1.version > header2.version)))
+    199            {
+    200              if (MAGIC_NUMBER == header1.magicNumber)
+    201                return ( header1.id == id );
+    202              else
+    203                return ( header2.id == id );
+    204            }
+    205            else
+    206            {
+    207              if (MAGIC_NUMBER == header2.magicNumber)
+    208                return ( header2.id == id );
+    209              else
+    210                return ( header1.id == id );
+    211            }
+    212          }
+    213          
+    214          /******************************************************************************
+    215          \brief This will create an empty item in storage area
+    216          
+    217          \param[in] id   - item id
+    218          \param[in] itemLength   - item size
+    219          ******************************************************************************/
+    220          void pdsSecureItemInit(S_Nv_ItemId_t id, uint16_t itemLength)
+    221          {
+    222            HAL_EepromParams_t eepromParams;
+    223            ItemIdToEepromOffsetMapping_t mapItem;
+    224            int8_t pos;
+    225          
+    226            N_ERRH_ASSERT_FATAL(PDS_SECURITY_IDLE == state);
+    227            pos = getEepromItemPosition(id);
+    228            N_ERRH_ASSERT_FATAL(-1 != pos);
+    229          
+    230            memcpy_P(&mapItem, &pdsSecMemoryMap[pos], sizeof(ItemIdToEepromOffsetMapping_t));
+    231          
+    232            itemHeader.magicNumber = MAGIC_NUMBER_INVALID;
+    233            itemHeader.id = id;
+    234            itemHeader.size = itemLength;
+    235            itemHeader.version = 1;
+    236            if (isDataModified(mapItem.areaOneStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t)))
+    237            {
+    238              initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    239              N_ERRH_ASSERT_FATAL(0U == HAL_WriteEeprom(&eepromParams, NULL));
+    240            }
+    241            
+    242            itemHeader.id = 0;
+    243            itemHeader.size = 0;
+    244            itemHeader.version = 0;
+    245            if (isDataModified(mapItem.areaTwoStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t)))
+    246            {
+    247              initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    248              N_ERRH_ASSERT_FATAL(0U == HAL_WriteEeprom(&eepromParams, NULL));
+    249            }
+    250          }
+    251          
+    252          /******************************************************************************
+    253          \brief Erases item under security control
+    254          ******************************************************************************/
+    255          void PDS_EraseSecureItems(void)
+    256          {
+    257            HAL_EepromParams_t eepromParams;
+    258            ItemIdToEepromOffsetMapping_t mapItem;
+    259          
+    260            HAL_StopWriteToEeprom();
+    261          
+    262            itemHeader.id = 0;
+    263            itemHeader.size = 0;
+    264            itemHeader.version = 0;
+    265          
+    266            for (uint16_t i = 0U; i < ARRAY_SIZE(pdsSecMemoryMap); i++)
+    267            {
+    268              memcpy_P(&mapItem, &pdsSecMemoryMap[i], sizeof(ItemIdToEepromOffsetMapping_t));
+    269          
+    270              initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    271              itemHeader.magicNumber = MAGIC_NUMBER_INVALID;
+    272              N_ERRH_ASSERT_FATAL(0U == HAL_WriteEeprom(&eepromParams, NULL));
+    273          
+    274              initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    275              itemHeader.magicNumber = MAGIC_NUMBER_INVALID;
+    276              N_ERRH_ASSERT_FATAL(0U == HAL_WriteEeprom(&eepromParams, NULL));
+    277            }
+    278          }
+    279          
+    280          /******************************************************************************
+    281          \brief Stores item under security control
+    282          
+    283          \param[in] id   - item id;
+    284          \param[in] size - item size;
+    285          \param[in] data - item data
+    286          ******************************************************************************/
+    287          void pdsStoreSecuredItem(S_Nv_ItemId_t id, uint16_t size, void *data)
+    288          {
+    289            PdsSecureItemHeader_t header1, header2;
+    290            HAL_EepromParams_t eepromParams;
+    291            int8_t pos = getEepromItemPosition(id);
+    292            ItemIdToEepromOffsetMapping_t mapItem;
+    293            uint8_t areaValidBitmap = 0;
+    294          
+    295            N_ERRH_ASSERT_FATAL(-1 != pos);
+    296          
+    297            if (PDS_SECURITY_IDLE != state)
+    298            {
+    299              for (uint8_t count=0; count < ARRAY_SIZE(pdsSecMemoryMap); count++)
+    300              {
+    301                if(postoponedStoring[count].id == id || postoponedStoring[count].size == 0U)
+    302                {
+    303                  postoponedStoring[count].id   = id;
+    304                  postoponedStoring[count].size = size;
+    305                  postoponedStoring[count].data = data;
+    306                  break;
+    307                }
+    308              }
+    309              return;
+    310            }
+    311          
+    312            memcpy_P(&mapItem, &pdsSecMemoryMap[pos], sizeof(ItemIdToEepromOffsetMapping_t));
+    313          
+    314            /* Read Area One Header */
+    315            initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&header1, sizeof(PdsSecureItemHeader_t));
+    316            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    317          
+    318            /* Check Area One has the valid data or not */
+    319            if (isValidArea(mapItem.areaOneStartAddress + sizeof(PdsSecureItemHeader_t), size, &header1))
+    320              areaValidBitmap |= (1U << AREA_ONE_BIT_FIELD);
+    321          
+    322            /* Read Area Two Header */
+    323            initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&header2, sizeof(PdsSecureItemHeader_t));
+    324            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    325          
+    326            /* Check Area One has the valid data or not */
+    327            if (isValidArea(mapItem.areaTwoStartAddress + sizeof(PdsSecureItemHeader_t), size, &header2))
+    328              areaValidBitmap |= (1U << AREA_TWO_BIT_FIELD);
+    329          
+    330            switch (areaValidBitmap)
+    331            {
+    332              case INVALID_DATA_IN_BOTH_AREA:
+    333              {
+    334                /* Invalid data in both the area - write the data with version as 1 in Area One*/
+    335                initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    336                itemHeader.version = 1U;
+    337                pdsSecMem.startAddress = mapItem.areaOneStartAddress;
+    338              }
+    339              break;
+    340              case ONLY_AREA_ONE_VALID:
+    341              {
+    342                if (!isDataModified(mapItem.areaOneStartAddress + sizeof(PdsSecureItemHeader_t), data, size))
+    343                  return;
+    344                itemHeader.version = header1.version + 1U;
+    345                initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    346                pdsSecMem.startAddress = mapItem.areaTwoStartAddress;
+    347              }
+    348              break;
+    349              case ONLY_AREA_TWO_VALID:
+    350              {
+    351                if (!isDataModified(mapItem.areaTwoStartAddress + sizeof(PdsSecureItemHeader_t), data, size))
+    352                  return;
+    353                itemHeader.version = header2.version + 1U;
+    354                initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    355                pdsSecMem.startAddress = mapItem.areaOneStartAddress;
+    356              }
+    357               break;
+    358              case VALID_DATA_IN_BOTH_AREA:
+    359              {
+    360                if ((!((UINT16_MAX == header1.version) && (0L == header2.version))) &&
+    361                    ((header1.version > header2.version) || ((0L == header1.version) && (UINT16_MAX == header2.version))))
+    362                {
+    363                  if (!isDataModified(mapItem.areaOneStartAddress + sizeof(PdsSecureItemHeader_t), data, size))
+    364                    return;
+    365                  itemHeader.version = header1.version + 1U;
+    366                  initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    367                  pdsSecMem.startAddress = mapItem.areaTwoStartAddress;
+    368                }
+    369                else
+    370                {
+    371                  if (!isDataModified(mapItem.areaTwoStartAddress + sizeof(PdsSecureItemHeader_t), data, size))
+    372                    return;
+    373                  itemHeader.version = header2.version + 1U;
+    374                  initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    375                  pdsSecMem.startAddress = mapItem.areaOneStartAddress;
+    376                }
+    377              }
+    378              break;
+    379              default:
+    380                N_ERRH_FATAL();
+    381              break;
+    382            }
+    383          
+    384            pdsSecMem.startAddress += sizeof(PdsSecureItemHeader_t);
+    385            state = PDS_SECURITY_WRITING_HEADER;
+    386          
+    387            pdsSecMem.data         = data;
+    388            /* Write Invalid Magic Number during start of the write
+    389             and Write the valid magic number when item is stored successfully */
+    390            itemHeader.magicNumber = MAGIC_NUMBER_INVALID;
+    391            itemHeader.id          = id;
+    392            itemHeader.size        = size;
+    393            itemHeader.crc         = pdsCalculateCrc(size, data);
+    394            N_ERRH_ASSERT_FATAL(0U == HAL_WriteEeprom(&eepromParams, writeDone));
+    395          }
+    396          
+    397          /******************************************************************************
+    398          \brief Restores item under security control
+    399          
+    400          \param[in] id   - item id;
+    401          \param[in] size - item size;
+    402          \param[in] data - item data
+    403          \returns true if item is restored successfully, false - otherwise
+    404          ******************************************************************************/
+    405          bool pdsRestoreSecuredItem(S_Nv_ItemId_t id, uint16_t size, void *data)
+    406          {
+    407            HAL_EepromParams_t eepromParams;
+    408            PdsSecureItemHeader_t header1, header2;
+    409            int8_t pos;
+    410            ItemIdToEepromOffsetMapping_t mapItem;
+    411          
+    412            N_ERRH_ASSERT_FATAL(PDS_SECURITY_IDLE == state);
+    413            pos = getEepromItemPosition(id);
+    414            N_ERRH_ASSERT_FATAL(-1 != pos);
+    415          
+    416            memcpy_P(&mapItem, &pdsSecMemoryMap[pos], sizeof(ItemIdToEepromOffsetMapping_t));
+    417            // find the latest version of item stored
+    418            initializeEepromDescriptor(&eepromParams, mapItem.areaOneStartAddress, (uint8_t *)&header1, sizeof(PdsSecureItemHeader_t));
+    419            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    420            initializeEepromDescriptor(&eepromParams, mapItem.areaTwoStartAddress, (uint8_t *)&header2, sizeof(PdsSecureItemHeader_t));
+    421            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    422          
+    423            if ((!((UINT16_MAX == header1.version) && (0L == header2.version))) &&
+    424                 (((0L == header1.version) && (UINT16_MAX == header2.version)) || (header1.version > header2.version)))
+    425            {
+    426              if (!readData(&header1, mapItem.areaOneStartAddress + sizeof(PdsSecureItemHeader_t), data, size))
+    427                return readData(&header2, mapItem.areaTwoStartAddress + sizeof(PdsSecureItemHeader_t), data, size);
+    428            }
+    429            else
+    430            {
+    431              if (!readData(&header2, mapItem.areaTwoStartAddress + sizeof(PdsSecureItemHeader_t), data, size))
+    432                return readData(&header1, mapItem.areaOneStartAddress + sizeof(PdsSecureItemHeader_t), data, size);
+    433            }
+    434            return true;
+    435          }
+    436          
+    437          /******************************************************************************
+    438          \brief Checks whether the Data in the Area is valid or not by checking the magic
+    439                 number and crc in header & CRC of the data in eeprom is valid or not
+    440          \param[in] eepromOffset - ofsset of data in eeprom;
+    441          \param[in] ramData      - pointer to data in RAM;
+    442          \param[in] size         - data size;
+    443          \returns true if the area is valid, false otherwise
+    444          ******************************************************************************/
+    445          static bool isValidArea(uint16_t eepromOffset, uint16_t size, PdsSecureItemHeader_t *header)
+    446          {
+    447            uint8_t readBuffer[16U];
+    448            HAL_EepromParams_t eepromParams;
+    449            uint8_t i = 0U, j;
+    450            uint16_t eepromCrc = 0U;
+    451          
+    452            if (MAGIC_NUMBER != header->magicNumber)
+    453              return false;
+    454          
+    455            for (; i < size / 16U; i++)
+    456            {
+    457              initializeEepromDescriptor(&eepromParams, eepromOffset + i * 16U, readBuffer, 16U);
+    458              if (0U != HAL_ReadEeprom(&eepromParams, NULL))
+    459                return false;
+    460              for (j = 0U; j < 16U; j++)
+    461                eepromCrc = SYS_Crc16Ccitt(eepromCrc, readBuffer[j]);
+    462            }
+    463            if (size % 16U)
+    464            {
+    465              initializeEepromDescriptor(&eepromParams, eepromOffset + i * 16U, readBuffer, size % 16U);
+    466              if (0U != HAL_ReadEeprom(&eepromParams, NULL))
+    467                return false;
+    468              for (j = 0U; j < (size % 16U); j++)
+    469                eepromCrc = SYS_Crc16Ccitt(eepromCrc, readBuffer[j]);
+    470            }
+    471          
+    472            if (header->crc != eepromCrc)
+    473              return false;
+    474          
+    475            return true;
+    476          }
+    477          /******************************************************************************
+    478          \brief Calculates crc of item data
+    479          
+    480          \param[in] size - item size;
+    481          \param[in] data - item data
+    482          \returns crc
+    483          ******************************************************************************/
+    484          static uint16_t pdsCalculateCrc(uint16_t size, uint8_t *data)
+    485          {
+    486            uint16_t crc = 0U;
+    487          
+    488            for (uint16_t i = 0U; i < size; i++)
+    489              crc = SYS_Crc16Ccitt(crc, data[i]);
+    490          
+    491            return crc;
+    492          }
+    493          
+    494          /******************************************************************************
+    495          \brief Initializes EEPROM descriptor
+    496          
+    497          \param[in] params  - pointer to strucure with eeprom descriptor;
+    498          \param[in] address - address in EEPROM to write to;
+    499          \param[in] data    - item data;
+    500          \param[in] length  - item length
+    501          ******************************************************************************/
+    502          static void initializeEepromDescriptor(HAL_EepromParams_t *params, uint16_t address, uint8_t *data, uint16_t length)
+    503          {
+    504            params->address = address;
+    505            params->data    = data;
+    506            params->length  = length;
+    507          }
+    508          
+    509          /******************************************************************************
+    510          \brief Writing to EEPROM is done
+    511          ******************************************************************************/
+    512          static void writeDone(void)
+    513          {
+    514            HAL_EepromParams_t eepromParams;
+    515            switch(state)
+    516            {
+    517              case PDS_SECURITY_WRITING_HEADER:
+    518              {
+    519                if (pdsSecMem.data)
+    520                {
+    521                  initializeEepromDescriptor(&eepromParams, pdsSecMem.startAddress, (uint8_t *)pdsSecMem.data, itemHeader.size);
+    522                  state = PDS_SECURITY_WRITING_DATA;
+    523                  HAL_WriteEeprom(&eepromParams, writeDone);
+    524                  break;
+    525                }
+    526              }
+    527              case PDS_SECURITY_WRITING_DATA:
+    528              {
+    529                itemHeader.magicNumber = MAGIC_NUMBER;
+    530                initializeEepromDescriptor(&eepromParams, pdsSecMem.startAddress - sizeof(PdsSecureItemHeader_t), (uint8_t *)&itemHeader, sizeof(PdsSecureItemHeader_t));
+    531                state = PDS_SECURITY_WRITING_MAGIC_NUMBER;
+    532                HAL_WriteEeprom(&eepromParams, writeDone);
+    533                break;
+    534              }
+    535              case PDS_SECURITY_WRITING_MAGIC_NUMBER:
+    536              {
+    537                state = PDS_SECURITY_IDLE;
+    538                if (0U != postoponedStoring[0].size)
+    539                {
+    540                  pdsStoreSecuredItem(postoponedStoring[0].id, postoponedStoring[0].size, postoponedStoring[0].data);
+    541                  postoponedStoring[0].id = 0U;
+    542                  postoponedStoring[0].size = 0U;
+    543                  for (uint8_t index=0,next_index = 0; index < ARRAY_SIZE(pdsSecMemoryMap); index++)
+    544                  {
+    545                    next_index++;
+    546                    if(next_index >= ARRAY_SIZE(pdsSecMemoryMap))
+    547                      next_index = 0;
+    548                    postoponedStoring[index].id = postoponedStoring[next_index].id;
+    549                    postoponedStoring[index].size = postoponedStoring[next_index].size;
+    550                    postoponedStoring[index].data = postoponedStoring[next_index].data;
+    551                  }
+    552                 }
+    553                break;
+    554              }
+    555              default:
+    556                N_ERRH_FATAL();
+    557            }
+    558          }
+    559          
+    560          /******************************************************************************
+    561          \brief Checks whether data in EEPROM differs from data in RAM
+    562          
+    563          \param[in] eepromOffset - ofsset of data in eeprom;
+    564          \param[in] ramData      - pointer to data in RAM;
+    565          \param[in] size         - data size;
+    566          \returns true if data differs, false otherwise
+    567          ******************************************************************************/
+    568          static bool isDataModified(uint16_t eepromOffset, uint8_t *ramData, uint16_t size)
+    569          {
+    570            uint8_t readBuffer[16U];
+    571            HAL_EepromParams_t eepromParams;
+    572            uint8_t i = 0U;
+    573          
+    574            // compare data in eeprom with data in ram
+    575            for (; i < size / 16U; i++)
+    576            {
+    577              initializeEepromDescriptor(&eepromParams, eepromOffset + i * 16U, readBuffer, 16U);
+    578              if (0U != HAL_ReadEeprom(&eepromParams, NULL))
+    579                return true;
+    580              if (memcmp((uint8_t *)ramData + i * 16U, readBuffer, 16U))
+    581                return true;
+    582            }
+    583            if (size % 16U)
+    584            {
+    585              initializeEepromDescriptor(&eepromParams, eepromOffset + i * 16U, readBuffer, size % 16U);
+    586              if (0U != HAL_ReadEeprom(&eepromParams, NULL))
+    587                return true;
+    588              if (memcmp((uint8_t *)ramData + i * 16U, readBuffer, size % 16U))
+    589                return true;
+    590            }
+    591          
+    592            return false;
+    593          }
+    594          
+    595          /******************************************************************************
+    596          \brief Reads data
+    597          
+    598          \param[in] header  - pointer to item header structure;
+    599          \param[in] address - start address of read operation in eeprom;
+    600          \param[in] data    - item data;
+    601          \param[in] size    - size of data
+    602          \returns true if data is read correctly, false otherwise
+    603          ******************************************************************************/
+    604          static bool readData(PdsSecureItemHeader_t *header, uint16_t address, void *data, uint16_t size)
+    605          {
+    606            HAL_EepromParams_t eepromParams;
+    607            uint16_t crc;
+    608          
+    609            if (MAGIC_NUMBER != header->magicNumber)
+    610              return false;
+    611          
+    612            initializeEepromDescriptor(&eepromParams, address, data, size);
+    613            N_ERRH_ASSERT_FATAL(0U == HAL_ReadEeprom(&eepromParams, NULL));
+    614          
+    615            crc = pdsCalculateCrc(size, data);
+    616            if (crc != header->crc)
+    617              return false;
+    618          
+    619            return true;
+    620          }
+    621          
+    622          /******************************************************************************
+    623          \brief Looks for item id in idToOffset table
+    624          
+    625          \param[in] id - item id
+    626          \returns position of item in table if found, -1 otherwise
+    627          ******************************************************************************/
+    628          static int8_t getEepromItemPosition(S_Nv_ItemId_t id)
+    629          {
+    630            ItemIdToEepromOffsetMapping_t mapItem;
+    631          
+    632            for (uint8_t  i = 0U; i < ARRAY_SIZE(pdsSecMemoryMap); i++)
+    633            {
+    634              memcpy_P(&mapItem, &pdsSecMemoryMap[i], sizeof(ItemIdToEepromOffsetMapping_t));
+    635              if (mapItem.itemId == id)
+    636                return i;
+    637            }
+    638          
+    639            return -1;
+    640          }
+    641          #else
+
+   \                                 In section .text, align 2, keep-with-next
+    642          void PDS_EraseSecureItems(void)
+    643          {
+    644          // a Stub function if security items are stored in flash
+    645          }
+   \                     PDS_EraseSecureItems: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    646          #endif // #ifdef PDS_SECURITY_CONTROL_ENABLE
+    647          #endif // _ENABLE_PERSISTENT_SERVER_
+    648          #endif // PDS_ENABLE_WEAR_LEVELING == 1
+    649          // eof wlPdsSecurity.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   PDS_EraseSecureItems
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  PDS_EraseSecureItems
+
+ 
+ 2 bytes in section .text
+ 
+ 2 bytes of CODE memory
+
+Errors: none
+Warnings: none

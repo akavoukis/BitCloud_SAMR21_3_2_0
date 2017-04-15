@@ -1,0 +1,651 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.4.8167/W32 for ARM        31/Mar/2015  18:40:03
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\buttons.c
+#    Command line =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\buttons.c
+#        -D BOARD_SAMR21 -D BOARD_QTOUCH_XPRO -D AT86RF233 -D ATSAMR21G18A -D
+#        HAL_8MHz -D STACK_TYPE_ALL -D STDLINK_SECURITY_MODE -lC
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\
+#        --diag_suppress Pa050,Pe188 -o
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\
+#        --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.30\arm\INC\c\DLib_Config_Full.h" --preinclude
+#        MakerulesBc_All_StdlinkSec_Atsamr21g18a_Rf233_Iar.h -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/..\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmableLight/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../dimmerSwitch/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../multiSensor/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../thermostat/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../ias_ace/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../combinedInterface/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../common/clusters/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/SAMR21/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/lib\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/BSP/QTouch_XPRO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/NWK/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZDO/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/APS/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/SystemEnvironment/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ConfigServer/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/std/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/PersistDataServer/wl/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Types/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Util/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Timer/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Task/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_ErrH/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Log/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Memory/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/Infrastructure/N_Init/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_Nv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/D_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZLLPlatform/ZLL/S_XNv/src\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/TrustCentre/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/Security/ServiceProvider/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/drivers/VCP/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/HAL/cortexm0+/atsamr21/common/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include/private\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/ZCL/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_ENV/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWI/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/PHY/include\
+#        -I
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects/../../../BitCloud/Components/MAC_PHY/MAC_HWD_PHY/RF231_RF212/MAC_HWD/include\
+#        -Ohz --use_c++_inline
+#    List file    =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/List\buttons.lst
+#    Object file  =  
+#        D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\Applications\HADevice\iar_projects\All_StdlinkSec_SamR21_Atsamr21g18a_Rf233_8Mhz/Obj\buttons.o
+#
+###############################################################################
+
+D:\support_project\Qtouch_samr21_validation\BitCloud_SAMR21_3_2_0\BitCloud_SAMR21_3_2_0\BitCloud\Components\BSP\SAMR21\src\buttons.c
+      1          /**************************************************************************//**
+      2          \file buttons.c
+      3          
+      4          \brief Implementation of buttons interface.
+      5          
+      6          \author
+      7              Atmel Corporation: http://www.atmel.com \n
+      8              Support email: avr@atmel.com
+      9          
+     10            Copyright (c) 2008-2015, Atmel Corporation. All rights reserved.
+     11            Licensed under Atmel's Limited License Agreement (BitCloudTM).
+     12          
+     13          \internal
+     14            History:
+     15              07/04/14 karthik.p_u - Created
+     16          *******************************************************************************/
+     17          #if BSP_SUPPORT != BOARD_FAKE
+     18          
+     19          /******************************************************************************
+     20                             Includes section
+     21          ******************************************************************************/
+     22          #include <sysTypes.h>
+     23          #include <buttons.h>
+     24          #include <irq.h>
+     25          #include <bspTaskManager.h>
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void bspPostTask(uint8_t)
+   \                     bspPostTask: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+   \   00000002   0x....             LDR      R1,??DataTable6
+   \   00000004   0x780A             LDRB     R2,[R1, #+0]
+   \   00000006   0x4310             ORRS     R0,R0,R2
+   \   00000008   0x7008             STRB     R0,[R1, #+0]
+   \   0000000A   0x4668             MOV      R0,SP
+   \   0000000C   0x.... 0x....      BL       halStartAtomic
+   \   00000010   0x....             LDR      R0,??DataTable6_1
+   \   00000012   0x8801             LDRH     R1,[R0, #+0]
+   \   00000014   0x2280             MOVS     R2,#+128
+   \   00000016   0x0052             LSLS     R2,R2,#+1        ;; #+256
+   \   00000018   0x430A             ORRS     R2,R2,R1
+   \   0000001A   0x8002             STRH     R2,[R0, #+0]
+   \   0000001C   0x4668             MOV      R0,SP
+   \   0000001E   0x.... 0x....      BL       halEndAtomic
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+     26          #include <gpio.h>
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint8_t GPIO_A28_read()
+   \                     GPIO_A28_read: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable6_2  ;; 0x41004420
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x00C1             LSLS     R1,R0,#+3
+   \   00000006   0x0FC8             LSRS     R0,R1,#+31
+   \   00000008   0x4770             BX       LR               ;; return
+     27          #include <bspDbg.h>
+     28          
+     29          /******************************************************************************
+     30                             Define(s) section
+     31          ******************************************************************************/
+     32          #define PRESSED              1
+     33          #define RELEASED             0
+     34          #define BSP_BUTTONS_IDLE     0
+     35          #define BSP_BUTTONS_BUSY     1
+     36          #define ACT_ON               1
+     37          #define ACT_OFF              0
+     38          
+     39          #if BSP_SUPPORT == BOARD_SAMR21_ZLLEK
+     40          #define BSP_readKEY0() (GPIO_B23_read())
+     41          #elif BSP_SUPPORT == BOARD_SAMR21_XPRO
+     42          #define BSP_readKEY0() (GPIO_A28_read())
+     43          #elif BSP_SUPPORT == BOARD_SAMR21_CUSTOM
+     44          #define BSP_readKEY0() (GPIO_A19_read())
+     45          #endif
+     46          
+     47          #if BSP_SUPPORT == BOARD_SAMR21_ZLLEK
+     48          #define BUTTON_IRQ IRQ_EIC_EXTINT7
+     49          #elif BSP_SUPPORT == BOARD_SAMR21_XPRO
+     50          #define BUTTON_IRQ IRQ_EIC_EXTINT8
+     51          #elif BSP_SUPPORT == BOARD_SAMR21_CUSTOM
+     52          #define BUTTON_IRQ IRQ_EIC_EXTINT3
+     53          #endif
+     54          
+     55          /******************************************************************************
+     56                             Types section
+     57          ******************************************************************************/
+     58          typedef struct _BSP_ButtonsAction_t
+     59          {
+     60            uint8_t wasPressed   : 1;
+     61            uint8_t waitReleased  : 1;
+     62            uint8_t currentState : 1;
+     63          } BSP_ButtonsAction_t;
+     64          
+     65          typedef struct _BSP_ButtonsDescriptor_t
+     66          {
+     67            /* Pin number concerned with button */
+     68            uint8_t pinNumber;
+     69            /* Button action map */
+     70            volatile BSP_ButtonsAction_t action;
+     71            /* Pin pullup processing function */
+     72            void (*enablePinPullup)(void);
+     73            /* Read pin processing function */
+     74            uint8_t (*readPin)(void);
+     75            /* Busy flag*/
+     76            bool busy;
+     77          } BSP_ButtonDescriptor_t;
+     78          
+     79          /******************************************************************************
+     80                             Prototypes section
+     81          ******************************************************************************/
+     82          /**************************************************************************//**
+     83          \brief  HAL's event handlers about any key has changed state.
+     84          ******************************************************************************/
+     85          static void bspKeyInterruptHandler(void);
+     86          
+     87          /******************************************************************************
+     88                             Global variables section
+     89          ******************************************************************************/
+
+   \                                 In section .bss, align 4
+     90          static uint8_t state = BSP_BUTTONS_IDLE;
+   \                     state:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 3
+   \   00000004                      DS8 4
+   \   00000008                      DS8 4
+   \   0000000C                      DS8 4
+     91          static volatile BSP_ButtonsAction_t buttonsAction;
+     92          static BSP_ButtonsEventFunc_t bspButtonPressHandle;   // callback
+     93          static BSP_ButtonsEventFunc_t bspButtonReleaseHandle; // callback
+     94          
+     95          
+     96          /******************************************************************************
+     97                             Implementations section
+     98          ******************************************************************************/
+     99          
+    100          /**************************************************************************//**
+    101          \brief Initializes buttons module.
+    102          ******************************************************************************/
+    103          static void bspInitButtons(void)
+    104          {
+    105            HAL_IrqMode_t HAL_IrqMode = IRQ_FALLING_EDGE;
+    106          
+    107          #if BSP_SUPPORT == BOARD_SAMR21_ZLLEK
+    108            GPIO_B23_make_in();
+    109            GPIO_B23_make_pullup();
+    110            PORTB_PINCFG23_s.pmuxen = 1;
+    111            PORTB_PINCFG23_s.inen = 1;
+    112            PORTB_PMUX12_s.pmuxo = 0;
+    113          #elif BSP_SUPPORT == BOARD_SAMR21_XPRO
+    114            GPIO_A28_make_in();
+    115            GPIO_A28_make_pullup();
+    116            PORTA_PINCFG28_s.pmuxen = 1;
+    117            PORTA_PINCFG28_s.inen = 1;
+    118            PORTA_PMUX14_s.pmuxe = 0;
+    119          #elif BSP_SUPPORT == BOARD_SAMR21_CUSTOM 
+    120            GPIO_A15_make_in();
+    121            GPIO_A15_make_pullup();
+    122            PORTA_PINCFG15_s.pmuxen = 1;
+    123            PORTA_PINCFG15_s.inen = 1;
+    124            PORTA_PMUX7_s.pmuxo = 0;
+    125          #else
+    126          #error 'Unsupported board.'
+    127          #endif
+    128            HAL_RegisterIrq(BUTTON_IRQ, HAL_IrqMode, bspKeyInterruptHandler);
+    129          
+    130            if (BSP_readKEY0())
+    131              buttonsAction.currentState = RELEASED;
+    132            else
+    133              buttonsAction.currentState = PRESSED;
+    134          
+    135          }
+    136          
+    137          /**************************************************************************//**
+    138          \brief Registers handlers for button events.
+    139          
+    140          \param[in]
+    141              pressed - the handler to process pressing the button
+    142          \param[in]
+    143              released - the handler to process releasing the button
+    144          \param[in]
+    145              bn - button number.
+    146          
+    147          \return
+    148            BC_SUCCESS - always.
+    149          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    150          result_t BSP_OpenButtons(void (*pressed)(uint8_t bn), void (*released)(uint8_t bn))
+    151          {
+   \                     BSP_OpenButtons: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+    152            if (state != BSP_BUTTONS_IDLE)
+   \   00000002   0x....             LDR      R4,??DataTable6_3
+   \   00000004   0x7822             LDRB     R2,[R4, #+0]
+   \   00000006   0x2A00             CMP      R2,#+0
+   \   00000008   0xD001             BEQ      ??BSP_OpenButtons_0
+    153              return BC_FAIL;
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0xBDF2             POP      {R1,R4-R7,PC}
+    154            state = BSP_BUTTONS_BUSY;
+   \                     ??BSP_OpenButtons_0: (+1)
+   \   0000000E   0x2201             MOVS     R2,#+1
+   \   00000010   0x7022             STRB     R2,[R4, #+0]
+    155            bspButtonPressHandle = pressed;
+   \   00000012   0x60A0             STR      R0,[R4, #+8]
+    156            bspButtonReleaseHandle = released;
+   \   00000014   0x60E1             STR      R1,[R4, #+12]
+    157            bspInitButtons();
+   \   00000016   0x....             LDR      R3,??DataTable6_4  ;; 0x41004404
+   \   00000018   0x0715             LSLS     R5,R2,#+28
+   \   0000001A   0x601D             STR      R5,[R3, #+0]
+   \   0000001C   0x....             LDR      R0,??DataTable6_5  ;; 0x4100443e
+   \   0000001E   0x2102             MOVS     R1,#+2
+   \   00000020   0x7F86             LDRB     R6,[R0, #+30]
+   \   00000022   0x430E             ORRS     R6,R6,R1
+   \   00000024   0x7786             STRB     R6,[R0, #+30]
+   \   00000026   0x26FB             MOVS     R6,#+251
+   \   00000028   0x7F87             LDRB     R7,[R0, #+30]
+   \   0000002A   0x4037             ANDS     R7,R7,R6
+   \   0000002C   0x7787             STRB     R7,[R0, #+30]
+   \   0000002E   0x615D             STR      R5,[R3, #+20]
+   \   00000030   0x2504             MOVS     R5,#+4
+   \   00000032   0x7F83             LDRB     R3,[R0, #+30]
+   \   00000034   0x2704             MOVS     R7,#+4
+   \   00000036   0x431F             ORRS     R7,R7,R3
+   \   00000038   0x7787             STRB     R7,[R0, #+30]
+   \   0000003A   0x7F83             LDRB     R3,[R0, #+30]
+   \   0000003C   0x431A             ORRS     R2,R2,R3
+   \   0000003E   0x7782             STRB     R2,[R0, #+30]
+   \   00000040   0x7F82             LDRB     R2,[R0, #+30]
+   \   00000042   0x4311             ORRS     R1,R1,R2
+   \   00000044   0x7781             STRB     R1,[R0, #+30]
+   \   00000046   0x7801             LDRB     R1,[R0, #+0]
+   \   00000048   0x22F0             MOVS     R2,#+240
+   \   0000004A   0x400A             ANDS     R2,R2,R1
+   \   0000004C   0x7002             STRB     R2,[R0, #+0]
+   \   0000004E   0x....             LDR      R2,??DataTable6_6
+   \   00000050   0x2103             MOVS     R1,#+3
+   \   00000052   0x2008             MOVS     R0,#+8
+   \   00000054   0x.... 0x....      BL       HAL_RegisterIrq
+   \   00000058   0x.... 0x....      BL       GPIO_A28_read
+   \   0000005C   0x2800             CMP      R0,#+0
+   \   0000005E   0x7920             LDRB     R0,[R4, #+4]
+   \   00000060   0xD002             BEQ      ??BSP_OpenButtons_1
+   \   00000062   0x4006             ANDS     R6,R6,R0
+   \   00000064   0x7126             STRB     R6,[R4, #+4]
+   \   00000066   0xE001             B        ??BSP_OpenButtons_2
+   \                     ??BSP_OpenButtons_1: (+1)
+   \   00000068   0x4305             ORRS     R5,R5,R0
+   \   0000006A   0x7125             STRB     R5,[R4, #+4]
+    158            return BC_SUCCESS;
+   \                     ??BSP_OpenButtons_2: (+1)
+   \   0000006C   0x2000             MOVS     R0,#+0
+   \   0000006E   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    159          }
+    160          
+    161          /**************************************************************************//**
+    162          \brief Cancel buttons handlers.
+    163          
+    164          \return
+    165            BC_SUCCESS - always.
+    166          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    167          result_t BSP_CloseButtons(void)
+    168          {
+   \                     BSP_CloseButtons: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    169            if (state != BSP_BUTTONS_BUSY)
+   \   00000002   0x....             LDR      R4,??DataTable6_3
+   \   00000004   0x7820             LDRB     R0,[R4, #+0]
+   \   00000006   0x2801             CMP      R0,#+1
+   \   00000008   0xD001             BEQ      ??BSP_CloseButtons_0
+    170              return BC_FAIL;
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0xBD10             POP      {R4,PC}
+    171            HAL_UnregisterIrq(BUTTON_IRQ);
+   \                     ??BSP_CloseButtons_0: (+1)
+   \   0000000E   0x2008             MOVS     R0,#+8
+   \   00000010   0x.... 0x....      BL       HAL_UnregisterIrq
+    172            bspButtonPressHandle = NULL;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x60A0             STR      R0,[R4, #+8]
+    173            bspButtonReleaseHandle = NULL;
+   \   00000018   0x60E0             STR      R0,[R4, #+12]
+    174            state = BSP_BUTTONS_IDLE;
+   \   0000001A   0x7020             STRB     R0,[R4, #+0]
+    175            return BC_SUCCESS;
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+    176          }
+    177          
+    178          /**************************************************************************//**
+    179          \brief Reads state of buttons.
+    180          
+    181          \return
+    182              Current buttons state in a binary way. \n
+    183              Bit 0 defines state of the button 1, \n
+    184              bit 1 defines state of the button 2.
+    185          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    186          uint8_t BSP_ReadButtonsState(void)
+    187          {
+    188            return buttonsAction.currentState;
+   \                     BSP_ReadButtonsState: (+1)
+   \   00000000   0x....             LDR      R0,??DataTable6_3
+   \   00000002   0x7901             LDRB     R1,[R0, #+4]
+   \   00000004   0x0748             LSLS     R0,R1,#+29
+   \   00000006   0x0FC0             LSRS     R0,R0,#+31
+   \   00000008   0x4770             BX       LR               ;; return
+    189          }
+    190          
+    191          /**************************************************************************//**
+    192          \brief  HAL's event about KEY has changed state.
+    193          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    194          static void bspKeyInterruptHandler(void)
+    195          {
+   \                     bspKeyInterruptHandler: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    196            HAL_DisableIrq(BUTTON_IRQ);
+   \   00000002   0x2008             MOVS     R0,#+8
+   \   00000004   0x.... 0x....      BL       HAL_DisableIrq
+    197            buttonsAction.currentState = PRESSED;
+   \   00000008   0x....             LDR      R0,??DataTable6_3
+   \   0000000A   0x7901             LDRB     R1,[R0, #+4]
+   \   0000000C   0x2204             MOVS     R2,#+4
+   \   0000000E   0x430A             ORRS     R2,R2,R1
+   \   00000010   0x7102             STRB     R2,[R0, #+4]
+    198            buttonsAction.wasPressed = 1;
+   \   00000012   0x7901             LDRB     R1,[R0, #+4]
+   \   00000014   0x2201             MOVS     R2,#+1
+   \   00000016   0x430A             ORRS     R2,R2,R1
+   \   00000018   0x7102             STRB     R2,[R0, #+4]
+    199            bspPostTask(BSP_BUTTONS);
+   \   0000001A   0x2001             MOVS     R0,#+1
+   \   0000001C   0x.... 0x....      BL       bspPostTask
+    200          }
+   \   00000020   0xBD01             POP      {R0,PC}          ;; return
+    201          
+    202          /**************************************************************************//**
+    203          \brief  BSP's event about KEY has changed state.
+    204          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    205          void bspButtonsHandler(void)
+    206          {
+   \                     bspButtonsHandler: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    207            if (buttonsAction.wasPressed)
+   \   00000002   0x2401             MOVS     R4,#+1
+   \   00000004   0x....             LDR      R5,??DataTable6_3
+   \   00000006   0x7928             LDRB     R0,[R5, #+4]
+   \   00000008   0x4220             TST      R0,R4
+   \   0000000A   0xD00C             BEQ      ??bspButtonsHandler_0
+    208            {
+    209              buttonsAction.wasPressed = 0;
+   \   0000000C   0x7928             LDRB     R0,[R5, #+4]
+   \   0000000E   0x21FE             MOVS     R1,#+254
+   \   00000010   0x4001             ANDS     R1,R1,R0
+   \   00000012   0x7129             STRB     R1,[R5, #+4]
+    210              buttonsAction.waitReleased = 1;
+   \   00000014   0x7928             LDRB     R0,[R5, #+4]
+   \   00000016   0x2102             MOVS     R1,#+2
+   \   00000018   0x4301             ORRS     R1,R1,R0
+   \   0000001A   0x7129             STRB     R1,[R5, #+4]
+    211              if (NULL != bspButtonPressHandle)
+   \   0000001C   0x68A9             LDR      R1,[R5, #+8]
+   \   0000001E   0x0008             MOVS     R0,R1
+   \   00000020   0xD001             BEQ      ??bspButtonsHandler_0
+    212                bspButtonPressHandle(BSP_KEY0);
+   \   00000022   0x2001             MOVS     R0,#+1
+   \   00000024   0x4788             BLX      R1
+    213            }
+    214          
+    215            if (buttonsAction.waitReleased)
+   \                     ??bspButtonsHandler_0: (+1)
+   \   00000026   0x7928             LDRB     R0,[R5, #+4]
+   \   00000028   0x0840             LSRS     R0,R0,#+1
+   \   0000002A   0x4220             TST      R0,R4
+   \   0000002C   0xD017             BEQ      ??bspButtonsHandler_1
+    216            {
+    217              if (BSP_readKEY0())
+   \   0000002E   0x.... 0x....      BL       GPIO_A28_read
+   \   00000032   0x2800             CMP      R0,#+0
+   \   00000034   0xD010             BEQ      ??bspButtonsHandler_2
+    218              {
+    219                buttonsAction.waitReleased = 0;
+   \   00000036   0x7928             LDRB     R0,[R5, #+4]
+   \   00000038   0x21FD             MOVS     R1,#+253
+   \   0000003A   0x4001             ANDS     R1,R1,R0
+   \   0000003C   0x7129             STRB     R1,[R5, #+4]
+    220                buttonsAction.currentState = RELEASED;
+   \   0000003E   0x7928             LDRB     R0,[R5, #+4]
+   \   00000040   0x21FB             MOVS     R1,#+251
+   \   00000042   0x4001             ANDS     R1,R1,R0
+   \   00000044   0x7129             STRB     R1,[R5, #+4]
+    221                if (NULL != bspButtonReleaseHandle)
+   \   00000046   0x68E9             LDR      R1,[R5, #+12]
+   \   00000048   0x0008             MOVS     R0,R1
+   \   0000004A   0xD001             BEQ      ??bspButtonsHandler_3
+    222                  bspButtonReleaseHandle(BSP_KEY0);
+   \   0000004C   0x2001             MOVS     R0,#+1
+   \   0000004E   0x4788             BLX      R1
+    223                HAL_EnableIrq(BUTTON_IRQ);
+   \                     ??bspButtonsHandler_3: (+1)
+   \   00000050   0x2008             MOVS     R0,#+8
+   \   00000052   0x.... 0x....      BL       HAL_EnableIrq
+   \   00000056   0xBD31             POP      {R0,R4,R5,PC}
+    224              }
+    225              else
+    226              {
+    227                bspPostTask(BSP_BUTTONS);
+   \                     ??bspButtonsHandler_2: (+1)
+   \   00000058   0x2001             MOVS     R0,#+1
+   \   0000005A   0x.... 0x....      BL       bspPostTask
+    228              }
+    229            }
+    230          
+    231          }
+   \                     ??bspButtonsHandler_1: (+1)
+   \   0000005E   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \   00000000   0x........         DC32     bspTaskFlags
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \   00000000   0x........         DC32     SYS_taskFlag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \   00000000   0x41004420         DC32     0x41004420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \   00000000   0x........         DC32     state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \   00000000   0x41004404         DC32     0x41004404
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \   00000000   0x4100443E         DC32     0x4100443e
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \   00000000   0x........         DC32     bspKeyInterruptHandler
+    232          
+    233          #endif // BSP_SUPPORT != BOARD_FAKE
+    234          
+    235          // end of buttons.c
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   BSP_CloseButtons
+         8   -> HAL_UnregisterIrq
+      24   BSP_OpenButtons
+        24   -> GPIO_A28_read
+        24   -> HAL_RegisterIrq
+       0   BSP_ReadButtonsState
+       0   GPIO_A28_read
+      16   bspButtonsHandler
+        16   -- Indirect call
+        16   -> GPIO_A28_read
+        16   -> HAL_EnableIrq
+        16   -> bspPostTask
+       8   bspKeyInterruptHandler
+         8   -> HAL_DisableIrq
+         8   -> bspPostTask
+       8   bspPostTask
+         8   -> halEndAtomic
+         8   -> halStartAtomic
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+      30  BSP_CloseButtons
+     112  BSP_OpenButtons
+      10  BSP_ReadButtonsState
+      10  GPIO_A28_read
+      96  bspButtonsHandler
+      34  bspKeyInterruptHandler
+      36  bspPostTask
+      16  state
+          buttonsAction
+          bspButtonPressHandle
+          bspButtonReleaseHandle
+
+ 
+  16 bytes in section .bss
+ 356 bytes in section .text
+ 
+ 356 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none

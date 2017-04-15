@@ -1,0 +1,1585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ProjectGuid>{8611fee5-b547-4a1a-8d1a-fa010d6efd5e}</ProjectGuid>
+    <avrdevice>Atsamr21e18a</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <OutputType>Executable</OutputType>
+    <OutputFileName>HADevice</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <Language>C</Language>
+    <ToolchainName>com.Atmel.ARMGCC.C</ToolchainName>
+    <UseGlobalToolchain>False</UseGlobalToolchain>
+    <avrtoolinterface>SWD</avrtoolinterface>
+    <avrtool>com.atmel.avrdbg.tool.samice</avrtool>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.21.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <com_atmel_avrdbg_tool_samice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <SwdClock>4000000</SwdClock>
+        </InterfaceProperties>
+        <InterfaceName>SWD</InterfaceName>
+        <JlinkConfigFile>C:\Users\kavia\Documents\BitCloud_SAMR21_3_2_0\Applications\HADevice\atmelStudio_projects\jlink.config</JlinkConfigFile>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.samice</ToolType>
+      <ToolNumber>1631096578</ToolNumber>
+      <ToolName>J-Link</ToolName>
+    </com_atmel_avrdbg_tool_samice>
+    <UseGdbCustomPath>False</UseGdbCustomPath>
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\Compiler.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21E18A\All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\ATSAMR21E18A\Makefile_All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\HADevice.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+    <ToolchainSettings>
+      <ArmGcc>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.preprocessingassembler.general.IncludePaths>
+</ArmGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21E18A\All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\ATSAMR21E18A\Makefile_All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_4Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\HADevice.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+    <ToolchainSettings>
+      <ArmGcc>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.preprocessingassembler.general.IncludePaths>
+</ArmGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21E18A\All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\ATSAMR21E18A\Makefile_All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_16Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\HADevice.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+    <ToolchainSettings>
+      <ArmGcc>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.preprocessingassembler.general.IncludePaths>
+</ArmGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21E18A\All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\ATSAMR21E18A\Makefile_All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_24Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\HADevice.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+    <ToolchainSettings>
+      <ArmGcc>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.preprocessingassembler.general.IncludePaths>
+</ArmGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\ATSAMR21E18A\All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\ATSAMR21E18A\Makefile_All_StdlinkSec_SamR21_Atsamr21e18a_Rf233_48MHz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\HADevice.elf $(OutputDirectory)\$(MSBuildProjectName).elf</PostBuildEvent>
+    <ToolchainSettings>
+      <ArmGcc>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samr21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcc.preprocessingassembler.general.IncludePaths>
+</ArmGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include=".\..\dimmableLight\src\dlIdentifyCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlIdentifyCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlScenes.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlScenes.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlScenesCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlScenesCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlPdt.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlPdt.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlLevelControlCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlLevelControlCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlClusters.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlClusters.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlBasicCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlBasicCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dimmableLight.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dimmableLight.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlGroupsCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlGroupsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlConsole.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlConsole.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\src\dlOnOffCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\src\dlOnOffCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlClusters.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlClusters.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlGroupsCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlGroupsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlIdentifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlIdentifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlScenesCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlScenesCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlScenes.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlScenes.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlBasicCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlBasicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlLevelControlCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlLevelControlCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmableLight\include\dlOnOffCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmableLight\include\dlOnOffCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thGroupsCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thGroupsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thFanControlCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thFanControlCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thTimeCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thTimeCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thHumidityMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thHumidityMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thThermostatCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thThermostatCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thOccupancySensingCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thOccupancySensingCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thIdentifyCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thIdentifyCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thPdt.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thPdt.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thDiagnosticsCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thDiagnosticsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thTemperatureMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thTemperatureMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thBasicCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thBasicCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thClusters.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thClusters.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thConsole.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thConsole.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thermostat.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thermostat.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thScenesCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thScenesCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thScenes.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thScenes.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thThermostatUiConfCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thThermostatUiConfCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\src\thAlarmsCluster.c">
+      <SubType>compile</SubType>
+      <Link>thermostat\src\thAlarmsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thDiagnosticsCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thDiagnosticsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thClusters.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thClusters.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thHumidityMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thHumidityMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thAlarmsCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thAlarmsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thGroupsCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thGroupsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thOccupancySensingCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thOccupancySensingCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thTemperatureMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thTemperatureMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thTimeCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thTimeCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thIdentifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thIdentifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thScenes.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thScenes.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thBasicCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thBasicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thThermostatUiConfCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thThermostatUiConfCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thScenesCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thScenesCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thFanControlCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thFanControlCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\thermostat\include\thThermostatCluster.h">
+      <SubType>compile</SubType>
+      <Link>thermostat\include\thThermostatCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsLevelControlCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsLevelControlCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsIdentifyCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsIdentifyCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsOnOffCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsOnOffCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dimmerSwitch.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dimmerSwitch.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsConsole.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsConsole.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsPowerConfigurationCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsPowerConfigurationCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsBasicCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsBasicCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsClusters.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsClusters.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\src\dsAlarmsCluster.c">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\src\dsAlarmsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\include\dsBasicCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\include\dsBasicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\include\dsIdentifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\include\dsIdentifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\include\dsAlarmsCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\include\dsAlarmsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\include\dsOnOffCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\include\dsOnOffCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\include\dsClusters.h">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\include\dsClusters.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\include\dsLevelControlCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\include\dsLevelControlCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\dimmerSwitch\include\dsPowerConfigurationCluster.h">
+      <SubType>compile</SubType>
+      <Link>DimmerSwitch\include\dsPowerConfigurationCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msPdt.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msPdt.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msTemperatureMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msTemperatureMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msDiagnosticsCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msDiagnosticsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msBasicCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msBasicCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msHumidityMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msHumidityMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msClusters.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msClusters.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msConsole.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msConsole.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msGroupsCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msGroupsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msIdentifyCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msIdentifyCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msIlluminanceMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msIlluminanceMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\msOccupancySensingCluster.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\msOccupancySensingCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\src\multiSensor.c">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\src\multiSensor.c</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msDiagnosticsCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msDiagnosticsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msOccupancySensingCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msOccupancySensingCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msHumidityMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msHumidityMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msClusters.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msClusters.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msTemperatureMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msTemperatureMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msIdentifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msIdentifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msBasicCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msBasicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msIlluminanceMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msIlluminanceMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\multiSensor\include\msGroupsCluster.h">
+      <SubType>compile</SubType>
+      <Link>MultiSensor\include\msGroupsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciThermostatCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciThermostatCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciIlluminanceMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciIlluminanceMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciGroupsCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciGroupsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciBasicCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciBasicCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciOccupancySensingCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciOccupancySensingCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciIdentifyCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciIdentifyCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciClusters.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciClusters.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciTemperatureMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciTemperatureMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciLevelControlCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciLevelControlCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciThermostatUiConfCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciThermostatUiConfCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciIasACECluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciIasACECluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciHumidityMeasurementCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciHumidityMeasurementCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciTimeCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciTimeCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\combinedInterface.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\combinedInterface.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciDiagnosticsCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciDiagnosticsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciAlarmsCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciAlarmsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciPowerConfigurationCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciPowerConfigurationCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciFanControlCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciFanControlCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciIasZoneCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciIasZoneCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciConsole.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciConsole.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciOnOffCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciOnOffCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\src\ciScenesCluster.c">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\src\ciScenesCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciLevelControlCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciLevelControlCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciTemperatureMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciTemperatureMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciIasZoneCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciIasZoneCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciOnOffCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciOnOffCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciHumidityMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciHumidityMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciIlluminanceMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciIlluminanceMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciGroupsCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciGroupsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciAlarmsCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciAlarmsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciDiagnosticsCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciDiagnosticsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciClusters.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciClusters.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciThermostatUiConfCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciThermostatUiConfCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciFanControlCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciFanControlCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciThermostatCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciThermostatCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciPowerConfigurationCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciPowerConfigurationCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciIasACECluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciIasACECluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciScenesCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciScenesCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciTimeCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciTimeCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciOccupancySensingCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciOccupancySensingCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciBasicCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciBasicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\combinedInterface\include\ciIdentifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>CombinedInterface\include\ciIdentifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\src\commandManager.c">
+      <SubType>compile</SubType>
+      <Link>common\src\commandManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\src\console.c">
+      <SubType>compile</SubType>
+      <Link>common\src\console.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\src\keyboardPoll.c">
+      <SubType>compile</SubType>
+      <Link>common\src\keyboardPoll.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\src\uartManager.c">
+      <SubType>compile</SubType>
+      <Link>common\src\uartManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\src\otauService.c">
+      <SubType>compile</SubType>
+      <Link>common\src\otauService.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\src\ezModeManager.c">
+      <SubType>compile</SubType>
+      <Link>common\src\ezModeManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\src\zclDevice.c">
+      <SubType>compile</SubType>
+      <Link>common\src\zclDevice.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\include\commandManager.h">
+      <SubType>compile</SubType>
+      <Link>common\include\commandManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\include\zclDevice.h">
+      <SubType>compile</SubType>
+      <Link>common\include\zclDevice.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\include\uartManager.h">
+      <SubType>compile</SubType>
+      <Link>common\include\uartManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\include\console.h">
+      <SubType>compile</SubType>
+      <Link>common\include\console.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\include\otauService.h">
+      <SubType>compile</SubType>
+      <Link>common\include\otauService.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\include\ezModeManager.h">
+      <SubType>compile</SubType>
+      <Link>common\include\ezModeManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\include\appConsts.h">
+      <SubType>compile</SubType>
+      <Link>common\include\appConsts.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\clusters\src\haClusters.c">
+      <SubType>compile</SubType>
+      <Link>common\clusters\src\haClusters.c</Link>
+    </Compile>
+    <Compile Include=".\..\common\clusters\include\haClusters.h">
+      <SubType>compile</SubType>
+      <Link>common\clusters\include\haClusters.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\clusters\include\identifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>common\clusters\include\identifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\common\clusters\include\basicCluster.h">
+      <SubType>compile</SubType>
+      <Link>common\clusters\include\basicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsMemAccess.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsMemAccess.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsTimer.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsTimer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsMem.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsWriteData.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsWriteData.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsCrcService.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsCrcService.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsInit.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsInit.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsEvents.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsEvents.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\src\stdPdsDataServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\src\stdPdsDataServer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsDbg.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsFiles.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsFiles.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsWriteData.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsWriteData.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsTimer.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsTimer.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemAccess.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsMemAccess.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemAbstract.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsMemAbstract.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsCrcService.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsCrcService.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMem.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsMem.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\std\include\stdPdsMemIds.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\std\include\stdPdsMemIds.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\src\fakePds.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\fakePds.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\pdsDataServer.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\pdsDataServer.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\include\pdsMemIds.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\pdsMemIds.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsTypesConverter.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\src\wlPdsTypesConverter.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsTaskManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\src\wlPdsTaskManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsSecurity.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\src\wlPdsSecurity.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsInit.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\src\wlPdsInit.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\src\wlPdsDataServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\src\wlPdsDataServer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\src\S_Nv.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\src\S_XNv.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\src\S_XNv.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\src\D_XNv-SamR21.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\src\D_XNv-SamR21.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv-External.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\src\S_Nv-External.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_Nv\src\D_Nv.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\src\D_Nv.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\src\S_Nv_Stub.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\src\S_Nv_Stub.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_Nv\include\S_Nv.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\include\S_Nv.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv_Init.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\include\D_XNv_Init.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv_Bindings.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\include\D_XNv_Bindings.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_Nv\include\D_Nv.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\include\D_Nv.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\S_XNv\include\S_XNv_Bindings.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\include\S_XNv_Bindings.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZLLPlatform\ZLL\D_XNv\include\D_XNv.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\nv_components\include\D_XNv.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsBindings.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\include\wlPdsBindings.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsSecurity.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\include\wlPdsSecurity.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsMemIds.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\include\wlPdsMemIds.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTypesConverter.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\include\wlPdsTypesConverter.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTaskManager.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\include\wlPdsTaskManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\PersistDataServer\wl\include\wlPdsTypes.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\wl\include\wlPdsTypes.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclKeyEstablishmentCluster.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclKeyEstablishmentCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientPdt.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauClientPdt.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclSecurityManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclSecurityManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclParser.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclParser.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientDownload.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauClientDownload.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientQuery.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauClientQuery.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientDiscovery.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauClientDiscovery.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclCommandAnalyzer.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclCommandAnalyzer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClientUpgrade.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauClientUpgrade.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauClient.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauClient.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclTaskManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclTaskManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclAttributes.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclAttributes.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zcl.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zcl.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclMemoryManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclMemoryManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\src\zclOtauServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\src\zclOtauServer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclThermostatUiConfCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclThermostatUiConfCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclTaskManager.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclTaskManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclThermostatCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclThermostatCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclPriceCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclPriceCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOccupancySensingCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclOccupancySensingCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclInt.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclInt.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIlluminanceMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclIlluminanceMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclHumidityMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclHumidityMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclFanControlCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclFanControlCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclAttributes.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclAttributes.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIdentifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclIdentifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclMessagingCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclMessagingCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclKeyEstablishmentCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclKeyEstablishmentCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zcl.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zcl.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclSecurityManager.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclSecurityManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclSmartEnergyTunnelCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclSmartEnergyTunnelCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclScenesCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclScenesCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOtauManager.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclOtauManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclBasicCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclBasicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclAlarmsCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclAlarmsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclBACnetProtocolTunnelCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclBACnetProtocolTunnelCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOnOffSwitchConfigurationCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclOnOffSwitchConfigurationCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\clusters.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\clusters.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\eccAux.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\eccAux.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOnOffCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclOnOffCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\genericEcc.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\genericEcc.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIasZoneCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclIasZoneCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclLevelControlCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclLevelControlCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclIasACECluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclIasACECluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOTAUCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclOTAUCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclOtauClient.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclOtauClient.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclDiagnosticsCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclDiagnosticsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclTemperatureMeasurementCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclTemperatureMeasurementCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclCommandAnalyzer.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclCommandAnalyzer.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclTimeCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclTimeCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclGroupsCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclGroupsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclSimpleMeteringCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclSimpleMeteringCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclDemandResponseCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclDemandResponseCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclPowerConfigurationCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclPowerConfigurationCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclGenerictunnelCluster.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclGenerictunnelCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclParser.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclParser.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclMemoryManager.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclMemoryManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ZCL\include\zclMem.h">
+      <SubType>compile</SubType>
+      <Link>Components\ZCL\include\zclMem.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysIdleHandler.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysIdleHandler.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysSleep.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysSleep.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysStat.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysStat.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysEventsHandler.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysEventsHandler.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysQueue.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysQueue.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysUtils.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysUtils.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysAssert.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysAssert.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysDuplicateTable.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysDuplicateTable.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysInit.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysInit.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysTaskManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysTaskManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\dbg.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\dbg.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysMutex.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysMutex.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\src\sysTimer.c">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\src\sysTimer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEventsHandler.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysEventsHandler.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\dbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\dbg.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTaskManager.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysTaskManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysQueue.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysQueue.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysDuplicateTable.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysDuplicateTable.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysIdleHandler.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysIdleHandler.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysSleep.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysSleep.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEvents.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysEvents.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysUtils.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysUtils.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysMutex.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysMutex.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTimer.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysTimer.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysStat.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysStat.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysIncrementMacro.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysIncrementMacro.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysDbg.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysAssert.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysAssert.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysRepeatMacro.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysRepeatMacro.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysTypes.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysTypes.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysInit.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysInit.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\SystemEnvironment\include\sysEndian.h">
+      <SubType>compile</SubType>
+      <Link>Components\SystemEnvironment\include\sysEndian.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspUsart.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspUsart.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\MaxL.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\MaxL.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspTempSensor.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspTempSensor.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\buttons.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\buttons.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\fakeBSP.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\fakeBSP.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\lcd.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\lcd.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\xyl2rgb.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\xyl2rgb.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\joyStick.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\joyStick.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspUid.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspUid.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspI2c.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspI2c.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspVoltageSensor.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspVoltageSensor.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspTaskManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspTaskManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\hs2xy.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\hs2xy.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\leds.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\leds.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspSpi.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\src\bspSpi.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspTaskManager.h">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\include\bspTaskManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\include\bspDbg.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspLeds.h">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\include\bspLeds.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\ledsExt.h">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\include\ledsExt.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspVoltageSensor.h">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\include\bspVoltageSensor.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\src\bspI2c.h">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\include\bspI2c.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\BSP\SAMR21\include\bspTempSensor.h">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\include\bspTempSensor.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csPersistentMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\csPersistentMem.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\csMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\csMem.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\src\configServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\configServer.c</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csConstTable.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csConstTable.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csBuffers.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csBuffers.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csMemTable.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csMemTable.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csVarTable.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csVarTable.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csSIB.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csSIB.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\private\csDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csDbg.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\csDefaults.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\csDefaults.h</Link>
+    </Compile>
+    <Compile Include=".\..\..\..\BitCloud\Components\ConfigServer\include\configServer.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\configServer.h</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACEIdentifyCluster.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACEIdentifyCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACE.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACE.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACEPdt.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACEPdt.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACECluster.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACECluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACEConsole.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACEConsole.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACEZoneCluster.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACEZoneCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACEDiagnosticsCluster.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACEDiagnosticsCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\src\iasACEBasicCluster.c">
+      <SubType>compile</SubType>
+      <Link>ias_ace\src\iasACEBasicCluster.c</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\include\iasACEIdentifyCluster.h">
+      <SubType>compile</SubType>
+      <Link>ias_ace\include\iasACEIdentifyCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\include\iasACEDiagnosticsCluster.h">
+      <SubType>compile</SubType>
+      <Link>ias_ace\include\iasACEDiagnosticsCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\include\iasACECluster.h">
+      <SubType>compile</SubType>
+      <Link>ias_ace\include\iasACECluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\include\iasACEBasicCluster.h">
+      <SubType>compile</SubType>
+      <Link>ias_ace\include\iasACEBasicCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\ias_ace\include\iasACEZoneCluster.h">
+      <SubType>compile</SubType>
+      <Link>ias_ace\include\iasACEZoneCluster.h</Link>
+    </Compile>
+    <Compile Include=".\..\configuration.h">
+      <SubType>compile</SubType>
+      <Link>configuration\configuration.h</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CombinedInterface\" />
+    <Folder Include="common\" />
+    <Folder Include="common\clusters\" />
+    <Folder Include="Components\" />
+    <Folder Include="Components\BSP\" />
+    <Folder Include="Components\ConfigServer\" />
+    <Folder Include="Components\PersistDataServer\" />
+    <Folder Include="Components\PersistDataServer\std\" />
+    <Folder Include="Components\PersistDataServer\wl\" />
+    <Folder Include="Components\PersistDataServer\wl\nv_components\" />
+    <Folder Include="Components\SystemEnvironment\" />
+    <Folder Include="Components\ZCL\" />
+    <Folder Include="DimmableLight\" />
+    <Folder Include="DimmerSwitch\" />
+    <Folder Include="ias_ace\" />
+    <Folder Include="ias_ace\include" />
+    <Folder Include="Components\PersistDataServer\wl\include" />
+    <Folder Include="DimmableLight\include" />
+    <Folder Include="Components\ConfigServer\include\private" />
+    <Folder Include="Components\ConfigServer\src" />
+    <Folder Include="configuration" />
+    <Folder Include="Components\SystemEnvironment\src" />
+    <Folder Include="Components\PersistDataServer\std\include" />
+    <Folder Include="MultiSensor\" />
+    <Folder Include="MultiSensor\include" />
+    <Folder Include="Components\BSP\src" />
+    <Folder Include="DimmableLight\src" />
+    <Folder Include="Components\PersistDataServer\src" />
+    <Folder Include="CombinedInterface\src" />
+    <Folder Include="Components\BSP\include" />
+    <Folder Include="Components\SystemEnvironment\include" />
+    <Folder Include="common\clusters\src" />
+    <Folder Include="Components\PersistDataServer\std\src" />
+    <Folder Include="Components\ConfigServer\include" />
+    <Folder Include="Components\PersistDataServer\wl\nv_components\src" />
+    <Folder Include="common\clusters\include" />
+    <Folder Include="Components\PersistDataServer\wl\src" />
+    <Folder Include="DimmerSwitch\src" />
+    <Folder Include="ias_ace\src" />
+    <Folder Include="thermostat\" />
+    <Folder Include="thermostat\src" />
+    <Folder Include="common\include" />
+    <Folder Include="CombinedInterface\include" />
+    <Folder Include="Components\ZCL\src" />
+    <Folder Include="thermostat\include" />
+    <Folder Include="Components\ZCL\include" />
+    <Folder Include="Components\PersistDataServer\wl\nv_components\include" />
+    <Folder Include="Components\PersistDataServer\include" />
+    <Folder Include="DimmerSwitch\include" />
+    <Folder Include="common\src" />
+    <Folder Include="MultiSensor\src" />
+  </ItemGroup>
+</Project>
